@@ -124,44 +124,46 @@
   <data name="ToolStripButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVDhPtVNZCgIxDO0J9Bhu11AYZ2sRvIrbCUTBG6gI
-        iiLa6o+H0B89kEtTMw7T5UfHB4Eh772QpBnyF0THqBZw1g/2bK5CfseHuIq0G/VtuyjFq3DDHqFgz0yo
-        HF2CBuVZAOFzdjOMRsRXaxFZfa2Lh+eRCj0PnaDtDZjP1nYCPa+0u1YZ7YQEgg4MkYwENi7krId2QuTs
-        s4QYXyZoMwFcWoRO0Z5DgW9G8AXtol11UPlpiQB1QJrQ+YycLdCWAo4DjsQQG+E4JIB38gpwJLZxGqJ5
-        Bw40KHcDdgJL+vxMgnbksZWQzhOEvACav4RK1CeG9AAAAABJRU5ErkJggg==
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADhSURBVDhPY2CgBfDd6KvtvS6g0nttwHwwBrL9NvhpEbTL
+        ZVUoP1DxUp/lAf981gf8R8FgMf8lIDVYDQJJeK0LuIihEd2g9X4XsBoCNH05uuaOU13/QRjTUP8lKK4A
+        +Q+bs/9DAVbvrAnSgBvivd6/CpvTcRoA8ta6gAq4AUC/z4MZ0H26D6YPgwbJISzyn0s9A8jxgtd6/3Jk
+        F2hSFIggk8AJCC3OcUbjuoCFGIkJlDh8gImE7IQEMtFjmwcfKLli847Leo+/IDmQGoJ5AhitmqBAgmem
+        9f5lwMSmTlAjOQoAieKEQTGyO0cAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="ToolStripButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACuSURBVDhPYxg84Iuz2f9jGhpgvGHfUTiev27r/6YJ08Ds
-        O3mZ/4Hqjr5zMeaHakMAXAbU907+r2ZkgWwA2BCoNgQg0YD/UG0IABI8o6MFNmDzqo1wA2Be2LTn4P+n
-        8RH4DSAFQ7UhADZF+DBUGwKABP///PmfIACqwW0AELx69+H//acvsGKQHAjQ1oCv37//f//pM1YMkgMB
-        2hnwvab4/4+mSrwYpAarAQMEGBgAksCycFaBPEgAAAAASUVORK5CYII=
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACiSURBVDhPY2AYNOCLs9n/YxoaYLxh31E4nr9u6/+mCdPA
+        /Dt5mf+B6o6+czHmx3A4LgPqeyf/VzOyQDYAbAilBvzHasAZHS2wFzav2ojhhU17Dv5/Gh8Bsh2MsRoA
+        kySGpo0B/3/+/E8QANXg9AJI86t3H/7ff/oCKwbJgQBtDfj6/fv/958+Y8UgOYIuoMiA7zXF/380VeLF
+        IDVYw2DAMiUAksCycCyUEpoAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="ToolStripButton3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEFSURBVDhPtZPBasJAEIbzBPYxtHpMdnos2Q3iq3gWtPYZ
-        Kh5Eb1YKFV9H38MIJgHxUNP9t7O6hgShtT/8MLsz32Z3mHj/ojQUrUzRMFW0gBEnkpqcrtYu8h8ySctY
-        0UlDuWuzF9Inarj8WgZWwaYIFr1X/rr0kEyJVRlQan0Txn6E97nXPvS6+XHydgYQY8+uUZu0/Qbj+uuS
-        Xm3SANNRDh1nY2MT6z23JovEC+O660q8XyW1LQghLuZTKeaM3+GAXz1BigHjuonR0+OfmghhgGzBLScy
-        +GDsIgwHhqQMcF05SNC2QzUMifsc6/iZvpBDDZdXCz1Bk84/k6T+PgzqnL6nPO8bscGMfB2Vu08AAAAA
-        SUVORK5CYII=
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD1SURBVDhPY2CgBfjsaKr9xdms8rOz2XwQBrE/OZlpEbTr
+        nYsx/xcns6VvnM3+ATX9R8ZgMUezJSA1WA0Ca3Y2uYiuEZ3/0dn4AlZDvjibLiekGS4PdAmKK0D+Q3b2
+        9+LM/z8n98C9AGKDxGAGgNR+cjPWgBsC9HcVsu0/p/b+B4Gf0/rBGMwGiqG40MW0Am7AZ2fTeejOh2mE
+        GYQu/9nJdC71DCDLC06m5XAXfHIx16QoEEEmgRIQsdH4yclkIUZiAiUOUCIhZAjOhAQy8Y2HGR8ouWJN
+        yvZmf8FyQDUE8wQoTL4AAwmemZzMyj46mqgT1EiOAgChdYx0Du/6AQAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="ToolStripButton4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGgSURBVDhPzZBNKARhGMff/Zh3Ug4UNycHiiPKwRrcRNrJ
-        3mwc5OLooiSSkpMDCUf5OOxhLfPhoxgTSTnhplCYLXLgsq2Z8T7eGU80Lbn61VPz/t/////MDPk/ZB7c
-        SzVr12kPrCr1CMUoFyDF1eWYrB7h8Rsta9frV0xUs27SK0E5gCTrCUnWICZrBkpBFMuOKZazuHELJSh9
-        IXVulUkdyqNX0BzX2lEO4oUVy4XNe6cNJdKU0Mulbq1ekrdTXph/wjkhEMLrIN5m9d5pBfg0NHXpNZKc
-        fvW3dmWeGuNphxckffNf2GtC3fM0fZrqH7zyN/uTZi2yPoyWnwGDlLBDOgwH4svbQgRykyGwxktfBnpm
-        7rDoBq1B2DGtdvYjN3lTdMAUwZ9DEdgOhfxsGHITIbgYqbT6eufmMVLI+y5dYIoAbJNPRgAwsIiPmxbg
-        dTrs2kvRBrQXAilC3dXwKdN4mG/3gmyPAuzz8Z5NOorW3wEgIXZAh3Jr0fz7SgTYFi/z3sAUz/j/iaLt
-        b9i6UMu3j7kmPXGMyDUziirw6l9ByAdmneY6ElwBawAAAABJRU5ErkJggg==
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGdSURBVDhPzZFPKARRHMdndnbepBwobk4OFMcll12Dm0g7
+        cSMOcnF0URJJ4eRAwlGWw9ayzB9/yo6JpJxw27LK7mzt5rAO/s3Mvp83w17YwUlefevV+/4+3+97j6L+
+        zYqmrGspbfjkFK4JZ6DUrRgflNYCgnTy5VxOGw1KHHNS2uqzIcUAvKD08IIMAUFWiwaIuhEQdXNl+xbK
+        Phv4zt0KvkPM2IDmoNzuAjBXRN2CnaTZVjD4e5RKvltu4IW9sD1MrnBJUUAXBdjJUtJsBXg3+LuUOl6I
+        PDipXdFsUzBiEkDfrz7O2GB993MoOzM4HHeSHUVwi6CMfgsAlSrDx2gUYlzudZmBp2ka9Mny3FDv/N0H
+        KFEUgE9RrXnEJJ41zgSNA0fHHOB9BC8LHniaouFqrFof6F9ccm2QP0DLWGQB7xBFWQD1A0Rg1hYLuVmP
+        Zax6G10BEKaQFfKcY5kMk3S7BT5EAEdE9l5D4z8+IABF4xgaeQx5X/LrDOBdArMbaNwFeR/vj4CCAW+y
+        9SR9wtLQmakyN1gtqfr18J8a3wBXKOYxgA7qUgAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="TextBox2.Text" xml:space="preserve">
+    <value>Es una de las mejores variedades de uva del mundo y por lo tanto hace uno de los tipos de vino tinto más populares. Hay tintos con cuerpo con notas de vainilla y roble, ya que a menudo se envejecen en barricas de esa madera. También se mezclan con Cabernet Franc y Merlot para crear excelentes vinos.</value>
   </data>
 </root>

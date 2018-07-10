@@ -120,48 +120,4 @@
   <metadata name="ToolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="ToolStripButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVDhPtVNZCsIwEM0J9BhutxCR0i1B8CpuJxAFb6Ai
-        WATRRH88hP7ogVwycWpplh+tDwbKvPeGmcmU/AXRMWoEnA2DPVuqkN/xIa4j7UZr2y1LcRIm7BEK9syF
-        ytE1aFCeBxA+ZzfDaER8tRaR1Te6eHyeqNDz0Ana3oD5bG2n0PNKu+tU0U5IIOjIEMlIYeNCzgZoJ0TO
-        vkiJ6WWGNhPAZUXoHO0FFPhmBF/QPtpVB7WflghQB6QJnc/I2QptGeA44EgMsRGOQwJ4J68ER2Ibpyna
-        d+BAg3I3YCewpM/PJGhPHlsF6SJByAtoKIQvDf75egAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="ToolStripButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACuSURBVDhPYxg84Iuz2f9jGhpgvGHfUTiev27r/6YJ08Ds
-        O3mZ/4Hqjr5zMeaHakMAXAbU907+r2ZkgWwA2BCoNgQg0YD/UG0IABI8o6MFNmDzqo1wA2Be2LTn4P+n
-        8RH4DSAFQ7UhADZF+DBUGwKABP///PmfIACqwW0AELx69+H//acvsGKQHAjQ1oCv37//f//pM1YMkgMB
-        2hnwvab4/4+mSrwYpAarAQMEGBgAksCycFaBPEgAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="ToolStripButton3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEGSURBVDhPY6AJ+Oxoqv3F2azys7PZfBAGsT85mWlBpXGD
-        dy7G/F+czJa+cjb7B9T0HxmDxRzNloDUQJWjArBmZ5OL6BrR8Udn4wtYDfnibLocmwasGOgSqDYIAPkP
-        2dnfizP//5zcA9cAYoPEYHyQ2k9uxhpQ7UDbncyqYJJgDVN7/4PAz2n9YAxmA8WQ1XxxMa2AageGurPp
-        PBRJIIZpBAEQG13+s5PpXKh2KhhAlhecTMuh2oGB6GKuSVEgggAoAcEUEMKfnEwWQrUhAChxgBIJNg3I
-        GGdCAoE3HmZ8oESC7B0YfmVv9hckB1IDVY4bgMIEFEjwzORkVvbR0UQdKk1NwMAAAIDdjGRsUOkuAAAA
-        AElFTkSuQmCC
-</value>
-  </data>
-  <data name="ToolStripButton4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGeSURBVDhPzZBNKAVRGIbP/ZkzKQuKnZUFxRI712An0p3Y
-        EQvZWNooiSSysiBhKT+LK1zmx08xJpKywk6hMLdIIhEz43zOjC+aLtl66qs573nf95sZ8n9IXrsnasou
-        0a5ZQeIGMlFOQ4qr0zFZ3cXjN1rKLtVPmaim3GavBOUAkqw3SrIGMVkzUAqiWHZMsZzJ5QvIQukLqW41
-        R6pVbryCirhWg3IQL6xYLqxcOdUokfJGPVdq0EoleS3hhfknHBECIbwO4m1Wr5wqgE9Deb1eJMmLj/7W
-        +uRtWXzB4QXNvvkv7Dmh5G6Y3g61dZz6m/1ZYJWy3oWWnwGDZLEd2gXb4sPbRAReBkJg9WU/tDeNXGLR
-        OVqDsD1a6GxFzp9N0QFTBH92RGDrFF5Hw/DSH4Lj7nyrtWVsHCPpvG/QCaYIwFb4JAUAA4v4uEsC3A+G
-        XXsqWob2dCBBqDsbPmAaD/PtXpBtUoAtPt6zSXvQ+jsAJMS2aefTTPT1fSYCbJWXeW9giof8/0TR9jds
-        Xijm23tdk+47RuSMGRl5ePWvIOQDPfbmIhyK0MYAAAAASUVORK5CYII=
-</value>
-  </data>
 </root>

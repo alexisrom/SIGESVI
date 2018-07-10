@@ -25,6 +25,7 @@ Partial Class FrmVinos
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmVinos))
         Me.TabControl1 = New System.Windows.Forms.TabControl
         Me.TabPage1 = New System.Windows.Forms.TabPage
+        Me.ListBox3 = New System.Windows.Forms.ListBox
         Me.Button12 = New System.Windows.Forms.Button
         Me.Button11 = New System.Windows.Forms.Button
         Me.Label11 = New System.Windows.Forms.Label
@@ -77,7 +78,6 @@ Partial Class FrmVinos
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
         Me.LblMensaje = New System.Windows.Forms.ToolStripStatusLabel
-        Me.ListBox3 = New System.Windows.Forms.ListBox
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -128,6 +128,15 @@ Partial Class FrmVinos
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Información General"
         Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'ListBox3
+        '
+        Me.ListBox3.FormattingEnabled = True
+        Me.ListBox3.Items.AddRange(New Object() {"Merlot", "Cabernet Sauvignon", "Malbec", "Pinot Noir", "Sangiovese"})
+        Me.ListBox3.Location = New System.Drawing.Point(310, 86)
+        Me.ListBox3.Name = "ListBox3"
+        Me.ListBox3.Size = New System.Drawing.Size(159, 82)
+        Me.ListBox3.TabIndex = 40
         '
         'Button12
         '
@@ -599,15 +608,6 @@ Partial Class FrmVinos
         Me.LblMensaje.Size = New System.Drawing.Size(172, 17)
         Me.LblMensaje.Text = "Objeto agregado exitosamente."
         '
-        'ListBox3
-        '
-        Me.ListBox3.FormattingEnabled = True
-        Me.ListBox3.Items.AddRange(New Object() {"Merlot", "Cabernet Sauvignon", "Malbec", "Pinot Noir", "Sangiovese"})
-        Me.ListBox3.Location = New System.Drawing.Point(310, 86)
-        Me.ListBox3.Name = "ListBox3"
-        Me.ListBox3.Size = New System.Drawing.Size(159, 82)
-        Me.ListBox3.TabIndex = 40
-        '
         'FrmVinos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -617,7 +617,7 @@ Partial Class FrmVinos
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.TabControl1)
         Me.Name = "FrmVinos"
-        Me.Text = "FrmVinos"
+        Me.Text = "Vinos"
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()

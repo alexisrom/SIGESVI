@@ -23,16 +23,16 @@ Partial Class FrmProcesos
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox
-        Me.ListBox1 = New System.Windows.Forms.ListBox
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.Button2 = New System.Windows.Forms.Button
-        Me.TextBox2 = New System.Windows.Forms.TextBox
+        Me.TextBox1 = New System.Windows.Forms.TextBox
+        Me.Label1 = New System.Windows.Forms.Label
         Me.Label2 = New System.Windows.Forms.Label
+        Me.TextBox2 = New System.Windows.Forms.TextBox
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox
+        Me.Button2 = New System.Windows.Forms.Button
+        Me.Button1 = New System.Windows.Forms.Button
+        Me.ListBox1 = New System.Windows.Forms.ListBox
         Me.GroupBox3 = New System.Windows.Forms.GroupBox
         Me.Label3 = New System.Windows.Forms.Label
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.TextBox1 = New System.Windows.Forms.TextBox
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -51,6 +51,39 @@ Partial Class FrmProcesos
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Información General"
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(21, 306)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(231, 103)
+        Me.TextBox1.TabIndex = 5
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(18, 290)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(63, 13)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Descripción"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(18, 62)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(75, 13)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "Producto Final"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(107, 59)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(145, 20)
+        Me.TextBox2.TabIndex = 2
+        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.Button2)
@@ -63,14 +96,14 @@ Partial Class FrmProcesos
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Etapas de elaboración"
         '
-        'ListBox1
+        'Button2
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Items.AddRange(New Object() {"01 - Primer etapa", "02 - Segunda etapa"})
-        Me.ListBox1.Location = New System.Drawing.Point(19, 41)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(160, 368)
-        Me.ListBox1.TabIndex = 0
+        Me.Button2.Location = New System.Drawing.Point(104, 427)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 2
+        Me.Button2.Text = "Quitar"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -81,30 +114,14 @@ Partial Class FrmProcesos
         Me.Button1.Text = "Agregar"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button2
+        'ListBox1
         '
-        Me.Button2.Location = New System.Drawing.Point(104, 427)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Quitar"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(107, 59)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(145, 20)
-        Me.TextBox2.TabIndex = 2
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(18, 62)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(75, 13)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Producto Final"
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Items.AddRange(New Object() {"01 - Primer etapa", "02 - Segunda etapa"})
+        Me.ListBox1.Location = New System.Drawing.Point(19, 41)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(160, 368)
+        Me.ListBox1.TabIndex = 0
         '
         'GroupBox3
         '
@@ -125,23 +142,6 @@ Partial Class FrmProcesos
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Duración: 00 días"
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(18, 290)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(63, 13)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Descripción"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(21, 306)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(231, 103)
-        Me.TextBox1.TabIndex = 5
-        '
         'FrmProcesos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -151,7 +151,7 @@ Partial Class FrmProcesos
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "FrmProcesos"
-        Me.Text = "FrmProcesos"
+        Me.Text = "Procesos"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)

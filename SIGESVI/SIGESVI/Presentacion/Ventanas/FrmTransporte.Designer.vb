@@ -336,7 +336,7 @@ Partial Class FrmTransporte
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.TabControl1)
         Me.Name = "FrmTransporte"
-        Me.Text = "FrmTransporte"
+        Me.Text = "Transporte"
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.GroupBox5.ResumeLayout(False)

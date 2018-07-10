@@ -28,4 +28,16 @@
         Dim frm = New FrmFuncionarios()
         frm.ShowDialog()
     End Sub
+
+    Private Sub ProducciónToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProducciónToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub ElaboraciónToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ElaboraciónToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub MostoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MostoToolStripMenuItem.Click
+
+    End Sub
 End Class

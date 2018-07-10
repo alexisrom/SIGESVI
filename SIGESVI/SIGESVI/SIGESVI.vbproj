@@ -116,6 +116,12 @@
     <Compile Include="Presentacion\Ventanas\FrmFuncionarios.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmMosto.Designer.vb">
+      <DependentUpon>FrmMosto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmMosto.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\Ventanas\FrmPrincipal.Designer.vb">
       <DependentUpon>FrmPrincipal.vb</DependentUpon>
     </Compile>
@@ -126,6 +132,12 @@
       <DependentUpon>FrmProcesos.vb</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Ventanas\FrmProcesos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmProduccion.Designer.vb">
+      <DependentUpon>FrmProduccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmProduccion.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\Ventanas\FrmTransporte.Designer.vb">
@@ -197,12 +209,20 @@
       <DependentUpon>FrmFuncionarios.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\FrmMosto.resx">
+      <DependentUpon>FrmMosto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ventanas\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ventanas\FrmProcesos.resx">
       <DependentUpon>FrmProcesos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\FrmProduccion.resx">
+      <DependentUpon>FrmProduccion.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ventanas\FrmTransporte.resx">

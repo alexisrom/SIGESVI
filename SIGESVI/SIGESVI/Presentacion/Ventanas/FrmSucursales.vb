@@ -32,4 +32,13 @@
     Private Sub Btn_Borrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         LblTelefonos.Items.Remove(LblTelefonos.SelectedItem)
     End Sub
+
+    Private Sub Btn_AgregarTel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_AgregarTel.Click
+        If solonumeros(Txt_Telefono) Then
+            LblTelefonos.Items.Add(Txt_Telefono.Text)
+        Else
+            MsgBox("ingrese solo numeros")
+        End If
+
+    End Sub
 End Class

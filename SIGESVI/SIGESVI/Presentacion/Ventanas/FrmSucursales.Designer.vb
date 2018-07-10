@@ -27,6 +27,9 @@ Partial Class FrmSucursales
         Me.EpErrores = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.Lbl_IDBusq = New System.Windows.Forms.Label
         Me.Lbl_Infosucursal = New System.Windows.Forms.GroupBox
+        Me.Button1 = New System.Windows.Forms.Button
+        Me.TextBox1 = New System.Windows.Forms.TextBox
+        Me.Label1 = New System.Windows.Forms.Label
         Me.CboDepartamentos = New System.Windows.Forms.ComboBox
         Me.Lbl_Departamento = New System.Windows.Forms.Label
         Me.Txt_ID = New System.Windows.Forms.TextBox
@@ -54,9 +57,6 @@ Partial Class FrmSucursales
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.TextBox1 = New System.Windows.Forms.TextBox
-        Me.Button1 = New System.Windows.Forms.Button
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel
         CType(Me.EpErrores, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -105,6 +105,31 @@ Partial Class FrmSucursales
         Me.Lbl_Infosucursal.TabIndex = 13
         Me.Lbl_Infosucursal.TabStop = False
         Me.Lbl_Infosucursal.Text = "Información de Sucursal"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(259, 288)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(33, 23)
+        Me.Button1.TabIndex = 17
+        Me.Button1.Text = "..."
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(106, 288)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(147, 20)
+        Me.TextBox1.TabIndex = 16
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(35, 291)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(45, 13)
+        Me.Label1.TabIndex = 15
+        Me.Label1.Text = "Gerente"
         '
         'CboDepartamentos
         '
@@ -325,31 +350,6 @@ Partial Class FrmSucursales
         Me.ToolStripButton4.Name = "ToolStripButton4"
         Me.ToolStripButton4.Size = New System.Drawing.Size(23, 22)
         Me.ToolStripButton4.Text = "ToolStripButton4"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(35, 291)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(45, 13)
-        Me.Label1.TabIndex = 15
-        Me.Label1.Text = "Gerente"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(106, 288)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(147, 20)
-        Me.TextBox1.TabIndex = 16
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(259, 288)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(33, 23)
-        Me.Button1.TabIndex = 17
-        Me.Button1.Text = "..."
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'StatusStrip1
         '

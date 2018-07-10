@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{049426B8-E623-47ED-804C-342C59C90CF2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SIGESVI.My.MyApplication</StartupObject>
+    <RootNamespace>SIGESVI</RootNamespace>
+    <AssemblyName>SIGESVI</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SIGESVI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SIGESVI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Presentacion\Controles\DetalleFuncionario.Designer.vb">
+      <DependentUpon>DetalleFuncionario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Controles\DetalleFuncionario.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Controles\SelectorImagen.Designer.vb">
+      <DependentUpon>SelectorImagen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Controles\SelectorImagen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Controles\Telefonos.Designer.vb">
+      <DependentUpon>Telefonos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Controles\Telefonos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmBienvenida.Designer.vb">
+      <DependentUpon>FrmBienvenida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmBienvenida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Modulos\Utilidades.vb" />
+    <Compile Include="Presentacion\Modulos\Validacion.vb" />
+    <Compile Include="Presentacion\Ventanas\FrmCatalogo.Designer.vb">
+      <DependentUpon>FrmCatalogo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmCatalogo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmClientes.Designer.vb">
+      <DependentUpon>FrmClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmEtapas.Designer.vb">
+      <DependentUpon>FrmEtapas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmEtapas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmFuncionarios.Designer.vb">
+      <DependentUpon>FrmFuncionarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmFuncionarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmPrincipal.Designer.vb">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmProcesos.Designer.vb">
+      <DependentUpon>FrmProcesos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmProcesos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmTransporte.Designer.vb">
+      <DependentUpon>FrmTransporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmTransporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmVinos.Designer.vb">
+      <DependentUpon>FrmVinos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmVinos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\Login.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmSucursales.Designer.vb">
+      <DependentUpon>FrmSucursales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmSucursales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmVehiculos.Designer.vb">
+      <DependentUpon>FrmVehiculos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmVehiculos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmVinedos.Designer.vb">
+      <DependentUpon>FrmVinedos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmVinedos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Presentacion\Ventanas\FrmBienvenida.resx">
+      <DependentUpon>FrmBienvenida.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\FrmClientes.resx">
+      <DependentUpon>FrmClientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\FrmEtapas.resx">
+      <DependentUpon>FrmEtapas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\FrmFuncionarios.resx">
+      <DependentUpon>FrmFuncionarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\FrmProcesos.resx">
+      <DependentUpon>FrmProcesos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\FrmTransporte.resx">
+      <DependentUpon>FrmTransporte.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\FrmVinos.resx">
+      <DependentUpon>FrmVinos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\Login.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\FrmSucursales.resx">
+      <DependentUpon>FrmSucursales.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

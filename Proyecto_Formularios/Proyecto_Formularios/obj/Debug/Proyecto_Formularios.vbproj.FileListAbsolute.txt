@@ -22,3 +22,6 @@ C:\Users\Diego\Documents\Visual Studio 2008\Projects\Proyecto_Formularios\Proyec
 C:\Users\Diego\Documents\Visual Studio 2008\Projects\Proyecto_Formularios\Proyecto_Formularios\obj\Debug\Proyecto_Formularios.frm_Login.resources
 C:\Users\Diego\Documents\Visual Studio 2008\Projects\Proyecto_Formularios\Proyecto_Formularios\obj\Debug\Proyecto_Formularios.Resources.resources
 C:\Users\Diego\Documents\Visual Studio 2008\Projects\Proyecto_Formularios\Proyecto_Formularios\obj\Debug\Proyecto_Formularios.vbproj.GenerateResource.Cache
+C:\Users\Diego\Documents\GitHub\SIGESVI\Proyecto_Formularios\Proyecto_Formularios\obj\Debug\Proyecto_Formularios.exe
+C:\Users\Diego\Documents\GitHub\SIGESVI\Proyecto_Formularios\Proyecto_Formularios\obj\Debug\Proyecto_Formularios.xml
+C:\Users\Diego\Documents\GitHub\SIGESVI\Proyecto_Formularios\Proyecto_Formularios\obj\Debug\Proyecto_Formularios.pdb

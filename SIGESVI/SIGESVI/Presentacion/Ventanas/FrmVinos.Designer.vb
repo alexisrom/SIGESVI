@@ -25,8 +25,9 @@ Partial Class FrmVinos
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmVinos))
         Me.TabControl1 = New System.Windows.Forms.TabControl
         Me.TabPage1 = New System.Windows.Forms.TabPage
+        Me.Button12 = New System.Windows.Forms.Button
+        Me.Button11 = New System.Windows.Forms.Button
         Me.Label11 = New System.Windows.Forms.Label
-        Me.ListBox3 = New System.Windows.Forms.ListBox
         Me.GroupBox3 = New System.Windows.Forms.GroupBox
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.ComboBox2 = New System.Windows.Forms.ComboBox
@@ -65,6 +66,7 @@ Partial Class FrmVinos
         Me.GroupBox2 = New System.Windows.Forms.GroupBox
         Me.ListBox2 = New System.Windows.Forms.ListBox
         Me.TabPage3 = New System.Windows.Forms.TabPage
+        Me.TabPage4 = New System.Windows.Forms.TabPage
         Me.Button2 = New System.Windows.Forms.Button
         Me.Button3 = New System.Windows.Forms.Button
         Me.ListBox1 = New System.Windows.Forms.ListBox
@@ -75,9 +77,7 @@ Partial Class FrmVinos
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
         Me.LblMensaje = New System.Windows.Forms.ToolStripStatusLabel
-        Me.Button11 = New System.Windows.Forms.Button
-        Me.Button12 = New System.Windows.Forms.Button
-        Me.TabPage4 = New System.Windows.Forms.TabPage
+        Me.ListBox3 = New System.Windows.Forms.ListBox
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -104,10 +104,10 @@ Partial Class FrmVinos
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.ListBox3)
         Me.TabPage1.Controls.Add(Me.Button12)
         Me.TabPage1.Controls.Add(Me.Button11)
         Me.TabPage1.Controls.Add(Me.Label11)
-        Me.TabPage1.Controls.Add(Me.ListBox3)
         Me.TabPage1.Controls.Add(Me.GroupBox3)
         Me.TabPage1.Controls.Add(Me.ComboBox2)
         Me.TabPage1.Controls.Add(Me.Label6)
@@ -129,6 +129,24 @@ Partial Class FrmVinos
         Me.TabPage1.Text = "Información General"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
+        'Button12
+        '
+        Me.Button12.Location = New System.Drawing.Point(396, 186)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(62, 23)
+        Me.Button12.TabIndex = 33
+        Me.Button12.Text = "Quitar"
+        Me.Button12.UseVisualStyleBackColor = True
+        '
+        'Button11
+        '
+        Me.Button11.Location = New System.Drawing.Point(328, 186)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(62, 23)
+        Me.Button11.TabIndex = 32
+        Me.Button11.Text = "Añadir"
+        Me.Button11.UseVisualStyleBackColor = True
+        '
         'Label11
         '
         Me.Label11.AutoSize = True
@@ -137,15 +155,6 @@ Partial Class FrmVinos
         Me.Label11.Size = New System.Drawing.Size(37, 13)
         Me.Label11.TabIndex = 31
         Me.Label11.Text = "Cepas"
-        '
-        'ListBox3
-        '
-        Me.ListBox3.FormattingEnabled = True
-        Me.ListBox3.Items.AddRange(New Object() {"Cabernet Sauvignon", "Merlot"})
-        Me.ListBox3.Location = New System.Drawing.Point(325, 78)
-        Me.ListBox3.Name = "ListBox3"
-        Me.ListBox3.Size = New System.Drawing.Size(120, 95)
-        Me.ListBox3.TabIndex = 30
         '
         'GroupBox3
         '
@@ -494,6 +503,15 @@ Partial Class FrmVinos
         Me.TabPage3.Text = "Crianza"
         Me.TabPage3.UseVisualStyleBackColor = True
         '
+        'TabPage4
+        '
+        Me.TabPage4.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage4.Name = "TabPage4"
+        Me.TabPage4.Size = New System.Drawing.Size(793, 603)
+        Me.TabPage4.TabIndex = 3
+        Me.TabPage4.Text = "Embotellamiento"
+        Me.TabPage4.UseVisualStyleBackColor = True
+        '
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(104, 427)
@@ -581,32 +599,14 @@ Partial Class FrmVinos
         Me.LblMensaje.Size = New System.Drawing.Size(172, 17)
         Me.LblMensaje.Text = "Objeto agregado exitosamente."
         '
-        'Button11
+        'ListBox3
         '
-        Me.Button11.Location = New System.Drawing.Point(328, 186)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(62, 23)
-        Me.Button11.TabIndex = 32
-        Me.Button11.Text = "Añadir"
-        Me.Button11.UseVisualStyleBackColor = True
-        '
-        'Button12
-        '
-        Me.Button12.Location = New System.Drawing.Point(396, 186)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(62, 23)
-        Me.Button12.TabIndex = 33
-        Me.Button12.Text = "Quitar"
-        Me.Button12.UseVisualStyleBackColor = True
-        '
-        'TabPage4
-        '
-        Me.TabPage4.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Size = New System.Drawing.Size(793, 603)
-        Me.TabPage4.TabIndex = 3
-        Me.TabPage4.Text = "Embotellamiento"
-        Me.TabPage4.UseVisualStyleBackColor = True
+        Me.ListBox3.FormattingEnabled = True
+        Me.ListBox3.Items.AddRange(New Object() {"Merlot", "Cabernet Sauvignon", "Malbec", "Pinot Noir", "Sangiovese"})
+        Me.ListBox3.Location = New System.Drawing.Point(310, 86)
+        Me.ListBox3.Name = "ListBox3"
+        Me.ListBox3.Size = New System.Drawing.Size(159, 82)
+        Me.ListBox3.TabIndex = 40
         '
         'FrmVinos
         '
@@ -675,7 +675,6 @@ Partial Class FrmVinos
     Friend WithEvents ToolStripButton4 As System.Windows.Forms.ToolStripButton
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents ListBox3 As System.Windows.Forms.ListBox
     Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
     Friend WithEvents LblMensaje As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
@@ -692,4 +691,5 @@ Partial Class FrmVinos
     Friend WithEvents Button12 As System.Windows.Forms.Button
     Friend WithEvents Button11 As System.Windows.Forms.Button
     Friend WithEvents TabPage4 As System.Windows.Forms.TabPage
+    Friend WithEvents ListBox3 As System.Windows.Forms.ListBox
 End Class

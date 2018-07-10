@@ -112,6 +112,12 @@
     <Compile Include="Vehículos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Viñedo.Designer.vb">
+      <DependentUpon>Viñedo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Viñedo.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Bienvenida.resx">

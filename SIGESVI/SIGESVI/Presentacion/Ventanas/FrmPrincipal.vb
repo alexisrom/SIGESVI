@@ -30,7 +30,8 @@
     End Sub
 
     Private Sub ProducciónToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProducciónToolStripMenuItem.Click
-
+        Dim frm = New FrmProduccion()
+        frm.ShowDialog()
     End Sub
 
     Private Sub ElaboraciónToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ElaboraciónToolStripMenuItem.Click
@@ -38,6 +39,12 @@
     End Sub
 
     Private Sub MostoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MostoToolStripMenuItem.Click
+        Dim frm = New FrmMosto()
+        frm.ShowDialog()
+    End Sub
 
+    Private Sub TransporteToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TransporteToolStripMenuItem.Click
+        Dim frm = New FrmVehiculos()
+        frm.ShowDialog()
     End Sub
 End Class

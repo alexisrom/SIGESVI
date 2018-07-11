@@ -8,4 +8,8 @@
 
         End If
     End Sub
+
+    Private Sub Txt_Ci_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txt_Ci.TextChanged
+
+    End Sub
 End Class

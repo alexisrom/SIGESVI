@@ -183,7 +183,7 @@ Partial Class FrmProduccion
         Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton2.Name = "ToolStripButton2"
         Me.ToolStripButton2.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton2.Text = "Actualizar"
+        Me.ToolStripButton2.Text = "Guardar"
         '
         'ToolStripButton3
         '

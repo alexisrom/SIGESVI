@@ -30,7 +30,6 @@ Partial Class FrmVinos
         Me.Button11 = New System.Windows.Forms.Button
         Me.Label11 = New System.Windows.Forms.Label
         Me.GroupBox3 = New System.Windows.Forms.GroupBox
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.ComboBox2 = New System.Windows.Forms.ComboBox
         Me.Label6 = New System.Windows.Forms.Label
         Me.TextBox4 = New System.Windows.Forms.TextBox
@@ -72,22 +71,23 @@ Partial Class FrmVinos
         Me.Button3 = New System.Windows.Forms.Button
         Me.ListBox1 = New System.Windows.Forms.ListBox
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
+        Me.LblMensaje = New System.Windows.Forms.ToolStripStatusLabel
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton
-        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
-        Me.LblMensaje = New System.Windows.Forms.ToolStripStatusLabel
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -173,14 +173,6 @@ Partial Class FrmVinos
         Me.GroupBox3.Size = New System.Drawing.Size(139, 175)
         Me.GroupBox3.TabIndex = 29
         Me.GroupBox3.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(6, 13)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(125, 153)
-        Me.PictureBox1.TabIndex = 20
-        Me.PictureBox1.TabStop = False
         '
         'ComboBox2
         '
@@ -557,6 +549,21 @@ Partial Class FrmVinos
         Me.ToolStrip1.TabIndex = 15
         Me.ToolStrip1.Text = "ToolStrip1"
         '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LblMensaje})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 683)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(877, 22)
+        Me.StatusStrip1.TabIndex = 16
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'LblMensaje
+        '
+        Me.LblMensaje.Name = "LblMensaje"
+        Me.LblMensaje.Size = New System.Drawing.Size(172, 17)
+        Me.LblMensaje.Text = "Objeto agregado exitosamente."
+        '
         'ToolStripButton1
         '
         Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
@@ -573,7 +580,7 @@ Partial Class FrmVinos
         Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton2.Name = "ToolStripButton2"
         Me.ToolStripButton2.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton2.Text = "Actualizar"
+        Me.ToolStripButton2.Text = "Guardar"
         '
         'ToolStripButton3
         '
@@ -593,20 +600,13 @@ Partial Class FrmVinos
         Me.ToolStripButton4.Size = New System.Drawing.Size(23, 22)
         Me.ToolStripButton4.Text = "Limpiar"
         '
-        'StatusStrip1
+        'PictureBox1
         '
-        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LblMensaje})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 683)
-        Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(877, 22)
-        Me.StatusStrip1.TabIndex = 16
-        Me.StatusStrip1.Text = "StatusStrip1"
-        '
-        'LblMensaje
-        '
-        Me.LblMensaje.Name = "LblMensaje"
-        Me.LblMensaje.Size = New System.Drawing.Size(172, 17)
-        Me.LblMensaje.Text = "Objeto agregado exitosamente."
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 13)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(125, 153)
+        Me.PictureBox1.TabIndex = 20
+        Me.PictureBox1.TabStop = False
         '
         'FrmVinos
         '
@@ -622,7 +622,6 @@ Partial Class FrmVinos
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
@@ -633,6 +632,7 @@ Partial Class FrmVinos
         Me.ToolStrip1.PerformLayout()
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

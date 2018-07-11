@@ -49,11 +49,11 @@ Partial Class FrmFuncionarios
         Me.Btn_AgregarTel = New System.Windows.Forms.Button
         Me.Btn_Quitar = New System.Windows.Forms.Button
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip
-        Me.Label1 = New System.Windows.Forms.Label
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton
+        Me.Label1 = New System.Windows.Forms.Label
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -157,7 +157,7 @@ Partial Class FrmFuncionarios
         Me.lblDireccion.Name = "lblDireccion"
         Me.lblDireccion.Size = New System.Drawing.Size(52, 13)
         Me.lblDireccion.TabIndex = 5
-        Me.lblDireccion.Text = "Direccion"
+        Me.lblDireccion.Text = "Dirección"
         '
         'lbltelefono
         '
@@ -189,7 +189,7 @@ Partial Class FrmFuncionarios
         'Label_cedula
         '
         Me.Label_cedula.AutoSize = True
-        Me.Label_cedula.Location = New System.Drawing.Point(51, 44)
+        Me.Label_cedula.Location = New System.Drawing.Point(47, 44)
         Me.Label_cedula.Name = "Label_cedula"
         Me.Label_cedula.Size = New System.Drawing.Size(40, 13)
         Me.Label_cedula.TabIndex = 1
@@ -280,15 +280,6 @@ Partial Class FrmFuncionarios
         Me.ToolStrip1.TabIndex = 27
         Me.ToolStrip1.Text = "ToolStrip1"
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(105, 426)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(258, 13)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Sueldo Neto, Sueldo Liquido, Descuenctos, Sucursal"
-        '
         'ToolStripButton1
         '
         Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
@@ -324,6 +315,15 @@ Partial Class FrmFuncionarios
         Me.ToolStripButton4.Name = "ToolStripButton4"
         Me.ToolStripButton4.Size = New System.Drawing.Size(23, 22)
         Me.ToolStripButton4.Text = "Limpiar"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(105, 426)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(258, 13)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "Sueldo Neto, Sueldo Liquido, Descuenctos, Sucursal"
         '
         'PictureBox1
         '

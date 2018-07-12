@@ -22,7 +22,6 @@ Partial Class frm_Login
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_Login))
         Me.lbl_Info = New System.Windows.Forms.Label
         Me.lbl_LoginContraseña = New System.Windows.Forms.Label
         Me.lbl_LoginUsuario = New System.Windows.Forms.Label
@@ -79,7 +78,6 @@ Partial Class frm_Login
         '
         'Pct_LogoEmpresa
         '
-        Me.Pct_LogoEmpresa.Image = CType(resources.GetObject("Pct_LogoEmpresa.Image"), System.Drawing.Image)
         Me.Pct_LogoEmpresa.Location = New System.Drawing.Point(421, 409)
         Me.Pct_LogoEmpresa.Name = "Pct_LogoEmpresa"
         Me.Pct_LogoEmpresa.Size = New System.Drawing.Size(60, 50)

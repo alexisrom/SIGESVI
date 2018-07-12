@@ -1,12 +1,13 @@
 ﻿Public Class FrmClientes
    Private Sub Btn_AgregarTel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_AñadirTel.Click
+
         If vacio(Txt_Telefono) Then
             Errortelefono.SetError(Txt_Telefono, "pone un telefono messi")
         End If
 
         If Not vacio(Txt_Telefono) Then
             If solonumeros(Txt_Telefono) Then
-                LblTelefonos.Items.Add(Txt_Telefono.Text)
+                Lbl_Telefonos.Items.Add(Txt_Telefono.Text)
                 Errortelefono.Clear()
                 Txt_Telefono.Clear()
             Else
@@ -22,29 +23,29 @@
     End Sub
 
     Private Sub Btn_Quitar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Quitartel.Click
-        If Not vaciolistbox(LblTelefonos) Then
-            LblTelefonos.Items.RemoveAt(LblTelefonos.SelectedIndex)
+        If Not vaciolistbox(Lbl_Telefonos) Then
+            Lbl_Telefonos.Items.RemoveAt(Lbl_Telefonos.SelectedIndex)
         End If
 
     End Sub
 
     Private Sub ToolStripButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton1.Click
 
-       
-        If vaciolistbox(LblTelefonos) Then
+
+        If vaciolistbox(Lbl_Telefonos) Then
             Errortelefono.SetError(Txt_Telefono, "Tiene que igresar almenos un telefono")
         Else
-            If Not vaciolistbox(LblTelefonos) Then
+            If Not vaciolistbox(Lbl_Telefonos) Then
                 Errortelefono.Clear()
             End If
         End If
 
 
 
-        If vacio(Txt_nombre) Then
-            errordenombre.SetError(Txt_nombre, "ingrese un nombre")
-        ElseIf Not sololetras(Txt_nombre) Then
-            errordenombre.SetError(Txt_nombre, "ingrese un nombre valido")
+        If vacio(Txt_Nombre) Then
+            errordenombre.SetError(Txt_Nombre, "ingrese un nombre")
+        ElseIf Not sololetras(Txt_Nombre) Then
+            errordenombre.SetError(Txt_Nombre, "ingrese un nombre valido")
         Else
             errordenombre.Clear()
         End If
@@ -59,7 +60,7 @@
             errordeapellido.Clear()
         End If
 
-       
+
 
 
 
@@ -75,8 +76,8 @@
         If Not vacio(Txt_Direccion) Then
             errordedireccion.Clear()
         End If
-        If Not sololetras(Txt_nombre) Then
-            errordenombre.SetError(Txt_nombre, "ingrese un nombre Valido")
+        If Not sololetras(Txt_Nombre) Then
+            errordenombre.SetError(Txt_Nombre, "ingrese un nombre Valido")
         End If
 
         'If Not cedulavalida(Txt_Ci) Then
@@ -96,8 +97,8 @@
     End Sub
 
     Private Sub Txt_Ci_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txt_Ci.TextChanged
-        If Not sololetras(Txt_nombre) Then
-            errordecedula.SetError(Txt_nombre, "ingrese un nombre valido")
+        If Not sololetras(Txt_Nombre) Then
+            errordecedula.SetError(Txt_Nombre, "ingrese un nombre valido")
         End If
     End Sub
 
@@ -110,6 +111,14 @@
     End Sub
 
     Private Sub Telefonos1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub GroupBox1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox1.Enter
+
+    End Sub
+
+    Private Sub Txt_Nombre_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txt_Nombre.TextChanged
 
     End Sub
 End Class

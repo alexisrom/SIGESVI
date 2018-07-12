@@ -71,7 +71,7 @@ Partial Class frm_Bienvenida
         '
         Me.lbl_Ingreso.AutoSize = True
         Me.lbl_Ingreso.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_Ingreso.Location = New System.Drawing.Point(184, 322)
+        Me.lbl_Ingreso.Location = New System.Drawing.Point(197, 337)
         Me.lbl_Ingreso.Name = "lbl_Ingreso"
         Me.lbl_Ingreso.Size = New System.Drawing.Size(100, 19)
         Me.lbl_Ingreso.TabIndex = 3
@@ -80,7 +80,7 @@ Partial Class frm_Bienvenida
         'btn_IngresarAlSistema
         '
         Me.btn_IngresarAlSistema.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_IngresarAlSistema.Location = New System.Drawing.Point(37, 360)
+        Me.btn_IngresarAlSistema.Location = New System.Drawing.Point(45, 360)
         Me.btn_IngresarAlSistema.Name = "btn_IngresarAlSistema"
         Me.btn_IngresarAlSistema.Size = New System.Drawing.Size(130, 52)
         Me.btn_IngresarAlSistema.TabIndex = 4
@@ -90,9 +90,9 @@ Partial Class frm_Bienvenida
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(183, 193)
+        Me.PictureBox1.Location = New System.Drawing.Point(173, 193)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(114, 92)
+        Me.PictureBox1.Size = New System.Drawing.Size(141, 125)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False

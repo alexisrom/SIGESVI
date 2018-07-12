@@ -22,6 +22,7 @@ Partial Class FrmFuncionarios
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmFuncionarios))
         Me.Lbl_IDBusq = New System.Windows.Forms.Label
         Me.Txt_Busqueda = New System.Windows.Forms.TextBox
@@ -46,8 +47,8 @@ Partial Class FrmFuncionarios
         Me.Txt_Direccion = New System.Windows.Forms.TextBox
         Me.Txt_Telefono = New System.Windows.Forms.TextBox
         Me.LblTelefonos = New System.Windows.Forms.ListBox
-        Me.Btn_AgregarTel = New System.Windows.Forms.Button
-        Me.Btn_Quitar = New System.Windows.Forms.Button
+        Me.Btn_AñadirTel = New System.Windows.Forms.Button
+        Me.Btn_QuitarTel = New System.Windows.Forms.Button
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton
@@ -55,11 +56,21 @@ Partial Class FrmFuncionarios
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton
         Me.Label1 = New System.Windows.Forms.Label
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
+        Me.errordedireccion = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.errordeapellido = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.errordenombre = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.errordecedula = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.Errortelefono = New System.Windows.Forms.ErrorProvider(Me.components)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.errordedireccion, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.errordeapellido, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.errordenombre, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.errordecedula, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Errortelefono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Lbl_IDBusq
@@ -203,11 +214,11 @@ Partial Class FrmFuncionarios
         Me.FlowLayoutPanel2.Controls.Add(Me.Txt_Direccion)
         Me.FlowLayoutPanel2.Controls.Add(Me.Txt_Telefono)
         Me.FlowLayoutPanel2.Controls.Add(Me.LblTelefonos)
-        Me.FlowLayoutPanel2.Controls.Add(Me.Btn_AgregarTel)
-        Me.FlowLayoutPanel2.Controls.Add(Me.Btn_Quitar)
+        Me.FlowLayoutPanel2.Controls.Add(Me.Btn_AñadirTel)
+        Me.FlowLayoutPanel2.Controls.Add(Me.Btn_QuitarTel)
         Me.FlowLayoutPanel2.Location = New System.Drawing.Point(106, 41)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(180, 222)
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(205, 222)
         Me.FlowLayoutPanel2.TabIndex = 0
         '
         'Txt_Ci
@@ -253,23 +264,23 @@ Partial Class FrmFuncionarios
         Me.LblTelefonos.Size = New System.Drawing.Size(173, 56)
         Me.LblTelefonos.TabIndex = 6
         '
-        'Btn_AgregarTel
+        'Btn_AñadirTel
         '
-        Me.Btn_AgregarTel.Location = New System.Drawing.Point(3, 195)
-        Me.Btn_AgregarTel.Name = "Btn_AgregarTel"
-        Me.Btn_AgregarTel.Size = New System.Drawing.Size(75, 23)
-        Me.Btn_AgregarTel.TabIndex = 8
-        Me.Btn_AgregarTel.Text = "Agregar"
-        Me.Btn_AgregarTel.UseVisualStyleBackColor = True
+        Me.Btn_AñadirTel.Location = New System.Drawing.Point(3, 195)
+        Me.Btn_AñadirTel.Name = "Btn_AñadirTel"
+        Me.Btn_AñadirTel.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_AñadirTel.TabIndex = 8
+        Me.Btn_AñadirTel.Text = "Añadir Tel"
+        Me.Btn_AñadirTel.UseVisualStyleBackColor = True
         '
-        'Btn_Quitar
+        'Btn_QuitarTel
         '
-        Me.Btn_Quitar.Location = New System.Drawing.Point(84, 195)
-        Me.Btn_Quitar.Name = "Btn_Quitar"
-        Me.Btn_Quitar.Size = New System.Drawing.Size(75, 23)
-        Me.Btn_Quitar.TabIndex = 7
-        Me.Btn_Quitar.Text = "Quitar"
-        Me.Btn_Quitar.UseVisualStyleBackColor = True
+        Me.Btn_QuitarTel.Location = New System.Drawing.Point(84, 195)
+        Me.Btn_QuitarTel.Name = "Btn_QuitarTel"
+        Me.Btn_QuitarTel.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_QuitarTel.TabIndex = 7
+        Me.Btn_QuitarTel.Text = "Quitar Tel"
+        Me.Btn_QuitarTel.UseVisualStyleBackColor = True
         '
         'ToolStrip1
         '
@@ -335,6 +346,26 @@ Partial Class FrmFuncionarios
         Me.PictureBox1.TabIndex = 26
         Me.PictureBox1.TabStop = False
         '
+        'errordedireccion
+        '
+        Me.errordedireccion.ContainerControl = Me
+        '
+        'errordeapellido
+        '
+        Me.errordeapellido.ContainerControl = Me
+        '
+        'errordenombre
+        '
+        Me.errordenombre.ContainerControl = Me
+        '
+        'errordecedula
+        '
+        Me.errordecedula.ContainerControl = Me
+        '
+        'Errortelefono
+        '
+        Me.Errortelefono.ContainerControl = Me
+        '
         'FrmFuncionarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -357,6 +388,11 @@ Partial Class FrmFuncionarios
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.errordedireccion, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.errordeapellido, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.errordenombre, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.errordecedula, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Errortelefono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -385,12 +421,17 @@ Partial Class FrmFuncionarios
     Friend WithEvents Txt_Direccion As System.Windows.Forms.TextBox
     Friend WithEvents Txt_Telefono As System.Windows.Forms.TextBox
     Friend WithEvents LblTelefonos As System.Windows.Forms.ListBox
-    Friend WithEvents Btn_AgregarTel As System.Windows.Forms.Button
-    Friend WithEvents Btn_Quitar As System.Windows.Forms.Button
+    Friend WithEvents Btn_AñadirTel As System.Windows.Forms.Button
+    Friend WithEvents Btn_QuitarTel As System.Windows.Forms.Button
     Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
     Friend WithEvents ToolStripButton1 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButton2 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButton3 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButton4 As System.Windows.Forms.ToolStripButton
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents errordedireccion As System.Windows.Forms.ErrorProvider
+    Friend WithEvents errordeapellido As System.Windows.Forms.ErrorProvider
+    Friend WithEvents errordenombre As System.Windows.Forms.ErrorProvider
+    Friend WithEvents errordecedula As System.Windows.Forms.ErrorProvider
+    Friend WithEvents Errortelefono As System.Windows.Forms.ErrorProvider
 End Class

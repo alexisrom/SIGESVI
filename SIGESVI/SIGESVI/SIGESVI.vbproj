@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{049426B8-E623-47ED-804C-342C59C90CF2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -158,12 +158,6 @@
     <Compile Include="Presentacion\Ventanas\FrmVinos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\Login.Designer.vb">
-      <DependentUpon>FrmLogin.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmLogin.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -197,11 +191,20 @@
     <Compile Include="Presentacion\Ventanas\FrmVinedos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\login2.Designer.vb">
+      <DependentUpon>login2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\login2.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmLogin.resx">
-      <DependentUpon>FrmLogin.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ventanas\FrmTipoCepas.resx">
       <DependentUpon>FrmTipoCepas.vb</DependentUpon>
       <SubType>Designer</SubType>
@@ -246,10 +249,6 @@
       <DependentUpon>FrmVinos.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\Login.resx">
-      <DependentUpon>FrmLogin.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -259,6 +258,12 @@
     <EmbeddedResource Include="Presentacion\Ventanas\FrmSucursales.resx">
       <DependentUpon>FrmSucursales.vb</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\login2.resx">
+      <DependentUpon>login2.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -82,9 +82,9 @@ Partial Class FrmClientes
         Me.GroupBox1.Controls.Add(Me.Lbl_Cedula)
         Me.GroupBox1.Controls.Add(Me.FlowLayoutPanel2)
         Me.GroupBox1.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(41, 33)
+        Me.GroupBox1.Location = New System.Drawing.Point(43, 46)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(332, 328)
+        Me.GroupBox1.Size = New System.Drawing.Size(332, 312)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Información Personal"
@@ -150,7 +150,7 @@ Partial Class FrmClientes
         Me.FlowLayoutPanel2.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FlowLayoutPanel2.Location = New System.Drawing.Point(106, 41)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(220, 246)
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(220, 263)
         Me.FlowLayoutPanel2.TabIndex = 0
         '
         'Txt_Ci
@@ -224,7 +224,7 @@ Partial Class FrmClientes
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CI, Me.Nombre, Me.Apellido, Me.Telefono, Me.User, Me.Pass})
-        Me.DataGridView1.Location = New System.Drawing.Point(400, 76)
+        Me.DataGridView1.Location = New System.Drawing.Point(400, 97)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.Size = New System.Drawing.Size(644, 261)
@@ -270,7 +270,7 @@ Partial Class FrmClientes
         '
         Me.Lbl_IDBusq.AutoSize = True
         Me.Lbl_IDBusq.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_IDBusq.Location = New System.Drawing.Point(397, 30)
+        Me.Lbl_IDBusq.Location = New System.Drawing.Point(397, 46)
         Me.Lbl_IDBusq.Name = "Lbl_IDBusq"
         Me.Lbl_IDBusq.Size = New System.Drawing.Size(50, 17)
         Me.Lbl_IDBusq.TabIndex = 20
@@ -278,7 +278,7 @@ Partial Class FrmClientes
         '
         'Txt_Busqueda
         '
-        Me.Txt_Busqueda.Location = New System.Drawing.Point(400, 50)
+        Me.Txt_Busqueda.Location = New System.Drawing.Point(400, 66)
         Me.Txt_Busqueda.Name = "Txt_Busqueda"
         Me.Txt_Busqueda.Size = New System.Drawing.Size(159, 20)
         Me.Txt_Busqueda.TabIndex = 19
@@ -332,7 +332,7 @@ Partial Class FrmClientes
         '
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(567, 46)
+        Me.PictureBox1.Location = New System.Drawing.Point(565, 66)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(25, 25)
         Me.PictureBox1.TabIndex = 21
@@ -372,6 +372,7 @@ Partial Class FrmClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(1086, 407)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.Lbl_IDBusq)

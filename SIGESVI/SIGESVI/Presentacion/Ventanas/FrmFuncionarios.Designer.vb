@@ -50,27 +50,27 @@ Partial Class FrmFuncionarios
         Me.Btn_AñadirTel = New System.Windows.Forms.Button
         Me.Btn_QuitarTel = New System.Windows.Forms.Button
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip
-        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton
         Me.Label1 = New System.Windows.Forms.Label
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.errordedireccion = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.errordeapellido = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.errordenombre = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.errordecedula = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.Errortelefono = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton
+        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton
+        Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton
+        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.errordedireccion, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.errordeapellido, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.errordenombre, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.errordecedula, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Errortelefono, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Lbl_IDBusq
@@ -150,7 +150,7 @@ Partial Class FrmFuncionarios
         Me.GroupBox1.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(52, 37)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(311, 305)
+        Me.GroupBox1.Size = New System.Drawing.Size(330, 330)
         Me.GroupBox1.TabIndex = 22
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Información Personal"
@@ -167,7 +167,7 @@ Partial Class FrmFuncionarios
         '
         Me.lblDireccion.AutoSize = True
         Me.lblDireccion.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDireccion.Location = New System.Drawing.Point(34, 137)
+        Me.lblDireccion.Location = New System.Drawing.Point(37, 140)
         Me.lblDireccion.Name = "lblDireccion"
         Me.lblDireccion.Size = New System.Drawing.Size(69, 17)
         Me.lblDireccion.TabIndex = 5
@@ -187,7 +187,7 @@ Partial Class FrmFuncionarios
         '
         Me.lblApellido.AutoSize = True
         Me.lblApellido.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblApellido.Location = New System.Drawing.Point(40, 106)
+        Me.lblApellido.Location = New System.Drawing.Point(44, 109)
         Me.lblApellido.Name = "lblApellido"
         Me.lblApellido.Size = New System.Drawing.Size(60, 17)
         Me.lblApellido.TabIndex = 3
@@ -197,7 +197,7 @@ Partial Class FrmFuncionarios
         '
         Me.Label_Nombre.AutoSize = True
         Me.Label_Nombre.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label_Nombre.Location = New System.Drawing.Point(44, 78)
+        Me.Label_Nombre.Location = New System.Drawing.Point(45, 78)
         Me.Label_Nombre.Name = "Label_Nombre"
         Me.Label_Nombre.Size = New System.Drawing.Size(59, 17)
         Me.Label_Nombre.TabIndex = 2
@@ -207,7 +207,7 @@ Partial Class FrmFuncionarios
         '
         Me.Label_cedula.AutoSize = True
         Me.Label_cedula.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label_cedula.Location = New System.Drawing.Point(50, 44)
+        Me.Label_cedula.Location = New System.Drawing.Point(50, 47)
         Me.Label_cedula.Name = "Label_cedula"
         Me.Label_cedula.Size = New System.Drawing.Size(50, 17)
         Me.Label_cedula.TabIndex = 1
@@ -225,7 +225,7 @@ Partial Class FrmFuncionarios
         Me.FlowLayoutPanel2.Controls.Add(Me.Btn_QuitarTel)
         Me.FlowLayoutPanel2.Location = New System.Drawing.Point(106, 41)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(205, 258)
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(218, 258)
         Me.FlowLayoutPanel2.TabIndex = 0
         '
         'Txt_Ci
@@ -274,7 +274,7 @@ Partial Class FrmFuncionarios
         '
         'Btn_AñadirTel
         '
-        Me.Btn_AñadirTel.Font = New System.Drawing.Font("Cambria", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_AñadirTel.Font = New System.Drawing.Font("Cambria", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_AñadirTel.Location = New System.Drawing.Point(3, 219)
         Me.Btn_AñadirTel.Name = "Btn_AñadirTel"
         Me.Btn_AñadirTel.Size = New System.Drawing.Size(75, 23)
@@ -284,7 +284,7 @@ Partial Class FrmFuncionarios
         '
         'Btn_QuitarTel
         '
-        Me.Btn_QuitarTel.Font = New System.Drawing.Font("Cambria", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_QuitarTel.Font = New System.Drawing.Font("Cambria", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_QuitarTel.Location = New System.Drawing.Point(84, 219)
         Me.Btn_QuitarTel.Name = "Btn_QuitarTel"
         Me.Btn_QuitarTel.Size = New System.Drawing.Size(75, 23)
@@ -300,6 +300,35 @@ Partial Class FrmFuncionarios
         Me.ToolStrip1.Size = New System.Drawing.Size(1084, 25)
         Me.ToolStrip1.TabIndex = 27
         Me.ToolStrip1.Text = "ToolStrip1"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(105, 379)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(258, 13)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "Sueldo Neto, Sueldo Liquido, Descuenctos, Sucursal"
+        '
+        'errordedireccion
+        '
+        Me.errordedireccion.ContainerControl = Me
+        '
+        'errordeapellido
+        '
+        Me.errordeapellido.ContainerControl = Me
+        '
+        'errordenombre
+        '
+        Me.errordenombre.ContainerControl = Me
+        '
+        'errordecedula
+        '
+        Me.errordecedula.ContainerControl = Me
+        '
+        'Errortelefono
+        '
+        Me.Errortelefono.ContainerControl = Me
         '
         'ToolStripButton1
         '
@@ -337,15 +366,6 @@ Partial Class FrmFuncionarios
         Me.ToolStripButton4.Size = New System.Drawing.Size(23, 22)
         Me.ToolStripButton4.Text = "Limpiar"
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(105, 358)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(258, 13)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Sueldo Neto, Sueldo Liquido, Descuenctos, Sucursal"
-        '
         'PictureBox1
         '
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
@@ -356,32 +376,12 @@ Partial Class FrmFuncionarios
         Me.PictureBox1.TabIndex = 26
         Me.PictureBox1.TabStop = False
         '
-        'errordedireccion
-        '
-        Me.errordedireccion.ContainerControl = Me
-        '
-        'errordeapellido
-        '
-        Me.errordeapellido.ContainerControl = Me
-        '
-        'errordenombre
-        '
-        Me.errordenombre.ContainerControl = Me
-        '
-        'errordecedula
-        '
-        Me.errordecedula.ContainerControl = Me
-        '
-        'Errortelefono
-        '
-        Me.Errortelefono.ContainerControl = Me
-        '
         'FrmFuncionarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ClientSize = New System.Drawing.Size(1084, 397)
+        Me.ClientSize = New System.Drawing.Size(1084, 459)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.Lbl_IDBusq)
@@ -399,12 +399,12 @@ Partial Class FrmFuncionarios
         Me.FlowLayoutPanel2.PerformLayout()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.errordedireccion, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.errordeapellido, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.errordenombre, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.errordecedula, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Errortelefono, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

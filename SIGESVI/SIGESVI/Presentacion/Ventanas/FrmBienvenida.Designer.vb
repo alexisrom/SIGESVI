@@ -121,7 +121,7 @@ Partial Class frm_Bienvenida
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.Menu
+        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(484, 461)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lbl_Elaborado)

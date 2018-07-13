@@ -49,27 +49,27 @@ Partial Class FrmClientes
         Me.Lbl_IDBusq = New System.Windows.Forms.Label
         Me.Txt_Busqueda = New System.Windows.Forms.TextBox
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip
-        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.errordecedula = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.errordenombre = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.errordeapellido = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.errordedireccion = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.Errortelefono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.Lbl_Apellido = New System.Windows.Forms.Label
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton
+        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton
+        Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton
+        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.GroupBox1.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.errordecedula, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.errordenombre, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.errordeapellido, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.errordedireccion, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Errortelefono, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -200,7 +200,7 @@ Partial Class FrmClientes
         '
         'Btn_AñadirTel
         '
-        Me.Btn_AñadirTel.Font = New System.Drawing.Font("Cambria", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_AñadirTel.Font = New System.Drawing.Font("Cambria", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_AñadirTel.Location = New System.Drawing.Point(3, 219)
         Me.Btn_AñadirTel.Name = "Btn_AñadirTel"
         Me.Btn_AñadirTel.Size = New System.Drawing.Size(75, 23)
@@ -210,10 +210,10 @@ Partial Class FrmClientes
         '
         'Btn_Quitartel
         '
-        Me.Btn_Quitartel.Font = New System.Drawing.Font("Cambria", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Quitartel.Font = New System.Drawing.Font("Cambria", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_Quitartel.Location = New System.Drawing.Point(84, 219)
         Me.Btn_Quitartel.Name = "Btn_Quitartel"
-        Me.Btn_Quitartel.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_Quitartel.Size = New System.Drawing.Size(76, 23)
         Me.Btn_Quitartel.TabIndex = 7
         Me.Btn_Quitartel.Text = "Quitar Tel"
         Me.Btn_Quitartel.UseVisualStyleBackColor = True
@@ -292,6 +292,36 @@ Partial Class FrmClientes
         Me.ToolStrip1.TabIndex = 22
         Me.ToolStrip1.Text = "ToolStrip1"
         '
+        'errordecedula
+        '
+        Me.errordecedula.ContainerControl = Me
+        '
+        'errordenombre
+        '
+        Me.errordenombre.ContainerControl = Me
+        '
+        'errordeapellido
+        '
+        Me.errordeapellido.ContainerControl = Me
+        '
+        'errordedireccion
+        '
+        Me.errordedireccion.ContainerControl = Me
+        '
+        'Errortelefono
+        '
+        Me.Errortelefono.ContainerControl = Me
+        '
+        'Lbl_Apellido
+        '
+        Me.Lbl_Apellido.AutoSize = True
+        Me.Lbl_Apellido.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_Apellido.Location = New System.Drawing.Point(43, 109)
+        Me.Lbl_Apellido.Name = "Lbl_Apellido"
+        Me.Lbl_Apellido.Size = New System.Drawing.Size(60, 17)
+        Me.Lbl_Apellido.TabIndex = 6
+        Me.Lbl_Apellido.Text = "Apellido"
+        '
         'ToolStripButton1
         '
         Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
@@ -338,36 +368,6 @@ Partial Class FrmClientes
         Me.PictureBox1.TabIndex = 21
         Me.PictureBox1.TabStop = False
         '
-        'errordecedula
-        '
-        Me.errordecedula.ContainerControl = Me
-        '
-        'errordenombre
-        '
-        Me.errordenombre.ContainerControl = Me
-        '
-        'errordeapellido
-        '
-        Me.errordeapellido.ContainerControl = Me
-        '
-        'errordedireccion
-        '
-        Me.errordedireccion.ContainerControl = Me
-        '
-        'Errortelefono
-        '
-        Me.Errortelefono.ContainerControl = Me
-        '
-        'Lbl_Apellido
-        '
-        Me.Lbl_Apellido.AutoSize = True
-        Me.Lbl_Apellido.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_Apellido.Location = New System.Drawing.Point(43, 109)
-        Me.Lbl_Apellido.Name = "Lbl_Apellido"
-        Me.Lbl_Apellido.Size = New System.Drawing.Size(60, 17)
-        Me.Lbl_Apellido.TabIndex = 6
-        Me.Lbl_Apellido.Text = "Apellido"
-        '
         'FrmClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -389,12 +389,12 @@ Partial Class FrmClientes
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.errordecedula, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.errordenombre, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.errordeapellido, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.errordedireccion, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Errortelefono, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

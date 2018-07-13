@@ -23,57 +23,34 @@ Partial Class login2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.acceder = New System.Windows.Forms.Button
-        Me.txtpassw = New System.Windows.Forms.TextBox
-        Me.Txtuser = New System.Windows.Forms.TextBox
+        Me.Btn_IngresarLogin2 = New System.Windows.Forms.Button
+        Me.Txt_Passwd = New System.Windows.Forms.TextBox
         Me.erroruser = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.errorpassw = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.Txt_Usuario = New System.Windows.Forms.TextBox
+        Me.Lbl_Info = New System.Windows.Forms.Label
+        Me.Lbl_Contraseña = New System.Windows.Forms.Label
+        Me.Lbl_Usuario = New System.Windows.Forms.Label
         CType(Me.erroruser, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.errorpassw, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label2
+        'Btn_IngresarLogin2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(60, 123)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(61, 13)
-        Me.Label2.TabIndex = 9
-        Me.Label2.Text = "Contraseña"
+        Me.Btn_IngresarLogin2.Font = New System.Drawing.Font("Cambria", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_IngresarLogin2.Location = New System.Drawing.Point(93, 135)
+        Me.Btn_IngresarLogin2.Name = "Btn_IngresarLogin2"
+        Me.Btn_IngresarLogin2.Size = New System.Drawing.Size(133, 48)
+        Me.Btn_IngresarLogin2.TabIndex = 7
+        Me.Btn_IngresarLogin2.Text = "Ingresar Ahora"
+        Me.Btn_IngresarLogin2.UseVisualStyleBackColor = True
         '
-        'Label1
+        'Txt_Passwd
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(60, 85)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(43, 13)
-        Me.Label1.TabIndex = 8
-        Me.Label1.Text = "Usuario"
-        '
-        'acceder
-        '
-        Me.acceder.Location = New System.Drawing.Point(125, 160)
-        Me.acceder.Name = "acceder"
-        Me.acceder.Size = New System.Drawing.Size(75, 23)
-        Me.acceder.TabIndex = 7
-        Me.acceder.Text = "Entrar"
-        Me.acceder.UseVisualStyleBackColor = True
-        '
-        'txtpassw
-        '
-        Me.txtpassw.Location = New System.Drawing.Point(125, 116)
-        Me.txtpassw.Name = "txtpassw"
-        Me.txtpassw.Size = New System.Drawing.Size(100, 20)
-        Me.txtpassw.TabIndex = 6
-        '
-        'Txtuser
-        '
-        Me.Txtuser.Location = New System.Drawing.Point(125, 78)
-        Me.Txtuser.Name = "Txtuser"
-        Me.Txtuser.Size = New System.Drawing.Size(100, 20)
-        Me.Txtuser.TabIndex = 5
+        Me.Txt_Passwd.Location = New System.Drawing.Point(96, 99)
+        Me.Txt_Passwd.Name = "Txt_Passwd"
+        Me.Txt_Passwd.Size = New System.Drawing.Size(130, 20)
+        Me.Txt_Passwd.TabIndex = 6
         '
         'erroruser
         '
@@ -83,29 +60,69 @@ Partial Class login2
         '
         Me.errorpassw.ContainerControl = Me
         '
+        'Txt_Usuario
+        '
+        Me.Txt_Usuario.Location = New System.Drawing.Point(96, 60)
+        Me.Txt_Usuario.Name = "Txt_Usuario"
+        Me.Txt_Usuario.Size = New System.Drawing.Size(130, 20)
+        Me.Txt_Usuario.TabIndex = 5
+        '
+        'Lbl_Info
+        '
+        Me.Lbl_Info.AutoSize = True
+        Me.Lbl_Info.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_Info.Location = New System.Drawing.Point(24, 26)
+        Me.Lbl_Info.Name = "Lbl_Info"
+        Me.Lbl_Info.Size = New System.Drawing.Size(217, 17)
+        Me.Lbl_Info.TabIndex = 10
+        Me.Lbl_Info.Text = "A continuación ingrese sus datos: "
+        '
+        'Lbl_Contraseña
+        '
+        Me.Lbl_Contraseña.AutoSize = True
+        Me.Lbl_Contraseña.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_Contraseña.Location = New System.Drawing.Point(12, 99)
+        Me.Lbl_Contraseña.Name = "Lbl_Contraseña"
+        Me.Lbl_Contraseña.Size = New System.Drawing.Size(78, 17)
+        Me.Lbl_Contraseña.TabIndex = 9
+        Me.Lbl_Contraseña.Text = "Contraseña"
+        '
+        'Lbl_Usuario
+        '
+        Me.Lbl_Usuario.AutoSize = True
+        Me.Lbl_Usuario.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_Usuario.Location = New System.Drawing.Point(33, 60)
+        Me.Lbl_Usuario.Name = "Lbl_Usuario"
+        Me.Lbl_Usuario.Size = New System.Drawing.Size(57, 17)
+        Me.Lbl_Usuario.TabIndex = 8
+        Me.Lbl_Usuario.Text = "Usuario"
+        '
         'login2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 261)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.acceder)
-        Me.Controls.Add(Me.txtpassw)
-        Me.Controls.Add(Me.Txtuser)
+        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.ClientSize = New System.Drawing.Size(307, 195)
+        Me.Controls.Add(Me.Lbl_Info)
+        Me.Controls.Add(Me.Lbl_Contraseña)
+        Me.Controls.Add(Me.Lbl_Usuario)
+        Me.Controls.Add(Me.Btn_IngresarLogin2)
+        Me.Controls.Add(Me.Txt_Passwd)
+        Me.Controls.Add(Me.Txt_Usuario)
         Me.Name = "login2"
-        Me.Text = "login2"
+        Me.Text = "Login Cliente"
         CType(Me.erroruser, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.errorpassw, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents acceder As System.Windows.Forms.Button
-    Friend WithEvents txtpassw As System.Windows.Forms.TextBox
-    Friend WithEvents Txtuser As System.Windows.Forms.TextBox
+    Friend WithEvents Btn_IngresarLogin2 As System.Windows.Forms.Button
+    Friend WithEvents Txt_Passwd As System.Windows.Forms.TextBox
     Friend WithEvents erroruser As System.Windows.Forms.ErrorProvider
     Friend WithEvents errorpassw As System.Windows.Forms.ErrorProvider
+    Friend WithEvents Txt_Usuario As System.Windows.Forms.TextBox
+    Friend WithEvents Lbl_Info As System.Windows.Forms.Label
+    Friend WithEvents Lbl_Contraseña As System.Windows.Forms.Label
+    Friend WithEvents Lbl_Usuario As System.Windows.Forms.Label
 End Class

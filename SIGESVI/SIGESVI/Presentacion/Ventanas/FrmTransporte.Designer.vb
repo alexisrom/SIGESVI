@@ -80,6 +80,7 @@ Partial Class FrmTransporte
         Me.TabPage1.Controls.Add(Me.GroupBox3)
         Me.TabPage1.Controls.Add(Me.GroupBox2)
         Me.TabPage1.Controls.Add(Me.GroupBox1)
+        Me.TabPage1.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
@@ -103,7 +104,7 @@ Partial Class FrmTransporte
         '
         Me.DateTimePicker1.Location = New System.Drawing.Point(18, 52)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 25)
         Me.DateTimePicker1.TabIndex = 1
         '
         'Label5
@@ -111,7 +112,7 @@ Partial Class FrmTransporte
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(15, 36)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(40, 13)
+        Me.Label5.Size = New System.Drawing.Size(48, 17)
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "Fecha:"
         '
@@ -132,24 +133,25 @@ Partial Class FrmTransporte
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(21, 24)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(29, 13)
+        Me.Label4.Size = New System.Drawing.Size(43, 17)
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "Filtro"
         '
         'ListBox4
         '
         Me.ListBox4.FormattingEnabled = True
+        Me.ListBox4.ItemHeight = 17
         Me.ListBox4.Items.AddRange(New Object() {"Vehículo 1", "Vehículo 2"})
         Me.ListBox4.Location = New System.Drawing.Point(21, 74)
         Me.ListBox4.Name = "ListBox4"
-        Me.ListBox4.Size = New System.Drawing.Size(156, 186)
+        Me.ListBox4.Size = New System.Drawing.Size(156, 174)
         Me.ListBox4.TabIndex = 6
         '
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(21, 43)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(156, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(156, 25)
         Me.TextBox4.TabIndex = 7
         '
         'GroupBox3
@@ -169,7 +171,7 @@ Partial Class FrmTransporte
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(22, 24)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(29, 13)
+        Me.Label2.Size = New System.Drawing.Size(43, 17)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Filtro"
         '
@@ -177,16 +179,17 @@ Partial Class FrmTransporte
         '
         Me.TextBox2.Location = New System.Drawing.Point(22, 43)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(156, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(156, 25)
         Me.TextBox2.TabIndex = 4
         '
         'ListBox2
         '
         Me.ListBox2.FormattingEnabled = True
+        Me.ListBox2.ItemHeight = 17
         Me.ListBox2.Items.AddRange(New Object() {"Viñedo 1", "Viñedo 2", "Viñedo 3"})
         Me.ListBox2.Location = New System.Drawing.Point(22, 74)
         Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(156, 186)
+        Me.ListBox2.Size = New System.Drawing.Size(156, 174)
         Me.ListBox2.TabIndex = 3
         '
         'GroupBox2
@@ -206,7 +209,7 @@ Partial Class FrmTransporte
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(17, 31)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(29, 13)
+        Me.Label1.Size = New System.Drawing.Size(43, 17)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Filtro"
         '
@@ -214,16 +217,17 @@ Partial Class FrmTransporte
         '
         Me.TextBox1.Location = New System.Drawing.Point(17, 50)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(156, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(156, 25)
         Me.TextBox1.TabIndex = 1
         '
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 17
         Me.ListBox1.Items.AddRange(New Object() {"Viñedo 1", "Viñedo 2", "Viñedo 3"})
         Me.ListBox1.Location = New System.Drawing.Point(17, 81)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(156, 186)
+        Me.ListBox1.Size = New System.Drawing.Size(156, 174)
         Me.ListBox1.TabIndex = 0
         '
         'GroupBox1
@@ -243,24 +247,25 @@ Partial Class FrmTransporte
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(15, 31)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(29, 13)
+        Me.Label3.Size = New System.Drawing.Size(43, 17)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Filtro"
         '
         'ListBox3
         '
         Me.ListBox3.FormattingEnabled = True
+        Me.ListBox3.ItemHeight = 17
         Me.ListBox3.Items.AddRange(New Object() {"Producto 1", "Producto 2", "Producto 3"})
         Me.ListBox3.Location = New System.Drawing.Point(15, 81)
         Me.ListBox3.Name = "ListBox3"
-        Me.ListBox3.Size = New System.Drawing.Size(156, 186)
+        Me.ListBox3.Size = New System.Drawing.Size(156, 174)
         Me.ListBox3.TabIndex = 3
         '
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(15, 50)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(156, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(156, 25)
         Me.TextBox3.TabIndex = 4
         '
         'TabPage2
@@ -332,6 +337,7 @@ Partial Class FrmTransporte
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(1071, 708)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.TabControl1)

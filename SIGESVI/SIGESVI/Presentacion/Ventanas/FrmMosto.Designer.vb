@@ -51,7 +51,7 @@ Partial Class FrmMosto
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripButton4, Me.ToolStripButton5})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(846, 25)
+        Me.ToolStrip1.Size = New System.Drawing.Size(615, 25)
         Me.ToolStrip1.TabIndex = 16
         Me.ToolStrip1.Text = "Agregar"
         '
@@ -102,18 +102,20 @@ Partial Class FrmMosto
         '
         'Button12
         '
-        Me.Button12.Location = New System.Drawing.Point(465, 262)
+        Me.Button12.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button12.Location = New System.Drawing.Point(476, 249)
         Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(62, 23)
+        Me.Button12.Size = New System.Drawing.Size(62, 28)
         Me.Button12.TabIndex = 37
         Me.Button12.Text = "Quitar"
         Me.Button12.UseVisualStyleBackColor = True
         '
         'Button11
         '
-        Me.Button11.Location = New System.Drawing.Point(379, 262)
+        Me.Button11.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button11.Location = New System.Drawing.Point(379, 249)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(62, 23)
+        Me.Button11.Size = New System.Drawing.Size(62, 28)
         Me.Button11.TabIndex = 36
         Me.Button11.Text = "Añadir"
         Me.Button11.UseVisualStyleBackColor = True
@@ -121,9 +123,10 @@ Partial Class FrmMosto
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(376, 145)
+        Me.Label11.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(376, 95)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(37, 13)
+        Me.Label11.Size = New System.Drawing.Size(44, 17)
         Me.Label11.TabIndex = 35
         Me.Label11.Text = "Cepas"
         '
@@ -137,6 +140,7 @@ Partial Class FrmMosto
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(39, 95)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(233, 199)
@@ -149,15 +153,15 @@ Partial Class FrmMosto
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Location = New System.Drawing.Point(74, 157)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 25)
         Me.ComboBox2.TabIndex = 35
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(30, 160)
+        Me.Label6.Location = New System.Drawing.Point(18, 160)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(38, 13)
+        Me.Label6.Size = New System.Drawing.Size(50, 17)
         Me.Label6.TabIndex = 34
         Me.Label6.Text = "Origen"
         '
@@ -165,15 +169,15 @@ Partial Class FrmMosto
         '
         Me.TextBox4.Location = New System.Drawing.Point(74, 84)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(121, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(121, 25)
         Me.TextBox4.TabIndex = 33
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(30, 91)
+        Me.Label5.Location = New System.Drawing.Point(24, 87)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(37, 13)
+        Me.Label5.Size = New System.Drawing.Size(44, 17)
         Me.Label5.TabIndex = 32
         Me.Label5.Text = "Fecha"
         '
@@ -181,15 +185,15 @@ Partial Class FrmMosto
         '
         Me.TextBox1.Location = New System.Drawing.Point(74, 48)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(121, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(121, 25)
         Me.TextBox1.TabIndex = 31
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(24, 56)
+        Me.Label2.Location = New System.Drawing.Point(14, 51)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(44, 13)
+        Me.Label2.Size = New System.Drawing.Size(59, 17)
         Me.Label2.TabIndex = 30
         Me.Label2.Text = "Nombre"
         '
@@ -198,32 +202,35 @@ Partial Class FrmMosto
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(74, 120)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 25)
         Me.ComboBox1.TabIndex = 29
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(14, 126)
+        Me.Label1.Location = New System.Drawing.Point(14, 120)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(42, 13)
+        Me.Label1.Size = New System.Drawing.Size(54, 17)
         Me.Label1.TabIndex = 28
         Me.Label1.Text = "Calidad"
         '
         'ListBox1
         '
+        Me.ListBox1.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 17
         Me.ListBox1.Items.AddRange(New Object() {"Merlot", "Cabernet Sauvignon", "Malbec", "Pinot Noir", "Sangiovese"})
-        Me.ListBox1.Location = New System.Drawing.Point(379, 161)
+        Me.ListBox1.Location = New System.Drawing.Point(379, 117)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(159, 82)
+        Me.ListBox1.Size = New System.Drawing.Size(159, 123)
         Me.ListBox1.TabIndex = 39
         '
         'FrmMosto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(846, 588)
+        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.ClientSize = New System.Drawing.Size(615, 362)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button12)

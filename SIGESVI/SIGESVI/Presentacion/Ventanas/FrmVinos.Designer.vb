@@ -30,6 +30,7 @@ Partial Class FrmVinos
         Me.Button11 = New System.Windows.Forms.Button
         Me.Label11 = New System.Windows.Forms.Label
         Me.GroupBox3 = New System.Windows.Forms.GroupBox
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.ComboBox2 = New System.Windows.Forms.ComboBox
         Me.Label6 = New System.Windows.Forms.Label
         Me.TextBox4 = New System.Windows.Forms.TextBox
@@ -71,23 +72,22 @@ Partial Class FrmVinos
         Me.Button3 = New System.Windows.Forms.Button
         Me.ListBox1 = New System.Windows.Forms.ListBox
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip
-        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
-        Me.LblMensaje = New System.Windows.Forms.ToolStripStatusLabel
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
+        Me.LblMensaje = New System.Windows.Forms.ToolStripStatusLabel
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -121,6 +121,7 @@ Partial Class FrmVinos
         Me.TabPage1.Controls.Add(Me.Label2)
         Me.TabPage1.Controls.Add(Me.ComboBox1)
         Me.TabPage1.Controls.Add(Me.Label1)
+        Me.TabPage1.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
@@ -132,26 +133,27 @@ Partial Class FrmVinos
         'ListBox3
         '
         Me.ListBox3.FormattingEnabled = True
+        Me.ListBox3.ItemHeight = 17
         Me.ListBox3.Items.AddRange(New Object() {"Merlot", "Cabernet Sauvignon", "Malbec", "Pinot Noir", "Sangiovese"})
         Me.ListBox3.Location = New System.Drawing.Point(310, 86)
         Me.ListBox3.Name = "ListBox3"
-        Me.ListBox3.Size = New System.Drawing.Size(159, 82)
+        Me.ListBox3.Size = New System.Drawing.Size(159, 106)
         Me.ListBox3.TabIndex = 40
         '
         'Button12
         '
-        Me.Button12.Location = New System.Drawing.Point(396, 186)
+        Me.Button12.Location = New System.Drawing.Point(407, 195)
         Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(62, 23)
+        Me.Button12.Size = New System.Drawing.Size(62, 32)
         Me.Button12.TabIndex = 33
         Me.Button12.Text = "Quitar"
         Me.Button12.UseVisualStyleBackColor = True
         '
         'Button11
         '
-        Me.Button11.Location = New System.Drawing.Point(328, 186)
+        Me.Button11.Location = New System.Drawing.Point(310, 195)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(62, 23)
+        Me.Button11.Size = New System.Drawing.Size(62, 32)
         Me.Button11.TabIndex = 32
         Me.Button11.Text = "Añadir"
         Me.Button11.UseVisualStyleBackColor = True
@@ -161,7 +163,7 @@ Partial Class FrmVinos
         Me.Label11.AutoSize = True
         Me.Label11.Location = New System.Drawing.Point(325, 54)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(37, 13)
+        Me.Label11.Size = New System.Drawing.Size(44, 17)
         Me.Label11.TabIndex = 31
         Me.Label11.Text = "Cepas"
         '
@@ -174,12 +176,20 @@ Partial Class FrmVinos
         Me.GroupBox3.TabIndex = 29
         Me.GroupBox3.TabStop = False
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 13)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(125, 153)
+        Me.PictureBox1.TabIndex = 20
+        Me.PictureBox1.TabStop = False
+        '
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Location = New System.Drawing.Point(84, 152)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 25)
         Me.ComboBox2.TabIndex = 27
         '
         'Label6
@@ -187,7 +197,7 @@ Partial Class FrmVinos
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(33, 155)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(38, 13)
+        Me.Label6.Size = New System.Drawing.Size(50, 17)
         Me.Label6.TabIndex = 26
         Me.Label6.Text = "Origen"
         '
@@ -195,15 +205,15 @@ Partial Class FrmVinos
         '
         Me.TextBox4.Location = New System.Drawing.Point(84, 79)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(100, 25)
         Me.TextBox4.TabIndex = 25
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(33, 86)
+        Me.Label5.Location = New System.Drawing.Point(33, 82)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(38, 13)
+        Me.Label5.Size = New System.Drawing.Size(47, 17)
         Me.Label5.TabIndex = 24
         Me.Label5.Text = "Añada"
         '
@@ -220,15 +230,15 @@ Partial Class FrmVinos
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(30, 263)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(63, 13)
+        Me.Label4.Size = New System.Drawing.Size(83, 17)
         Me.Label4.TabIndex = 22
         Me.Label4.Text = "Descripción"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(581, 224)
+        Me.Button1.Location = New System.Drawing.Point(565, 224)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(62, 23)
+        Me.Button1.Size = New System.Drawing.Size(96, 27)
         Me.Button1.TabIndex = 19
         Me.Button1.Text = "Examinar"
         Me.Button1.UseVisualStyleBackColor = True
@@ -236,9 +246,9 @@ Partial Class FrmVinos
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(591, 27)
+        Me.Label3.Location = New System.Drawing.Point(594, 23)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(28, 13)
+        Me.Label3.Size = New System.Drawing.Size(36, 17)
         Me.Label3.TabIndex = 18
         Me.Label3.Text = "Foto"
         '
@@ -246,15 +256,15 @@ Partial Class FrmVinos
         '
         Me.TextBox1.Location = New System.Drawing.Point(84, 43)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(100, 25)
         Me.TextBox1.TabIndex = 17
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(27, 51)
+        Me.Label2.Location = New System.Drawing.Point(25, 46)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(44, 13)
+        Me.Label2.Size = New System.Drawing.Size(59, 17)
         Me.Label2.TabIndex = 16
         Me.Label2.Text = "Nombre"
         '
@@ -263,15 +273,15 @@ Partial Class FrmVinos
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(84, 115)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 25)
         Me.ComboBox1.TabIndex = 15
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(17, 121)
+        Me.Label1.Location = New System.Drawing.Point(16, 118)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(54, 13)
+        Me.Label1.Size = New System.Drawing.Size(67, 17)
         Me.Label1.TabIndex = 14
         Me.Label1.Text = "Categoría"
         '
@@ -284,6 +294,7 @@ Partial Class FrmVinos
         Me.TabPage2.Controls.Add(Me.Button5)
         Me.TabPage2.Controls.Add(Me.GroupBox1)
         Me.TabPage2.Controls.Add(Me.GroupBox2)
+        Me.TabPage2.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
@@ -294,27 +305,27 @@ Partial Class FrmVinos
         '
         'Button9
         '
-        Me.Button9.Location = New System.Drawing.Point(238, 177)
+        Me.Button9.Location = New System.Drawing.Point(248, 177)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(75, 23)
+        Me.Button9.Size = New System.Drawing.Size(85, 28)
         Me.Button9.TabIndex = 5
         Me.Button9.Text = "Limpiar"
         Me.Button9.UseVisualStyleBackColor = True
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(238, 143)
+        Me.Button8.Location = New System.Drawing.Point(248, 143)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(75, 23)
+        Me.Button8.Size = New System.Drawing.Size(85, 28)
         Me.Button8.TabIndex = 4
         Me.Button8.Text = "Eliminar"
         Me.Button8.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(238, 105)
+        Me.Button4.Location = New System.Drawing.Point(248, 110)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.Size = New System.Drawing.Size(85, 28)
         Me.Button4.TabIndex = 2
         Me.Button4.Text = "Modificar"
         Me.Button4.UseVisualStyleBackColor = True
@@ -340,7 +351,7 @@ Partial Class FrmVinos
         '
         Me.TextBox8.Location = New System.Drawing.Point(75, 72)
         Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(45, 20)
+        Me.TextBox8.Size = New System.Drawing.Size(45, 25)
         Me.TextBox8.TabIndex = 7
         '
         'ComboBox3
@@ -349,15 +360,15 @@ Partial Class FrmVinos
         Me.ComboBox3.Items.AddRange(New Object() {"g", "Kg", "L", "mL"})
         Me.ComboBox3.Location = New System.Drawing.Point(126, 72)
         Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(58, 21)
+        Me.ComboBox3.Size = New System.Drawing.Size(58, 25)
         Me.ComboBox3.TabIndex = 6
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(16, 80)
+        Me.Label7.Location = New System.Drawing.Point(6, 75)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(49, 13)
+        Me.Label7.Size = New System.Drawing.Size(63, 17)
         Me.Label7.TabIndex = 5
         Me.Label7.Text = "Cantidad"
         '
@@ -374,23 +385,23 @@ Partial Class FrmVinos
         '
         Me.TextBox2.Location = New System.Drawing.Point(19, 42)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(101, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(101, 25)
         Me.TextBox2.TabIndex = 3
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(109, 117)
+        Me.Button6.Location = New System.Drawing.Point(99, 112)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.Size = New System.Drawing.Size(85, 28)
         Me.Button6.TabIndex = 2
         Me.Button6.Text = "Quitar"
         Me.Button6.UseVisualStyleBackColor = True
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(19, 117)
+        Me.Button7.Location = New System.Drawing.Point(9, 112)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(75, 23)
+        Me.Button7.Size = New System.Drawing.Size(85, 28)
         Me.Button7.TabIndex = 1
         Me.Button7.Text = "Añadir"
         Me.Button7.UseVisualStyleBackColor = True
@@ -398,17 +409,18 @@ Partial Class FrmVinos
         'ListBox4
         '
         Me.ListBox4.FormattingEnabled = True
+        Me.ListBox4.ItemHeight = 17
         Me.ListBox4.Items.AddRange(New Object() {"Un ingrediente - 5 L", "Otro ingrediente - 30kg"})
         Me.ListBox4.Location = New System.Drawing.Point(202, 31)
         Me.ListBox4.Name = "ListBox4"
-        Me.ListBox4.Size = New System.Drawing.Size(147, 134)
+        Me.ListBox4.Size = New System.Drawing.Size(180, 123)
         Me.ListBox4.TabIndex = 0
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(238, 69)
+        Me.Button5.Location = New System.Drawing.Point(248, 76)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.Size = New System.Drawing.Size(85, 28)
         Me.Button5.TabIndex = 1
         Me.Button5.Text = "Agregar"
         Me.Button5.UseVisualStyleBackColor = True
@@ -421,58 +433,58 @@ Partial Class FrmVinos
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.TextBox7)
         Me.GroupBox1.Controls.Add(Me.Label10)
-        Me.GroupBox1.Location = New System.Drawing.Point(23, 59)
+        Me.GroupBox1.Location = New System.Drawing.Point(25, 59)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(209, 229)
+        Me.GroupBox1.Size = New System.Drawing.Size(217, 229)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Información General"
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(79, 56)
+        Me.TextBox5.Location = New System.Drawing.Point(79, 65)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox5.Size = New System.Drawing.Size(100, 25)
         Me.TextBox5.TabIndex = 5
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(10, 56)
+        Me.Label8.Location = New System.Drawing.Point(-3, 68)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(63, 13)
+        Me.Label8.Size = New System.Drawing.Size(83, 17)
         Me.Label8.TabIndex = 4
         Me.Label8.Text = "Descripción"
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(79, 82)
+        Me.TextBox6.Location = New System.Drawing.Point(79, 96)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox6.Size = New System.Drawing.Size(100, 25)
         Me.TextBox6.TabIndex = 3
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(10, 89)
+        Me.Label9.Location = New System.Drawing.Point(8, 99)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(50, 13)
+        Me.Label9.Size = New System.Drawing.Size(66, 17)
         Me.Label9.TabIndex = 2
         Me.Label9.Text = "Duración"
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(79, 30)
+        Me.TextBox7.Location = New System.Drawing.Point(79, 34)
         Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox7.Size = New System.Drawing.Size(100, 25)
         Me.TextBox7.TabIndex = 1
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(7, 30)
+        Me.Label10.Location = New System.Drawing.Point(14, 37)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(44, 13)
+        Me.Label10.Size = New System.Drawing.Size(59, 17)
         Me.Label10.TabIndex = 0
         Me.Label10.Text = "Nombre"
         '
@@ -489,10 +501,11 @@ Partial Class FrmVinos
         'ListBox2
         '
         Me.ListBox2.FormattingEnabled = True
+        Me.ListBox2.ItemHeight = 17
         Me.ListBox2.Items.AddRange(New Object() {"01 - Primer etapa", "02 - Segunda etapa"})
         Me.ListBox2.Location = New System.Drawing.Point(19, 41)
         Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(160, 368)
+        Me.ListBox2.Size = New System.Drawing.Size(160, 361)
         Me.ListBox2.TabIndex = 0
         '
         'TabPage3
@@ -549,21 +562,6 @@ Partial Class FrmVinos
         Me.ToolStrip1.TabIndex = 15
         Me.ToolStrip1.Text = "ToolStrip1"
         '
-        'StatusStrip1
-        '
-        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LblMensaje})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 683)
-        Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(877, 22)
-        Me.StatusStrip1.TabIndex = 16
-        Me.StatusStrip1.Text = "StatusStrip1"
-        '
-        'LblMensaje
-        '
-        Me.LblMensaje.Name = "LblMensaje"
-        Me.LblMensaje.Size = New System.Drawing.Size(172, 17)
-        Me.LblMensaje.Text = "Objeto agregado exitosamente."
-        '
         'ToolStripButton1
         '
         Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
@@ -600,18 +598,26 @@ Partial Class FrmVinos
         Me.ToolStripButton4.Size = New System.Drawing.Size(23, 22)
         Me.ToolStripButton4.Text = "Limpiar"
         '
-        'PictureBox1
+        'StatusStrip1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(6, 13)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(125, 153)
-        Me.PictureBox1.TabIndex = 20
-        Me.PictureBox1.TabStop = False
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LblMensaje})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 683)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(877, 22)
+        Me.StatusStrip1.TabIndex = 16
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'LblMensaje
+        '
+        Me.LblMensaje.Name = "LblMensaje"
+        Me.LblMensaje.Size = New System.Drawing.Size(172, 17)
+        Me.LblMensaje.Text = "Objeto agregado exitosamente."
         '
         'FrmVinos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(877, 705)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.ToolStrip1)
@@ -622,6 +628,7 @@ Partial Class FrmVinos
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
@@ -632,7 +639,6 @@ Partial Class FrmVinos
         Me.ToolStrip1.PerformLayout()
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

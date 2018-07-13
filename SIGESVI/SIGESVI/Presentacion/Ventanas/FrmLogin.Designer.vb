@@ -23,9 +23,9 @@ Partial Class FrmLogin
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
-        Me.Txtuser = New System.Windows.Forms.TextBox
-        Me.txtpassw = New System.Windows.Forms.TextBox
-        Me.acceder = New System.Windows.Forms.Button
+        Me.Txt_Usuario = New System.Windows.Forms.TextBox
+        Me.Txt_Passwd = New System.Windows.Forms.TextBox
+        Me.Btn_IngresarLogin1 = New System.Windows.Forms.Button
         Me.Lbl_Usuario = New System.Windows.Forms.Label
         Me.Lbl_Contraseña = New System.Windows.Forms.Label
         Me.erroruser = New System.Windows.Forms.ErrorProvider(Me.components)
@@ -35,29 +35,29 @@ Partial Class FrmLogin
         CType(Me.errorpassw, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Txtuser
+        'Txt_Usuario
         '
-        Me.Txtuser.Location = New System.Drawing.Point(96, 60)
-        Me.Txtuser.Name = "Txtuser"
-        Me.Txtuser.Size = New System.Drawing.Size(130, 20)
-        Me.Txtuser.TabIndex = 0
+        Me.Txt_Usuario.Location = New System.Drawing.Point(96, 60)
+        Me.Txt_Usuario.Name = "Txt_Usuario"
+        Me.Txt_Usuario.Size = New System.Drawing.Size(130, 20)
+        Me.Txt_Usuario.TabIndex = 0
         '
-        'txtpassw
+        'Txt_Passwd
         '
-        Me.txtpassw.Location = New System.Drawing.Point(96, 99)
-        Me.txtpassw.Name = "txtpassw"
-        Me.txtpassw.Size = New System.Drawing.Size(130, 20)
-        Me.txtpassw.TabIndex = 1
+        Me.Txt_Passwd.Location = New System.Drawing.Point(96, 99)
+        Me.Txt_Passwd.Name = "Txt_Passwd"
+        Me.Txt_Passwd.Size = New System.Drawing.Size(130, 20)
+        Me.Txt_Passwd.TabIndex = 1
         '
-        'acceder
+        'Btn_IngresarLogin1
         '
-        Me.acceder.Font = New System.Drawing.Font("Cambria", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.acceder.Location = New System.Drawing.Point(93, 135)
-        Me.acceder.Name = "acceder"
-        Me.acceder.Size = New System.Drawing.Size(133, 29)
-        Me.acceder.TabIndex = 2
-        Me.acceder.Text = "Ingresar Ahora"
-        Me.acceder.UseVisualStyleBackColor = True
+        Me.Btn_IngresarLogin1.Font = New System.Drawing.Font("Cambria", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_IngresarLogin1.Location = New System.Drawing.Point(93, 135)
+        Me.Btn_IngresarLogin1.Name = "Btn_IngresarLogin1"
+        Me.Btn_IngresarLogin1.Size = New System.Drawing.Size(133, 48)
+        Me.Btn_IngresarLogin1.TabIndex = 2
+        Me.Btn_IngresarLogin1.Text = "Ingresar Ahora"
+        Me.Btn_IngresarLogin1.UseVisualStyleBackColor = True
         '
         'Lbl_Usuario
         '
@@ -106,20 +106,20 @@ Partial Class FrmLogin
         Me.Controls.Add(Me.Lbl_Info)
         Me.Controls.Add(Me.Lbl_Contraseña)
         Me.Controls.Add(Me.Lbl_Usuario)
-        Me.Controls.Add(Me.acceder)
-        Me.Controls.Add(Me.txtpassw)
-        Me.Controls.Add(Me.Txtuser)
+        Me.Controls.Add(Me.Btn_IngresarLogin1)
+        Me.Controls.Add(Me.Txt_Passwd)
+        Me.Controls.Add(Me.Txt_Usuario)
         Me.Name = "FrmLogin"
-        Me.Text = "Login"
+        Me.Text = "Login Funcionario"
         CType(Me.erroruser, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.errorpassw, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Txtuser As System.Windows.Forms.TextBox
-    Friend WithEvents txtpassw As System.Windows.Forms.TextBox
-    Friend WithEvents acceder As System.Windows.Forms.Button
+    Friend WithEvents Txt_Usuario As System.Windows.Forms.TextBox
+    Friend WithEvents Txt_Passwd As System.Windows.Forms.TextBox
+    Friend WithEvents Btn_IngresarLogin1 As System.Windows.Forms.Button
     Friend WithEvents Lbl_Usuario As System.Windows.Forms.Label
     Friend WithEvents Lbl_Contraseña As System.Windows.Forms.Label
     Friend WithEvents erroruser As System.Windows.Forms.ErrorProvider

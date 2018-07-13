@@ -44,16 +44,17 @@ Partial Class FrmProcesos
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(27, 39)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(284, 492)
+        Me.GroupBox1.Size = New System.Drawing.Size(284, 266)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Información General"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(21, 306)
+        Me.TextBox1.Location = New System.Drawing.Point(9, 137)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(231, 103)
@@ -62,26 +63,26 @@ Partial Class FrmProcesos
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(18, 290)
+        Me.Label1.Location = New System.Drawing.Point(6, 117)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(63, 13)
+        Me.Label1.Size = New System.Drawing.Size(83, 17)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Descripción"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(18, 62)
+        Me.Label2.Location = New System.Drawing.Point(6, 62)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(75, 13)
+        Me.Label2.Size = New System.Drawing.Size(101, 17)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Producto Final"
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(107, 59)
+        Me.TextBox2.Location = New System.Drawing.Point(118, 59)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(145, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(145, 25)
         Me.TextBox2.TabIndex = 2
         '
         'GroupBox2
@@ -89,27 +90,28 @@ Partial Class FrmProcesos
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.ListBox1)
+        Me.GroupBox2.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(689, 39)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(200, 492)
+        Me.GroupBox2.Size = New System.Drawing.Size(200, 266)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Etapas de elaboración"
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(104, 427)
+        Me.Button2.Location = New System.Drawing.Point(100, 221)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(75, 32)
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "Quitar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(19, 427)
+        Me.Button1.Location = New System.Drawing.Point(19, 221)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(75, 32)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Agregar"
         Me.Button1.UseVisualStyleBackColor = True
@@ -117,18 +119,20 @@ Partial Class FrmProcesos
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 17
         Me.ListBox1.Items.AddRange(New Object() {"01 - Primer etapa", "02 - Segunda etapa"})
         Me.ListBox1.Location = New System.Drawing.Point(19, 41)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(160, 368)
+        Me.ListBox1.Size = New System.Drawing.Size(160, 174)
         Me.ListBox1.TabIndex = 0
         '
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.Label3)
+        Me.GroupBox3.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.Location = New System.Drawing.Point(352, 39)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(253, 492)
+        Me.GroupBox3.Size = New System.Drawing.Size(253, 266)
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Detalles"
@@ -138,7 +142,7 @@ Partial Class FrmProcesos
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(22, 41)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(92, 13)
+        Me.Label3.Size = New System.Drawing.Size(117, 17)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Duración: 00 días"
         '
@@ -146,7 +150,8 @@ Partial Class FrmProcesos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(941, 602)
+        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.ClientSize = New System.Drawing.Size(960, 371)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)

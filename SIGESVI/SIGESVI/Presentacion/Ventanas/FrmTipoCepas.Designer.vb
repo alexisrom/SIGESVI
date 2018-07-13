@@ -51,10 +51,12 @@ Partial Class FrmTipoCepas
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.GroupBox1.Controls.Add(Me.TextBox2)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(36, 44)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(321, 333)
@@ -67,7 +69,7 @@ Partial Class FrmTipoCepas
         Me.TextBox2.Location = New System.Drawing.Point(17, 138)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(284, 163)
+        Me.TextBox2.Size = New System.Drawing.Size(298, 163)
         Me.TextBox2.TabIndex = 3
         Me.TextBox2.Text = resources.GetString("TextBox2.Text")
         '
@@ -76,7 +78,7 @@ Partial Class FrmTipoCepas
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(14, 119)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(63, 13)
+        Me.Label2.Size = New System.Drawing.Size(83, 17)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Descripción"
         '
@@ -85,7 +87,7 @@ Partial Class FrmTipoCepas
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(14, 41)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 13)
+        Me.Label1.Size = New System.Drawing.Size(59, 17)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Nombre"
         '
@@ -93,13 +95,14 @@ Partial Class FrmTipoCepas
         '
         Me.TextBox1.Location = New System.Drawing.Point(17, 68)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(284, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(284, 25)
         Me.TextBox1.TabIndex = 0
         Me.TextBox1.Text = "Cabernet Sauvignon"
         '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.ListBox1)
+        Me.GroupBox2.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(394, 44)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(200, 333)
@@ -109,10 +112,11 @@ Partial Class FrmTipoCepas
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 17
         Me.ListBox1.Items.AddRange(New Object() {"Merlot", "Cabernet Sauvignon", "Malbec", "Pinot Noir", "Sangiovese"})
         Me.ListBox1.Location = New System.Drawing.Point(16, 41)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(159, 277)
+        Me.ListBox1.Size = New System.Drawing.Size(159, 276)
         Me.ListBox1.TabIndex = 0
         '
         'ToolStripButton1
@@ -155,6 +159,7 @@ Partial Class FrmTipoCepas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(618, 423)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)

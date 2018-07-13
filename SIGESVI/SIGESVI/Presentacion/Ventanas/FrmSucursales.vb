@@ -45,4 +45,8 @@
     Private Sub Txt_ID_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txt_ID.TextChanged
 
     End Sub
+
+    Private Sub Btn_Borrar_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Borrar.Click
+
+    End Sub
 End Class

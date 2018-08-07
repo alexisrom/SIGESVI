@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{049426B8-E623-47ED-804C-342C59C90CF2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -66,6 +66,31 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entidades\Almacen.vb" />
+    <Compile Include="Entidades\Campo.vb" />
+    <Compile Include="Entidades\CategoriaProducto.vb" />
+    <Compile Include="Entidades\Cliente.vb" />
+    <Compile Include="Entidades\Compra.vb" />
+    <Compile Include="Entidades\EspecificacionProducto.vb" />
+    <Compile Include="Entidades\EtapaElaboracion.vb" />
+    <Compile Include="Entidades\EtapaProduccion.vb" />
+    <Compile Include="Entidades\Funcionario.vb" />
+    <Compile Include="Entidades\LineaReserva.vb" />
+    <Compile Include="Entidades\Lote.vb" />
+    <Compile Include="Entidades\MateriaPrima.vb" />
+    <Compile Include="Entidades\Produccion.vb" />
+    <Compile Include="Entidades\ProductoFinal.vb" />
+    <Compile Include="Entidades\ProductoIntermedio.vb" />
+    <Compile Include="Entidades\ProductoReservado.vb" />
+    <Compile Include="Entidades\Proveedor.vb" />
+    <Compile Include="Entidades\Recordatorio.vb" />
+    <Compile Include="Entidades\Reserva.vb" />
+    <Compile Include="Entidades\Sucursal.vb" />
+    <Compile Include="Entidades\Transaccion.vb" />
+    <Compile Include="Entidades\Transporte.vb" />
+    <Compile Include="Entidades\Traslado.vb" />
+    <Compile Include="Entidades\Usuario.vb" />
+    <Compile Include="Entidades\Venta.vb" />
     <Compile Include="Presentacion\Ventanas\FrmTipoCepas.Designer.vb">
       <DependentUpon>FrmTipoCepas.vb</DependentUpon>
     </Compile>
@@ -247,6 +272,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ventanas\FrmVehiculos.resx">
       <DependentUpon>FrmVehiculos.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ventanas\FrmVinos.resx">
       <DependentUpon>FrmVinos.vb</DependentUpon>
@@ -264,9 +290,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ventanas\FrmLogin.resx">
       <DependentUpon>FrmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ventanas\login2.resx">
       <DependentUpon>login2.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

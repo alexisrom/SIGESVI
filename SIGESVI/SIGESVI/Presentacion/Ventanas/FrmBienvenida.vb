@@ -18,4 +18,24 @@
         frm.ShowDialog()
         Me.Close()
     End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Call conecta()
+    End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        Dim sql As String
+        sql = "insert into funcionarios values('51253018','fernando','gavello','pando','092207207')"
+        Dim comando As New Odbc.OdbcCommand
+        conexion.conecta()
+        comando.Connection = conectar
+        comando.CommandText = sql
+        Try
+            comando.ExecuteNonQuery()
+        Catch
+            MsgBox("Error" & Err.Description)
+
+        End Try
+        conexion.cierra()
+    End Sub
 End Class

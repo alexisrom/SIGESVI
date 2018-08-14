@@ -50,17 +50,22 @@ Partial Class FrmFuncionarios
         Me.Btn_AñadirTel = New System.Windows.Forms.Button
         Me.Btn_QuitarTel = New System.Windows.Forms.Button
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton
+        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton
+        Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton
+        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton
         Me.Label1 = New System.Windows.Forms.Label
         Me.errordedireccion = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.errordeapellido = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.errordenombre = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.errordecedula = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.Errortelefono = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
+        Me.TextBox1 = New System.Windows.Forms.TextBox
+        Me.TextBox2 = New System.Windows.Forms.TextBox
+        Me.TextBox3 = New System.Windows.Forms.TextBox
+        Me.TextBox4 = New System.Windows.Forms.TextBox
+        Me.TextBox5 = New System.Windows.Forms.TextBox
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
@@ -301,35 +306,6 @@ Partial Class FrmFuncionarios
         Me.ToolStrip1.TabIndex = 27
         Me.ToolStrip1.Text = "ToolStrip1"
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(105, 379)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(258, 13)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Sueldo Neto, Sueldo Liquido, Descuenctos, Sucursal"
-        '
-        'errordedireccion
-        '
-        Me.errordedireccion.ContainerControl = Me
-        '
-        'errordeapellido
-        '
-        Me.errordeapellido.ContainerControl = Me
-        '
-        'errordenombre
-        '
-        Me.errordenombre.ContainerControl = Me
-        '
-        'errordecedula
-        '
-        Me.errordecedula.ContainerControl = Me
-        '
-        'Errortelefono
-        '
-        Me.Errortelefono.ContainerControl = Me
-        '
         'ToolStripButton1
         '
         Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
@@ -366,6 +342,35 @@ Partial Class FrmFuncionarios
         Me.ToolStripButton4.Size = New System.Drawing.Size(23, 22)
         Me.ToolStripButton4.Text = "Limpiar"
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(105, 379)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(258, 13)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "Sueldo Neto, Sueldo Liquido, Descuenctos, Sucursal"
+        '
+        'errordedireccion
+        '
+        Me.errordedireccion.ContainerControl = Me
+        '
+        'errordeapellido
+        '
+        Me.errordeapellido.ContainerControl = Me
+        '
+        'errordenombre
+        '
+        Me.errordenombre.ContainerControl = Me
+        '
+        'errordecedula
+        '
+        Me.errordecedula.ContainerControl = Me
+        '
+        'Errortelefono
+        '
+        Me.Errortelefono.ContainerControl = Me
+        '
         'PictureBox1
         '
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
@@ -376,12 +381,52 @@ Partial Class FrmFuncionarios
         Me.PictureBox1.TabIndex = 26
         Me.PictureBox1.TabStop = False
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(423, 174)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.TabIndex = 28
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(554, 177)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.TabIndex = 29
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(660, 174)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox3.TabIndex = 30
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(778, 179)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox4.TabIndex = 31
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(884, 179)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox5.TabIndex = 32
+        '
         'FrmFuncionarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(1084, 459)
+        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.Lbl_IDBusq)
@@ -446,4 +491,9 @@ Partial Class FrmFuncionarios
     Friend WithEvents errordenombre As System.Windows.Forms.ErrorProvider
     Friend WithEvents errordecedula As System.Windows.Forms.ErrorProvider
     Friend WithEvents Errortelefono As System.Windows.Forms.ErrorProvider
+    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
 End Class

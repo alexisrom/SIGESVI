@@ -89,8 +89,28 @@
         If Not sololetras(Txt_nombre) Then
             errordenombre.SetError(Txt_nombre, "ingrese un nombre Valido")
         End If
+        'aca viene la conexion xdddddddddddddddddddddddddd'
+        Dim sql As String
+        'sql = "insert into funcionarios values('fernando','gavello','pando','092207207')"
+        Dim tel As Integer = Txt_Telefono.Text
+        Dim ci As Integer = Txt_Ci.Text
+        Dim nom As String = Txt_Nombre.Text
+        Dim ape As String = Txt_Apellido.Text
+        Dim dire As String = Txt_Direccion.Text
+       
+        sql = "insert into funcionarios values('ci','nom','ape','dire','tel')"
+        'sql = "insert into funcionarios values(" & 33333 & ",'" & "dsadsa" & "'," & "dsadas" & "'," & "dsadas" & "'," & 66666 & "',)"
+        Dim comando As New Odbc.OdbcCommand
+        conexion.conecta()
+        comando.Connection = conectar
+        comando.CommandText = sql
+        Try
+            comando.ExecuteNonQuery()
+        Catch
+            MsgBox("Error" & Err.Description)
 
-  
+        End Try
+        conexion.cierra()
 
     End Sub
 

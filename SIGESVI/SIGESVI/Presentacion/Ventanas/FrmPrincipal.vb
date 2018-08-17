@@ -18,7 +18,7 @@
         frm.ShowDialog()
     End Sub
 
-    Private Sub TransporteToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TransporteToolStripMenuItem1.Click
+    Private Sub TransporteToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim frm = New FrmTransporte()
         frm.ShowDialog()
     End Sub
@@ -80,6 +80,11 @@
 
     Private Sub TrasladoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TrasladoToolStripMenuItem.Click
         Dim frm = New FrmTransporte()
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub CepasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CepasToolStripMenuItem.Click
+        Dim frm = New FrmTipoCepas()
         frm.ShowDialog()
     End Sub
 End Class

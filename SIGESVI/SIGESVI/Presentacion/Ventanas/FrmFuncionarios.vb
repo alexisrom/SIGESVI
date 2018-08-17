@@ -127,4 +127,8 @@
     Private Sub Txt_Busqueda_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txt_Busqueda.TextChanged
 
     End Sub
+
+    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
+
+    End Sub
 End Class

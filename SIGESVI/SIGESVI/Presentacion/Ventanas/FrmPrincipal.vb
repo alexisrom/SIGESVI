@@ -77,4 +77,9 @@
         Dim frm = New FrmSucursales()
         frm.ShowDialog()
     End Sub
+
+    Private Sub TrasladoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TrasladoToolStripMenuItem.Click
+        Dim frm = New FrmTransporte()
+        frm.ShowDialog()
+    End Sub
 End Class

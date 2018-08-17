@@ -52,6 +52,7 @@ Partial Class FrmPrincipal
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.SucursalesGGToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.GestiónToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
+        Me.TrasladoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -123,9 +124,9 @@ Partial Class FrmPrincipal
         '
         'TransaccionesToolStripMenuItem1
         '
-        Me.TransaccionesToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ComprasToolStripMenuItem, Me.VentasToolStripMenuItem})
+        Me.TransaccionesToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ComprasToolStripMenuItem, Me.VentasToolStripMenuItem, Me.TrasladoToolStripMenuItem})
         Me.TransaccionesToolStripMenuItem1.Name = "TransaccionesToolStripMenuItem1"
-        Me.TransaccionesToolStripMenuItem1.Size = New System.Drawing.Size(149, 22)
+        Me.TransaccionesToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.TransaccionesToolStripMenuItem1.Text = "Transacciones"
         '
         'ComprasToolStripMenuItem
@@ -252,6 +253,12 @@ Partial Class FrmPrincipal
         Me.GestiónToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.GestiónToolStripMenuItem1.Text = "Gestión"
         '
+        'TrasladoToolStripMenuItem
+        '
+        Me.TrasladoToolStripMenuItem.Name = "TrasladoToolStripMenuItem"
+        Me.TrasladoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.TrasladoToolStripMenuItem.Text = "Traslado"
+        '
         'FrmPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -302,4 +309,5 @@ Partial Class FrmPrincipal
     Friend WithEvents ProductosToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SucursalesGGToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GestiónToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents TrasladoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

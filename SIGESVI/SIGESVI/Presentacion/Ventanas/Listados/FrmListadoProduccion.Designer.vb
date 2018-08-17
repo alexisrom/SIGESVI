@@ -47,9 +47,9 @@ Partial Class FrmListadoProduccion
         Me.FechaFin = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
         Me.GroupBox2 = New System.Windows.Forms.GroupBox
-        Me.Label7 = New System.Windows.Forms.Label
-        Me.Button2 = New System.Windows.Forms.Button
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel
+        Me.Button2 = New System.Windows.Forms.Button
+        Me.Label7 = New System.Windows.Forms.Label
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
@@ -260,14 +260,15 @@ Partial Class FrmListadoProduccion
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Detalles"
         '
-        'Label7
+        'LinkLabel1
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(37, 533)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(340, 13)
-        Me.Label7.TabIndex = 6
-        Me.Label7.Text = "Nota: Si el usuario es Gerente General se le permitira filtrar por sucursal"
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Location = New System.Drawing.Point(917, 35)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(83, 13)
+        Me.LinkLabel1.TabIndex = 1
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "Ver Trazabilidad"
         '
         'Button2
         '
@@ -278,15 +279,14 @@ Partial Class FrmListadoProduccion
         Me.Button2.Text = "Configurar Alarma"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'LinkLabel1
+        'Label7
         '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(917, 35)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(83, 13)
-        Me.LinkLabel1.TabIndex = 1
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Ver Trazabilidad"
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(37, 533)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(340, 13)
+        Me.Label7.TabIndex = 6
+        Me.Label7.Text = "Nota: Si el usuario es Gerente General se le permitira filtrar por sucursal"
         '
         'FrmListadoProduccion
         '

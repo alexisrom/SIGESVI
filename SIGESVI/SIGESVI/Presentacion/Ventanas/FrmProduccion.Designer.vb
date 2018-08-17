@@ -40,9 +40,12 @@ Partial Class FrmProduccion
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView
+        Me.Label6 = New System.Windows.Forms.Label
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -54,7 +57,7 @@ Partial Class FrmProduccion
         Me.GroupBox1.Size = New System.Drawing.Size(200, 355)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Tipo de Vino"
+        Me.GroupBox1.Text = "Producto"
         '
         'ListBox1
         '
@@ -156,7 +159,7 @@ Partial Class FrmProduccion
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(143, 421)
+        Me.Button1.Location = New System.Drawing.Point(39, 434)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(202, 28)
         Me.Button1.TabIndex = 2
@@ -168,7 +171,7 @@ Partial Class FrmProduccion
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripButton4})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(504, 25)
+        Me.ToolStrip1.Size = New System.Drawing.Size(1132, 25)
         Me.ToolStrip1.TabIndex = 16
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -208,12 +211,33 @@ Partial Class FrmProduccion
         Me.ToolStripButton4.Size = New System.Drawing.Size(23, 22)
         Me.ToolStripButton4.Text = "Limpiar"
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(577, 76)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(420, 337)
+        Me.DataGridView1.TabIndex = 17
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(372, 25)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(760, 13)
+        Me.Label6.TabIndex = 18
+        Me.Label6.Text = "Importante: Una vez iniciada la producción está no podrá ser modificada ni elimin" & _
+            "ada, el seguimiento de la misma se hará a través de la trazabilidad del producto" & _
+            ""
+        '
         'FrmProduccion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ClientSize = New System.Drawing.Size(504, 482)
+        Me.ClientSize = New System.Drawing.Size(1132, 551)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox2)
@@ -225,6 +249,7 @@ Partial Class FrmProduccion
         Me.GroupBox2.PerformLayout()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -246,4 +271,6 @@ Partial Class FrmProduccion
     Friend WithEvents ToolStripButton2 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButton3 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButton4 As System.Windows.Forms.ToolStripButton
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents Label6 As System.Windows.Forms.Label
 End Class

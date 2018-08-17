@@ -34,7 +34,7 @@
     End Sub
 
     Private Sub ElaboraciónToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ElaboraciónToolStripMenuItem.Click
-        Dim frm = New FrmEspecificacionProducto()
+        Dim frm = New FrmListadoProduccion()
         frm.ShowDialog()
     End Sub
 

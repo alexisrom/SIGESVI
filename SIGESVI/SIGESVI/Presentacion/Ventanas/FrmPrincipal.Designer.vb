@@ -48,6 +48,7 @@ Partial Class FrmPrincipal
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.TransaccionesToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
         Me.ComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.VentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -212,7 +213,7 @@ Partial Class FrmPrincipal
         '
         'TransaccionesToolStripMenuItem1
         '
-        Me.TransaccionesToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ComprasToolStripMenuItem})
+        Me.TransaccionesToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ComprasToolStripMenuItem, Me.VentasToolStripMenuItem})
         Me.TransaccionesToolStripMenuItem1.Name = "TransaccionesToolStripMenuItem1"
         Me.TransaccionesToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.TransaccionesToolStripMenuItem1.Text = "Transacciones"
@@ -222,6 +223,12 @@ Partial Class FrmPrincipal
         Me.ComprasToolStripMenuItem.Name = "ComprasToolStripMenuItem"
         Me.ComprasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ComprasToolStripMenuItem.Text = "Compras"
+        '
+        'VentasToolStripMenuItem
+        '
+        Me.VentasToolStripMenuItem.Name = "VentasToolStripMenuItem"
+        Me.VentasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.VentasToolStripMenuItem.Text = "Ventas"
         '
         'FrmPrincipal
         '
@@ -269,4 +276,5 @@ Partial Class FrmPrincipal
     Friend WithEvents TransaccionesToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ComprasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents VentasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

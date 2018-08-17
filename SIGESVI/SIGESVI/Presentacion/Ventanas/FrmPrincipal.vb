@@ -57,4 +57,9 @@
         Dim frm = New FrmCompras()
         frm.ShowDialog()
     End Sub
+
+    Private Sub VentasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VentasToolStripMenuItem.Click
+        Dim frm = New FrmVentas()
+        frm.ShowDialog()
+    End Sub
 End Class

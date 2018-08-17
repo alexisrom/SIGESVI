@@ -271,6 +271,10 @@
       <DependentUpon>FrmAlmacen.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\FrmCatalogo.resx">
+      <DependentUpon>FrmCatalogo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ventanas\FrmCompras.resx">
       <DependentUpon>FrmCompras.vb</DependentUpon>
       <SubType>Designer</SubType>
@@ -371,6 +375,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Imagen menu principal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-carrito-de-compras-24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -52,4 +52,9 @@
         Dim frm = New FrmAlmacen()
         frm.ShowDialog()
     End Sub
+
+    Private Sub ComprasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComprasToolStripMenuItem.Click
+        Dim frm = New FrmCompras()
+        frm.ShowDialog()
+    End Sub
 End Class

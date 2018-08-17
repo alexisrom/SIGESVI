@@ -24,6 +24,7 @@ Partial Class FrmPrincipal
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
         Me.GestiónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.TransporteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.FuncionariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.ProducciónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -32,6 +33,9 @@ Partial Class FrmPrincipal
         Me.MostoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.SucursalesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AlmacenesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.TransaccionesToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
+        Me.ComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.VentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.TransaccionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.CompraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.VentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -44,11 +48,8 @@ Partial Class FrmPrincipal
         Me.EstadísticasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.ConfiguraciónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
-        Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
-        Me.TransaccionesToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.ComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.VentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.OrigenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -64,10 +65,16 @@ Partial Class FrmPrincipal
         '
         'GestiónToolStripMenuItem
         '
-        Me.GestiónToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientesToolStripMenuItem, Me.TransporteToolStripMenuItem, Me.FuncionariosToolStripMenuItem, Me.ProducciónToolStripMenuItem, Me.ProductosToolStripMenuItem, Me.SucursalesToolStripMenuItem, Me.AlmacenesToolStripMenuItem, Me.TransaccionesToolStripMenuItem1})
+        Me.GestiónToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientesToolStripMenuItem, Me.TransporteToolStripMenuItem, Me.FuncionariosToolStripMenuItem, Me.ProducciónToolStripMenuItem, Me.ProductosToolStripMenuItem, Me.SucursalesToolStripMenuItem, Me.AlmacenesToolStripMenuItem, Me.TransaccionesToolStripMenuItem1, Me.OrigenToolStripMenuItem})
         Me.GestiónToolStripMenuItem.Name = "GestiónToolStripMenuItem"
         Me.GestiónToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.GestiónToolStripMenuItem.Text = "Gestión"
+        '
+        'ClientesToolStripMenuItem
+        '
+        Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ClientesToolStripMenuItem.Text = "Clientes"
         '
         'TransporteToolStripMenuItem
         '
@@ -117,6 +124,25 @@ Partial Class FrmPrincipal
         Me.AlmacenesToolStripMenuItem.Name = "AlmacenesToolStripMenuItem"
         Me.AlmacenesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.AlmacenesToolStripMenuItem.Text = "Almacenes"
+        '
+        'TransaccionesToolStripMenuItem1
+        '
+        Me.TransaccionesToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ComprasToolStripMenuItem, Me.VentasToolStripMenuItem})
+        Me.TransaccionesToolStripMenuItem1.Name = "TransaccionesToolStripMenuItem1"
+        Me.TransaccionesToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.TransaccionesToolStripMenuItem1.Text = "Transacciones"
+        '
+        'ComprasToolStripMenuItem
+        '
+        Me.ComprasToolStripMenuItem.Name = "ComprasToolStripMenuItem"
+        Me.ComprasToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.ComprasToolStripMenuItem.Text = "Compras"
+        '
+        'VentasToolStripMenuItem
+        '
+        Me.VentasToolStripMenuItem.Name = "VentasToolStripMenuItem"
+        Me.VentasToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.VentasToolStripMenuItem.Text = "Ventas"
         '
         'TransaccionesToolStripMenuItem
         '
@@ -194,12 +220,6 @@ Partial Class FrmPrincipal
         Me.StatusStrip1.TabIndex = 1
         Me.StatusStrip1.Text = "StatusStrip1"
         '
-        'ClientesToolStripMenuItem
-        '
-        Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ClientesToolStripMenuItem.Text = "Clientes"
-        '
         'PictureBox1
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -211,24 +231,11 @@ Partial Class FrmPrincipal
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
-        'TransaccionesToolStripMenuItem1
+        'OrigenToolStripMenuItem
         '
-        Me.TransaccionesToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ComprasToolStripMenuItem, Me.VentasToolStripMenuItem})
-        Me.TransaccionesToolStripMenuItem1.Name = "TransaccionesToolStripMenuItem1"
-        Me.TransaccionesToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
-        Me.TransaccionesToolStripMenuItem1.Text = "Transacciones"
-        '
-        'ComprasToolStripMenuItem
-        '
-        Me.ComprasToolStripMenuItem.Name = "ComprasToolStripMenuItem"
-        Me.ComprasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ComprasToolStripMenuItem.Text = "Compras"
-        '
-        'VentasToolStripMenuItem
-        '
-        Me.VentasToolStripMenuItem.Name = "VentasToolStripMenuItem"
-        Me.VentasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.VentasToolStripMenuItem.Text = "Ventas"
+        Me.OrigenToolStripMenuItem.Name = "OrigenToolStripMenuItem"
+        Me.OrigenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OrigenToolStripMenuItem.Text = "Origen"
         '
         'FrmPrincipal
         '
@@ -277,4 +284,5 @@ Partial Class FrmPrincipal
     Friend WithEvents ComprasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents VentasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents OrigenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

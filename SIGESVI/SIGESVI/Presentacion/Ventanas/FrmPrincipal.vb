@@ -62,4 +62,9 @@
         Dim frm = New FrmVentas()
         frm.ShowDialog()
     End Sub
+
+    Private Sub OrigenToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OrigenToolStripMenuItem.Click
+        Dim frm = New FrmOrigen()
+        frm.ShowDialog()
+    End Sub
 End Class

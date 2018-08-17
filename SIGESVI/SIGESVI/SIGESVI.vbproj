@@ -122,6 +122,12 @@
     <Compile Include="Presentacion\Ventanas\FrmOrigen.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmReserva.Designer.vb">
+      <DependentUpon>FrmReserva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmReserva.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\Ventanas\FrmTipoCepas.Designer.vb">
       <DependentUpon>FrmTipoCepas.vb</DependentUpon>
     </Compile>
@@ -279,6 +285,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ventanas\FrmOrigen.resx">
       <DependentUpon>FrmOrigen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\FrmReserva.resx">
+      <DependentUpon>FrmReserva.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ventanas\FrmTipoCepas.resx">

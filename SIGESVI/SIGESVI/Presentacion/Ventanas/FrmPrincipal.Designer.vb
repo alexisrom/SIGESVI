@@ -47,15 +47,16 @@ Partial Class FrmPrincipal
         Me.SucursalesGGToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.GestiónToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
         Me.CepasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox
+        Me.ReservasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.MenuStrip1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -69,7 +70,7 @@ Partial Class FrmPrincipal
         '
         'GestiónToolStripMenuItem
         '
-        Me.GestiónToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientesToolStripMenuItem, Me.TransporteToolStripMenuItem, Me.FuncionariosToolStripMenuItem, Me.ProducciónToolStripMenuItem, Me.ProductosToolStripMenuItem, Me.AlmacenesToolStripMenuItem, Me.TransaccionesToolStripMenuItem1, Me.OrigenToolStripMenuItem, Me.ProductosToolStripMenuItem1, Me.CepasToolStripMenuItem})
+        Me.GestiónToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientesToolStripMenuItem, Me.TransporteToolStripMenuItem, Me.FuncionariosToolStripMenuItem, Me.ProducciónToolStripMenuItem, Me.ProductosToolStripMenuItem, Me.AlmacenesToolStripMenuItem, Me.TransaccionesToolStripMenuItem1, Me.OrigenToolStripMenuItem, Me.ProductosToolStripMenuItem1, Me.CepasToolStripMenuItem, Me.ReservasToolStripMenuItem})
         Me.GestiónToolStripMenuItem.Name = "GestiónToolStripMenuItem"
         Me.GestiónToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.GestiónToolStripMenuItem.Text = "Gestión"
@@ -133,19 +134,19 @@ Partial Class FrmPrincipal
         'ComprasToolStripMenuItem
         '
         Me.ComprasToolStripMenuItem.Name = "ComprasToolStripMenuItem"
-        Me.ComprasToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.ComprasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ComprasToolStripMenuItem.Text = "Compras"
         '
         'VentasToolStripMenuItem
         '
         Me.VentasToolStripMenuItem.Name = "VentasToolStripMenuItem"
-        Me.VentasToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.VentasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.VentasToolStripMenuItem.Text = "Ventas"
         '
         'TrasladoToolStripMenuItem
         '
         Me.TrasladoToolStripMenuItem.Name = "TrasladoToolStripMenuItem"
-        Me.TrasladoToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.TrasladoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.TrasladoToolStripMenuItem.Text = "Traslado"
         '
         'OrigenToolStripMenuItem
@@ -207,7 +208,7 @@ Partial Class FrmPrincipal
         'GestiónToolStripMenuItem1
         '
         Me.GestiónToolStripMenuItem1.Name = "GestiónToolStripMenuItem1"
-        Me.GestiónToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.GestiónToolStripMenuItem1.Size = New System.Drawing.Size(114, 22)
         Me.GestiónToolStripMenuItem1.Text = "Gestión"
         '
         'StatusStrip1
@@ -217,17 +218,6 @@ Partial Class FrmPrincipal
         Me.StatusStrip1.Size = New System.Drawing.Size(999, 22)
         Me.StatusStrip1.TabIndex = 1
         Me.StatusStrip1.Text = "StatusStrip1"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Image = Global.SIGESVI.My.Resources.Resources.Imagen_menu_principal
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 24)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(999, 515)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
         '
         'LinkLabel1
         '
@@ -239,16 +229,6 @@ Partial Class FrmPrincipal
         Me.LinkLabel1.TabIndex = 12
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Cerrar Sesión"
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.SIGESVI.My.Resources.Resources.a_coroa_godello
-        Me.PictureBox2.Location = New System.Drawing.Point(863, 49)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(100, 76)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 11
-        Me.PictureBox2.TabStop = False
         '
         'Label2
         '
@@ -277,6 +257,33 @@ Partial Class FrmPrincipal
         Me.CepasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.CepasToolStripMenuItem.Text = "Cepas"
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.SIGESVI.My.Resources.Resources.a_coroa_godello
+        Me.PictureBox2.Location = New System.Drawing.Point(863, 49)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(100, 76)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 11
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox1.Image = Global.SIGESVI.My.Resources.Resources.Imagen_menu_principal
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 24)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(999, 515)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 2
+        Me.PictureBox1.TabStop = False
+        '
+        'ReservasToolStripMenuItem
+        '
+        Me.ReservasToolStripMenuItem.Name = "ReservasToolStripMenuItem"
+        Me.ReservasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ReservasToolStripMenuItem.Text = "Reservas"
+        '
         'FrmPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -296,8 +303,8 @@ Partial Class FrmPrincipal
         Me.Text = "Menu Principal"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -333,4 +340,5 @@ Partial Class FrmPrincipal
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents CepasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ReservasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

@@ -22,17 +22,12 @@ Partial Class FrmLogin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
         Me.Txt_Usuario = New System.Windows.Forms.TextBox
         Me.Txt_Passwd = New System.Windows.Forms.TextBox
         Me.Btn_IngresarLogin1 = New System.Windows.Forms.Button
         Me.Lbl_Usuario = New System.Windows.Forms.Label
         Me.Lbl_Contraseña = New System.Windows.Forms.Label
-        Me.erroruser = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.errorpassw = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.Lbl_Info = New System.Windows.Forms.Label
-        CType(Me.erroruser, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.errorpassw, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Txt_Usuario
@@ -79,14 +74,6 @@ Partial Class FrmLogin
         Me.Lbl_Contraseña.TabIndex = 4
         Me.Lbl_Contraseña.Text = "Contraseña"
         '
-        'erroruser
-        '
-        Me.erroruser.ContainerControl = Me
-        '
-        'errorpassw
-        '
-        Me.errorpassw.ContainerControl = Me
-        '
         'Lbl_Info
         '
         Me.Lbl_Info.AutoSize = True
@@ -102,7 +89,7 @@ Partial Class FrmLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ClientSize = New System.Drawing.Size(307, 195)
+        Me.ClientSize = New System.Drawing.Size(307, 210)
         Me.Controls.Add(Me.Lbl_Info)
         Me.Controls.Add(Me.Lbl_Contraseña)
         Me.Controls.Add(Me.Lbl_Usuario)
@@ -111,8 +98,6 @@ Partial Class FrmLogin
         Me.Controls.Add(Me.Txt_Usuario)
         Me.Name = "FrmLogin"
         Me.Text = "Login Funcionario"
-        CType(Me.erroruser, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.errorpassw, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -122,7 +107,5 @@ Partial Class FrmLogin
     Friend WithEvents Btn_IngresarLogin1 As System.Windows.Forms.Button
     Friend WithEvents Lbl_Usuario As System.Windows.Forms.Label
     Friend WithEvents Lbl_Contraseña As System.Windows.Forms.Label
-    Friend WithEvents erroruser As System.Windows.Forms.ErrorProvider
-    Friend WithEvents errorpassw As System.Windows.Forms.ErrorProvider
     Friend WithEvents Lbl_Info As System.Windows.Forms.Label
 End Class

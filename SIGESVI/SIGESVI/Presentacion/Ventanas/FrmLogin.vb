@@ -1,14 +1,11 @@
 ﻿Public Class FrmLogin
 
     Private Sub acceder_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_IngresarLogin1.Click
-        Dim frm = New FrmPrincipal()
-        If Txt_Usuario.Text <> "funcionario" Or Txt_Passwd.Text <> "funcionario" Then
-            erroruser.SetError(Txt_Usuario, "error de usuario")
-            errorpassw.SetError(Txt_Passwd, "error de contraseña")
-        Else
-            erroruser.Clear()
-            errorpassw.Clear()
 
+        If Txt_Usuario.Text <> "funcionario" Or Txt_Passwd.Text <> "funcionario" Then
+            MsgBox("Usuario y contraseñas incorrectos")
+        Else
+            Dim frm = New FrmPrincipal()
             frm.ShowDialog()
             Me.Close()
         End If

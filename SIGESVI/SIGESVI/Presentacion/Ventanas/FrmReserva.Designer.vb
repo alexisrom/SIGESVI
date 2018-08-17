@@ -42,6 +42,7 @@ Partial Class FrmReserva
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
@@ -208,11 +209,21 @@ Partial Class FrmReserva
         Me.StatusStrip1.TabIndex = 34
         Me.StatusStrip1.Text = "StatusStrip1"
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Pendiente", "Completada", "Entregada"})
+        Me.ComboBox1.Location = New System.Drawing.Point(258, 57)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 35
+        '
         'FrmReserva
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(937, 434)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.Label5)
@@ -229,7 +240,7 @@ Partial Class FrmReserva
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "FrmReserva"
-        Me.Text = "Productos"
+        Me.Text = "Reserva"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip1.ResumeLayout(False)
@@ -257,4 +268,5 @@ Partial Class FrmReserva
     Friend WithEvents ToolStripButton3 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButton4 As System.Windows.Forms.ToolStripButton
     Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
 End Class

@@ -2,9 +2,7 @@
 
     Private Sub acceder_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_IngresarLogin1.Click
 
-        'TODO: Código comentado para pruebas
-        'If Txt_Usuario.Text <> "funcionario" Or Txt_Passwd.Text <> "funcionario" Then
-        If False Then
+        If Txt_Usuario.Text <> "funcionario" Or Txt_Passwd.Text <> "funcionario" Then
             MsgBox("Usuario y contraseñas incorrectos")
         Else
             Me.Hide()

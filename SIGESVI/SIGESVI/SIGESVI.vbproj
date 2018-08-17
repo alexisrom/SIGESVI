@@ -92,6 +92,12 @@
     <Compile Include="Entidades\Usuario.vb" />
     <Compile Include="Entidades\Venta.vb" />
     <Compile Include="Presentacion\Modulos\conexion.vb" />
+    <Compile Include="Presentacion\Ventanas\FrmAlmacen.Designer.vb">
+      <DependentUpon>FrmAlmacen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmAlmacen.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\Ventanas\FrmTipoCepas.Designer.vb">
       <DependentUpon>FrmTipoCepas.vb</DependentUpon>
     </Compile>
@@ -225,6 +231,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Presentacion\Ventanas\FrmAlmacen.resx">
+      <DependentUpon>FrmAlmacen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ventanas\FrmTipoCepas.resx">
       <DependentUpon>FrmTipoCepas.vb</DependentUpon>
       <SubType>Designer</SubType>

@@ -47,4 +47,9 @@
         Dim frm = New FrmVehiculos()
         frm.ShowDialog()
     End Sub
+
+    Private Sub AlmacenesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AlmacenesToolStripMenuItem.Click
+        Dim frm = New FrmAlmacen()
+        frm.ShowDialog()
+    End Sub
 End Class

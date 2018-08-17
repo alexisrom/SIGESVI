@@ -13,11 +13,6 @@
         frm.ShowDialog()
     End Sub
 
-    Private Sub VinosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VinosToolStripMenuItem.Click
-        Dim frm = New FrmVinos()
-        frm.ShowDialog()
-    End Sub
-
     Private Sub TransporteToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim frm = New FrmTransporte()
         frm.ShowDialog()
@@ -38,10 +33,6 @@
         frm.ShowDialog()
     End Sub
 
-    Private Sub MostoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MostoToolStripMenuItem.Click
-        Dim frm = New FrmMosto()
-        frm.ShowDialog()
-    End Sub
 
     Private Sub TransporteToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TransporteToolStripMenuItem.Click
         Dim frm = New FrmVehiculos()

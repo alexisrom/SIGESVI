@@ -190,12 +190,6 @@
     <Compile Include="Presentacion\Ventanas\FrmFuncionarios.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmMosto.Designer.vb">
-      <DependentUpon>FrmMosto.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmMosto.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Presentacion\Ventanas\FrmPrincipal.Designer.vb">
       <DependentUpon>FrmPrincipal.vb</DependentUpon>
     </Compile>
@@ -232,12 +226,6 @@
     <Compile Include="Presentacion\Ventanas\FrmVentas.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmVinos.Designer.vb">
-      <DependentUpon>FrmVinos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmVinos.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -263,12 +251,6 @@
       <DependentUpon>FrmVehiculos.vb</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Ventanas\FrmVehiculos.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmVinedos.Designer.vb">
-      <DependentUpon>FrmVinedos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmVinedos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\Ventanas\FrmLogin.Designer.vb">
@@ -343,10 +325,6 @@
       <DependentUpon>FrmFuncionarios.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmMosto.resx">
-      <DependentUpon>FrmMosto.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ventanas\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.vb</DependentUpon>
       <SubType>Designer</SubType>
@@ -373,10 +351,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ventanas\FrmVentas.resx">
       <DependentUpon>FrmVentas.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmVinos.resx">
-      <DependentUpon>FrmVinos.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">

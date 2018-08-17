@@ -9,11 +9,14 @@
     End Sub
 
     Private Sub btn_IngresarAlSistema_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_IngresarAlSistema.Click
+        Me.Hide()
         Dim frm = New FrmLogin()
         frm.ShowDialog()
+        Me.Close()
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Me.Hide()
         Dim frm = New FrmCatalogo()
         frm.ShowDialog()
         Me.Close()

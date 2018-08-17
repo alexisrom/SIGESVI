@@ -28,9 +28,6 @@ Partial Class FrmPrincipal
         Me.TransporteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.FuncionariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.ProducciónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.VinosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.MostoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AlmacenesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.TransaccionesToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
         Me.ComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -69,7 +66,7 @@ Partial Class FrmPrincipal
         '
         'GestiónToolStripMenuItem
         '
-        Me.GestiónToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientesToolStripMenuItem, Me.TransporteToolStripMenuItem, Me.FuncionariosToolStripMenuItem, Me.ProducciónToolStripMenuItem, Me.ProductosToolStripMenuItem, Me.AlmacenesToolStripMenuItem, Me.TransaccionesToolStripMenuItem1, Me.OrigenToolStripMenuItem, Me.ProductosToolStripMenuItem1, Me.CepasToolStripMenuItem, Me.ReservasToolStripMenuItem, Me.TrazabilidadToolStripMenuItem})
+        Me.GestiónToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientesToolStripMenuItem, Me.TransporteToolStripMenuItem, Me.FuncionariosToolStripMenuItem, Me.ProducciónToolStripMenuItem, Me.AlmacenesToolStripMenuItem, Me.TransaccionesToolStripMenuItem1, Me.OrigenToolStripMenuItem, Me.ProductosToolStripMenuItem1, Me.CepasToolStripMenuItem, Me.ReservasToolStripMenuItem, Me.TrazabilidadToolStripMenuItem})
         Me.GestiónToolStripMenuItem.Name = "GestiónToolStripMenuItem"
         Me.GestiónToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.GestiónToolStripMenuItem.Text = "Gestión"
@@ -97,25 +94,6 @@ Partial Class FrmPrincipal
         Me.ProducciónToolStripMenuItem.Name = "ProducciónToolStripMenuItem"
         Me.ProducciónToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ProducciónToolStripMenuItem.Text = "Producción"
-        '
-        'ProductosToolStripMenuItem
-        '
-        Me.ProductosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VinosToolStripMenuItem, Me.MostoToolStripMenuItem})
-        Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
-        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ProductosToolStripMenuItem.Text = "Productos"
-        '
-        'VinosToolStripMenuItem
-        '
-        Me.VinosToolStripMenuItem.Name = "VinosToolStripMenuItem"
-        Me.VinosToolStripMenuItem.Size = New System.Drawing.Size(108, 22)
-        Me.VinosToolStripMenuItem.Text = "Vinos"
-        '
-        'MostoToolStripMenuItem
-        '
-        Me.MostoToolStripMenuItem.Name = "MostoToolStripMenuItem"
-        Me.MostoToolStripMenuItem.Size = New System.Drawing.Size(108, 22)
-        Me.MostoToolStripMenuItem.Text = "Mosto"
         '
         'AlmacenesToolStripMenuItem
         '
@@ -304,17 +282,14 @@ Partial Class FrmPrincipal
     End Sub
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents GestiónToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ProductosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ProducciónToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents FuncionariosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents TransporteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ConsultasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents EstadísticasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
-    Friend WithEvents VinosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ElaboraciónToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents NóminaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents MostoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AlmacenesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ClientesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents TransaccionesToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem

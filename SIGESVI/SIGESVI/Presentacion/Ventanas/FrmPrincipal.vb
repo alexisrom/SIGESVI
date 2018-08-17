@@ -92,4 +92,9 @@
         Dim frm = New FrmReserva()
         frm.ShowDialog()
     End Sub
+
+    Private Sub TrazabilidadToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TrazabilidadToolStripMenuItem.Click
+        Dim frm = New FrmTrazabilidad()
+        frm.ShowDialog()
+    End Sub
 End Class

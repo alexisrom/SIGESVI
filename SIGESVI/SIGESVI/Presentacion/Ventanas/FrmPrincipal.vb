@@ -4,9 +4,8 @@
 
     End Sub
 
-    Private Sub SucursalesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SucursalesToolStripMenuItem.Click
-        Dim frm = New FrmSucursales()
-        frm.ShowDialog()
+    Private Sub SucursalesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
     End Sub
 
     Private Sub ClientesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ClientesToolStripMenuItem.Click
@@ -71,6 +70,11 @@
 
     Private Sub ProductosToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProductosToolStripMenuItem1.Click
         Dim frm = New FrmEspecificacionProducto()
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub GestiónToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GestiónToolStripMenuItem1.Click
+        Dim frm = New FrmSucursales()
         frm.ShowDialog()
     End Sub
 End Class

@@ -34,6 +34,16 @@ Partial Class FrmFuncionarios
         Me.User = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.Pass = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker
+        Me.Label6 = New System.Windows.Forms.Label
+        Me.Cbo_cargo = New System.Windows.Forms.ComboBox
+        Me.Label4 = New System.Windows.Forms.Label
+        Me.Label3 = New System.Windows.Forms.Label
+        Me.Txt_pass = New System.Windows.Forms.TextBox
+        Me.Label2 = New System.Windows.Forms.Label
+        Me.Txt_user = New System.Windows.Forms.TextBox
+        Me.Button2 = New System.Windows.Forms.Button
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox
         Me.LblMensaje = New System.Windows.Forms.Label
         Me.lblDireccion = New System.Windows.Forms.Label
         Me.lbltelefono = New System.Windows.Forms.Label
@@ -61,23 +71,11 @@ Partial Class FrmFuncionarios
         Me.errordecedula = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.Errortelefono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
-        Me.TextBox1 = New System.Windows.Forms.TextBox
-        Me.TextBox2 = New System.Windows.Forms.TextBox
-        Me.TextBox3 = New System.Windows.Forms.TextBox
-        Me.TextBox4 = New System.Windows.Forms.TextBox
-        Me.TextBox5 = New System.Windows.Forms.TextBox
-        Me.Button2 = New System.Windows.Forms.Button
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.TextBox6 = New System.Windows.Forms.TextBox
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.TextBox7 = New System.Windows.Forms.TextBox
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker
-        Me.Label6 = New System.Windows.Forms.Label
+        Me.Txt_Idsucursal = New System.Windows.Forms.TextBox
+        Me.Label5 = New System.Windows.Forms.Label
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.FlowLayoutPanel2.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.errordedireccion, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -86,7 +84,6 @@ Partial Class FrmFuncionarios
         CType(Me.errordecedula, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Errortelefono, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Lbl_IDBusq
@@ -158,12 +155,12 @@ Partial Class FrmFuncionarios
         '
         Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.Cbo_cargo)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.TextBox7)
+        Me.GroupBox1.Controls.Add(Me.Txt_pass)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.TextBox6)
+        Me.GroupBox1.Controls.Add(Me.Txt_user)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.PictureBox2)
         Me.GroupBox1.Controls.Add(Me.LblMensaje)
@@ -180,6 +177,89 @@ Partial Class FrmFuncionarios
         Me.GroupBox1.TabIndex = 22
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Información Personal"
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(350, 305)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(178, 25)
+        Me.DateTimePicker1.TabIndex = 60
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(347, 288)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(137, 17)
+        Me.Label6.TabIndex = 59
+        Me.Label6.Text = "Fecha de Nacimiento"
+        '
+        'Cbo_cargo
+        '
+        Me.Cbo_cargo.FormattingEnabled = True
+        Me.Cbo_cargo.Items.AddRange(New Object() {"Administrativo", "Gerente Sucursal", "Asesor Profesional"})
+        Me.Cbo_cargo.Location = New System.Drawing.Point(356, 260)
+        Me.Cbo_cargo.Name = "Cbo_cargo"
+        Me.Cbo_cargo.Size = New System.Drawing.Size(175, 25)
+        Me.Cbo_cargo.TabIndex = 58
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(353, 246)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(44, 17)
+        Me.Label4.TabIndex = 57
+        Me.Label4.Text = "Cargo"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(350, 200)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(78, 17)
+        Me.Label3.TabIndex = 56
+        Me.Label3.Text = "Contraseña"
+        '
+        'Txt_pass
+        '
+        Me.Txt_pass.Location = New System.Drawing.Point(350, 214)
+        Me.Txt_pass.Name = "Txt_pass"
+        Me.Txt_pass.Size = New System.Drawing.Size(181, 25)
+        Me.Txt_pass.TabIndex = 55
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(350, 149)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(127, 17)
+        Me.Label2.TabIndex = 54
+        Me.Label2.Text = "Nombre de usuario"
+        '
+        'Txt_user
+        '
+        Me.Txt_user.Location = New System.Drawing.Point(350, 163)
+        Me.Txt_user.Name = "Txt_user"
+        Me.Txt_user.Size = New System.Drawing.Size(181, 25)
+        Me.Txt_user.TabIndex = 53
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(384, 115)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(112, 23)
+        Me.Button2.TabIndex = 52
+        Me.Button2.Text = "Cambiar"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Location = New System.Drawing.Point(384, 24)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(112, 85)
+        Me.PictureBox2.TabIndex = 51
+        Me.PictureBox2.TabStop = False
         '
         'LblMensaje
         '
@@ -402,122 +482,22 @@ Partial Class FrmFuncionarios
         Me.PictureBox1.TabIndex = 26
         Me.PictureBox1.TabStop = False
         '
-        'TextBox1
+        'Txt_Idsucursal
         '
-        Me.TextBox1.Location = New System.Drawing.Point(708, 98)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 28
+        Me.Txt_Idsucursal.Location = New System.Drawing.Point(333, 411)
+        Me.Txt_Idsucursal.Name = "Txt_Idsucursal"
+        Me.Txt_Idsucursal.Size = New System.Drawing.Size(173, 20)
+        Me.Txt_Idsucursal.TabIndex = 9
         '
-        'TextBox2
+        'Label5
         '
-        Me.TextBox2.Location = New System.Drawing.Point(814, 101)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 29
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(920, 103)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 30
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(1026, 103)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 31
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(1132, 103)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox5.TabIndex = 32
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(384, 115)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(112, 23)
-        Me.Button2.TabIndex = 52
-        Me.Button2.Text = "Cambiar"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Location = New System.Drawing.Point(384, 24)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(112, 85)
-        Me.PictureBox2.TabIndex = 51
-        Me.PictureBox2.TabStop = False
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(350, 149)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(127, 17)
-        Me.Label2.TabIndex = 54
-        Me.Label2.Text = "Nombre de usuario"
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(350, 163)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(181, 25)
-        Me.TextBox6.TabIndex = 53
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(350, 200)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(78, 17)
-        Me.Label3.TabIndex = 56
-        Me.Label3.Text = "Contraseña"
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(350, 214)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(181, 25)
-        Me.TextBox7.TabIndex = 55
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(356, 260)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(175, 25)
-        Me.ComboBox1.TabIndex = 58
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(353, 246)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(44, 17)
-        Me.Label4.TabIndex = 57
-        Me.Label4.Text = "Cargo"
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(350, 305)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(178, 25)
-        Me.DateTimePicker1.TabIndex = 60
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(347, 288)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(137, 17)
-        Me.Label6.TabIndex = 59
-        Me.Label6.Text = "Fecha de Nacimiento"
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(254, 411)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(79, 17)
+        Me.Label5.TabIndex = 61
+        Me.Label5.Text = "ID Sucursal"
         '
         'FrmFuncionarios
         '
@@ -525,11 +505,7 @@ Partial Class FrmFuncionarios
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(1358, 459)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.Lbl_IDBusq)
@@ -537,12 +513,14 @@ Partial Class FrmFuncionarios
         Me.Controls.Add(Me.Txt_Busqueda)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.Txt_Idsucursal)
         Me.Location = New System.Drawing.Point(42, 30)
         Me.Name = "FrmFuncionarios"
         Me.Text = "Funcionarios"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.FlowLayoutPanel2.ResumeLayout(False)
         Me.FlowLayoutPanel2.PerformLayout()
         Me.ToolStrip1.ResumeLayout(False)
@@ -553,7 +531,6 @@ Partial Class FrmFuncionarios
         CType(Me.errordecedula, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Errortelefono, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -595,19 +572,16 @@ Partial Class FrmFuncionarios
     Friend WithEvents errordenombre As System.Windows.Forms.ErrorProvider
     Friend WithEvents errordecedula As System.Windows.Forms.ErrorProvider
     Friend WithEvents Errortelefono As System.Windows.Forms.ErrorProvider
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Cbo_cargo As System.Windows.Forms.ComboBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents Txt_pass As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents Txt_user As System.Windows.Forms.TextBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents Txt_Idsucursal As System.Windows.Forms.TextBox
+    Friend WithEvents Label5 As System.Windows.Forms.Label
 End Class

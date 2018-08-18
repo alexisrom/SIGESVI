@@ -28,7 +28,7 @@
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         Dim sql As String
-        sql = "insert into funcionarios values('51253018','fernando','gavello','pando','092207207')"
+        sql = "insert into almacen values(01, 'soyunasucursal', 01)"
         Dim comando As New Odbc.OdbcCommand
         conexion.conecta()
         comando.Connection = conectar

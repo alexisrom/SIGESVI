@@ -92,13 +92,18 @@
         'aca viene la conexion xdddddddddddddddddddddddddd'
         Dim sql As String
         'sql = "insert into funcionarios values('fernando','gavello','pando','092207207')"
-        Dim tel As Integer = Txt_Telefono.Text
-        Dim ci As Integer = Txt_Ci.Text
+        'Dim tel As Integer = Txt_Telefono.Text
+        Dim id_sucursal As String = Txt_Idsucursal.Text
+        Dim ci As Integer = CInt(Txt_Ci.Text)
         Dim nom As String = Txt_Nombre.Text
         Dim ape As String = Txt_Apellido.Text
         Dim dire As String = Txt_Direccion.Text
+        Dim fecha As Date = Convert.ToDateTime(DateTimePicker1.Value)
+        Dim pass As String = Txt_pass.Text
+        Dim cargo As String = Cbo_cargo.Text
+        Dim user As String = Txt_user.Text
        
-        sql = "insert into funcionarios values('ci','nom','ape','dire','tel')"
+        sql = "insert into funcionario values(" & ci & ",'" & id_sucursal & "','" & nom & "','" & ape & "'," & fecha & ",'" & dire  & "','" & user & "','" & pass & "','" & cargo & "')"
         'sql = "insert into funcionarios values(" & 33333 & ",'" & "dsadsa" & "'," & "dsadas" & "'," & "dsadas" & "'," & 66666 & "',)"
         Dim comando As New Odbc.OdbcCommand
         conexion.conecta()
@@ -129,6 +134,18 @@
     End Sub
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label5.Click
+
+    End Sub
+
+    Private Sub DateTimePicker1_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DateTimePicker1.ValueChanged
+
+    End Sub
+
+    Private Sub TextBox7_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txt_pass.TextChanged
 
     End Sub
 End Class

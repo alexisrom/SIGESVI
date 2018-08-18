@@ -6,7 +6,7 @@ Module conexion
     Public dbcon As OdbcConnection
     Public dbconexionexitosa As Boolean = True
     Public Sub conecta()
-        conectar.ConnectionString = "FILEDSN=" & Application.StartupPath & "\midsn;UID=informix;PWD=informix"
+        conectar.ConnectionString = "FILEDSN=" & Application.StartupPath & "\proyecto.dsn;UID=informix;PWD=informix"
         comando.Connection = conectar
         Try
             conectar.Open()

@@ -1,4 +1,6 @@
-﻿Public Class FrmFuncionarios
+﻿Imports System.Data.Odbc
+Imports System.Net
+Public Class FrmFuncionarios
 
     Private Sub Txt_Nombre_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txt_Nombre.TextChanged
 
@@ -29,7 +31,7 @@
 
     End Sub
 
-    Private Sub Btn_Quitar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Quitartel.Click
+    Private Sub Btn_Quitar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_QuitarTel.Click
         If Not vaciolistbox(LblTelefonos) Then
             LblTelefonos.Items.RemoveAt(LblTelefonos.SelectedIndex)
         End If
@@ -48,10 +50,10 @@
 
 
 
-        If vacio(Txt_nombre) Then
-            errordenombre.SetError(Txt_nombre, "ingrese un nombre")
-        ElseIf Not sololetras(Txt_nombre) Then
-            errordenombre.SetError(Txt_nombre, "ingrese un nombre valido")
+        If vacio(Txt_Nombre) Then
+            errordenombre.SetError(Txt_Nombre, "ingrese un nombre")
+        ElseIf Not sololetras(Txt_Nombre) Then
+            errordenombre.SetError(Txt_Nombre, "ingrese un nombre valido")
         Else
             errordenombre.Clear()
         End If
@@ -78,7 +80,7 @@
 
 
 
-   
+
 
         If vacio(Txt_Direccion) Then
             errordedireccion.SetError(Txt_Direccion, "ingrese una direccion")
@@ -86,24 +88,24 @@
         If Not vacio(Txt_Direccion) Then
             errordedireccion.Clear()
         End If
-        If Not sololetras(Txt_nombre) Then
-            errordenombre.SetError(Txt_nombre, "ingrese un nombre Valido")
+        If Not sololetras(Txt_Nombre) Then
+            errordenombre.SetError(Txt_Nombre, "ingrese un nombre Valido")
         End If
         'aca viene la conexion xdddddddddddddddddddddddddd'
         Dim sql As String
         'sql = "insert into funcionarios values('fernando','gavello','pando','092207207')"
         'Dim tel As Integer = Txt_Telefono.Text
-        Dim id_sucursal As String = Txt_Idsucursal.Text
+        Dim id_sucursal As Integer = CInt(Txt_Idsucursal.Text)
         Dim ci As Integer = CInt(Txt_Ci.Text)
         Dim nom As String = Txt_Nombre.Text
         Dim ape As String = Txt_Apellido.Text
         Dim dire As String = Txt_Direccion.Text
-        Dim fecha As Date = Convert.ToDateTime(DateTimePicker1.Value)
+        'Dim fecha As Date = Convert.ToDateTime(DateTimePicker1.Value)
         Dim pass As String = Txt_pass.Text
         Dim cargo As String = Cbo_cargo.Text
         Dim user As String = Txt_user.Text
-       
-        sql = "insert into funcionario values(" & ci & ",'" & id_sucursal & "','" & nom & "','" & ape & "'," & fecha & ",'" & dire  & "','" & user & "','" & pass & "','" & cargo & "')"
+
+        sql = "insert into funcionario values(" & ci & ",'" & id_sucursal & "','" & nom & "','" & ape & "','" & dire & "','" & user & "','" & pass & "','" & cargo & "')"
         'sql = "insert into funcionarios values(" & 33333 & ",'" & "dsadsa" & "'," & "dsadas" & "'," & "dsadas" & "'," & 66666 & "',)"
         Dim comando As New Odbc.OdbcCommand
         conexion.conecta()
@@ -120,8 +122,8 @@
     End Sub
 
     Private Sub Txt_Ci_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txt_Ci.TextChanged
-        If Not sololetras(Txt_nombre) Then
-            errordecedula.SetError(Txt_nombre, "ingrese un nombre valido")
+        If Not sololetras(Txt_Nombre) Then
+            errordecedula.SetError(Txt_Nombre, "ingrese un nombre valido")
         End If
     End Sub
 
@@ -141,11 +143,23 @@
 
     End Sub
 
-    Private Sub DateTimePicker1_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DateTimePicker1.ValueChanged
+    Private Sub DateTimePicker1_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 
     Private Sub TextBox7_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txt_pass.TextChanged
+
+    End Sub
+
+    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
+        Call conecta()
+
+        comando.Connection = conexion.conectar
+        comando.CommandText = "select * from funcionario where cedula = " & Txt_Busqueda.Text & ""
+        comando.ExecuteNonQuery()
+        da.SelectCommand = comando
+        da.Fill(ds, "funcionario")
+        DataGridView1.DataSource = ds.Tables("funcionario")
 
     End Sub
 End Class

@@ -27,15 +27,8 @@ Partial Class FrmFuncionarios
         Me.Lbl_IDBusq = New System.Windows.Forms.Label
         Me.Txt_Busqueda = New System.Windows.Forms.TextBox
         Me.DataGridView1 = New System.Windows.Forms.DataGridView
-        Me.CI = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Apellido = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.User = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Pass = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker
-        Me.Label6 = New System.Windows.Forms.Label
+        Me.Label5 = New System.Windows.Forms.Label
         Me.Cbo_cargo = New System.Windows.Forms.ComboBox
         Me.Label4 = New System.Windows.Forms.Label
         Me.Label3 = New System.Windows.Forms.Label
@@ -44,6 +37,7 @@ Partial Class FrmFuncionarios
         Me.Txt_user = New System.Windows.Forms.TextBox
         Me.Button2 = New System.Windows.Forms.Button
         Me.PictureBox2 = New System.Windows.Forms.PictureBox
+        Me.Txt_Idsucursal = New System.Windows.Forms.TextBox
         Me.LblMensaje = New System.Windows.Forms.Label
         Me.lblDireccion = New System.Windows.Forms.Label
         Me.lbltelefono = New System.Windows.Forms.Label
@@ -71,8 +65,6 @@ Partial Class FrmFuncionarios
         Me.errordecedula = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.Errortelefono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
-        Me.Txt_Idsucursal = New System.Windows.Forms.TextBox
-        Me.Label5 = New System.Windows.Forms.Label
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -108,53 +100,15 @@ Partial Class FrmFuncionarios
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CI, Me.Nombre, Me.Apellido, Me.Telefono, Me.User, Me.Pass})
         Me.DataGridView1.Location = New System.Drawing.Point(667, 69)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.Size = New System.Drawing.Size(644, 284)
         Me.DataGridView1.TabIndex = 23
         '
-        'CI
-        '
-        Me.CI.HeaderText = "Cédula"
-        Me.CI.Name = "CI"
-        Me.CI.ReadOnly = True
-        '
-        'Nombre
-        '
-        Me.Nombre.HeaderText = "Nombre"
-        Me.Nombre.Name = "Nombre"
-        Me.Nombre.ReadOnly = True
-        '
-        'Apellido
-        '
-        Me.Apellido.HeaderText = "Apellido"
-        Me.Apellido.Name = "Apellido"
-        Me.Apellido.ReadOnly = True
-        '
-        'Telefono
-        '
-        Me.Telefono.HeaderText = "Teléfono"
-        Me.Telefono.Name = "Telefono"
-        Me.Telefono.ReadOnly = True
-        '
-        'User
-        '
-        Me.User.HeaderText = "Usuario"
-        Me.User.Name = "User"
-        Me.User.ReadOnly = True
-        '
-        'Pass
-        '
-        Me.Pass.HeaderText = "Contraseña"
-        Me.Pass.Name = "Pass"
-        Me.Pass.ReadOnly = True
-        '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
-        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Cbo_cargo)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
@@ -163,6 +117,7 @@ Partial Class FrmFuncionarios
         Me.GroupBox1.Controls.Add(Me.Txt_user)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.PictureBox2)
+        Me.GroupBox1.Controls.Add(Me.Txt_Idsucursal)
         Me.GroupBox1.Controls.Add(Me.LblMensaje)
         Me.GroupBox1.Controls.Add(Me.lblDireccion)
         Me.GroupBox1.Controls.Add(Me.lbltelefono)
@@ -178,27 +133,21 @@ Partial Class FrmFuncionarios
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Información Personal"
         '
-        'DateTimePicker1
+        'Label5
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(350, 305)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(178, 25)
-        Me.DateTimePicker1.TabIndex = 60
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(347, 288)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(137, 17)
-        Me.Label6.TabIndex = 59
-        Me.Label6.Text = "Fecha de Nacimiento"
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(295, 311)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(79, 17)
+        Me.Label5.TabIndex = 61
+        Me.Label5.Text = "ID Sucursal"
         '
         'Cbo_cargo
         '
         Me.Cbo_cargo.FormattingEnabled = True
         Me.Cbo_cargo.Items.AddRange(New Object() {"Administrativo", "Gerente Sucursal", "Asesor Profesional"})
-        Me.Cbo_cargo.Location = New System.Drawing.Point(356, 260)
+        Me.Cbo_cargo.Location = New System.Drawing.Point(384, 258)
         Me.Cbo_cargo.Name = "Cbo_cargo"
         Me.Cbo_cargo.Size = New System.Drawing.Size(175, 25)
         Me.Cbo_cargo.TabIndex = 58
@@ -206,7 +155,7 @@ Partial Class FrmFuncionarios
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(353, 246)
+        Me.Label4.Location = New System.Drawing.Point(330, 237)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(44, 17)
         Me.Label4.TabIndex = 57
@@ -215,7 +164,7 @@ Partial Class FrmFuncionarios
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(350, 200)
+        Me.Label3.Location = New System.Drawing.Point(330, 191)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(78, 17)
         Me.Label3.TabIndex = 56
@@ -223,7 +172,7 @@ Partial Class FrmFuncionarios
         '
         'Txt_pass
         '
-        Me.Txt_pass.Location = New System.Drawing.Point(350, 214)
+        Me.Txt_pass.Location = New System.Drawing.Point(384, 211)
         Me.Txt_pass.Name = "Txt_pass"
         Me.Txt_pass.Size = New System.Drawing.Size(181, 25)
         Me.Txt_pass.TabIndex = 55
@@ -231,7 +180,7 @@ Partial Class FrmFuncionarios
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(350, 149)
+        Me.Label2.Location = New System.Drawing.Point(330, 143)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(127, 17)
         Me.Label2.TabIndex = 54
@@ -239,7 +188,7 @@ Partial Class FrmFuncionarios
         '
         'Txt_user
         '
-        Me.Txt_user.Location = New System.Drawing.Point(350, 163)
+        Me.Txt_user.Location = New System.Drawing.Point(384, 163)
         Me.Txt_user.Name = "Txt_user"
         Me.Txt_user.Size = New System.Drawing.Size(181, 25)
         Me.Txt_user.TabIndex = 53
@@ -260,6 +209,13 @@ Partial Class FrmFuncionarios
         Me.PictureBox2.Size = New System.Drawing.Size(112, 85)
         Me.PictureBox2.TabIndex = 51
         Me.PictureBox2.TabStop = False
+        '
+        'Txt_Idsucursal
+        '
+        Me.Txt_Idsucursal.Location = New System.Drawing.Point(392, 308)
+        Me.Txt_Idsucursal.Name = "Txt_Idsucursal"
+        Me.Txt_Idsucursal.Size = New System.Drawing.Size(173, 25)
+        Me.Txt_Idsucursal.TabIndex = 9
         '
         'LblMensaje
         '
@@ -482,30 +438,12 @@ Partial Class FrmFuncionarios
         Me.PictureBox1.TabIndex = 26
         Me.PictureBox1.TabStop = False
         '
-        'Txt_Idsucursal
-        '
-        Me.Txt_Idsucursal.Location = New System.Drawing.Point(333, 411)
-        Me.Txt_Idsucursal.Name = "Txt_Idsucursal"
-        Me.Txt_Idsucursal.Size = New System.Drawing.Size(173, 20)
-        Me.Txt_Idsucursal.TabIndex = 9
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(254, 411)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(79, 17)
-        Me.Label5.TabIndex = 61
-        Me.Label5.Text = "ID Sucursal"
-        '
         'FrmFuncionarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(1358, 459)
-        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.Lbl_IDBusq)
@@ -513,7 +451,6 @@ Partial Class FrmFuncionarios
         Me.Controls.Add(Me.Txt_Busqueda)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.Txt_Idsucursal)
         Me.Location = New System.Drawing.Point(42, 30)
         Me.Name = "FrmFuncionarios"
         Me.Text = "Funcionarios"
@@ -539,12 +476,6 @@ Partial Class FrmFuncionarios
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Txt_Busqueda As System.Windows.Forms.TextBox
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-    Friend WithEvents CI As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Nombre As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Apellido As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Telefono As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents User As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Pass As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents LblMensaje As System.Windows.Forms.Label
     Friend WithEvents lblDireccion As System.Windows.Forms.Label
@@ -572,8 +503,6 @@ Partial Class FrmFuncionarios
     Friend WithEvents errordenombre As System.Windows.Forms.ErrorProvider
     Friend WithEvents errordecedula As System.Windows.Forms.ErrorProvider
     Friend WithEvents Errortelefono As System.Windows.Forms.ErrorProvider
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Cbo_cargo As System.Windows.Forms.ComboBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label

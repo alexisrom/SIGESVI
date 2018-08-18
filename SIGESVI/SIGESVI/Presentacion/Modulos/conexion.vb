@@ -5,6 +5,10 @@ Module conexion
     Public comando As New Odbc.OdbcCommand
     Public dbcon As OdbcConnection
     Public dbconexionexitosa As Boolean = True
+    Public ds As New Data.DataSet
+    Public da As New Odbc.OdbcDataAdapter
+  
+
     Public Sub conecta()
         conectar.ConnectionString = "FILEDSN=" & Application.StartupPath & "\proyecto.dsn;UID=informix;PWD=informix"
         comando.Connection = conectar

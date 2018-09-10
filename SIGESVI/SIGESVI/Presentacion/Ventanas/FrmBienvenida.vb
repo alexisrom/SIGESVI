@@ -41,4 +41,8 @@
     Private Sub frm_Bienvenida_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txt_Constraseña.TextChanged
+
+    End Sub
 End Class

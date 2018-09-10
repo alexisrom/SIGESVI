@@ -51,7 +51,7 @@ Partial Class FrmProduccion
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.ListBox1)
-        Me.GroupBox1.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(24, 60)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(200, 355)
@@ -62,11 +62,11 @@ Partial Class FrmProduccion
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 17
+        Me.ListBox1.ItemHeight = 18
         Me.ListBox1.Items.AddRange(New Object() {"Merlot", "Cabernet Sauvignon", "Malbec", "Pinot Noir", "Sangiovese"})
         Me.ListBox1.Location = New System.Drawing.Point(15, 43)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(162, 276)
+        Me.ListBox1.Size = New System.Drawing.Size(162, 274)
         Me.ListBox1.TabIndex = 0
         '
         'GroupBox2
@@ -79,7 +79,7 @@ Partial Class FrmProduccion
         Me.GroupBox2.Controls.Add(Me.DateTimePicker1)
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Controls.Add(Me.ListBox2)
-        Me.GroupBox2.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(250, 60)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(214, 355)
@@ -92,7 +92,7 @@ Partial Class FrmProduccion
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(155, 123)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(52, 17)
+        Me.Label5.Size = New System.Drawing.Size(54, 18)
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "00 días"
         '
@@ -101,7 +101,7 @@ Partial Class FrmProduccion
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(96, 123)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(70, 17)
+        Me.Label4.Size = New System.Drawing.Size(73, 18)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Duración:"
         '
@@ -109,7 +109,7 @@ Partial Class FrmProduccion
         '
         Me.DateTimePicker2.Location = New System.Drawing.Point(10, 96)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(188, 25)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(188, 26)
         Me.DateTimePicker2.TabIndex = 6
         '
         'Label3
@@ -117,7 +117,7 @@ Partial Class FrmProduccion
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(10, 80)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(28, 17)
+        Me.Label3.Size = New System.Drawing.Size(29, 18)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Fin"
         '
@@ -126,7 +126,7 @@ Partial Class FrmProduccion
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(7, 34)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(44, 17)
+        Me.Label2.Size = New System.Drawing.Size(45, 18)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Inicio"
         '
@@ -134,7 +134,7 @@ Partial Class FrmProduccion
         '
         Me.DateTimePicker1.Location = New System.Drawing.Point(7, 53)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(194, 25)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(194, 26)
         Me.DateTimePicker1.TabIndex = 3
         '
         'Label1
@@ -142,18 +142,18 @@ Partial Class FrmProduccion
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(7, 159)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(50, 17)
+        Me.Label1.Size = New System.Drawing.Size(50, 18)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Etapas"
         '
         'ListBox2
         '
         Me.ListBox2.FormattingEnabled = True
-        Me.ListBox2.ItemHeight = 17
+        Me.ListBox2.ItemHeight = 18
         Me.ListBox2.Items.AddRange(New Object() {"1. Despalillado", "2. Fermentación", "3. Remontado", "4. Descube", "5. Fermentación maloláctica", "6. Trasiegos", "7. Selección", "8. Crianza en barricas de roble"})
         Me.ListBox2.Location = New System.Drawing.Point(7, 179)
         Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(195, 174)
+        Me.ListBox2.Size = New System.Drawing.Size(195, 166)
         Me.ListBox2.TabIndex = 1
         '
         'Button1
@@ -222,9 +222,10 @@ Partial Class FrmProduccion
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(372, 25)
+        Me.Label6.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(21, 25)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(760, 13)
+        Me.Label6.Size = New System.Drawing.Size(1058, 18)
         Me.Label6.TabIndex = 18
         Me.Label6.Text = "Importante: Una vez iniciada la producción está no podrá ser modificada ni elimin" & _
             "ada, el seguimiento de la misma se hará a través de la trazabilidad del producto" & _
@@ -234,7 +235,7 @@ Partial Class FrmProduccion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.BackColor = System.Drawing.Color.CornflowerBlue
         Me.ClientSize = New System.Drawing.Size(1132, 551)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.DataGridView1)

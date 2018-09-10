@@ -109,6 +109,7 @@ Partial Class FrmTrazabilidad
         Me.GroupBox2.Controls.Add(Me.TextBox1)
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GroupBox2.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(0, 25)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(677, 100)
@@ -118,42 +119,42 @@ Partial Class FrmTrazabilidad
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(236, 23)
+        Me.Button1.Location = New System.Drawing.Point(255, 25)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(75, 27)
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "Buscar"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(72, 54)
+        Me.TextBox2.Location = New System.Drawing.Point(91, 55)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(239, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(239, 26)
         Me.TextBox2.TabIndex = 3
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(16, 57)
+        Me.Label2.Location = New System.Drawing.Point(16, 58)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(50, 13)
+        Me.Label2.Size = New System.Drawing.Size(69, 18)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Producto"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(72, 28)
+        Me.TextBox1.Location = New System.Drawing.Point(91, 26)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(158, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(158, 26)
         Me.TextBox1.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(13, 29)
+        Me.Label1.Location = New System.Drawing.Point(61, 31)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(18, 13)
+        Me.Label1.Size = New System.Drawing.Size(24, 18)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "ID"
         '
@@ -166,6 +167,7 @@ Partial Class FrmTrazabilidad
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.ListBox1)
         Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GroupBox1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(0, 125)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(677, 413)
@@ -201,7 +203,7 @@ Partial Class FrmTrazabilidad
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(65, 204)
+        Me.Button2.Location = New System.Drawing.Point(61, 240)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(114, 23)
         Me.Button2.TabIndex = 53
@@ -212,48 +214,48 @@ Partial Class FrmTrazabilidad
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"K", "Kg", "g", "L", "mL"})
-        Me.ComboBox1.Location = New System.Drawing.Point(186, 154)
+        Me.ComboBox1.Location = New System.Drawing.Point(105, 178)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(29, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(29, 26)
         Me.ComboBox1.TabIndex = 52
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(15, 160)
+        Me.Label5.Location = New System.Drawing.Point(3, 157)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(110, 13)
+        Me.Label5.Size = New System.Drawing.Size(153, 18)
         Me.Label5.TabIndex = 51
         Me.Label5.Text = "Cantidad de Producto"
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(131, 154)
+        Me.TextBox5.Location = New System.Drawing.Point(51, 178)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(48, 20)
+        Me.TextBox5.Size = New System.Drawing.Size(48, 26)
         Me.TextBox5.TabIndex = 50
         '
         'DateTimePicker2
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(15, 116)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(10, 122)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(200, 26)
         Me.DateTimePicker2.TabIndex = 36
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(12, 100)
+        Me.Label4.Location = New System.Drawing.Point(9, 105)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(69, 13)
+        Me.Label4.Size = New System.Drawing.Size(90, 18)
         Me.Label4.TabIndex = 35
         Me.Label4.Text = "Fecha de Fin"
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(12, 73)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(10, 76)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 26)
         Me.DateTimePicker1.TabIndex = 34
         '
         'Label3
@@ -261,7 +263,7 @@ Partial Class FrmTrazabilidad
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(9, 57)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(80, 13)
+        Me.Label3.Size = New System.Drawing.Size(106, 18)
         Me.Label3.TabIndex = 33
         Me.Label3.Text = "Fecha de Inicio"
         '
@@ -270,7 +272,7 @@ Partial Class FrmTrazabilidad
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Location = New System.Drawing.Point(6, 28)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(150, 17)
+        Me.CheckBox1.Size = New System.Drawing.Size(194, 22)
         Me.CheckBox1.TabIndex = 29
         Me.CheckBox1.Text = "Marcar como etapa actual"
         Me.CheckBox1.UseVisualStyleBackColor = True
@@ -278,19 +280,20 @@ Partial Class FrmTrazabilidad
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(69, 43)
+        Me.Label9.Location = New System.Drawing.Point(69, 38)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(56, 13)
+        Me.Label9.Size = New System.Drawing.Size(72, 18)
         Me.Label9.TabIndex = 3
         Me.Label9.Text = "Sub-etapa"
         '
         'ListBox2
         '
         Me.ListBox2.FormattingEnabled = True
+        Me.ListBox2.ItemHeight = 18
         Me.ListBox2.Items.AddRange(New Object() {"1.1 - Transporte a la bodega", "1.2 - xxxxxx"})
         Me.ListBox2.Location = New System.Drawing.Point(72, 59)
         Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(248, 56)
+        Me.ListBox2.Size = New System.Drawing.Size(248, 40)
         Me.ListBox2.TabIndex = 2
         '
         'Label8
@@ -298,30 +301,32 @@ Partial Class FrmTrazabilidad
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(72, 143)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(63, 13)
+        Me.Label8.Size = New System.Drawing.Size(85, 18)
         Me.Label8.TabIndex = 1
         Me.Label8.Text = "Elaboración"
         '
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 18
         Me.ListBox1.Items.AddRange(New Object() {"Etapa 1 - Filtración", "Etapa 2 - Descube", "Etapa 3 - Fermentación", "Etapa 4 - Conservación"})
         Me.ListBox1.Location = New System.Drawing.Point(72, 162)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(248, 186)
+        Me.ListBox1.Size = New System.Drawing.Size(248, 184)
         Me.ListBox1.TabIndex = 0
         '
         'FrmTrazabilidad
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.CornflowerBlue
         Me.ClientSize = New System.Drawing.Size(677, 538)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Name = "FrmTrazabilidad"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FrmTrazabilidad"
+        Me.Text = "Trazabilidad"
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)

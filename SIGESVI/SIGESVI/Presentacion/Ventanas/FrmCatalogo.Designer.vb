@@ -59,8 +59,8 @@ Partial Class FrmCatalogo
         Me.PictureBox3 = New System.Windows.Forms.PictureBox
         Me.PictureBox2 = New System.Windows.Forms.PictureBox
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label1 = New System.Windows.Forms.Label
+        Me.Lbl_VinoBlanco = New System.Windows.Forms.Label
+        Me.Lbl_VinoRosado = New System.Windows.Forms.Label
         Me.Lbl_VinoTinto = New System.Windows.Forms.Label
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -114,6 +114,7 @@ Partial Class FrmCatalogo
         Me.GroupBox1.Controls.Add(Me.CheckBox3)
         Me.GroupBox1.Controls.Add(Me.CheckBox2)
         Me.GroupBox1.Controls.Add(Me.CheckBox1)
+        Me.GroupBox1.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(767, 115)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(200, 144)
@@ -126,7 +127,7 @@ Partial Class FrmCatalogo
         Me.CheckBox3.AutoSize = True
         Me.CheckBox3.Location = New System.Drawing.Point(20, 84)
         Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(63, 17)
+        Me.CheckBox3.Size = New System.Drawing.Size(79, 23)
         Me.CheckBox3.TabIndex = 2
         Me.CheckBox3.Text = "Rosado"
         Me.CheckBox3.UseVisualStyleBackColor = True
@@ -136,7 +137,7 @@ Partial Class FrmCatalogo
         Me.CheckBox2.AutoSize = True
         Me.CheckBox2.Location = New System.Drawing.Point(20, 61)
         Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(59, 17)
+        Me.CheckBox2.Size = New System.Drawing.Size(76, 23)
         Me.CheckBox2.TabIndex = 1
         Me.CheckBox2.Text = "Blanco"
         Me.CheckBox2.UseVisualStyleBackColor = True
@@ -146,7 +147,7 @@ Partial Class FrmCatalogo
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Location = New System.Drawing.Point(20, 38)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(50, 17)
+        Me.CheckBox1.Size = New System.Drawing.Size(67, 23)
         Me.CheckBox1.TabIndex = 0
         Me.CheckBox1.Text = "Tinto"
         Me.CheckBox1.UseVisualStyleBackColor = True
@@ -156,6 +157,7 @@ Partial Class FrmCatalogo
         Me.GroupBox2.Controls.Add(Me.CheckBox4)
         Me.GroupBox2.Controls.Add(Me.CheckBox5)
         Me.GroupBox2.Controls.Add(Me.CheckBox6)
+        Me.GroupBox2.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(767, 269)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(200, 144)
@@ -168,7 +170,7 @@ Partial Class FrmCatalogo
         Me.CheckBox4.AutoSize = True
         Me.CheckBox4.Location = New System.Drawing.Point(20, 84)
         Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(52, 17)
+        Me.CheckBox4.Size = New System.Drawing.Size(68, 23)
         Me.CheckBox4.TabIndex = 2
         Me.CheckBox4.Text = "Vinos"
         Me.CheckBox4.UseVisualStyleBackColor = True
@@ -178,7 +180,7 @@ Partial Class FrmCatalogo
         Me.CheckBox5.AutoSize = True
         Me.CheckBox5.Location = New System.Drawing.Point(20, 61)
         Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(55, 17)
+        Me.CheckBox5.Size = New System.Drawing.Size(72, 23)
         Me.CheckBox5.TabIndex = 1
         Me.CheckBox5.Text = "Mosto"
         Me.CheckBox5.UseVisualStyleBackColor = True
@@ -188,7 +190,7 @@ Partial Class FrmCatalogo
         Me.CheckBox6.AutoSize = True
         Me.CheckBox6.Location = New System.Drawing.Point(20, 38)
         Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(46, 17)
+        Me.CheckBox6.Size = New System.Drawing.Size(56, 23)
         Me.CheckBox6.TabIndex = 0
         Me.CheckBox6.Text = "Uva"
         Me.CheckBox6.UseVisualStyleBackColor = True
@@ -220,8 +222,8 @@ Partial Class FrmCatalogo
         Me.Panel1.Controls.Add(Me.PictureBox3)
         Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.Lbl_VinoBlanco)
+        Me.Panel1.Controls.Add(Me.Lbl_VinoRosado)
         Me.Panel1.Controls.Add(Me.Lbl_VinoTinto)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -461,25 +463,25 @@ Partial Class FrmCatalogo
         Me.PictureBox1.TabIndex = 27
         Me.PictureBox1.TabStop = False
         '
-        'Label2
+        'Lbl_VinoBlanco
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Constantia", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(44, 255)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(136, 23)
-        Me.Label2.TabIndex = 26
-        Me.Label2.Text = "Vinos Blancos"
+        Me.Lbl_VinoBlanco.AutoSize = True
+        Me.Lbl_VinoBlanco.Font = New System.Drawing.Font("Constantia", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_VinoBlanco.Location = New System.Drawing.Point(44, 255)
+        Me.Lbl_VinoBlanco.Name = "Lbl_VinoBlanco"
+        Me.Lbl_VinoBlanco.Size = New System.Drawing.Size(136, 23)
+        Me.Lbl_VinoBlanco.TabIndex = 26
+        Me.Lbl_VinoBlanco.Text = "Vinos Blancos"
         '
-        'Label1
+        'Lbl_VinoRosado
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Constantia", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(39, 440)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(141, 23)
-        Me.Label1.TabIndex = 25
-        Me.Label1.Text = "Vinos Rosados"
+        Me.Lbl_VinoRosado.AutoSize = True
+        Me.Lbl_VinoRosado.Font = New System.Drawing.Font("Constantia", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_VinoRosado.Location = New System.Drawing.Point(39, 440)
+        Me.Lbl_VinoRosado.Name = "Lbl_VinoRosado"
+        Me.Lbl_VinoRosado.Size = New System.Drawing.Size(141, 23)
+        Me.Lbl_VinoRosado.TabIndex = 25
+        Me.Lbl_VinoRosado.Text = "Vinos Rosados"
         '
         'Lbl_VinoTinto
         '
@@ -495,7 +497,7 @@ Partial Class FrmCatalogo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.Color.CornflowerBlue
         Me.ClientSize = New System.Drawing.Size(1016, 669)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GroupBox2)
@@ -566,7 +568,7 @@ Partial Class FrmCatalogo
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Lbl_VinoBlanco As System.Windows.Forms.Label
+    Friend WithEvents Lbl_VinoRosado As System.Windows.Forms.Label
     Friend WithEvents Lbl_VinoTinto As System.Windows.Forms.Label
 End Class

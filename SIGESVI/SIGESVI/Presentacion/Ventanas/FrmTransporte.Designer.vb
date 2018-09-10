@@ -44,27 +44,30 @@ Partial Class FrmTransporte
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(29, 40)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(170, 13)
+        Me.Label1.Size = New System.Drawing.Size(222, 18)
         Me.Label1.TabIndex = 17
         Me.Label1.Text = "TRANSPORTE DE PRODUCTOS"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(32, 77)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(144, 13)
+        Me.Label2.Size = New System.Drawing.Size(191, 18)
         Me.Label2.TabIndex = 18
         Me.Label2.Text = "Seleccione el/los producto/s"
         '
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(35, 105)
+        Me.LinkLabel1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel1.Location = New System.Drawing.Point(47, 101)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(114, 13)
+        Me.LinkLabel1.Size = New System.Drawing.Size(152, 18)
         Me.LinkLabel1.TabIndex = 19
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Seleccionar Productos"
@@ -80,9 +83,10 @@ Partial Class FrmTransporte
         'LinkLabel2
         '
         Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.Location = New System.Drawing.Point(799, 105)
+        Me.LinkLabel2.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel2.Location = New System.Drawing.Point(785, 101)
         Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(112, 13)
+        Me.LinkLabel2.Size = New System.Drawing.Size(148, 18)
         Me.LinkLabel2.TabIndex = 22
         Me.LinkLabel2.TabStop = True
         Me.LinkLabel2.Text = "Seleccionar Vehiculos"
@@ -90,9 +94,10 @@ Partial Class FrmTransporte
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(764, 77)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(147, 13)
+        Me.Label3.Size = New System.Drawing.Size(192, 18)
         Me.Label3.TabIndex = 21
         Me.Label3.Text = "Seleccione el/los vehiculos/s"
         '
@@ -108,6 +113,7 @@ Partial Class FrmTransporte
         '
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Font = New System.Drawing.Font("Constantia", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(404, 145)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(138, 139)
@@ -117,43 +123,47 @@ Partial Class FrmTransporte
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(18, 63)
+        Me.Label5.Location = New System.Drawing.Point(12, 68)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(103, 13)
+        Me.Label5.Size = New System.Drawing.Size(116, 15)
         Me.Label5.TabIndex = 1
         Me.Label5.Text = "Capacidad Total: 00"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(17, 19)
+        Me.Label4.Font = New System.Drawing.Font("Constantia", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(6, 19)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(111, 13)
+        Me.Label4.Size = New System.Drawing.Size(127, 15)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Cantidad de Lotes: 00"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(414, 54)
+        Me.Label6.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(401, 56)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(111, 13)
+        Me.Label6.Size = New System.Drawing.Size(147, 18)
         Me.Label6.TabIndex = 25
         Me.Label6.Text = "Seleccione el destino:"
         '
         'ComboBox1
         '
+        Me.ComboBox1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(411, 77)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 26)
         Me.ComboBox1.TabIndex = 26
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(389, 324)
+        Me.Button1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(348, 305)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(168, 23)
+        Me.Button1.Size = New System.Drawing.Size(250, 34)
         Me.Button1.TabIndex = 28
         Me.Button1.Text = "CONFIRMAR TRASLADO"
         Me.Button1.UseVisualStyleBackColor = True
@@ -161,9 +171,10 @@ Partial Class FrmTransporte
         'LinkLabel3
         '
         Me.LinkLabel3.AutoSize = True
-        Me.LinkLabel3.Location = New System.Drawing.Point(448, 101)
+        Me.LinkLabel3.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel3.Location = New System.Drawing.Point(446, 106)
         Me.LinkLabel3.Name = "LinkLabel3"
-        Me.LinkLabel3.Size = New System.Drawing.Size(39, 13)
+        Me.LinkLabel3.Size = New System.Drawing.Size(50, 18)
         Me.LinkLabel3.TabIndex = 29
         Me.LinkLabel3.TabStop = True
         Me.LinkLabel3.Text = "Nuevo"
@@ -172,7 +183,7 @@ Partial Class FrmTransporte
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.BackColor = System.Drawing.Color.CornflowerBlue
         Me.ClientSize = New System.Drawing.Size(957, 398)
         Me.Controls.Add(Me.LinkLabel3)
         Me.Controls.Add(Me.Button1)

@@ -45,9 +45,10 @@ Partial Class FrmRecordatorio
         Me.GroupBox4.Controls.Add(Me.DateTimePicker3)
         Me.GroupBox4.Controls.Add(Me.TextBox3)
         Me.GroupBox4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GroupBox4.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(312, 398)
+        Me.GroupBox4.Size = New System.Drawing.Size(388, 419)
         Me.GroupBox4.TabIndex = 38
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Recordatorio"
@@ -74,9 +75,9 @@ Partial Class FrmRecordatorio
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(18, 113)
+        Me.Label7.Location = New System.Drawing.Point(18, 121)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(47, 13)
+        Me.Label7.Size = New System.Drawing.Size(62, 18)
         Me.Label7.TabIndex = 46
         Me.Label7.Text = "Mensaje"
         '
@@ -93,16 +94,16 @@ Partial Class FrmRecordatorio
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(18, 65)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(33, 13)
+        Me.Label6.Size = New System.Drawing.Size(47, 18)
         Me.Label6.TabIndex = 44
         Me.Label6.Text = "Titulo"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(221, 34)
+        Me.Label5.Location = New System.Drawing.Point(221, 40)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(64, 13)
+        Me.Label5.Size = New System.Drawing.Size(89, 18)
         Me.Label5.TabIndex = 43
         Me.Label5.Text = "(  FI < & < FF)"
         '
@@ -110,25 +111,26 @@ Partial Class FrmRecordatorio
         '
         Me.DateTimePicker3.Location = New System.Drawing.Point(15, 34)
         Me.DateTimePicker3.Name = "DateTimePicker3"
-        Me.DateTimePicker3.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePicker3.Size = New System.Drawing.Size(200, 26)
         Me.DateTimePicker3.TabIndex = 42
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(18, 81)
+        Me.TextBox3.Location = New System.Drawing.Point(21, 86)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(270, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(270, 26)
         Me.TextBox3.TabIndex = 41
         '
         'FrmRecordatorio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(312, 398)
+        Me.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.ClientSize = New System.Drawing.Size(388, 419)
         Me.Controls.Add(Me.GroupBox4)
         Me.Name = "FrmRecordatorio"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FrmRecordatorio"
+        Me.Text = "Recordatorio"
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
         Me.ResumeLayout(False)

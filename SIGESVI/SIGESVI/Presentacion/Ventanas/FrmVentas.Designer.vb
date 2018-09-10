@@ -36,7 +36,7 @@ Partial Class FrmVentas
         Me.Label6 = New System.Windows.Forms.Label
         Me.Label5 = New System.Windows.Forms.Label
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel
-        Me.Button1 = New System.Windows.Forms.Button
+        Me.Frm_Ventas = New System.Windows.Forms.Button
         Me.Label1 = New System.Windows.Forms.Label
         Me.TextBox1 = New System.Windows.Forms.TextBox
         Me.LbProductos = New System.Windows.Forms.ListBox
@@ -57,25 +57,28 @@ Partial Class FrmVentas
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(445, 81)
+        Me.TextBox4.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox4.Location = New System.Drawing.Point(445, 86)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(338, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(225, 26)
         Me.TextBox4.TabIndex = 46
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(25, 65)
+        Me.Label4.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(25, 60)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(18, 13)
+        Me.Label4.Size = New System.Drawing.Size(24, 18)
         Me.Label4.TabIndex = 45
         Me.Label4.Text = "ID"
         '
         'TextBox3
         '
+        Me.TextBox3.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(28, 81)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(126, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(126, 26)
         Me.TextBox3.TabIndex = 44
         '
         'DataGridView1
@@ -88,34 +91,38 @@ Partial Class FrmVentas
         '
         'TextBox2
         '
+        Me.TextBox2.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(247, 137)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(126, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(126, 26)
         Me.TextBox2.TabIndex = 42
         '
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(244, 118)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(31, 13)
+        Me.Label3.Size = New System.Drawing.Size(42, 18)
         Me.Label3.TabIndex = 41
         Me.Label3.Text = "Valor"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(25, 118)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(71, 13)
+        Me.Label2.Size = New System.Drawing.Size(93, 18)
         Me.Label2.TabIndex = 40
         Me.Label2.Text = "Fecha y Hora"
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(25, 137)
+        Me.DateTimePicker1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker1.Location = New System.Drawing.Point(28, 137)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 26)
         Me.DateTimePicker1.TabIndex = 39
         '
         'GroupBox1
@@ -124,11 +131,12 @@ Partial Class FrmVentas
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.LinkLabel1)
-        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.Frm_Ventas)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.LbProductos)
-        Me.GroupBox1.Location = New System.Drawing.Point(25, 177)
+        Me.GroupBox1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(25, 172)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(348, 360)
         Me.GroupBox1.TabIndex = 38
@@ -140,7 +148,7 @@ Partial Class FrmVentas
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(33, 313)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(76, 13)
+        Me.Label7.Size = New System.Drawing.Size(100, 18)
         Me.Label7.TabIndex = 7
         Me.Label7.Text = "Precio Total: $"
         '
@@ -149,68 +157,69 @@ Partial Class FrmVentas
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(32, 298)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(61, 13)
+        Me.Label6.Size = New System.Drawing.Size(81, 18)
         Me.Label6.TabIndex = 6
         Me.Label6.Text = "Cantidad: 1"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(33, 72)
+        Me.Label5.Location = New System.Drawing.Point(13, 71)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(112, 13)
+        Me.Label5.Size = New System.Drawing.Size(159, 18)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "[Nombre del producto]"
         '
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(30, 55)
+        Me.LinkLabel1.Location = New System.Drawing.Point(13, 41)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(109, 13)
+        Me.LinkLabel1.Size = New System.Drawing.Size(146, 18)
         Me.LinkLabel1.TabIndex = 4
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Seleccionar Producto"
         '
-        'Button1
+        'Frm_Ventas
         '
-        Me.Button1.Location = New System.Drawing.Point(233, 66)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Incluir"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Frm_Ventas.Location = New System.Drawing.Point(253, 66)
+        Me.Frm_Ventas.Name = "Frm_Ventas"
+        Me.Frm_Ventas.Size = New System.Drawing.Size(74, 23)
+        Me.Frm_Ventas.TabIndex = 3
+        Me.Frm_Ventas.Text = "Incluir"
+        Me.Frm_Ventas.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(178, 41)
+        Me.Label1.Location = New System.Drawing.Point(193, 41)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(49, 13)
+        Me.Label1.Size = New System.Drawing.Size(68, 18)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Cantidad"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(181, 68)
+        Me.TextBox1.Location = New System.Drawing.Point(266, 38)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(46, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(46, 26)
         Me.TextBox1.TabIndex = 1
         '
         'LbProductos
         '
         Me.LbProductos.FormattingEnabled = True
+        Me.LbProductos.ItemHeight = 18
         Me.LbProductos.Items.AddRange(New Object() {"Producto 1 - Cantidad 10"})
         Me.LbProductos.Location = New System.Drawing.Point(33, 105)
         Me.LbProductos.Name = "LbProductos"
-        Me.LbProductos.Size = New System.Drawing.Size(275, 186)
+        Me.LbProductos.Size = New System.Drawing.Size(275, 184)
         Me.LbProductos.TabIndex = 0
         '
         'PictureBox1
         '
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(789, 76)
+        Me.PictureBox1.Location = New System.Drawing.Point(676, 87)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(25, 25)
         Me.PictureBox1.TabIndex = 47
@@ -279,6 +288,7 @@ Partial Class FrmVentas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.CornflowerBlue
         Me.ClientSize = New System.Drawing.Size(1011, 571)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.ToolStrip1)
@@ -294,7 +304,7 @@ Partial Class FrmVentas
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "FrmVentas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FrmVentas"
+        Me.Text = "Ventas"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -319,7 +329,7 @@ Partial Class FrmVentas
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Frm_Ventas As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents LbProductos As System.Windows.Forms.ListBox

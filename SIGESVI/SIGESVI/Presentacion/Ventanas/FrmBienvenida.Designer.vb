@@ -25,11 +25,11 @@ Partial Class frm_Bienvenida
         Me.lbl_Bienvenida = New System.Windows.Forms.Label
         Me.lbl_SIGESVI = New System.Windows.Forms.Label
         Me.lbl_Aclaración = New System.Windows.Forms.Label
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.TextBox1 = New System.Windows.Forms.TextBox
-        Me.TextBox2 = New System.Windows.Forms.TextBox
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Button1 = New System.Windows.Forms.Button
+        Me.Lbl_Usuario = New System.Windows.Forms.Label
+        Me.Txt_Usuario = New System.Windows.Forms.TextBox
+        Me.Txt_Constraseña = New System.Windows.Forms.TextBox
+        Me.Lbl_Constraseña = New System.Windows.Forms.Label
+        Me.Btn_IniciarSesion = New System.Windows.Forms.Button
         Me.SuspendLayout()
         '
         'lbl_Bienvenida
@@ -65,61 +65,64 @@ Partial Class frm_Bienvenida
         Me.lbl_Aclaración.TabIndex = 2
         Me.lbl_Aclaración.Text = "(Sistema Informático de Gestión de Viticultura)"
         '
-        'Label1
+        'Lbl_Usuario
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Constantia", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(67, 190)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(79, 23)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Usuario:"
+        Me.Lbl_Usuario.AutoSize = True
+        Me.Lbl_Usuario.Font = New System.Drawing.Font("Constantia", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_Usuario.Location = New System.Drawing.Point(84, 190)
+        Me.Lbl_Usuario.Name = "Lbl_Usuario"
+        Me.Lbl_Usuario.Size = New System.Drawing.Size(79, 23)
+        Me.Lbl_Usuario.TabIndex = 3
+        Me.Lbl_Usuario.Text = "Usuario:"
         '
-        'TextBox1
+        'Txt_Usuario
         '
-        Me.TextBox1.Location = New System.Drawing.Point(153, 192)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(175, 20)
-        Me.TextBox1.TabIndex = 4
+        Me.Txt_Usuario.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_Usuario.Location = New System.Drawing.Point(169, 194)
+        Me.Txt_Usuario.Name = "Txt_Usuario"
+        Me.Txt_Usuario.Size = New System.Drawing.Size(175, 26)
+        Me.Txt_Usuario.TabIndex = 4
         '
-        'TextBox2
+        'Txt_Constraseña
         '
-        Me.TextBox2.Location = New System.Drawing.Point(153, 228)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(175, 20)
-        Me.TextBox2.TabIndex = 6
+        Me.Txt_Constraseña.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_Constraseña.Location = New System.Drawing.Point(169, 228)
+        Me.Txt_Constraseña.Name = "Txt_Constraseña"
+        Me.Txt_Constraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.Txt_Constraseña.Size = New System.Drawing.Size(175, 26)
+        Me.Txt_Constraseña.TabIndex = 6
         '
-        'Label2
+        'Lbl_Constraseña
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Constantia", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(30, 224)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(116, 23)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Constraseña:"
+        Me.Lbl_Constraseña.AutoSize = True
+        Me.Lbl_Constraseña.Font = New System.Drawing.Font("Constantia", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_Constraseña.Location = New System.Drawing.Point(47, 224)
+        Me.Lbl_Constraseña.Name = "Lbl_Constraseña"
+        Me.Lbl_Constraseña.Size = New System.Drawing.Size(116, 23)
+        Me.Lbl_Constraseña.TabIndex = 5
+        Me.Lbl_Constraseña.Text = "Constraseña:"
         '
-        'Button1
+        'Btn_IniciarSesion
         '
-        Me.Button1.Font = New System.Drawing.Font("Constantia", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(164, 277)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(135, 40)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "Iniciar sesión"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Btn_IniciarSesion.Font = New System.Drawing.Font("Constantia", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_IniciarSesion.Location = New System.Drawing.Point(183, 266)
+        Me.Btn_IniciarSesion.Name = "Btn_IniciarSesion"
+        Me.Btn_IniciarSesion.Size = New System.Drawing.Size(135, 40)
+        Me.Btn_IniciarSesion.TabIndex = 7
+        Me.Btn_IniciarSesion.Text = "Iniciar sesión"
+        Me.Btn_IniciarSesion.UseVisualStyleBackColor = True
         '
         'frm_Bienvenida
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.BackColor = System.Drawing.Color.CornflowerBlue
         Me.ClientSize = New System.Drawing.Size(484, 461)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Btn_IniciarSesion)
+        Me.Controls.Add(Me.Txt_Constraseña)
+        Me.Controls.Add(Me.Lbl_Constraseña)
+        Me.Controls.Add(Me.Txt_Usuario)
+        Me.Controls.Add(Me.Lbl_Usuario)
         Me.Controls.Add(Me.lbl_Aclaración)
         Me.Controls.Add(Me.lbl_SIGESVI)
         Me.Controls.Add(Me.lbl_Bienvenida)
@@ -133,10 +136,10 @@ Partial Class frm_Bienvenida
     Friend WithEvents lbl_Bienvenida As System.Windows.Forms.Label
     Friend WithEvents lbl_SIGESVI As System.Windows.Forms.Label
     Friend WithEvents lbl_Aclaración As System.Windows.Forms.Label
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Lbl_Usuario As System.Windows.Forms.Label
+    Friend WithEvents Txt_Usuario As System.Windows.Forms.TextBox
+    Friend WithEvents Txt_Constraseña As System.Windows.Forms.TextBox
+    Friend WithEvents Lbl_Constraseña As System.Windows.Forms.Label
+    Friend WithEvents Btn_IniciarSesion As System.Windows.Forms.Button
 
 End Class

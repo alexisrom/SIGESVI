@@ -58,7 +58,6 @@ Partial Class FrmFuncionarios
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton
-        Me.Label1 = New System.Windows.Forms.Label
         Me.errordedireccion = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.errordeapellido = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.errordenombre = New System.Windows.Forms.ErrorProvider(Me.components)
@@ -81,18 +80,19 @@ Partial Class FrmFuncionarios
         'Lbl_IDBusq
         '
         Me.Lbl_IDBusq.AutoSize = True
-        Me.Lbl_IDBusq.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_IDBusq.Location = New System.Drawing.Point(664, 23)
+        Me.Lbl_IDBusq.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_IDBusq.Location = New System.Drawing.Point(664, 34)
         Me.Lbl_IDBusq.Name = "Lbl_IDBusq"
-        Me.Lbl_IDBusq.Size = New System.Drawing.Size(50, 17)
+        Me.Lbl_IDBusq.Size = New System.Drawing.Size(54, 18)
         Me.Lbl_IDBusq.TabIndex = 25
         Me.Lbl_IDBusq.Text = "Cédula"
         '
         'Txt_Busqueda
         '
-        Me.Txt_Busqueda.Location = New System.Drawing.Point(667, 43)
+        Me.Txt_Busqueda.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_Busqueda.Location = New System.Drawing.Point(667, 55)
         Me.Txt_Busqueda.Name = "Txt_Busqueda"
-        Me.Txt_Busqueda.Size = New System.Drawing.Size(159, 20)
+        Me.Txt_Busqueda.Size = New System.Drawing.Size(159, 26)
         Me.Txt_Busqueda.TabIndex = 24
         '
         'DataGridView1
@@ -100,7 +100,7 @@ Partial Class FrmFuncionarios
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(667, 69)
+        Me.DataGridView1.Location = New System.Drawing.Point(667, 92)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.Size = New System.Drawing.Size(644, 284)
@@ -125,7 +125,7 @@ Partial Class FrmFuncionarios
         Me.GroupBox1.Controls.Add(Me.Label_Nombre)
         Me.GroupBox1.Controls.Add(Me.Label_cedula)
         Me.GroupBox1.Controls.Add(Me.FlowLayoutPanel2)
-        Me.GroupBox1.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(52, 37)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(579, 339)
@@ -137,7 +137,7 @@ Partial Class FrmFuncionarios
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(295, 311)
+        Me.Label5.Location = New System.Drawing.Point(381, 288)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(79, 17)
         Me.Label5.TabIndex = 61
@@ -149,24 +149,24 @@ Partial Class FrmFuncionarios
         Me.Cbo_cargo.Items.AddRange(New Object() {"Administrativo", "Gerente Sucursal", "Asesor Profesional"})
         Me.Cbo_cargo.Location = New System.Drawing.Point(384, 258)
         Me.Cbo_cargo.Name = "Cbo_cargo"
-        Me.Cbo_cargo.Size = New System.Drawing.Size(175, 25)
+        Me.Cbo_cargo.Size = New System.Drawing.Size(175, 26)
         Me.Cbo_cargo.TabIndex = 58
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(330, 237)
+        Me.Label4.Location = New System.Drawing.Point(381, 237)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(44, 17)
+        Me.Label4.Size = New System.Drawing.Size(47, 18)
         Me.Label4.TabIndex = 57
         Me.Label4.Text = "Cargo"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(330, 191)
+        Me.Label3.Location = New System.Drawing.Point(381, 191)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(78, 17)
+        Me.Label3.Size = New System.Drawing.Size(82, 18)
         Me.Label3.TabIndex = 56
         Me.Label3.Text = "Contraseña"
         '
@@ -174,15 +174,15 @@ Partial Class FrmFuncionarios
         '
         Me.Txt_pass.Location = New System.Drawing.Point(384, 211)
         Me.Txt_pass.Name = "Txt_pass"
-        Me.Txt_pass.Size = New System.Drawing.Size(181, 25)
+        Me.Txt_pass.Size = New System.Drawing.Size(181, 26)
         Me.Txt_pass.TabIndex = 55
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(330, 143)
+        Me.Label2.Location = New System.Drawing.Point(381, 145)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(127, 17)
+        Me.Label2.Size = New System.Drawing.Size(134, 18)
         Me.Label2.TabIndex = 54
         Me.Label2.Text = "Nombre de usuario"
         '
@@ -190,7 +190,7 @@ Partial Class FrmFuncionarios
         '
         Me.Txt_user.Location = New System.Drawing.Point(384, 163)
         Me.Txt_user.Name = "Txt_user"
-        Me.Txt_user.Size = New System.Drawing.Size(181, 25)
+        Me.Txt_user.Size = New System.Drawing.Size(181, 26)
         Me.Txt_user.TabIndex = 53
         '
         'Button2
@@ -212,9 +212,9 @@ Partial Class FrmFuncionarios
         '
         'Txt_Idsucursal
         '
-        Me.Txt_Idsucursal.Location = New System.Drawing.Point(392, 308)
+        Me.Txt_Idsucursal.Location = New System.Drawing.Point(384, 308)
         Me.Txt_Idsucursal.Name = "Txt_Idsucursal"
-        Me.Txt_Idsucursal.Size = New System.Drawing.Size(173, 25)
+        Me.Txt_Idsucursal.Size = New System.Drawing.Size(173, 26)
         Me.Txt_Idsucursal.TabIndex = 9
         '
         'LblMensaje
@@ -222,7 +222,7 @@ Partial Class FrmFuncionarios
         Me.LblMensaje.AutoSize = True
         Me.LblMensaje.Location = New System.Drawing.Point(120, 222)
         Me.LblMensaje.Name = "LblMensaje"
-        Me.LblMensaje.Size = New System.Drawing.Size(0, 17)
+        Me.LblMensaje.Size = New System.Drawing.Size(0, 18)
         Me.LblMensaje.TabIndex = 3
         '
         'lblDireccion
@@ -294,50 +294,50 @@ Partial Class FrmFuncionarios
         '
         Me.Txt_Ci.Location = New System.Drawing.Point(3, 3)
         Me.Txt_Ci.Name = "Txt_Ci"
-        Me.Txt_Ci.Size = New System.Drawing.Size(173, 25)
+        Me.Txt_Ci.Size = New System.Drawing.Size(173, 26)
         Me.Txt_Ci.TabIndex = 1
         '
         'Txt_Nombre
         '
-        Me.Txt_Nombre.Location = New System.Drawing.Point(3, 34)
+        Me.Txt_Nombre.Location = New System.Drawing.Point(3, 35)
         Me.Txt_Nombre.Name = "Txt_Nombre"
-        Me.Txt_Nombre.Size = New System.Drawing.Size(173, 25)
+        Me.Txt_Nombre.Size = New System.Drawing.Size(173, 26)
         Me.Txt_Nombre.TabIndex = 2
         '
         'Txt_Apellido
         '
-        Me.Txt_Apellido.Location = New System.Drawing.Point(3, 65)
+        Me.Txt_Apellido.Location = New System.Drawing.Point(3, 67)
         Me.Txt_Apellido.Name = "Txt_Apellido"
-        Me.Txt_Apellido.Size = New System.Drawing.Size(173, 25)
+        Me.Txt_Apellido.Size = New System.Drawing.Size(173, 26)
         Me.Txt_Apellido.TabIndex = 3
         '
         'Txt_Direccion
         '
-        Me.Txt_Direccion.Location = New System.Drawing.Point(3, 96)
+        Me.Txt_Direccion.Location = New System.Drawing.Point(3, 99)
         Me.Txt_Direccion.Name = "Txt_Direccion"
-        Me.Txt_Direccion.Size = New System.Drawing.Size(173, 25)
+        Me.Txt_Direccion.Size = New System.Drawing.Size(173, 26)
         Me.Txt_Direccion.TabIndex = 5
         '
         'Txt_Telefono
         '
-        Me.Txt_Telefono.Location = New System.Drawing.Point(3, 127)
+        Me.Txt_Telefono.Location = New System.Drawing.Point(3, 131)
         Me.Txt_Telefono.Name = "Txt_Telefono"
-        Me.Txt_Telefono.Size = New System.Drawing.Size(173, 25)
+        Me.Txt_Telefono.Size = New System.Drawing.Size(173, 26)
         Me.Txt_Telefono.TabIndex = 4
         '
         'LblTelefonos
         '
         Me.LblTelefonos.FormattingEnabled = True
-        Me.LblTelefonos.ItemHeight = 17
-        Me.LblTelefonos.Location = New System.Drawing.Point(3, 158)
+        Me.LblTelefonos.ItemHeight = 18
+        Me.LblTelefonos.Location = New System.Drawing.Point(3, 163)
         Me.LblTelefonos.Name = "LblTelefonos"
-        Me.LblTelefonos.Size = New System.Drawing.Size(173, 55)
+        Me.LblTelefonos.Size = New System.Drawing.Size(173, 40)
         Me.LblTelefonos.TabIndex = 6
         '
         'Btn_AñadirTel
         '
         Me.Btn_AñadirTel.Font = New System.Drawing.Font("Cambria", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_AñadirTel.Location = New System.Drawing.Point(3, 219)
+        Me.Btn_AñadirTel.Location = New System.Drawing.Point(3, 209)
         Me.Btn_AñadirTel.Name = "Btn_AñadirTel"
         Me.Btn_AñadirTel.Size = New System.Drawing.Size(75, 23)
         Me.Btn_AñadirTel.TabIndex = 8
@@ -347,7 +347,7 @@ Partial Class FrmFuncionarios
         'Btn_QuitarTel
         '
         Me.Btn_QuitarTel.Font = New System.Drawing.Font("Cambria", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_QuitarTel.Location = New System.Drawing.Point(84, 219)
+        Me.Btn_QuitarTel.Location = New System.Drawing.Point(84, 209)
         Me.Btn_QuitarTel.Name = "Btn_QuitarTel"
         Me.Btn_QuitarTel.Size = New System.Drawing.Size(75, 23)
         Me.Btn_QuitarTel.TabIndex = 7
@@ -399,15 +399,6 @@ Partial Class FrmFuncionarios
         Me.ToolStripButton4.Size = New System.Drawing.Size(23, 22)
         Me.ToolStripButton4.Text = "Limpiar"
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(105, 379)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(270, 13)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Sueldo Neto, Sueldo Liquido, Descuenctos, Sucursal??"
-        '
         'errordedireccion
         '
         Me.errordedireccion.ContainerControl = Me
@@ -432,7 +423,7 @@ Partial Class FrmFuncionarios
         '
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(832, 38)
+        Me.PictureBox1.Location = New System.Drawing.Point(832, 55)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(25, 25)
         Me.PictureBox1.TabIndex = 26
@@ -442,9 +433,8 @@ Partial Class FrmFuncionarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.BackColor = System.Drawing.Color.CornflowerBlue
         Me.ClientSize = New System.Drawing.Size(1358, 459)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.Lbl_IDBusq)
         Me.Controls.Add(Me.PictureBox1)
@@ -498,7 +488,6 @@ Partial Class FrmFuncionarios
     Friend WithEvents ToolStripButton2 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButton3 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButton4 As System.Windows.Forms.ToolStripButton
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents errordedireccion As System.Windows.Forms.ErrorProvider
     Friend WithEvents errordeapellido As System.Windows.Forms.ErrorProvider
     Friend WithEvents errordenombre As System.Windows.Forms.ErrorProvider

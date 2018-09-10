@@ -32,14 +32,14 @@ Partial Class FrmVehiculos
         Me.LblEstado = New System.Windows.Forms.ToolStripStatusLabel
         Me.DataGridView1 = New System.Windows.Forms.DataGridView
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.CboSucursales = New System.Windows.Forms.ComboBox
+        Me.Cbo_Vehiculo = New System.Windows.Forms.ComboBox
         Me.Label6 = New System.Windows.Forms.Label
-        Me.TextBox4 = New System.Windows.Forms.TextBox
+        Me.Txt_Capacidad = New System.Windows.Forms.TextBox
         Me.Label7 = New System.Windows.Forms.Label
         Me.Label8 = New System.Windows.Forms.Label
-        Me.TextBox2 = New System.Windows.Forms.TextBox
+        Me.Txt_Nombre = New System.Windows.Forms.TextBox
         Me.Label9 = New System.Windows.Forms.Label
-        Me.TextBox1 = New System.Windows.Forms.TextBox
+        Me.Txt_Vehiculo = New System.Windows.Forms.TextBox
         Me.ToolStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -108,98 +108,99 @@ Partial Class FrmVehiculos
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(378, 92)
+        Me.DataGridView1.Location = New System.Drawing.Point(354, 48)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(412, 246)
         Me.DataGridView1.TabIndex = 29
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.CboSucursales)
+        Me.GroupBox1.Controls.Add(Me.Cbo_Vehiculo)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
+        Me.GroupBox1.Controls.Add(Me.Txt_Capacidad)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.Label8)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.Txt_Nombre)
         Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Location = New System.Drawing.Point(51, 80)
+        Me.GroupBox1.Controls.Add(Me.Txt_Vehiculo)
+        Me.GroupBox1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(32, 48)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(269, 246)
         Me.GroupBox1.TabIndex = 30
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Información General"
         '
-        'CboSucursales
+        'Cbo_Vehiculo
         '
-        Me.CboSucursales.FormattingEnabled = True
-        Me.CboSucursales.Location = New System.Drawing.Point(31, 150)
-        Me.CboSucursales.Name = "CboSucursales"
-        Me.CboSucursales.Size = New System.Drawing.Size(181, 21)
-        Me.CboSucursales.TabIndex = 33
+        Me.Cbo_Vehiculo.FormattingEnabled = True
+        Me.Cbo_Vehiculo.Location = New System.Drawing.Point(31, 150)
+        Me.Cbo_Vehiculo.Name = "Cbo_Vehiculo"
+        Me.Cbo_Vehiculo.Size = New System.Drawing.Size(181, 26)
+        Me.Cbo_Vehiculo.TabIndex = 33
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(31, 181)
+        Me.Label6.Location = New System.Drawing.Point(31, 179)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(58, 13)
+        Me.Label6.Size = New System.Drawing.Size(76, 18)
         Me.Label6.TabIndex = 30
         Me.Label6.Text = "Capacidad"
         '
-        'TextBox4
+        'Txt_Capacidad
         '
-        Me.TextBox4.Location = New System.Drawing.Point(31, 197)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox4.TabIndex = 29
+        Me.Txt_Capacidad.Location = New System.Drawing.Point(31, 197)
+        Me.Txt_Capacidad.Name = "Txt_Capacidad"
+        Me.Txt_Capacidad.Size = New System.Drawing.Size(181, 26)
+        Me.Txt_Capacidad.TabIndex = 29
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(31, 133)
+        Me.Label7.Location = New System.Drawing.Point(31, 129)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(28, 13)
+        Me.Label7.Size = New System.Drawing.Size(37, 18)
         Me.Label7.TabIndex = 28
         Me.Label7.Text = "Tipo"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(31, 83)
+        Me.Label8.Location = New System.Drawing.Point(31, 76)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(44, 13)
+        Me.Label8.Size = New System.Drawing.Size(61, 18)
         Me.Label8.TabIndex = 26
         Me.Label8.Text = "Nombre"
         '
-        'TextBox2
+        'Txt_Nombre
         '
-        Me.TextBox2.Location = New System.Drawing.Point(31, 97)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox2.TabIndex = 25
+        Me.Txt_Nombre.Location = New System.Drawing.Point(31, 97)
+        Me.Txt_Nombre.Name = "Txt_Nombre"
+        Me.Txt_Nombre.Size = New System.Drawing.Size(181, 26)
+        Me.Txt_Nombre.TabIndex = 25
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(31, 28)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(18, 13)
+        Me.Label9.Size = New System.Drawing.Size(24, 18)
         Me.Label9.TabIndex = 24
         Me.Label9.Text = "ID"
         '
-        'TextBox1
+        'Txt_Vehiculo
         '
-        Me.TextBox1.Location = New System.Drawing.Point(31, 47)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox1.TabIndex = 0
+        Me.Txt_Vehiculo.Location = New System.Drawing.Point(31, 47)
+        Me.Txt_Vehiculo.Name = "Txt_Vehiculo"
+        Me.Txt_Vehiculo.Size = New System.Drawing.Size(181, 26)
+        Me.Txt_Vehiculo.TabIndex = 0
         '
         'FrmVehiculos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.BackColor = System.Drawing.Color.CornflowerBlue
         Me.ClientSize = New System.Drawing.Size(836, 413)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.DataGridView1)
@@ -228,12 +229,12 @@ Partial Class FrmVehiculos
     Friend WithEvents LblEstado As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents CboSucursales As System.Windows.Forms.ComboBox
+    Friend WithEvents Cbo_Vehiculo As System.Windows.Forms.ComboBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents Txt_Capacidad As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents Txt_Nombre As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents Txt_Vehiculo As System.Windows.Forms.TextBox
 End Class

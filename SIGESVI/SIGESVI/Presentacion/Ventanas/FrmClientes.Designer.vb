@@ -41,12 +41,6 @@ Partial Class FrmClientes
         Me.Btn_AñadirTel = New System.Windows.Forms.Button
         Me.Btn_Quitartel = New System.Windows.Forms.Button
         Me.DataGridView1 = New System.Windows.Forms.DataGridView
-        Me.CI = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Apellido = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.User = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Pass = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.Lbl_IDBusq = New System.Windows.Forms.Label
         Me.Txt_Busqueda = New System.Windows.Forms.TextBox
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip
@@ -81,7 +75,7 @@ Partial Class FrmClientes
         Me.GroupBox1.Controls.Add(Me.Lbl_Nombre)
         Me.GroupBox1.Controls.Add(Me.Lbl_Cedula)
         Me.GroupBox1.Controls.Add(Me.FlowLayoutPanel2)
-        Me.GroupBox1.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(43, 46)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(332, 312)
@@ -104,7 +98,7 @@ Partial Class FrmClientes
         Me.LblMensaje.AutoSize = True
         Me.LblMensaje.Location = New System.Drawing.Point(120, 222)
         Me.LblMensaje.Name = "LblMensaje"
-        Me.LblMensaje.Size = New System.Drawing.Size(0, 17)
+        Me.LblMensaje.Size = New System.Drawing.Size(0, 18)
         Me.LblMensaje.TabIndex = 3
         '
         'Lbl_Direccion
@@ -233,64 +227,28 @@ Partial Class FrmClientes
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CI, Me.Nombre, Me.Apellido, Me.Telefono, Me.User, Me.Pass})
         Me.DataGridView1.Location = New System.Drawing.Point(400, 97)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.Size = New System.Drawing.Size(644, 261)
         Me.DataGridView1.TabIndex = 10
         '
-        'CI
-        '
-        Me.CI.HeaderText = "Cédula"
-        Me.CI.Name = "CI"
-        Me.CI.ReadOnly = True
-        '
-        'Nombre
-        '
-        Me.Nombre.HeaderText = "Nombre"
-        Me.Nombre.Name = "Nombre"
-        Me.Nombre.ReadOnly = True
-        '
-        'Apellido
-        '
-        Me.Apellido.HeaderText = "Apellido"
-        Me.Apellido.Name = "Apellido"
-        Me.Apellido.ReadOnly = True
-        '
-        'Telefono
-        '
-        Me.Telefono.HeaderText = "Teléfono"
-        Me.Telefono.Name = "Telefono"
-        Me.Telefono.ReadOnly = True
-        '
-        'User
-        '
-        Me.User.HeaderText = "Usuario"
-        Me.User.Name = "User"
-        Me.User.ReadOnly = True
-        '
-        'Pass
-        '
-        Me.Pass.HeaderText = "Contraseña"
-        Me.Pass.Name = "Pass"
-        Me.Pass.ReadOnly = True
-        '
         'Lbl_IDBusq
         '
         Me.Lbl_IDBusq.AutoSize = True
-        Me.Lbl_IDBusq.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_IDBusq.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lbl_IDBusq.Location = New System.Drawing.Point(397, 46)
         Me.Lbl_IDBusq.Name = "Lbl_IDBusq"
-        Me.Lbl_IDBusq.Size = New System.Drawing.Size(50, 17)
+        Me.Lbl_IDBusq.Size = New System.Drawing.Size(54, 18)
         Me.Lbl_IDBusq.TabIndex = 20
         Me.Lbl_IDBusq.Text = "Cédula"
         '
         'Txt_Busqueda
         '
+        Me.Txt_Busqueda.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_Busqueda.Location = New System.Drawing.Point(400, 66)
         Me.Txt_Busqueda.Name = "Txt_Busqueda"
-        Me.Txt_Busqueda.Size = New System.Drawing.Size(159, 20)
+        Me.Txt_Busqueda.Size = New System.Drawing.Size(159, 26)
         Me.Txt_Busqueda.TabIndex = 19
         '
         'ToolStrip1
@@ -372,7 +330,7 @@ Partial Class FrmClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.BackColor = System.Drawing.Color.CornflowerBlue
         Me.ClientSize = New System.Drawing.Size(1086, 407)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.Lbl_IDBusq)
@@ -416,12 +374,6 @@ Partial Class FrmClientes
     Friend WithEvents Btn_AñadirTel As System.Windows.Forms.Button
     Friend WithEvents Btn_Quitartel As System.Windows.Forms.Button
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-    Friend WithEvents CI As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Nombre As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Apellido As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Telefono As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents User As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Pass As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Lbl_IDBusq As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Txt_Busqueda As System.Windows.Forms.TextBox

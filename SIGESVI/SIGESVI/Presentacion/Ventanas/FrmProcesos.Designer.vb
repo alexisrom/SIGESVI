@@ -44,7 +44,7 @@ Partial Class FrmProcesos
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(27, 39)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(284, 266)
@@ -65,7 +65,7 @@ Partial Class FrmProcesos
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(6, 117)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(83, 17)
+        Me.Label1.Size = New System.Drawing.Size(85, 18)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Descripción"
         '
@@ -74,7 +74,7 @@ Partial Class FrmProcesos
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(6, 62)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(101, 17)
+        Me.Label2.Size = New System.Drawing.Size(105, 18)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Producto Final"
         '
@@ -82,7 +82,7 @@ Partial Class FrmProcesos
         '
         Me.TextBox2.Location = New System.Drawing.Point(118, 59)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(145, 25)
+        Me.TextBox2.Size = New System.Drawing.Size(145, 26)
         Me.TextBox2.TabIndex = 2
         '
         'GroupBox2
@@ -90,7 +90,7 @@ Partial Class FrmProcesos
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.ListBox1)
-        Me.GroupBox2.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(689, 39)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(200, 266)
@@ -119,17 +119,17 @@ Partial Class FrmProcesos
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 17
+        Me.ListBox1.ItemHeight = 18
         Me.ListBox1.Items.AddRange(New Object() {"01 - Primer etapa", "02 - Segunda etapa"})
         Me.ListBox1.Location = New System.Drawing.Point(19, 41)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(160, 174)
+        Me.ListBox1.Size = New System.Drawing.Size(160, 166)
         Me.ListBox1.TabIndex = 0
         '
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.Label3)
-        Me.GroupBox3.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.Location = New System.Drawing.Point(352, 39)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(253, 266)
@@ -142,7 +142,7 @@ Partial Class FrmProcesos
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(22, 41)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(117, 17)
+        Me.Label3.Size = New System.Drawing.Size(123, 18)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Duración: 00 días"
         '
@@ -150,7 +150,7 @@ Partial Class FrmProcesos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.BackColor = System.Drawing.Color.CornflowerBlue
         Me.ClientSize = New System.Drawing.Size(960, 371)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)

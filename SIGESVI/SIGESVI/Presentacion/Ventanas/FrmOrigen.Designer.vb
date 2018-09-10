@@ -109,6 +109,7 @@ Partial Class FrmOrigen
         Me.GroupBox1.Controls.Add(Me.TextBox2)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(32, 58)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(269, 254)
@@ -119,9 +120,9 @@ Partial Class FrmOrigen
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(221, 200)
+        Me.LinkLabel1.Location = New System.Drawing.Point(213, 200)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(39, 13)
+        Me.LinkLabel1.Size = New System.Drawing.Size(50, 18)
         Me.LinkLabel1.TabIndex = 35
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Nuevo"
@@ -129,9 +130,9 @@ Partial Class FrmOrigen
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(34, 197)
+        Me.ComboBox1.Location = New System.Drawing.Point(31, 197)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(181, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(181, 26)
         Me.ComboBox1.TabIndex = 34
         '
         'CboSucursales
@@ -139,33 +140,33 @@ Partial Class FrmOrigen
         Me.CboSucursales.FormattingEnabled = True
         Me.CboSucursales.Location = New System.Drawing.Point(31, 150)
         Me.CboSucursales.Name = "CboSucursales"
-        Me.CboSucursales.Size = New System.Drawing.Size(181, 21)
+        Me.CboSucursales.Size = New System.Drawing.Size(181, 26)
         Me.CboSucursales.TabIndex = 33
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(31, 181)
+        Me.Label6.Location = New System.Drawing.Point(28, 179)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(57, 13)
+        Me.Label6.Size = New System.Drawing.Size(80, 18)
         Me.Label6.TabIndex = 30
         Me.Label6.Text = "Propietario"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(31, 133)
+        Me.Label7.Location = New System.Drawing.Point(28, 129)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(52, 13)
+        Me.Label7.Size = New System.Drawing.Size(71, 18)
         Me.Label7.TabIndex = 28
         Me.Label7.Text = "Dirección"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(31, 83)
+        Me.Label8.Location = New System.Drawing.Point(28, 76)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(44, 13)
+        Me.Label8.Size = New System.Drawing.Size(61, 18)
         Me.Label8.TabIndex = 26
         Me.Label8.Text = "Nombre"
         '
@@ -173,15 +174,15 @@ Partial Class FrmOrigen
         '
         Me.TextBox2.Location = New System.Drawing.Point(31, 97)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(181, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(181, 26)
         Me.TextBox2.TabIndex = 25
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(31, 28)
+        Me.Label9.Location = New System.Drawing.Point(28, 26)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(18, 13)
+        Me.Label9.Size = New System.Drawing.Size(24, 18)
         Me.Label9.TabIndex = 24
         Me.Label9.Text = "ID"
         '
@@ -189,7 +190,7 @@ Partial Class FrmOrigen
         '
         Me.TextBox1.Location = New System.Drawing.Point(31, 47)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(181, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(181, 26)
         Me.TextBox1.TabIndex = 0
         '
         'StatusStrip1
@@ -204,6 +205,7 @@ Partial Class FrmOrigen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.CornflowerBlue
         Me.ClientSize = New System.Drawing.Size(868, 374)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.DataGridView1)
@@ -211,7 +213,7 @@ Partial Class FrmOrigen
         Me.Controls.Add(Me.ToolStrip1)
         Me.Name = "FrmOrigen"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FrmOrigen"
+        Me.Text = "Origen"
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

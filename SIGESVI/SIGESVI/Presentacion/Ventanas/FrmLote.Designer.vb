@@ -63,7 +63,8 @@ Partial Class FrmLote
         Me.GroupBox1.Controls.Add(Me.TextBox2)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Location = New System.Drawing.Point(109, 83)
+        Me.GroupBox1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(22, 40)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(269, 298)
         Me.GroupBox1.TabIndex = 29
@@ -73,17 +74,17 @@ Partial Class FrmLote
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(34, 245)
+        Me.ComboBox2.Location = New System.Drawing.Point(31, 250)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(181, 21)
+        Me.ComboBox2.Size = New System.Drawing.Size(181, 26)
         Me.ComboBox2.TabIndex = 35
         '
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(34, 197)
+        Me.ComboBox1.Location = New System.Drawing.Point(31, 200)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(181, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(181, 26)
         Me.ComboBox1.TabIndex = 34
         '
         'CboSucursales
@@ -91,42 +92,42 @@ Partial Class FrmLote
         Me.CboSucursales.FormattingEnabled = True
         Me.CboSucursales.Location = New System.Drawing.Point(31, 150)
         Me.CboSucursales.Name = "CboSucursales"
-        Me.CboSucursales.Size = New System.Drawing.Size(181, 21)
+        Me.CboSucursales.Size = New System.Drawing.Size(181, 26)
         Me.CboSucursales.TabIndex = 33
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(31, 229)
+        Me.Label5.Location = New System.Drawing.Point(28, 229)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(89, 13)
+        Me.Label5.Size = New System.Drawing.Size(122, 18)
         Me.Label5.TabIndex = 32
         Me.Label5.Text = "Tipo de Producto"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(31, 181)
+        Me.Label6.Location = New System.Drawing.Point(28, 179)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(48, 13)
+        Me.Label6.Size = New System.Drawing.Size(65, 18)
         Me.Label6.TabIndex = 30
         Me.Label6.Text = "Almacén"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(31, 133)
+        Me.Label7.Location = New System.Drawing.Point(28, 129)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(38, 13)
+        Me.Label7.Size = New System.Drawing.Size(54, 18)
         Me.Label7.TabIndex = 28
         Me.Label7.Text = "Origen"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(31, 83)
+        Me.Label8.Location = New System.Drawing.Point(28, 76)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(35, 13)
+        Me.Label8.Size = New System.Drawing.Size(44, 18)
         Me.Label8.TabIndex = 26
         Me.Label8.Text = "Stock"
         '
@@ -134,7 +135,7 @@ Partial Class FrmLote
         '
         Me.TextBox2.Location = New System.Drawing.Point(31, 97)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(181, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(181, 26)
         Me.TextBox2.TabIndex = 25
         '
         'Label9
@@ -142,7 +143,7 @@ Partial Class FrmLote
         Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(31, 28)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(18, 13)
+        Me.Label9.Size = New System.Drawing.Size(24, 18)
         Me.Label9.TabIndex = 24
         Me.Label9.Text = "ID"
         '
@@ -150,7 +151,7 @@ Partial Class FrmLote
         '
         Me.TextBox1.Location = New System.Drawing.Point(31, 47)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(181, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(181, 26)
         Me.TextBox1.TabIndex = 0
         '
         'ToolStrip1
@@ -158,7 +159,7 @@ Partial Class FrmLote
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BtnAgregar, Me.BtnGuardar, Me.BtnEliminar, Me.BtnLimpiar})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(1013, 25)
+        Me.ToolStrip1.Size = New System.Drawing.Size(979, 25)
         Me.ToolStrip1.TabIndex = 30
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -201,9 +202,9 @@ Partial Class FrmLote
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LblEstado})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 520)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 412)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(1013, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(979, 22)
         Me.StatusStrip1.TabIndex = 31
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -215,14 +216,14 @@ Partial Class FrmLote
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(429, 94)
+        Me.DataGridView1.Location = New System.Drawing.Point(351, 66)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(532, 298)
         Me.DataGridView1.TabIndex = 32
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(746, 68)
+        Me.TextBox3.Location = New System.Drawing.Point(351, 40)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(181, 20)
         Me.TextBox3.TabIndex = 33
@@ -231,7 +232,7 @@ Partial Class FrmLote
         '
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(933, 68)
+        Me.PictureBox1.Location = New System.Drawing.Point(538, 35)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(25, 25)
         Me.PictureBox1.TabIndex = 36
@@ -241,7 +242,8 @@ Partial Class FrmLote
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1013, 542)
+        Me.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.ClientSize = New System.Drawing.Size(979, 434)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.DataGridView1)
@@ -250,7 +252,7 @@ Partial Class FrmLote
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "FrmLote"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FrmLote"
+        Me.Text = "Lote"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ToolStrip1.ResumeLayout(False)

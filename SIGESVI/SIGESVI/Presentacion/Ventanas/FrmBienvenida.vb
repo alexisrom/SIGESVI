@@ -45,4 +45,14 @@
     Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txt_Constraseña.TextChanged
 
     End Sub
+
+    Private Sub Btn_IniciarSesion_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_IniciarSesion.Click
+        If Txt_Usuario.Text <> "funcionario" Or Txt_Constraseña.Text <> "funcionario" Then
+            MsgBox("Usuario y contraseñas incorrectos")
+        Else
+            Me.Hide()
+            Dim frm = New FrmPrincipal()
+            frm.ShowDialog()
+        End If
+    End Sub
 End Class

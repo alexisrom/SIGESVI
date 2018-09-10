@@ -127,6 +127,7 @@ Partial Class FrmRecordatorio
         Me.ClientSize = New System.Drawing.Size(312, 398)
         Me.Controls.Add(Me.GroupBox4)
         Me.Name = "FrmRecordatorio"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmRecordatorio"
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()

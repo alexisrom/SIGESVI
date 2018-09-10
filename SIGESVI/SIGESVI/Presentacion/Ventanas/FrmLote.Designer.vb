@@ -249,6 +249,7 @@ Partial Class FrmLote
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "FrmLote"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmLote"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

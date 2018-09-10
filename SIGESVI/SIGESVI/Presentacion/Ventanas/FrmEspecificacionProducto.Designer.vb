@@ -26,7 +26,12 @@ Partial Class FrmEspecificacionProducto
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
         Me.LblEstado = New System.Windows.Forms.ToolStripStatusLabel
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip
+        Me.BtnAgregar = New System.Windows.Forms.ToolStripButton
+        Me.BtnGuardar = New System.Windows.Forms.ToolStripButton
+        Me.BtnEliminar = New System.Windows.Forms.ToolStripButton
+        Me.BtnLimpiar = New System.Windows.Forms.ToolStripButton
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
+        Me.Label7 = New System.Windows.Forms.Label
         Me.ComboBox2 = New System.Windows.Forms.ComboBox
         Me.Label3 = New System.Windows.Forms.Label
         Me.Label2 = New System.Windows.Forms.Label
@@ -40,6 +45,11 @@ Partial Class FrmEspecificacionProducto
         Me.Label9 = New System.Windows.Forms.Label
         Me.TextBox1 = New System.Windows.Forms.TextBox
         Me.GroupBox2 = New System.Windows.Forms.GroupBox
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox
+        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel
+        Me.Label4 = New System.Windows.Forms.Label
+        Me.ListBox1 = New System.Windows.Forms.ListBox
         Me.Button3 = New System.Windows.Forms.Button
         Me.Button2 = New System.Windows.Forms.Button
         Me.Button1 = New System.Windows.Forms.Button
@@ -54,17 +64,7 @@ Partial Class FrmEspecificacionProducto
         Me.TextBox4 = New System.Windows.Forms.TextBox
         Me.Label6 = New System.Windows.Forms.Label
         Me.ListBox2 = New System.Windows.Forms.ListBox
-        Me.ListBox1 = New System.Windows.Forms.ListBox
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel
-        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox
         Me.ComboBox4 = New System.Windows.Forms.ComboBox
-        Me.BtnAgregar = New System.Windows.Forms.ToolStripButton
-        Me.BtnGuardar = New System.Windows.Forms.ToolStripButton
-        Me.BtnEliminar = New System.Windows.Forms.ToolStripButton
-        Me.BtnLimpiar = New System.Windows.Forms.ToolStripButton
-        Me.Label7 = New System.Windows.Forms.Label
         Me.StatusStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -94,6 +94,42 @@ Partial Class FrmEspecificacionProducto
         Me.ToolStrip1.TabIndex = 29
         Me.ToolStrip1.Text = "ToolStrip1"
         '
+        'BtnAgregar
+        '
+        Me.BtnAgregar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BtnAgregar.Image = CType(resources.GetObject("BtnAgregar.Image"), System.Drawing.Image)
+        Me.BtnAgregar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.BtnAgregar.Name = "BtnAgregar"
+        Me.BtnAgregar.Size = New System.Drawing.Size(23, 22)
+        Me.BtnAgregar.Text = "Agregar"
+        '
+        'BtnGuardar
+        '
+        Me.BtnGuardar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BtnGuardar.Image = CType(resources.GetObject("BtnGuardar.Image"), System.Drawing.Image)
+        Me.BtnGuardar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.BtnGuardar.Name = "BtnGuardar"
+        Me.BtnGuardar.Size = New System.Drawing.Size(23, 22)
+        Me.BtnGuardar.Text = "Guardar"
+        '
+        'BtnEliminar
+        '
+        Me.BtnEliminar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BtnEliminar.Image = CType(resources.GetObject("BtnEliminar.Image"), System.Drawing.Image)
+        Me.BtnEliminar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.BtnEliminar.Name = "BtnEliminar"
+        Me.BtnEliminar.Size = New System.Drawing.Size(23, 22)
+        Me.BtnEliminar.Text = "Eliminar"
+        '
+        'BtnLimpiar
+        '
+        Me.BtnLimpiar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BtnLimpiar.Image = CType(resources.GetObject("BtnLimpiar.Image"), System.Drawing.Image)
+        Me.BtnLimpiar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.BtnLimpiar.Name = "BtnLimpiar"
+        Me.BtnLimpiar.Size = New System.Drawing.Size(23, 22)
+        Me.BtnLimpiar.Text = "Limpiar"
+        '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.Label7)
@@ -115,6 +151,15 @@ Partial Class FrmEspecificacionProducto
         Me.GroupBox1.TabIndex = 30
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Información General"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(7, 289)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(54, 13)
+        Me.Label7.TabIndex = 40
+        Me.Label7.Text = "Categoría"
         '
         'ComboBox2
         '
@@ -245,6 +290,54 @@ Partial Class FrmEspecificacionProducto
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Elaboración"
         '
+        'ComboBox3
+        '
+        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"Mosto Yema", "Mosto XXXX"})
+        Me.ComboBox3.Location = New System.Drawing.Point(393, 263)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(212, 21)
+        Me.ComboBox3.TabIndex = 64
+        '
+        'LinkLabel2
+        '
+        Me.LinkLabel2.AutoSize = True
+        Me.LinkLabel2.Location = New System.Drawing.Point(570, 228)
+        Me.LinkLabel2.Name = "LinkLabel2"
+        Me.LinkLabel2.Size = New System.Drawing.Size(35, 13)
+        Me.LinkLabel2.TabIndex = 63
+        Me.LinkLabel2.TabStop = True
+        Me.LinkLabel2.Text = "Quitar"
+        '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Location = New System.Drawing.Point(511, 228)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(39, 13)
+        Me.LinkLabel1.TabIndex = 62
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "Nuevo"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(390, 228)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(46, 13)
+        Me.Label4.TabIndex = 61
+        Me.Label4.Text = "Insumos"
+        '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Items.AddRange(New Object() {"Mosto 1 | 10 Kg", "Mosto 2 | 5 Kg"})
+        Me.ListBox1.Location = New System.Drawing.Point(393, 297)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(212, 95)
+        Me.ListBox1.TabIndex = 60
+        '
         'Button3
         '
         Me.Button3.Location = New System.Drawing.Point(266, 369)
@@ -364,54 +457,6 @@ Partial Class FrmEspecificacionProducto
         Me.ListBox2.Size = New System.Drawing.Size(624, 95)
         Me.ListBox2.TabIndex = 2
         '
-        'ListBox1
-        '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Items.AddRange(New Object() {"Mosto 1 | 10 Kg", "Mosto 2 | 5 Kg"})
-        Me.ListBox1.Location = New System.Drawing.Point(393, 297)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(212, 95)
-        Me.ListBox1.TabIndex = 60
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(390, 228)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(46, 13)
-        Me.Label4.TabIndex = 61
-        Me.Label4.Text = "Insumos"
-        '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(511, 228)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(39, 13)
-        Me.LinkLabel1.TabIndex = 62
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Nuevo"
-        '
-        'LinkLabel2
-        '
-        Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.Location = New System.Drawing.Point(570, 228)
-        Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(35, 13)
-        Me.LinkLabel2.TabIndex = 63
-        Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "Quitar"
-        '
-        'ComboBox3
-        '
-        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"Mosto Yema", "Mosto XXXX"})
-        Me.ComboBox3.Location = New System.Drawing.Point(393, 263)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(212, 21)
-        Me.ComboBox3.TabIndex = 64
-        '
         'ComboBox4
         '
         Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -421,51 +466,6 @@ Partial Class FrmEspecificacionProducto
         Me.ComboBox4.Name = "ComboBox4"
         Me.ComboBox4.Size = New System.Drawing.Size(216, 21)
         Me.ComboBox4.TabIndex = 40
-        '
-        'BtnAgregar
-        '
-        Me.BtnAgregar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BtnAgregar.Image = CType(resources.GetObject("BtnAgregar.Image"), System.Drawing.Image)
-        Me.BtnAgregar.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.BtnAgregar.Name = "BtnAgregar"
-        Me.BtnAgregar.Size = New System.Drawing.Size(23, 22)
-        Me.BtnAgregar.Text = "Agregar"
-        '
-        'BtnGuardar
-        '
-        Me.BtnGuardar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BtnGuardar.Image = CType(resources.GetObject("BtnGuardar.Image"), System.Drawing.Image)
-        Me.BtnGuardar.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.BtnGuardar.Name = "BtnGuardar"
-        Me.BtnGuardar.Size = New System.Drawing.Size(23, 22)
-        Me.BtnGuardar.Text = "Guardar"
-        '
-        'BtnEliminar
-        '
-        Me.BtnEliminar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BtnEliminar.Image = CType(resources.GetObject("BtnEliminar.Image"), System.Drawing.Image)
-        Me.BtnEliminar.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(23, 22)
-        Me.BtnEliminar.Text = "Eliminar"
-        '
-        'BtnLimpiar
-        '
-        Me.BtnLimpiar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BtnLimpiar.Image = CType(resources.GetObject("BtnLimpiar.Image"), System.Drawing.Image)
-        Me.BtnLimpiar.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.BtnLimpiar.Name = "BtnLimpiar"
-        Me.BtnLimpiar.Size = New System.Drawing.Size(23, 22)
-        Me.BtnLimpiar.Text = "Limpiar"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(7, 289)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(54, 13)
-        Me.Label7.TabIndex = 40
-        Me.Label7.Text = "Categoría"
         '
         'FrmEspecificacionProducto
         '
@@ -478,6 +478,7 @@ Partial Class FrmEspecificacionProducto
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Name = "FrmEspecificacionProducto"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmEspecificacionProducto"
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()

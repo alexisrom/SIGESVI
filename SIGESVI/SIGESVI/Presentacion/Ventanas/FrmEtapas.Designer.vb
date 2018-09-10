@@ -102,6 +102,7 @@ Partial Class FrmEtapas
         Me.ClientSize = New System.Drawing.Size(638, 262)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "FrmEtapas"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Etapas de elaboracion"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

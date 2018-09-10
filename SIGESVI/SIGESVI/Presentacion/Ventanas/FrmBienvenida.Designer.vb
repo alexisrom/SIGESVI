@@ -22,18 +22,14 @@ Partial Class frm_Bienvenida
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_Bienvenida))
         Me.lbl_Bienvenida = New System.Windows.Forms.Label
         Me.lbl_SIGESVI = New System.Windows.Forms.Label
         Me.lbl_Aclaración = New System.Windows.Forms.Label
-        Me.lbl_Ingreso = New System.Windows.Forms.Label
-        Me.btn_IngresarAlSistema = New System.Windows.Forms.Button
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox
-        Me.lbl_Elaborado = New System.Windows.Forms.Label
+        Me.Label1 = New System.Windows.Forms.Label
+        Me.TextBox1 = New System.Windows.Forms.TextBox
+        Me.TextBox2 = New System.Windows.Forms.TextBox
+        Me.Label2 = New System.Windows.Forms.Label
         Me.Button1 = New System.Windows.Forms.Button
-        Me.Button2 = New System.Windows.Forms.Button
-        Me.Button3 = New System.Windows.Forms.Button
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lbl_Bienvenida
@@ -69,73 +65,49 @@ Partial Class frm_Bienvenida
         Me.lbl_Aclaración.TabIndex = 2
         Me.lbl_Aclaración.Text = "(Sistema Informático de Gestión de Viticultura)"
         '
-        'lbl_Ingreso
+        'Label1
         '
-        Me.lbl_Ingreso.AutoSize = True
-        Me.lbl_Ingreso.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_Ingreso.Location = New System.Drawing.Point(197, 337)
-        Me.lbl_Ingreso.Name = "lbl_Ingreso"
-        Me.lbl_Ingreso.Size = New System.Drawing.Size(100, 19)
-        Me.lbl_Ingreso.TabIndex = 3
-        Me.lbl_Ingreso.Text = "Iniciar como:"
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Constantia", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(67, 190)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(79, 23)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Usuario:"
         '
-        'btn_IngresarAlSistema
+        'TextBox1
         '
-        Me.btn_IngresarAlSistema.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_IngresarAlSistema.Location = New System.Drawing.Point(45, 360)
-        Me.btn_IngresarAlSistema.Name = "btn_IngresarAlSistema"
-        Me.btn_IngresarAlSistema.Size = New System.Drawing.Size(130, 52)
-        Me.btn_IngresarAlSistema.TabIndex = 4
-        Me.btn_IngresarAlSistema.Text = "Funcionario"
-        Me.btn_IngresarAlSistema.UseVisualStyleBackColor = True
+        Me.TextBox1.Location = New System.Drawing.Point(153, 192)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(175, 20)
+        Me.TextBox1.TabIndex = 4
         '
-        'PictureBox1
+        'TextBox2
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(173, 193)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(141, 125)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 5
-        Me.PictureBox1.TabStop = False
+        Me.TextBox2.Location = New System.Drawing.Point(153, 228)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(175, 20)
+        Me.TextBox2.TabIndex = 6
         '
-        'lbl_Elaborado
+        'Label2
         '
-        Me.lbl_Elaborado.AutoSize = True
-        Me.lbl_Elaborado.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_Elaborado.Location = New System.Drawing.Point(184, 171)
-        Me.lbl_Elaborado.Name = "lbl_Elaborado"
-        Me.lbl_Elaborado.Size = New System.Drawing.Size(113, 19)
-        Me.lbl_Elaborado.TabIndex = 6
-        Me.lbl_Elaborado.Text = "Elaborado por:"
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Constantia", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(30, 224)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(116, 23)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "Constraseña:"
         '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(307, 360)
+        Me.Button1.Font = New System.Drawing.Font("Constantia", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(164, 277)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(130, 52)
+        Me.Button1.Size = New System.Drawing.Size(135, 40)
         Me.Button1.TabIndex = 7
-        Me.Button1.Text = "Cliente"
+        Me.Button1.Text = "Iniciar sesión"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(351, 167)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 8
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(351, 206)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 9
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
         '
         'frm_Bienvenida
         '
@@ -143,19 +115,17 @@ Partial Class frm_Bienvenida
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(484, 461)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.lbl_Elaborado)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.btn_IngresarAlSistema)
-        Me.Controls.Add(Me.lbl_Ingreso)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lbl_Aclaración)
         Me.Controls.Add(Me.lbl_SIGESVI)
         Me.Controls.Add(Me.lbl_Bienvenida)
         Me.Name = "frm_Bienvenida"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Bienvenida"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -163,12 +133,10 @@ Partial Class frm_Bienvenida
     Friend WithEvents lbl_Bienvenida As System.Windows.Forms.Label
     Friend WithEvents lbl_SIGESVI As System.Windows.Forms.Label
     Friend WithEvents lbl_Aclaración As System.Windows.Forms.Label
-    Friend WithEvents lbl_Ingreso As System.Windows.Forms.Label
-    Friend WithEvents btn_IngresarAlSistema As System.Windows.Forms.Button
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents lbl_Elaborado As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
 
 End Class

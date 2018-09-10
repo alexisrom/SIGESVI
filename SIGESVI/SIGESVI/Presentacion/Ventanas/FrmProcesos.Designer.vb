@@ -156,6 +156,7 @@ Partial Class FrmProcesos
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "FrmProcesos"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Procesos"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

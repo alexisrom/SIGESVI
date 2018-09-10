@@ -26,14 +26,18 @@ Partial Class FrmCatalogo
         Me.Label12 = New System.Windows.Forms.Label
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox
         Me.CheckBox3 = New System.Windows.Forms.CheckBox
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox
         Me.GroupBox2 = New System.Windows.Forms.GroupBox
         Me.CheckBox4 = New System.Windows.Forms.CheckBox
         Me.CheckBox5 = New System.Windows.Forms.CheckBox
         Me.CheckBox6 = New System.Windows.Forms.CheckBox
         Me.Panel1 = New System.Windows.Forms.Panel
+        Me.LinkLabel5 = New System.Windows.Forms.LinkLabel
+        Me.LinkLabel4 = New System.Windows.Forms.LinkLabel
+        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel
+        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel
         Me.Label11 = New System.Windows.Forms.Label
         Me.Label10 = New System.Windows.Forms.Label
         Me.Label9 = New System.Windows.Forms.Label
@@ -58,10 +62,6 @@ Partial Class FrmCatalogo
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
         Me.Lbl_VinoTinto = New System.Windows.Forms.Label
-        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel
-        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel
-        Me.LinkLabel4 = New System.Windows.Forms.LinkLabel
-        Me.LinkLabel5 = New System.Windows.Forms.LinkLabel
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -121,15 +121,15 @@ Partial Class FrmCatalogo
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Categorias"
         '
-        'CheckBox1
+        'CheckBox3
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(20, 38)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(50, 17)
-        Me.CheckBox1.TabIndex = 0
-        Me.CheckBox1.Text = "Tinto"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.CheckBox3.AutoSize = True
+        Me.CheckBox3.Location = New System.Drawing.Point(20, 84)
+        Me.CheckBox3.Name = "CheckBox3"
+        Me.CheckBox3.Size = New System.Drawing.Size(63, 17)
+        Me.CheckBox3.TabIndex = 2
+        Me.CheckBox3.Text = "Rosado"
+        Me.CheckBox3.UseVisualStyleBackColor = True
         '
         'CheckBox2
         '
@@ -141,15 +141,15 @@ Partial Class FrmCatalogo
         Me.CheckBox2.Text = "Blanco"
         Me.CheckBox2.UseVisualStyleBackColor = True
         '
-        'CheckBox3
+        'CheckBox1
         '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(20, 84)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(63, 17)
-        Me.CheckBox3.TabIndex = 2
-        Me.CheckBox3.Text = "Rosado"
-        Me.CheckBox3.UseVisualStyleBackColor = True
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(20, 38)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(50, 17)
+        Me.CheckBox1.TabIndex = 0
+        Me.CheckBox1.Text = "Tinto"
+        Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'GroupBox2
         '
@@ -228,6 +228,46 @@ Partial Class FrmCatalogo
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(748, 669)
         Me.Panel1.TabIndex = 29
+        '
+        'LinkLabel5
+        '
+        Me.LinkLabel5.AutoSize = True
+        Me.LinkLabel5.Location = New System.Drawing.Point(520, 203)
+        Me.LinkLabel5.Name = "LinkLabel5"
+        Me.LinkLabel5.Size = New System.Drawing.Size(37, 13)
+        Me.LinkLabel5.TabIndex = 51
+        Me.LinkLabel5.TabStop = True
+        Me.LinkLabel5.Text = "Añadir"
+        '
+        'LinkLabel4
+        '
+        Me.LinkLabel4.AutoSize = True
+        Me.LinkLabel4.Location = New System.Drawing.Point(374, 203)
+        Me.LinkLabel4.Name = "LinkLabel4"
+        Me.LinkLabel4.Size = New System.Drawing.Size(37, 13)
+        Me.LinkLabel4.TabIndex = 50
+        Me.LinkLabel4.TabStop = True
+        Me.LinkLabel4.Text = "Añadir"
+        '
+        'LinkLabel3
+        '
+        Me.LinkLabel3.AutoSize = True
+        Me.LinkLabel3.Location = New System.Drawing.Point(234, 199)
+        Me.LinkLabel3.Name = "LinkLabel3"
+        Me.LinkLabel3.Size = New System.Drawing.Size(37, 13)
+        Me.LinkLabel3.TabIndex = 49
+        Me.LinkLabel3.TabStop = True
+        Me.LinkLabel3.Text = "Añadir"
+        '
+        'LinkLabel2
+        '
+        Me.LinkLabel2.AutoSize = True
+        Me.LinkLabel2.Location = New System.Drawing.Point(90, 199)
+        Me.LinkLabel2.Name = "LinkLabel2"
+        Me.LinkLabel2.Size = New System.Drawing.Size(37, 13)
+        Me.LinkLabel2.TabIndex = 48
+        Me.LinkLabel2.TabStop = True
+        Me.LinkLabel2.Text = "Añadir"
         '
         'Label11
         '
@@ -451,46 +491,6 @@ Partial Class FrmCatalogo
         Me.Lbl_VinoTinto.TabIndex = 24
         Me.Lbl_VinoTinto.Text = "Vinos Tintos"
         '
-        'LinkLabel2
-        '
-        Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.Location = New System.Drawing.Point(90, 199)
-        Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(37, 13)
-        Me.LinkLabel2.TabIndex = 48
-        Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "Añadir"
-        '
-        'LinkLabel3
-        '
-        Me.LinkLabel3.AutoSize = True
-        Me.LinkLabel3.Location = New System.Drawing.Point(234, 199)
-        Me.LinkLabel3.Name = "LinkLabel3"
-        Me.LinkLabel3.Size = New System.Drawing.Size(37, 13)
-        Me.LinkLabel3.TabIndex = 49
-        Me.LinkLabel3.TabStop = True
-        Me.LinkLabel3.Text = "Añadir"
-        '
-        'LinkLabel4
-        '
-        Me.LinkLabel4.AutoSize = True
-        Me.LinkLabel4.Location = New System.Drawing.Point(374, 203)
-        Me.LinkLabel4.Name = "LinkLabel4"
-        Me.LinkLabel4.Size = New System.Drawing.Size(37, 13)
-        Me.LinkLabel4.TabIndex = 50
-        Me.LinkLabel4.TabStop = True
-        Me.LinkLabel4.Text = "Añadir"
-        '
-        'LinkLabel5
-        '
-        Me.LinkLabel5.AutoSize = True
-        Me.LinkLabel5.Location = New System.Drawing.Point(520, 203)
-        Me.LinkLabel5.Name = "LinkLabel5"
-        Me.LinkLabel5.Size = New System.Drawing.Size(37, 13)
-        Me.LinkLabel5.TabIndex = 51
-        Me.LinkLabel5.TabStop = True
-        Me.LinkLabel5.Text = "Añadir"
-        '
         'FrmCatalogo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -504,6 +504,7 @@ Partial Class FrmCatalogo
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.PictureBox13)
         Me.Name = "FrmCatalogo"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Catalogo"
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)

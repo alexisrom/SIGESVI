@@ -31,10 +31,10 @@ Partial Class FrmAlmacen
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
         Me.LblEstado = New System.Windows.Forms.ToolStripStatusLabel
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.TextBox1 = New System.Windows.Forms.TextBox
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.TextBox3 = New System.Windows.Forms.TextBox
         Me.Label2 = New System.Windows.Forms.Label
+        Me.TextBox3 = New System.Windows.Forms.TextBox
+        Me.Label1 = New System.Windows.Forms.Label
+        Me.TextBox1 = New System.Windows.Forms.TextBox
         Me.DataGridView2 = New System.Windows.Forms.DataGridView
         Me.ToolStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
@@ -114,12 +114,21 @@ Partial Class FrmAlmacen
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Información General"
         '
-        'TextBox1
+        'Label2
         '
-        Me.TextBox1.Location = New System.Drawing.Point(41, 35)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(56, 20)
-        Me.TextBox1.TabIndex = 0
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(140, 41)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(44, 13)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "Nombre"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(214, 38)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(217, 20)
+        Me.TextBox3.TabIndex = 3
         '
         'Label1
         '
@@ -130,21 +139,12 @@ Partial Class FrmAlmacen
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "ID"
         '
-        'TextBox3
+        'TextBox1
         '
-        Me.TextBox3.Location = New System.Drawing.Point(214, 38)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(217, 20)
-        Me.TextBox3.TabIndex = 3
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(140, 41)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(44, 13)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Nombre"
+        Me.TextBox1.Location = New System.Drawing.Point(41, 35)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(56, 20)
+        Me.TextBox1.TabIndex = 0
         '
         'DataGridView2
         '
@@ -164,6 +164,7 @@ Partial Class FrmAlmacen
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Name = "FrmAlmacen"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmAlmacen"
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()

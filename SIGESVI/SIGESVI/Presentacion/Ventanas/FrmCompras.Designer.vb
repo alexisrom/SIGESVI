@@ -28,6 +28,7 @@ Partial Class FrmCompras
         Me.Label2 = New System.Windows.Forms.Label
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
+        Me.Label5 = New System.Windows.Forms.Label
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel
         Me.Button1 = New System.Windows.Forms.Button
         Me.Label1 = New System.Windows.Forms.Label
@@ -45,7 +46,6 @@ Partial Class FrmCompras
         Me.Label4 = New System.Windows.Forms.Label
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.TextBox4 = New System.Windows.Forms.TextBox
-        Me.Label5 = New System.Windows.Forms.Label
         Me.GroupBox1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
@@ -99,6 +99,15 @@ Partial Class FrmCompras
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Productos"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(33, 72)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(112, 13)
+        Me.Label5.TabIndex = 5
+        Me.Label5.Text = "[Nombre del producto]"
         '
         'LinkLabel1
         '
@@ -244,15 +253,6 @@ Partial Class FrmCompras
         Me.TextBox4.Size = New System.Drawing.Size(338, 20)
         Me.TextBox4.TabIndex = 36
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(33, 72)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(112, 13)
-        Me.Label5.TabIndex = 5
-        Me.Label5.Text = "[Nombre del producto]"
-        '
         'FrmCompras
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -271,6 +271,7 @@ Partial Class FrmCompras
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "FrmCompras"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmCompras"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

@@ -453,6 +453,7 @@ Partial Class FrmFuncionarios
         Me.Controls.Add(Me.GroupBox1)
         Me.Location = New System.Drawing.Point(42, 30)
         Me.Name = "FrmFuncionarios"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Funcionarios"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)

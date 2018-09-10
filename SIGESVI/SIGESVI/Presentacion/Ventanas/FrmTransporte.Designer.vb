@@ -30,8 +30,8 @@ Partial Class FrmTransporte
         Me.Label3 = New System.Windows.Forms.Label
         Me.DataGridView2 = New System.Windows.Forms.DataGridView
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.Label4 = New System.Windows.Forms.Label
         Me.Label5 = New System.Windows.Forms.Label
+        Me.Label4 = New System.Windows.Forms.Label
         Me.Label6 = New System.Windows.Forms.Label
         Me.ComboBox1 = New System.Windows.Forms.ComboBox
         Me.Button1 = New System.Windows.Forms.Button
@@ -114,15 +114,6 @@ Partial Class FrmTransporte
         Me.GroupBox1.TabIndex = 24
         Me.GroupBox1.TabStop = False
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(17, 19)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(111, 13)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Cantidad de Lotes: 00"
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -131,6 +122,15 @@ Partial Class FrmTransporte
         Me.Label5.Size = New System.Drawing.Size(103, 13)
         Me.Label5.TabIndex = 1
         Me.Label5.Text = "Capacidad Total: 00"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(17, 19)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(111, 13)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "Cantidad de Lotes: 00"
         '
         'Label6
         '
@@ -187,6 +187,7 @@ Partial Class FrmTransporte
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "FrmTransporte"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Transporte"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()

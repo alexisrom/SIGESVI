@@ -83,6 +83,7 @@ Partial Class FrmRecordatorio
         '
         'TextBox4
         '
+        Me.TextBox4.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox4.Location = New System.Drawing.Point(21, 142)
         Me.TextBox4.Multiline = True
         Me.TextBox4.Name = "TextBox4"
@@ -109,16 +110,18 @@ Partial Class FrmRecordatorio
         '
         'DateTimePicker3
         '
+        Me.DateTimePicker3.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker3.Location = New System.Drawing.Point(15, 34)
         Me.DateTimePicker3.Name = "DateTimePicker3"
-        Me.DateTimePicker3.Size = New System.Drawing.Size(200, 26)
+        Me.DateTimePicker3.Size = New System.Drawing.Size(200, 25)
         Me.DateTimePicker3.TabIndex = 42
         '
         'TextBox3
         '
+        Me.TextBox3.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(21, 86)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(270, 26)
+        Me.TextBox3.Size = New System.Drawing.Size(270, 25)
         Me.TextBox3.TabIndex = 41
         '
         'FrmRecordatorio

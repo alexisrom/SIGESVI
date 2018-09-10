@@ -54,6 +54,7 @@ Partial Class FrmProcesos
         '
         'TextBox1
         '
+        Me.TextBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(9, 137)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
@@ -80,9 +81,10 @@ Partial Class FrmProcesos
         '
         'TextBox2
         '
+        Me.TextBox2.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(118, 59)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(145, 26)
+        Me.TextBox2.Size = New System.Drawing.Size(145, 25)
         Me.TextBox2.TabIndex = 2
         '
         'GroupBox2
@@ -118,12 +120,13 @@ Partial Class FrmProcesos
         '
         'ListBox1
         '
+        Me.ListBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 18
+        Me.ListBox1.ItemHeight = 20
         Me.ListBox1.Items.AddRange(New Object() {"01 - Primer etapa", "02 - Segunda etapa"})
         Me.ListBox1.Location = New System.Drawing.Point(19, 41)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(160, 166)
+        Me.ListBox1.Size = New System.Drawing.Size(160, 164)
         Me.ListBox1.TabIndex = 0
         '
         'GroupBox3

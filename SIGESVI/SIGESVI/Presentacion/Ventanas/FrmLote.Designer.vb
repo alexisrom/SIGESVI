@@ -73,26 +73,29 @@ Partial Class FrmLote
         '
         'ComboBox2
         '
+        Me.ComboBox2.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Location = New System.Drawing.Point(31, 250)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(181, 26)
+        Me.ComboBox2.Size = New System.Drawing.Size(181, 28)
         Me.ComboBox2.TabIndex = 35
         '
         'ComboBox1
         '
+        Me.ComboBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(31, 200)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(181, 26)
+        Me.ComboBox1.Size = New System.Drawing.Size(181, 28)
         Me.ComboBox1.TabIndex = 34
         '
         'CboSucursales
         '
+        Me.CboSucursales.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CboSucursales.FormattingEnabled = True
         Me.CboSucursales.Location = New System.Drawing.Point(31, 150)
         Me.CboSucursales.Name = "CboSucursales"
-        Me.CboSucursales.Size = New System.Drawing.Size(181, 26)
+        Me.CboSucursales.Size = New System.Drawing.Size(181, 28)
         Me.CboSucursales.TabIndex = 33
         '
         'Label5
@@ -133,9 +136,10 @@ Partial Class FrmLote
         '
         'TextBox2
         '
+        Me.TextBox2.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(31, 97)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(181, 26)
+        Me.TextBox2.Size = New System.Drawing.Size(181, 25)
         Me.TextBox2.TabIndex = 25
         '
         'Label9
@@ -149,9 +153,10 @@ Partial Class FrmLote
         '
         'TextBox1
         '
+        Me.TextBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(31, 47)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(181, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(181, 25)
         Me.TextBox1.TabIndex = 0
         '
         'ToolStrip1
@@ -223,9 +228,10 @@ Partial Class FrmLote
         '
         'TextBox3
         '
+        Me.TextBox3.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(351, 40)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(181, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(181, 25)
         Me.TextBox3.TabIndex = 33
         '
         'PictureBox1

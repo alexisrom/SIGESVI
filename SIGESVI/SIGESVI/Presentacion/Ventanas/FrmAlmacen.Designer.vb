@@ -126,9 +126,10 @@ Partial Class FrmAlmacen
         '
         'TextBox3
         '
+        Me.TextBox3.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(237, 38)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(217, 27)
+        Me.TextBox3.Size = New System.Drawing.Size(217, 26)
         Me.TextBox3.TabIndex = 3
         '
         'Label1
@@ -142,9 +143,10 @@ Partial Class FrmAlmacen
         '
         'TextBox1
         '
+        Me.TextBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(49, 35)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(56, 27)
+        Me.TextBox1.Size = New System.Drawing.Size(56, 25)
         Me.TextBox1.TabIndex = 0
         '
         'DataGridView2

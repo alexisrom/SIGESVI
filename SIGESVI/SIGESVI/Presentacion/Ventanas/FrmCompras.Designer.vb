@@ -55,10 +55,10 @@ Partial Class FrmCompras
         '
         'TextBox2
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(264, 117)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(126, 26)
+        Me.TextBox2.Size = New System.Drawing.Size(126, 25)
         Me.TextBox2.TabIndex = 15
         '
         'Label3
@@ -83,10 +83,10 @@ Partial Class FrmCompras
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker1.Location = New System.Drawing.Point(42, 117)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 26)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 25)
         Me.DateTimePicker1.TabIndex = 12
         '
         'GroupBox1
@@ -144,19 +144,21 @@ Partial Class FrmCompras
         '
         'TextBox1
         '
+        Me.TextBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(258, 38)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(65, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(65, 25)
         Me.TextBox1.TabIndex = 1
         '
         'LbProductos
         '
+        Me.LbProductos.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LbProductos.FormattingEnabled = True
-        Me.LbProductos.ItemHeight = 18
+        Me.LbProductos.ItemHeight = 20
         Me.LbProductos.Items.AddRange(New Object() {"Producto 1 - Cantidad 10"})
         Me.LbProductos.Location = New System.Drawing.Point(33, 105)
         Me.LbProductos.Name = "LbProductos"
-        Me.LbProductos.Size = New System.Drawing.Size(275, 220)
+        Me.LbProductos.Size = New System.Drawing.Size(275, 224)
         Me.LbProductos.TabIndex = 0
         '
         'ToolStrip1
@@ -228,10 +230,10 @@ Partial Class FrmCompras
         '
         'TextBox3
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(73, 45)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(126, 26)
+        Me.TextBox3.Size = New System.Drawing.Size(126, 25)
         Me.TextBox3.TabIndex = 27
         '
         'Lbl_IdCompras
@@ -256,10 +258,10 @@ Partial Class FrmCompras
         '
         'TextBox4
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox4.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox4.Location = New System.Drawing.Point(462, 61)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(338, 26)
+        Me.TextBox4.Size = New System.Drawing.Size(338, 25)
         Me.TextBox4.TabIndex = 36
         '
         'FrmCompras

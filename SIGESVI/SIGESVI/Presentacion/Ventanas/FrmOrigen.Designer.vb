@@ -129,18 +129,20 @@ Partial Class FrmOrigen
         '
         'ComboBox1
         '
+        Me.ComboBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(31, 197)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(181, 26)
+        Me.ComboBox1.Size = New System.Drawing.Size(181, 28)
         Me.ComboBox1.TabIndex = 34
         '
         'CboSucursales
         '
+        Me.CboSucursales.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CboSucursales.FormattingEnabled = True
         Me.CboSucursales.Location = New System.Drawing.Point(31, 150)
         Me.CboSucursales.Name = "CboSucursales"
-        Me.CboSucursales.Size = New System.Drawing.Size(181, 26)
+        Me.CboSucursales.Size = New System.Drawing.Size(181, 28)
         Me.CboSucursales.TabIndex = 33
         '
         'Label6
@@ -172,9 +174,10 @@ Partial Class FrmOrigen
         '
         'TextBox2
         '
+        Me.TextBox2.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(31, 97)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(181, 26)
+        Me.TextBox2.Size = New System.Drawing.Size(181, 25)
         Me.TextBox2.TabIndex = 25
         '
         'Label9
@@ -188,9 +191,10 @@ Partial Class FrmOrigen
         '
         'TextBox1
         '
+        Me.TextBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(31, 47)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(181, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(181, 25)
         Me.TextBox1.TabIndex = 0
         '
         'StatusStrip1

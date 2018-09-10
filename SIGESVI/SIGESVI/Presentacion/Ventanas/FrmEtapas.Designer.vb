@@ -51,10 +51,11 @@ Partial Class FrmEtapas
         '
         'TextBox3
         '
+        Me.TextBox3.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(102, 75)
         Me.TextBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(148, 26)
+        Me.TextBox3.Size = New System.Drawing.Size(148, 25)
         Me.TextBox3.TabIndex = 5
         '
         'Label3
@@ -69,10 +70,11 @@ Partial Class FrmEtapas
         '
         'TextBox2
         '
+        Me.TextBox2.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(102, 172)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(148, 26)
+        Me.TextBox2.Size = New System.Drawing.Size(148, 25)
         Me.TextBox2.TabIndex = 3
         '
         'Label2
@@ -87,10 +89,11 @@ Partial Class FrmEtapas
         '
         'TextBox1
         '
+        Me.TextBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(102, 42)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(148, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(148, 25)
         Me.TextBox1.TabIndex = 1
         '
         'Label1

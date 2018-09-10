@@ -57,10 +57,10 @@ Partial Class FrmVentas
         '
         'TextBox4
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox4.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox4.Location = New System.Drawing.Point(445, 86)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(225, 26)
+        Me.TextBox4.Size = New System.Drawing.Size(225, 25)
         Me.TextBox4.TabIndex = 46
         '
         'Label4
@@ -75,10 +75,10 @@ Partial Class FrmVentas
         '
         'TextBox3
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(28, 81)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(126, 26)
+        Me.TextBox3.Size = New System.Drawing.Size(126, 25)
         Me.TextBox3.TabIndex = 44
         '
         'DataGridView1
@@ -91,10 +91,10 @@ Partial Class FrmVentas
         '
         'TextBox2
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(247, 137)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(126, 26)
+        Me.TextBox2.Size = New System.Drawing.Size(126, 25)
         Me.TextBox2.TabIndex = 42
         '
         'Label3
@@ -200,15 +200,17 @@ Partial Class FrmVentas
         '
         'TextBox1
         '
+        Me.TextBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(266, 38)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(46, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(46, 25)
         Me.TextBox1.TabIndex = 1
         '
         'LbProductos
         '
+        Me.LbProductos.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LbProductos.FormattingEnabled = True
-        Me.LbProductos.ItemHeight = 18
+        Me.LbProductos.ItemHeight = 20
         Me.LbProductos.Items.AddRange(New Object() {"Producto 1 - Cantidad 10"})
         Me.LbProductos.Location = New System.Drawing.Point(33, 105)
         Me.LbProductos.Name = "LbProductos"

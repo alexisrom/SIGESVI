@@ -151,11 +151,11 @@ Partial Class FrmTransporte
         '
         'ComboBox1
         '
-        Me.ComboBox1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(411, 77)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 26)
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 28)
         Me.ComboBox1.TabIndex = 26
         '
         'Button1

@@ -89,10 +89,10 @@ Partial Class FrmFuncionarios
         '
         'Txt_Busqueda
         '
-        Me.Txt_Busqueda.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_Busqueda.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_Busqueda.Location = New System.Drawing.Point(667, 55)
         Me.Txt_Busqueda.Name = "Txt_Busqueda"
-        Me.Txt_Busqueda.Size = New System.Drawing.Size(159, 26)
+        Me.Txt_Busqueda.Size = New System.Drawing.Size(159, 25)
         Me.Txt_Busqueda.TabIndex = 24
         '
         'DataGridView1
@@ -145,11 +145,12 @@ Partial Class FrmFuncionarios
         '
         'Cbo_cargo
         '
+        Me.Cbo_cargo.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Cbo_cargo.FormattingEnabled = True
         Me.Cbo_cargo.Items.AddRange(New Object() {"Administrativo", "Gerente Sucursal", "Asesor Profesional"})
         Me.Cbo_cargo.Location = New System.Drawing.Point(384, 258)
         Me.Cbo_cargo.Name = "Cbo_cargo"
-        Me.Cbo_cargo.Size = New System.Drawing.Size(175, 26)
+        Me.Cbo_cargo.Size = New System.Drawing.Size(175, 28)
         Me.Cbo_cargo.TabIndex = 58
         '
         'Label4
@@ -172,9 +173,10 @@ Partial Class FrmFuncionarios
         '
         'Txt_pass
         '
+        Me.Txt_pass.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_pass.Location = New System.Drawing.Point(384, 211)
         Me.Txt_pass.Name = "Txt_pass"
-        Me.Txt_pass.Size = New System.Drawing.Size(181, 26)
+        Me.Txt_pass.Size = New System.Drawing.Size(181, 25)
         Me.Txt_pass.TabIndex = 55
         '
         'Label2
@@ -188,9 +190,10 @@ Partial Class FrmFuncionarios
         '
         'Txt_user
         '
+        Me.Txt_user.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_user.Location = New System.Drawing.Point(384, 163)
         Me.Txt_user.Name = "Txt_user"
-        Me.Txt_user.Size = New System.Drawing.Size(181, 26)
+        Me.Txt_user.Size = New System.Drawing.Size(181, 25)
         Me.Txt_user.TabIndex = 53
         '
         'Button2
@@ -212,9 +215,10 @@ Partial Class FrmFuncionarios
         '
         'Txt_Idsucursal
         '
+        Me.Txt_Idsucursal.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_Idsucursal.Location = New System.Drawing.Point(384, 308)
         Me.Txt_Idsucursal.Name = "Txt_Idsucursal"
-        Me.Txt_Idsucursal.Size = New System.Drawing.Size(173, 26)
+        Me.Txt_Idsucursal.Size = New System.Drawing.Size(173, 25)
         Me.Txt_Idsucursal.TabIndex = 9
         '
         'LblMensaje
@@ -292,52 +296,58 @@ Partial Class FrmFuncionarios
         '
         'Txt_Ci
         '
+        Me.Txt_Ci.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_Ci.Location = New System.Drawing.Point(3, 3)
         Me.Txt_Ci.Name = "Txt_Ci"
-        Me.Txt_Ci.Size = New System.Drawing.Size(173, 26)
+        Me.Txt_Ci.Size = New System.Drawing.Size(173, 25)
         Me.Txt_Ci.TabIndex = 1
         '
         'Txt_Nombre
         '
-        Me.Txt_Nombre.Location = New System.Drawing.Point(3, 35)
+        Me.Txt_Nombre.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_Nombre.Location = New System.Drawing.Point(3, 34)
         Me.Txt_Nombre.Name = "Txt_Nombre"
-        Me.Txt_Nombre.Size = New System.Drawing.Size(173, 26)
+        Me.Txt_Nombre.Size = New System.Drawing.Size(173, 25)
         Me.Txt_Nombre.TabIndex = 2
         '
         'Txt_Apellido
         '
-        Me.Txt_Apellido.Location = New System.Drawing.Point(3, 67)
+        Me.Txt_Apellido.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_Apellido.Location = New System.Drawing.Point(3, 65)
         Me.Txt_Apellido.Name = "Txt_Apellido"
-        Me.Txt_Apellido.Size = New System.Drawing.Size(173, 26)
+        Me.Txt_Apellido.Size = New System.Drawing.Size(173, 25)
         Me.Txt_Apellido.TabIndex = 3
         '
         'Txt_Direccion
         '
-        Me.Txt_Direccion.Location = New System.Drawing.Point(3, 99)
+        Me.Txt_Direccion.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_Direccion.Location = New System.Drawing.Point(3, 96)
         Me.Txt_Direccion.Name = "Txt_Direccion"
-        Me.Txt_Direccion.Size = New System.Drawing.Size(173, 26)
+        Me.Txt_Direccion.Size = New System.Drawing.Size(173, 25)
         Me.Txt_Direccion.TabIndex = 5
         '
         'Txt_Telefono
         '
-        Me.Txt_Telefono.Location = New System.Drawing.Point(3, 131)
+        Me.Txt_Telefono.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_Telefono.Location = New System.Drawing.Point(3, 127)
         Me.Txt_Telefono.Name = "Txt_Telefono"
-        Me.Txt_Telefono.Size = New System.Drawing.Size(173, 26)
+        Me.Txt_Telefono.Size = New System.Drawing.Size(173, 25)
         Me.Txt_Telefono.TabIndex = 4
         '
         'LblTelefonos
         '
+        Me.LblTelefonos.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblTelefonos.FormattingEnabled = True
-        Me.LblTelefonos.ItemHeight = 18
-        Me.LblTelefonos.Location = New System.Drawing.Point(3, 163)
+        Me.LblTelefonos.ItemHeight = 20
+        Me.LblTelefonos.Location = New System.Drawing.Point(3, 158)
         Me.LblTelefonos.Name = "LblTelefonos"
-        Me.LblTelefonos.Size = New System.Drawing.Size(173, 40)
+        Me.LblTelefonos.Size = New System.Drawing.Size(173, 44)
         Me.LblTelefonos.TabIndex = 6
         '
         'Btn_AñadirTel
         '
         Me.Btn_AñadirTel.Font = New System.Drawing.Font("Cambria", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_AñadirTel.Location = New System.Drawing.Point(3, 209)
+        Me.Btn_AñadirTel.Location = New System.Drawing.Point(3, 208)
         Me.Btn_AñadirTel.Name = "Btn_AñadirTel"
         Me.Btn_AñadirTel.Size = New System.Drawing.Size(75, 23)
         Me.Btn_AñadirTel.TabIndex = 8
@@ -347,7 +357,7 @@ Partial Class FrmFuncionarios
         'Btn_QuitarTel
         '
         Me.Btn_QuitarTel.Font = New System.Drawing.Font("Cambria", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_QuitarTel.Location = New System.Drawing.Point(84, 209)
+        Me.Btn_QuitarTel.Location = New System.Drawing.Point(84, 208)
         Me.Btn_QuitarTel.Name = "Btn_QuitarTel"
         Me.Btn_QuitarTel.Size = New System.Drawing.Size(75, 23)
         Me.Btn_QuitarTel.TabIndex = 7

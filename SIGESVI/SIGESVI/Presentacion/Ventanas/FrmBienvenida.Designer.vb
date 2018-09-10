@@ -77,19 +77,19 @@ Partial Class frm_Bienvenida
         '
         'Txt_Usuario
         '
-        Me.Txt_Usuario.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_Usuario.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_Usuario.Location = New System.Drawing.Point(169, 194)
         Me.Txt_Usuario.Name = "Txt_Usuario"
-        Me.Txt_Usuario.Size = New System.Drawing.Size(175, 26)
+        Me.Txt_Usuario.Size = New System.Drawing.Size(175, 25)
         Me.Txt_Usuario.TabIndex = 4
         '
         'Txt_Constraseña
         '
-        Me.Txt_Constraseña.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_Constraseña.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_Constraseña.Location = New System.Drawing.Point(169, 228)
         Me.Txt_Constraseña.Name = "Txt_Constraseña"
         Me.Txt_Constraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.Txt_Constraseña.Size = New System.Drawing.Size(175, 26)
+        Me.Txt_Constraseña.Size = New System.Drawing.Size(175, 25)
         Me.Txt_Constraseña.TabIndex = 6
         '
         'Lbl_Constraseña

@@ -128,9 +128,10 @@ Partial Class FrmTrazabilidad
         '
         'TextBox2
         '
+        Me.TextBox2.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(91, 55)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(239, 26)
+        Me.TextBox2.Size = New System.Drawing.Size(239, 25)
         Me.TextBox2.TabIndex = 3
         '
         'Label2
@@ -144,9 +145,10 @@ Partial Class FrmTrazabilidad
         '
         'TextBox1
         '
+        Me.TextBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(91, 26)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(158, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(158, 25)
         Me.TextBox1.TabIndex = 1
         '
         'Label1
@@ -230,16 +232,18 @@ Partial Class FrmTrazabilidad
         '
         'TextBox5
         '
+        Me.TextBox5.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox5.Location = New System.Drawing.Point(51, 178)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(48, 26)
+        Me.TextBox5.Size = New System.Drawing.Size(48, 25)
         Me.TextBox5.TabIndex = 50
         '
         'DateTimePicker2
         '
+        Me.DateTimePicker2.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker2.Location = New System.Drawing.Point(10, 122)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(200, 26)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(200, 25)
         Me.DateTimePicker2.TabIndex = 36
         '
         'Label4
@@ -253,9 +257,10 @@ Partial Class FrmTrazabilidad
         '
         'DateTimePicker1
         '
+        Me.DateTimePicker1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker1.Location = New System.Drawing.Point(10, 76)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 26)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 25)
         Me.DateTimePicker1.TabIndex = 34
         '
         'Label3
@@ -288,12 +293,13 @@ Partial Class FrmTrazabilidad
         '
         'ListBox2
         '
+        Me.ListBox2.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListBox2.FormattingEnabled = True
-        Me.ListBox2.ItemHeight = 18
+        Me.ListBox2.ItemHeight = 20
         Me.ListBox2.Items.AddRange(New Object() {"1.1 - Transporte a la bodega", "1.2 - xxxxxx"})
         Me.ListBox2.Location = New System.Drawing.Point(72, 59)
         Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(248, 40)
+        Me.ListBox2.Size = New System.Drawing.Size(248, 44)
         Me.ListBox2.TabIndex = 2
         '
         'Label8
@@ -307,8 +313,9 @@ Partial Class FrmTrazabilidad
         '
         'ListBox1
         '
+        Me.ListBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 18
+        Me.ListBox1.ItemHeight = 20
         Me.ListBox1.Items.AddRange(New Object() {"Etapa 1 - Filtración", "Etapa 2 - Descube", "Etapa 3 - Fermentación", "Etapa 4 - Conservación"})
         Me.ListBox1.Location = New System.Drawing.Point(72, 162)
         Me.ListBox1.Name = "ListBox1"

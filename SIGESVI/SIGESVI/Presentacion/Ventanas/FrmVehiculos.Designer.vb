@@ -133,10 +133,11 @@ Partial Class FrmVehiculos
         '
         'Cbo_Vehiculo
         '
+        Me.Cbo_Vehiculo.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Cbo_Vehiculo.FormattingEnabled = True
         Me.Cbo_Vehiculo.Location = New System.Drawing.Point(31, 150)
         Me.Cbo_Vehiculo.Name = "Cbo_Vehiculo"
-        Me.Cbo_Vehiculo.Size = New System.Drawing.Size(181, 26)
+        Me.Cbo_Vehiculo.Size = New System.Drawing.Size(181, 28)
         Me.Cbo_Vehiculo.TabIndex = 33
         '
         'Label6
@@ -150,9 +151,10 @@ Partial Class FrmVehiculos
         '
         'Txt_Capacidad
         '
+        Me.Txt_Capacidad.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_Capacidad.Location = New System.Drawing.Point(31, 197)
         Me.Txt_Capacidad.Name = "Txt_Capacidad"
-        Me.Txt_Capacidad.Size = New System.Drawing.Size(181, 26)
+        Me.Txt_Capacidad.Size = New System.Drawing.Size(181, 25)
         Me.Txt_Capacidad.TabIndex = 29
         '
         'Label7
@@ -175,9 +177,10 @@ Partial Class FrmVehiculos
         '
         'Txt_Nombre
         '
+        Me.Txt_Nombre.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_Nombre.Location = New System.Drawing.Point(31, 97)
         Me.Txt_Nombre.Name = "Txt_Nombre"
-        Me.Txt_Nombre.Size = New System.Drawing.Size(181, 26)
+        Me.Txt_Nombre.Size = New System.Drawing.Size(181, 25)
         Me.Txt_Nombre.TabIndex = 25
         '
         'Label9
@@ -191,9 +194,10 @@ Partial Class FrmVehiculos
         '
         'Txt_Vehiculo
         '
+        Me.Txt_Vehiculo.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_Vehiculo.Location = New System.Drawing.Point(31, 47)
         Me.Txt_Vehiculo.Name = "Txt_Vehiculo"
-        Me.Txt_Vehiculo.Size = New System.Drawing.Size(181, 26)
+        Me.Txt_Vehiculo.Size = New System.Drawing.Size(181, 25)
         Me.Txt_Vehiculo.TabIndex = 0
         '
         'FrmVehiculos

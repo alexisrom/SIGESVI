@@ -58,10 +58,10 @@ Partial Class FrmReserva
         '
         'TextBox1
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(695, 57)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(149, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(149, 25)
         Me.TextBox1.TabIndex = 2
         '
         'PictureBox1
@@ -76,10 +76,10 @@ Partial Class FrmReserva
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker1.Location = New System.Drawing.Point(39, 181)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 26)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 25)
         Me.DateTimePicker1.TabIndex = 23
         '
         'Label1
@@ -94,10 +94,10 @@ Partial Class FrmReserva
         '
         'TextBox2
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(115, 39)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 26)
+        Me.TextBox2.Size = New System.Drawing.Size(100, 25)
         Me.TextBox2.TabIndex = 25
         '
         'Label2
@@ -122,10 +122,10 @@ Partial Class FrmReserva
         '
         'TextBox3
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(39, 122)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(182, 26)
+        Me.TextBox3.Size = New System.Drawing.Size(182, 25)
         Me.TextBox3.TabIndex = 28
         '
         'Label4
@@ -150,12 +150,12 @@ Partial Class FrmReserva
         '
         'ListBox1
         '
-        Me.ListBox1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 18
+        Me.ListBox1.ItemHeight = 20
         Me.ListBox1.Location = New System.Drawing.Point(39, 245)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(257, 112)
+        Me.ListBox1.Size = New System.Drawing.Size(257, 104)
         Me.ListBox1.TabIndex = 31
         '
         'Label5
@@ -223,12 +223,12 @@ Partial Class FrmReserva
         '
         'ComboBox1
         '
-        Me.ComboBox1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Pendiente", "Completada", "Entregada"})
         Me.ComboBox1.Location = New System.Drawing.Point(227, 39)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 26)
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 28)
         Me.ComboBox1.TabIndex = 35
         '
         'FrmReserva

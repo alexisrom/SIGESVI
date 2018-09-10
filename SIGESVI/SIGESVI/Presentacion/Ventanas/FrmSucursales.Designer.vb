@@ -114,9 +114,10 @@ Partial Class FrmSucursales
         '
         'TextBox1
         '
+        Me.TextBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(106, 303)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(147, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(147, 25)
         Me.TextBox1.TabIndex = 16
         '
         'Label1
@@ -130,11 +131,12 @@ Partial Class FrmSucursales
         '
         'CboDepartamentos
         '
+        Me.CboDepartamentos.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CboDepartamentos.FormattingEnabled = True
         Me.CboDepartamentos.Items.AddRange(New Object() {"Canelones", "Montevideo"})
         Me.CboDepartamentos.Location = New System.Drawing.Point(106, 137)
         Me.CboDepartamentos.Name = "CboDepartamentos"
-        Me.CboDepartamentos.Size = New System.Drawing.Size(196, 26)
+        Me.CboDepartamentos.Size = New System.Drawing.Size(196, 28)
         Me.CboDepartamentos.TabIndex = 14
         '
         'Lbl_Departamento
@@ -148,39 +150,44 @@ Partial Class FrmSucursales
         '
         'Txt_ID
         '
+        Me.Txt_ID.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_ID.Location = New System.Drawing.Point(106, 42)
         Me.Txt_ID.Name = "Txt_ID"
-        Me.Txt_ID.Size = New System.Drawing.Size(196, 26)
+        Me.Txt_ID.Size = New System.Drawing.Size(196, 25)
         Me.Txt_ID.TabIndex = 7
         '
         'Txt_Nombre
         '
+        Me.Txt_Nombre.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_Nombre.Location = New System.Drawing.Point(106, 73)
         Me.Txt_Nombre.Name = "Txt_Nombre"
-        Me.Txt_Nombre.Size = New System.Drawing.Size(196, 26)
+        Me.Txt_Nombre.Size = New System.Drawing.Size(196, 25)
         Me.Txt_Nombre.TabIndex = 8
         '
         'Txt_Direccion
         '
+        Me.Txt_Direccion.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_Direccion.Location = New System.Drawing.Point(106, 104)
         Me.Txt_Direccion.Name = "Txt_Direccion"
-        Me.Txt_Direccion.Size = New System.Drawing.Size(196, 26)
+        Me.Txt_Direccion.Size = New System.Drawing.Size(196, 25)
         Me.Txt_Direccion.TabIndex = 10
         '
         'Txt_Telefono
         '
+        Me.Txt_Telefono.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_Telefono.Location = New System.Drawing.Point(106, 168)
         Me.Txt_Telefono.Name = "Txt_Telefono"
-        Me.Txt_Telefono.Size = New System.Drawing.Size(196, 26)
+        Me.Txt_Telefono.Size = New System.Drawing.Size(196, 25)
         Me.Txt_Telefono.TabIndex = 11
         '
         'LblTelefonos
         '
+        Me.LblTelefonos.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblTelefonos.FormattingEnabled = True
-        Me.LblTelefonos.ItemHeight = 18
+        Me.LblTelefonos.ItemHeight = 20
         Me.LblTelefonos.Location = New System.Drawing.Point(106, 199)
         Me.LblTelefonos.Name = "LblTelefonos"
-        Me.LblTelefonos.Size = New System.Drawing.Size(196, 40)
+        Me.LblTelefonos.Size = New System.Drawing.Size(196, 44)
         Me.LblTelefonos.TabIndex = 12
         '
         'Btn_Borrar
@@ -249,10 +256,10 @@ Partial Class FrmSucursales
         '
         'Txt_Busqueda
         '
-        Me.Txt_Busqueda.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_Busqueda.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_Busqueda.Location = New System.Drawing.Point(412, 52)
         Me.Txt_Busqueda.Name = "Txt_Busqueda"
-        Me.Txt_Busqueda.Size = New System.Drawing.Size(159, 26)
+        Me.Txt_Busqueda.Size = New System.Drawing.Size(159, 25)
         Me.Txt_Busqueda.TabIndex = 16
         '
         'DataGridView1

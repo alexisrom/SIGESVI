@@ -102,7 +102,7 @@ Partial Class FrmTipoCepas
         '
         'TextBox2
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(17, 138)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
@@ -130,10 +130,10 @@ Partial Class FrmTipoCepas
         '
         'TextBox1
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(17, 68)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(284, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(284, 25)
         Me.TextBox1.TabIndex = 0
         Me.TextBox1.Text = "Cabernet Sauvignon"
         '
@@ -149,13 +149,13 @@ Partial Class FrmTipoCepas
         '
         'ListBox1
         '
-        Me.ListBox1.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 18
+        Me.ListBox1.ItemHeight = 20
         Me.ListBox1.Items.AddRange(New Object() {"Merlot", "Cabernet Sauvignon", "Malbec", "Pinot Noir", "Sangiovese"})
         Me.ListBox1.Location = New System.Drawing.Point(16, 41)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(159, 274)
+        Me.ListBox1.Size = New System.Drawing.Size(159, 264)
         Me.ListBox1.TabIndex = 0
         '
         'FrmTipoCepas

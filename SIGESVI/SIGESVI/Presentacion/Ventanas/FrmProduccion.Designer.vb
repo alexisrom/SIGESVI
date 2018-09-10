@@ -61,12 +61,13 @@ Partial Class FrmProduccion
         '
         'ListBox1
         '
+        Me.ListBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 18
+        Me.ListBox1.ItemHeight = 20
         Me.ListBox1.Items.AddRange(New Object() {"Merlot", "Cabernet Sauvignon", "Malbec", "Pinot Noir", "Sangiovese"})
         Me.ListBox1.Location = New System.Drawing.Point(15, 43)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(162, 274)
+        Me.ListBox1.Size = New System.Drawing.Size(162, 264)
         Me.ListBox1.TabIndex = 0
         '
         'GroupBox2
@@ -107,9 +108,10 @@ Partial Class FrmProduccion
         '
         'DateTimePicker2
         '
+        Me.DateTimePicker2.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker2.Location = New System.Drawing.Point(10, 96)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(188, 26)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(188, 25)
         Me.DateTimePicker2.TabIndex = 6
         '
         'Label3
@@ -132,9 +134,10 @@ Partial Class FrmProduccion
         '
         'DateTimePicker1
         '
+        Me.DateTimePicker1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker1.Location = New System.Drawing.Point(7, 53)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(194, 26)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(194, 25)
         Me.DateTimePicker1.TabIndex = 3
         '
         'Label1
@@ -148,12 +151,13 @@ Partial Class FrmProduccion
         '
         'ListBox2
         '
+        Me.ListBox2.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListBox2.FormattingEnabled = True
-        Me.ListBox2.ItemHeight = 18
+        Me.ListBox2.ItemHeight = 20
         Me.ListBox2.Items.AddRange(New Object() {"1. Despalillado", "2. Fermentación", "3. Remontado", "4. Descube", "5. Fermentación maloláctica", "6. Trasiegos", "7. Selección", "8. Crianza en barricas de roble"})
         Me.ListBox2.Location = New System.Drawing.Point(7, 179)
         Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(195, 166)
+        Me.ListBox2.Size = New System.Drawing.Size(195, 164)
         Me.ListBox2.TabIndex = 1
         '
         'Button1

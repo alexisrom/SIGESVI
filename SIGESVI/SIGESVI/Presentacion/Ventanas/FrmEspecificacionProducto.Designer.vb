@@ -166,11 +166,12 @@ Partial Class FrmEspecificacionProducto
         'ComboBox2
         '
         Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox2.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"Alta", "Media", "Baja"})
         Me.ComboBox2.Location = New System.Drawing.Point(98, 319)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(216, 26)
+        Me.ComboBox2.Size = New System.Drawing.Size(216, 28)
         Me.ComboBox2.TabIndex = 39
         '
         'Label3
@@ -193,10 +194,11 @@ Partial Class FrmEspecificacionProducto
         '
         'ComboBox1
         '
+        Me.ComboBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(98, 351)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(57, 26)
+        Me.ComboBox1.Size = New System.Drawing.Size(57, 28)
         Me.ComboBox1.TabIndex = 36
         '
         'Label1
@@ -210,6 +212,7 @@ Partial Class FrmEspecificacionProducto
         '
         'TextBox3
         '
+        Me.TextBox3.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(31, 153)
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
@@ -227,9 +230,10 @@ Partial Class FrmEspecificacionProducto
         '
         'TextBox5
         '
+        Me.TextBox5.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox5.Location = New System.Drawing.Point(229, 354)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(64, 26)
+        Me.TextBox5.Size = New System.Drawing.Size(64, 25)
         Me.TextBox5.TabIndex = 31
         '
         'Label8
@@ -243,9 +247,10 @@ Partial Class FrmEspecificacionProducto
         '
         'TextBox2
         '
+        Me.TextBox2.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(31, 97)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(262, 26)
+        Me.TextBox2.Size = New System.Drawing.Size(262, 25)
         Me.TextBox2.TabIndex = 25
         '
         'Label9
@@ -259,9 +264,10 @@ Partial Class FrmEspecificacionProducto
         '
         'TextBox1
         '
+        Me.TextBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(31, 47)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(262, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(262, 25)
         Me.TextBox1.TabIndex = 0
         '
         'GroupBox2
@@ -334,12 +340,13 @@ Partial Class FrmEspecificacionProducto
         '
         'ListBox1
         '
+        Me.ListBox1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 18
+        Me.ListBox1.ItemHeight = 20
         Me.ListBox1.Items.AddRange(New Object() {"Mosto 1 | 10 Kg", "Mosto 2 | 5 Kg"})
         Me.ListBox1.Location = New System.Drawing.Point(393, 297)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(212, 94)
+        Me.ListBox1.Size = New System.Drawing.Size(212, 84)
         Me.ListBox1.TabIndex = 60
         '
         'Button3
@@ -380,9 +387,10 @@ Partial Class FrmEspecificacionProducto
         '
         'TextBox8
         '
+        Me.TextBox8.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox8.Location = New System.Drawing.Point(266, 167)
         Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(33, 26)
+        Me.TextBox8.Size = New System.Drawing.Size(33, 25)
         Me.TextBox8.TabIndex = 54
         '
         'Label13
@@ -396,6 +404,7 @@ Partial Class FrmEspecificacionProducto
         '
         'TextBox7
         '
+        Me.TextBox7.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox7.Location = New System.Drawing.Point(108, 238)
         Me.TextBox7.Multiline = True
         Me.TextBox7.Name = "TextBox7"
@@ -413,9 +422,10 @@ Partial Class FrmEspecificacionProducto
         '
         'TextBox6
         '
+        Me.TextBox6.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox6.Location = New System.Drawing.Point(83, 167)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(100, 26)
+        Me.TextBox6.Size = New System.Drawing.Size(100, 25)
         Me.TextBox6.TabIndex = 50
         '
         'Label11
@@ -438,9 +448,10 @@ Partial Class FrmEspecificacionProducto
         '
         'TextBox4
         '
+        Me.TextBox4.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox4.Location = New System.Drawing.Point(83, 196)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(262, 26)
+        Me.TextBox4.Size = New System.Drawing.Size(262, 25)
         Me.TextBox4.TabIndex = 47
         '
         'Label6
@@ -454,22 +465,24 @@ Partial Class FrmEspecificacionProducto
         '
         'ListBox2
         '
+        Me.ListBox2.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListBox2.FormattingEnabled = True
-        Me.ListBox2.ItemHeight = 18
+        Me.ListBox2.ItemHeight = 20
         Me.ListBox2.Items.AddRange(New Object() {"1. - Filtración", "2. - Desmontado"})
         Me.ListBox2.Location = New System.Drawing.Point(17, 60)
         Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(624, 94)
+        Me.ListBox2.Size = New System.Drawing.Size(624, 84)
         Me.ListBox2.TabIndex = 2
         '
         'ComboBox4
         '
         Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox4.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox4.FormattingEnabled = True
         Me.ComboBox4.Items.AddRange(New Object() {"Tinto", "Blanco", "Rosado"})
         Me.ComboBox4.Location = New System.Drawing.Point(98, 287)
         Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(216, 26)
+        Me.ComboBox4.Size = New System.Drawing.Size(216, 28)
         Me.ComboBox4.TabIndex = 40
         '
         'FrmEspecificacionProducto

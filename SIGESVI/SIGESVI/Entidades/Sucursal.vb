@@ -54,8 +54,20 @@
         End Set
     End Property
 
+    Sub New()
+        Me.ID = 0
+        Me.Nombre = ""
+        Me.Direccion = ""
+        Me.Departamento = ""
+        Me.Telefonos = New List(Of String)
+    End Sub
 
-
-
+    Sub New(ByVal id As Integer, ByVal nombre As String, ByVal direccion As String, ByVal departamento As String, ByVal telefonos As List(Of String))
+        Me.ID = id
+        Me.Nombre = nombre
+        Me.Direccion = direccion
+        Me.Departamento = departamento
+        Me.Telefonos = telefonos
+    End Sub
 
 End Class

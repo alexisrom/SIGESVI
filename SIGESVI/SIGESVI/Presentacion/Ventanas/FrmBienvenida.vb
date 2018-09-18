@@ -27,7 +27,7 @@
         sql = "insert into almacen values(01, 'soyunasucursal', 01)"
         Dim comando As New Odbc.OdbcCommand
         conexion.conecta()
-        comando.Connection = conectar
+        comando.Connection = conexion.conectar
         comando.CommandText = sql
         Try
             comando.ExecuteNonQuery()

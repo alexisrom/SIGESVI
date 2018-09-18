@@ -109,7 +109,7 @@ Public Class FrmFuncionarios
         'sql = "insert into funcionarios values(" & 33333 & ",'" & "dsadsa" & "'," & "dsadas" & "'," & "dsadas" & "'," & 66666 & "',)"
         Dim comando As New Odbc.OdbcCommand
         conexion.conecta()
-        comando.Connection = conectar
+        comando.Connection = conexion.conectar
         comando.CommandText = sql
         Try
             comando.ExecuteNonQuery()

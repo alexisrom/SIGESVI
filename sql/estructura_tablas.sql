@@ -12,7 +12,7 @@ CREATE TABLE telefono_sucursal
   (
     id_sucursal INTEGER NOT NULL,
     telefono INTEGER NOT NULL,
-    PRIMARY KEY (id_sucursal),
+    PRIMARY KEY (id_sucursal, telefono),
     FOREIGN KEY (id_sucursal) REFERENCES sucursal(id_sucursal)
   );
 

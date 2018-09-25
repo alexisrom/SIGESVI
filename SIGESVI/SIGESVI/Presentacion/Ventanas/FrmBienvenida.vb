@@ -1,5 +1,4 @@
-﻿
-Public Class frm_Bienvenida
+﻿Public Class frm_Bienvenida
 
     Private Sub lbl_SIGESVI_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lbl_SIGESVI.Click
 
@@ -20,20 +19,15 @@ Public Class frm_Bienvenida
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        'Call conecta()
+        Call conecta()
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim sql As String
         sql = "insert into almacen values(01, 'soyunasucursal', 01)"
         Dim comando As New Odbc.OdbcCommand
-<<<<<<< HEAD
-        'conexion.conecta()
-        comando.Connection = conexion.conectar
-=======
         conexion.conecta()
-        comando.Connection = conectar
->>>>>>> parent of 53966e4... Mantenimiento de Sucursal implementado
+        comando.Connection = conexion.conectar
         comando.CommandText = sql
         Try
             comando.ExecuteNonQuery()
@@ -53,17 +47,12 @@ Public Class frm_Bienvenida
     End Sub
 
     Private Sub Btn_IniciarSesion_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_IniciarSesion.Click
-        Call conecta(Txt_Usuario.Text, Txt_Constraseña.Text)
-
-   
-        Me.Hide()
-        Dim frm = New FrmPrincipal()
-        frm.ShowDialog()
-        conexion.cierra()
-       
-
-
-
-
+        If Txt_Usuario.Text <> "funcionario" Or Txt_Constraseña.Text <> "funcionario" Then
+            MsgBox("Usuario y contraseñas incorrectos")
+        Else
+            Me.Hide()
+            Dim frm = New FrmPrincipal()
+            frm.ShowDialog()
+        End If
     End Sub
 End Class

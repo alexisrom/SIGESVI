@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{049426B8-E623-47ED-804C-342C59C90CF2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -17,21 +17,6 @@
     <OptionCompare>Binary</OptionCompare>
     <OptionStrict>Off</OptionStrict>
     <OptionInfer>On</OptionInfer>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -106,12 +91,9 @@
     <Compile Include="Entidades\Traslado.vb" />
     <Compile Include="Entidades\Usuario.vb" />
     <Compile Include="Entidades\Venta.vb" />
+    <Compile Include="Persistencia\PersistenciaSucursal.vb" />
     <Compile Include="Presentacion\Modulos\conexion.vb" />
-<<<<<<< HEAD
-    <Compile Include="Presentacion\Modulos\Module1.vb" />
     <Compile Include="Presentacion\Modulos\ModuloConexion.vb" />
-=======
->>>>>>> parent of 53966e4... Mantenimiento de Sucursal implementado
     <Compile Include="Presentacion\Ventanas\FrmAlmacen.Designer.vb">
       <DependentUpon>FrmAlmacen.vb</DependentUpon>
     </Compile>
@@ -273,12 +255,6 @@
     <Compile Include="Presentacion\Ventanas\FrmVehiculos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmLogin.Designer.vb">
-      <DependentUpon>FrmLogin.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmLogin.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Presentacion\Ventanas\Listados\FrmListadoProduccion.Designer.vb">
       <DependentUpon>FrmListadoProduccion.vb</DependentUpon>
     </Compile>
@@ -383,10 +359,6 @@
       <DependentUpon>FrmSucursales.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmLogin.resx">
-      <DependentUpon>FrmLogin.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ventanas\Listados\FrmListadoProduccion.resx">
       <DependentUpon>FrmListadoProduccion.vb</DependentUpon>
       <SubType>Designer</SubType>
@@ -412,38 +384,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-carrito-de-compras-24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework Client Profile</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
-      <Visible>False</Visible>
-      <ProductName>Windows Installer 3.1</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

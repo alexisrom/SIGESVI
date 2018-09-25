@@ -40,7 +40,6 @@
     End Sub
 
     Private Sub AlmacenesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AlmacenesToolStripMenuItem.Click
-
         Dim frm = New FrmAlmacen()
         frm.ShowDialog()
     End Sub
@@ -89,44 +88,4 @@
         Dim frm = New FrmTrazabilidad()
         frm.ShowDialog()
     End Sub
-
-    Private Sub ConsultasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ConsultasToolStripMenuItem.Click
-
-    End Sub
-
-    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
-
-    End Sub
-
-    Private Sub FrmPrincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Call conecta("informix", "informix")
-
-        comando.Connection = conexion.conectar
-        comando.CommandText = "select cargo from funcionario where cedula= 51253018"
-        comando.ExecuteNonQuery()
-        da.SelectCommand = comando
-        da.Fill(ds, "funcionario")
-        DataGridView1.DataSource = ds.Tables("funcionario")
-        Label2.Text = Convert.ToString(reader("Nombre"))
-
-    End Sub
-
-        
-
-
-    Private Sub MenuStrip1_ItemClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
-
-    End Sub
-
-    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
-
-
-    End Sub
-
-    Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
-
-
-    End Sub
-
-
 End Class

@@ -31,7 +31,6 @@ Partial Class FrmEspecificacionProducto
         Me.BtnEliminar = New System.Windows.Forms.ToolStripButton
         Me.BtnLimpiar = New System.Windows.Forms.ToolStripButton
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox
         Me.Label7 = New System.Windows.Forms.Label
         Me.ComboBox2 = New System.Windows.Forms.ComboBox
         Me.Label3 = New System.Windows.Forms.Label
@@ -65,6 +64,7 @@ Partial Class FrmEspecificacionProducto
         Me.TextBox4 = New System.Windows.Forms.TextBox
         Me.Label6 = New System.Windows.Forms.Label
         Me.ListBox2 = New System.Windows.Forms.ListBox
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox
         Me.StatusStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -153,17 +153,6 @@ Partial Class FrmEspecificacionProducto
         Me.GroupBox1.TabIndex = 30
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Información General"
-        '
-        'ComboBox4
-        '
-        Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox4.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Items.AddRange(New Object() {"Tinto", "Blanco", "Rosado"})
-        Me.ComboBox4.Location = New System.Drawing.Point(98, 287)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(216, 28)
-        Me.ComboBox4.TabIndex = 40
         '
         'Label7
         '
@@ -484,6 +473,17 @@ Partial Class FrmEspecificacionProducto
         Me.ListBox2.Name = "ListBox2"
         Me.ListBox2.Size = New System.Drawing.Size(624, 84)
         Me.ListBox2.TabIndex = 2
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox4.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Items.AddRange(New Object() {"Tinto", "Blanco", "Rosado"})
+        Me.ComboBox4.Location = New System.Drawing.Point(98, 287)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(216, 28)
+        Me.ComboBox4.TabIndex = 40
         '
         'FrmEspecificacionProducto
         '

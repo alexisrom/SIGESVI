@@ -27,8 +27,13 @@ Public Class frm_Bienvenida
         Dim sql As String
         sql = "insert into almacen values(01, 'soyunasucursal', 01)"
         Dim comando As New Odbc.OdbcCommand
+<<<<<<< HEAD
         'conexion.conecta()
         comando.Connection = conexion.conectar
+=======
+        conexion.conecta()
+        comando.Connection = conectar
+>>>>>>> parent of 53966e4... Mantenimiento de Sucursal implementado
         comando.CommandText = sql
         Try
             comando.ExecuteNonQuery()

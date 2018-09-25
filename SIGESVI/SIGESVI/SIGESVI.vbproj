@@ -106,10 +106,12 @@
     <Compile Include="Entidades\Traslado.vb" />
     <Compile Include="Entidades\Usuario.vb" />
     <Compile Include="Entidades\Venta.vb" />
-    <Compile Include="Persistencia\PersistenciaSucursal.vb" />
     <Compile Include="Presentacion\Modulos\conexion.vb" />
+<<<<<<< HEAD
     <Compile Include="Presentacion\Modulos\Module1.vb" />
     <Compile Include="Presentacion\Modulos\ModuloConexion.vb" />
+=======
+>>>>>>> parent of 53966e4... Mantenimiento de Sucursal implementado
     <Compile Include="Presentacion\Ventanas\FrmAlmacen.Designer.vb">
       <DependentUpon>FrmAlmacen.vb</DependentUpon>
     </Compile>
@@ -271,6 +273,12 @@
     <Compile Include="Presentacion\Ventanas\FrmVehiculos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\Ventanas\Listados\FrmListadoProduccion.Designer.vb">
       <DependentUpon>FrmListadoProduccion.vb</DependentUpon>
     </Compile>
@@ -373,6 +381,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ventanas\FrmSucursales.resx">
       <DependentUpon>FrmSucursales.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ventanas\Listados\FrmListadoProduccion.resx">

@@ -108,8 +108,13 @@ Public Class FrmFuncionarios
         sql = "insert into funcionario values(" & ci & ",'" & id_sucursal & "','" & nom & "','" & ape & "','" & dire & "','" & user & "','" & pass & "','" & cargo & "')"
         'sql = "insert into funcionarios values(" & 33333 & ",'" & "dsadsa" & "'," & "dsadas" & "'," & "dsadas" & "'," & 66666 & "',)"
         Dim comando As New Odbc.OdbcCommand
+<<<<<<< HEAD
         conexion.conecta(Module1.tipousuario, Module1.contraseña)
         comando.Connection = conexion.conectar
+=======
+        conexion.conecta()
+        comando.Connection = conectar
+>>>>>>> parent of 53966e4... Mantenimiento de Sucursal implementado
         comando.CommandText = sql
         Try
             comando.ExecuteNonQuery()

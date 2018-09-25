@@ -40,6 +40,7 @@
     End Sub
 
     Private Sub AlmacenesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AlmacenesToolStripMenuItem.Click
+
         Dim frm = New FrmAlmacen()
         frm.ShowDialog()
     End Sub
@@ -88,4 +89,47 @@
         Dim frm = New FrmTrazabilidad()
         frm.ShowDialog()
     End Sub
+
+    Private Sub ConsultasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ConsultasToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
+
+    End Sub
+
+    Private Sub FrmPrincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        If Module1.tipousuario = "fgavello" Then
+            ClientesToolStripMenuItem.Enabled = False
+            VentasToolStripMenuItem.Visible = False
+            ConsultasToolStripMenuItem.Enabled = False
+            EstadísticasToolStripMenuItem.Enabled = False
+            SucursalesGGToolStripMenuItem.Visible = False
+        Else
+            If Module1.tipousuario = "drossini" Then
+                ClientesToolStripMenuItem.Enabled = False
+            End If
+        End If
+        If Module1.tipousuario = "fgavello" Then
+
+            Label2.Text = "Fernando Gavello"
+            Label1.Text = "Administrativo"
+        End If
+    End Sub
+
+    Private Sub MenuStrip1_ItemClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
+
+    End Sub
+
+    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
+     
+
+    End Sub
+
+    Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
+      
+
+    End Sub
+
+ 
 End Class

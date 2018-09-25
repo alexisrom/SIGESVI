@@ -1,4 +1,5 @@
-﻿Public Class frm_Bienvenida
+﻿
+Public Class frm_Bienvenida
 
     Private Sub lbl_SIGESVI_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lbl_SIGESVI.Click
 
@@ -47,12 +48,44 @@
     End Sub
 
     Private Sub Btn_IniciarSesion_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_IniciarSesion.Click
-        If Txt_Usuario.Text <> "funcionario" Or Txt_Constraseña.Text <> "funcionario" Then
+        Dim permitido As Boolean
+        If Txt_Usuario.Text <> "fgavello" And Txt_Usuario.Text <> "drossini" And Txt_Usuario.Text <> "bmontero" And Txt_Usuario.Text <> "aromero" Then
             MsgBox("Usuario y contraseñas incorrectos")
         Else
-            Me.Hide()
-            Dim frm = New FrmPrincipal()
-            frm.ShowDialog()
+            permitido = True
         End If
+
+        If permitido Then
+
+            If Txt_Usuario.Text = "fgavello" And Txt_Constraseña.Text <> "123456" Then
+                MsgBox("Usuario y contraseñas incorrectos")
+            Else
+               If Txt_Usuario.Text = "drossini" And Txt_Constraseña.Text <> "1234567" Then
+                    MsgBox("Usuario y contraseñas incorrectos")
+                Else
+                    If Txt_Usuario.Text = "bmontero" And Txt_Constraseña.Text <> "12345678" Then
+                        MsgBox("Usuario y contraseñas incorrectos")
+                    Else
+                        If Txt_Usuario.Text = "aromero" And Txt_Constraseña.Text <> "123456789" Then
+                            MsgBox("Usuario y contraseñas incorrectos")
+                        Else
+                            If Txt_Usuario.Text = "cliente" And Txt_Constraseña.Text <> "1234567890" Then
+                                MsgBox("Usuario y contraseñas incorrectos")
+                            Else
+                                Me.Hide()
+                                Dim frm = New FrmPrincipal()
+                                frm.ShowDialog()
+                            End If
+                        End If
+                    End If
+                End If
+            End If
+
+
+        End If
+
+
+
+
     End Sub
 End Class

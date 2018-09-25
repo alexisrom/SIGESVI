@@ -9,8 +9,8 @@ Module conexion
     Public da As New Odbc.OdbcDataAdapter
   
 
-    Public Sub conecta()
-        conectar.ConnectionString = "FILEDSN=" & Application.StartupPath & "\proyecto.dsn;UID=informix;PWD=informix"
+    Public Sub conecta(ByVal usuario As String, ByVal contraseña As String)
+        conectar.ConnectionString = "FILEDSN=" & Application.StartupPath & "\proyecto.dsn;UID=" & usuario & ";PWD=" & contraseña & ""
         comando.Connection = conectar
         Try
             conectar.Open()

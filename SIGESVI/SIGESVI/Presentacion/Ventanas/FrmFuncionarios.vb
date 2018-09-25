@@ -108,7 +108,7 @@ Public Class FrmFuncionarios
         sql = "insert into funcionario values(" & ci & ",'" & id_sucursal & "','" & nom & "','" & ape & "','" & dire & "','" & user & "','" & pass & "','" & cargo & "')"
         'sql = "insert into funcionarios values(" & 33333 & ",'" & "dsadsa" & "'," & "dsadas" & "'," & "dsadas" & "'," & 66666 & "',)"
         Dim comando As New Odbc.OdbcCommand
-        conexion.conecta()
+        conexion.conecta(Module1.tipousuario, Module1.contraseña)
         comando.Connection = conexion.conectar
         comando.CommandText = sql
         Try
@@ -152,7 +152,7 @@ Public Class FrmFuncionarios
     End Sub
 
     Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
-        Call conecta()
+        'Call conecta()
 
         comando.Connection = conexion.conectar
         comando.CommandText = "select * from funcionario where cedula = " & Txt_Busqueda.Text & ""

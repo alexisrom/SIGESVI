@@ -91,6 +91,7 @@
     <Compile Include="Entidades\Traslado.vb" />
     <Compile Include="Entidades\Usuario.vb" />
     <Compile Include="Entidades\Venta.vb" />
+    <Compile Include="Persistencia\PersistenciaFuncionario.vb" />
     <Compile Include="Persistencia\PersistenciaSucursal.vb" />
     <Compile Include="Presentacion\Modulos\conexion.vb" />
     <Compile Include="Presentacion\Modulos\ModuloConexion.vb" />

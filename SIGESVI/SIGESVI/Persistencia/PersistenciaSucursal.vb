@@ -83,8 +83,8 @@ Public Class PersistenciaSucursal
         End Try
     End Sub
 
-    Function Buscar(ByVal id As Integer) As List(Of Sucursal)
-        Dim sucursales As New List(Of Sucursal)
+    Function Buscar(ByVal id As Integer) As Sucursal
+        Dim sucursal As Sucursal
         Dim consulta = "SELECT * FROM sucursal WHERE activo = 't' AND "
         consulta &= "id_sucursal = " & id & ""
 
@@ -97,13 +97,13 @@ Public Class PersistenciaSucursal
 
             If resultado.HasRows Then
                 While resultado.Read()
-                    Dim sucursal As New Sucursal()
+                    sucursal = New Sucursal()
                     sucursal.ID = resultado("id_sucursal")
                     sucursal.Nombre = resultado("nombre")
                     sucursal.Direccion = resultado("direccion")
                     sucursal.Departamento = resultado("departamento")
                     sucursal.Telefonos = ListarTelefonos(sucursal.ID, comando.Connection)
-                    sucursales.Add(sucursal)
+
                 End While
             End If
 
@@ -113,7 +113,7 @@ Public Class PersistenciaSucursal
             ModuloConexion.Cerrar()
         End Try
 
-        Return sucursales
+        Return sucursal
     End Function
 
     Function Listar() As List(Of Sucursal)

@@ -10,7 +10,7 @@ Module conexion
   
 
     Public Sub conecta()
-        conectar.ConnectionString = "FILEDSN=" & Application.StartupPath & "\proyecto.dsn;UID=informix;PWD=informix"
+        conectar.ConnectionString = "FILEDSN=" & Application.StartupPath & "\sigesvi.dsn;UID=informix;PWD=informix"
         comando.Connection = conectar
         Try
             conectar.Open()

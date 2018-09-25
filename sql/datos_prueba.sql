@@ -17,3 +17,7 @@ INSERT INTO telefono_sucursal (id_sucursal, telefono) VALUES
 (3, 3333333);
 INSERT INTO telefono_sucursal (id_sucursal, telefono) VALUES
 (4, 1111111);
+
+
+INSERTO INTO funcionario (cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES 
+(5555555, "jose", "uno", "direccion 1", "jose", "jose", "Administrativo");

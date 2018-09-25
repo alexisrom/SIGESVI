@@ -60,6 +60,7 @@
                 End If
 
             Next
+            LstTelefonos.Items.Clear()
             LstTelefonos.Items.AddRange(sucursal.Telefonos.ToArray)
             BtnGuardar.Text = "GUARDAR"
         End If

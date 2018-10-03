@@ -29,12 +29,12 @@ Partial Class FrmSucursales
         Me.BtnGuardar = New System.Windows.Forms.Button
         Me.LbQuitarTelefono = New System.Windows.Forms.LinkLabel
         Me.LbAgregarTelefono = New System.Windows.Forms.LinkLabel
-        Me.CboDepartamentos = New System.Windows.Forms.ComboBox
+        Me.CboDepartamentosREQ = New System.Windows.Forms.ComboBox
         Me.Lbl_Departamento = New System.Windows.Forms.Label
-        Me.Txt_Nombre = New System.Windows.Forms.TextBox
-        Me.Txt_Direccion = New System.Windows.Forms.TextBox
-        Me.Txt_Telefono = New System.Windows.Forms.TextBox
-        Me.LstTelefonos = New System.Windows.Forms.ListBox
+        Me.Txt_NombreREQ = New System.Windows.Forms.TextBox
+        Me.Txt_DireccionREQ = New System.Windows.Forms.TextBox
+        Me.Txt_TelefonoNUM = New System.Windows.Forms.TextBox
+        Me.LstTelefonosREQ = New System.Windows.Forms.ListBox
         Me.Lbl_Telefono = New System.Windows.Forms.Label
         Me.Lbl_Dirección = New System.Windows.Forms.Label
         Me.Lbl_Nombre = New System.Windows.Forms.Label
@@ -51,7 +51,7 @@ Partial Class FrmSucursales
         Me.DgvSucursales.Name = "DgvSucursales"
         Me.DgvSucursales.ReadOnly = True
         Me.DgvSucursales.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DgvSucursales.Size = New System.Drawing.Size(543, 258)
+        Me.DgvSucursales.Size = New System.Drawing.Size(523, 258)
         Me.DgvSucursales.TabIndex = 15
         '
         'BtnEliminarSucursal
@@ -110,15 +110,15 @@ Partial Class FrmSucursales
         Me.LbAgregarTelefono.TabStop = True
         Me.LbAgregarTelefono.Text = "Agregar"
         '
-        'CboDepartamentos
+        'CboDepartamentosREQ
         '
-        Me.CboDepartamentos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CboDepartamentos.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CboDepartamentos.FormattingEnabled = True
-        Me.CboDepartamentos.Location = New System.Drawing.Point(157, 118)
-        Me.CboDepartamentos.Name = "CboDepartamentos"
-        Me.CboDepartamentos.Size = New System.Drawing.Size(196, 26)
-        Me.CboDepartamentos.TabIndex = 32
+        Me.CboDepartamentosREQ.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CboDepartamentosREQ.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CboDepartamentosREQ.FormattingEnabled = True
+        Me.CboDepartamentosREQ.Location = New System.Drawing.Point(157, 118)
+        Me.CboDepartamentosREQ.Name = "CboDepartamentosREQ"
+        Me.CboDepartamentosREQ.Size = New System.Drawing.Size(196, 26)
+        Me.CboDepartamentosREQ.TabIndex = 32
         '
         'Lbl_Departamento
         '
@@ -129,39 +129,39 @@ Partial Class FrmSucursales
         Me.Lbl_Departamento.TabIndex = 31
         Me.Lbl_Departamento.Text = "Departamento"
         '
-        'Txt_Nombre
+        'Txt_NombreREQ
         '
-        Me.Txt_Nombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Txt_Nombre.Location = New System.Drawing.Point(157, 54)
-        Me.Txt_Nombre.Name = "Txt_Nombre"
-        Me.Txt_Nombre.Size = New System.Drawing.Size(196, 24)
-        Me.Txt_Nombre.TabIndex = 27
+        Me.Txt_NombreREQ.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_NombreREQ.Location = New System.Drawing.Point(157, 54)
+        Me.Txt_NombreREQ.Name = "Txt_NombreREQ"
+        Me.Txt_NombreREQ.Size = New System.Drawing.Size(196, 24)
+        Me.Txt_NombreREQ.TabIndex = 27
         '
-        'Txt_Direccion
+        'Txt_DireccionREQ
         '
-        Me.Txt_Direccion.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Txt_Direccion.Location = New System.Drawing.Point(157, 85)
-        Me.Txt_Direccion.Name = "Txt_Direccion"
-        Me.Txt_Direccion.Size = New System.Drawing.Size(196, 24)
-        Me.Txt_Direccion.TabIndex = 28
+        Me.Txt_DireccionREQ.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_DireccionREQ.Location = New System.Drawing.Point(157, 85)
+        Me.Txt_DireccionREQ.Name = "Txt_DireccionREQ"
+        Me.Txt_DireccionREQ.Size = New System.Drawing.Size(196, 24)
+        Me.Txt_DireccionREQ.TabIndex = 28
         '
-        'Txt_Telefono
+        'Txt_TelefonoNUM
         '
-        Me.Txt_Telefono.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Txt_Telefono.Location = New System.Drawing.Point(158, 152)
-        Me.Txt_Telefono.Name = "Txt_Telefono"
-        Me.Txt_Telefono.Size = New System.Drawing.Size(192, 24)
-        Me.Txt_Telefono.TabIndex = 29
+        Me.Txt_TelefonoNUM.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_TelefonoNUM.Location = New System.Drawing.Point(158, 152)
+        Me.Txt_TelefonoNUM.Name = "Txt_TelefonoNUM"
+        Me.Txt_TelefonoNUM.Size = New System.Drawing.Size(192, 24)
+        Me.Txt_TelefonoNUM.TabIndex = 29
         '
-        'LstTelefonos
+        'LstTelefonosREQ
         '
-        Me.LstTelefonos.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LstTelefonos.FormattingEnabled = True
-        Me.LstTelefonos.ItemHeight = 18
-        Me.LstTelefonos.Location = New System.Drawing.Point(157, 216)
-        Me.LstTelefonos.Name = "LstTelefonos"
-        Me.LstTelefonos.Size = New System.Drawing.Size(196, 76)
-        Me.LstTelefonos.TabIndex = 30
+        Me.LstTelefonosREQ.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LstTelefonosREQ.FormattingEnabled = True
+        Me.LstTelefonosREQ.ItemHeight = 18
+        Me.LstTelefonosREQ.Location = New System.Drawing.Point(157, 216)
+        Me.LstTelefonosREQ.Name = "LstTelefonosREQ"
+        Me.LstTelefonosREQ.Size = New System.Drawing.Size(196, 76)
+        Me.LstTelefonosREQ.TabIndex = 30
         '
         'Lbl_Telefono
         '
@@ -195,16 +195,16 @@ Partial Class FrmSucursales
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.ClientSize = New System.Drawing.Size(1047, 455)
+        Me.ClientSize = New System.Drawing.Size(1047, 404)
         Me.Controls.Add(Me.BtnGuardar)
         Me.Controls.Add(Me.LbQuitarTelefono)
         Me.Controls.Add(Me.LbAgregarTelefono)
-        Me.Controls.Add(Me.CboDepartamentos)
+        Me.Controls.Add(Me.CboDepartamentosREQ)
         Me.Controls.Add(Me.Lbl_Departamento)
-        Me.Controls.Add(Me.Txt_Nombre)
-        Me.Controls.Add(Me.Txt_Direccion)
-        Me.Controls.Add(Me.Txt_Telefono)
-        Me.Controls.Add(Me.LstTelefonos)
+        Me.Controls.Add(Me.Txt_NombreREQ)
+        Me.Controls.Add(Me.Txt_DireccionREQ)
+        Me.Controls.Add(Me.Txt_TelefonoNUM)
+        Me.Controls.Add(Me.LstTelefonosREQ)
         Me.Controls.Add(Me.Lbl_Telefono)
         Me.Controls.Add(Me.Lbl_Dirección)
         Me.Controls.Add(Me.Lbl_Nombre)
@@ -227,12 +227,12 @@ Partial Class FrmSucursales
     Friend WithEvents BtnGuardar As System.Windows.Forms.Button
     Friend WithEvents LbQuitarTelefono As System.Windows.Forms.LinkLabel
     Friend WithEvents LbAgregarTelefono As System.Windows.Forms.LinkLabel
-    Friend WithEvents CboDepartamentos As System.Windows.Forms.ComboBox
+    Friend WithEvents CboDepartamentosREQ As System.Windows.Forms.ComboBox
     Friend WithEvents Lbl_Departamento As System.Windows.Forms.Label
-    Friend WithEvents Txt_Nombre As System.Windows.Forms.TextBox
-    Friend WithEvents Txt_Direccion As System.Windows.Forms.TextBox
-    Friend WithEvents Txt_Telefono As System.Windows.Forms.TextBox
-    Friend WithEvents LstTelefonos As System.Windows.Forms.ListBox
+    Friend WithEvents Txt_NombreREQ As System.Windows.Forms.TextBox
+    Friend WithEvents Txt_DireccionREQ As System.Windows.Forms.TextBox
+    Friend WithEvents Txt_TelefonoNUM As System.Windows.Forms.TextBox
+    Friend WithEvents LstTelefonosREQ As System.Windows.Forms.ListBox
     Friend WithEvents Lbl_Telefono As System.Windows.Forms.Label
     Friend WithEvents Lbl_Dirección As System.Windows.Forms.Label
     Friend WithEvents Lbl_Nombre As System.Windows.Forms.Label

@@ -66,28 +66,6 @@
     End Property
 
 
-    Private _Medida As Integer
-    Public Property Medida() As Integer
-        Get
-            Return _Medida
-        End Get
-        Set(ByVal value As Integer)
-            _Medida = value
-        End Set
-    End Property
-
-
-
-    Private _Recipiente As String
-    Public Property Recipiente() As String
-        Get
-            Return _Recipiente
-        End Get
-        Set(ByVal value As String)
-            _Recipiente = value
-        End Set
-    End Property
-
 
     Private _Elaboracion As List(Of EtapaElaboracion)
     Public Property Elaboracion() As List(Of EtapaElaboracion)
@@ -98,18 +76,6 @@
             _Elaboracion = value
         End Set
     End Property
-
-
-    Private _Categoria As String
-    Public Property Categoria() As String
-        Get
-            Return _Categoria
-        End Get
-        Set(ByVal value As String)
-            _Categoria = value
-        End Set
-    End Property
-
 
 
 End Class

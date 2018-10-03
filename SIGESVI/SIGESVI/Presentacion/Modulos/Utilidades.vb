@@ -29,10 +29,14 @@
         For Each control As Control In form.Controls
             If TypeOf control Is TextBox Then
                 control.Text = ""
-            End If
-            If TypeOf control Is ListBox Then
+            ElseIf TypeOf control Is ListBox Then
                 Dim listbox = CType(control, ListBox)
                 listbox.Items.Clear()
+            ElseIf TypeOf control Is ComboBox Then
+                Dim combobox = CType(control, ComboBox)
+                If combobox.Items.Count > 0 Then
+                    combobox.SelectedIndex = 0
+                End If
             End If
         Next
     End Sub

@@ -26,10 +26,11 @@ Partial Class frm_Bienvenida
         Me.lbl_SIGESVI = New System.Windows.Forms.Label
         Me.lbl_Aclaración = New System.Windows.Forms.Label
         Me.Lbl_Usuario = New System.Windows.Forms.Label
-        Me.Txt_Usuario = New System.Windows.Forms.TextBox
-        Me.Txt_Constraseña = New System.Windows.Forms.TextBox
+        Me.Txt_UsuarioREQ = New System.Windows.Forms.TextBox
+        Me.Txt_ConstraseñaREQ = New System.Windows.Forms.TextBox
         Me.Lbl_Constraseña = New System.Windows.Forms.Label
         Me.Btn_IniciarSesion = New System.Windows.Forms.Button
+        Me.LbRegistrarNuevoCliente = New System.Windows.Forms.LinkLabel
         Me.SuspendLayout()
         '
         'lbl_Bienvenida
@@ -75,22 +76,22 @@ Partial Class frm_Bienvenida
         Me.Lbl_Usuario.TabIndex = 3
         Me.Lbl_Usuario.Text = "Usuario:"
         '
-        'Txt_Usuario
+        'Txt_UsuarioREQ
         '
-        Me.Txt_Usuario.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Txt_Usuario.Location = New System.Drawing.Point(169, 194)
-        Me.Txt_Usuario.Name = "Txt_Usuario"
-        Me.Txt_Usuario.Size = New System.Drawing.Size(175, 25)
-        Me.Txt_Usuario.TabIndex = 4
+        Me.Txt_UsuarioREQ.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_UsuarioREQ.Location = New System.Drawing.Point(169, 194)
+        Me.Txt_UsuarioREQ.Name = "Txt_UsuarioREQ"
+        Me.Txt_UsuarioREQ.Size = New System.Drawing.Size(175, 24)
+        Me.Txt_UsuarioREQ.TabIndex = 4
         '
-        'Txt_Constraseña
+        'Txt_ConstraseñaREQ
         '
-        Me.Txt_Constraseña.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Txt_Constraseña.Location = New System.Drawing.Point(169, 228)
-        Me.Txt_Constraseña.Name = "Txt_Constraseña"
-        Me.Txt_Constraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.Txt_Constraseña.Size = New System.Drawing.Size(175, 25)
-        Me.Txt_Constraseña.TabIndex = 6
+        Me.Txt_ConstraseñaREQ.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_ConstraseñaREQ.Location = New System.Drawing.Point(169, 228)
+        Me.Txt_ConstraseñaREQ.Name = "Txt_ConstraseñaREQ"
+        Me.Txt_ConstraseñaREQ.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.Txt_ConstraseñaREQ.Size = New System.Drawing.Size(175, 24)
+        Me.Txt_ConstraseñaREQ.TabIndex = 6
         '
         'Lbl_Constraseña
         '
@@ -112,16 +113,27 @@ Partial Class frm_Bienvenida
         Me.Btn_IniciarSesion.Text = "Iniciar sesión"
         Me.Btn_IniciarSesion.UseVisualStyleBackColor = True
         '
+        'LbRegistrarNuevoCliente
+        '
+        Me.LbRegistrarNuevoCliente.AutoSize = True
+        Me.LbRegistrarNuevoCliente.Location = New System.Drawing.Point(186, 327)
+        Me.LbRegistrarNuevoCliente.Name = "LbRegistrarNuevoCliente"
+        Me.LbRegistrarNuevoCliente.Size = New System.Drawing.Size(132, 13)
+        Me.LbRegistrarNuevoCliente.TabIndex = 8
+        Me.LbRegistrarNuevoCliente.TabStop = True
+        Me.LbRegistrarNuevoCliente.Text = "Registrar un nuevo Cliente"
+        '
         'frm_Bienvenida
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.CornflowerBlue
         Me.ClientSize = New System.Drawing.Size(484, 461)
+        Me.Controls.Add(Me.LbRegistrarNuevoCliente)
         Me.Controls.Add(Me.Btn_IniciarSesion)
-        Me.Controls.Add(Me.Txt_Constraseña)
+        Me.Controls.Add(Me.Txt_ConstraseñaREQ)
         Me.Controls.Add(Me.Lbl_Constraseña)
-        Me.Controls.Add(Me.Txt_Usuario)
+        Me.Controls.Add(Me.Txt_UsuarioREQ)
         Me.Controls.Add(Me.Lbl_Usuario)
         Me.Controls.Add(Me.lbl_Aclaración)
         Me.Controls.Add(Me.lbl_SIGESVI)
@@ -137,9 +149,10 @@ Partial Class frm_Bienvenida
     Friend WithEvents lbl_SIGESVI As System.Windows.Forms.Label
     Friend WithEvents lbl_Aclaración As System.Windows.Forms.Label
     Friend WithEvents Lbl_Usuario As System.Windows.Forms.Label
-    Friend WithEvents Txt_Usuario As System.Windows.Forms.TextBox
-    Friend WithEvents Txt_Constraseña As System.Windows.Forms.TextBox
+    Friend WithEvents Txt_UsuarioREQ As System.Windows.Forms.TextBox
+    Friend WithEvents Txt_ConstraseñaREQ As System.Windows.Forms.TextBox
     Friend WithEvents Lbl_Constraseña As System.Windows.Forms.Label
     Friend WithEvents Btn_IniciarSesion As System.Windows.Forms.Button
+    Friend WithEvents LbRegistrarNuevoCliente As System.Windows.Forms.LinkLabel
 
 End Class

@@ -3,13 +3,13 @@
 Public Class PersistenciaSucursal
 
     Sub Agregar(ByVal sucursal As Sucursal)
-        Dim consulta = "INSERT INTO sucursal (nombre, direccion, departamento) VALUES"
-        consulta &= "('" & sucursal.Nombre & "', '" & sucursal.Direccion & "', '" & sucursal.Departamento & "');"
+        Dim formato_consulta = "INSERT INTO sucursal(nombre, direccion, departamento) VALUES(""{0}"", ""{1}"", ""{2}"")"
+        Dim consulta = String.Format(formato_consulta, sucursal.Nombre, sucursal.Direccion, sucursal.Departamento)
 
         Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = ModuloConexion.Conectar()
+            comando.Connection = New Conexion().Conectar()
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteNonQuery
 
@@ -17,6 +17,7 @@ Public Class PersistenciaSucursal
                 Throw New Exception("No se pudo agregar la sucursal")
             End If
 
+            ' Se obtiene el ID de sucursal asignado automáticamente 
             comando.CommandText = "SELECT id_sucursal FROM sucursal ORDER BY id_sucursal DESC LIMIT 1"
             Dim resp = comando.ExecuteReader()
             resp.Read()
@@ -55,11 +56,8 @@ Public Class PersistenciaSucursal
     End Sub
 
     Sub Modificar(ByVal sucursal As Sucursal)
-        Dim consulta = "UPDATE sucursal SET "
-        consulta &= "nombre = '" & sucursal.Nombre & "',"
-        consulta &= "direccion = '" & sucursal.Direccion & "',"
-        consulta &= "departamento = '" & sucursal.Departamento & "'"
-        consulta &= "WHERE id_sucursal = '" & sucursal.ID & "'"
+        Dim formato_consulta = "UPDATE sucursal SET nombre=""{0}"", direccion=""{1}"", departamento=""{2}"" WHERE id_sucursal={3}"
+        Dim consulta = String.Format(formato_consulta, sucursal.Nombre, sucursal.Direccion, sucursal.Departamento, sucursal.ID)
 
         Dim comando As New OdbcCommand
 
@@ -84,26 +82,25 @@ Public Class PersistenciaSucursal
     End Sub
 
     Function Buscar(ByVal id As Integer) As Sucursal
-        Dim sucursal As Sucursal
-        Dim consulta = "SELECT * FROM sucursal WHERE activo = 't' AND "
-        consulta &= "id_sucursal = " & id & ""
 
-        Dim comando As New OdbcCommand
+        Dim formato_consulta = "SELECT * FROM sucursal WHERE activo = 't' AND id_sucursal={0}"
+        Dim consulta = String.Format(formato_consulta, id)
 
         Try
-            comando.Connection = ModuloConexion.Conectar()
+            Dim comando As New OdbcCommand
+            comando.Connection = New Conexion().Conectar()
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteReader()
 
             If resultado.HasRows Then
                 While resultado.Read()
-                    sucursal = New Sucursal()
-                    sucursal.ID = resultado("id_sucursal")
-                    sucursal.Nombre = resultado("nombre")
-                    sucursal.Direccion = resultado("direccion")
-                    sucursal.Departamento = resultado("departamento")
-                    sucursal.Telefonos = ListarTelefonos(sucursal.ID, comando.Connection)
 
+                    Dim nombre = resultado("nombre")
+                    Dim direccion = resultado("direccion")
+                    Dim departamento = resultado("departamento")
+                    Dim telefonos = ListarTelefonos(id, comando.Connection)
+
+                    Return New Sucursal(id, nombre, direccion, departamento, telefonos)
                 End While
             End If
 
@@ -113,29 +110,28 @@ Public Class PersistenciaSucursal
             ModuloConexion.Cerrar()
         End Try
 
-        Return sucursal
+        Return Nothing
     End Function
 
     Function Listar() As List(Of Sucursal)
 
         Dim sucursales As New List(Of Sucursal)
         Dim consulta = "SELECT * FROM sucursal WHERE activo = 't'"
-        Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = ModuloConexion.Conectar()
+            Dim comando As New OdbcCommand
+            comando.Connection = New Conexion().Conectar()
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteReader
 
             If resultado.HasRows Then
                 While resultado.Read()
-                    Dim sucursal As New Sucursal()
-                    sucursal.ID = resultado("id_sucursal")
-                    sucursal.Nombre = resultado("nombre")
-                    sucursal.Direccion = resultado("direccion")
-                    sucursal.Departamento = resultado("departamento")
-                    sucursal.Telefonos = ListarTelefonos(sucursal.ID, comando.Connection)
-                    sucursales.Add(sucursal)
+                    Dim id = resultado("id_sucursal")
+                    Dim nombre = resultado("nombre")
+                    Dim direccion = resultado("direccion")
+                    Dim departamento = resultado("departamento")
+                    Dim telefonos = ListarTelefonos(id, comando.Connection)
+                    sucursales.Add(New Sucursal(id, nombre, direccion, departamento, telefonos))
                 End While
             End If
 
@@ -199,9 +195,9 @@ Public Class PersistenciaSucursal
             comando.CommandText = consulta
             Dim filasAfectadas = comando.ExecuteNonQuery()
 
-            If filasAfectadas < 1 Then
-                Throw New Exception("No se pudo eliminar los telefonos de la sucursal")
-            End If
+            'If filasAfectadas < 1 Then
+            '    Throw New Exception("No se pudo eliminar los telefonos de la sucursal")
+            'End If
 
         Catch ex As OdbcException
             Throw ex

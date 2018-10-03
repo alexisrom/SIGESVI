@@ -1,4 +1,4 @@
-CREATE TABLE sucursal 
+﻿CREATE TABLE sucursal 
   (
     id_sucursal SERIAL NOT NULL,
     nombre VARCHAR(20) NOT NULL,
@@ -67,6 +67,7 @@ CREATE TABLE especificacion_de_producto
     precio INTEGER NOT NULL,
     unidad_medida VARCHAR(10) NOT NULL CHECK(unidad_medida IN ("Kg", "g", "L", "mL")),
     categoria VARCHAR(20) NOT NULL CHECK(categoria IN ("Tinto", "Blanco", "Rosado")),
+    foto VARCHAR(50),
     activo BOOLEAN DEFAULT "t",
     PRIMARY KEY (id_eproducto) 
   );

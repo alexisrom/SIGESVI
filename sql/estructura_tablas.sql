@@ -164,10 +164,16 @@ CREATE TABLE traslado
 CREATE TABLE materia_prima 
   (
     id_eproducto INTEGER NOT NULL,
-    estado_sanitario VARCHAR(20) NOT NULL,
-    tipo_cepa VARCHAR(20) NOT NULL CHECK(tipo_cepa IN ("Merlot", "Cabernet Sauvignon", "Malbec", "Pinot Noir", "Sangiovese")),
+    estado_sanitario VARCHAR(20) NOT NULL
     PRIMARY KEY (id_eproducto),
     FOREIGN KEY (id_eproducto) REFERENCES especificacion_de_producto(id_eproducto)
+  );
+
+  CREATE TABLE tipo_cepa
+  (
+    id_tipo_cepa SERIAL NOT NULL,
+    nombre VARCHAR(20) NOT NULL CHECK(nombre IN ("Merlot", "Cabernet Sauvignon", "Malbec", "Pinot Noir", "Sangiovese")),
+    tipo VARCHAR(15) NOT NULL CHECK(tipo IN ("Tinto", "Rosado", "Blanco"))
   );
 
 CREATE TABLE producto_intermedio 

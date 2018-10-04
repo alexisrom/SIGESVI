@@ -156,9 +156,11 @@ CREATE TABLE traslado
 CREATE TABLE materia_prima 
   (
     id_eproducto INTEGER NOT NULL,
-    estado_sanitario VARCHAR(20) NOT NULL
+    id_tipo_cepa INTEGER NOT NULL,
+    estado_sanitario VARCHAR(20) NOT NULL,
     PRIMARY KEY (id_eproducto),
-    FOREIGN KEY (id_eproducto) REFERENCES especificacion_de_producto(id_eproducto)
+    FOREIGN KEY (id_eproducto) REFERENCES especificacion_de_producto(id_eproducto),
+    FOREIGN KEY (id_tipo_cepa) REFERENCES tipo_cepa(id_tipo_cepa)
   );
 
   CREATE TABLE tipo_cepa

@@ -1,4 +1,10 @@
-﻿CREATE TABLE sucursal 
+﻿-- Borrar está linea con Ctrl + D para que Informix no rompa los huevos
+CLOSE DATABASE;
+DROP DATABASE IF EXISTS sigesvi@ol_esi;
+CREATE DATABASE sigesvi@ol_esi;
+DATABASE sigesvi@ol_esi;
+
+CREATE TABLE sucursal
   (
     id_sucursal SERIAL NOT NULL,
     nombre VARCHAR(20) NOT NULL,
@@ -152,6 +158,13 @@ CREATE TABLE traslado
     FOREIGN KEY (id_destino) REFERENCES destino(id_destino)
   );
 
+CREATE TABLE tipo_cepa
+  (
+    id_tipo_cepa SERIAL NOT NULL,
+    nombre VARCHAR(20) NOT NULL UNIQUE,
+    tipo VARCHAR(15) NOT NULL CHECK(tipo IN ("Tinto", "Rosado", "Blanco")),
+    PRIMARY KEY (id_tipo_cepa)
+  );
 
 CREATE TABLE materia_prima 
   (
@@ -161,13 +174,6 @@ CREATE TABLE materia_prima
     PRIMARY KEY (id_eproducto),
     FOREIGN KEY (id_eproducto) REFERENCES especificacion_de_producto(id_eproducto),
     FOREIGN KEY (id_tipo_cepa) REFERENCES tipo_cepa(id_tipo_cepa)
-  );
-
-  CREATE TABLE tipo_cepa
-  (
-    id_tipo_cepa SERIAL NOT NULL,
-    nombre VARCHAR(20) NOT NULL CHECK(nombre IN ("Merlot", "Cabernet Sauvignon", "Malbec", "Pinot Noir", "Sangiovese")),
-    tipo VARCHAR(15) NOT NULL CHECK(tipo IN ("Tinto", "Rosado", "Blanco"))
   );
 
 CREATE TABLE producto_intermedio 
@@ -187,16 +193,6 @@ CREATE TABLE producto_final
     FOREIGN KEY (id_eproducto) REFERENCES especificacion_de_producto(id_eproducto)
   );
 
-CREATE TABLE conformado 
-  (
-    id_prod_final INTEGER NOT NULL,
-    id_prod_intermedio INTEGER NOT NULL,
-    cantidad INTEGER NOT NULL,
-    PRIMARY KEY (id_prod_final, id_prod_intermedio),
-    FOREIGN KEY (id_prod_final) REFERENCES producto_final(id_eproducto),
-    FOREIGN KEY (id_prod_intermedio) REFERENCES producto_intermedio(id_eproducto)
-  );
-
 CREATE TABLE lote 
   (
     id_lote SERIAL NOT NULL,
@@ -206,7 +202,7 @@ CREATE TABLE lote
     id_eproducto INTEGER NOT NULL,
     activo BOOLEAN DEFAULT "t",
     PRIMARY KEY (id_lote),
-    FOREIGN KEY (id_eproducto) REFERENCES especificacion_de_producto(id_eproducto)
+    FOREIGN KEY (id_eproducto) REFERENCES especificacion_de_producto(id_eproducto),
     FOREIGN KEY (id_origen) REFERENCES origen(id_origen)
   );
 
@@ -268,8 +264,15 @@ CREATE TABLE reserva
   (
     id_reserva INTEGER NOT NULL,
     id_eproducto INTEGER NOT NULL,
-    cantidad INTEGER NOT NULL -- ,
-    -- PRIMARY KEY (id_reserva, id_eproducto),
-    -- FOREIGN KEY (id_reserva) REFERENCES reserva(id_reserva),
-    -- FOREIGN KEY (id_eproducto) REFERENCES especificacion_de_producto(id_eproducto)
+    cantidad INTEGER NOT NULL,
+    PRIMARY KEY (id_reserva, id_eproducto),
+    FOREIGN KEY (id_reserva) REFERENCES reserva(id_reserva),
+    FOREIGN KEY (id_eproducto) REFERENCES especificacion_de_producto(id_eproducto)
+  );
+
+  CREATE TABLE logs 
+  (
+    id_log SERIAL NOT NULL,
+    informacion TEXT NOT NULL,
+    PRIMARY KEY (id_log)
   );

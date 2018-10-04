@@ -27,36 +27,36 @@ INSERT INTO telefono_sucursal (id_sucursal, telefono) VALUES
 -- 5 Funcionarios en la sucursal 1, uno por cada cargo.
 -----------------------------------------------------------------------
 INSERT INTO funcionario (cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES 
-(5111111, "Marco", 1, "Uno", "direccion 1", "marco", "uno", "Gerente Sucursal");
+(5111111,  1, "Marco","Uno", "direccion 1", "marco", "uno", "Gerente Sucursal");
 INSERT INTO funcionario (cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES 
-(5111112, "José", 1, "Dos", "direccion 1", "jose", "jose", "Administrativo");
+(5111112, 1, "José", "Dos", "direccion 1", "jose", "jose", "Administrativo");
 INSERT INTO funcionario (cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES 
-(5111113, "Esteban", 1, "Tres", "direccion 1", "esteban", "esteban", "Enologo");
+(5111113, 1, "Esteban", "Tres", "direccion 1", "esteban", "esteban", "Enologo");
 INSERT INTO funcionario (cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES 
-(5111114, "María", 1, "Cuatro", "direccion 1", "maria", "maria", "Administrativo");
+(5111114, 1, "María", "Cuatro", "direccion 1", "maria", "maria", "Administrativo");
 INSERT INTO funcionario (cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES 
-(5111115, "Ana", 1, "Cinco", "direccion 1", "ana", "ana", "Administrativo");
+(5111115, 1, "Ana", "Cinco", "direccion 1", "ana", "ana", "Administrativo");
 
 -----------------------------------------------------------------------
 -- Tipos de Cepa
 -----------------------------------------------------------------------
-INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Merlot", "Tinto");
-INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Cabernet Sauvignon", "Tinto");
-INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Tannat", "Tinto");
-INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Cabernet", "Tinto");
-INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Moscatel", "Rosado");
-INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Sauvignon Blanc", "Blanco");
-INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Chardonnay", "Blanco");
+-- INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Moscatel", "Rosado");
+-- INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Merlot", "Tinto");
+-- INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Cabernet Sauvignon", "Tinto");
+-- INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Tannat", "Tinto");
+-- INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Cabernet", "Tinto");
+-- INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Sauvignon Blanc", "Blanco");
+-- INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Chardonnay", "Blanco");
 
 -----------------------------------------------------------------------
 -- Materia Prima
 -----------------------------------------------------------------------
 
-INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, foto) VALUES
-("Uva Frutilla", "Ejemplares de Parras Uva Frutilla de 1,40 mt de altura de follaje frondoso.", 1000, "Kg", NULL);
+--INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, foto) VALUES
+--("Uva Frutilla", "Ejemplares de Parras Uva Frutilla de 1,40 mt de altura de follaje frondoso.", 1000, "Kg", NULL);
 
-INSERT INTO materia_prima(id_eproducto, tipo_cepa) VALUES
-(1, 3);
+--INSERT INTO materia_prima(id_eproducto, tipo_cepa) VALUES
+--(1, 3);
 
 -----------------------------------------------------------------------
 -- Producto Intermedio
@@ -142,13 +142,13 @@ INSERT INTO origen(nombre, direccion, propietario) VALUES
 -----------------------------------------------------------------------
 
 INSERT INTO lotes(cantidad, id_origen, fecha, id_eproducto) VALUES
-(100, 1, '2018-01-04');
+(100, 1, '2018-01-04', 5);
 INSERT INTO lotes(cantidad, id_origen, fecha, id_eproducto) VALUES
-(300, 1, '2018-02-04');
+(300, 1, '2018-02-04', 5);
 INSERT INTO lotes(cantidad, id_origen, fecha, id_eproducto) VALUES
-(1, 1, '2018-03-04');
+(1, 1, '2018-03-04', 6);
 INSERT INTO lotes(cantidad, id_origen, fecha, id_eproducto) VALUES
-(200, 1, '2018-03-04');
+(200, 1, '2018-03-04', 6);
 
 -----------------------------------------------------------------------
 -- Traslados
@@ -191,54 +191,54 @@ INSERT INTO obtiene(id_lote, id_produccion) VALUES(4, 4);
 -- Funcionarios
 -----------------------------------------------------------------------
 INSERT INTO funcionario(cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES
-(4100000, 1, "José", "Pérez", "18 de Julio 1111", "jose", "jose", "Gerente General");
+(4100001, 1, "José", "Pérez", "18 de Julio 1111", "jose", "jose", "Gerente General");
 
 INSERT INTO funcionario(cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES
-(4200000, 1, "Ana", "Pérez", "18 de Julio 22222", "ana", "ana", "Gerente Sucursal");
+(4200001, 1, "Ana", "Pérez", "18 de Julio 22222", "ana", "ana", "Gerente Sucursal");
 
 INSERT INTO funcionario(cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES
-(4300000, 1, "Enrique", "Martinez", "18 de Julio 3333", "enrique", "enrique", "Administrativo");
+(4300001, 1, "Enrique", "Martinez", "18 de Julio 3333", "enrique", "enrique", "Administrativo");
 
 INSERT INTO funcionario(cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES
-(4400000, 1, "María", "Pérez", "18 de Julio 4444", "maria", "maria", "Enologo");
+(4400001, 1, "María", "Pérez", "18 de Julio 4444", "maria", "maria", "Enologo");
 
 INSERT INTO funcionario(cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES
-(4500000, 1, "Mirta", "Legrand", "18 de Julio 55555", "jose", "jose", "Viverista");
+(4500001, 1, "Mirta", "Legrand", "18 de Julio 55555", "jose", "jose", "Viverista");
 
 INSERT INTO funcionario(cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES
-(4600000, 1, "Mario", "Bros", "18 de Julio 6666", "mario", "mario", "Viticultor");
+(4600001, 1, "Mario", "Bros", "18 de Julio 6666", "mario", "mario", "Viticultor");
 
 INSERT INTO funcionario(cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES
-(4700000, 1, "Homero", "Simpson", "18 de Julio 7777", "homero", "homero", "Agrónomo");
+(4700001, 1, "Homero", "Simpson", "18 de Julio 7777", "homero", "homero", "Agrónomo");
 
 INSERT INTO funcionario(cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES
-(4800000, 1, "Lisa", "Simpson", "18 de Julio 8888", "homero", "homero", "Ampelólogo");
+(4800001, 1, "Lisa", "Simpson", "18 de Julio 8888", "homero", "homero", "Ampelólogo");
 
 
 
 INSERT INTO funcionario(cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES
-(4200000, 2, "Ana", "Pérez", "18 de Julio 22222", "ana", "ana", "Gerente Sucursal");
+(4200002, 2, "Ana", "Pérez", "18 de Julio 22222", "ana", "ana", "Gerente Sucursal");
 
 INSERT INTO funcionario(cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES
-(4300000, 2, "Enrique", "Martinez", "18 de Julio 3333", "enrique", "enrique", "Administrativo");
+(4300002, 2, "Enrique", "Martinez", "18 de Julio 3333", "enrique", "enrique", "Administrativo");
 
 INSERT INTO funcionario(cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES
-(4400000, 2, "María", "Pérez", "18 de Julio 4444", "maria", "maria", "Enologo");
+(4400002, 2, "María", "Pérez", "18 de Julio 4444", "maria", "maria", "Enologo");
 
 INSERT INTO funcionario(cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES
-(4500000, 2, "Mirta", "Legrand", "18 de Julio 55555", "jose", "jose", "Viverista");
+(4500002, 2, "Mirta", "Legrand", "18 de Julio 55555", "jose", "jose", "Viverista");
 
 INSERT INTO funcionario(cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES
-(4600000, 2, "Mario", "Bros", "18 de Julio 6666", "mario", "mario", "Viticultor");
+(4600002, 2, "Mario", "Bros", "18 de Julio 6666", "mario", "mario", "Viticultor");
 
 INSERT INTO funcionario(cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES
-(4700000, 2, "Homero", "Simpson", "18 de Julio 7777", "homero", "homero", "Agrónomo");
+(4700002, 2, "Homero", "Simpson", "18 de Julio 7777", "homero", "homero", "Agrónomo");
 
 INSERT INTO funcionario(cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES
-(4800000, 2, "Lisa", "Simpson", "18 de Julio 8888", "homero", "homero", "Ampelólogo");
+(4800002, 2, "Lisa", "Simpson", "18 de Julio 8888", "homero", "homero", "Ampelólogo");
 
 INSERT INTO funcionario(cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES
-(4900000, 2, "Bob", "Esponja", "18 de Julio 9999", "bob", "bob", "Administrativo");
+(4900002, 2, "Bob", "Esponja", "18 de Julio 9999", "bob", "bob", "Administrativo");
 
 
 -----------------------------------------------------------------------
@@ -269,10 +269,10 @@ INSERT INTO reserva(fecha_hora, id_cliente) VALUES('2018-08-04', 100000000000);
 INSERT INTO contiene(id_reserva, id_eproducto, cantidad) VALUES(2, 6, 200);
 
 INSERT INTO reserva(fecha_hora, id_cliente) VALUES('2018-09-04', 200000000000);
-INSERT INTO contiene(id_reserva, id_eproducto, cantidad) VALUES(3, 7, 300);
+INSERT INTO contiene(id_reserva, id_eproducto, cantidad) VALUES(3, 6, 300);
 
 INSERT INTO reserva(fecha_hora, id_cliente) VALUES('2018-10-04', 11111111);
-INSERT INTO contiene(id_reserva, id_eproducto, cantidad) VALUES(4, 8, 2);
-INSERT INTO contiene(id_reserva, id_eproducto, cantidad) VALUES(5, 8, 2);
-INSERT INTO contiene(id_reserva, id_eproducto, cantidad) VALUES(6, 8, 2);
-INSERT INTO contiene(id_reserva, id_eproducto, cantidad) VALUES(7, 8, 2);
+INSERT INTO contiene(id_reserva, id_eproducto, cantidad) VALUES(4, 6, 2);
+INSERT INTO contiene(id_reserva, id_eproducto, cantidad) VALUES(5, 6, 2);
+INSERT INTO contiene(id_reserva, id_eproducto, cantidad) VALUES(6, 6, 2);
+INSERT INTO contiene(id_reserva, id_eproducto, cantidad) VALUES(7, 6, 2);

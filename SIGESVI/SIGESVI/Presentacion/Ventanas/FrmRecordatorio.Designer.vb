@@ -23,7 +23,6 @@ Partial Class FrmRecordatorio
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox
-        Me.Label10 = New System.Windows.Forms.Label
         Me.Button2 = New System.Windows.Forms.Button
         Me.Label7 = New System.Windows.Forms.Label
         Me.TextBox4 = New System.Windows.Forms.TextBox
@@ -36,7 +35,6 @@ Partial Class FrmRecordatorio
         '
         'GroupBox4
         '
-        Me.GroupBox4.Controls.Add(Me.Label10)
         Me.GroupBox4.Controls.Add(Me.Button2)
         Me.GroupBox4.Controls.Add(Me.Label7)
         Me.GroupBox4.Controls.Add(Me.TextBox4)
@@ -48,20 +46,10 @@ Partial Class FrmRecordatorio
         Me.GroupBox4.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(388, 419)
+        Me.GroupBox4.Size = New System.Drawing.Size(331, 384)
         Me.GroupBox4.TabIndex = 38
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Recordatorio"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(177, 336)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(108, 13)
-        Me.Label10.TabIndex = 48
-        Me.Label10.Text = "Sector para enólogos"
         '
         'Button2
         '
@@ -129,7 +117,7 @@ Partial Class FrmRecordatorio
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.ClientSize = New System.Drawing.Size(388, 419)
+        Me.ClientSize = New System.Drawing.Size(331, 384)
         Me.Controls.Add(Me.GroupBox4)
         Me.Name = "FrmRecordatorio"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -140,7 +128,6 @@ Partial Class FrmRecordatorio
 
     End Sub
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
-    Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox

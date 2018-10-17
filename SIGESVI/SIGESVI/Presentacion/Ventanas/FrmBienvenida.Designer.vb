@@ -128,7 +128,7 @@ Partial Class frm_Bienvenida
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.ClientSize = New System.Drawing.Size(484, 461)
+        Me.ClientSize = New System.Drawing.Size(484, 411)
         Me.Controls.Add(Me.LbRegistrarNuevoCliente)
         Me.Controls.Add(Me.Btn_IniciarSesion)
         Me.Controls.Add(Me.Txt_ConstraseñaREQ)

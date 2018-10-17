@@ -22,6 +22,9 @@
                     frm = New FrmPrincipalAdministrativo()
                 ElseIf funcionario.Cargo.Equals("Gerente Sucursal") Then
                     frm = New FrmPrincipalGerenteSucursal()
+
+                ElseIf funcionario.Cargo.Equals("Gerente General") Then
+                    frm = New FrmPrincipalGerenteGeneral()
                 End If
 
                 Me.Hide()

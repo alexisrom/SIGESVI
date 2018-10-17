@@ -27,7 +27,7 @@
 
         If CboCategoria.SelectedItem.ToString().Equals("Materia Prima") Then
             especificacion = New MateriaPrima()
-            CType(especificacion, MateriaPrima).TipoCepa = CboCepas.SelectedItem.ToString()
+            ' CType(especificacion, MateriaPrima).TipoCepa = CboCepas.SelectedItem.ToString()
         End If
 
         especificacion.Nombre = TxtNombre_REQ.Text.Trim()

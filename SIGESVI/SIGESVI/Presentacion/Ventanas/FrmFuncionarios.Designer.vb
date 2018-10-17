@@ -51,7 +51,6 @@ Partial Class FrmFuncionarios
         Me.Button1 = New System.Windows.Forms.Button
         Me.Button3 = New System.Windows.Forms.Button
         Me.Label2 = New System.Windows.Forms.Label
-        Me.NombreSucursal = New System.Windows.Forms.DataGridViewTextBoxColumn
         CType(Me.DgvFuncionarios, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -80,7 +79,6 @@ Partial Class FrmFuncionarios
         Me.DgvFuncionarios.AllowUserToAddRows = False
         Me.DgvFuncionarios.AllowUserToDeleteRows = False
         Me.DgvFuncionarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgvFuncionarios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NombreSucursal})
         Me.DgvFuncionarios.Location = New System.Drawing.Point(667, 86)
         Me.DgvFuncionarios.Name = "DgvFuncionarios"
         Me.DgvFuncionarios.ReadOnly = True
@@ -315,12 +313,6 @@ Partial Class FrmFuncionarios
         Me.Label2.TabIndex = 87
         Me.Label2.Text = "Ingrese algun texto para buscar coincidencias"
         '
-        'NombreSucursal
-        '
-        Me.NombreSucursal.HeaderText = "NombreSucursal"
-        Me.NombreSucursal.Name = "NombreSucursal"
-        Me.NombreSucursal.ReadOnly = True
-        '
         'FrmFuncionarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -393,6 +385,5 @@ Partial Class FrmFuncionarios
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents NombreSucursal As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DgvFuncionarios As System.Windows.Forms.DataGridView
 End Class

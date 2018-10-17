@@ -32,5 +32,9 @@
         End Set
     End Property
 
-
+    Sub New(ByVal id As Integer, ByVal tipo As String, ByVal capacidad As Integer)
+        Me.ID = id
+        Me.Tipo = tipo
+        Me.Capacidad = capacidad
+    End Sub
 End Class

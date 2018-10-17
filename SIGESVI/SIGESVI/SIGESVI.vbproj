@@ -37,6 +37,7 @@
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="IBM.Data.Informix, Version=3.0.0.2, Culture=neutral, PublicKeyToken=7c307b91aa13d208, processorArchitecture=AMD64" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -67,7 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entidades\Almacen.vb" />
-    <Compile Include="Entidades\Campo.vb" />
+    <Compile Include="Entidades\Origen.vb" />
     <Compile Include="Entidades\CategoriaProducto.vb" />
     <Compile Include="Entidades\Cliente.vb" />
     <Compile Include="Entidades\Compra.vb" />
@@ -86,6 +87,7 @@
     <Compile Include="Entidades\Recordatorio.vb" />
     <Compile Include="Entidades\Reserva.vb" />
     <Compile Include="Entidades\Sucursal.vb" />
+    <Compile Include="Entidades\TipoCepa.vb" />
     <Compile Include="Entidades\Transaccion.vb" />
     <Compile Include="Entidades\Transporte.vb" />
     <Compile Include="Entidades\Traslado.vb" />
@@ -93,8 +95,15 @@
     <Compile Include="Entidades\Venta.vb" />
     <Compile Include="Persistencia\Conexion.vb" />
     <Compile Include="Persistencia\PersistenciaEspecificacionProducto.vb" />
+    <Compile Include="Persistencia\PersistenciaEtapaElaboracion.vb" />
     <Compile Include="Persistencia\PersistenciaFuncionario.vb" />
+    <Compile Include="Persistencia\PersistenciaMateriaPrima.vb" />
+    <Compile Include="Persistencia\PersistenciaOrigen.vb" />
+    <Compile Include="Persistencia\PersistenciaProductoFinal.vb" />
+    <Compile Include="Persistencia\PersistenciaProductoIntermedio.vb" />
     <Compile Include="Persistencia\PersistenciaSucursal.vb" />
+    <Compile Include="Persistencia\PersistenciaTipoCepa.vb" />
+    <Compile Include="Persistencia\PersistenciaTransporte.vb" />
     <Compile Include="Persistencia\PersistenciaUsuario.vb" />
     <Compile Include="Presentacion\Controles\MenuAdministrativo.Designer.vb">
       <DependentUpon>MenuAdministrativo.vb</DependentUpon>
@@ -109,8 +118,45 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Presentacion\Modulos\CargaDeDatos.vb" />
+    <Compile Include="Presentacion\Modulos\Config.vb" />
     <Compile Include="Presentacion\Modulos\ModuloConexion.vb" />
     <Compile Include="Presentacion\Modulos\VariablesGlobales.vb" />
+    <Compile Include="Presentacion\Ventanas\Formularios\FrmFormularioEProducto.Designer.vb">
+      <DependentUpon>FrmFormularioEProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\Formularios\FrmFormularioEProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\Formularios\FrmMateriaPrima.Designer.vb">
+      <DependentUpon>FrmMateriaPrima.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\Formularios\FrmMateriaPrima.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\Formularios\FrmProductoFinal.Designer.vb">
+      <DependentUpon>FrmProductoFinal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\Formularios\FrmProductoFinal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\Formularios\FrmProductoIntermedio.Designer.vb">
+      <DependentUpon>FrmProductoIntermedio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\Formularios\FrmProductoIntermedio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\Formularios\FrmTipoCepa.Designer.vb">
+      <DependentUpon>FrmTipoCepa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\Formularios\FrmTipoCepa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmPrincipalGerenteGeneral.Designer.vb">
+      <DependentUpon>FrmPrincipalGerenteGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\FrmPrincipalGerenteGeneral.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\Ventanas\FrmAlmacen.Designer.vb">
       <DependentUpon>FrmAlmacen.vb</DependentUpon>
     </Compile>
@@ -284,16 +330,46 @@
     <Compile Include="Presentacion\Ventanas\FrmVehiculos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\Ventanas\Listados\FrmListadoCepas.Designer.vb">
+      <DependentUpon>FrmListadoCepas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\Listados\FrmListadoCepas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\Listados\FrmListadoEspProducto.Designer.vb">
+      <DependentUpon>FrmListadoEspProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\Listados\FrmListadoEspProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\Listados\FrmListadoMateriaPrima.Designer.vb">
+      <DependentUpon>FrmListadoMateriaPrima.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\Listados\FrmListadoMateriaPrima.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\Ventanas\Listados\FrmListadoProduccion.Designer.vb">
       <DependentUpon>FrmListadoProduccion.vb</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Ventanas\Listados\FrmListadoProduccion.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\Ventanas\Listados\FrmListadoProductoFinal.Designer.vb">
+      <DependentUpon>FrmListadoProductoFinal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\Listados\FrmListadoProductoFinal.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\Ventanas\Listados\FrmVerTrazabilidad.Designer.vb">
       <DependentUpon>FrmVerTrazabilidad.vb</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Ventanas\Listados\FrmVerTrazabilidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\Listados\ListadoProductoIntermedio.Designer.vb">
+      <DependentUpon>ListadoProductoIntermedio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventanas\Listados\ListadoProductoIntermedio.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -304,6 +380,34 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Controles\MenuGerenteSucursal.resx">
       <DependentUpon>MenuGerenteSucursal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Controles\SelectorImagen.resx">
+      <DependentUpon>SelectorImagen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\Formularios\FrmFormularioEProducto.resx">
+      <DependentUpon>FrmFormularioEProducto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\Formularios\FrmMateriaPrima.resx">
+      <DependentUpon>FrmMateriaPrima.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\Formularios\FrmProductoFinal.resx">
+      <DependentUpon>FrmProductoFinal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\Formularios\FrmProductoIntermedio.resx">
+      <DependentUpon>FrmProductoIntermedio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\Formularios\FrmTipoCepa.resx">
+      <DependentUpon>FrmTipoCepa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\FrmPrincipalGerenteGeneral.resx">
+      <DependentUpon>FrmPrincipalGerenteGeneral.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ventanas\FrmAlmacen.resx">
@@ -404,12 +508,32 @@
       <DependentUpon>FrmSucursales.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\Listados\FrmListadoCepas.resx">
+      <DependentUpon>FrmListadoCepas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\Listados\FrmListadoEspProducto.resx">
+      <DependentUpon>FrmListadoEspProducto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\Listados\FrmListadoMateriaPrima.resx">
+      <DependentUpon>FrmListadoMateriaPrima.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ventanas\Listados\FrmListadoProduccion.resx">
       <DependentUpon>FrmListadoProduccion.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\Listados\FrmListadoProductoFinal.resx">
+      <DependentUpon>FrmListadoProductoFinal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ventanas\Listados\FrmVerTrazabilidad.resx">
       <DependentUpon>FrmVerTrazabilidad.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventanas\Listados\ListadoProductoIntermedio.resx">
+      <DependentUpon>ListadoProductoIntermedio.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>

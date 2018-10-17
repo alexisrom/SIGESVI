@@ -22,6 +22,12 @@
                     ep.SetError(ctrl, "Agregue elementos a la lista")
                     camposValidados = False
                 End If
+            ElseIf TypeOf ctrl Is ComboBox Then
+                Dim combo = CType(ctrl, ComboBox)
+                If ctrl.Name.Contains("REQ") And combo.SelectedIndex < 0 Then
+                    ep.SetError(ctrl, "Seleccione algún elemento")
+                    camposValidados = False
+                End If
             End If
 
         Next
@@ -48,4 +54,5 @@
         Next
 
     End Sub
+
 End Module

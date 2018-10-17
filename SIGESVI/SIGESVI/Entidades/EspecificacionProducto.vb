@@ -33,17 +33,6 @@
     End Property
 
 
-    Private _Calidad As String
-    Public Property Calidad() As String
-        Get
-            Return _Calidad
-        End Get
-        Set(ByVal value As String)
-            _Calidad = value
-        End Set
-    End Property
-
-
     Private _Precio As Decimal
     Public Property Precio() As Decimal
         Get
@@ -77,5 +66,41 @@
         End Set
     End Property
 
+
+    Private _Imagen As System.Drawing.Image
+    Public Property Imagen() As System.Drawing.Image
+        Get
+            Return _Imagen
+        End Get
+        Set(ByVal value As System.Drawing.Image)
+            _Imagen = value
+        End Set
+    End Property
+
+
+    Private _Categoria As String
+    Public Property Categoria() As String
+        Get
+            Return _Categoria
+        End Get
+        Set(ByVal value As String)
+            _Categoria = value
+        End Set
+    End Property
+
+
+    Sub New()
+
+    End Sub
+    Sub New(ByVal id As Integer, ByVal nombre As String, ByVal descripcion As String, ByVal precio As Decimal, ByVal unidadmedida As String, ByVal elaboracion As List(Of EtapaElaboracion), ByVal imagen As Image, ByVal categoria As String)
+        Me.ID = id
+        Me.Nombre = nombre
+        Me.Descripcion = descripcion
+        Me.Precio = precio
+        Me.UnidadMedida = unidadmedida
+        Me.Elaboracion = elaboracion
+        Me.Imagen = imagen
+        Me.Categoria = categoria
+    End Sub
 
 End Class

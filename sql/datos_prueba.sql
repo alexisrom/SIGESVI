@@ -40,89 +40,95 @@ INSERT INTO funcionario (cedula, id_sucursal, nombre, apellido, direccion, usuar
 -----------------------------------------------------------------------
 -- Tipos de Cepa
 -----------------------------------------------------------------------
--- INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Moscatel", "Rosado");
--- INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Merlot", "Tinto");
--- INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Cabernet Sauvignon", "Tinto");
--- INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Tannat", "Tinto");
--- INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Cabernet", "Tinto");
--- INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Sauvignon Blanc", "Blanco");
--- INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Chardonnay", "Blanco");
+INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Moscatel", "Rosado");
+INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Merlot", "Tinto");
+INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Cabernet Sauvignon", "Tinto");
+INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Tannat", "Tinto");
+INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Cabernet", "Tinto");
+INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Sauvignon Blanc", "Blanco");
+INSERT INTO tipo_cepa(nombre, tipo) VALUES ("Chardonnay", "Blanco");
 
 -----------------------------------------------------------------------
 -- Materia Prima
 -----------------------------------------------------------------------
+INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, categoria, foto) VALUES
+("Uva Frutilla", "Ejemplares de Parras Uva Frutilla de 1,40 mt de altura de follaje frondoso.", 1000, "Kg", NULL);
 
---INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, foto) VALUES
---("Uva Frutilla", "Ejemplares de Parras Uva Frutilla de 1,40 mt de altura de follaje frondoso.", 1000, "Kg", NULL);
-
---INSERT INTO materia_prima(id_eproducto, tipo_cepa) VALUES
---(1, 3);
+INSERT INTO materia_prima(id_eproducto, id_tipo_cepa) VALUES
+(1, 3);
 
 -----------------------------------------------------------------------
 -- Producto Intermedio
 -----------------------------------------------------------------------
-INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, foto) VALUES
-("Tannat Merlot", "...", 2000, "L", NULL);
 
-INSERT INTO producto_intermedio(id_eproducto, calidad, crianza) VALUES
+INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, categoria, foto) VALUES
+("Cabernet", "...", 1000000, "L", "Tinto", NULL);
+
+INSERT INTO producto_intermedio(id_eproducto, tipo) VALUES
 (2, "Yema");
 
+INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, categoria, foto) VALUES
+("Tannat Merlot", "...", 2000, "L", "Tinto", NULL);
 
-INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, foto) VALUES
-("Tannat Merlot", "...", 2000, "L", NULL);
-
-INSERT INTO producto_intermedio(id_eproducto, calidad, crianza) VALUES
-(3, "Lagrima");
-
-
-INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, foto) VALUES
-(3, "Tannat Merlot", "...", 2000, "L", NULL);
-
-INSERT INTO producto_intermedio(id_eproducto, calidad, crianza) VALUES
-(3, "Flor");
-
-
-INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, foto) VALUES
-("Tannat Merlot", "...", 2000, "L", NULL);
-
-INSERT INTO producto_intermedio(id_eproducto, calidad, crianza) VALUES
+INSERT INTO producto_intermedio(id_eproducto, tipo) VALUES
 (3, "Yema");
 
 
-INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, foto) VALUES
-("Cabernet", "...", 2000, "L", NULL);
+INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, categoria, foto) VALUES
+("Tannat Merlot", "...", 2000, "L", "Tinto", NULL);
 
-INSERT INTO producto_intermedio(id_eproducto, calidad, crianza) VALUES
-(3, "Yema");
+INSERT INTO producto_intermedio(id_eproducto, tipo) VALUES
+(4, "Lagrima");
+
+
+INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, categoria, foto) VALUES
+("Tannat Merlot", "...", 2000, "L", "Tinto", NULL);
+
+INSERT INTO producto_intermedio(id_eproducto, tipo) VALUES
+(5, "Flor");
+
+
+INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, categoria, foto) VALUES
+("Tannat Merlot", "...", 2000, "L", "Tinto", NULL);
+
+INSERT INTO producto_intermedio(id_eproducto, tipo) VALUES
+(6, "Yema");
+
+
+INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, categoria, foto) VALUES
+("Cabernet", "...", 2000, "L", "Tinto", NULL);
+
+INSERT INTO producto_intermedio(id_eproducto, tipo) VALUES
+(7, "Yema");
 
 
 -----------------------------------------------------------------------
 -- Producto Final
 -----------------------------------------------------------------------
-INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, foto) VALUES
-("Cabernet", "...", 120, "L", NULL);
+INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, categoria, foto) VALUES
+("Cabernet", "...", 120, "L", "Tinto", NULL);
 
-INSERT INTO producto_final(id_eproducto, conservacion, embotellamiento) VALUES
-(4, "Americano", "1");
+INSERT INTO producto_final(id_eproducto, crianza, embotellamiento) VALUES
+(8, "Americano", "1");
 
-INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, foto) VALUES
-("Cabernet", "...", 80, "mL", NULL);
+INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, categoria, foto) VALUES
+("Cabernet", "...", 80, "mL", "Tinto", NULL);
 
-INSERT INTO producto_final(id_eproducto, conservacion, embotellamiento) VALUES
-(5, "Frances", "750");
+INSERT INTO producto_final(id_eproducto, crianza, embotellamiento) VALUES
+(9, "Frances", "750");
 
-INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, foto) VALUES
-("Cabernet", "...", 200, "L", NULL);
+INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, categoria, foto) VALUES
+("Cabernet", "...", 200, "L", "Tinto", NULL);
 
-INSERT INTO producto_final(id_eproducto, conservacion, embotellamiento) VALUES
-(6, "Americano", "2");
+INSERT INTO producto_final(id_eproducto, crianza, embotellamiento) VALUES
+(10, "Americano", "2");
 
 
-INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, foto) VALUES
-("Cabernet", "...", 200, "L", NULL);
+INSERT INTO especificacion_de_producto(nombre, descripcion, precio, unidad_medida, categoria, foto) VALUES
+("Cabernet", "...", 200, "L", "Tinto", NULL);
 
-INSERT INTO producto_final(id_eproducto, conservacion, embotellamiento) VALUES
-(7, "Americano", "2");
+INSERT INTO producto_final(id_eproducto, crianza, embotellamiento) VALUES
+(11, "Americano", "2");
 
 -----------------------------------------------------------------------
 -- Transporte
@@ -138,17 +144,17 @@ INSERT INTO origen(nombre, direccion, propietario) VALUES
 
 
 -----------------------------------------------------------------------
--- Lotes
+-- lote
 -----------------------------------------------------------------------
 
-INSERT INTO lotes(cantidad, id_origen, fecha, id_eproducto) VALUES
-(100, 1, '2018-01-04', 5);
-INSERT INTO lotes(cantidad, id_origen, fecha, id_eproducto) VALUES
-(300, 1, '2018-02-04', 5);
-INSERT INTO lotes(cantidad, id_origen, fecha, id_eproducto) VALUES
-(1, 1, '2018-03-04', 6);
-INSERT INTO lotes(cantidad, id_origen, fecha, id_eproducto) VALUES
-(200, 1, '2018-03-04', 6);
+INSERT INTO lote(cantidad, id_origen, fecha, id_eproducto) VALUES
+(100, 1, '04/01/2018', 5);
+INSERT INTO lote(cantidad, id_origen, fecha, id_eproducto) VALUES
+(300, 1, '04/02/2018', 5);
+INSERT INTO lote(cantidad, id_origen, fecha, id_eproducto) VALUES
+(1, 1, '04/03/2018', 6);
+INSERT INTO lote(cantidad, id_origen, fecha, id_eproducto) VALUES
+(200, 1, '04/03/2018', 6);
 
 -----------------------------------------------------------------------
 -- Traslados
@@ -171,19 +177,19 @@ INSERT INTO traslado(id_transaccion, id_transporte, id_destino) VALUES(1, 7, 1);
 -----------------------------------------------------------------------
 
 INSERT INTO produccion(id_sucursal, fecha_inicio, fecha_fin, cantidad) VALUES
-(1, '2017-12-01', '2018-01-03');
+(1, '01/12/2017', '03/01/2018');
 INSERT INTO obtiene(id_lote, id_produccion) VALUES(1, 1);
 
 INSERT INTO produccion(id_sucursal, fecha_inicio, fecha_fin, cantidad) VALUES
-(2, '2018-01-01', '2018-02-03');
+(2, '01/01/2018', '03/02/2018');
 INSERT INTO obtiene(id_lote, id_produccion) VALUES(2, 2);
 
 INSERT INTO produccion(id_sucursal, fecha_inicio, fecha_fin, cantidad) VALUES
-(1, '2018-02-01', '2018-03-03');
+(1, '01/02/2018', '03/03/2018');
 INSERT INTO obtiene(id_lote, id_produccion) VALUES(3, 3);
 
 INSERT INTO produccion(id_sucursal, fecha_inicio, fecha_fin, cantidad) VALUES
-(2, '2017-12-01', '2018-01-03');
+(2, '01/02/2018', '03/03/2018');
 INSERT INTO obtiene(id_lote, id_produccion) VALUES(4, 4);
 
 

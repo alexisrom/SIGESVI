@@ -25,7 +25,6 @@ Public Class PersistenciaSucursal
 
             AgregarTelefono(sucursal, comando.Connection)
 
-
         Catch ex As OdbcException
             Throw ex
         Finally

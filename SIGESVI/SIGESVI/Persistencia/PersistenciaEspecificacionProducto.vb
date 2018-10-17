@@ -1,9 +1,9 @@
 ﻿Imports System.Data.Odbc
 
 Public Class PersistenciaEspecificacionProducto
-    Public Sub Agregar(ByVal especificacion As EspecificacionProducto)
-        Dim formato_consulta = "INSERT INTO especificacion_de_producto(nombre, descripcion, precio,unidad_medida, categoria) VALUES(""{0}"",{1},{2},""{3}"", ""quitar este campo"") "
-        Dim consulta = String.Format(formato_consulta, especificacion.Nombre, especificacion.Descripcion, especificacion.Precio, especificacion.UnidadMedida)
+    Public Sub Agregar(ByVal ep As EspecificacionProducto)
+        Dim formato_consulta = "INSERT INTO especificacion_de_producto(nombre, descripcion, precio,unidad_medida, categoria) VALUES(""{0}"",{1},{2},""{3}"", ""{4}"") "
+        Dim consulta = String.Format(formato_consulta, ep.Nombre, ep.Descripcion, ep.Precio, ep.UnidadMedida, ep.Categoria)
 
         Try
             Dim comando As New OdbcCommand
@@ -20,11 +20,11 @@ Public Class PersistenciaEspecificacionProducto
             comando.CommandText = "SELECT id_eproducto FROM especificacion_de_producto ORDER BY id_eproducto DESC LIMIT 1"
             Dim resp = comando.ExecuteReader()
             resp.Read()
-            especificacion.ID = resp("id_eproducto")
+            ep.ID = resp("id_eproducto")
 
-            If TypeOf especificacion Is MateriaPrima Then
+            If TypeOf ep Is MateriaPrima Then
                 formato_consulta = "INSERT INTO materia_prima(id_eproducto, estado_sanitario, tipo_cepa) VALUES({0}, ""eliminar campo"", ""{1}"")"
-                consulta = String.Format(formato_consulta, especificacion.ID, CType(especificacion, MateriaPrima).TipoCepa)
+                consulta = String.Format(formato_consulta, ep.ID, CType(ep, MateriaPrima).TipoCepa)
             End If
 
 
@@ -35,11 +35,34 @@ Public Class PersistenciaEspecificacionProducto
         End Try
     End Sub
 
-    Public Function modificar()
+    Public Function Modificar(ByVal especificacion As EspecificacionProducto)
         Return Nothing
     End Function
 
-    Public Function eliminar()
+    Public Function Eliminar(ByVal especificacion As EspecificacionProducto)
+        Return Nothing
+    End Function
+
+    Function Listar() As List(Of Sucursal)
+
+        Dim consulta = "SELECT * FROM especificacion_de_producto WHERE activo = 't'"
+
+        Try
+            Dim comando As New OdbcCommand
+            comando.Connection = New Conexion().Conectar()
+            comando.CommandText = consulta
+            Dim resultado = comando.ExecuteReader
+
+            If resultado.HasRows Then
+                While resultado.Read()
+                  
+                End While
+            End If
+
+        Catch ex As OdbcException
+            Throw ex
+        End Try
+
         Return Nothing
     End Function
 End Class

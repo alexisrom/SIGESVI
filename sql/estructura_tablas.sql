@@ -50,7 +50,7 @@ CREATE TABLE especificacion_de_producto
     precio INTEGER NOT NULL,
     unidad_medida VARCHAR(10) NOT NULL CHECK(unidad_medida IN ("Kg", "g", "L", "mL")),
     categoria VARCHAR(20) NOT NULL CHECK(categoria IN ("Tinto", "Blanco", "Rosado")),
-    foto VARCHAR(50),
+    foto BYTE,
     activo BOOLEAN DEFAULT "t",
     PRIMARY KEY (id_eproducto) 
   );
@@ -61,7 +61,7 @@ CREATE TABLE etapa_de_elaboracion
     nombre VARCHAR(30) NOT NULL,
     numero INTEGER NOT NULL,
     descripcion VARCHAR(200) NOT NULL,
-    duracion VARCHAR(15) NOT NULL,
+    duracion INTEGER NOT NULL,
     id_eproducto INTEGER NOT NULL,
     PRIMARY KEY (id_etapa),
     FOREIGN KEY (id_eproducto) REFERENCES especificacion_de_producto(id_eproducto)
@@ -76,7 +76,7 @@ CREATE TABLE etapa_de_elaboracion
     fecha_fin DATE NOT NULL,
     cantidad INTEGER NOT NULL,
     activo BOOLEAN DEFAULT "t",
-    -- CHECK(fecha_inicio > fecha_fin),
+    CHECK(fecha_inicio > fecha_fin),
     PRIMARY KEY (id_produccion),
     FOREIGN KEY (id_eproducto) REFERENCES especificacion_de_producto(id_eproducto),
     FOREIGN KEY (id_sucursal) REFERENCES sucursal(id_sucursal)
@@ -108,7 +108,7 @@ CREATE TABLE recordatorio
 CREATE TABLE transacciones 
   (
     id_transaccion SERIAL NOT NULL,
-    fecha_hora DATE NOT NULL,
+    fecha_hora DATETIME YEAR TO MINUTE NOT NULL,
     activo BOOLEAN DEFAULT "t",
     PRIMARY KEY (id_transaccion) 
   );
@@ -140,8 +140,8 @@ CREATE TABLE destino
   
 CREATE TABLE transporte 
   (
-    id_transporte SERIAL NOT NULL,
-    tipo VARCHAR(20) NOT NULL CHECK(tipo IN ("Camión", "Carro manuel", "Elevador", "Tractor y traileres")),
+    id_transporte INTEGER NOT NULL, -- 'MATRICULA'
+    nombre VARCHAR(20) NOT NULL,
     capacidad INTEGER NOT NULL,
     activo BOOLEAN DEFAULT "t",
     PRIMARY KEY (id_transporte)
@@ -179,7 +179,7 @@ CREATE TABLE materia_prima
 CREATE TABLE producto_intermedio 
   (
     id_eproducto INTEGER NOT NULL,
-    calidad INTEGER NOT NULL,
+    tipo VARCHAR(15) NOT NULL CHECK( tipo IN ("Yema", "Flor", "Lagrima")),
     PRIMARY KEY (id_eproducto),
     FOREIGN KEY (id_eproducto) REFERENCES especificacion_de_producto(id_eproducto)
   );
@@ -187,8 +187,8 @@ CREATE TABLE producto_intermedio
 CREATE TABLE producto_final 
   (
     id_eproducto INTEGER NOT NULL,
-    crianza VARCHAR(20) NOT NULL CHECK(crianza IN ("Americano", "Francés")),
-    embotellamiento VARCHAR(3) NOT NULL CHECK(embotellamiento IN ("2", "1", "1.5", "3/4")),
+    crianza VARCHAR(20) NOT NULL CHECK(crianza IN ("Americano", "Frances")),
+    embotellamiento VARCHAR(3) NOT NULL CHECK(embotellamiento IN ("2", "1", "1.5", "3/4", "750")),
     PRIMARY KEY (id_eproducto),
     FOREIGN KEY (id_eproducto) REFERENCES especificacion_de_producto(id_eproducto)
   );
@@ -244,7 +244,7 @@ CREATE TABLE funcionario
     direccion VARCHAR(40) NOT NULL,
     usuario VARCHAR(20) NOT NULL,
     contrasena VARCHAR(20) NOT NULL,
-    cargo VARCHAR(25) NOT NULL CHECK(cargo IN ("Gerente General", "Gerente Sucursal", "Administrativo", "Asesor Profesional")),
+    cargo VARCHAR(25) NOT NULL CHECK(cargo IN ("Gerente General", "Gerente Sucursal", "Administrativo", "Asesor Profesional", "Enologo")),
     activo BOOLEAN DEFAULT "t",
     PRIMARY KEY (cedula),
     FOREIGN KEY (id_sucursal) REFERENCES sucursal(id_sucursal)

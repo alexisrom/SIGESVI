@@ -43,6 +43,7 @@
         Next
 
     End Sub
+
     Private Sub BtnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnGuardar.Click
 
         Dim mp As New MateriaPrima()

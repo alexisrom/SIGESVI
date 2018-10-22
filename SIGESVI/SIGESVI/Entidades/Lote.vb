@@ -1,5 +1,15 @@
 ﻿Public Class Lote
-    
+
+    Private _ID As Integer
+    Public Property ID() As Integer
+        Get
+            Return _ID
+        End Get
+        Set(ByVal value As Integer)
+            _ID = value
+        End Set
+    End Property
+
     Private _Tipo As EspecificacionProducto
     Public Property Tipo() As EspecificacionProducto
         Get
@@ -17,6 +27,28 @@
         End Get
         Set(ByVal value As Integer)
             _Stock = value
+        End Set
+    End Property
+
+
+    Private _Fecha As Date
+    Public Property Fecha() As Date
+        Get
+            Return _Fecha
+        End Get
+        Set(ByVal value As Date)
+            _Fecha = value
+        End Set
+    End Property
+
+
+    Private _Origen As Origen
+    Public Property Origen() As Origen
+        Get
+            Return _Origen
+        End Get
+        Set(ByVal value As Origen)
+            _Origen = value
         End Set
     End Property
 

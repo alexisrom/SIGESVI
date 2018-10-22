@@ -10,7 +10,7 @@ Module PersistenciaUsuario
 
         Try
             Dim comando As New OdbcCommand
-            comando.Connection = New Conexion().Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteReader()
 
@@ -31,7 +31,7 @@ Module PersistenciaUsuario
         Catch ex As OdbcException
             Throw ex
         Finally
-            ModuloConexion.Cerrar()
+            Conexion.Cerrar()
         End Try
 
 

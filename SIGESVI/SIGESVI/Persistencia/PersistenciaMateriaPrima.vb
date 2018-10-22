@@ -9,7 +9,7 @@ Public Class PersistenciaMateriaPrima
         Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = New Conexion().Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteNonQuery
 
@@ -33,14 +33,10 @@ Public Class PersistenciaMateriaPrima
                 Throw New Exception("No se pudo agregar la materia prima")
             End If
 
-
-            'AgregarEtapas(Sucursal, comando.Connection)
-
-
         Catch ex As OdbcException
             Throw ex
         Finally
-            ModuloConexion.Cerrar()
+            Conexion.Cerrar()
         End Try
     End Sub
 
@@ -51,7 +47,7 @@ Public Class PersistenciaMateriaPrima
         Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = New Conexion().Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteNonQuery
 
@@ -68,36 +64,10 @@ Public Class PersistenciaMateriaPrima
                 Throw New Exception("No se pudo modificar la materia prima")
             End If
 
-
-            'AgregarEtapas(Sucursal, comando.Connection)
-
-
         Catch ex As OdbcException
             Throw ex
         Finally
-            ModuloConexion.Cerrar()
-        End Try
-    End Sub
-
-    Sub Eliminar(ByVal materiaPrima As MateriaPrima)
-        Dim formato_consulta = "UPDATE especificacion_de_producto SET activo = 'f' WHERE id_eproducto = {0}"
-        Dim consulta = String.Format(formato_consulta, materiaPrima.ID)
-
-        Dim comando As New OdbcCommand
-
-        Try
-            comando.Connection = New Conexion().Conectar()
-            comando.CommandText = consulta
-            Dim resultado = comando.ExecuteNonQuery
-
-            If resultado <> 1 Then
-                Throw New Exception("No se pudo eliminar la especificación del producto")
-            End If
-
-        Catch ex As OdbcException
-            Throw ex
-        Finally
-            ModuloConexion.Cerrar()
+            Conexion.Cerrar()
         End Try
     End Sub
 
@@ -108,7 +78,7 @@ Public Class PersistenciaMateriaPrima
 
         Try
             Dim comando As New OdbcCommand
-            comando.Connection = New Conexion().Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteReader
 
@@ -135,28 +105,11 @@ Public Class PersistenciaMateriaPrima
 
         Catch ex As OdbcException
             Throw ex
+        Finally
+            Conexion.Cerrar()
         End Try
 
         Return materiasPrimas
-    End Function
-
-    Function ListarEtapas(ByVal id_eproducto As Integer, ByRef conexion As OdbcConnection) As List(Of String)
-        Dim telefonos As New List(Of String)
-        Dim consulta = "SELECT * FROM etapa_de_elaboracion WHERE id_eproducto = " & id_eproducto
-        Dim comando As New OdbcCommand
-        Try
-            comando.Connection = conexion
-            comando.CommandText = consulta
-            Dim resultado = comando.ExecuteReader()
-
-            While resultado.Read()
-                'telefonos.Add(resultado("telefono"))
-            End While
-
-        Catch ex As OdbcException
-            Throw ex
-        End Try
-        Return telefonos
     End Function
 
 End Class

@@ -7,7 +7,7 @@ Public Class PersistenciaEtapaElaboracion
         Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = New Conexion().Conectar()
+            comando.Connection = Conexion.Abrir
 
             For Each etapa In especificacionProdicto.Elaboracion
                 Dim formato_consulta = "INSERT INTO transporte(nombre, numero, descripcion, duracion, ideproducto) VALUES(""{0}"", {1}, ""{2}"", {3}, {4})"
@@ -22,7 +22,7 @@ Public Class PersistenciaEtapaElaboracion
         Catch ex As OdbcException
             Throw ex
         Finally
-            ModuloConexion.Cerrar()
+            Conexion.Cerrar()
         End Try
     End Sub
 
@@ -33,7 +33,7 @@ Public Class PersistenciaEtapaElaboracion
         Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = New Conexion().Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteNonQuery
             If resultado <> 1 Then
@@ -43,7 +43,7 @@ Public Class PersistenciaEtapaElaboracion
         Catch ex As OdbcException
             Throw ex
         Finally
-            ModuloConexion.Cerrar()
+            Conexion.Cerrar()
         End Try
     End Sub
 

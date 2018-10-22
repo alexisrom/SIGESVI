@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{049426B8-E623-47ED-804C-342C59C90CF2}</ProjectGuid>
+    <ProjectGuid>{4F5920B9-9587-4AF7-8384-45D1BE1FEF4F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <StartupObject>SIGESVI.My.MyApplication</StartupObject>
     <RootNamespace>SIGESVI</RootNamespace>
@@ -37,7 +37,6 @@
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="IBM.Data.Informix, Version=3.0.0.2, Culture=neutral, PublicKeyToken=7c307b91aa13d208, processorArchitecture=AMD64" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -68,7 +67,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entidades\Almacen.vb" />
-    <Compile Include="Entidades\Origen.vb" />
     <Compile Include="Entidades\CategoriaProducto.vb" />
     <Compile Include="Entidades\Cliente.vb" />
     <Compile Include="Entidades\Compra.vb" />
@@ -79,6 +77,7 @@
     <Compile Include="Entidades\LineaReserva.vb" />
     <Compile Include="Entidades\Lote.vb" />
     <Compile Include="Entidades\MateriaPrima.vb" />
+    <Compile Include="Entidades\Origen.vb" />
     <Compile Include="Entidades\Produccion.vb" />
     <Compile Include="Entidades\ProductoFinal.vb" />
     <Compile Include="Entidades\ProductoIntermedio.vb" />
@@ -93,216 +92,130 @@
     <Compile Include="Entidades\Traslado.vb" />
     <Compile Include="Entidades\Usuario.vb" />
     <Compile Include="Entidades\Venta.vb" />
-    <Compile Include="Persistencia\Conexion.vb" />
-    <Compile Include="Persistencia\PersistenciaEspecificacionProducto.vb" />
-    <Compile Include="Persistencia\PersistenciaEtapaElaboracion.vb" />
-    <Compile Include="Persistencia\PersistenciaFuncionario.vb" />
-    <Compile Include="Persistencia\PersistenciaMateriaPrima.vb" />
-    <Compile Include="Persistencia\PersistenciaOrigen.vb" />
-    <Compile Include="Persistencia\PersistenciaProductoFinal.vb" />
-    <Compile Include="Persistencia\PersistenciaProductoIntermedio.vb" />
-    <Compile Include="Persistencia\PersistenciaSucursal.vb" />
-    <Compile Include="Persistencia\PersistenciaTipoCepa.vb" />
-    <Compile Include="Persistencia\PersistenciaTransporte.vb" />
-    <Compile Include="Persistencia\PersistenciaUsuario.vb" />
-    <Compile Include="Presentacion\Controles\MenuAdministrativo.Designer.vb">
-      <DependentUpon>MenuAdministrativo.vb</DependentUpon>
+    <Compile Include="FrmCampos.Designer.vb">
+      <DependentUpon>FrmCampos.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Controles\MenuAdministrativo.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Controles\MenuGerenteSucursal.Designer.vb">
-      <DependentUpon>MenuGerenteSucursal.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Controles\MenuGerenteSucursal.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Modulos\CargaDeDatos.vb" />
-    <Compile Include="Presentacion\Modulos\Config.vb" />
-    <Compile Include="Presentacion\Modulos\ModuloConexion.vb" />
-    <Compile Include="Presentacion\Modulos\VariablesGlobales.vb" />
-    <Compile Include="Presentacion\Ventanas\Formularios\FrmFormularioEProducto.Designer.vb">
-      <DependentUpon>FrmFormularioEProducto.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\Formularios\FrmFormularioEProducto.vb">
+    <Compile Include="FrmCampos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\Formularios\FrmMateriaPrima.Designer.vb">
-      <DependentUpon>FrmMateriaPrima.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\Formularios\FrmMateriaPrima.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\Formularios\FrmProductoFinal.Designer.vb">
-      <DependentUpon>FrmProductoFinal.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\Formularios\FrmProductoFinal.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\Formularios\FrmProductoIntermedio.Designer.vb">
-      <DependentUpon>FrmProductoIntermedio.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\Formularios\FrmProductoIntermedio.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\Formularios\FrmTipoCepa.Designer.vb">
-      <DependentUpon>FrmTipoCepa.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\Formularios\FrmTipoCepa.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmPrincipalGerenteGeneral.Designer.vb">
-      <DependentUpon>FrmPrincipalGerenteGeneral.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmPrincipalGerenteGeneral.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmAlmacen.Designer.vb">
-      <DependentUpon>FrmAlmacen.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmAlmacen.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmCompras.Designer.vb">
-      <DependentUpon>FrmCompras.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmCompras.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmEspecificacionProducto.Designer.vb">
-      <DependentUpon>FrmEspecificacionProducto.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmEspecificacionProducto.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmLote.Designer.vb">
-      <DependentUpon>FrmLote.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmLote.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmOrigen.Designer.vb">
-      <DependentUpon>FrmOrigen.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmOrigen.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmPrincipalAdministrativo.Designer.vb">
-      <DependentUpon>FrmPrincipalAdministrativo.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmPrincipalAdministrativo.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmPrincipalGerenteSucursal.Designer.vb">
-      <DependentUpon>FrmPrincipalGerenteSucursal.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmPrincipalGerenteSucursal.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmRecordatorio.Designer.vb">
-      <DependentUpon>FrmRecordatorio.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmRecordatorio.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmReserva.Designer.vb">
-      <DependentUpon>FrmReserva.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmReserva.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmTipoCepas.Designer.vb">
-      <DependentUpon>FrmTipoCepas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmTipoCepas.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Controles\DetalleFuncionario.Designer.vb">
-      <DependentUpon>DetalleFuncionario.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Controles\DetalleFuncionario.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Controles\SelectorImagen.Designer.vb">
-      <DependentUpon>SelectorImagen.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Controles\SelectorImagen.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Controles\Telefonos.Designer.vb">
-      <DependentUpon>Telefonos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Controles\Telefonos.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmBienvenida.Designer.vb">
-      <DependentUpon>FrmBienvenida.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmBienvenida.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Modulos\Utilidades.vb" />
-    <Compile Include="Presentacion\Modulos\Validacion.vb" />
-    <Compile Include="Presentacion\Ventanas\FrmCatalogo.Designer.vb">
+    <Compile Include="FrmCatalogo.Designer.vb">
       <DependentUpon>FrmCatalogo.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmCatalogo.vb">
+    <Compile Include="FrmCatalogo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmClientes.Designer.vb">
+    <Compile Include="FrmClientes.Designer.vb">
       <DependentUpon>FrmClientes.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmClientes.vb">
+    <Compile Include="FrmClientes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmEtapas.Designer.vb">
-      <DependentUpon>FrmEtapas.vb</DependentUpon>
+    <Compile Include="FrmCompras.Designer.vb">
+      <DependentUpon>FrmCompras.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmEtapas.vb">
+    <Compile Include="FrmCompras.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmFuncionarios.Designer.vb">
+    <Compile Include="FrmFuncionarios.Designer.vb">
       <DependentUpon>FrmFuncionarios.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmFuncionarios.vb">
+    <Compile Include="FrmFuncionarios.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmPrincipal.Designer.vb">
-      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+    <Compile Include="FrmListadoProduccion.Designer.vb">
+      <DependentUpon>FrmListadoProduccion.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmPrincipal.vb">
+    <Compile Include="FrmListadoProduccion.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmProcesos.Designer.vb">
-      <DependentUpon>FrmProcesos.vb</DependentUpon>
+    <Compile Include="FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmProcesos.vb">
+    <Compile Include="FrmLogin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmProduccion.Designer.vb">
+    <Compile Include="FrmLote.Designer.vb">
+      <DependentUpon>FrmLote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMateriaPrima.Designer.vb">
+      <DependentUpon>FrmMateriaPrima.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMateriaPrima.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProduccion.Designer.vb">
       <DependentUpon>FrmProduccion.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmProduccion.vb">
+    <Compile Include="FrmProduccion.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmTransporte.Designer.vb">
-      <DependentUpon>FrmTransporte.vb</DependentUpon>
+    <Compile Include="FrmProductoFinal.Designer.vb">
+      <DependentUpon>FrmProductoFinal.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmTransporte.vb">
+    <Compile Include="FrmProductoFinal.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmTrazabilidad.Designer.vb">
-      <DependentUpon>FrmTrazabilidad.vb</DependentUpon>
+    <Compile Include="FrmEtapa.Designer.vb">
+      <DependentUpon>FrmEtapa.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmTrazabilidad.vb">
+    <Compile Include="FrmEtapa.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmVentas.Designer.vb">
+    <Compile Include="FrmPrincipal.Designer.vb">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductoIntermedio.Designer.vb">
+      <DependentUpon>FrmProductoIntermedio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductoIntermedio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSucursales.Designer.vb">
+      <DependentUpon>FrmSucursales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSucursales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTipoCepa.Designer.vb">
+      <DependentUpon>FrmTipoCepa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTipoCepa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTraslados.Designer.vb">
+      <DependentUpon>FrmTraslados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTraslados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVentas.Designer.vb">
       <DependentUpon>FrmVentas.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmVentas.vb">
+    <Compile Include="FrmVentas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListadoProductos.Designer.vb">
+      <DependentUpon>FrmListadoProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListadoProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Conexion.vb" />
+    <Compile Include="Modulos\ManejoVentanas.vb" />
+    <Compile Include="Modulos\Utilidades.vb" />
+    <Compile Include="Modulos\Validacion.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -318,222 +231,106 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmSucursales.Designer.vb">
-      <DependentUpon>FrmSucursales.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmSucursales.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmVehiculos.Designer.vb">
-      <DependentUpon>FrmVehiculos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\FrmVehiculos.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\Listados\FrmListadoCepas.Designer.vb">
-      <DependentUpon>FrmListadoCepas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\Listados\FrmListadoCepas.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\Listados\FrmListadoEspProducto.Designer.vb">
-      <DependentUpon>FrmListadoEspProducto.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\Listados\FrmListadoEspProducto.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\Listados\FrmListadoMateriaPrima.Designer.vb">
-      <DependentUpon>FrmListadoMateriaPrima.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\Listados\FrmListadoMateriaPrima.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\Listados\FrmListadoProduccion.Designer.vb">
-      <DependentUpon>FrmListadoProduccion.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\Listados\FrmListadoProduccion.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\Listados\FrmListadoProductoFinal.Designer.vb">
-      <DependentUpon>FrmListadoProductoFinal.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\Listados\FrmListadoProductoFinal.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\Listados\FrmVerTrazabilidad.Designer.vb">
-      <DependentUpon>FrmVerTrazabilidad.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\Listados\FrmVerTrazabilidad.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\Listados\ListadoProductoIntermedio.Designer.vb">
-      <DependentUpon>ListadoProductoIntermedio.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Ventanas\Listados\ListadoProductoIntermedio.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Persistencia\PersistenciaCliente.vb" />
+    <Compile Include="Persistencia\PersistenciaEspecificacionProducto.vb" />
+    <Compile Include="Persistencia\PersistenciaEtapaElaboracion.vb" />
+    <Compile Include="Persistencia\PersistenciaFuncionario.vb" />
+    <Compile Include="Persistencia\PersistenciaLote.vb" />
+    <Compile Include="Persistencia\PersistenciaMateriaPrima.vb" />
+    <Compile Include="Persistencia\PersistenciaOrigen.vb" />
+    <Compile Include="Persistencia\PersistenciaProduccion.vb" />
+    <Compile Include="Persistencia\PersistenciaProductoFinal.vb" />
+    <Compile Include="Persistencia\PersistenciaProductoIntermedio.vb" />
+    <Compile Include="Persistencia\PersistenciaSucursal.vb" />
+    <Compile Include="Persistencia\PersistenciaTipoCepa.vb" />
+    <Compile Include="Persistencia\PersistenciaTransporte.vb" />
+    <Compile Include="Persistencia\PersistenciaUsuario.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Presentacion\Controles\MenuAdministrativo.resx">
-      <DependentUpon>MenuAdministrativo.vb</DependentUpon>
+    <EmbeddedResource Include="FrmCampos.resx">
+      <DependentUpon>FrmCampos.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Controles\MenuGerenteSucursal.resx">
-      <DependentUpon>MenuGerenteSucursal.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Controles\SelectorImagen.resx">
-      <DependentUpon>SelectorImagen.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\Formularios\FrmFormularioEProducto.resx">
-      <DependentUpon>FrmFormularioEProducto.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\Formularios\FrmMateriaPrima.resx">
-      <DependentUpon>FrmMateriaPrima.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\Formularios\FrmProductoFinal.resx">
-      <DependentUpon>FrmProductoFinal.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\Formularios\FrmProductoIntermedio.resx">
-      <DependentUpon>FrmProductoIntermedio.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\Formularios\FrmTipoCepa.resx">
-      <DependentUpon>FrmTipoCepa.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmPrincipalGerenteGeneral.resx">
-      <DependentUpon>FrmPrincipalGerenteGeneral.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmAlmacen.resx">
-      <DependentUpon>FrmAlmacen.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmCatalogo.resx">
+    <EmbeddedResource Include="FrmCatalogo.resx">
       <DependentUpon>FrmCatalogo.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmCompras.resx">
-      <DependentUpon>FrmCompras.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmEspecificacionProducto.resx">
-      <DependentUpon>FrmEspecificacionProducto.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmLote.resx">
-      <DependentUpon>FrmLote.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmOrigen.resx">
-      <DependentUpon>FrmOrigen.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmPrincipalAdministrativo.resx">
-      <DependentUpon>FrmPrincipalAdministrativo.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmPrincipalGerenteSucursal.resx">
-      <DependentUpon>FrmPrincipalGerenteSucursal.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmRecordatorio.resx">
-      <DependentUpon>FrmRecordatorio.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmReserva.resx">
-      <DependentUpon>FrmReserva.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmTipoCepas.resx">
-      <DependentUpon>FrmTipoCepas.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmBienvenida.resx">
-      <DependentUpon>FrmBienvenida.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmClientes.resx">
+    <EmbeddedResource Include="FrmClientes.resx">
       <DependentUpon>FrmClientes.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmEtapas.resx">
-      <DependentUpon>FrmEtapas.vb</DependentUpon>
+    <EmbeddedResource Include="FrmCompras.resx">
+      <DependentUpon>FrmCompras.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmFuncionarios.resx">
+    <EmbeddedResource Include="FrmFuncionarios.resx">
       <DependentUpon>FrmFuncionarios.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmPrincipal.resx">
-      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+    <EmbeddedResource Include="FrmListadoProduccion.resx">
+      <DependentUpon>FrmListadoProduccion.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmProcesos.resx">
-      <DependentUpon>FrmProcesos.vb</DependentUpon>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmProduccion.resx">
+    <EmbeddedResource Include="FrmLote.resx">
+      <DependentUpon>FrmLote.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMateriaPrima.resx">
+      <DependentUpon>FrmMateriaPrima.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProduccion.resx">
       <DependentUpon>FrmProduccion.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmTransporte.resx">
-      <DependentUpon>FrmTransporte.vb</DependentUpon>
+    <EmbeddedResource Include="FrmProductoFinal.resx">
+      <DependentUpon>FrmProductoFinal.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmTrazabilidad.resx">
-      <DependentUpon>FrmTrazabilidad.vb</DependentUpon>
+    <EmbeddedResource Include="FrmEtapa.resx">
+      <DependentUpon>FrmEtapa.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmVehiculos.resx">
-      <DependentUpon>FrmVehiculos.vb</DependentUpon>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmVentas.resx">
+    <EmbeddedResource Include="FrmProductoIntermedio.resx">
+      <DependentUpon>FrmProductoIntermedio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSucursales.resx">
+      <DependentUpon>FrmSucursales.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTipoCepa.resx">
+      <DependentUpon>FrmTipoCepa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTraslados.resx">
+      <DependentUpon>FrmTraslados.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVentas.resx">
       <DependentUpon>FrmVentas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListadoProductos.resx">
+      <DependentUpon>FrmListadoProductos.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\FrmSucursales.resx">
-      <DependentUpon>FrmSucursales.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\Listados\FrmListadoCepas.resx">
-      <DependentUpon>FrmListadoCepas.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\Listados\FrmListadoEspProducto.resx">
-      <DependentUpon>FrmListadoEspProducto.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\Listados\FrmListadoMateriaPrima.resx">
-      <DependentUpon>FrmListadoMateriaPrima.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\Listados\FrmListadoProduccion.resx">
-      <DependentUpon>FrmListadoProduccion.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\Listados\FrmListadoProductoFinal.resx">
-      <DependentUpon>FrmListadoProductoFinal.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\Listados\FrmVerTrazabilidad.resx">
-      <DependentUpon>FrmVerTrazabilidad.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Ventanas\Listados\ListadoProductoIntermedio.resx">
-      <DependentUpon>ListadoProductoIntermedio.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
@@ -549,10 +346,58 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Imagen menu principal.jpg" />
+    <None Include="Resources\descarga.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-carrito-de-compras-24.png" />
+    <None Include="Resources\icons8-products.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-go-back-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-go-back-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-go-back-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wine-glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sigesvi-logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mass-production.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\funcionarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\engineer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gears.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

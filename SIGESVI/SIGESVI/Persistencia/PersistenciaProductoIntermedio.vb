@@ -1,6 +1,7 @@
 ﻿Imports System.Data.Odbc
 
 Public Class PersistenciaProductoIntermedio
+
     Sub Agregar(ByVal producto As ProductoIntermedio)
         Dim formato_consulta = "INSERT INTO especificacion_de_producto(nombre, descripcion, precio,unidad_medida, categoria, foto) VALUES(""{0}"",""{1}"",{2},""{3}"", ""{4}"", NULL) "
         Dim consulta = String.Format(formato_consulta, producto.Nombre, producto.Descripcion, producto.Precio, producto.UnidadMedida, producto.Categoria, producto.Imagen)
@@ -8,7 +9,7 @@ Public Class PersistenciaProductoIntermedio
         Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = New Conexion().Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteNonQuery
 
@@ -23,25 +24,52 @@ Public Class PersistenciaProductoIntermedio
             producto.ID = resp("id_eproducto")
             resp.Close()
 
-            formato_consulta = "INSERT INTO producto_intermedio(id_eproducto, tipo) VALUES({0}, '{Yemo}');"
+            formato_consulta = "INSERT INTO producto_intermedio(id_eproducto, tipo) VALUES({0}, '{1}');"
             consulta = String.Format(formato_consulta, producto.ID, producto.Calidad)
             comando.CommandText = consulta
             resultado = comando.ExecuteNonQuery
 
             If resultado <> 1 Then
-                Throw New Exception("No se pudo agregar el producto final")
+                Throw New Exception("No se pudo agregar el producto intermedio")
             End If
-
-
-
-
 
         Catch ex As OdbcException
             Throw ex
         Finally
-            ModuloConexion.Cerrar()
+            Conexion.Cerrar()
         End Try
     End Sub
+
+
+    Sub Modificar(ByVal producto As ProductoIntermedio)
+        Dim formato_consulta = "UPDATE especificacion_de_producto SET nombre = '{0}', descripcion = '{1}', precio = {2} WHERE id_eproducto = {3} "
+        Dim consulta = String.Format(formato_consulta, producto.Nombre, producto.Descripcion, producto.Precio, producto.ID)
+
+        Dim comando As New OdbcCommand
+
+        Try
+            comando.Connection = Conexion.Abrir
+            comando.CommandText = consulta
+            Dim resultado = comando.ExecuteNonQuery
+
+            If resultado <> 1 Then
+                Throw New Exception("No se pudo modificar la especificación de producto")
+            End If
+
+            formato_consulta = "UPDATE producto_intermedio SET tipo = '{0}' WHERE id_eproducto = {1} "
+            consulta = String.Format(formato_consulta, producto.Calidad, producto.ID)
+
+            If resultado <> 1 Then
+                Throw New Exception("No se pudo modificar el producto intermedio")
+            End If
+
+        Catch ex As OdbcException
+            Throw ex
+        Finally
+            Conexion.Cerrar()
+        End Try
+    End Sub
+
 
     Function Listar() As List(Of ProductoIntermedio)
 
@@ -50,7 +78,7 @@ Public Class PersistenciaProductoIntermedio
 
         Try
             Dim comando As New OdbcCommand
-            comando.Connection = New Conexion().Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteReader
 
@@ -74,4 +102,5 @@ Public Class PersistenciaProductoIntermedio
 
         Return productos
     End Function
+
 End Class

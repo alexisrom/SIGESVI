@@ -9,7 +9,7 @@ Public Class PersistenciaProductoFinal
         Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = New Conexion().Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteNonQuery
 
@@ -42,7 +42,7 @@ Public Class PersistenciaProductoFinal
         Catch ex As OdbcException
             Throw ex
         Finally
-            ModuloConexion.Cerrar()
+            Conexion.Cerrar()
         End Try
     End Sub
 
@@ -75,7 +75,7 @@ Public Class PersistenciaProductoFinal
 
         Try
             Dim comando As New OdbcCommand
-            comando.Connection = New Conexion().Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteReader
 
@@ -99,6 +99,38 @@ Public Class PersistenciaProductoFinal
         End Try
 
         Return productos
+    End Function
+
+    Function Buscar(ByVal id As Integer) As ProductoFinal
+
+        Dim consulta = "SELECT ep.*, pf.* FROM especificacion_de_producto ep, producto_final pf WHERE ep.id_eproducto = pf.id_eproducto AND activo = 't'"
+
+        Try
+            Dim comando As New OdbcCommand
+            comando.Connection = Conexion.Abrir
+            comando.CommandText = consulta
+            Dim resultado = comando.ExecuteReader
+
+            If resultado.HasRows Then
+                While resultado.Read()
+                    Dim p As New ProductoFinal()
+                    p.ID = resultado("id_eproducto")
+                    p.Nombre = resultado("nombre")
+                    p.Descripcion = resultado("descripcion")
+                    p.Precio = resultado("precio")
+                    p.UnidadMedida = resultado("unidad_medida")
+                    p.Categoria = resultado("categoria")
+                    p.Crianza = resultado("crianza")
+                    p.Embotellamiento = resultado("embotellamiento")
+                    Return p
+                End While
+            End If
+
+        Catch ex As OdbcException
+            Throw ex
+        End Try
+
+        Return Nothing
     End Function
 
 End Class

@@ -76,7 +76,7 @@ CREATE TABLE etapa_de_elaboracion
     fecha_fin DATE NOT NULL,
     cantidad INTEGER NOT NULL,
     activo BOOLEAN DEFAULT "t",
-    CHECK(fecha_inicio > fecha_fin),
+    CHECK(fecha_inicio < fecha_fin),
     PRIMARY KEY (id_produccion),
     FOREIGN KEY (id_eproducto) REFERENCES especificacion_de_producto(id_eproducto),
     FOREIGN KEY (id_sucursal) REFERENCES sucursal(id_sucursal)

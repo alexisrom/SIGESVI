@@ -21,16 +21,20 @@
         End Set
     End Property
 
-    ' Indica cuanto tiempo antes de culminar la etapa se notifica
-    Private _FechaAnticipacion As Date
-    Public Property FechaAnticipacion() As Date
+
+    ' Indica cuanto tiempo desde del inicio comienza
+    Private _Dia As Integer
+    Public Property Dia() As Integer
         Get
-            Return _FechaAnticipacion
+            Return _Dia
         End Get
-        Set(ByVal value As Date)
-            _FechaAnticipacion = value
+        Set(ByVal value As Integer)
+            _Dia = value
         End Set
     End Property
 
 
+    Public Overrides Function ToString() As String
+        Return String.Format("[{0}, {1}]", _Mensaje, _Dia)
+    End Function
 End Class

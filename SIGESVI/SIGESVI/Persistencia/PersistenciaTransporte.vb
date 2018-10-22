@@ -9,7 +9,7 @@ Public Class PersistenciaTransporte
         Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = New Conexion().Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteNonQuery
 
@@ -19,7 +19,7 @@ Public Class PersistenciaTransporte
         Catch ex As OdbcException
             Throw ex
         Finally
-            ModuloConexion.Cerrar()
+            Conexion.Cerrar()
         End Try
     End Sub
 
@@ -30,7 +30,7 @@ Public Class PersistenciaTransporte
         Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = New Conexion().Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteNonQuery
 
@@ -40,7 +40,7 @@ Public Class PersistenciaTransporte
         Catch ex As OdbcException
             Throw ex
         Finally
-            ModuloConexion.Cerrar()
+            Conexion.Cerrar()
         End Try
     End Sub
 
@@ -50,7 +50,7 @@ Public Class PersistenciaTransporte
         Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = New Conexion().Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteReader
 

@@ -9,7 +9,7 @@ Public Class PersistenciaFuncionario
         Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = ModuloConexion.Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteNonQuery
 
@@ -20,18 +20,18 @@ Public Class PersistenciaFuncionario
         Catch ex As OdbcException
             Throw ex
         Finally
-            ModuloConexion.Cerrar()
+            Conexion.Cerrar()
         End Try
     End Sub
 
     Sub Modificar(ByVal funcionario As Funcionario)
-        Dim formato_consulta = "UPDATE funcionario SET id_sucursal=""{0}"", nombre=""{1}"", apellido=""{2}"", direccion=""{3}"", usuario=""{4}"", contrasena=""{5}"", cargo=""{6}"" WHERE cedula={7}"
-        Dim consulta = String.Format(formato_consulta, funcionario.Sucursal.ID, funcionario.Nombre, funcionario.Apellido, funcionario.Direccion, funcionario.Usuario, funcionario.Contrasena, funcionario.Cargo, funcionario.Cedula)
+        Dim formato_consulta = "UPDATE funcionario SET id_sucursal=""{0}"", nombre=""{1}"", apellido=""{2}"", direccion=""{3}"", usuario=""{4}"", contrasena=""{5}"", cargo=""{6}"", id_sucursal={7} WHERE cedula={8}"
+        Dim consulta = String.Format(formato_consulta, funcionario.Sucursal.ID, funcionario.Nombre, funcionario.Apellido, funcionario.Direccion, funcionario.Usuario, funcionario.Contrasena, funcionario.Cargo, funcionario.Sucursal.ID, funcionario.Cedula)
 
         Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = ModuloConexion.Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteNonQuery
 
@@ -43,7 +43,7 @@ Public Class PersistenciaFuncionario
         Catch ex As OdbcException
             Throw ex
         Finally
-            ModuloConexion.Cerrar()
+            Conexion.Cerrar()
         End Try
     End Sub
 
@@ -52,7 +52,7 @@ Public Class PersistenciaFuncionario
         Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = ModuloConexion.Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteNonQuery
 
@@ -64,7 +64,7 @@ Public Class PersistenciaFuncionario
         Catch ex As OdbcException
             Throw ex
         Finally
-            ModuloConexion.Conectar()
+            Conexion.Abrir()
         End Try
     End Sub
 
@@ -77,7 +77,7 @@ Public Class PersistenciaFuncionario
         Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = New Conexion().Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteReader
 
@@ -92,7 +92,7 @@ Public Class PersistenciaFuncionario
                     funcionario.Contrasena = resultado("contrasena")
                     funcionario.Cargo = resultado("cargo")
                     Dim persistenciaSucursal = New PersistenciaSucursal()
-                    Dim sucursal = PersistenciaSucursal.Buscar(CInt(resultado("id_sucursal")))
+                    funcionario.Sucursal = persistenciaSucursal.Buscar(CInt(resultado("id_sucursal")))
                     funcionarios.Add(funcionario)
                 End While
             End If
@@ -113,7 +113,7 @@ Public Class PersistenciaFuncionario
         Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = New Conexion().Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteReader
 

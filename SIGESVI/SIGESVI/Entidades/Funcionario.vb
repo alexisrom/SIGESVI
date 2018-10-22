@@ -88,19 +88,8 @@
     End Property
 
 
-
-    Public Property NombreSucursal() As String
-        Get
-            Return Me.Sucursal.Nombre
-        End Get
-        Set(ByVal value As String)
-
-        End Set
-    End Property
-
-
     Sub New()
-        Me.Cedula = 0
+
     End Sub
 
     Sub New(ByVal cedula As Integer, ByVal sucursal As Sucursal, ByVal nombre As String, ByVal apellido As String, ByVal direccion As String, ByVal usuario As String, ByVal contrasena As String, ByVal cargo As String)

@@ -9,7 +9,7 @@ Public Class PersistenciaSucursal
         Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = New Conexion().Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteNonQuery
 
@@ -28,7 +28,7 @@ Public Class PersistenciaSucursal
         Catch ex As OdbcException
             Throw ex
         Finally
-            ModuloConexion.Cerrar()
+            Conexion.Cerrar()
         End Try
     End Sub
 
@@ -37,7 +37,7 @@ Public Class PersistenciaSucursal
         Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = ModuloConexion.Conectar()
+            comando.Connection = Conexion.Abrir()
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteNonQuery
 
@@ -50,7 +50,7 @@ Public Class PersistenciaSucursal
         Catch ex As OdbcException
             Throw ex
         Finally
-            ModuloConexion.Conectar()
+            Conexion.Cerrar()
         End Try
     End Sub
 
@@ -61,7 +61,7 @@ Public Class PersistenciaSucursal
         Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = ModuloConexion.Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteNonQuery
 
@@ -76,7 +76,7 @@ Public Class PersistenciaSucursal
         Catch ex As OdbcException
             Throw ex
         Finally
-            ModuloConexion.Cerrar()
+            Conexion.Cerrar()
         End Try
     End Sub
 
@@ -87,7 +87,7 @@ Public Class PersistenciaSucursal
 
         Try
             Dim comando As New OdbcCommand
-            comando.Connection = New Conexion().Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteReader()
 
@@ -106,7 +106,7 @@ Public Class PersistenciaSucursal
         Catch ex As OdbcException
             Throw ex
         Finally
-            ModuloConexion.Cerrar()
+            'Conexion.Cerrar()
         End Try
 
         Return Nothing
@@ -119,7 +119,7 @@ Public Class PersistenciaSucursal
 
         Try
             Dim comando As New OdbcCommand
-            comando.Connection = New Conexion().Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteReader
 

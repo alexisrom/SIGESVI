@@ -89,6 +89,27 @@
     End Property
 
 
+    Private _Tipo As String
+    Public Property Tipo() As String
+        Get
+
+            If TypeOf Me Is MateriaPrima Then
+                Return "MP"
+            End If
+
+            If TypeOf Me Is ProductoIntermedio Then
+                Return "PI"
+            End If
+
+            Return "PF"
+
+        End Get
+        Set(ByVal value As String)
+            _Tipo = value
+        End Set
+    End Property
+
+
     Sub New()
 
     End Sub

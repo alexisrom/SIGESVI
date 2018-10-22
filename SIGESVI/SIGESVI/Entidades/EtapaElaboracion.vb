@@ -54,6 +54,17 @@
     End Property
 
 
+    Private _Recordatorios As List(Of Recordatorio)
+    Public Property Recordatorios() As List(Of Recordatorio)
+        Get
+            Return _Recordatorios
+        End Get
+        Set(ByVal value As List(Of Recordatorio))
+            _Recordatorios = value
+        End Set
+    End Property
+
+
     Sub New(ByVal id As Integer, ByVal numero As Integer, ByVal nombre As String, ByVal descripcion As String, ByVal duracion As Integer)
         Me.ID = id
         Me.Numero = numero
@@ -61,4 +72,10 @@
         Me.Descripcion = descripcion
         Me.Duracion = Duracion
     End Sub
+
+    Sub New()
+
+    End Sub
+
+    
 End Class

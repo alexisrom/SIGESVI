@@ -9,7 +9,7 @@ Public Class PersistenciaOrigen
         Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = ModuloConexion.Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteNonQuery
 
@@ -30,7 +30,7 @@ Public Class PersistenciaOrigen
         Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = ModuloConexion.Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim filas_afectadas = comando.ExecuteNonQuery
 
@@ -42,7 +42,7 @@ Public Class PersistenciaOrigen
         Catch ex As Exception
             Throw ex
         Finally
-            ModuloConexion.Cerrar()
+            Conexion.Cerrar()
         End Try
 
     End Sub
@@ -54,7 +54,7 @@ Public Class PersistenciaOrigen
         Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = ModuloConexion.Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim filas_afectadas = comando.ExecuteNonQuery
 
@@ -66,7 +66,7 @@ Public Class PersistenciaOrigen
         Catch ex As Exception
             Throw ex
         Finally
-            ModuloConexion.Cerrar()
+            Conexion.Cerrar()
         End Try
     End Sub
 
@@ -77,7 +77,7 @@ Public Class PersistenciaOrigen
         Dim comando As New OdbcCommand
 
         Try
-            comando.Connection = ModuloConexion.Conectar()
+            comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim resultado = comando.ExecuteReader
 
@@ -96,7 +96,7 @@ Public Class PersistenciaOrigen
         Catch ex As Exception
             Throw ex
         Finally
-            ModuloConexion.Cerrar()
+            Conexion.Cerrar()
         End Try
 
         Return origenes

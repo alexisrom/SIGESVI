@@ -25,6 +25,11 @@ Partial Class FrmPrincipal
         Me.components = New System.ComponentModel.Container
         Me.PnlContenedor = New System.Windows.Forms.Panel
         Me.PnlContenido = New System.Windows.Forms.Panel
+        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser
+        Me.Labelhumedad = New System.Windows.Forms.Label
+        Me.Label1 = New System.Windows.Forms.Label
+        Me.Labeltemp = New System.Windows.Forms.Label
+        Me.pbclima = New System.Windows.Forms.PictureBox
         Me.Panel3 = New System.Windows.Forms.Panel
         Me.Panel11 = New System.Windows.Forms.Panel
         Me.Panel10 = New System.Windows.Forms.Panel
@@ -52,16 +57,10 @@ Partial Class FrmPrincipal
         Me.BtnMinimizar = New System.Windows.Forms.PictureBox
         Me.BtnMaximizar = New System.Windows.Forms.PictureBox
         Me.BtnCerrar = New System.Windows.Forms.PictureBox
-        Me.Labelhumedad = New System.Windows.Forms.Label
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Labeltemp = New System.Windows.Forms.Label
-        Me.pbclima = New System.Windows.Forms.PictureBox
         Me.Timerclima = New System.Windows.Forms.Timer(Me.components)
-        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.TextBox1 = New System.Windows.Forms.TextBox
         Me.PnlContenedor.SuspendLayout()
         Me.PnlContenido.SuspendLayout()
+        CType(Me.pbclima, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         CType(Me.PicLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PnlCabecera.SuspendLayout()
@@ -69,7 +68,6 @@ Partial Class FrmPrincipal
         CType(Me.BtnMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BtnMaximizar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BtnCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbclima, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PnlContenedor
@@ -86,9 +84,7 @@ Partial Class FrmPrincipal
         'PnlContenido
         '
         Me.PnlContenido.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.PnlContenido.Controls.Add(Me.Button1)
         Me.PnlContenido.Controls.Add(Me.WebBrowser1)
-        Me.PnlContenido.Controls.Add(Me.TextBox1)
         Me.PnlContenido.Controls.Add(Me.Labelhumedad)
         Me.PnlContenido.Controls.Add(Me.Label1)
         Me.PnlContenido.Controls.Add(Me.Labeltemp)
@@ -98,6 +94,49 @@ Partial Class FrmPrincipal
         Me.PnlContenido.Name = "PnlContenido"
         Me.PnlContenido.Size = New System.Drawing.Size(1084, 610)
         Me.PnlContenido.TabIndex = 7
+        '
+        'WebBrowser1
+        '
+        Me.WebBrowser1.Location = New System.Drawing.Point(395, 259)
+        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.WebBrowser1.Name = "WebBrowser1"
+        Me.WebBrowser1.Size = New System.Drawing.Size(20, 20)
+        Me.WebBrowser1.TabIndex = 9
+        '
+        'Labelhumedad
+        '
+        Me.Labelhumedad.AutoSize = True
+        Me.Labelhumedad.Location = New System.Drawing.Point(736, 115)
+        Me.Labelhumedad.Name = "Labelhumedad"
+        Me.Labelhumedad.Size = New System.Drawing.Size(39, 13)
+        Me.Labelhumedad.TabIndex = 8
+        Me.Labelhumedad.Text = "Label2"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(760, 78)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(14, 13)
+        Me.Label1.TabIndex = 7
+        Me.Label1.Text = "C"
+        '
+        'Labeltemp
+        '
+        Me.Labeltemp.AutoSize = True
+        Me.Labeltemp.Location = New System.Drawing.Point(736, 91)
+        Me.Labeltemp.Name = "Labeltemp"
+        Me.Labeltemp.Size = New System.Drawing.Size(39, 13)
+        Me.Labeltemp.TabIndex = 6
+        Me.Labeltemp.Text = "Label1"
+        '
+        'pbclima
+        '
+        Me.pbclima.Location = New System.Drawing.Point(658, 42)
+        Me.pbclima.Name = "pbclima"
+        Me.pbclima.Size = New System.Drawing.Size(72, 71)
+        Me.pbclima.TabIndex = 5
+        Me.pbclima.TabStop = False
         '
         'Panel3
         '
@@ -471,67 +510,8 @@ Partial Class FrmPrincipal
         Me.BtnCerrar.TabIndex = 0
         Me.BtnCerrar.TabStop = False
         '
-        'Labelhumedad
-        '
-        Me.Labelhumedad.AutoSize = True
-        Me.Labelhumedad.Location = New System.Drawing.Point(736, 115)
-        Me.Labelhumedad.Name = "Labelhumedad"
-        Me.Labelhumedad.Size = New System.Drawing.Size(39, 13)
-        Me.Labelhumedad.TabIndex = 8
-        Me.Labelhumedad.Text = "Label2"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(760, 78)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(14, 13)
-        Me.Label1.TabIndex = 7
-        Me.Label1.Text = "C"
-        '
-        'Labeltemp
-        '
-        Me.Labeltemp.AutoSize = True
-        Me.Labeltemp.Location = New System.Drawing.Point(736, 91)
-        Me.Labeltemp.Name = "Labeltemp"
-        Me.Labeltemp.Size = New System.Drawing.Size(39, 13)
-        Me.Labeltemp.TabIndex = 6
-        Me.Labeltemp.Text = "Label1"
-        '
-        'pbclima
-        '
-        Me.pbclima.Location = New System.Drawing.Point(658, 42)
-        Me.pbclima.Name = "pbclima"
-        Me.pbclima.Size = New System.Drawing.Size(72, 71)
-        Me.pbclima.TabIndex = 5
-        Me.pbclima.TabStop = False
-        '
         'Timerclima
         '
-        '
-        'WebBrowser1
-        '
-        Me.WebBrowser1.Location = New System.Drawing.Point(395, 259)
-        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
-        Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(20, 20)
-        Me.WebBrowser1.TabIndex = 9
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(302, 50)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 10
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(406, 53)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 11
         '
         'FrmPrincipal
         '
@@ -546,6 +526,7 @@ Partial Class FrmPrincipal
         Me.PnlContenedor.ResumeLayout(False)
         Me.PnlContenido.ResumeLayout(False)
         Me.PnlContenido.PerformLayout()
+        CType(Me.pbclima, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         CType(Me.PicLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PnlCabecera.ResumeLayout(False)
@@ -553,7 +534,6 @@ Partial Class FrmPrincipal
         CType(Me.BtnMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BtnMaximizar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BtnCerrar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbclima, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -592,6 +572,4 @@ Partial Class FrmPrincipal
     Friend WithEvents pbclima As System.Windows.Forms.PictureBox
     Friend WithEvents Timerclima As System.Windows.Forms.Timer
     Friend WithEvents WebBrowser1 As System.Windows.Forms.WebBrowser
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

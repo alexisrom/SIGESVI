@@ -5,7 +5,7 @@ Public Class FrmPrincipal
     Private Sub FrmPrincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ManejoVentanas.frmPrincipal = Me
         PicLogo_Click(Nothing, e)
-
+        WebBrowser1.Navigate("https://www.google.com.uy/?gws_rd=ssl#q=clima+")
     End Sub
 
 
@@ -173,7 +173,7 @@ Public Class FrmPrincipal
         End If
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        WebBrowser1.Navigate("https://www.google.com.uy/?gws_rd=ssl#q=clima+" & TextBox1.Text)
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
     End Sub
 End Class

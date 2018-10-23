@@ -1,7 +1,7 @@
 ﻿Imports System.Runtime.InteropServices
 
 Public Class FrmPrincipal
-
+    Dim second As Integer = 0
     Private Sub FrmPrincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ManejoVentanas.frmPrincipal = Me
         PicLogo_Click(Nothing, e)
@@ -138,5 +138,42 @@ Public Class FrmPrincipal
 
     Private Sub BtnProduccion_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnProduccion.Click
         AbrirFormulario(New FrmListadoProduccion)
+    End Sub
+
+    Private Sub PnlContenido_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles PnlContenido.Paint
+
+    End Sub
+
+    Private Sub PnlCabecera_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles PnlCabecera.Paint
+
+    End Sub
+
+    Private Sub WebBrowser1_DocumentCompleted(ByVal sender As System.Object, ByVal e As System.Windows.Forms.WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
+        Timerclima.Start()
+    End Sub
+
+    Private Sub Timerclima_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timerclima.Tick
+        WebBrowser1.Visible = False
+        Try
+            Labeltemp.Text = WebBrowser1.Document.GetElementById("wob_tm").InnerText
+            Labelhumedad.Text = WebBrowser1.Document.GetElementById("wob_hm").InnerText
+            pbclima.ImageLocation = WebBrowser1.Document.GetElementById("wob_tci").GetAttribute("src")
+        Catch ex As Exception
+
+        End Try
+        second = second + 1
+
+        If second = 100 Then
+            Timerclima.Stop()
+            second = 0
+            WebBrowser1.Refresh()
+            Timerclima.Start()
+
+
+        End If
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        WebBrowser1.Navigate("https://www.google.com.uy/?gws_rd=ssl#q=clima+" & TextBox1.Text)
     End Sub
 End Class

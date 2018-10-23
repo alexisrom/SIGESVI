@@ -124,4 +124,8 @@
         Me.Categoria = categoria
     End Sub
 
+    Public Overrides Function ToString() As String
+        Return Me.Nombre
+    End Function
+
 End Class

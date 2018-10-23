@@ -51,4 +51,37 @@ Public Class PersistenciaEtapaElaboracion
 
     End Sub
 
+    Function Listar(ByVal id_eproducto As Integer) As List(Of EtapaElaboracion)
+        Dim etapas As New List(Of EtapaElaboracion)
+        Dim formato_consulta = "SELECT * FROM etapa_de_elaboracion WHERE id_eproducto = {0}"
+        Dim consulta = String.Format(formato_consulta, id_eproducto)
+        Dim comando As New OdbcCommand
+
+        Try
+            comando.Connection = Conexion.Abrir
+            comando.CommandText = consulta
+            Dim resultado = comando.ExecuteReader
+
+
+            If resultado.HasRows Then
+
+                While resultado.Read
+                    Dim etapa As New EtapaElaboracion
+                    etapa.ID = resultado("id_etapa")
+                    etapa.Numero = resultado("numero")
+                    etapa.Nombre = resultado("nombre")
+                    etapa.Duracion = resultado("duracion")
+                    'etapa.Recordatorios 
+                    etapas.Add(etapa)
+                End While
+
+            End If
+
+        Catch ex As OdbcException
+            Throw ex
+        End Try
+        Return etapas
+    End Function
+
+
 End Class

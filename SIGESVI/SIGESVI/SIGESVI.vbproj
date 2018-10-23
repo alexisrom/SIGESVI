@@ -66,6 +66,7 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entidades\Alarma.vb" />
     <Compile Include="Entidades\Almacen.vb" />
     <Compile Include="Entidades\CategoriaProducto.vb" />
     <Compile Include="Entidades\Cliente.vb" />
@@ -73,6 +74,7 @@
     <Compile Include="Entidades\EspecificacionProducto.vb" />
     <Compile Include="Entidades\EtapaElaboracion.vb" />
     <Compile Include="Entidades\EtapaProduccion.vb" />
+    <Compile Include="Entidades\EtapaRecorrida.vb" />
     <Compile Include="Entidades\Funcionario.vb" />
     <Compile Include="Entidades\LineaReserva.vb" />
     <Compile Include="Entidades\Lote.vb" />
@@ -92,6 +94,18 @@
     <Compile Include="Entidades\Traslado.vb" />
     <Compile Include="Entidades\Usuario.vb" />
     <Compile Include="Entidades\Venta.vb" />
+    <Compile Include="FrmAjustes.Designer.vb">
+      <DependentUpon>FrmAjustes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAjustes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlarmas.Designer.vb">
+      <DependentUpon>FrmAlarmas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAlarmas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmCampos.Designer.vb">
       <DependentUpon>FrmCampos.vb</DependentUpon>
     </Compile>
@@ -108,6 +122,12 @@
       <DependentUpon>FrmClientes.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCompra.Designer.vb">
+      <DependentUpon>FrmCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCompra.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmCompras.Designer.vb">
@@ -188,10 +208,22 @@
     <Compile Include="FrmTipoCepa.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmTransacciones.Designer.vb">
+      <DependentUpon>FrmTransacciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTransacciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmTraslados.Designer.vb">
       <DependentUpon>FrmTraslados.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmTraslados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTrazabilidad.Designer.vb">
+      <DependentUpon>FrmTrazabilidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTrazabilidad.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmVentas.Designer.vb">
@@ -200,10 +232,10 @@
     <Compile Include="FrmVentas.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Inicio.Designer.vb">
-      <DependentUpon>Inicio.vb</DependentUpon>
+    <Compile Include="FrmInicio.Designer.vb">
+      <DependentUpon>FrmInicio.vb</DependentUpon>
     </Compile>
-    <Compile Include="Inicio.vb">
+    <Compile Include="FrmInicio.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmListadoProductos.Designer.vb">
@@ -212,7 +244,38 @@
     <Compile Include="FrmListadoProductos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MenuAdministrativo.Designer.vb">
+      <DependentUpon>MenuAdministrativo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAdministrativo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuAsesorProfesional.Designer.vb">
+      <DependentUpon>MenuAsesorProfesional.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAsesorProfesional.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuCliente.Designer.vb">
+      <DependentUpon>MenuCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCliente.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuGerenteGeneral.Designer.vb">
+      <DependentUpon>MenuGerenteGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuGerenteGeneral.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuGerenteSucursal.Designer.vb">
+      <DependentUpon>MenuGerenteSucursal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuGerenteSucursal.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Modulos\Conexion.vb" />
+    <Compile Include="Modulos\InstanciasGlobales.vb" />
     <Compile Include="Modulos\ManejoVentanas.vb" />
     <Compile Include="Modulos\Utilidades.vb" />
     <Compile Include="Modulos\Validacion.vb" />
@@ -232,6 +295,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Persistencia\PersistenciaCliente.vb" />
+    <Compile Include="Persistencia\PersistenciaCompra.vb" />
     <Compile Include="Persistencia\PersistenciaEspecificacionProducto.vb" />
     <Compile Include="Persistencia\PersistenciaEtapaElaboracion.vb" />
     <Compile Include="Persistencia\PersistenciaFuncionario.vb" />
@@ -244,9 +308,19 @@
     <Compile Include="Persistencia\PersistenciaSucursal.vb" />
     <Compile Include="Persistencia\PersistenciaTipoCepa.vb" />
     <Compile Include="Persistencia\PersistenciaTransporte.vb" />
-    <Compile Include="Persistencia\PersistenciaUsuario.vb" />
+    <Compile Include="Persistencia\PersistenciaTrazabilidad.vb" />
+    <Compile Include="Persistencia\PersistenciaTransaccion.vb" />
+    <Compile Include="Trazabilidad.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmAjustes.resx">
+      <DependentUpon>FrmAjustes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAlarmas.resx">
+      <DependentUpon>FrmAlarmas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCampos.resx">
       <DependentUpon>FrmCampos.vb</DependentUpon>
       <SubType>Designer</SubType>
@@ -257,6 +331,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmClientes.resx">
       <DependentUpon>FrmClientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCompra.resx">
+      <DependentUpon>FrmCompra.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCompras.resx">
@@ -311,20 +389,48 @@
       <DependentUpon>FrmTipoCepa.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransacciones.resx">
+      <DependentUpon>FrmTransacciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmTraslados.resx">
       <DependentUpon>FrmTraslados.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTrazabilidad.resx">
+      <DependentUpon>FrmTrazabilidad.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVentas.resx">
       <DependentUpon>FrmVentas.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inicio.resx">
-      <DependentUpon>Inicio.vb</DependentUpon>
+    <EmbeddedResource Include="FrmInicio.resx">
+      <DependentUpon>FrmInicio.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoProductos.resx">
       <DependentUpon>FrmListadoProductos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAdministrativo.resx">
+      <DependentUpon>MenuAdministrativo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAsesorProfesional.resx">
+      <DependentUpon>MenuAsesorProfesional.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCliente.resx">
+      <DependentUpon>MenuCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuGerenteGeneral.resx">
+      <DependentUpon>MenuGerenteGeneral.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuGerenteSucursal.resx">
+      <DependentUpon>MenuGerenteSucursal.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -398,6 +504,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\gears.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cepa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\field.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\traslados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmaurvhz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\devinos-foto774.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enoturismo-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\851472.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar-chart.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,7 +1,5 @@
 ﻿Public Class FrmListadoProductos
 
-
-
     Private Sub BtnEditar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnEditar.Click
 
         If DgvProductos.SelectedRows.Count > 0 Then
@@ -18,7 +16,7 @@
                 frm = New FrmProductoFinal
                 frm.productoFinal = CType(ep, ProductoFinal)
             End If
-            AbrirFormulario(frm)
+            AbrirFormulario(frm, Nothing)
 
         End If
 
@@ -48,15 +46,15 @@
 
 
     Private Sub BtnNuevoPF_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnNuevoPF.Click
-        AbrirFormulario(New FrmProductoFinal)
+        AbrirFormulario(FrmProductoFinal, sender)
     End Sub
 
     Private Sub BtnNuevoMP_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnNuevoMP.Click
-        AbrirFormulario(New FrmMateriaPrima)
+        AbrirFormulario(FrmMateriaPrima, sender)
     End Sub
 
     Private Sub BtnNuevoPI_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnNuevoPI.Click
-        AbrirFormulario(New FrmProductoIntermedio)
+        AbrirFormulario(FrmProductoIntermedio, sender)
     End Sub
 
     Private Sub BtnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnEliminar.Click
@@ -70,6 +68,17 @@
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
+
+    End Sub
+
+    Private Sub DgvProductos_CellContentDoubleClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DgvProductos.CellContentDoubleClick
+        
+
+        If TypeOf Owner Is FrmCompra Then
+            Dim producto_seleccionado = CType(DgvProductos.SelectedRows(0).DataBoundItem, EspecificacionProducto)
+            CType(Owner, FrmCompra).productos.Add(producto_seleccionado)
+            Me.Close()
+        End If
 
     End Sub
 End Class

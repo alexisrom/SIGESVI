@@ -60,7 +60,7 @@
                 persistencia.Modificar(p)
                 MessageBox.Show("Producción modificada exitosamente")
             End If
-            AbrirFormulario(New FrmListadoProduccion)
+            AbrirFormulario(FrmListadoProduccion, Nothing)
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
@@ -69,7 +69,7 @@
 
 
     Private Sub BtnVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnVolver.Click
-        AbrirFormulario(New FrmListadoProduccion)
+        AbrirFormulario(FrmListadoProduccion)
     End Sub
 
 End Class

@@ -59,9 +59,6 @@
 
     End Function
 
-    Private Function BuscarCampos()
-
-    End Function
 
 
     Private Sub CampoNumerico_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs)

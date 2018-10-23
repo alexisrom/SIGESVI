@@ -1,23 +1,23 @@
 ﻿Public Class Transaccion
 
-    Private _ID As Integer
-    Public Property ID() As Integer
+    Private _Fecha As Date
+    Public Property Fecha() As Date
         Get
-            Return _ID
+            Return _Fecha
         End Get
-        Set(ByVal value As Integer)
-            _ID = value
+        Set(ByVal value As Date)
+            _Fecha = value
         End Set
     End Property
 
 
-    Private _FechaHora As Date
-    Public Property FechaHora() As Date
+    Private Productos As List(Of EspecificacionProducto)
+    Public Property NewProperty() As List(Of EspecificacionProducto)
         Get
-            Return _FechaHora
+            Return Productos
         End Get
-        Set(ByVal value As Date)
-            _FechaHora = value
+        Set(ByVal value As List(Of EspecificacionProducto))
+            Productos = value
         End Set
     End Property
 

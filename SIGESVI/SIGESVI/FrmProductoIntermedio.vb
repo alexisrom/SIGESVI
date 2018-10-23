@@ -60,7 +60,7 @@
                 MessageBox.Show("Producto modificado exitosamente")
             End If
 
-            AbrirFormulario(New FrmListadoProductos)
+            AbrirFormulario(New FrmListadoProductos, Nothing)
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try

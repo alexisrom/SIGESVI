@@ -36,6 +36,11 @@ Partial Class FrmProductoFinal
         Me.Label7 = New System.Windows.Forms.Label
         Me.BtnSeleccionarFoto = New System.Windows.Forms.Button
         Me.DgvEtapas = New System.Windows.Forms.DataGridView
+        Me.Numero = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.Descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.Duracion = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.Label8 = New System.Windows.Forms.Label
         Me.CboCrianza = New System.Windows.Forms.ComboBox
         Me.Label9 = New System.Windows.Forms.Label
@@ -46,11 +51,6 @@ Partial Class FrmProductoFinal
         Me.Label10 = New System.Windows.Forms.Label
         Me.BtnVolver = New System.Windows.Forms.PictureBox
         Me.PicFoto = New System.Windows.Forms.PictureBox
-        Me.Numero = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Duracion = New System.Windows.Forms.DataGridViewTextBoxColumn
         CType(Me.DgvEtapas, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BtnVolver, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PicFoto, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -207,15 +207,51 @@ Partial Class FrmProductoFinal
         Me.DgvEtapas.Size = New System.Drawing.Size(328, 215)
         Me.DgvEtapas.TabIndex = 18
         '
+        'Numero
+        '
+        Me.Numero.DataPropertyName = "Numero"
+        Me.Numero.HeaderText = "NRO"
+        Me.Numero.Name = "Numero"
+        Me.Numero.ReadOnly = True
+        '
+        'ID
+        '
+        Me.ID.DataPropertyName = "ID"
+        Me.ID.HeaderText = "ID"
+        Me.ID.Name = "ID"
+        Me.ID.ReadOnly = True
+        Me.ID.Visible = False
+        '
+        'Nombre
+        '
+        Me.Nombre.DataPropertyName = "Nombre"
+        Me.Nombre.HeaderText = "Nombre"
+        Me.Nombre.Name = "Nombre"
+        Me.Nombre.ReadOnly = True
+        '
+        'Descripcion
+        '
+        Me.Descripcion.DataPropertyName = "Descripcion"
+        Me.Descripcion.HeaderText = "Descripcion"
+        Me.Descripcion.Name = "Descripcion"
+        Me.Descripcion.ReadOnly = True
+        '
+        'Duracion
+        '
+        Me.Duracion.DataPropertyName = "Duracion"
+        Me.Duracion.HeaderText = "Duración"
+        Me.Duracion.Name = "Duracion"
+        Me.Duracion.ReadOnly = True
+        '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Segoe UI", 11.0!)
         Me.Label8.Location = New System.Drawing.Point(108, 332)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(71, 20)
+        Me.Label8.Size = New System.Drawing.Size(53, 20)
         Me.Label8.TabIndex = 20
-        Me.Label8.Text = "CRIANZA"
+        Me.Label8.Text = "ROBLE"
         '
         'CboCrianza
         '
@@ -224,7 +260,7 @@ Partial Class FrmProductoFinal
         Me.CboCrianza.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CboCrianza.Font = New System.Drawing.Font("Segoe UI", 11.0!)
         Me.CboCrianza.FormattingEnabled = True
-        Me.CboCrianza.Items.AddRange(New Object() {"Roble Americano", "Roble Frances"})
+        Me.CboCrianza.Items.AddRange(New Object() {"Americano", "Frances"})
         Me.CboCrianza.Location = New System.Drawing.Point(195, 324)
         Me.CboCrianza.Name = "CboCrianza"
         Me.CboCrianza.Size = New System.Drawing.Size(237, 28)
@@ -324,42 +360,6 @@ Partial Class FrmProductoFinal
         Me.PicFoto.Size = New System.Drawing.Size(100, 100)
         Me.PicFoto.TabIndex = 16
         Me.PicFoto.TabStop = False
-        '
-        'Numero
-        '
-        Me.Numero.DataPropertyName = "Numero"
-        Me.Numero.HeaderText = "NRO"
-        Me.Numero.Name = "Numero"
-        Me.Numero.ReadOnly = True
-        '
-        'ID
-        '
-        Me.ID.DataPropertyName = "ID"
-        Me.ID.HeaderText = "ID"
-        Me.ID.Name = "ID"
-        Me.ID.ReadOnly = True
-        Me.ID.Visible = False
-        '
-        'Nombre
-        '
-        Me.Nombre.DataPropertyName = "Nombre"
-        Me.Nombre.HeaderText = "Nombre"
-        Me.Nombre.Name = "Nombre"
-        Me.Nombre.ReadOnly = True
-        '
-        'Descripcion
-        '
-        Me.Descripcion.DataPropertyName = "Descripcion"
-        Me.Descripcion.HeaderText = "Descripcion"
-        Me.Descripcion.Name = "Descripcion"
-        Me.Descripcion.ReadOnly = True
-        '
-        'Duracion
-        '
-        Me.Duracion.DataPropertyName = "Duracion"
-        Me.Duracion.HeaderText = "Duración"
-        Me.Duracion.Name = "Duracion"
-        Me.Duracion.ReadOnly = True
         '
         'FrmProductoFinal
         '

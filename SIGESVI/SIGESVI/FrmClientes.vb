@@ -19,7 +19,7 @@
     Private Sub BtnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnGuardar.Click
         If ValidarCampos(Me) Then
             Dim c As New Cliente()
-            c.CI = CInt(TxtID_NUM_REQ.Text)
+            c.ID = CInt(TxtID_NUM_REQ.Text)
             c.Nombre = TxtNombre_REQ.Text
             c.Direccion = TxtDireccion_REQ.Text
             'f.Usuario = TxtUser_REQ.Text
@@ -48,7 +48,7 @@
         If DgvClientes.SelectedRows.Count > 0 Then
             Dim cliente = CType(DgvClientes.SelectedRows(0).DataBoundItem, Cliente)
             TxtID_NUM_REQ.Enabled = False
-            TxtID_NUM_REQ.Text = cliente.CI
+            TxtID_NUM_REQ.Text = cliente.ID
             TxtNombre_REQ.Text = cliente.Nombre
             TxtDireccion_REQ.Text = cliente.Direccion
             TxtTelefono_NUM_REQ.Text = cliente.Telefono

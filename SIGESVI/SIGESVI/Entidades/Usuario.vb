@@ -1,12 +1,23 @@
 ﻿Public Class Usuario
 
     Private _Cedula As Integer
-    Public Property Cedula() As Integer
+    Public Property ID() As Integer
         Get
             Return _Cedula
         End Get
         Set(ByVal value As Integer)
             _Cedula = value
+        End Set
+    End Property
+
+
+    Private _Nombre As String
+    Public Property Nombre() As String
+        Get
+            Return _Nombre
+        End Get
+        Set(ByVal value As String)
+            _Nombre = value
         End Set
     End Property
 
@@ -21,18 +32,6 @@
         End Set
     End Property
 
-
-    Private _FechaNacimiento As Date
-    Public Property FechaNacimiento() As Date
-        Get
-            Return _FechaNacimiento
-        End Get
-        Set(ByVal value As Date)
-            _FechaNacimiento = value
-        End Set
-    End Property
-
-
     Private _Direccion As String
     Public Property Direccion() As String
         Get
@@ -44,13 +43,13 @@
     End Property
 
 
-    Private _Cargo As String
-    Public Property Cargo() As String
+    Private _Rol As String
+    Public Property Rol() As String
         Get
-            Return _Cargo
+            Return _Rol
         End Get
         Set(ByVal value As String)
-            _Cargo = value
+            _Rol = value
         End Set
     End Property
 
@@ -77,16 +76,38 @@
     End Property
 
 
-    Private _Sucursal As Sucursal
-    Public Property Sucursal() As Sucursal
+    Private _Telefono As String
+    Public Property Telefono() As String
         Get
-            Return _Sucursal
+            Return _Telefono
         End Get
-        Set(ByVal value As Sucursal)
-            _Sucursal = value
+        Set(ByVal value As String)
+            _Telefono = value
         End Set
     End Property
 
 
+    Function EsGerenteGeneral() As Boolean
+        Return _Rol.Equals("Gerente General")
+    End Function
 
+    Function EsGerenteSucursal() As Boolean
+        Return _Rol.Equals("Gerente Sucursal")
+    End Function
+
+    Function EsAdministrativo() As Boolean
+        Return _Rol.Equals("Administrativo")
+    End Function
+
+    Function EsAsesorProfesional() As Boolean
+        Return _Rol.Equals("Asesor Profesional")
+    End Function
+
+    Function EsEnologo() As Boolean
+        Return _Rol.Equals("Enologo")
+    End Function
+
+    Function EsCliente() As Boolean
+        Return _Rol.Equals("Cliente")
+    End Function
 End Class

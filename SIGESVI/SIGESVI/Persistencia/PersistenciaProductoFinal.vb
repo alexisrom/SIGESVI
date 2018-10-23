@@ -90,6 +90,7 @@ Public Class PersistenciaProductoFinal
                     p.Categoria = resultado("categoria")
                     p.Crianza = resultado("crianza")
                     p.Embotellamiento = resultado("embotellamiento")
+                    p.Elaboracion = New PersistenciaEtapaElaboracion().Listar(p.ID)
                     productos.Add(p)
                 End While
             End If

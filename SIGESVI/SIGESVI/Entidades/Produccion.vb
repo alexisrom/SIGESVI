@@ -70,5 +70,15 @@
 
 
 
+    Private _EtapasRecorridas As List(Of EtapaRecorrida)
+    Public Property EtapasRecorridas() As List(Of EtapaRecorrida)
+        Get
+            Return _EtapasRecorridas
+        End Get
+        Set(ByVal value As List(Of EtapaRecorrida))
+            _EtapasRecorridas = value
+        End Set
+    End Property
+
 
 End Class

@@ -24,15 +24,15 @@
         If DgvFuncionarios.SelectedRows.Count > 0 Then
             Dim funcionario = CType(DgvFuncionarios.SelectedRows(0).DataBoundItem, Funcionario)
             TxtID_NUM_REQ.Enabled = False
-            TxtID_NUM_REQ.Text = funcionario.Cedula
-            TxtNombre_REQ.Text = funcionario.Nombre
-            TxtApellido_REQ.Text = funcionario.Apellido
+            TxtID_NUM_REQ.Text = funcionario.ID
+            TxtNombre_LET_REQ.Text = funcionario.Nombre
+            TxtApellido_LET_REQ.Text = funcionario.Apellido
             TxtDireccion_REQ.Text = funcionario.Direccion
-            TxtPass_REQ.Text = funcionario.Contrasena
-            TxtUser_REQ.Text = funcionario.Usuario
+            TxtPass_REQ.Text = funcionario.Password
+            TxtUser_REQ.Text = funcionario.Username
             CboSucursales_REQ.SelectedValue = funcionario.Sucursal.ID
             For Each item In CboCargo_REQ.Items
-                If item.ToString().Equals(funcionario.Cargo) Then
+                If item.ToString().Equals(funcionario.Rol) Then
                     CboCargo_REQ.SelectedIndex = CboCargo_REQ.Items.IndexOf(item)
                 End If
             Next
@@ -53,13 +53,13 @@
 
         If ValidarCampos(Me) Then
             Dim f As New Funcionario()
-            f.Cedula = CInt(TxtID_NUM_REQ.Text)
-            f.Nombre = TxtNombre_REQ.Text
-            f.Apellido = TxtApellido_REQ.Text
+            f.ID = CInt(TxtID_NUM_REQ.Text)
+            f.Nombre = TxtNombre_LET_REQ.Text
+            f.Apellido = TxtApellido_LET_REQ.Text
             f.Direccion = TxtDireccion_REQ.Text
-            f.Usuario = TxtUser_REQ.Text
-            f.Contrasena = TxtPass_REQ.Text
-            f.Cargo = CboCargo_REQ.SelectedItem.ToString
+            f.Username = TxtUser_REQ.Text
+            f.Password = TxtPass_REQ.Text
+            f.Rol = CboCargo_REQ.SelectedItem.ToString
             f.Sucursal = CType(CboSucursales_REQ.SelectedItem, Sucursal)
             Guardar(f)
         End If

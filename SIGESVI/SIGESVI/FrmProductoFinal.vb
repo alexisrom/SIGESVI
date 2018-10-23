@@ -4,10 +4,10 @@
     Public etapasDeElaboracion As List(Of EtapaElaboracion)
 
     Private Sub PicVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnVolver.Click
-        AbrirFormulario(New FrmListadoProductos)
+        AbrirFormulario(FrmListadoProductos, Nothing)
     End Sub
 
-    
+
     Private Sub FrmProductoFinal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         persistencia = New PersistenciaProductoFinal()
         etapasDeElaboracion = New List(Of EtapaElaboracion)
@@ -17,9 +17,10 @@
 
     Private Sub ControlesPorDefecto()
         LimpiarControles(Me)
-        TxtID.Text = "0"
 
-        If Not productoFinal Is Nothing Then
+        If productoFinal Is Nothing Then
+            TxtID.Text = "0"
+        Else
             TxtID.Text = productoFinal.ID
             TxtNombre_REQ.Text = productoFinal.Nombre
             TxtDescripcion_REQ.Text = productoFinal.Descripcion
@@ -39,6 +40,7 @@
                     CboEmbotellamiento.SelectedItem = item
                 End If
             Next
+            DgvEtapas.DataSource = productoFinal.Elaboracion
         End If
 
     End Sub
@@ -79,7 +81,7 @@
                 MessageBox.Show("Producto modificado exitosamente")
             End If
 
-            AbrirFormulario(New FrmListadoProductos)
+            AbrirFormulario(FrmListadoProductos, Nothing)
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try

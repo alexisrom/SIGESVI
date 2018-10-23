@@ -14,7 +14,7 @@
             Dim frm As New FrmProduccion
             Dim produccion_seleccionada = CType(DgvProduccion.SelectedRows(0).DataBoundItem, Produccion)
             frm.produccion = produccion_seleccionada
-            AbrirFormulario(frm)
+            AbrirFormulario(frm, Nothing)
         End If
 
     End Sub
@@ -27,7 +27,7 @@
                 Dim persistencia As New PersistenciaProduccion
                 'confirmación
                 Dim result As Integer = MessageBox.Show("¿Seguro que desea eliminar la producción seleccionada?", "Eliminar Producción", MessageBoxButtons.YesNoCancel)
-                
+
                 If result = DialogResult.Yes Then
                     persistencia.Eliminar(produccion_seleccionada)
                     FrmListadoProduccion_Load(Nothing, e)
@@ -36,6 +36,19 @@
             Catch ex As Exception
                 MessageBox.Show("Producción eliminada exitosamente")
             End Try
+        End If
+
+    End Sub
+
+
+    Private Sub BtnTrazabilidad_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnTrazabilidad.Click
+
+        If DgvProduccion.SelectedRows.Count > 0 Then
+            Dim produccion_seleccionada = CType(DgvProduccion.SelectedRows(0).DataBoundItem, Produccion)
+            produccion_seleccionada.EtapasRecorridas = New PersistenciaProduccion().ObtenerTrazabilidad(produccion_seleccionada)
+            Dim frm As New FrmTrazabilidad
+            frm.produccion = produccion_seleccionada
+            AbrirFormulario(frm, Nothing)
         End If
 
     End Sub

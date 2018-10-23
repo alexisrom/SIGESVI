@@ -33,7 +33,7 @@ Partial Class FrmFuncionarios
         Me.Label10 = New System.Windows.Forms.Label
         Me.TxtUser_REQ = New System.Windows.Forms.TextBox
         Me.Label9 = New System.Windows.Forms.Label
-        Me.TxtApellido_REQ = New System.Windows.Forms.TextBox
+        Me.TxtApellido_LET_REQ = New System.Windows.Forms.TextBox
         Me.Label8 = New System.Windows.Forms.Label
         Me.CboCargo_REQ = New System.Windows.Forms.ComboBox
         Me.BtnGuardar = New System.Windows.Forms.Button
@@ -47,12 +47,12 @@ Partial Class FrmFuncionarios
         Me.TxtID_NUM_REQ = New System.Windows.Forms.TextBox
         Me.Label5 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
-        Me.TxtNombre_REQ = New System.Windows.Forms.TextBox
+        Me.TxtNombre_LET_REQ = New System.Windows.Forms.TextBox
         Me.Panel2 = New System.Windows.Forms.Panel
+        Me.DgvFuncionarios = New System.Windows.Forms.DataGridView
         Me.Label3 = New System.Windows.Forms.Label
         Me.BtnEliminar = New System.Windows.Forms.Button
         Me.BtnEditar = New System.Windows.Forms.Button
-        Me.DgvFuncionarios = New System.Windows.Forms.DataGridView
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.DgvFuncionarios, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -67,7 +67,7 @@ Partial Class FrmFuncionarios
         Me.Panel1.Controls.Add(Me.Label10)
         Me.Panel1.Controls.Add(Me.TxtUser_REQ)
         Me.Panel1.Controls.Add(Me.Label9)
-        Me.Panel1.Controls.Add(Me.TxtApellido_REQ)
+        Me.Panel1.Controls.Add(Me.TxtApellido_LET_REQ)
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.CboCargo_REQ)
         Me.Panel1.Controls.Add(Me.BtnGuardar)
@@ -81,7 +81,7 @@ Partial Class FrmFuncionarios
         Me.Panel1.Controls.Add(Me.TxtID_NUM_REQ)
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.TxtNombre_REQ)
+        Me.Panel1.Controls.Add(Me.TxtNombre_LET_REQ)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
         Me.Panel1.Location = New System.Drawing.Point(647, 0)
         Me.Panel1.Name = "Panel1"
@@ -157,13 +157,13 @@ Partial Class FrmFuncionarios
         Me.Label9.TabIndex = 42
         Me.Label9.Text = "APELLIDO"
         '
-        'TxtApellido_REQ
+        'TxtApellido_LET_REQ
         '
-        Me.TxtApellido_REQ.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.TxtApellido_REQ.Location = New System.Drawing.Point(160, 164)
-        Me.TxtApellido_REQ.Name = "TxtApellido_REQ"
-        Me.TxtApellido_REQ.Size = New System.Drawing.Size(237, 27)
-        Me.TxtApellido_REQ.TabIndex = 41
+        Me.TxtApellido_LET_REQ.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.TxtApellido_LET_REQ.Location = New System.Drawing.Point(160, 164)
+        Me.TxtApellido_LET_REQ.Name = "TxtApellido_LET_REQ"
+        Me.TxtApellido_LET_REQ.Size = New System.Drawing.Size(237, 27)
+        Me.TxtApellido_LET_REQ.TabIndex = 41
         '
         'Label8
         '
@@ -301,13 +301,13 @@ Partial Class FrmFuncionarios
         Me.Label1.TabIndex = 13
         Me.Label1.Text = "NOMBRE"
         '
-        'TxtNombre_REQ
+        'TxtNombre_LET_REQ
         '
-        Me.TxtNombre_REQ.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.TxtNombre_REQ.Location = New System.Drawing.Point(160, 123)
-        Me.TxtNombre_REQ.Name = "TxtNombre_REQ"
-        Me.TxtNombre_REQ.Size = New System.Drawing.Size(237, 27)
-        Me.TxtNombre_REQ.TabIndex = 12
+        Me.TxtNombre_LET_REQ.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.TxtNombre_LET_REQ.Location = New System.Drawing.Point(160, 123)
+        Me.TxtNombre_LET_REQ.Name = "TxtNombre_LET_REQ"
+        Me.TxtNombre_LET_REQ.Size = New System.Drawing.Size(237, 27)
+        Me.TxtNombre_LET_REQ.TabIndex = 12
         '
         'Panel2
         '
@@ -321,48 +321,6 @@ Partial Class FrmFuncionarios
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(647, 610)
         Me.Panel2.TabIndex = 3
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 16.0!)
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(254, 21)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(134, 30)
-        Me.Label3.TabIndex = 31
-        Me.Label3.Text = "Funcionarios"
-        '
-        'BtnEliminar
-        '
-        Me.BtnEliminar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
-        Me.BtnEliminar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnEliminar.FlatAppearance.BorderSize = 0
-        Me.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEliminar.ForeColor = System.Drawing.Color.White
-        Me.BtnEliminar.Location = New System.Drawing.Point(432, 462)
-        Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(131, 28)
-        Me.BtnEliminar.TabIndex = 30
-        Me.BtnEliminar.Text = "ELIMINAR FUNCIONARIO"
-        Me.BtnEliminar.UseVisualStyleBackColor = False
-        '
-        'BtnEditar
-        '
-        Me.BtnEditar.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
-        Me.BtnEditar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnEditar.FlatAppearance.BorderSize = 0
-        Me.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEditar.ForeColor = System.Drawing.Color.White
-        Me.BtnEditar.Location = New System.Drawing.Point(83, 462)
-        Me.BtnEditar.Name = "BtnEditar"
-        Me.BtnEditar.Size = New System.Drawing.Size(122, 28)
-        Me.BtnEditar.TabIndex = 29
-        Me.BtnEditar.Text = "EDITAR FUNCIONARIO"
-        Me.BtnEditar.UseVisualStyleBackColor = False
         '
         'DgvFuncionarios
         '
@@ -415,6 +373,48 @@ Partial Class FrmFuncionarios
         Me.DgvFuncionarios.Size = New System.Drawing.Size(480, 362)
         Me.DgvFuncionarios.TabIndex = 32
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 16.0!)
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(212, 21)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(170, 30)
+        Me.Label3.TabIndex = 31
+        Me.Label3.Text = "FUNCIONARIOS"
+        '
+        'BtnEliminar
+        '
+        Me.BtnEliminar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.BtnEliminar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnEliminar.FlatAppearance.BorderSize = 0
+        Me.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEliminar.ForeColor = System.Drawing.Color.White
+        Me.BtnEliminar.Location = New System.Drawing.Point(432, 462)
+        Me.BtnEliminar.Name = "BtnEliminar"
+        Me.BtnEliminar.Size = New System.Drawing.Size(131, 28)
+        Me.BtnEliminar.TabIndex = 30
+        Me.BtnEliminar.Text = "ELIMINAR FUNCIONARIO"
+        Me.BtnEliminar.UseVisualStyleBackColor = False
+        '
+        'BtnEditar
+        '
+        Me.BtnEditar.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.BtnEditar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnEditar.FlatAppearance.BorderSize = 0
+        Me.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEditar.ForeColor = System.Drawing.Color.White
+        Me.BtnEditar.Location = New System.Drawing.Point(83, 462)
+        Me.BtnEditar.Name = "BtnEditar"
+        Me.BtnEditar.Size = New System.Drawing.Size(122, 28)
+        Me.BtnEditar.TabIndex = 29
+        Me.BtnEditar.Text = "EDITAR FUNCIONARIO"
+        Me.BtnEditar.UseVisualStyleBackColor = False
+        '
         'FrmFuncionarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -445,13 +445,13 @@ Partial Class FrmFuncionarios
     Friend WithEvents TxtID_NUM_REQ As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TxtNombre_REQ As System.Windows.Forms.TextBox
+    Friend WithEvents TxtNombre_LET_REQ As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents CboCargo_REQ As System.Windows.Forms.ComboBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents TxtUser_REQ As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents TxtApellido_REQ As System.Windows.Forms.TextBox
+    Friend WithEvents TxtApellido_LET_REQ As System.Windows.Forms.TextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents CboSucursales_REQ As System.Windows.Forms.ComboBox
     Friend WithEvents Panel2 As System.Windows.Forms.Panel

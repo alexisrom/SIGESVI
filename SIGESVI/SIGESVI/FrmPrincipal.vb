@@ -4,29 +4,23 @@ Public Class FrmPrincipal
 
     Private Sub FrmPrincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ManejoVentanas.frmPrincipal = Me
-        PicLogo_Click(Nothing, e)
-
-    End Sub
 
 
-    Private Sub BtnGestionProductos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnProductos.Click
-        AbrirFormulario(New FrmListadoProductos)
-    End Sub
+        If usuarioLogueado.EsGerenteGeneral Then
+            PnlMenuContenedor.Controls.Add(New MenuGerenteGeneral)
+        ElseIf usuarioLogueado.EsGerenteSucursal Then
+            PnlMenuContenedor.Controls.Add(New MenuGerenteSucursal)
+        ElseIf usuarioLogueado.EsAdministrativo Then
+            PnlMenuContenedor.Controls.Add(New MenuAdministrativo)
+        ElseIf usuarioLogueado.EsAsesorProfesional Then
+            'PnlMenuContenedor.Controls.Add(New MenuAsesorProfesional)
+            PnlMenuContenedor.Controls.Add(New MenuCliente)
+        ElseIf usuarioLogueado.EsEnologo Then
+            PnlMenuContenedor.Controls.Add(New MenuAsesorProfesional)
+        Else
+            PnlMenuContenedor.Controls.Add(New MenuCliente)
+        End If
 
-    Private Sub PicLogo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PicLogo.Click
-        AbrirFormulario(New Inicio)
-    End Sub
-
-    Private Sub BtnCerrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnCerrar.Click
-        Application.Exit()
-    End Sub
-
-    Private Sub BtnMinimizar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnMinimizar.Click
-        Me.WindowState = FormWindowState.Minimized
-    End Sub
-
-    Private Sub BtnSucursales_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnSucursales.Click
-        AbrirFormulario(New FrmSucursales)
     End Sub
 
 #Region "Comportamiento de ventana"
@@ -112,31 +106,7 @@ Public Class FrmPrincipal
 
 #End Region
 
-    Private Sub BtnProductos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        AbrirFormulario(New FrmListadoProductos)
-    End Sub
-
-    Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
-        AbrirFormulario(New FrmFuncionarios)
-    End Sub
-
-    Private Sub BtnCliente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnCliente.Click
-        AbrirFormulario(New FrmClientes)
-    End Sub
-
-    Private Sub BtnCepas_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnCepas.Click
-        AbrirFormulario(New FrmTipoCepa)
-    End Sub
-
-    Private Sub BtnCampos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnCampos.Click
-        AbrirFormulario(New FrmCampos)
-    End Sub
-
-    Private Sub BtnLotes_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnLotes.Click
-        AbrirFormulario(New FrmLotes)
-    End Sub
-
-    Private Sub BtnProduccion_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnProduccion.Click
-        AbrirFormulario(New FrmListadoProduccion)
+    Private Sub BtnCerrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnCerrar.Click
+        Application.Exit()
     End Sub
 End Class

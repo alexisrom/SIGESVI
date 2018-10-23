@@ -17,6 +17,17 @@ Public Class PersistenciaProduccion
                 Throw New Exception("No se pudo agregar la producción")
             End If
 
+            'obtener id generado
+            comando.CommandText = "SELECT id_produccion FROM produccion ORDER BY id_produccion DESC LIMIT 1"
+            Dim resp = comando.ExecuteReader()
+            resp.Read()
+            produccion.ID = resp("id_produccion")
+
+            For Each e In produccion.Producto.Elaboracion
+                formato_consulta = "INSERT INTO recorre(id_produccion, id_etapa, fecha_inico, fecha_fin, etapa_actual )"
+
+            Next
+
         Catch ex As Exception
             Throw ex
         Finally
@@ -99,4 +110,38 @@ Public Class PersistenciaProduccion
         Return produccion
     End Function
 
+    Function ObtenerTrazabilidad(ByVal produccion As Produccion) As List(Of EtapaRecorrida)
+        Dim trazabilidad As New List(Of EtapaRecorrida)
+        Dim consulta = "SELECT r.*, e.* FROM produccion p, recorre r, etapa_de_elaboracion e WHERE p.id_produccion = r.id_produccion AND r.id_etapa = e.id_etapa AND activo = 't'"
+
+        Try
+            Dim comando As New OdbcCommand
+            comando.Connection = Conexion.Abrir
+            comando.CommandText = consulta
+            Dim resultado = comando.ExecuteReader
+
+            If resultado.HasRows Then
+
+                While resultado.Read()
+                    Dim er As New EtapaRecorrida
+                    er.Etapa = New EtapaElaboracion
+                    er.Etapa.ID = resultado("id_etapa")
+                    er.Etapa.Numero = resultado("numero")
+                    er.Etapa.Nombre = resultado("nombre")
+                    er.Etapa.Duracion = resultado("duracion")
+                    'etapaRecorrida.Etapa.Recordatorios = resultado("id_etapa")
+                    er.FechaInicio = resultado("fecha_inicio")
+                    er.FechaFin = resultado("fecha_fin")
+                    'etapaRecorrida.Observacion = resultado("observacion")
+                    trazabilidad.Add(er)
+                End While
+            End If
+
+        Catch ex As OdbcException
+            Throw ex
+        Finally
+            Conexion.Cerrar()
+        End Try
+        Return trazabilidad
+    End Function
 End Class

@@ -4,7 +4,7 @@ Public Class PersistenciaCliente
 
     Public Sub Agregar(ByVal cliente As Cliente)
         Dim formato_consulta = "INSERT INTO cliente (id_cliente, nombre, direccion, telefono) VALUES ({0}, '{1}', '{2}', '{3}')"
-        Dim consulta = String.Format(formato_consulta, cliente.CI, cliente.Nombre, cliente.Direccion, cliente.Telefono)
+        Dim consulta = String.Format(formato_consulta, cliente.ID, cliente.Nombre, cliente.Direccion, cliente.Telefono)
 
         Dim comando As New OdbcCommand
 
@@ -26,7 +26,7 @@ Public Class PersistenciaCliente
 
     Public Sub Modificar(ByVal cliente As Cliente)
         Dim formato_consulta = "UPDATE cliente SET nombre = '{0}', direccion = '{1}', telefono = '{2}' WHERE id_cliente = {3}"
-        Dim consulta = String.Format(formato_consulta, cliente.Nombre, cliente.Direccion, cliente.Telefono, cliente.CI)
+        Dim consulta = String.Format(formato_consulta, cliente.Nombre, cliente.Direccion, cliente.Telefono, cliente.ID)
 
         Dim comando As New OdbcCommand
 
@@ -49,7 +49,7 @@ Public Class PersistenciaCliente
 
     Public Sub Eliminar(ByVal cliente As Cliente)
         Dim formato_consulta = "UPDATE cliente SET activo = 'f' WHERE id_cliente = {0}"
-        Dim consulta = String.Format(formato_consulta, cliente.CI)
+        Dim consulta = String.Format(formato_consulta, cliente.ID)
 
         Dim comando As New OdbcCommand
 
@@ -86,7 +86,7 @@ Public Class PersistenciaCliente
             If resultado.HasRows Then
                 While resultado.Read()
                     Dim cliente As New Cliente()
-                    cliente.CI = resultado("id_cliente")
+                    cliente.ID = resultado("id_cliente")
                     cliente.Nombre = resultado("nombre")
                     cliente.Direccion = resultado("direccion")
                     cliente.Telefono = resultado("telefono")

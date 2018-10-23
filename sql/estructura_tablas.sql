@@ -73,7 +73,7 @@ CREATE TABLE etapa_de_elaboracion
     id_sucursal INTEGER NOT NULL,
     id_eproducto INTEGER NOT NULL,
     fecha_inicio DATE NOT NULL,
-    fecha_fin DATE NOT NULL,
+    fecha_fin DATE NOT NULL, -- depende de las etapas?
     cantidad INTEGER NOT NULL,
     activo BOOLEAN DEFAULT "t",
     CHECK(fecha_inicio < fecha_fin),
@@ -86,9 +86,9 @@ CREATE TABLE recorre
   (
     id_produccion SERIAL NOT NULL,
     id_etapa INTEGER NOT NULL,
-    fecha_inico DATE NOT NULL,
-    fecha_fin DATE NOT NULL,
-    etapa_actual VARCHAR(20) NOT NULL,
+    --fecha_inico DATE NOT NULL,
+    --fecha_fin DATE NOT NULL,
+    observacion VARCHAR(200),
     PRIMARY KEY (id_produccion),
     FOREIGN KEY (id_produccion) REFERENCES produccion(id_produccion),
     FOREIGN KEY (id_etapa) REFERENCES etapa_de_elaboracion(id_etapa)
@@ -188,7 +188,7 @@ CREATE TABLE producto_final
   (
     id_eproducto INTEGER NOT NULL,
     crianza VARCHAR(20) NOT NULL CHECK(crianza IN ("Americano", "Frances")),
-    embotellamiento VARCHAR(3) NOT NULL CHECK(embotellamiento IN ("2", "1", "1.5", "3/4", "750")),
+    embotellamiento VARCHAR(3) NOT NULL CHECK(embotellamiento IN ("5", "2.5", "2", "1.5", "1", "3/4", "1/2")),
     PRIMARY KEY (id_eproducto),
     FOREIGN KEY (id_eproducto) REFERENCES especificacion_de_producto(id_eproducto)
   );

@@ -5,7 +5,7 @@
     Public materiaPrima As MateriaPrima
 
     Private Sub PicVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PicVolver.Click
-        AbrirFormulario(New FrmListadoProductos)
+        AbrirFormulario(New FrmListadoProductos, sender)
     End Sub
 
     Private Sub FrmMateriaPrima_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -62,7 +62,7 @@
                 MessageBox.Show("Producto modificado exitosamente")
             End If
 
-            AbrirFormulario(New FrmListadoProductos)
+            AbrirFormulario(New FrmListadoProductos, Nothing)
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try

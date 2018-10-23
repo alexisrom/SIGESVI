@@ -99,7 +99,7 @@ Partial Class MenuGerenteGeneral
         Me.BtnCepas.FlatAppearance.BorderSize = 0
         Me.BtnCepas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.BtnCepas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCepas.Font = New System.Drawing.Font("Roboto", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCepas.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnCepas.ForeColor = System.Drawing.Color.White
         Me.BtnCepas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BtnCepas.Location = New System.Drawing.Point(23, 528)
@@ -126,7 +126,7 @@ Partial Class MenuGerenteGeneral
         Me.BtnOrigenes.FlatAppearance.BorderSize = 0
         Me.BtnOrigenes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.BtnOrigenes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnOrigenes.Font = New System.Drawing.Font("Roboto", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnOrigenes.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnOrigenes.ForeColor = System.Drawing.Color.White
         Me.BtnOrigenes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BtnOrigenes.Location = New System.Drawing.Point(23, 482)
@@ -153,7 +153,7 @@ Partial Class MenuGerenteGeneral
         Me.BtnAjustes.FlatAppearance.BorderSize = 0
         Me.BtnAjustes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.BtnAjustes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnAjustes.Font = New System.Drawing.Font("Roboto", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnAjustes.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnAjustes.ForeColor = System.Drawing.Color.White
         Me.BtnAjustes.Image = Global.SIGESVI.My.Resources.Resources.gears
         Me.BtnAjustes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -199,7 +199,7 @@ Partial Class MenuGerenteGeneral
         Me.BtnSucursales.FlatAppearance.BorderSize = 0
         Me.BtnSucursales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.BtnSucursales.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnSucursales.Font = New System.Drawing.Font("Roboto", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnSucursales.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnSucursales.ForeColor = System.Drawing.Color.White
         Me.BtnSucursales.Image = Global.SIGESVI.My.Resources.Resources.factory
         Me.BtnSucursales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -227,7 +227,7 @@ Partial Class MenuGerenteGeneral
         Me.BtnTransacciones.FlatAppearance.BorderSize = 0
         Me.BtnTransacciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.BtnTransacciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnTransacciones.Font = New System.Drawing.Font("Roboto", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnTransacciones.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnTransacciones.ForeColor = System.Drawing.Color.White
         Me.BtnTransacciones.Image = Global.SIGESVI.My.Resources.Resources.box
         Me.BtnTransacciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -246,7 +246,7 @@ Partial Class MenuGerenteGeneral
         Me.BtnClientes.FlatAppearance.BorderSize = 0
         Me.BtnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.BtnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnClientes.Font = New System.Drawing.Font("Roboto", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnClientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnClientes.ForeColor = System.Drawing.Color.White
         Me.BtnClientes.Image = Global.SIGESVI.My.Resources.Resources.box
         Me.BtnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -274,7 +274,7 @@ Partial Class MenuGerenteGeneral
         Me.BtnFuncionarios.FlatAppearance.BorderSize = 0
         Me.BtnFuncionarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.BtnFuncionarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnFuncionarios.Font = New System.Drawing.Font("Roboto", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnFuncionarios.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnFuncionarios.ForeColor = System.Drawing.Color.White
         Me.BtnFuncionarios.Image = Global.SIGESVI.My.Resources.Resources.engineer
         Me.BtnFuncionarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -293,7 +293,7 @@ Partial Class MenuGerenteGeneral
         Me.BtnProductos.FlatAppearance.BorderSize = 0
         Me.BtnProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.BtnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnProductos.Font = New System.Drawing.Font("Roboto", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnProductos.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnProductos.ForeColor = System.Drawing.Color.White
         Me.BtnProductos.Image = Global.SIGESVI.My.Resources.Resources.product
         Me.BtnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -312,7 +312,7 @@ Partial Class MenuGerenteGeneral
         Me.BtnProduccion.FlatAppearance.BorderSize = 0
         Me.BtnProduccion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.BtnProduccion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnProduccion.Font = New System.Drawing.Font("Roboto", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnProduccion.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnProduccion.ForeColor = System.Drawing.Color.White
         Me.BtnProduccion.Image = Global.SIGESVI.My.Resources.Resources.mass_production
         Me.BtnProduccion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft

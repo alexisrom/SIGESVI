@@ -58,4 +58,8 @@
     Private Sub BtnFuncionarios_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnFuncionarios.Click
         AbrirFormulario(New FrmFuncionarios, sender)
     End Sub
+
+    Private Sub BtnAjustes_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnAjustes.Click
+        AbrirFormulario(New FrmAjustes, sender)
+    End Sub
 End Class

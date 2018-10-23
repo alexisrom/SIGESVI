@@ -1,5 +1,5 @@
 ﻿Module Utilidades
-
+    Public ubicacion As String = "Montevideo"
     Function ListarDepartamentos() As List(Of String)
         Dim departamentos As New List(Of String)
         departamentos.Add("Artigas")

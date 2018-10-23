@@ -54,4 +54,8 @@
     Private Sub PicLogo_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PicLogo.Click
         AbrirFormulario(New FrmInicio)
     End Sub
+
+    Private Sub BtnFuncionarios_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnFuncionarios.Click
+        AbrirFormulario(New FrmFuncionarios, sender)
+    End Sub
 End Class

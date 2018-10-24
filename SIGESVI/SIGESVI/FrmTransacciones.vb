@@ -11,6 +11,6 @@
     End Sub
 
     Private Sub BtnCompra_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnCompra.Click
-        AbrirFormulario(New FrmCompra)
+        AbrirFormulario(New FrmCompras)
     End Sub
 End Class

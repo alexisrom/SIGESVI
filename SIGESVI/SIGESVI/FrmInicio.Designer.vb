@@ -24,31 +24,40 @@ Partial Class FrmInicio
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
         Me.TmrFechaHora = New System.Windows.Forms.Timer(Me.components)
+        Me.Timerclima = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel
+        Me.Label2 = New System.Windows.Forms.Label
+        Me.PnlRecordatorios = New System.Windows.Forms.FlowLayoutPanel
+        Me.PnlAlarmas = New System.Windows.Forms.FlowLayoutPanel
+        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser
+        Me.Labelhumedad = New System.Windows.Forms.Label
+        Me.Labeltemp = New System.Windows.Forms.Label
+        Me.pbclima = New System.Windows.Forms.PictureBox
         Me.LbCerrarSesion = New System.Windows.Forms.LinkLabel
         Me.Label1 = New System.Windows.Forms.Label
         Me.LblCargo = New System.Windows.Forms.Label
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.LblHora = New System.Windows.Forms.Label
-        Me.Timerclima = New System.Windows.Forms.Timer(Me.components)
-        Me.Labelhumedad = New System.Windows.Forms.Label
-        Me.Labeltemp = New System.Windows.Forms.Label
-        Me.pbclima = New System.Windows.Forms.PictureBox
-        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbclima, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TmrFechaHora
         '
         Me.TmrFechaHora.Enabled = True
         '
+        'Timerclima
+        '
+        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
         Me.Panel1.BackgroundImage = Global.SIGESVI.My.Resources.Resources.bmaurvhz
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.PnlRecordatorios)
+        Me.Panel1.Controls.Add(Me.PnlAlarmas)
         Me.Panel1.Controls.Add(Me.WebBrowser1)
         Me.Panel1.Controls.Add(Me.Labelhumedad)
         Me.Panel1.Controls.Add(Me.Labeltemp)
@@ -61,15 +70,91 @@ Partial Class FrmInicio
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(813, 383)
-        Me.Panel1.TabIndex = 0
+        Me.Panel1.Size = New System.Drawing.Size(1317, 636)
+        Me.Panel1.TabIndex = 1
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(272, 32)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(107, 21)
+        Me.Label2.TabIndex = 20
+        Me.Label2.Text = "Recordatorios"
+        '
+        'PnlRecordatorios
+        '
+        Me.PnlRecordatorios.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+                    Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.PnlRecordatorios.FlowDirection = System.Windows.Forms.FlowDirection.TopDown
+        Me.PnlRecordatorios.Location = New System.Drawing.Point(276, 62)
+        Me.PnlRecordatorios.Name = "PnlRecordatorios"
+        Me.PnlRecordatorios.Size = New System.Drawing.Size(200, 466)
+        Me.PnlRecordatorios.TabIndex = 19
+        '
+        'PnlAlarmas
+        '
+        Me.PnlAlarmas.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+                    Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.PnlAlarmas.FlowDirection = System.Windows.Forms.FlowDirection.TopDown
+        Me.PnlAlarmas.Location = New System.Drawing.Point(39, 62)
+        Me.PnlAlarmas.Name = "PnlAlarmas"
+        Me.PnlAlarmas.Size = New System.Drawing.Size(200, 466)
+        Me.PnlAlarmas.TabIndex = 18
+        '
+        'WebBrowser1
+        '
+        Me.WebBrowser1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.WebBrowser1.Location = New System.Drawing.Point(1085, 571)
+        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.WebBrowser1.Name = "WebBrowser1"
+        Me.WebBrowser1.Size = New System.Drawing.Size(20, 20)
+        Me.WebBrowser1.TabIndex = 17
+        Me.WebBrowser1.Visible = False
+        '
+        'Labelhumedad
+        '
+        Me.Labelhumedad.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Labelhumedad.AutoSize = True
+        Me.Labelhumedad.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Labelhumedad.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.Labelhumedad.Location = New System.Drawing.Point(1139, 586)
+        Me.Labelhumedad.Name = "Labelhumedad"
+        Me.Labelhumedad.Size = New System.Drawing.Size(116, 21)
+        Me.Labelhumedad.TabIndex = 16
+        Me.Labelhumedad.Text = "Humedad: 00%"
+        '
+        'Labeltemp
+        '
+        Me.Labeltemp.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Labeltemp.AutoSize = True
+        Me.Labeltemp.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Labeltemp.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.Labeltemp.Location = New System.Drawing.Point(1139, 556)
+        Me.Labeltemp.Name = "Labeltemp"
+        Me.Labeltemp.Size = New System.Drawing.Size(148, 21)
+        Me.Labeltemp.TabIndex = 14
+        Me.Labeltemp.Text = "Temperatura : 00 °C"
+        '
+        'pbclima
+        '
+        Me.pbclima.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.pbclima.Location = New System.Drawing.Point(1061, 547)
+        Me.pbclima.Name = "pbclima"
+        Me.pbclima.Size = New System.Drawing.Size(72, 71)
+        Me.pbclima.TabIndex = 13
+        Me.pbclima.TabStop = False
         '
         'LbCerrarSesion
         '
+        Me.LbCerrarSesion.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LbCerrarSesion.AutoSize = True
-        Me.LbCerrarSesion.Location = New System.Drawing.Point(688, 153)
+        Me.LbCerrarSesion.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LbCerrarSesion.Location = New System.Drawing.Point(1173, 159)
         Me.LbCerrarSesion.Name = "LbCerrarSesion"
-        Me.LbCerrarSesion.Size = New System.Drawing.Size(70, 13)
+        Me.LbCerrarSesion.Size = New System.Drawing.Size(96, 20)
         Me.LbCerrarSesion.TabIndex = 5
         Me.LbCerrarSesion.TabStop = True
         Me.LbCerrarSesion.Text = "Cerrar Sesión"
@@ -77,27 +162,31 @@ Partial Class FrmInicio
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(36, 32)
+        Me.Label1.Location = New System.Drawing.Point(35, 32)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(74, 13)
+        Me.Label1.Size = New System.Drawing.Size(67, 21)
         Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Notificaciones"
+        Me.Label1.Text = "Alarmas"
         '
         'LblCargo
         '
+        Me.LblCargo.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LblCargo.AutoSize = True
+        Me.LblCargo.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblCargo.ForeColor = System.Drawing.Color.White
-        Me.LblCargo.Location = New System.Drawing.Point(698, 136)
+        Me.LblCargo.Location = New System.Drawing.Point(1197, 125)
         Me.LblCargo.Name = "LblCargo"
-        Me.LblCargo.Size = New System.Drawing.Size(35, 13)
+        Me.LblCargo.Size = New System.Drawing.Size(49, 20)
         Me.LblCargo.TabIndex = 3
         Me.LblCargo.Text = "Cargo"
         '
         'PictureBox1
         '
+        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.BackColor = System.Drawing.Color.Silver
-        Me.PictureBox1.Location = New System.Drawing.Point(675, 32)
+        Me.PictureBox1.Location = New System.Drawing.Point(1179, 32)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(90, 90)
         Me.PictureBox1.TabIndex = 2
@@ -105,82 +194,46 @@ Partial Class FrmInicio
         '
         'LblHora
         '
-        Me.LblHora.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LblHora.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.LblHora.AutoSize = True
         Me.LblHora.BackColor = System.Drawing.Color.Transparent
-        Me.LblHora.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblHora.ForeColor = System.Drawing.Color.SkyBlue
-        Me.LblHora.Location = New System.Drawing.Point(340, 313)
+        Me.LblHora.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblHora.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.LblHora.Location = New System.Drawing.Point(32, 581)
         Me.LblHora.Name = "LblHora"
-        Me.LblHora.Size = New System.Drawing.Size(0, 46)
+        Me.LblHora.Size = New System.Drawing.Size(296, 37)
         Me.LblHora.TabIndex = 1
-        '
-        'Timerclima
-        '
-        '
-        'Labelhumedad
-        '
-        Me.Labelhumedad.AutoSize = True
-        Me.Labelhumedad.ForeColor = System.Drawing.Color.White
-        Me.Labelhumedad.Location = New System.Drawing.Point(417, 153)
-        Me.Labelhumedad.Name = "Labelhumedad"
-        Me.Labelhumedad.Size = New System.Drawing.Size(79, 13)
-        Me.Labelhumedad.TabIndex = 16
-        Me.Labelhumedad.Text = "Humedad: 00%"
-        '
-        'Labeltemp
-        '
-        Me.Labeltemp.AutoSize = True
-        Me.Labeltemp.ForeColor = System.Drawing.Color.White
-        Me.Labeltemp.Location = New System.Drawing.Point(417, 127)
-        Me.Labeltemp.Name = "Labeltemp"
-        Me.Labeltemp.Size = New System.Drawing.Size(102, 13)
-        Me.Labeltemp.TabIndex = 14
-        Me.Labeltemp.Text = "Temperatura : 00 °C"
-        '
-        'pbclima
-        '
-        Me.pbclima.Location = New System.Drawing.Point(327, 78)
-        Me.pbclima.Name = "pbclima"
-        Me.pbclima.Size = New System.Drawing.Size(72, 71)
-        Me.pbclima.TabIndex = 13
-        Me.pbclima.TabStop = False
-        '
-        'WebBrowser1
-        '
-        Me.WebBrowser1.Location = New System.Drawing.Point(597, 246)
-        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
-        Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(20, 20)
-        Me.WebBrowser1.TabIndex = 17
-        Me.WebBrowser1.Visible = False
+        Me.LblHora.Text = "00/00/00 00:00 a.m"
         '
         'FrmInicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(813, 383)
+        Me.ClientSize = New System.Drawing.Size(1317, 636)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmInicio"
         Me.Text = "Inicio"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbclima, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents TmrFechaHora As System.Windows.Forms.Timer
+    Friend WithEvents Timerclima As System.Windows.Forms.Timer
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents LblHora As System.Windows.Forms.Label
-    Friend WithEvents LblCargo As System.Windows.Forms.Label
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents LbCerrarSesion As System.Windows.Forms.LinkLabel
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents PnlRecordatorios As System.Windows.Forms.FlowLayoutPanel
+    Friend WithEvents PnlAlarmas As System.Windows.Forms.FlowLayoutPanel
+    Friend WithEvents WebBrowser1 As System.Windows.Forms.WebBrowser
     Friend WithEvents Labelhumedad As System.Windows.Forms.Label
     Friend WithEvents Labeltemp As System.Windows.Forms.Label
     Friend WithEvents pbclima As System.Windows.Forms.PictureBox
-    Friend WithEvents Timerclima As System.Windows.Forms.Timer
-    Friend WithEvents WebBrowser1 As System.Windows.Forms.WebBrowser
+    Friend WithEvents LbCerrarSesion As System.Windows.Forms.LinkLabel
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents LblCargo As System.Windows.Forms.Label
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents LblHora As System.Windows.Forms.Label
 End Class

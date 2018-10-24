@@ -46,7 +46,7 @@ Partial Class FrmAjustes
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(80, 183)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(76, 30)
+        Me.Label1.Size = New System.Drawing.Size(77, 30)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "CEPAS"
         '

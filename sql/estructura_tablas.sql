@@ -73,7 +73,7 @@ CREATE TABLE etapa_de_elaboracion
     id_sucursal INTEGER NOT NULL,
     id_eproducto INTEGER NOT NULL,
     fecha_inicio DATE NOT NULL,
-    fecha_fin DATE NOT NULL, -- depende de las etapas?
+    fecha_fin DATE NOT NULL,
     cantidad INTEGER NOT NULL,
     activo BOOLEAN DEFAULT "t",
     CHECK(fecha_inicio < fecha_fin),
@@ -86,14 +86,24 @@ CREATE TABLE recorre
   (
     id_produccion SERIAL NOT NULL,
     id_etapa INTEGER NOT NULL,
-    --fecha_inico DATE NOT NULL,
-    --fecha_fin DATE NOT NULL,
+    fecha_inico DATE NOT NULL,
+    fecha_fin DATE NOT NULL,
     observacion VARCHAR(200),
-    PRIMARY KEY (id_produccion),
+    cantidad INTEGER NOT NULL,
+    PRIMARY KEY (id_produccion, id_etapa),
     FOREIGN KEY (id_produccion) REFERENCES produccion(id_produccion),
     FOREIGN KEY (id_etapa) REFERENCES etapa_de_elaboracion(id_etapa)
   );
 
+CREATE TABLE alarma
+  (
+    id_alarma INTEGER NOT NULL,
+    id_etapa INTEGER NOT NULL,
+    fecha DATE NOT NULL,
+    duracion INTEGER DEFAULT 1,
+    mensaje VARCHAR(200),
+    PRIMARY KEY(id_produccion, id_etapa) 
+  );
 
 CREATE TABLE recordatorio 
   (
@@ -126,6 +136,15 @@ CREATE TABLE venta
     id_transaccion INTEGER NOT NULL,
     costo INTEGER NOT NULL,
     PRIMARY KEY (id_transaccion),
+    FOREIGN KEY (id_transaccion) REFERENCES transacciones(id_transaccion)
+  );
+
+CREATE TABLE involucra
+  (
+    id_lote INTEGER NOT NULL,
+    id_transaccion INTEGER NOT NULL,
+    PRIMARY KEY (id_lote, id_transaccion),
+    FOREIGN KEY (id_lote) REFERENCES lote(id_lote),
     FOREIGN KEY (id_transaccion) REFERENCES transacciones(id_transaccion)
   );
 

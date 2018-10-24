@@ -112,8 +112,8 @@ Public Class PersistenciaProduccion
 
     Function ObtenerTrazabilidad(ByVal produccion As Produccion) As List(Of EtapaRecorrida)
         Dim trazabilidad As New List(Of EtapaRecorrida)
-        Dim consulta = "SELECT r.*, e.* FROM produccion p, recorre r, etapa_de_elaboracion e WHERE p.id_produccion = r.id_produccion AND r.id_etapa = e.id_etapa AND activo = 't'"
-
+        Dim formato_consulta = "SELECT r.*, e.* FROM produccion p, recorre r, etapa_de_elaboracion e WHERE p.id_produccion = r.id_produccion AND r.id_etapa = e.id_etapa AND p.id_produccion={0} AND activo = 't'"
+        Dim consulta = String.Format(formato_consulta, produccion.ID)
         Try
             Dim comando As New OdbcCommand
             comando.Connection = Conexion.Abrir
@@ -132,7 +132,8 @@ Public Class PersistenciaProduccion
                     'etapaRecorrida.Etapa.Recordatorios = resultado("id_etapa")
                     er.FechaInicio = resultado("fecha_inicio")
                     er.FechaFin = resultado("fecha_fin")
-                    'etapaRecorrida.Observacion = resultado("observacion")
+                    er.Observacion = resultado("observacion")
+                    er.Alarma = New PersistenciaTrazabilidad().BuscarAlarma(produccion, er)
                     trazabilidad.Add(er)
                 End While
             End If

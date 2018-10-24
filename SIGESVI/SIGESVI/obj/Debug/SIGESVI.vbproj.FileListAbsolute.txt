@@ -65,7 +65,6 @@ C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.FrmInici
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.MenuAdministrativo.resources
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.MenuAsesorProfesional.resources
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.MenuCliente.resources
-C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.FrmCompra.resources
 C:\Users\Fernando\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.exe
 C:\Users\Fernando\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.xml
 C:\Users\Fernando\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.pdb
@@ -105,3 +104,4 @@ C:\Users\Fernando\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.Men
 C:\Users\Fernando\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.MenuGerenteSucursal.resources
 C:\Users\Fernando\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.Resources.resources
 C:\Users\Fernando\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.vbproj.GenerateResource.Cache
+C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.Notificacion.resources

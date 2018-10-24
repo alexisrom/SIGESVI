@@ -234,9 +234,9 @@ Partial Class FrmVentas
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(203, 38)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(115, 30)
+        Me.Label3.Size = New System.Drawing.Size(92, 30)
         Me.Label3.TabIndex = 31
-        Me.Label3.Text = "COMPRAS"
+        Me.Label3.Text = "VENTAS"
         '
         'Button4
         '

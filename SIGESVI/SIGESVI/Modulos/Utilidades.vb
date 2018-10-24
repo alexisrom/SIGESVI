@@ -1,5 +1,6 @@
 ﻿Module Utilidades
     Public ubicacion As String = "Montevideo"
+
     Function ListarDepartamentos() As List(Of String)
         Dim departamentos As New List(Of String)
         departamentos.Add("Artigas")
@@ -34,6 +35,7 @@
                         c.Text = ""
                     ElseIf TypeOf c Is ListBox Then
                         Dim listbox = CType(c, ListBox)
+                        listbox.DataSource = Nothing
                         listbox.Items.Clear()
                     ElseIf TypeOf c Is ComboBox Then
                         Dim combobox = CType(c, ComboBox)
@@ -58,11 +60,12 @@
         Next
     End Sub
 
-    ' Conversión de datos
-    ' Formatos
-
 
     Function FormatearFecha(ByVal fecha As Date) As String
-        Return fecha.Day & "-" & fecha.Month & "-" & fecha.Date.Year
+        Return String.Format("{0}-{1}-{2}", fecha.Day, fecha.Month, fecha.Year)
+    End Function
+
+    Function FormatearFechaHora(ByVal fecha As Date) As String
+        Return String.Format("{0}-{1}-{2} {3}:{4}", fecha.Year, fecha.Month, fecha.Day, fecha.Hour, fecha.Minute)
     End Function
 End Module

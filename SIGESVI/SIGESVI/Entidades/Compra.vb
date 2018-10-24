@@ -21,16 +21,31 @@
         End Set
     End Property
 
-    ' Tener el cuanta que se debera registrar el precio de compra de cada producto != precio producto
-    Private _Productos As List(Of EspecificacionProducto)
-    Public Property Productos() As List(Of EspecificacionProducto)
+
+    Private _Fecha As Date
+    Public Property Fecha() As Date
+        Get
+            Return _Fecha
+        End Get
+        Set(ByVal value As Date)
+            _Fecha = value
+        End Set
+    End Property
+
+
+    Private _Productos As List(Of Lote)
+    Public Property Productos() As List(Of Lote)
         Get
             Return _Productos
         End Get
-        Set(ByVal value As List(Of EspecificacionProducto))
+        Set(ByVal value As List(Of Lote))
             _Productos = value
         End Set
     End Property
 
+
+    Sub New()
+        _Productos = New List(Of Lote)
+    End Sub
 
 End Class

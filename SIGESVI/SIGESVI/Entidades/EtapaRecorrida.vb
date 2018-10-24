@@ -22,15 +22,17 @@
     End Property
 
 
-    Private _Alarmas As List(Of Alarma)
-    Public Property Alarmas() As List(Of Alarma)
+
+    Private _Alarma As Alarma
+    Public Property Alarma() As Alarma
         Get
-            Return _Alarmas
+            Return _Alarma
         End Get
-        Set(ByVal value As List(Of Alarma))
-            _Alarmas = value
+        Set(ByVal value As Alarma)
+            _Alarma = value
         End Set
     End Property
+
 
 
     Private _FechaInicio As Date

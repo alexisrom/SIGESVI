@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4F5920B9-9587-4AF7-8384-45D1BE1FEF4F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -122,12 +122,6 @@
       <DependentUpon>FrmClientes.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmClientes.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmCompra.Designer.vb">
-      <DependentUpon>FrmCompra.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmCompra.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmCompras.Designer.vb">
@@ -294,6 +288,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Notificacion.Designer.vb">
+      <DependentUpon>Notificacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Notificacion.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Persistencia\PersistenciaCliente.vb" />
     <Compile Include="Persistencia\PersistenciaCompra.vb" />
     <Compile Include="Persistencia\PersistenciaEspecificacionProducto.vb" />
@@ -330,10 +330,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmClientes.resx">
       <DependentUpon>FrmClientes.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmCompra.resx">
-      <DependentUpon>FrmCompra.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCompras.resx">
@@ -436,6 +432,10 @@
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notificacion.resx">
+      <DependentUpon>Notificacion.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
@@ -542,6 +542,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\placeholder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lotes.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

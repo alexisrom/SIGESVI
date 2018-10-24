@@ -23,11 +23,7 @@ Partial Class MenuGerenteGeneral
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.PnlMenu = New System.Windows.Forms.Panel
-        Me.Panel10 = New System.Windows.Forms.Panel
-        Me.Panel9 = New System.Windows.Forms.Panel
-        Me.BtnCepas = New System.Windows.Forms.Button
         Me.Panel8 = New System.Windows.Forms.Panel
-        Me.BtnOrigenes = New System.Windows.Forms.Button
         Me.Panel5 = New System.Windows.Forms.Panel
         Me.BtnAjustes = New System.Windows.Forms.Button
         Me.Panel2 = New System.Windows.Forms.Panel
@@ -49,11 +45,7 @@ Partial Class MenuGerenteGeneral
         'PnlMenu
         '
         Me.PnlMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.PnlMenu.Controls.Add(Me.Panel10)
-        Me.PnlMenu.Controls.Add(Me.Panel9)
-        Me.PnlMenu.Controls.Add(Me.BtnCepas)
         Me.PnlMenu.Controls.Add(Me.Panel8)
-        Me.PnlMenu.Controls.Add(Me.BtnOrigenes)
         Me.PnlMenu.Controls.Add(Me.Panel5)
         Me.PnlMenu.Controls.Add(Me.BtnAjustes)
         Me.PnlMenu.Controls.Add(Me.Panel2)
@@ -74,74 +66,20 @@ Partial Class MenuGerenteGeneral
         Me.PnlMenu.Size = New System.Drawing.Size(200, 610)
         Me.PnlMenu.TabIndex = 8
         '
-        'Panel10
-        '
-        Me.Panel10.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.Panel10.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel10.Location = New System.Drawing.Point(19, 528)
-        Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(5, 40)
-        Me.Panel10.TabIndex = 15
-        '
-        'Panel9
-        '
-        Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.Panel9.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel9.Location = New System.Drawing.Point(19, 482)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(5, 40)
-        Me.Panel9.TabIndex = 13
-        '
-        'BtnCepas
-        '
-        Me.BtnCepas.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.BtnCepas.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnCepas.FlatAppearance.BorderSize = 0
-        Me.BtnCepas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.BtnCepas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCepas.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCepas.ForeColor = System.Drawing.Color.White
-        Me.BtnCepas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnCepas.Location = New System.Drawing.Point(23, 528)
-        Me.BtnCepas.Name = "BtnCepas"
-        Me.BtnCepas.Size = New System.Drawing.Size(173, 40)
-        Me.BtnCepas.TabIndex = 16
-        Me.BtnCepas.Text = "Cepas"
-        Me.BtnCepas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.BtnCepas.UseVisualStyleBackColor = False
-        '
         'Panel8
         '
         Me.Panel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.Panel8.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel8.Location = New System.Drawing.Point(2, 436)
+        Me.Panel8.Location = New System.Drawing.Point(2, 455)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(5, 40)
         Me.Panel8.TabIndex = 11
-        '
-        'BtnOrigenes
-        '
-        Me.BtnOrigenes.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.BtnOrigenes.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnOrigenes.FlatAppearance.BorderSize = 0
-        Me.BtnOrigenes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.BtnOrigenes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnOrigenes.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnOrigenes.ForeColor = System.Drawing.Color.White
-        Me.BtnOrigenes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnOrigenes.Location = New System.Drawing.Point(23, 482)
-        Me.BtnOrigenes.Name = "BtnOrigenes"
-        Me.BtnOrigenes.Size = New System.Drawing.Size(173, 40)
-        Me.BtnOrigenes.TabIndex = 14
-        Me.BtnOrigenes.Text = "Origenes"
-        Me.BtnOrigenes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.BtnOrigenes.UseVisualStyleBackColor = False
         '
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.Panel5.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel5.Location = New System.Drawing.Point(3, 390)
+        Me.Panel5.Location = New System.Drawing.Point(3, 409)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(5, 40)
         Me.Panel5.TabIndex = 8
@@ -157,7 +95,7 @@ Partial Class MenuGerenteGeneral
         Me.BtnAjustes.ForeColor = System.Drawing.Color.White
         Me.BtnAjustes.Image = Global.SIGESVI.My.Resources.Resources.gears
         Me.BtnAjustes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnAjustes.Location = New System.Drawing.Point(6, 436)
+        Me.BtnAjustes.Location = New System.Drawing.Point(6, 455)
         Me.BtnAjustes.Name = "BtnAjustes"
         Me.BtnAjustes.Size = New System.Drawing.Size(190, 40)
         Me.BtnAjustes.TabIndex = 12
@@ -169,7 +107,7 @@ Partial Class MenuGerenteGeneral
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.Panel2.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel2.Location = New System.Drawing.Point(3, 252)
+        Me.Panel2.Location = New System.Drawing.Point(3, 271)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(5, 40)
         Me.Panel2.TabIndex = 4
@@ -178,7 +116,7 @@ Partial Class MenuGerenteGeneral
         '
         Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.Panel6.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel6.Location = New System.Drawing.Point(3, 344)
+        Me.Panel6.Location = New System.Drawing.Point(3, 363)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(5, 40)
         Me.Panel6.TabIndex = 9
@@ -187,7 +125,7 @@ Partial Class MenuGerenteGeneral
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.Panel1.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel1.Location = New System.Drawing.Point(3, 206)
+        Me.Panel1.Location = New System.Drawing.Point(3, 225)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(5, 40)
         Me.Panel1.TabIndex = 4
@@ -203,7 +141,7 @@ Partial Class MenuGerenteGeneral
         Me.BtnSucursales.ForeColor = System.Drawing.Color.White
         Me.BtnSucursales.Image = Global.SIGESVI.My.Resources.Resources.factory
         Me.BtnSucursales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnSucursales.Location = New System.Drawing.Point(7, 390)
+        Me.BtnSucursales.Location = New System.Drawing.Point(7, 409)
         Me.BtnSucursales.Name = "BtnSucursales"
         Me.BtnSucursales.Size = New System.Drawing.Size(190, 40)
         Me.BtnSucursales.TabIndex = 10
@@ -215,7 +153,7 @@ Partial Class MenuGerenteGeneral
         '
         Me.Panel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.Panel7.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel7.Location = New System.Drawing.Point(3, 298)
+        Me.Panel7.Location = New System.Drawing.Point(3, 317)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(5, 40)
         Me.Panel7.TabIndex = 6
@@ -231,7 +169,7 @@ Partial Class MenuGerenteGeneral
         Me.BtnTransacciones.ForeColor = System.Drawing.Color.White
         Me.BtnTransacciones.Image = Global.SIGESVI.My.Resources.Resources.box
         Me.BtnTransacciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnTransacciones.Location = New System.Drawing.Point(7, 252)
+        Me.BtnTransacciones.Location = New System.Drawing.Point(7, 271)
         Me.BtnTransacciones.Name = "BtnTransacciones"
         Me.BtnTransacciones.Size = New System.Drawing.Size(190, 40)
         Me.BtnTransacciones.TabIndex = 5
@@ -250,7 +188,7 @@ Partial Class MenuGerenteGeneral
         Me.BtnClientes.ForeColor = System.Drawing.Color.White
         Me.BtnClientes.Image = Global.SIGESVI.My.Resources.Resources.box
         Me.BtnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnClientes.Location = New System.Drawing.Point(7, 344)
+        Me.BtnClientes.Location = New System.Drawing.Point(7, 363)
         Me.BtnClientes.Name = "BtnClientes"
         Me.BtnClientes.Size = New System.Drawing.Size(190, 40)
         Me.BtnClientes.TabIndex = 11
@@ -262,7 +200,7 @@ Partial Class MenuGerenteGeneral
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.Panel4.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel4.Location = New System.Drawing.Point(3, 160)
+        Me.Panel4.Location = New System.Drawing.Point(3, 179)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(5, 40)
         Me.Panel4.TabIndex = 2
@@ -278,7 +216,7 @@ Partial Class MenuGerenteGeneral
         Me.BtnFuncionarios.ForeColor = System.Drawing.Color.White
         Me.BtnFuncionarios.Image = Global.SIGESVI.My.Resources.Resources.engineer
         Me.BtnFuncionarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnFuncionarios.Location = New System.Drawing.Point(7, 298)
+        Me.BtnFuncionarios.Location = New System.Drawing.Point(7, 317)
         Me.BtnFuncionarios.Name = "BtnFuncionarios"
         Me.BtnFuncionarios.Size = New System.Drawing.Size(190, 40)
         Me.BtnFuncionarios.TabIndex = 7
@@ -297,7 +235,7 @@ Partial Class MenuGerenteGeneral
         Me.BtnProductos.ForeColor = System.Drawing.Color.White
         Me.BtnProductos.Image = Global.SIGESVI.My.Resources.Resources.product
         Me.BtnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnProductos.Location = New System.Drawing.Point(7, 206)
+        Me.BtnProductos.Location = New System.Drawing.Point(7, 225)
         Me.BtnProductos.Name = "BtnProductos"
         Me.BtnProductos.Size = New System.Drawing.Size(190, 40)
         Me.BtnProductos.TabIndex = 5
@@ -316,7 +254,7 @@ Partial Class MenuGerenteGeneral
         Me.BtnProduccion.ForeColor = System.Drawing.Color.White
         Me.BtnProduccion.Image = Global.SIGESVI.My.Resources.Resources.mass_production
         Me.BtnProduccion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnProduccion.Location = New System.Drawing.Point(7, 160)
+        Me.BtnProduccion.Location = New System.Drawing.Point(7, 179)
         Me.BtnProduccion.Name = "BtnProduccion"
         Me.BtnProduccion.Size = New System.Drawing.Size(190, 40)
         Me.BtnProduccion.TabIndex = 3
@@ -348,11 +286,7 @@ Partial Class MenuGerenteGeneral
 
     End Sub
     Friend WithEvents PnlMenu As System.Windows.Forms.Panel
-    Friend WithEvents Panel10 As System.Windows.Forms.Panel
-    Friend WithEvents Panel9 As System.Windows.Forms.Panel
-    Friend WithEvents BtnCepas As System.Windows.Forms.Button
     Friend WithEvents Panel8 As System.Windows.Forms.Panel
-    Friend WithEvents BtnOrigenes As System.Windows.Forms.Button
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
     Friend WithEvents BtnAjustes As System.Windows.Forms.Button
     Friend WithEvents Panel2 As System.Windows.Forms.Panel

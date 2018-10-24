@@ -71,14 +71,4 @@
 
     End Sub
 
-    Private Sub DgvProductos_CellContentDoubleClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DgvProductos.CellContentDoubleClick
-        
-
-        If TypeOf Owner Is FrmCompra Then
-            Dim producto_seleccionado = CType(DgvProductos.SelectedRows(0).DataBoundItem, EspecificacionProducto)
-            CType(Owner, FrmCompra).productos.Add(producto_seleccionado)
-            Me.Close()
-        End If
-
-    End Sub
 End Class

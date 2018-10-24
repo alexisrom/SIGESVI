@@ -23,13 +23,13 @@ Partial Class MenuAdministrativo
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.PnlMenu = New System.Windows.Forms.Panel
-        Me.Panel9 = New System.Windows.Forms.Panel
         Me.Panel8 = New System.Windows.Forms.Panel
-        Me.BtnCampos = New System.Windows.Forms.Button
         Me.Panel5 = New System.Windows.Forms.Panel
         Me.Panel2 = New System.Windows.Forms.Panel
         Me.Panel3 = New System.Windows.Forms.Panel
         Me.Panel4 = New System.Windows.Forms.Panel
+        Me.Panel1 = New System.Windows.Forms.Panel
+        Me.Button1 = New System.Windows.Forms.Button
         Me.Button2 = New System.Windows.Forms.Button
         Me.BtnSucursales = New System.Windows.Forms.Button
         Me.Button3 = New System.Windows.Forms.Button
@@ -43,9 +43,9 @@ Partial Class MenuAdministrativo
         'PnlMenu
         '
         Me.PnlMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.PnlMenu.Controls.Add(Me.Panel9)
+        Me.PnlMenu.Controls.Add(Me.Panel1)
+        Me.PnlMenu.Controls.Add(Me.Button1)
         Me.PnlMenu.Controls.Add(Me.Panel8)
-        Me.PnlMenu.Controls.Add(Me.BtnCampos)
         Me.PnlMenu.Controls.Add(Me.Panel5)
         Me.PnlMenu.Controls.Add(Me.Button2)
         Me.PnlMenu.Controls.Add(Me.Panel2)
@@ -62,46 +62,20 @@ Partial Class MenuAdministrativo
         Me.PnlMenu.Size = New System.Drawing.Size(200, 610)
         Me.PnlMenu.TabIndex = 9
         '
-        'Panel9
-        '
-        Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.Panel9.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel9.Location = New System.Drawing.Point(19, 390)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(5, 40)
-        Me.Panel9.TabIndex = 13
-        '
         'Panel8
         '
         Me.Panel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.Panel8.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel8.Location = New System.Drawing.Point(2, 344)
+        Me.Panel8.Location = New System.Drawing.Point(2, 385)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(5, 40)
         Me.Panel8.TabIndex = 11
-        '
-        'BtnCampos
-        '
-        Me.BtnCampos.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.BtnCampos.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnCampos.FlatAppearance.BorderSize = 0
-        Me.BtnCampos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.BtnCampos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCampos.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCampos.ForeColor = System.Drawing.Color.White
-        Me.BtnCampos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnCampos.Location = New System.Drawing.Point(23, 390)
-        Me.BtnCampos.Name = "BtnCampos"
-        Me.BtnCampos.Size = New System.Drawing.Size(173, 40)
-        Me.BtnCampos.TabIndex = 14
-        Me.BtnCampos.Text = "Campos"
-        Me.BtnCampos.UseVisualStyleBackColor = False
         '
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.Panel5.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel5.Location = New System.Drawing.Point(3, 298)
+        Me.Panel5.Location = New System.Drawing.Point(3, 339)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(5, 40)
         Me.Panel5.TabIndex = 8
@@ -110,7 +84,7 @@ Partial Class MenuAdministrativo
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.Panel2.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel2.Location = New System.Drawing.Point(3, 252)
+        Me.Panel2.Location = New System.Drawing.Point(3, 293)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(5, 40)
         Me.Panel2.TabIndex = 4
@@ -119,7 +93,7 @@ Partial Class MenuAdministrativo
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.Panel3.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel3.Location = New System.Drawing.Point(3, 206)
+        Me.Panel3.Location = New System.Drawing.Point(3, 247)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(5, 40)
         Me.Panel3.TabIndex = 4
@@ -128,10 +102,37 @@ Partial Class MenuAdministrativo
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.Panel4.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel4.Location = New System.Drawing.Point(3, 160)
+        Me.Panel4.Location = New System.Drawing.Point(3, 201)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(5, 40)
         Me.Panel4.TabIndex = 2
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.Panel1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Panel1.Location = New System.Drawing.Point(3, 155)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(5, 40)
+        Me.Panel1.TabIndex = 13
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(151, Byte), Integer))
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Image = Global.SIGESVI.My.Resources.Resources.lotes
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.Location = New System.Drawing.Point(7, 155)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(190, 40)
+        Me.Button1.TabIndex = 14
+        Me.Button1.Text = "Lotes"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
@@ -144,7 +145,7 @@ Partial Class MenuAdministrativo
         Me.Button2.ForeColor = System.Drawing.Color.White
         Me.Button2.Image = Global.SIGESVI.My.Resources.Resources.gears
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(6, 344)
+        Me.Button2.Location = New System.Drawing.Point(6, 385)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(190, 40)
         Me.Button2.TabIndex = 12
@@ -162,7 +163,7 @@ Partial Class MenuAdministrativo
         Me.BtnSucursales.ForeColor = System.Drawing.Color.White
         Me.BtnSucursales.Image = Global.SIGESVI.My.Resources.Resources.factory
         Me.BtnSucursales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnSucursales.Location = New System.Drawing.Point(7, 298)
+        Me.BtnSucursales.Location = New System.Drawing.Point(7, 339)
         Me.BtnSucursales.Name = "BtnSucursales"
         Me.BtnSucursales.Size = New System.Drawing.Size(190, 40)
         Me.BtnSucursales.TabIndex = 10
@@ -180,7 +181,7 @@ Partial Class MenuAdministrativo
         Me.Button3.ForeColor = System.Drawing.Color.White
         Me.Button3.Image = Global.SIGESVI.My.Resources.Resources.box
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.Location = New System.Drawing.Point(7, 252)
+        Me.Button3.Location = New System.Drawing.Point(7, 293)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(190, 40)
         Me.Button3.TabIndex = 5
@@ -198,7 +199,7 @@ Partial Class MenuAdministrativo
         Me.BtnProductos.ForeColor = System.Drawing.Color.White
         Me.BtnProductos.Image = Global.SIGESVI.My.Resources.Resources.product
         Me.BtnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnProductos.Location = New System.Drawing.Point(7, 206)
+        Me.BtnProductos.Location = New System.Drawing.Point(7, 247)
         Me.BtnProductos.Name = "BtnProductos"
         Me.BtnProductos.Size = New System.Drawing.Size(190, 40)
         Me.BtnProductos.TabIndex = 5
@@ -216,7 +217,7 @@ Partial Class MenuAdministrativo
         Me.BtnProduccion.ForeColor = System.Drawing.Color.White
         Me.BtnProduccion.Image = Global.SIGESVI.My.Resources.Resources.mass_production
         Me.BtnProduccion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnProduccion.Location = New System.Drawing.Point(7, 160)
+        Me.BtnProduccion.Location = New System.Drawing.Point(7, 201)
         Me.BtnProduccion.Name = "BtnProduccion"
         Me.BtnProduccion.Size = New System.Drawing.Size(190, 40)
         Me.BtnProduccion.TabIndex = 3
@@ -247,9 +248,7 @@ Partial Class MenuAdministrativo
 
     End Sub
     Friend WithEvents PnlMenu As System.Windows.Forms.Panel
-    Friend WithEvents Panel9 As System.Windows.Forms.Panel
     Friend WithEvents Panel8 As System.Windows.Forms.Panel
-    Friend WithEvents BtnCampos As System.Windows.Forms.Button
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
@@ -260,5 +259,7 @@ Partial Class MenuAdministrativo
     Friend WithEvents BtnProductos As System.Windows.Forms.Button
     Friend WithEvents BtnProduccion As System.Windows.Forms.Button
     Friend WithEvents PicLogo As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 
 End Class

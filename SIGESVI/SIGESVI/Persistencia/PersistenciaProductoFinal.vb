@@ -104,8 +104,8 @@ Public Class PersistenciaProductoFinal
 
     Function Buscar(ByVal id As Integer) As ProductoFinal
 
-        Dim consulta = "SELECT ep.*, pf.* FROM especificacion_de_producto ep, producto_final pf WHERE ep.id_eproducto = pf.id_eproducto AND activo = 't'"
-
+        Dim formato_consulta = "SELECT ep.*, pf.* FROM especificacion_de_producto ep, producto_final pf WHERE ep.id_eproducto = pf.id_eproducto AND activo = 't' AND ep.id_eproducto={0}"
+        Dim consulta = String.Format(formato_consulta, id)
         Try
             Dim comando As New OdbcCommand
             comando.Connection = Conexion.Abrir
@@ -113,18 +113,18 @@ Public Class PersistenciaProductoFinal
             Dim resultado = comando.ExecuteReader
 
             If resultado.HasRows Then
-                While resultado.Read()
-                    Dim p As New ProductoFinal()
-                    p.ID = resultado("id_eproducto")
-                    p.Nombre = resultado("nombre")
-                    p.Descripcion = resultado("descripcion")
-                    p.Precio = resultado("precio")
-                    p.UnidadMedida = resultado("unidad_medida")
-                    p.Categoria = resultado("categoria")
-                    p.Crianza = resultado("crianza")
-                    p.Embotellamiento = resultado("embotellamiento")
-                    Return p
-                End While
+                resultado.Read()
+                Dim p As New ProductoFinal()
+                p.ID = resultado("id_eproducto")
+                p.Nombre = resultado("nombre")
+                p.Descripcion = resultado("descripcion")
+                p.Precio = resultado("precio")
+                p.UnidadMedida = resultado("unidad_medida")
+                p.Categoria = resultado("categoria")
+                p.Crianza = resultado("crianza")
+                p.Embotellamiento = resultado("embotellamiento")
+                p.Elaboracion = New PersistenciaEtapaElaboracion().Listar(p.ID)
+                Return p
             End If
 
         Catch ex As OdbcException

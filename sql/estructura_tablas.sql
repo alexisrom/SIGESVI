@@ -109,7 +109,7 @@ CREATE TABLE recordatorio
   (
     id_recordatorio SERIAL NOT NULL,
     mensaje VARCHAR(200) NOT NULL,
-    fecha DATE NOT NULL,
+    numero_dia INTEGER NOT NULL,
     id_etapa INTEGER NOT NULL,
     PRIMARY KEY (id_recordatorio),
     FOREIGN KEY (id_etapa) REFERENCES etapa_de_elaboracion(id_etapa)

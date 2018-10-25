@@ -38,6 +38,7 @@ Partial Class MenuGerenteGeneral
         Me.BtnProductos = New System.Windows.Forms.Button
         Me.BtnProduccion = New System.Windows.Forms.Button
         Me.PicLogo = New System.Windows.Forms.PictureBox
+        Me.Label1 = New System.Windows.Forms.Label
         Me.PnlMenu.SuspendLayout()
         CType(Me.PicLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -45,6 +46,7 @@ Partial Class MenuGerenteGeneral
         'PnlMenu
         '
         Me.PnlMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(151, Byte), Integer))
+        Me.PnlMenu.Controls.Add(Me.Label1)
         Me.PnlMenu.Controls.Add(Me.Panel8)
         Me.PnlMenu.Controls.Add(Me.Panel5)
         Me.PnlMenu.Controls.Add(Me.BtnAjustes)
@@ -273,6 +275,18 @@ Partial Class MenuGerenteGeneral
         Me.PicLogo.TabIndex = 0
         Me.PicLogo.TabStop = False
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Impact", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(54, 138)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(89, 26)
+        Me.Label1.TabIndex = 52
+        Me.Label1.Text = "S.I.GES.VI"
+        '
         'MenuGerenteGeneral
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -281,6 +295,7 @@ Partial Class MenuGerenteGeneral
         Me.Name = "MenuGerenteGeneral"
         Me.Size = New System.Drawing.Size(200, 610)
         Me.PnlMenu.ResumeLayout(False)
+        Me.PnlMenu.PerformLayout()
         CType(Me.PicLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -301,5 +316,6 @@ Partial Class MenuGerenteGeneral
     Friend WithEvents BtnProductos As System.Windows.Forms.Button
     Friend WithEvents BtnProduccion As System.Windows.Forms.Button
     Friend WithEvents PicLogo As System.Windows.Forms.PictureBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 
 End Class

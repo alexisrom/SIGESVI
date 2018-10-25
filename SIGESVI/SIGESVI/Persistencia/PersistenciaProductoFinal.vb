@@ -61,11 +61,32 @@ Public Class PersistenciaProductoFinal
                 If resultado <> 1 Then
                     Throw New Exception("No se pudo agregar la etapa de elaboración: " & etapa.Nombre)
                 End If
+
+                comando.CommandText = "SELECT id_etapa FROM etapa_de_elaboracion ORDER BY id_etapa DESC LIMIT 1"
+                Dim resp = comando.ExecuteReader()
+                resp.Read()
+                etapa.ID = resp("id_etapa")
+                resp.Close()
+
+                AgregarRecordatorio(etapa, comando)
             Next
 
         Catch ex As OdbcException
             Throw ex
         End Try
+    End Sub
+
+    Sub AgregarRecordatorio(ByVal etapa As EtapaElaboracion, ByVal comando As OdbcCommand)
+        Dim formato_consulta = "INSERT INTO recordatorio(mensaje, numero_dia, id_etapa) VALUES('{0}', {1}, {2})"
+        For Each r In etapa.Recordatorios
+
+            comando.CommandText = String.Format(formato_consulta, r.Mensaje, r.Dia, etapa.ID)
+
+            If comando.ExecuteNonQuery = 0 Then
+                Throw New Exception("No se pudo agregar el recordatorio")
+            End If
+
+        Next
     End Sub
 
     Function Listar() As List(Of ProductoFinal)

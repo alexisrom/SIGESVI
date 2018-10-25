@@ -36,6 +36,8 @@
     End Sub
 
     Private Sub FrmSeleccionarLotes_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        DgvLotes.DataSource = New PersistenciaLote().Listar
+        Dim lotes = New PersistenciaLote().Listar
+        lotes.Sort(Function(x, y) x.ID.CompareTo(y.ID))
+        DgvLotes.DataSource = lotes
     End Sub
 End Class

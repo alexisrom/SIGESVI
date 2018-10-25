@@ -8,10 +8,11 @@
     End Sub
 
     Private Sub ControlesPorDefecto()
-        DgvLotes.DataSource = persistencia.Listar
-        CboEspecificaciones.DataSource = New PersistenciaProductoFinal().Listar
-        CboEspecificaciones.ValueMember = "id"
-        CboEspecificaciones.DisplayMember = "nombre"
+        Dim lotes = persistencia.Listar
+        lotes.Sort(Function(x, y) x.ID.CompareTo(y.ID))
+        DgvLotes.DataSource = lotes
+        CboEspecificaciones.DataSource = ListarEspecificaciones()
+
         CboOrigenes.DataSource = New PersistenciaOrigen().Listar
         CboOrigenes.ValueMember = "id"
         CboOrigenes.DisplayMember = "nombre"
@@ -72,4 +73,26 @@
 
         End If
     End Sub
+
+    Private Function ListarEspecificaciones() As List(Of EspecificacionProducto)
+        Dim eproductos As New List(Of EspecificacionProducto)
+
+        Dim materiasprimas = New PersistenciaMateriaPrima().Listar
+        For Each m In materiasprimas
+            eproductos.Add(m)
+        Next
+
+        Dim productosintermedios = New PersistenciaProductoIntermedio().Listar
+        For Each p In productosintermedios
+            eproductos.Add(p)
+        Next
+
+        Dim productosFinal = New PersistenciaProductoFinal().Listar
+        For Each p In productosFinal
+            eproductos.Add(p)
+        Next
+        eproductos.Sort(Function(x, y) x.ID.CompareTo(y.ID))
+        Return eproductos
+    End Function
+
 End Class

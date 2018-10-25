@@ -49,21 +49,46 @@ Public Class PersistenciaEspecificacionProducto
     End Function
 
 
-    Function Buscar(ByVal id_eproducto As Integer) As List(Of Sucursal)
+    Function Buscar(ByVal id_eproducto As Integer) As EspecificacionProducto
+        Dim formato_consulta = "SELECT * FROM especificacion_de_producto e, {0} p WHERE e.id_eproducto = p.id_eproducto AND e.id_eproducto={1} AND activo = 't'"
 
-        Dim consulta = "SELECT * FROM especificacion_de_producto WHERE activo = 't'"
 
+        Dim e As EspecificacionProducto
         Try
             Dim comando As New OdbcCommand
             comando.Connection = Conexion.Abrir
-            comando.CommandText = consulta
+            comando.CommandText = String.Format(formato_consulta, "materia_prima", id_eproducto)
             Dim resultado = comando.ExecuteReader
 
-            If resultado.HasRows Then
-                While resultado.Read()
 
-                End While
+            If resultado.HasRows Then
+                resultado.Read()
+                e = New MateriaPrima
+                e.Nombre = resultado("nombre")
+                Return e
             End If
+
+
+            resultado.Close()
+            comando.CommandText = String.Format(formato_consulta, "producto_intermedio", id_eproducto)
+            resultado = comando.ExecuteReader
+            If resultado.HasRows Then
+                resultado.Read()
+                e = New ProductoIntermedio
+                e.Nombre = resultado("nombre")
+                Return e
+            End If
+
+            resultado.Close()
+            comando.CommandText = String.Format(formato_consulta, "producto_final", id_eproducto)
+            resultado = comando.ExecuteReader
+            If resultado.HasRows Then
+                resultado.Read()
+                e = New ProductoFinal
+                e.Nombre = resultado("nombre")
+                Return e
+            End If
+
 
         Catch ex As OdbcException
             Throw ex

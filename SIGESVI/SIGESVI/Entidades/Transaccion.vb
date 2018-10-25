@@ -33,6 +33,8 @@
         End Set
     End Property
 
+
+
     Sub New()
         _Productos = New List(Of Lote)
     End Sub

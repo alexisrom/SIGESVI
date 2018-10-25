@@ -33,6 +33,7 @@
                 MessageBox.Show("La cantidad de productos supera la capacidad del vehículo")
             Else
                 persistencia.Agregar(traslado)
+                ControlesPorDefecto()
             End If
 
 

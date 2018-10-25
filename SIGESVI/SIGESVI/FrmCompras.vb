@@ -12,7 +12,7 @@
     Private Sub ControlesPorDefecto()
         LimpiarControles(Me)
 
-        CboProductos.DataSource = New PersistenciaProductoFinal().Listar
+        CboProductos.DataSource = ListarEspecificaciones()
         CboProveedores.DataSource = New PersistenciaOrigen().Listar
         DgvCompras.DataSource = New PersistenciaCompra().Listar
 
@@ -22,8 +22,32 @@
         compra.Fecha = Date.Now
     End Sub
 
+    Private Function ListarEspecificaciones() As List(Of EspecificacionProducto)
+        Dim eproductos As New List(Of EspecificacionProducto)
+
+        Dim materiasprimas = New PersistenciaMateriaPrima().Listar
+        For Each m In materiasprimas
+            eproductos.Add(m)
+        Next
+
+        Dim productosintermedios = New PersistenciaProductoIntermedio().Listar
+        For Each p In productosintermedios
+            eproductos.Add(p)
+        Next
+
+        eproductos.Sort(Function(x, y) x.ID.CompareTo(y.ID))
+        Return eproductos
+    End Function
+
     Private Sub BtnAgregarProducto_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnAgregarProducto.Click
+
+
+        If String.IsNullOrEmpty(TxtCantidad_NUM.Text) Then
+            Return
+        End If
+
         Dim cantidad = TxtCantidad_NUM.Text
+
         If cantidad < 1 Then
             MessageBox.Show("Ingrese la cantidad de productos del tipo seleccionado")
         Else

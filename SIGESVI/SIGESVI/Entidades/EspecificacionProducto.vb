@@ -94,14 +94,18 @@
         Get
 
             If TypeOf Me Is MateriaPrima Then
-                Return "MP"
+                Return "Uva"
             End If
 
             If TypeOf Me Is ProductoIntermedio Then
-                Return "PI"
+                Return "Mosto"
             End If
 
-            Return "PF"
+            If TypeOf Me Is ProductoFinal Then
+                Return "Vino"
+            End If
+
+            Return "Sin Tipo"
 
         End Get
         Set(ByVal value As String)
@@ -125,7 +129,7 @@
     End Sub
 
     Public Overrides Function ToString() As String
-        Return Me.Nombre
+        Return Me.Tipo & " " & Me.Nombre
     End Function
 
 End Class

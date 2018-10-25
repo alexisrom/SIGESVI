@@ -70,7 +70,7 @@ Partial Class FrmTransacciones
         '
         Me.BtnTraslado.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
         Me.BtnTraslado.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnTraslado.Image = Global.SIGESVI.My.Resources.Resources.traslados
+        Me.BtnTraslado.Image = Global.SIGESVI.My.Resources.Resources.delivery_truck
         Me.BtnTraslado.Location = New System.Drawing.Point(728, 169)
         Me.BtnTraslado.Name = "BtnTraslado"
         Me.BtnTraslado.Size = New System.Drawing.Size(130, 130)

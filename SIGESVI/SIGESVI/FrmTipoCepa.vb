@@ -4,7 +4,7 @@
    
     Private Sub FrmTipoCepa_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         persistencia = New PersistenciaTipoCepa
-        ValidarControles(Me)
+        RestringirCampos(Me)
         ControlesPorDefecto()
     End Sub
 

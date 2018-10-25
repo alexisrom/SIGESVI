@@ -1,6 +1,6 @@
 ﻿Public Class Traslado
+    Inherits Transaccion
 
-    ' Puede ser almacen, viñedo o entrega
     Private _Destino As String
     Public Property Destino() As String
         Get
@@ -10,5 +10,17 @@
             _Destino = value
         End Set
     End Property
+
+
+    Private _Vehiculo As Transporte
+    Public Property Vehiculo() As Transporte
+        Get
+            Return _Vehiculo
+        End Get
+        Set(ByVal value As Transporte)
+            _Vehiculo = value
+        End Set
+    End Property
+
 
 End Class

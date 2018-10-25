@@ -67,7 +67,7 @@
         End If
     End Sub
 
-    Public Sub ValidarControles(ByVal frm As Form)
+    Public Sub RestringirCampos(ByVal frm As Form)
 
         For Each ctrl As Control In frm.Controls
 

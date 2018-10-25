@@ -3,7 +3,7 @@
 
     Private Sub FrmEtapa_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         recordatrios = New List(Of Recordatorio)
-        ValidarControles(Me)
+        RestringirCampos(Me)
     End Sub
 
     Private Sub BtnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnAgregar.Click

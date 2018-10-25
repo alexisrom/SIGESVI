@@ -86,6 +86,8 @@ Public Class PersistenciaLote
                     lote.ID = resultado("id_lote")
                     lote.Stock = resultado("cantidad")
                     lote.Fecha = resultado("fecha")
+                    lote.Tipo = New EspecificacionProducto
+                    lote.Tipo.Nombre = resultado("nombre")
                     'lote.Tipo = New PersistenciaEspecificacionProducto.buscar
                     'lote.Origen = PersistenciaOrigen.Buscar
                     lotes.Add(lote)

@@ -116,6 +116,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property delivery_truck() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("delivery-truck", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property descarga() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("descarga", resourceCulture)

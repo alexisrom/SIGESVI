@@ -190,6 +190,12 @@
     <Compile Include="FrmProductoIntermedio.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmSeleccionarLotes.Designer.vb">
+      <DependentUpon>FrmSeleccionarLotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSeleccionarLotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmSucursales.Designer.vb">
       <DependentUpon>FrmSucursales.vb</DependentUpon>
     </Compile>
@@ -218,6 +224,12 @@
       <DependentUpon>FrmTrazabilidad.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmTrazabilidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVehiculos.Designer.vb">
+      <DependentUpon>FrmVehiculos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVehiculos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmVentas.Designer.vb">
@@ -376,6 +388,10 @@
       <DependentUpon>FrmProductoIntermedio.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmSeleccionarLotes.resx">
+      <DependentUpon>FrmSeleccionarLotes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmSucursales.resx">
       <DependentUpon>FrmSucursales.vb</DependentUpon>
       <SubType>Designer</SubType>
@@ -394,6 +410,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTrazabilidad.resx">
       <DependentUpon>FrmTrazabilidad.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVehiculos.resx">
+      <DependentUpon>FrmVehiculos.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVentas.resx">
@@ -545,6 +565,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lotes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery-truck.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

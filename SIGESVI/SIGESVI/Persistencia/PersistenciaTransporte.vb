@@ -3,8 +3,8 @@
 Public Class PersistenciaTransporte
 
     Sub Agregar(ByVal transporte As Transporte)
-        Dim formato_consulta = "INSERT INTO transporte(tipo, capacidad) VALUES(""{0}"", {1})"
-        Dim consulta = String.Format(formato_consulta, transporte.Tipo, transporte.Capacidad)
+        Dim formato_consulta = "INSERT INTO transporte(id_transporte, nombre, capacidad) VALUES({0}, '{1}', {2})"
+        Dim consulta = String.Format(formato_consulta, transporte.ID, transporte.Tipo, transporte.Capacidad)
 
         Dim comando As New OdbcCommand
 
@@ -57,7 +57,7 @@ Public Class PersistenciaTransporte
             If resultado.HasRows Then
                 While resultado.Read()
                     Dim id = resultado("id_transporte")
-                    Dim nombre = resultado("tipo")
+                    Dim nombre = resultado("nombre")
                     Dim capacidad = CInt(resultado("capacidad"))
                     transportes.Add(New Transporte(id, nombre, capacidad))
                 End While

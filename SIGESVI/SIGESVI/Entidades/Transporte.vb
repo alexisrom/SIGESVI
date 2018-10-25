@@ -37,4 +37,12 @@
         Me.Tipo = tipo
         Me.Capacidad = capacidad
     End Sub
+
+    Sub New()
+
+    End Sub
+
+    Public Overrides Function ToString() As String
+        Return Me.Tipo & "(" & Me.Capacidad & ")"
+    End Function
 End Class

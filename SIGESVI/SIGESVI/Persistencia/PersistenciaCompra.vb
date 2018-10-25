@@ -95,7 +95,6 @@ Public Class PersistenciaCompra
                 End While
             End If
 
-
         Catch ex As OdbcException
             Throw ex
         Finally

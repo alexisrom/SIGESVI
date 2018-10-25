@@ -55,6 +55,7 @@
 
 
     Public Overrides Function ToString() As String
+
         Return Me.Tipo.Nombre & " (" & Me.Stock & ")"
     End Function
 

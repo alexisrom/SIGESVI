@@ -10,7 +10,7 @@
 
     Private Sub FrmMateriaPrima_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         persistencia = New PersistenciaMateriaPrima()
-        ValidarControles(Me)
+        RestringirCampos(Me)
         ControlesPorDefecto()
     End Sub
 

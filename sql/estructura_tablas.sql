@@ -159,7 +159,7 @@ CREATE TABLE destino
   
 CREATE TABLE transporte 
   (
-    id_transporte INTEGER NOT NULL, -- 'MATRICULA'
+    id_transporte INTEGER NOT NULL,
     nombre VARCHAR(20) NOT NULL,
     capacidad INTEGER NOT NULL,
     activo BOOLEAN DEFAULT "t",
@@ -170,11 +170,10 @@ CREATE TABLE traslado
   (
     id_transaccion INTEGER NOT NULL,
     id_transporte INTEGER NOT NULL,
-    id_destino INTEGER NOT NULL,
+    destino VARCHAR(50) NOT NULL,
     PRIMARY KEY (id_transaccion),
     FOREIGN KEY (id_transaccion) REFERENCES transacciones(id_transaccion),
-    FOREIGN KEY (id_transporte) REFERENCES transporte(id_transporte),
-    FOREIGN KEY (id_destino) REFERENCES destino(id_destino)
+    FOREIGN KEY (id_transporte) REFERENCES transporte(id_transporte)
   );
 
 CREATE TABLE tipo_cepa

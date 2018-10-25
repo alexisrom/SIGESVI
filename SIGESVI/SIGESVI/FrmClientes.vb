@@ -3,7 +3,7 @@
   
     Private Sub FrmClientes_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         persistencia = New PersistenciaCliente
-        ValidarControles(Me)
+        RestringirCampos(Me)
         ControlesPorDefecto()
     End Sub
 

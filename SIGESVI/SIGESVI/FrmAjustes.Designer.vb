@@ -24,16 +24,19 @@ Partial Class FrmAjustes
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label
         Me.Label2 = New System.Windows.Forms.Label
+        Me.Label3 = New System.Windows.Forms.Label
+        Me.Label4 = New System.Windows.Forms.Label
         Me.PictureBox6 = New System.Windows.Forms.PictureBox
         Me.PictureBox5 = New System.Windows.Forms.PictureBox
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox
+        Me.PicVehiculos = New System.Windows.Forms.PictureBox
         Me.Pic_UBICACION = New System.Windows.Forms.PictureBox
         Me.PictureBox2 = New System.Windows.Forms.PictureBox
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
-        Me.Label3 = New System.Windows.Forms.Label
+        Me.Label5 = New System.Windows.Forms.Label
+        Me.Label6 = New System.Windows.Forms.Label
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PicVehiculos, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Pic_UBICACION, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,6 +64,28 @@ Partial Class FrmAjustes
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "ORIGENES"
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(386, 183)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(129, 30)
+        Me.Label3.TabIndex = 8
+        Me.Label3.Text = "UBICACIÓN"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Roboto", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(59, 429)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(125, 25)
+        Me.Label4.TabIndex = 9
+        Me.Label4.Text = "VEHÍCULOS"
+        '
         'PictureBox6
         '
         Me.PictureBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
@@ -83,16 +108,16 @@ Partial Class FrmAjustes
         Me.PictureBox5.TabIndex = 4
         Me.PictureBox5.TabStop = False
         '
-        'PictureBox4
+        'PicVehiculos
         '
-        Me.PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
-        Me.PictureBox4.Image = Global.SIGESVI.My.Resources.Resources.cepa
-        Me.PictureBox4.Location = New System.Drawing.Point(54, 285)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(130, 130)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PictureBox4.TabIndex = 3
-        Me.PictureBox4.TabStop = False
+        Me.PicVehiculos.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.PicVehiculos.Image = Global.SIGESVI.My.Resources.Resources.traslados
+        Me.PicVehiculos.Location = New System.Drawing.Point(54, 285)
+        Me.PicVehiculos.Name = "PicVehiculos"
+        Me.PicVehiculos.Size = New System.Drawing.Size(130, 130)
+        Me.PicVehiculos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PicVehiculos.TabIndex = 3
+        Me.PicVehiculos.TabStop = False
         '
         'Pic_UBICACION
         '
@@ -127,16 +152,27 @@ Partial Class FrmAjustes
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'Label3
+        'Label5
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(386, 183)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(129, 30)
-        Me.Label3.TabIndex = 8
-        Me.Label3.Text = "UBICACIÓN"
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Roboto", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(227, 429)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(125, 25)
+        Me.Label5.TabIndex = 10
+        Me.Label5.Text = "VEHÍCULOS"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Roboto", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(390, 429)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(125, 25)
+        Me.Label6.TabIndex = 11
+        Me.Label6.Text = "VEHÍCULOS"
         '
         'FrmAjustes
         '
@@ -144,12 +180,15 @@ Partial Class FrmAjustes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1160, 572)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.PictureBox5)
-        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.PicVehiculos)
         Me.Controls.Add(Me.Pic_UBICACION)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
@@ -158,7 +197,7 @@ Partial Class FrmAjustes
         Me.Text = "FrmAjustes"
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PicVehiculos, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Pic_UBICACION, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -169,10 +208,13 @@ Partial Class FrmAjustes
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents Pic_UBICACION As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
+    Friend WithEvents PicVehiculos As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
 End Class

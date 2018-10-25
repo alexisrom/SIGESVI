@@ -312,8 +312,8 @@ Partial Class FrmFuncionarios
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.DgvFuncionarios)
         Me.Panel2.Controls.Add(Me.Label3)
+        Me.Panel2.Controls.Add(Me.DgvFuncionarios)
         Me.Panel2.Controls.Add(Me.BtnEliminar)
         Me.Panel2.Controls.Add(Me.BtnEditar)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
@@ -324,6 +324,8 @@ Partial Class FrmFuncionarios
         '
         'DgvFuncionarios
         '
+        Me.DgvFuncionarios.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DgvFuncionarios.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
         Me.DgvFuncionarios.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DgvFuncionarios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
@@ -375,14 +377,16 @@ Partial Class FrmFuncionarios
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
+        Me.Label3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 16.0!)
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(212, 21)
+        Me.Label3.Location = New System.Drawing.Point(83, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(170, 30)
+        Me.Label3.Size = New System.Drawing.Size(480, 79)
         Me.Label3.TabIndex = 31
         Me.Label3.Text = "FUNCIONARIOS"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'BtnEliminar
         '
@@ -428,7 +432,6 @@ Partial Class FrmFuncionarios
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
         CType(Me.DgvFuncionarios, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

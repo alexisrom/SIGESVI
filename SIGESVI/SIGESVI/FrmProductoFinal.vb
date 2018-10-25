@@ -11,7 +11,7 @@
     Private Sub FrmProductoFinal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         persistencia = New PersistenciaProductoFinal()
         etapasDeElaboracion = New List(Of EtapaElaboracion)
-        ValidarControles(Me)
+        RestringirCampos(Me)
         ControlesPorDefecto()
     End Sub
 

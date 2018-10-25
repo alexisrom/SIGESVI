@@ -13,4 +13,12 @@
     Private Sub BtnCompra_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnCompra.Click
         AbrirFormulario(New FrmCompras)
     End Sub
+
+    Private Sub BtnVenta_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnVenta.Click
+        AbrirFormulario(New FrmVentas)
+    End Sub
+
+    Private Sub BtnTraslado_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnTraslado.Click
+        AbrirFormulario(New FrmTraslados)
+    End Sub
 End Class

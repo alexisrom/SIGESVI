@@ -37,6 +37,7 @@ Partial Class FrmMateriaPrima
         Me.Label3 = New System.Windows.Forms.Label
         Me.PicVolver = New System.Windows.Forms.PictureBox
         Me.PicFoto = New System.Windows.Forms.PictureBox
+        Me.OfdImagen = New System.Windows.Forms.OpenFileDialog
         CType(Me.PicVolver, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PicFoto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -195,8 +196,14 @@ Partial Class FrmMateriaPrima
         Me.PicFoto.Location = New System.Drawing.Point(667, 151)
         Me.PicFoto.Name = "PicFoto"
         Me.PicFoto.Size = New System.Drawing.Size(100, 100)
+        Me.PicFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PicFoto.TabIndex = 35
         Me.PicFoto.TabStop = False
+        '
+        'OfdImagen
+        '
+        Me.OfdImagen.Filter = "JPEG|*.JPG|PNG|*.PNG"
+        Me.OfdImagen.Title = "Seleccionar imagen del producto"
         '
         'FrmMateriaPrima
         '
@@ -243,4 +250,5 @@ Partial Class FrmMateriaPrima
     Friend WithEvents PicFoto As System.Windows.Forms.PictureBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents PicVolver As System.Windows.Forms.PictureBox
+    Friend WithEvents OfdImagen As System.Windows.Forms.OpenFileDialog
 End Class

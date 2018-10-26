@@ -3,8 +3,8 @@
 Public Class PersistenciaCliente
 
     Public Sub Agregar(ByVal cliente As Cliente)
-        Dim formato_consulta = "INSERT INTO cliente (id_cliente, nombre, direccion, telefono) VALUES ({0}, '{1}', '{2}', '{3}')"
-        Dim consulta = String.Format(formato_consulta, cliente.ID, cliente.Nombre, cliente.Direccion, cliente.Telefono)
+        Dim formato_consulta = "INSERT INTO cliente (id_cliente, nombre, direccion, telefono, usuario, contrasena) VALUES ({0}, '{1}', '{2}', '{3}', '{4}', '{5}')"
+        Dim consulta = String.Format(formato_consulta, cliente.ID, cliente.Nombre, cliente.Direccion, cliente.Telefono, cliente.Username, cliente.Password)
 
         Dim comando As New OdbcCommand
 

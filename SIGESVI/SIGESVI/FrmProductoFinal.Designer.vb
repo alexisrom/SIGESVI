@@ -134,7 +134,7 @@ Partial Class FrmProductoFinal
         Me.TxtID.Location = New System.Drawing.Point(195, 106)
         Me.TxtID.Name = "TxtID"
         Me.TxtID.ReadOnly = True
-        Me.TxtID.Size = New System.Drawing.Size(40, 27)
+        Me.TxtID.Size = New System.Drawing.Size(58, 27)
         Me.TxtID.TabIndex = 11
         '
         'Label6

@@ -37,6 +37,7 @@
             s.Nombre = TxtNombre_REQ.Text
             s.Direccion = TxtDireccion_REQ.Text
             s.Departamento = TxtDepartamento_REQ.Text
+            s.Proveedor = CbProveedor.Checked
 
             For Each item In LstTelefonos_REQ.Items
                 s.Telefonos.Add(item.ToString)

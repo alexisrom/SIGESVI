@@ -5,7 +5,7 @@
     Public materiaPrima As MateriaPrima
 
     Private Sub PicVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PicVolver.Click
-        AbrirFormulario(New FrmListadoProductos, sender)
+        AbrirFormulario(New FrmListadoProductos)
     End Sub
 
     Private Sub FrmMateriaPrima_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -70,4 +70,10 @@
     End Sub
 
 
+    Private Sub BtnSeleccionarFoto_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnSeleccionarFoto.Click
+        If OfdImagen.ShowDialog() = DialogResult.OK Then
+            PicFoto.Image = Image.FromFile(OfdImagen.FileName)
+
+        End If
+    End Sub
 End Class

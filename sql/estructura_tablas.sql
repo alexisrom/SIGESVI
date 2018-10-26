@@ -10,6 +10,7 @@ CREATE TABLE sucursal
     nombre VARCHAR(20) NOT NULL,
     direccion VARCHAR(20) NOT NULL,
     departamento VARCHAR(20) NOT NULL,
+    proveedor BOOLEAN DEFAULT 'f',
     activo BOOLEAN DEFAULT "t",
     PRIMARY KEY (id_sucursal)
   );
@@ -22,15 +23,6 @@ CREATE TABLE telefono_sucursal
     FOREIGN KEY (id_sucursal) REFERENCES sucursal(id_sucursal)
   );
 
-CREATE TABLE origen 
-  (
-    id_origen SERIAL NOT NULL,
-    nombre VARCHAR(30) NOT NULL,
-    direccion VARCHAR(40) NOT NULL,
-    propietario VARCHAR(25) NOT NULL,
-    activo BOOLEAN DEFAULT "t",
-    PRIMARY KEY (id_origen)
-  );
 
 CREATE TABLE cliente 
   (
@@ -38,6 +30,8 @@ CREATE TABLE cliente
     nombre VARCHAR(30) NOT NULL,
     direccion VARCHAR(40) NOT NULL,
     telefono VARCHAR(9) NOT NULL,
+    usuario VARCHAR(20) NOT NULL,
+    contrasena VARCHAR(20) NOT NULL,
     activo BOOLEAN DEFAULT "t",
     PRIMARY KEY (id_cliente) 
   );
@@ -97,7 +91,7 @@ CREATE TABLE recorre
 
 CREATE TABLE alarma
   (
-    id_alarma INTEGER NOT NULL,
+    id_produccion INTEGER NOT NULL,
     id_etapa INTEGER NOT NULL,
     fecha DATE NOT NULL,
     duracion INTEGER DEFAULT 1,
@@ -139,14 +133,7 @@ CREATE TABLE venta
     FOREIGN KEY (id_transaccion) REFERENCES transacciones(id_transaccion)
   );
 
-CREATE TABLE involucra
-  (
-    id_lote INTEGER NOT NULL,
-    id_transaccion INTEGER NOT NULL,
-    PRIMARY KEY (id_lote, id_transaccion),
-    FOREIGN KEY (id_lote) REFERENCES lote(id_lote),
-    FOREIGN KEY (id_transaccion) REFERENCES transacciones(id_transaccion)
-  );
+
 
 CREATE TABLE destino 
   (
@@ -215,13 +202,22 @@ CREATE TABLE lote
   (
     id_lote SERIAL NOT NULL,
     cantidad INTEGER NOT NULL,
-    id_origen INTEGER NOT NULL,
+    id_sucursal INTEGER NOT NULL,
     fecha DATE NOT NULL,
     id_eproducto INTEGER NOT NULL,
     activo BOOLEAN DEFAULT "t",
     PRIMARY KEY (id_lote),
     FOREIGN KEY (id_eproducto) REFERENCES especificacion_de_producto(id_eproducto),
-    FOREIGN KEY (id_origen) REFERENCES origen(id_origen)
+    FOREIGN KEY (id_sucursal) REFERENCES sucursal(id_sucursal)
+  );
+
+  CREATE TABLE involucra
+  (
+    id_lote INTEGER NOT NULL,
+    id_transaccion INTEGER NOT NULL,
+    PRIMARY KEY (id_lote, id_transaccion),
+    FOREIGN KEY (id_lote) REFERENCES lote(id_lote),
+    FOREIGN KEY (id_transaccion) REFERENCES transacciones(id_transaccion)
   );
 
 CREATE TABLE obtiene 

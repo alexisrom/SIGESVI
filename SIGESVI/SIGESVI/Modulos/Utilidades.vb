@@ -1,4 +1,6 @@
-﻿Module Utilidades
+﻿Imports System.IO
+
+Module Utilidades
     Public ubicacion As String = "Montevideo"
 
     Function ListarDepartamentos() As List(Of String)
@@ -61,11 +63,13 @@
     End Sub
 
 
-    Function FormatearFecha(ByVal fecha As Date) As String
+    Function DateToString(ByVal fecha As Date) As String
         Return String.Format("{0}-{1}-{2}", fecha.Day, fecha.Month, fecha.Year)
     End Function
 
-    Function FormatearFechaHora(ByVal fecha As Date) As String
+    Function DateTimeToString(ByVal fecha As Date) As String
         Return String.Format("{0}-{1}-{2} {3}:{4}", fecha.Year, fecha.Month, fecha.Day, fecha.Hour, fecha.Minute)
     End Function
+
+  
 End Module

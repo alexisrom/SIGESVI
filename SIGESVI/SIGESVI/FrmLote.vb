@@ -13,7 +13,7 @@
         DgvLotes.DataSource = lotes
         CboEspecificaciones.DataSource = ListarEspecificaciones()
 
-        CboOrigenes.DataSource = New PersistenciaOrigen().Listar
+        CboOrigenes.DataSource = New PersistenciaSucursal().Listar
         CboOrigenes.ValueMember = "id"
         CboOrigenes.DisplayMember = "nombre"
         LimpiarControles(Me)
@@ -29,7 +29,7 @@
             l.ID = TxtID_NUM_REQ.Text
             l.Fecha = Date.Now.Date
             l.Stock = TxtStock_NUM_REQ.Text
-            l.Origen = CType(CboOrigenes.SelectedItem, Origen)
+            l.Origen = CType(CboOrigenes.SelectedItem, Sucursal)
             l.Tipo = CType(CboEspecificaciones.SelectedItem, EspecificacionProducto)
             Guardar(l)
         End If

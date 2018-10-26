@@ -4,7 +4,7 @@ Public Class PersistenciaTransaccion
 
     Sub Agregar(ByVal transaccion As Transaccion)
         Dim formato_consulta = "INSERT INTO transacciones(fecha_hora) VALUES('{0}')"
-        Dim consulta = String.Format(formato_consulta, FormatearFechaHora(transaccion.Fecha))
+        Dim consulta = String.Format(formato_consulta, DateTimeToString(transaccion.Fecha))
 
         Try
             Dim comando As New OdbcCommand

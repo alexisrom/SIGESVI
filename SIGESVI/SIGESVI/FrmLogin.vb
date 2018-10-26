@@ -8,7 +8,7 @@ Public Class FrmLogin
         Dim pass = TxtPass_REQ.Text
 
         Try
-            Dim persistencia As New PersistenciaFuncionario()
+            Dim persistencia As New PersistenciaUsuario()
             Dim usuario = persistencia.Login(user, pass)
 
             If usuario Is Nothing Then

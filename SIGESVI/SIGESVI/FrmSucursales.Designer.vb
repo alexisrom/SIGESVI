@@ -23,6 +23,7 @@ Partial Class FrmSucursales
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel
+        Me.BtnCancelar = New System.Windows.Forms.Button
         Me.BtnGuardar = New System.Windows.Forms.Button
         Me.BtnEliminarTelefono = New System.Windows.Forms.Button
         Me.BtnAgregarTelefono = New System.Windows.Forms.Button
@@ -43,7 +44,7 @@ Partial Class FrmSucursales
         Me.BtnEliminar = New System.Windows.Forms.Button
         Me.BtnEditar = New System.Windows.Forms.Button
         Me.DgvSucursales = New System.Windows.Forms.DataGridView
-        Me.BtnCancelar = New System.Windows.Forms.Button
+        Me.CbProveedor = New System.Windows.Forms.CheckBox
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.DgvSucursales, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -52,6 +53,7 @@ Partial Class FrmSucursales
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.CbProveedor)
         Me.Panel1.Controls.Add(Me.BtnCancelar)
         Me.Panel1.Controls.Add(Me.BtnGuardar)
         Me.Panel1.Controls.Add(Me.BtnEliminarTelefono)
@@ -73,6 +75,22 @@ Partial Class FrmSucursales
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(437, 495)
         Me.Panel1.TabIndex = 0
+        '
+        'BtnCancelar
+        '
+        Me.BtnCancelar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnCancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.BtnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnCancelar.FlatAppearance.BorderSize = 0
+        Me.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCancelar.ForeColor = System.Drawing.Color.White
+        Me.BtnCancelar.Location = New System.Drawing.Point(212, 441)
+        Me.BtnCancelar.Name = "BtnCancelar"
+        Me.BtnCancelar.Size = New System.Drawing.Size(131, 28)
+        Me.BtnCancelar.TabIndex = 39
+        Me.BtnCancelar.Text = "CANCELAR"
+        Me.BtnCancelar.UseVisualStyleBackColor = False
         '
         'BtnGuardar
         '
@@ -202,7 +220,7 @@ Partial Class FrmSucursales
         Me.TxtID.Font = New System.Drawing.Font("Segoe UI", 11.0!)
         Me.TxtID.Location = New System.Drawing.Point(160, 82)
         Me.TxtID.Name = "TxtID"
-        Me.TxtID.Size = New System.Drawing.Size(237, 27)
+        Me.TxtID.Size = New System.Drawing.Size(113, 27)
         Me.TxtID.TabIndex = 15
         '
         'Label5
@@ -301,21 +319,18 @@ Partial Class FrmSucursales
         Me.DgvSucursales.Size = New System.Drawing.Size(739, 341)
         Me.DgvSucursales.TabIndex = 28
         '
-        'BtnCancelar
+        'CbProveedor
         '
-        Me.BtnCancelar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnCancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
-        Me.BtnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnCancelar.FlatAppearance.BorderSize = 0
-        Me.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCancelar.ForeColor = System.Drawing.Color.White
-        Me.BtnCancelar.Location = New System.Drawing.Point(212, 441)
-        Me.BtnCancelar.Name = "BtnCancelar"
-        Me.BtnCancelar.Size = New System.Drawing.Size(131, 28)
-        Me.BtnCancelar.TabIndex = 39
-        Me.BtnCancelar.Text = "CANCELAR"
-        Me.BtnCancelar.UseVisualStyleBackColor = False
+        Me.CbProveedor.AutoSize = True
+        Me.CbProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CbProveedor.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CbProveedor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
+        Me.CbProveedor.Location = New System.Drawing.Point(305, 85)
+        Me.CbProveedor.Name = "CbProveedor"
+        Me.CbProveedor.Size = New System.Drawing.Size(89, 19)
+        Me.CbProveedor.TabIndex = 40
+        Me.CbProveedor.Text = "PROVEEDOR"
+        Me.CbProveedor.UseVisualStyleBackColor = True
         '
         'FrmSucursales
         '
@@ -358,4 +373,5 @@ Partial Class FrmSucursales
     Friend WithEvents BtnEditar As System.Windows.Forms.Button
     Friend WithEvents DgvSucursales As System.Windows.Forms.DataGridView
     Friend WithEvents BtnCancelar As System.Windows.Forms.Button
+    Friend WithEvents CbProveedor As System.Windows.Forms.CheckBox
 End Class

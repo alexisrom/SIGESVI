@@ -1,3 +1,3 @@
 ﻿Module InstanciasGlobales
-    Public usuarioLogueado As Funcionario
+    Public usuarioLogueado As Usuario
 End Module

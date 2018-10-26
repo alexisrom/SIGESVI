@@ -5,7 +5,7 @@ Public Class PersistenciaProduccion
 
     Sub Agregar(ByVal produccion As Produccion)
         Dim formato_consulta = "INSERT INTO produccion(id_sucursal, id_eproducto, fecha_inicio, fecha_fin, cantidad) VALUES({0}, {1}, '{2}', '{3}', {4})"
-        Dim consulta = String.Format(formato_consulta, produccion.Sucursal.ID, produccion.Producto.ID, FormatearFecha(produccion.FechaInicio), FormatearFecha(produccion.FechaFin), produccion.Cantidad)
+        Dim consulta = String.Format(formato_consulta, produccion.Sucursal.ID, produccion.Producto.ID, DateToString(produccion.FechaInicio), DateToString(produccion.FechaFin), produccion.Cantidad)
         Dim comando As New OdbcCommand
 
         Try
@@ -38,7 +38,7 @@ Public Class PersistenciaProduccion
 
     Sub Modificar(ByVal produccion As Produccion)
         Dim formato_consulta = "UPDATE produccion SET fecha_inicio = '{0}', fecha_fin = '{1}', cantidad={2} WHERE id_produccion = {3}"
-        Dim consulta = String.Format(formato_consulta, FormatearFecha(produccion.FechaInicio), FormatearFecha(produccion.FechaFin), produccion.Cantidad, produccion.ID)
+        Dim consulta = String.Format(formato_consulta, DateToString(produccion.FechaInicio), DateToString(produccion.FechaFin), produccion.Cantidad, produccion.ID)
         Dim comando As New OdbcCommand
 
         Try

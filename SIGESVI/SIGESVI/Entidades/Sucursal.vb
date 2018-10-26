@@ -54,6 +54,18 @@
         End Set
     End Property
 
+
+    Private _Proveedor As Boolean
+    Public Property Proveedor() As Boolean
+        Get
+            Return _Proveedor
+        End Get
+        Set(ByVal value As Boolean)
+            _Proveedor = value
+        End Set
+    End Property
+
+
     Sub New()
         Me.ID = 0
         Me.Nombre = ""
@@ -62,12 +74,13 @@
         Me.Telefonos = New List(Of String)
     End Sub
 
-    Sub New(ByVal id As Integer, ByVal nombre As String, ByVal direccion As String, ByVal departamento As String, ByVal telefonos As List(Of String))
+    Sub New(ByVal id As Integer, ByVal nombre As String, ByVal direccion As String, ByVal departamento As String, ByVal telefonos As List(Of String), ByVal proveedor As Boolean)
         Me.ID = id
         Me.Nombre = nombre
         Me.Direccion = direccion
         Me.Departamento = departamento
         Me.Telefonos = telefonos
+        Me.Proveedor = proveedor
     End Sub
 
     Public Overrides Function ToString() As String

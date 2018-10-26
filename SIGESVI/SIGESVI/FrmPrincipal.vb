@@ -4,7 +4,7 @@ Public Class FrmPrincipal
 
     Private Sub FrmPrincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ManejoVentanas.frmPrincipal = Me
-        PicLogo_Click(Nothing, e)
+
         If usuarioLogueado.EsGerenteGeneral Then
             PnlMenuContenedor.Controls.Add(New MenuGerenteGeneral)
         ElseIf usuarioLogueado.EsGerenteSucursal Then
@@ -12,13 +12,18 @@ Public Class FrmPrincipal
         ElseIf usuarioLogueado.EsAdministrativo Then
             PnlMenuContenedor.Controls.Add(New MenuAdministrativo)
         ElseIf usuarioLogueado.EsAsesorProfesional Then
-            'PnlMenuContenedor.Controls.Add(New MenuAsesorProfesional)
-            PnlMenuContenedor.Controls.Add(New MenuCliente)
+            PnlMenuContenedor.Controls.Add(New MenuAsesorProfesional)
         ElseIf usuarioLogueado.EsEnologo Then
             PnlMenuContenedor.Controls.Add(New MenuAsesorProfesional)
-        Else
-            PnlMenuContenedor.Controls.Add(New MenuCliente)
         End If
+
+
+        If TypeOf usuarioLogueado Is Funcionario Then
+            PicLogo_Click(Nothing, e)
+        Else
+            AbrirFormulario(New FrmCatalogo)
+        End If
+
     End Sub
 
 
@@ -141,10 +146,7 @@ Public Class FrmPrincipal
         AbrirFormulario(New FrmTipoCepa)
     End Sub
 
-    Private Sub BtnCampos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        AbrirFormulario(New FrmCampos)
-    End Sub
-
+    
     Private Sub BtnLotes_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         AbrirFormulario(New FrmLotes)
     End Sub

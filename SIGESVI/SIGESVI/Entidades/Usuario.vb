@@ -110,4 +110,8 @@
     Function EsCliente() As Boolean
         Return _Rol.Equals("Cliente")
     End Function
+
+    Public Overrides Function ToString() As String
+        Return Me.Nombre
+    End Function
 End Class

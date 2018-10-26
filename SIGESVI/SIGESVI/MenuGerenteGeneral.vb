@@ -22,10 +22,7 @@
         AbrirFormulario(New FrmAjustes, sender)
     End Sub
 
-    Private Sub BtnCampos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        AbrirFormulario(New FrmCampos, sender)
-    End Sub
-
+ 
     Private Sub BtnCepas_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         AbrirFormulario(New FrmTipoCepa, sender)
     End Sub
@@ -71,11 +68,14 @@
         AbrirFormulario(New FrmSucursales, sender)
     End Sub
 
-    Private Sub BtnOrigenes_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        AbrirFormulario(New FrmCampos, sender)
-    End Sub
+
 
     Private Sub BtnCepas_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
         AbrirFormulario(New FrmTipoCepa, sender)
+    End Sub
+
+  
+    Private Sub BtnEstadisticas_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnEstadisticas.Click
+        AbrirFormulario(New FrmEstadisticas, sender)
     End Sub
 End Class

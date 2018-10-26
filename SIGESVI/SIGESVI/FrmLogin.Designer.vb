@@ -116,7 +116,6 @@ Partial Class FrmLogin
         Me.TxtUser_REQ.Name = "TxtUser_REQ"
         Me.TxtUser_REQ.Size = New System.Drawing.Size(205, 27)
         Me.TxtUser_REQ.TabIndex = 1
-        Me.TxtUser_REQ.Text = "alekido"
         '
         'BtnIngresar
         '
@@ -152,7 +151,6 @@ Partial Class FrmLogin
         Me.TxtPass_REQ.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TxtPass_REQ.Size = New System.Drawing.Size(205, 27)
         Me.TxtPass_REQ.TabIndex = 2
-        Me.TxtPass_REQ.Text = "1234"
         '
         'FrmLogin
         '

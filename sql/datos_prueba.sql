@@ -27,15 +27,15 @@ INSERT INTO telefono_sucursal (id_sucursal, telefono) VALUES
 -- 5 Funcionarios en la sucursal 1, uno por cada cargo.
 -----------------------------------------------------------------------
 INSERT INTO funcionario (cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES 
-(5111111,  1, "Marco","Uno", "direccion 1", "marco", "uno", "Gerente Sucursal");
+(5111111,  1, "Marco","Uno", "direccion 1", "gg", "gg", "Gerente General");
 INSERT INTO funcionario (cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES 
-(5111112, 1, "José", "Dos", "direccion 1", "jose", "jose", "Administrativo");
+(5111112, 1, "José", "Dos", "direccion 1", "adm", "adm", "Administrativo");
 INSERT INTO funcionario (cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES 
-(5111113, 1, "Esteban", "Tres", "direccion 1", "esteban", "esteban", "Enologo");
+(5111113, 1, "Esteban", "Tres", "direccion 1", "eno", "eno", "Enologo");
 INSERT INTO funcionario (cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES 
-(5111114, 1, "María", "Cuatro", "direccion 1", "maria", "maria", "Administrativo");
+(5111114, 1, "María", "Cuatro", "direccion 1", "gs", "gs", "Gerente Sucursal");
 INSERT INTO funcionario (cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES 
-(5111115, 1, "Ana", "Cinco", "direccion 1", "ana", "ana", "Administrativo");
+(5111115, 1, "Ana", "Cinco", "direccion 1", "as", "as", "Asesor Profesional");
 
 -----------------------------------------------------------------------
 -- Tipos de Cepa

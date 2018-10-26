@@ -4,7 +4,7 @@ Public Class PersistenciaTrazabilidad
 
     Sub AgregarEtapa(ByVal produccion As Produccion, ByVal etapaRecorrida As EtapaRecorrida)
         Dim formato_consulta = "INSERT INTO recorre(id_produccion, id_etapa, fecha_inicio, fecha_fin, observacion) VALUES({0}, {1}, '{2}', '{3}', '{4}')"
-        Dim consulta = String.Format(formato_consulta, produccion.ID, etapaRecorrida.Etapa.ID, FormatearFecha(etapaRecorrida.FechaInicio), FormatearFecha(etapaRecorrida.FechaFin), etapaRecorrida.Observacion)
+        Dim consulta = String.Format(formato_consulta, produccion.ID, etapaRecorrida.Etapa.ID, DateToString(etapaRecorrida.FechaInicio), DateToString(etapaRecorrida.FechaFin), etapaRecorrida.Observacion)
 
         Try
             Dim comando As New OdbcCommand
@@ -24,7 +24,7 @@ Public Class PersistenciaTrazabilidad
 
     Sub AgregarAlarma(ByVal produccion As Produccion, ByVal etapaRecorrida As EtapaRecorrida, ByVal alarma As Alarma)
         Dim formato_consulta = "INSERT INTO alarma(id_produccion, id_etapa, fecha, duracion, mensaje) VALUES({0}, {1}, '{2}', {3}, '{4}')"
-        Dim consulta = String.Format(formato_consulta, produccion.ID, etapaRecorrida.Etapa.ID, FormatearFecha(alarma.Fecha), alarma.Duracion, alarma.Mensaje)
+        Dim consulta = String.Format(formato_consulta, produccion.ID, etapaRecorrida.Etapa.ID, DateToString(alarma.Fecha), alarma.Duracion, alarma.Mensaje)
 
         Try
             Dim comando As New OdbcCommand

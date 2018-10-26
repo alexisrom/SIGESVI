@@ -22,8 +22,8 @@
             c.ID = CInt(TxtID_NUM_REQ.Text)
             c.Nombre = TxtNombre_REQ.Text
             c.Direccion = TxtDireccion_REQ.Text
-            'f.Usuario = TxtUser_REQ.Text
-            'f.Contrasena = TxtPass_REQ.Text
+            c.Username = TxtUser_REQ.Text
+            c.Password = TxtPass_REQ.Text
             c.Telefono = TxtTelefono_NUM_REQ.Text
             Guardar(c)
         End If

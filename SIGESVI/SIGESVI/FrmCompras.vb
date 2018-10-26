@@ -13,7 +13,7 @@
         LimpiarControles(Me)
 
         CboProductos.DataSource = ListarEspecificaciones()
-        CboProveedores.DataSource = New PersistenciaOrigen().Listar
+        CboProveedores.DataSource = New PersistenciaSucursal().ListarProveedores
         DgvCompras.DataSource = New PersistenciaCompra().Listar
 
         LstProductos_REQ.DataSource = Nothing
@@ -55,7 +55,7 @@
             Dim lote As New Lote
             lote.Tipo = eproducto
             lote.Stock = cantidad
-            lote.Origen = CType(CboProveedores.SelectedItem, Origen)
+            lote.Origen = CType(CboProveedores.SelectedItem, Sucursal)
             lote.Fecha = compra.Fecha
             compra.Productos.Add(lote)
             LstProductos_REQ.DataSource = Nothing

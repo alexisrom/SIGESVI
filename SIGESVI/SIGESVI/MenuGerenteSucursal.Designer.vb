@@ -28,15 +28,15 @@ Partial Class MenuGerenteSucursal
         Me.Panel8 = New System.Windows.Forms.Panel
         Me.BtnCampos = New System.Windows.Forms.Button
         Me.Panel5 = New System.Windows.Forms.Panel
+        Me.Button2 = New System.Windows.Forms.Button
         Me.Panel2 = New System.Windows.Forms.Panel
         Me.Panel6 = New System.Windows.Forms.Panel
         Me.Panel3 = New System.Windows.Forms.Panel
+        Me.BtnEstadisticas = New System.Windows.Forms.Button
         Me.Panel7 = New System.Windows.Forms.Panel
-        Me.Panel4 = New System.Windows.Forms.Panel
-        Me.Button2 = New System.Windows.Forms.Button
-        Me.BtnSucursales = New System.Windows.Forms.Button
         Me.Button3 = New System.Windows.Forms.Button
         Me.BtnCliente = New System.Windows.Forms.Button
+        Me.Panel4 = New System.Windows.Forms.Panel
         Me.Button6 = New System.Windows.Forms.Button
         Me.BtnProductos = New System.Windows.Forms.Button
         Me.BtnProduccion = New System.Windows.Forms.Button
@@ -66,7 +66,7 @@ Partial Class MenuGerenteSucursal
         Me.PnlMenu.Controls.Add(Me.Panel2)
         Me.PnlMenu.Controls.Add(Me.Panel6)
         Me.PnlMenu.Controls.Add(Me.Panel3)
-        Me.PnlMenu.Controls.Add(Me.BtnSucursales)
+        Me.PnlMenu.Controls.Add(Me.BtnEstadisticas)
         Me.PnlMenu.Controls.Add(Me.Panel7)
         Me.PnlMenu.Controls.Add(Me.Button3)
         Me.PnlMenu.Controls.Add(Me.BtnCliente)
@@ -126,6 +126,25 @@ Partial Class MenuGerenteSucursal
         Me.Panel5.Size = New System.Drawing.Size(5, 40)
         Me.Panel5.TabIndex = 8
         '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(151, Byte), Integer))
+        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Image = Global.SIGESVI.My.Resources.Resources.gears
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button2.Location = New System.Drawing.Point(6, 436)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(190, 40)
+        Me.Button2.TabIndex = 12
+        Me.Button2.Text = "Ajustes"
+        Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
@@ -153,6 +172,25 @@ Partial Class MenuGerenteSucursal
         Me.Panel3.Size = New System.Drawing.Size(5, 40)
         Me.Panel3.TabIndex = 4
         '
+        'BtnEstadisticas
+        '
+        Me.BtnEstadisticas.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(151, Byte), Integer))
+        Me.BtnEstadisticas.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnEstadisticas.FlatAppearance.BorderSize = 0
+        Me.BtnEstadisticas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.BtnEstadisticas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEstadisticas.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEstadisticas.ForeColor = System.Drawing.Color.White
+        Me.BtnEstadisticas.Image = Global.SIGESVI.My.Resources.Resources.bar_chart
+        Me.BtnEstadisticas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnEstadisticas.Location = New System.Drawing.Point(7, 390)
+        Me.BtnEstadisticas.Name = "BtnEstadisticas"
+        Me.BtnEstadisticas.Size = New System.Drawing.Size(190, 40)
+        Me.BtnEstadisticas.TabIndex = 10
+        Me.BtnEstadisticas.Text = "Estadísticas"
+        Me.BtnEstadisticas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.BtnEstadisticas.UseVisualStyleBackColor = False
+        '
         'Panel7
         '
         Me.Panel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
@@ -161,53 +199,6 @@ Partial Class MenuGerenteSucursal
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(5, 40)
         Me.Panel7.TabIndex = 6
-        '
-        'Panel4
-        '
-        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.Panel4.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel4.Location = New System.Drawing.Point(3, 160)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(5, 40)
-        Me.Panel4.TabIndex = 2
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Image = Global.SIGESVI.My.Resources.Resources.gears
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(6, 436)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(190, 40)
-        Me.Button2.TabIndex = 12
-        Me.Button2.Text = "Ajustes"
-        Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'BtnSucursales
-        '
-        Me.BtnSucursales.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.BtnSucursales.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnSucursales.FlatAppearance.BorderSize = 0
-        Me.BtnSucursales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.BtnSucursales.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnSucursales.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnSucursales.ForeColor = System.Drawing.Color.White
-        Me.BtnSucursales.Image = Global.SIGESVI.My.Resources.Resources.bar_chart
-        Me.BtnSucursales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnSucursales.Location = New System.Drawing.Point(7, 390)
-        Me.BtnSucursales.Name = "BtnSucursales"
-        Me.BtnSucursales.Size = New System.Drawing.Size(190, 40)
-        Me.BtnSucursales.TabIndex = 10
-        Me.BtnSucursales.Text = "Estadísticas"
-        Me.BtnSucursales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.BtnSucursales.UseVisualStyleBackColor = False
         '
         'Button3
         '
@@ -246,6 +237,15 @@ Partial Class MenuGerenteSucursal
         Me.BtnCliente.Text = "Clientes"
         Me.BtnCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.BtnCliente.UseVisualStyleBackColor = False
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.Panel4.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Panel4.Location = New System.Drawing.Point(3, 160)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(5, 40)
+        Me.Panel4.TabIndex = 2
         '
         'Button6
         '
@@ -338,7 +338,7 @@ Partial Class MenuGerenteSucursal
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents Panel6 As System.Windows.Forms.Panel
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
-    Friend WithEvents BtnSucursales As System.Windows.Forms.Button
+    Friend WithEvents BtnEstadisticas As System.Windows.Forms.Button
     Friend WithEvents Panel7 As System.Windows.Forms.Panel
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents BtnCliente As System.Windows.Forms.Button

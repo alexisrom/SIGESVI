@@ -23,13 +23,17 @@ Partial Class MenuCliente
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.PnlMenu = New System.Windows.Forms.Panel
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox
-        Me.CboTipoProducto = New System.Windows.Forms.ComboBox
+        Me.Label1 = New System.Windows.Forms.Label
+        Me.BtnCompetarReserva = New System.Windows.Forms.Button
+        Me.LstProductos = New System.Windows.Forms.ListBox
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton
+        Me.BtnQuitarProducto = New System.Windows.Forms.Button
         Me.LblCantidadProductos = New System.Windows.Forms.Label
-        Me.BtnEliminar = New System.Windows.Forms.Button
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
+        Me.CheckBox3 = New System.Windows.Forms.CheckBox
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox
         Me.PicLogo = New System.Windows.Forms.PictureBox
         Me.PnlMenu.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -39,10 +43,14 @@ Partial Class MenuCliente
         'PnlMenu
         '
         Me.PnlMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.PnlMenu.Controls.Add(Me.BtnEliminar)
+        Me.PnlMenu.Controls.Add(Me.Label1)
+        Me.PnlMenu.Controls.Add(Me.BtnCompetarReserva)
+        Me.PnlMenu.Controls.Add(Me.LstProductos)
+        Me.PnlMenu.Controls.Add(Me.RadioButton2)
+        Me.PnlMenu.Controls.Add(Me.RadioButton1)
+        Me.PnlMenu.Controls.Add(Me.BtnQuitarProducto)
         Me.PnlMenu.Controls.Add(Me.LblCantidadProductos)
         Me.PnlMenu.Controls.Add(Me.PictureBox1)
-        Me.PnlMenu.Controls.Add(Me.CboTipoProducto)
         Me.PnlMenu.Controls.Add(Me.CheckBox3)
         Me.PnlMenu.Controls.Add(Me.CheckBox2)
         Me.PnlMenu.Controls.Add(Me.CheckBox1)
@@ -53,84 +61,99 @@ Partial Class MenuCliente
         Me.PnlMenu.Size = New System.Drawing.Size(200, 610)
         Me.PnlMenu.TabIndex = 8
         '
-        'CheckBox1
+        'Label1
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox1.ForeColor = System.Drawing.Color.White
-        Me.CheckBox1.Location = New System.Drawing.Point(23, 341)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(70, 25)
-        Me.CheckBox1.TabIndex = 1
-        Me.CheckBox1.Text = "TINTO"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(74, 165)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(70, 17)
+        Me.Label1.TabIndex = 48
+        Me.Label1.Text = "CANTIDAD"
         '
-        'CheckBox2
+        'BtnCompetarReserva
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox2.ForeColor = System.Drawing.Color.White
-        Me.CheckBox2.Location = New System.Drawing.Point(23, 372)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(90, 25)
-        Me.CheckBox2.TabIndex = 2
-        Me.CheckBox2.Text = "ROSADO"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.BtnCompetarReserva.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.BtnCompetarReserva.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.BtnCompetarReserva.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnCompetarReserva.FlatAppearance.BorderSize = 0
+        Me.BtnCompetarReserva.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCompetarReserva.Font = New System.Drawing.Font("Roboto", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCompetarReserva.ForeColor = System.Drawing.Color.White
+        Me.BtnCompetarReserva.Location = New System.Drawing.Point(23, 554)
+        Me.BtnCompetarReserva.Name = "BtnCompetarReserva"
+        Me.BtnCompetarReserva.Size = New System.Drawing.Size(144, 34)
+        Me.BtnCompetarReserva.TabIndex = 47
+        Me.BtnCompetarReserva.Text = "COMPLETAR RESERVA"
+        Me.BtnCompetarReserva.UseVisualStyleBackColor = False
         '
-        'CheckBox3
+        'LstProductos
         '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox3.ForeColor = System.Drawing.Color.White
-        Me.CheckBox3.Location = New System.Drawing.Point(23, 403)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(87, 25)
-        Me.CheckBox3.TabIndex = 3
-        Me.CheckBox3.Text = "BLANCO"
-        Me.CheckBox3.UseVisualStyleBackColor = True
+        Me.LstProductos.BackColor = System.Drawing.Color.FromArgb(CType(CType(124, Byte), Integer), CType(CType(107, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.LstProductos.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.LstProductos.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LstProductos.ForeColor = System.Drawing.Color.White
+        Me.LstProductos.FormattingEnabled = True
+        Me.LstProductos.Location = New System.Drawing.Point(22, 220)
+        Me.LstProductos.Name = "LstProductos"
+        Me.LstProductos.Size = New System.Drawing.Size(148, 117)
+        Me.LstProductos.TabIndex = 46
         '
-        'CboTipoProducto
+        'RadioButton2
         '
-        Me.CboTipoProducto.BackColor = System.Drawing.Color.White
-        Me.CboTipoProducto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CboTipoProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CboTipoProducto.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.CboTipoProducto.FormattingEnabled = True
-        Me.CboTipoProducto.Items.AddRange(New Object() {"Vino", "Mosto"})
-        Me.CboTipoProducto.Location = New System.Drawing.Point(23, 456)
-        Me.CboTipoProducto.Name = "CboTipoProducto"
-        Me.CboTipoProducto.Size = New System.Drawing.Size(147, 28)
-        Me.CboTipoProducto.TabIndex = 40
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.RadioButton2.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.RadioButton2.ForeColor = System.Drawing.Color.White
+        Me.RadioButton2.Location = New System.Drawing.Point(23, 496)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(82, 25)
+        Me.RadioButton2.TabIndex = 45
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "MOSTO"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.RadioButton1.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.RadioButton1.ForeColor = System.Drawing.Color.White
+        Me.RadioButton1.Location = New System.Drawing.Point(23, 465)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(74, 25)
+        Me.RadioButton1.TabIndex = 44
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "VINOS"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'BtnQuitarProducto
+        '
+        Me.BtnQuitarProducto.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnQuitarProducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.BtnQuitarProducto.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnQuitarProducto.FlatAppearance.BorderSize = 0
+        Me.BtnQuitarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnQuitarProducto.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnQuitarProducto.ForeColor = System.Drawing.Color.White
+        Me.BtnQuitarProducto.Location = New System.Drawing.Point(77, 188)
+        Me.BtnQuitarProducto.Name = "BtnQuitarProducto"
+        Me.BtnQuitarProducto.Size = New System.Drawing.Size(93, 23)
+        Me.BtnQuitarProducto.TabIndex = 43
+        Me.BtnQuitarProducto.Text = "QUITAR PRODUCTO"
+        Me.BtnQuitarProducto.UseVisualStyleBackColor = False
         '
         'LblCantidadProductos
         '
-        Me.LblCantidadProductos.AutoSize = True
-        Me.LblCantidadProductos.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.LblCantidadProductos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.LblCantidadProductos.Location = New System.Drawing.Point(73, 164)
+        Me.LblCantidadProductos.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblCantidadProductos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.LblCantidadProductos.Location = New System.Drawing.Point(141, 164)
         Me.LblCantidadProductos.Name = "LblCantidadProductos"
-        Me.LblCantidadProductos.Size = New System.Drawing.Size(97, 20)
+        Me.LblCantidadProductos.Size = New System.Drawing.Size(43, 18)
         Me.LblCantidadProductos.TabIndex = 42
-        Me.LblCantidadProductos.Text = "Productos (0)"
-        '
-        'BtnEliminar
-        '
-        Me.BtnEliminar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
-        Me.BtnEliminar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnEliminar.FlatAppearance.BorderSize = 0
-        Me.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEliminar.ForeColor = System.Drawing.Color.White
-        Me.BtnEliminar.Location = New System.Drawing.Point(77, 187)
-        Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(93, 23)
-        Me.BtnEliminar.TabIndex = 43
-        Me.BtnEliminar.Text = "VER CARRITO"
-        Me.BtnEliminar.UseVisualStyleBackColor = False
+        Me.LblCantidadProductos.Text = "(0)"
+        Me.LblCantidadProductos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'PictureBox1
         '
@@ -141,6 +164,45 @@ Partial Class MenuCliente
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PictureBox1.TabIndex = 41
         Me.PictureBox1.TabStop = False
+        '
+        'CheckBox3
+        '
+        Me.CheckBox3.AutoSize = True
+        Me.CheckBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox3.ForeColor = System.Drawing.Color.White
+        Me.CheckBox3.Location = New System.Drawing.Point(23, 413)
+        Me.CheckBox3.Name = "CheckBox3"
+        Me.CheckBox3.Size = New System.Drawing.Size(87, 25)
+        Me.CheckBox3.TabIndex = 3
+        Me.CheckBox3.Text = "BLANCO"
+        Me.CheckBox3.UseVisualStyleBackColor = True
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox2.ForeColor = System.Drawing.Color.White
+        Me.CheckBox2.Location = New System.Drawing.Point(23, 382)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(90, 25)
+        Me.CheckBox2.TabIndex = 2
+        Me.CheckBox2.Text = "ROSADO"
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox1.ForeColor = System.Drawing.Color.White
+        Me.CheckBox1.Location = New System.Drawing.Point(23, 351)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(70, 25)
+        Me.CheckBox1.TabIndex = 1
+        Me.CheckBox1.Text = "TINTO"
+        Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'PicLogo
         '
@@ -173,8 +235,12 @@ Partial Class MenuCliente
     Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox3 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents CboTipoProducto As System.Windows.Forms.ComboBox
     Friend WithEvents LblCantidadProductos As System.Windows.Forms.Label
-    Friend WithEvents BtnEliminar As System.Windows.Forms.Button
+    Friend WithEvents LstProductos As System.Windows.Forms.ListBox
+    Friend WithEvents BtnQuitarProducto As System.Windows.Forms.Button
+    Friend WithEvents BtnCompetarReserva As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
+    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
 
 End Class

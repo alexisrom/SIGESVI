@@ -26,7 +26,14 @@ Partial Class FrmInicio
         Me.TmrFechaHora = New System.Windows.Forms.Timer(Me.components)
         Me.Timerclima = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel
+        Me.Panel3 = New System.Windows.Forms.Panel
+        Me.Label1 = New System.Windows.Forms.Label
+        Me.Label4 = New System.Windows.Forms.Label
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox
+        Me.Panel2 = New System.Windows.Forms.Panel
+        Me.Label3 = New System.Windows.Forms.Label
         Me.Label2 = New System.Windows.Forms.Label
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox
         Me.PnlRecordatorios = New System.Windows.Forms.FlowLayoutPanel
         Me.PnlAlarmas = New System.Windows.Forms.FlowLayoutPanel
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser
@@ -34,11 +41,14 @@ Partial Class FrmInicio
         Me.Labeltemp = New System.Windows.Forms.Label
         Me.pbclima = New System.Windows.Forms.PictureBox
         Me.LbCerrarSesion = New System.Windows.Forms.LinkLabel
-        Me.Label1 = New System.Windows.Forms.Label
         Me.LblCargo = New System.Windows.Forms.Label
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.LblHora = New System.Windows.Forms.Label
         Me.Panel1.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbclima, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -55,7 +65,8 @@ Partial Class FrmInicio
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
         Me.Panel1.BackgroundImage = Global.SIGESVI.My.Resources.Resources.bmaurvhz
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.Panel3)
+        Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.PnlRecordatorios)
         Me.Panel1.Controls.Add(Me.PnlAlarmas)
         Me.Panel1.Controls.Add(Me.WebBrowser1)
@@ -63,7 +74,6 @@ Partial Class FrmInicio
         Me.Panel1.Controls.Add(Me.Labeltemp)
         Me.Panel1.Controls.Add(Me.pbclima)
         Me.Panel1.Controls.Add(Me.LbCerrarSesion)
-        Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.LblCargo)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.LblHora)
@@ -73,25 +83,110 @@ Partial Class FrmInicio
         Me.Panel1.Size = New System.Drawing.Size(1317, 636)
         Me.Panel1.TabIndex = 1
         '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.Label1)
+        Me.Panel3.Controls.Add(Me.Label4)
+        Me.Panel3.Controls.Add(Me.PictureBox3)
+        Me.Panel3.Location = New System.Drawing.Point(706, 33)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(117, 160)
+        Me.Panel3.TabIndex = 23
+        '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.White
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Label1.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(0, 130)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(117, 30)
+        Me.Label1.TabIndex = 22
+        Me.Label1.Text = "VER (10)"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label4
+        '
+        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.Label4.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label4.Font = New System.Drawing.Font("Roboto", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(0, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(117, 30)
+        Me.Label4.TabIndex = 20
+        Me.Label4.Text = "ALARMAS"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.White
+        Me.PictureBox3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox3.Image = Global.SIGESVI.My.Resources.Resources.exclamancion
+        Me.PictureBox3.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(117, 160)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox3.TabIndex = 21
+        Me.PictureBox3.TabStop = False
+        '
+        'Panel2
+        '
+        Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.Label3)
+        Me.Panel2.Controls.Add(Me.Label2)
+        Me.Panel2.Controls.Add(Me.PictureBox2)
+        Me.Panel2.Location = New System.Drawing.Point(534, 32)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(117, 160)
+        Me.Panel2.TabIndex = 22
+        '
+        'Label3
+        '
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Label3.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(0, 128)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(115, 30)
+        Me.Label3.TabIndex = 22
+        Me.Label3.Text = "VER (10)"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.BackColor = System.Drawing.Color.DimGray
+        Me.Label2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label2.Font = New System.Drawing.Font("Roboto", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(272, 32)
+        Me.Label2.Location = New System.Drawing.Point(0, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(107, 21)
+        Me.Label2.Size = New System.Drawing.Size(115, 30)
         Me.Label2.TabIndex = 20
-        Me.Label2.Text = "Recordatorios"
+        Me.Label2.Text = "RECORDATORIOS"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox2.Image = Global.SIGESVI.My.Resources.Resources.calendar_with_day_3
+        Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(115, 158)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox2.TabIndex = 21
+        Me.PictureBox2.TabStop = False
         '
         'PnlRecordatorios
         '
         Me.PnlRecordatorios.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.PnlRecordatorios.FlowDirection = System.Windows.Forms.FlowDirection.TopDown
-        Me.PnlRecordatorios.Location = New System.Drawing.Point(276, 62)
+        Me.PnlRecordatorios.Location = New System.Drawing.Point(39, 34)
         Me.PnlRecordatorios.Name = "PnlRecordatorios"
-        Me.PnlRecordatorios.Size = New System.Drawing.Size(200, 466)
+        Me.PnlRecordatorios.Size = New System.Drawing.Size(200, 521)
         Me.PnlRecordatorios.TabIndex = 19
         '
         'PnlAlarmas
@@ -99,9 +194,9 @@ Partial Class FrmInicio
         Me.PnlAlarmas.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.PnlAlarmas.FlowDirection = System.Windows.Forms.FlowDirection.TopDown
-        Me.PnlAlarmas.Location = New System.Drawing.Point(39, 62)
+        Me.PnlAlarmas.Location = New System.Drawing.Point(259, 34)
         Me.PnlAlarmas.Name = "PnlAlarmas"
-        Me.PnlAlarmas.Size = New System.Drawing.Size(200, 466)
+        Me.PnlAlarmas.Size = New System.Drawing.Size(200, 521)
         Me.PnlAlarmas.TabIndex = 18
         '
         'WebBrowser1
@@ -159,17 +254,6 @@ Partial Class FrmInicio
         Me.LbCerrarSesion.TabStop = True
         Me.LbCerrarSesion.Text = "Cerrar Sesión"
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(35, 32)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(67, 21)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Alarmas"
-        '
         'LblCargo
         '
         Me.LblCargo.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -216,6 +300,10 @@ Partial Class FrmInicio
         Me.Text = "Inicio"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbclima, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -232,8 +320,14 @@ Partial Class FrmInicio
     Friend WithEvents Labeltemp As System.Windows.Forms.Label
     Friend WithEvents pbclima As System.Windows.Forms.PictureBox
     Friend WithEvents LbCerrarSesion As System.Windows.Forms.LinkLabel
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents LblCargo As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents LblHora As System.Windows.Forms.Label
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Panel3 As System.Windows.Forms.Panel
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
 End Class

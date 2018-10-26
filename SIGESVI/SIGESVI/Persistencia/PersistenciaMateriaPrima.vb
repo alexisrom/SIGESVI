@@ -1,10 +1,12 @@
 ﻿Imports System.Data.Odbc
+Imports System.Text
+Imports IBM.Data.Informix
 
 Public Class PersistenciaMateriaPrima
 
-    Sub Agregar(ByVal materiaPrima As MateriaPrima)
-        Dim formato_consulta = "INSERT INTO especificacion_de_producto(nombre, descripcion, precio,unidad_medida, categoria, foto) VALUES(""{0}"",""{1}"",{2},""{3}"", ""{4}"", NULL) "
-        Dim consulta = String.Format(formato_consulta, materiaPrima.Nombre, materiaPrima.Descripcion, materiaPrima.Precio, materiaPrima.UnidadMedida, materiaPrima.Categoria, materiaPrima.Imagen)
+    Sub Agregar(ByVal mp As MateriaPrima)
+        Dim formato_consulta = "INSERT INTO especificacion_de_producto(nombre, descripcion, precio,unidad_medida, categoria, foto) VALUES(""{0}"",""{1}"",{2},""{3}"", ""{4}"", null) "
+        Dim consulta = String.Format(formato_consulta, mp.Nombre, mp.Descripcion, mp.Precio, mp.UnidadMedida, mp.Categoria)
 
         Dim comando As New OdbcCommand
 
@@ -21,11 +23,11 @@ Public Class PersistenciaMateriaPrima
             comando.CommandText = "SELECT id_eproducto FROM especificacion_de_producto ORDER BY id_eproducto DESC LIMIT 1"
             Dim resp = comando.ExecuteReader()
             resp.Read()
-            materiaPrima.ID = resp("id_eproducto")
+            mp.ID = resp("id_eproducto")
             resp.Close()
 
             formato_consulta = "INSERT INTO materia_prima(id_eproducto, id_tipo_cepa, estado_sanitario) VALUES({0}, {1}, ""borrar este campo"");"
-            consulta = String.Format(formato_consulta, materiaPrima.ID, materiaPrima.TipoCepa.ID)
+            consulta = String.Format(formato_consulta, mp.ID, mp.TipoCepa.ID)
             comando.CommandText = consulta
             resultado = comando.ExecuteNonQuery
 
@@ -111,5 +113,7 @@ Public Class PersistenciaMateriaPrima
 
         Return materiasPrimas
     End Function
+
+
 
 End Class

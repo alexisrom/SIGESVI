@@ -3,12 +3,12 @@
 Public Class PersistenciaLote
 
     Sub Agregar(ByVal lote As Lote)
-        Dim formato_consulta = "INSERT INTO lote(cantidad, fecha, id_origen, id_eproducto) VALUES({0}, '{1}', {2}, {3})"
+        Dim formato_consulta = "INSERT INTO lote(cantidad, fecha, id_sucursal, id_eproducto) VALUES({0}, '{1}', {2}, {3})"
         Dim fecha = lote.Fecha.Day & "-" & lote.Fecha.Month & "-" & lote.Fecha.Date.Year
         Dim consulta = String.Format(formato_consulta, lote.Stock, fecha, lote.Origen.ID, lote.Tipo.ID)
 
         Try
-            Dim comando As New Odbccommand
+            Dim comando As New OdbcCommand
             comando.Connection = Conexion.Abrir
             comando.CommandText = consulta
             Dim filas_afectadas = comando.ExecuteNonQuery
@@ -72,8 +72,7 @@ Public Class PersistenciaLote
 
     Function Listar() As List(Of Lote)
         Dim lotes As New List(Of Lote)
-        'Dim consulta = "SELECT * FROM lote l, especificacion_de_producto e, origen o WHERE l.id_eproducto = e.id_eproducto AND o.id_origen = l.id_origen AND e.activo = 't'"
-        Dim consulta = "SELECT l.* FROM lote l, especificacion_de_producto e, origen o WHERE l.id_eproducto = e.id_eproducto AND o.id_origen = l.id_origen AND e.activo = 't'"
+        Dim consulta = "SELECT l.* FROM lote l, especificacion_de_producto e, sucursal s WHERE l.id_eproducto = e.id_eproducto AND s.id_sucursal = l.id_sucursal AND e.activo = 't'"
         Try
             Dim comando As New OdbcCommand
             comando.Connection = Conexion.Abrir
@@ -87,7 +86,7 @@ Public Class PersistenciaLote
                     lote.Stock = resultado("cantidad")
                     lote.Fecha = resultado("fecha")
                     lote.Tipo = New PersistenciaEspecificacionProducto().Buscar(resultado("id_eproducto"))
-                    'lote.Origen = PersistenciaOrigen.Buscar
+                    lote.Origen = New PersistenciaSucursal().Buscar(lote.ID)
                     lotes.Add(lote)
                 End While
             End If

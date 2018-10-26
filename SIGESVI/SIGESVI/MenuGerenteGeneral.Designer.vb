@@ -23,6 +23,9 @@ Partial Class MenuGerenteGeneral
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.PnlMenu = New System.Windows.Forms.Panel
+        Me.Panel3 = New System.Windows.Forms.Panel
+        Me.BtnEstadisticas = New System.Windows.Forms.Button
+        Me.Label1 = New System.Windows.Forms.Label
         Me.Panel8 = New System.Windows.Forms.Panel
         Me.Panel5 = New System.Windows.Forms.Panel
         Me.BtnAjustes = New System.Windows.Forms.Button
@@ -38,7 +41,6 @@ Partial Class MenuGerenteGeneral
         Me.BtnProductos = New System.Windows.Forms.Button
         Me.BtnProduccion = New System.Windows.Forms.Button
         Me.PicLogo = New System.Windows.Forms.PictureBox
-        Me.Label1 = New System.Windows.Forms.Label
         Me.PnlMenu.SuspendLayout()
         CType(Me.PicLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -46,6 +48,8 @@ Partial Class MenuGerenteGeneral
         'PnlMenu
         '
         Me.PnlMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(151, Byte), Integer))
+        Me.PnlMenu.Controls.Add(Me.Panel3)
+        Me.PnlMenu.Controls.Add(Me.BtnEstadisticas)
         Me.PnlMenu.Controls.Add(Me.Label1)
         Me.PnlMenu.Controls.Add(Me.Panel8)
         Me.PnlMenu.Controls.Add(Me.Panel5)
@@ -68,11 +72,51 @@ Partial Class MenuGerenteGeneral
         Me.PnlMenu.Size = New System.Drawing.Size(200, 610)
         Me.PnlMenu.TabIndex = 8
         '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.Panel3.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Panel3.Location = New System.Drawing.Point(3, 455)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(5, 40)
+        Me.Panel3.TabIndex = 53
+        '
+        'BtnEstadisticas
+        '
+        Me.BtnEstadisticas.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(151, Byte), Integer))
+        Me.BtnEstadisticas.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnEstadisticas.FlatAppearance.BorderSize = 0
+        Me.BtnEstadisticas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.BtnEstadisticas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEstadisticas.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEstadisticas.ForeColor = System.Drawing.Color.White
+        Me.BtnEstadisticas.Image = Global.SIGESVI.My.Resources.Resources.bar_chart
+        Me.BtnEstadisticas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnEstadisticas.Location = New System.Drawing.Point(7, 455)
+        Me.BtnEstadisticas.Name = "BtnEstadisticas"
+        Me.BtnEstadisticas.Size = New System.Drawing.Size(190, 40)
+        Me.BtnEstadisticas.TabIndex = 54
+        Me.BtnEstadisticas.Text = "Estadísticas"
+        Me.BtnEstadisticas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.BtnEstadisticas.UseVisualStyleBackColor = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Impact", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(54, 138)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(89, 26)
+        Me.Label1.TabIndex = 52
+        Me.Label1.Text = "S.I.GES.VI"
+        '
         'Panel8
         '
         Me.Panel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.Panel8.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel8.Location = New System.Drawing.Point(2, 455)
+        Me.Panel8.Location = New System.Drawing.Point(3, 501)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(5, 40)
         Me.Panel8.TabIndex = 11
@@ -97,7 +141,7 @@ Partial Class MenuGerenteGeneral
         Me.BtnAjustes.ForeColor = System.Drawing.Color.White
         Me.BtnAjustes.Image = Global.SIGESVI.My.Resources.Resources.gears
         Me.BtnAjustes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnAjustes.Location = New System.Drawing.Point(6, 455)
+        Me.BtnAjustes.Location = New System.Drawing.Point(7, 501)
         Me.BtnAjustes.Name = "BtnAjustes"
         Me.BtnAjustes.Size = New System.Drawing.Size(190, 40)
         Me.BtnAjustes.TabIndex = 12
@@ -275,18 +319,6 @@ Partial Class MenuGerenteGeneral
         Me.PicLogo.TabIndex = 0
         Me.PicLogo.TabStop = False
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Impact", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(54, 138)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(89, 26)
-        Me.Label1.TabIndex = 52
-        Me.Label1.Text = "S.I.GES.VI"
-        '
         'MenuGerenteGeneral
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -317,5 +349,7 @@ Partial Class MenuGerenteGeneral
     Friend WithEvents BtnProduccion As System.Windows.Forms.Button
     Friend WithEvents PicLogo As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Panel3 As System.Windows.Forms.Panel
+    Friend WithEvents BtnEstadisticas As System.Windows.Forms.Button
 
 End Class

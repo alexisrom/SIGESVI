@@ -140,39 +140,5 @@ Public Class PersistenciaFuncionario
     End Function
 
 
-    Function Login(ByVal usuario As String, ByVal contrasena As String) As Usuario
-
-
-        Dim formato_consulta = "SELECT * FROM funcionario WHERE usuario='{0}' AND contrasena='{1}' AND activo = 't'"
-        Dim consulta = String.Format(formato_consulta, usuario, contrasena)
-
-
-        Try
-            Dim comando As New OdbcCommand
-            comando.Connection = Conexion.Abrir
-            comando.CommandText = consulta
-            Dim resultado = comando.ExecuteReader
-
-            If resultado.HasRows Then
-                While resultado.Read()
-                    Dim funcionario As New Funcionario()
-                    funcionario.ID = resultado("cedula")
-                    funcionario.Nombre = resultado("nombre")
-                    funcionario.Apellido = resultado("apellido")
-                    funcionario.Direccion = resultado("direccion")
-                    funcionario.Username = resultado("usuario")
-                    funcionario.Password = resultado("contrasena")
-                    funcionario.Rol = resultado("cargo")
-                    Dim persistenciaSucursal = New PersistenciaSucursal()
-                    funcionario.Sucursal = persistenciaSucursal.Buscar(CInt(resultado("id_sucursal")))
-                    Return funcionario
-                End While
-            End If
-
-        Catch ex As OdbcException
-            Throw ex
-        End Try
-
-        Return Nothing
-    End Function
+  
 End Class

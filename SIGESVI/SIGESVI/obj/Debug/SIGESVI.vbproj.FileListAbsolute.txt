@@ -34,7 +34,6 @@ C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\bin\Debug\SIGESVI.exe
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\bin\Debug\SIGESVI.pdb
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\bin\Debug\SIGESVI.xml
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.FrmCampos.resources
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.FrmCatalogo.resources
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.FrmClientes.resources
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.FrmCompras.resources
@@ -107,3 +106,7 @@ C:\Users\Fernando\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.vbp
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.Notificacion.resources
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.FrmSeleccionarLotes.resources
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.FrmVehiculos.resources
+C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\bin\Debug\IBM.Data.Informix.dll
+C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.CatalogoItem.resources
+C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.FrmReservas.resources
+C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.FrmEstadisticas.resources

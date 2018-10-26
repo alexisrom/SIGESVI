@@ -42,15 +42,17 @@
     End Property
 
 
-    Private _Origen As Origen
-    Public Property Origen() As Origen
+
+    Private _Origen As Sucursal
+    Public Property Origen() As Sucursal
         Get
             Return _Origen
         End Get
-        Set(ByVal value As Origen)
+        Set(ByVal value As Sucursal)
             _Origen = value
         End Set
     End Property
+
 
 
 

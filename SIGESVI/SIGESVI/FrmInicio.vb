@@ -13,7 +13,10 @@
         'WebBrowser1.Navigate("https://www.google.com.uy/?gws_rd=ssl#q=clima+" & ubicacion)
         MostrarNotificaciones()
         LblCargo.Text = usuarioLogueado.Rol
+
     End Sub
+
+
 
     Private Sub MostrarNotificaciones()
         Dim alarmas = New PersistenciaTrazabilidad().ListarTodasLasAlarmas()

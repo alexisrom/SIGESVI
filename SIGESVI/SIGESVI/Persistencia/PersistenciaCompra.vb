@@ -5,7 +5,7 @@ Public Class PersistenciaCompra
 
     Sub Registrar(ByVal compra As Compra)
         Dim formato_consulta = "INSERT INTO transacciones(fecha_hora) VALUES('{0}')"
-        Dim consulta = String.Format(formato_consulta, FormatearFechaHora(compra.Fecha))
+        Dim consulta = String.Format(formato_consulta, DateTimeToString(compra.Fecha))
 
         Try
             Dim comando As New OdbcCommand
@@ -44,7 +44,7 @@ Public Class PersistenciaCompra
 
     Private Sub RegistrarLotes(ByVal lote As Lote, ByVal compra As Compra, ByVal comando As OdbcCommand)
         Dim formato_consulta = "INSERT INTO LOTE(cantidad, fecha, id_origen, id_eproducto) VALUES({0}, '{1}', {2}, {3})"
-        Dim consulta = String.Format(formato_consulta, lote.Stock, FormatearFecha(lote.Fecha), lote.Origen.ID, lote.Tipo.ID)
+        Dim consulta = String.Format(formato_consulta, lote.Stock, DateToString(lote.Fecha), lote.Origen.ID, lote.Tipo.ID)
 
         Try
             comando.CommandText = consulta

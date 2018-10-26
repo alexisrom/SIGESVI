@@ -23,16 +23,16 @@ Partial Class MenuAdministrativo
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.PnlMenu = New System.Windows.Forms.Panel
-        Me.Panel8 = New System.Windows.Forms.Panel
-        Me.Panel5 = New System.Windows.Forms.Panel
-        Me.Panel2 = New System.Windows.Forms.Panel
-        Me.Panel3 = New System.Windows.Forms.Panel
-        Me.Panel4 = New System.Windows.Forms.Panel
         Me.Panel1 = New System.Windows.Forms.Panel
         Me.Button1 = New System.Windows.Forms.Button
+        Me.Panel8 = New System.Windows.Forms.Panel
+        Me.Panel5 = New System.Windows.Forms.Panel
         Me.Button2 = New System.Windows.Forms.Button
+        Me.Panel2 = New System.Windows.Forms.Panel
+        Me.Panel3 = New System.Windows.Forms.Panel
         Me.BtnSucursales = New System.Windows.Forms.Button
         Me.Button3 = New System.Windows.Forms.Button
+        Me.Panel4 = New System.Windows.Forms.Panel
         Me.BtnProductos = New System.Windows.Forms.Button
         Me.BtnProduccion = New System.Windows.Forms.Button
         Me.PicLogo = New System.Windows.Forms.PictureBox
@@ -62,51 +62,6 @@ Partial Class MenuAdministrativo
         Me.PnlMenu.Size = New System.Drawing.Size(200, 610)
         Me.PnlMenu.TabIndex = 9
         '
-        'Panel8
-        '
-        Me.Panel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.Panel8.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel8.Location = New System.Drawing.Point(2, 385)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(5, 40)
-        Me.Panel8.TabIndex = 11
-        '
-        'Panel5
-        '
-        Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.Panel5.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel5.Location = New System.Drawing.Point(3, 339)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(5, 40)
-        Me.Panel5.TabIndex = 8
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.Panel2.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel2.Location = New System.Drawing.Point(3, 293)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(5, 40)
-        Me.Panel2.TabIndex = 4
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.Panel3.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel3.Location = New System.Drawing.Point(3, 247)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(5, 40)
-        Me.Panel3.TabIndex = 4
-        '
-        'Panel4
-        '
-        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.Panel4.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel4.Location = New System.Drawing.Point(3, 201)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(5, 40)
-        Me.Panel4.TabIndex = 2
-        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
@@ -134,6 +89,24 @@ Partial Class MenuAdministrativo
         Me.Button1.Text = "Lotes"
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'Panel8
+        '
+        Me.Panel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.Panel8.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Panel8.Location = New System.Drawing.Point(2, 385)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(5, 40)
+        Me.Panel8.TabIndex = 11
+        '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.Panel5.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Panel5.Location = New System.Drawing.Point(3, 339)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(5, 40)
+        Me.Panel5.TabIndex = 8
+        '
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(151, Byte), Integer))
@@ -151,6 +124,24 @@ Partial Class MenuAdministrativo
         Me.Button2.TabIndex = 12
         Me.Button2.Text = "Ajustes"
         Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.Panel2.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Panel2.Location = New System.Drawing.Point(3, 293)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(5, 40)
+        Me.Panel2.TabIndex = 4
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.Panel3.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Panel3.Location = New System.Drawing.Point(3, 247)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(5, 40)
+        Me.Panel3.TabIndex = 4
         '
         'BtnSucursales
         '
@@ -187,6 +178,15 @@ Partial Class MenuAdministrativo
         Me.Button3.TabIndex = 5
         Me.Button3.Text = "Transacciones"
         Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.Panel4.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Panel4.Location = New System.Drawing.Point(3, 201)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(5, 40)
+        Me.Panel4.TabIndex = 2
         '
         'BtnProductos
         '

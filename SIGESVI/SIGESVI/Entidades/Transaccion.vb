@@ -34,6 +34,17 @@
     End Property
 
 
+    Private _Sucursal As Sucursal
+    Public Property Sucursal() As Sucursal
+        Get
+            Return _Sucursal
+        End Get
+        Set(ByVal value As Sucursal)
+            _Sucursal = value
+        End Set
+    End Property
+
+
 
     Sub New()
         _Productos = New List(Of Lote)

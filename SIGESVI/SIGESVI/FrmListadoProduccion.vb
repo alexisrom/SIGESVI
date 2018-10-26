@@ -5,7 +5,18 @@
     End Sub
 
     Private Sub FrmListadoProduccion_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        DgvProduccion.DataSource = New PersistenciaProduccion().Listar()
+
+        If usuarioLogueado.EsGerenteGeneral Then
+            DgvProduccion.DataSource = New PersistenciaProduccion().Listar()
+        Else
+            DgvProduccion.DataSource = New PersistenciaProduccion().Listar(CType(usuarioLogueado, Funcionario).Sucursal)
+        End If
+
+
+        BtnNueva.Visible = usuarioLogueado.EsAdministrativo
+
+
+
     End Sub
 
     Private Sub BtnEditar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnEditar.Click

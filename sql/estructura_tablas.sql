@@ -112,9 +112,11 @@ CREATE TABLE recordatorio
 CREATE TABLE transacciones 
   (
     id_transaccion SERIAL NOT NULL,
+    id_sucursal INTEGER NOT NULL,
     fecha_hora DATETIME YEAR TO MINUTE NOT NULL,
     activo BOOLEAN DEFAULT "t",
-    PRIMARY KEY (id_transaccion) 
+    PRIMARY KEY (id_transaccion),
+    FOREIGN KEY (id_sucursal) REFERENCES sucursal(id_sucursal)
   );
 
 CREATE TABLE compra 

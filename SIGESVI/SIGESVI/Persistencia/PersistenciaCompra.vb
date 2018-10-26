@@ -4,8 +4,8 @@ Public Class PersistenciaCompra
 
 
     Sub Registrar(ByVal compra As Compra)
-        Dim formato_consulta = "INSERT INTO transacciones(fecha_hora) VALUES('{0}')"
-        Dim consulta = String.Format(formato_consulta, DateTimeToString(compra.Fecha))
+        Dim formato_consulta = "INSERT INTO transacciones(fecha_hora, id_sucursal) VALUES('{0}', {1})"
+        Dim consulta = String.Format(formato_consulta, DateTimeToString(compra.Fecha), compra.Sucursal.ID)
 
         Try
             Dim comando As New OdbcCommand
@@ -43,7 +43,7 @@ Public Class PersistenciaCompra
     End Sub
 
     Private Sub RegistrarLotes(ByVal lote As Lote, ByVal compra As Compra, ByVal comando As OdbcCommand)
-        Dim formato_consulta = "INSERT INTO LOTE(cantidad, fecha, id_origen, id_eproducto) VALUES({0}, '{1}', {2}, {3})"
+        Dim formato_consulta = "INSERT INTO LOTE(cantidad, fecha, id_sucursal, id_eproducto) VALUES({0}, '{1}', {2}, {3})"
         Dim consulta = String.Format(formato_consulta, lote.Stock, DateToString(lote.Fecha), lote.Origen.ID, lote.Tipo.ID)
 
         Try
@@ -77,6 +77,37 @@ Public Class PersistenciaCompra
     Function Listar() As List(Of Compra)
         Dim compras As New List(Of Compra)
         Dim formato_consulta = "SELECT * FROM transacciones t, compra c WHERE t.id_transaccion = c.id_transaccion"
+        Dim consulta = formato_consulta
+
+        Try
+            Dim comando As New OdbcCommand
+            comando.Connection = Conexion.Abrir
+            comando.CommandText = consulta
+            Dim res = comando.ExecuteReader
+
+            If res.HasRows Then
+                While res.Read
+                    Dim c As New Compra
+                    c.Fecha = res("fecha_hora")
+                    c.ID = res("id_transaccion")
+                    c.Costo = res("costo")
+                    compras.Add(c)
+                End While
+            End If
+
+        Catch ex As OdbcException
+            Throw ex
+        Finally
+            Conexion.Cerrar()
+        End Try
+
+        Return compras
+    End Function
+
+
+    Function Listar(ByVal sucursal As Sucursal) As List(Of Compra)
+        Dim compras As New List(Of Compra)
+        Dim formato_consulta = "SELECT * FROM transacciones t, compra c WHERE t.id_transaccion = c.id_transaccion AND id_sucursal=" & sucursal.ID
         Dim consulta = formato_consulta
 
         Try

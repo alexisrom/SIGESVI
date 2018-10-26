@@ -3,8 +3,8 @@
 Public Class PersistenciaTransaccion
 
     Sub Agregar(ByVal transaccion As Transaccion)
-        Dim formato_consulta = "INSERT INTO transacciones(fecha_hora) VALUES('{0}')"
-        Dim consulta = String.Format(formato_consulta, DateTimeToString(transaccion.Fecha))
+        Dim formato_consulta = "INSERT INTO transacciones(fecha_hora, id_sucursal) VALUES('{0}', {1})"
+        Dim consulta = String.Format(formato_consulta, DateTimeToString(transaccion.Fecha), transaccion.Sucursal.ID)
 
         Try
             Dim comando As New OdbcCommand
@@ -111,6 +111,37 @@ Public Class PersistenciaTransaccion
         Return ventas
     End Function
 
+
+    Function ListarVentas(ByVal sucursal As Sucursal) As List(Of Venta)
+        Dim ventas As New List(Of Venta)
+        Dim formato_consulta = "SELECT * FROM transacciones t, venta v WHERE t.id_transaccion = v.id_transaccion AND id_sucursal=" & sucursal.ID
+        Dim consulta = formato_consulta
+        Try
+            Dim comando As New OdbcCommand
+            comando.Connection = Conexion.Abrir
+            comando.CommandText = consulta
+            Dim res = comando.ExecuteReader
+
+            If res.HasRows Then
+                While res.Read
+                    Dim v As New Venta
+                    v.Fecha = res("fecha_hora")
+                    v.ID = res("id_transaccion")
+                    v.Precio = res("costo")
+                    ventas.Add(v)
+                End While
+            End If
+
+        Catch ex As Exception
+            Throw ex
+        Finally
+            Conexion.Cerrar()
+
+        End Try
+
+        Return ventas
+    End Function
+
     Function ListarTraslados() As List(Of Traslado)
         Dim traslados As New List(Of Traslado)
         Dim formato_consulta = "SELECT * FROM transacciones t, traslado tr, transporte tra WHERE t.id_transaccion = tr.id_transaccion AND tr.id_transporte = tra.id_transporte"
@@ -144,6 +175,41 @@ Public Class PersistenciaTransaccion
 
         Return traslados
     End Function
+
+    Function ListarTraslados(ByVal sucursal As Sucursal) As List(Of Traslado)
+        Dim traslados As New List(Of Traslado)
+        Dim formato_consulta = "SELECT * FROM transacciones t, traslado tr, transporte tra WHERE t.id_transaccion = tr.id_transaccion AND tr.id_transporte = tra.id_transporte AND id_sucursal=" & sucursal.ID
+        Dim consulta = formato_consulta
+        Try
+            Dim comando As New OdbcCommand
+            comando.Connection = Conexion.Abrir
+            comando.CommandText = consulta
+            Dim res = comando.ExecuteReader
+
+            If res.HasRows Then
+                While res.Read
+                    Dim t As New Traslado
+                    t.ID = res("id_transaccion")
+                    t.Fecha = res("fecha_hora")
+                    t.Destino = res("destino")
+                    Dim v As New Transporte
+                    v.Tipo = res("nombre")
+                    v.Capacidad = res("capacidad")
+                    t.Vehiculo = v
+                    traslados.Add(t)
+                End While
+            End If
+
+        Catch ex As Exception
+            Throw ex
+        Finally
+            Conexion.Cerrar()
+
+        End Try
+
+        Return traslados
+    End Function
+
 
 
 End Class

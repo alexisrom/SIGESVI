@@ -14,7 +14,15 @@
 
         CboProductos.DataSource = ListarEspecificaciones()
         CboProveedores.DataSource = New PersistenciaSucursal().ListarProveedores
-        DgvCompras.DataSource = New PersistenciaCompra().Listar
+
+        If usuarioLogueado.EsGerenteGeneral Then
+            DgvCompras.DataSource = New PersistenciaCompra().Listar
+        Else
+            DgvCompras.DataSource = New PersistenciaCompra().Listar(CType(usuarioLogueado, Funcionario).Sucursal)
+
+        End If
+
+
 
         LstProductos_REQ.DataSource = Nothing
 
@@ -35,7 +43,6 @@
             eproductos.Add(p)
         Next
 
-        eproductos.Sort(Function(x, y) x.ID.CompareTo(y.ID))
         Return eproductos
     End Function
 
@@ -51,7 +58,7 @@
         If cantidad < 1 Then
             MessageBox.Show("Ingrese la cantidad de productos del tipo seleccionado")
         Else
-            Dim eproducto = CType(CboProductos.SelectedItem, ProductoFinal)
+            Dim eproducto = CType(CboProductos.SelectedItem, EspecificacionProducto)
             Dim lote As New Lote
             lote.Tipo = eproducto
             lote.Stock = cantidad
@@ -70,6 +77,7 @@
         If ValidarCampos(Me) Then
 
             compra.Costo = TxtCosto_NUM_REQ.Text
+            compra.Sucursal = CType(usuarioLogueado, Funcionario).Sucursal
 
             Try
                 persistencia.Registrar(compra)

@@ -145,4 +145,34 @@ Public Class PersistenciaProduccion
         End Try
         Return trazabilidad
     End Function
+
+    Function Listar(ByVal sucursal As Sucursal) As List(Of Produccion)
+        Dim produccion As New List(Of Produccion)
+        Dim consulta = "SELECT * FROM produccion WHERE activo = 't' AND id_sucursal = " & sucursal.ID
+
+        Try
+            Dim comando As New OdbcCommand
+            comando.Connection = Conexion.Abrir
+            comando.CommandText = consulta
+            Dim resultado = comando.ExecuteReader
+
+            If resultado.HasRows Then
+                While resultado.Read()
+                    Dim p As New Produccion
+                    p.ID = resultado("id_produccion")
+                    p.Sucursal = New PersistenciaSucursal().Buscar(resultado("id_sucursal"))
+                    p.Producto = New PersistenciaProductoFinal().Buscar(resultado("id_eproducto"))
+                    p.FechaInicio = resultado("fecha_inicio")
+                    p.FechaFin = resultado("fecha_fin")
+                    p.Cantidad = resultado("cantidad")
+                    produccion.Add(p)
+                End While
+            End If
+
+        Catch ex As OdbcException
+            Throw ex
+        End Try
+
+        Return produccion
+    End Function
 End Class

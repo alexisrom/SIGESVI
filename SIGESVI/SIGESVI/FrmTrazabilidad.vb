@@ -6,6 +6,10 @@
     Private Sub FrmTrazabilidad_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         persistencia = New PersistenciaTrazabilidad
         ControlesPorDefecto()
+
+        BtnGuardar.Visible = usuarioLogueado.EsAdministrativo
+        BtnCancelar.Visible = usuarioLogueado.EsAdministrativo
+        BtnConfigurarAlarma.Visible = usuarioLogueado.EsEnologo
     End Sub
 
     Private Sub ControlesPorDefecto()

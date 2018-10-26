@@ -47,6 +47,39 @@ Public Class PersistenciaProductoFinal
         End Try
     End Sub
 
+
+
+
+
+    Sub Modificar(ByVal producto As ProductoFinal)
+        Dim formato_consulta = "UPDATE especificacion_de_producto SET nombre='{0}', descripcion='{1}', precio={2} WHERE id_eproducto={3}"
+        Dim consulta = String.Format(formato_consulta, producto.Nombre, producto.Descripcion, producto.Precio, producto.ID)
+
+        Dim comando As New OdbcCommand
+
+        Try
+            comando.Connection = Conexion.Abrir
+            comando.CommandText = consulta
+            Dim resultado = comando.ExecuteNonQuery
+
+            If resultado <> 1 Then
+                Throw New Exception("No se pudo agregar la especificación de producto")
+            End If
+
+            BD.GuardarImagen(producto.Imagen, "especificacion_de_producto", "foto", "id_eproducto", producto.ID)
+
+        Catch ex As OdbcException
+            Throw ex
+        Finally
+            Conexion.Cerrar()
+        End Try
+    End Sub
+
+
+
+
+
+
     Sub AgregarEtapas(ByVal producto As ProductoFinal, ByVal conn As OdbcConnection)
 
         Dim comando As New OdbcCommand

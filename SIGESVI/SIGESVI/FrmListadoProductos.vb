@@ -42,6 +42,12 @@
         eproductos.Sort(Function(x, y) x.ID.CompareTo(y.ID))
         DgvProductos.DataSource = eproductos
 
+        BtnNuevoPF.Visible = usuarioLogueado.EsGerenteSucursal Or usuarioLogueado.EsGerenteGeneral
+        BtnNuevoPI.Visible = usuarioLogueado.EsGerenteSucursal Or usuarioLogueado.EsGerenteGeneral
+        BtnNuevoMP.Visible = usuarioLogueado.EsGerenteSucursal Or usuarioLogueado.EsGerenteGeneral
+        BtnEditar.Visible = usuarioLogueado.EsGerenteSucursal Or usuarioLogueado.EsGerenteGeneral
+        BtnEliminar.Visible = usuarioLogueado.EsGerenteSucursal Or usuarioLogueado.EsGerenteGeneral
+
     End Sub
 
 

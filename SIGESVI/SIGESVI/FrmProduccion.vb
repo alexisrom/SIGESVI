@@ -41,10 +41,7 @@
             p.FechaInicio = DtpFechaInicio.Value
             p.FechaFin = DtpFechaFin.Value
             p.Cantidad = CInt(TxtCantidad_NUM_REQ.Text)
-
-            Dim s As New Sucursal
-            s.ID = 1
-            p.Sucursal = s
+            p.Sucursal = CType(usuarioLogueado, Funcionario).Sucursal
             Guardar(p)
         End If
 

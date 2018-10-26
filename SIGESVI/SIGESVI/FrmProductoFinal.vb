@@ -40,6 +40,7 @@
                     CboEmbotellamiento.SelectedItem = item
                 End If
             Next
+            etapasDeElaboracion = productoFinal.Elaboracion
             DgvEtapas.DataSource = productoFinal.Elaboracion
             If Not productoFinal.Imagen Is Nothing Then
                 PicFoto.Image = productoFinal.Imagen
@@ -80,7 +81,7 @@
                 persistencia.Agregar(p)
                 MessageBox.Show("Producto agregado exitosamente")
             Else
-                'persistencia.Modificar(p)
+                persistencia.Modificar(p)
                 MessageBox.Show("Producto modificado exitosamente")
             End If
 

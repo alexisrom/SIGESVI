@@ -359,7 +359,7 @@ Partial Class FrmProductoFinal
         Me.PicFoto.Location = New System.Drawing.Point(471, 147)
         Me.PicFoto.Name = "PicFoto"
         Me.PicFoto.Size = New System.Drawing.Size(100, 100)
-        Me.PicFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PicFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PicFoto.TabIndex = 16
         Me.PicFoto.TabStop = False
         '

@@ -9,7 +9,14 @@
 
     Private Sub ControlesPorDefecto()
         LimpiarControles(Me)
-        DgvVentas.DataSource = persistencia.ListarVentas
+
+        If usuarioLogueado.EsGerenteGeneral Then
+            DgvVentas.DataSource = persistencia.ListarVentas
+        Else
+            DgvVentas.DataSource = persistencia.ListarVentas(CType(usuarioLogueado, Funcionario).Sucursal)
+        End If
+
+
     End Sub
 
     Private Sub BtnSeleccionarLotes_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnSeleccionarLotes.Click
@@ -26,6 +33,8 @@
             Dim venta As New Venta()
             venta.Precio = TxtCosto_NUM_REQ.Text
             venta.Fecha = DtpFecha.Value
+            venta.Sucursal = CType(usuarioLogueado, Funcionario).Sucursal
+
             For Each item In LstLotes.Items
                 venta.Productos.Add(CType(item, Lote))
             Next

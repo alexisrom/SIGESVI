@@ -11,7 +11,16 @@
     Private Sub ControlesPorDefecto()
         LimpiarControles(Me)
         CboVehiculo.DataSource = New PersistenciaTransporte().Listar()
-        DgvVentas.DataSource = persistencia.ListarTraslados
+
+
+        If usuarioLogueado.EsGerenteGeneral Then
+            DgvVentas.DataSource = persistencia.ListarTraslados
+        Else
+            DgvVentas.DataSource = New PersistenciaCompra().Listar(CType(usuarioLogueado, Funcionario).Sucursal)
+        End If
+
+
+
     End Sub
 
     Private Sub BtnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnNuevo.Click
@@ -21,6 +30,7 @@
             traslado.Fecha = DtpFecha.Value
             traslado.Destino = TxtDestino_REQ.Text
             traslado.Vehiculo = CboVehiculo.SelectedItem
+            traslado.Sucursal = CType(usuarioLogueado, Funcionario).Sucursal
 
             Dim cantidad = 0
             For Each item In LstLotes.Items

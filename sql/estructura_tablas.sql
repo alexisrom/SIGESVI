@@ -80,7 +80,7 @@ CREATE TABLE recorre
   (
     id_produccion SERIAL NOT NULL,
     id_etapa INTEGER NOT NULL,
-    fecha_inico DATE NOT NULL,
+    fecha_inicio DATE NOT NULL,
     fecha_fin DATE NOT NULL,
     observacion VARCHAR(200),
     cantidad INTEGER NOT NULL,

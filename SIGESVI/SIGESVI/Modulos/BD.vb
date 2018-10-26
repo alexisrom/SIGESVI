@@ -1,6 +1,8 @@
 ﻿Imports IBM.Data.Informix
 
 Module BD
+    Public HOST = "192.168.81.128"
+
     Sub GuardarImagen(ByVal imagen As Image, ByVal tabla As String, ByVal campo As String, ByVal clave As String, ByVal valor As Integer)
 
 
@@ -9,7 +11,7 @@ Module BD
         End If
 
 
-        Dim stringConnection = "Database=sigesvi;Host=192.168.81.128;Server=ol_esi;Service=9088; Protocol=onsoctcp;UID=informix;Password=informix;"
+        Dim stringConnection = "Database=sigesvi;Host=" & HOST & ";Server=ol_esi;Service=9088; Protocol=onsoctcp;UID=informix;Password=informix;"
 
         Dim conn As New IfxConnection
         conn.ConnectionString = stringConnection

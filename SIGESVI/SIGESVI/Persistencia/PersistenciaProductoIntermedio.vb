@@ -77,7 +77,7 @@ Public Class PersistenciaProductoIntermedio
     Function Listar() As List(Of ProductoIntermedio)
         Dim productos As New List(Of ProductoIntermedio)
         Dim consulta = "SELECT ep.*, pi.* FROM especificacion_de_producto ep, producto_intermedio pi WHERE ep.id_eproducto = pi.id_eproducto AND activo = 't'"
-        Dim stringConnection = "Database=sigesvi;Host=192.168.81.128;Server=ol_esi;Service=9088; Protocol=onsoctcp;UID=informix;Password=informix;"
+        Dim stringConnection = "Database=sigesvi;Host=" & BD.HOST & ";Server=ol_esi;Service=9088; Protocol=onsoctcp;UID=informix;Password=informix;"
 
         Dim conn As New IfxConnection
         conn.ConnectionString = stringConnection

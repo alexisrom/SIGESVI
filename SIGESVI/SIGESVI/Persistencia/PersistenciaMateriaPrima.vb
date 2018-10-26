@@ -78,7 +78,7 @@ Public Class PersistenciaMateriaPrima
     Function Listar() As List(Of MateriaPrima)
         Dim materiasPrimas As New List(Of MateriaPrima)
         Dim consulta = "SELECT ep.*, mp.*, tc.nombre nombre_tipo_cepa, tc.tipo tipo_tipo_cepa FROM especificacion_de_producto ep, materia_prima mp, tipo_cepa tc WHERE ep.id_eproducto = mp.id_eproducto AND mp.id_tipo_cepa = tc.id_tipo_cepa  AND activo = 't'"
-        Dim stringConnection = "Database=sigesvi;Host=192.168.81.128;Server=ol_esi;Service=9088; Protocol=onsoctcp;UID=informix;Password=informix;"
+        Dim stringConnection = "Database=sigesvi;Host=" & BD.HOST & ";Server=ol_esi;Service=9088; Protocol=onsoctcp;UID=informix;Password=informix;"
 
         Dim conn As New IfxConnection
         conn.ConnectionString = stringConnection

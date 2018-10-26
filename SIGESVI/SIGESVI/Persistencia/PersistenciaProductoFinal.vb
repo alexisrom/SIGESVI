@@ -90,44 +90,12 @@ Public Class PersistenciaProductoFinal
         Next
     End Sub
 
-    'Function Listar() As List(Of ProductoFinal)
 
-    '    Dim productos As New List(Of ProductoFinal)
-    '    Dim consulta = "SELECT ep.*, pf.* FROM especificacion_de_producto ep, producto_final pf WHERE ep.id_eproducto = pf.id_eproducto AND activo = 't'"
-
-    '    Try
-    '        Dim comando As New OdbcCommand
-    '        comando.Connection = Conexion.Abrir
-    '        comando.CommandText = consulta
-    '        Dim resultado = comando.ExecuteReader
-
-    '        If resultado.HasRows Then
-    '            While resultado.Read()
-    '                Dim p As New ProductoFinal()
-    '                p.ID = resultado("id_eproducto")
-    '                p.Nombre = resultado("nombre")
-    '                p.Descripcion = resultado("descripcion")
-    '                p.Precio = resultado("precio")
-    '                p.UnidadMedida = resultado("unidad_medida")
-    '                p.Categoria = resultado("categoria")
-    '                p.Crianza = resultado("crianza")
-    '                p.Embotellamiento = resultado("embotellamiento")
-    '                p.Elaboracion = New PersistenciaEtapaElaboracion().Listar(p.ID)
-    '                productos.Add(p)
-    '            End While
-    '        End If
-
-    '    Catch ex As OdbcException
-    '        Throw ex
-    '    End Try
-
-    '    Return productos
-    'End Function
 
     Function Listar() As List(Of ProductoFinal)
         Dim productos As New List(Of ProductoFinal)
         Dim consulta = "SELECT ep.*, pf.* FROM especificacion_de_producto ep, producto_final pf WHERE ep.id_eproducto = pf.id_eproducto AND activo = 't'"
-        Dim stringConnection = "Database=sigesvi;Host=192.168.81.128;Server=ol_esi;Service=9088; Protocol=onsoctcp;UID=informix;Password=informix;"
+        Dim stringConnection = "Database=sigesvi;Host=" & BD.HOST & ";Server=ol_esi;Service=9088; Protocol=onsoctcp;UID=informix;Password=informix;"
 
         Dim conn As New IfxConnection
         conn.ConnectionString = stringConnection

@@ -24,9 +24,7 @@ Partial Class MenuGerenteSucursal
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel
         Me.PnlMenu = New System.Windows.Forms.Panel
-        Me.Panel9 = New System.Windows.Forms.Panel
         Me.Panel8 = New System.Windows.Forms.Panel
-        Me.BtnCampos = New System.Windows.Forms.Button
         Me.Panel5 = New System.Windows.Forms.Panel
         Me.Button2 = New System.Windows.Forms.Button
         Me.Panel2 = New System.Windows.Forms.Panel
@@ -58,9 +56,7 @@ Partial Class MenuGerenteSucursal
         'PnlMenu
         '
         Me.PnlMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.PnlMenu.Controls.Add(Me.Panel9)
         Me.PnlMenu.Controls.Add(Me.Panel8)
-        Me.PnlMenu.Controls.Add(Me.BtnCampos)
         Me.PnlMenu.Controls.Add(Me.Panel5)
         Me.PnlMenu.Controls.Add(Me.Button2)
         Me.PnlMenu.Controls.Add(Me.Panel2)
@@ -81,15 +77,6 @@ Partial Class MenuGerenteSucursal
         Me.PnlMenu.Size = New System.Drawing.Size(200, 610)
         Me.PnlMenu.TabIndex = 8
         '
-        'Panel9
-        '
-        Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.Panel9.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel9.Location = New System.Drawing.Point(19, 482)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(5, 40)
-        Me.Panel9.TabIndex = 13
-        '
         'Panel8
         '
         Me.Panel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
@@ -98,24 +85,6 @@ Partial Class MenuGerenteSucursal
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(5, 40)
         Me.Panel8.TabIndex = 11
-        '
-        'BtnCampos
-        '
-        Me.BtnCampos.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.BtnCampos.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnCampos.FlatAppearance.BorderSize = 0
-        Me.BtnCampos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.BtnCampos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCampos.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCampos.ForeColor = System.Drawing.Color.White
-        Me.BtnCampos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnCampos.Location = New System.Drawing.Point(23, 482)
-        Me.BtnCampos.Name = "BtnCampos"
-        Me.BtnCampos.Size = New System.Drawing.Size(173, 40)
-        Me.BtnCampos.TabIndex = 14
-        Me.BtnCampos.Text = "Campos"
-        Me.BtnCampos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.BtnCampos.UseVisualStyleBackColor = False
         '
         'Panel5
         '
@@ -330,9 +299,7 @@ Partial Class MenuGerenteSucursal
     End Sub
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents PnlMenu As System.Windows.Forms.Panel
-    Friend WithEvents Panel9 As System.Windows.Forms.Panel
     Friend WithEvents Panel8 As System.Windows.Forms.Panel
-    Friend WithEvents BtnCampos As System.Windows.Forms.Button
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Panel2 As System.Windows.Forms.Panel

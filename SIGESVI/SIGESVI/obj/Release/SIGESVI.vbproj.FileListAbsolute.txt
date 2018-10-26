@@ -4,10 +4,8 @@ C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\bin\Release\SIGESVI.xml
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Release\ResolveAssemblyReference.cache
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Release\SIGESVI.FrmAjustes.resources
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Release\SIGESVI.FrmAlarmas.resources
-C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Release\SIGESVI.FrmCampos.resources
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Release\SIGESVI.FrmCatalogo.resources
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Release\SIGESVI.FrmClientes.resources
-C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Release\SIGESVI.FrmCompra.resources
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Release\SIGESVI.FrmCompras.resources
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Release\SIGESVI.FrmFuncionarios.resources
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Release\SIGESVI.FrmListadoProduccion.resources
@@ -37,3 +35,10 @@ C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Release\SIGESVI.vbproj
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Release\SIGESVI.exe
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Release\SIGESVI.xml
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Release\SIGESVI.pdb
+C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\bin\Release\IBM.Data.Informix.dll
+C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Release\SIGESVI.CatalogoItem.resources
+C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Release\SIGESVI.FrmEstadisticas.resources
+C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Release\SIGESVI.FrmReservas.resources
+C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Release\SIGESVI.FrmSeleccionarLotes.resources
+C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Release\SIGESVI.FrmVehiculos.resources
+C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Release\SIGESVI.Notificacion.resources

@@ -110,3 +110,4 @@ C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\bin\Debug\IBM.Data.Informi
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.CatalogoItem.resources
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.FrmReservas.resources
 C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.FrmEstadisticas.resources
+C:\Users\Ale\Documents\GitHub\SIGESVI\SIGESVI\SIGESVI\obj\Debug\SIGESVI.Form1.resources

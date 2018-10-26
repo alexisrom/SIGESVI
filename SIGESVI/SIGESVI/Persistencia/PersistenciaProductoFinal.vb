@@ -1,4 +1,5 @@
 ﻿Imports System.Data.Odbc
+Imports IBM.Data.Informix
 
 Public Class PersistenciaProductoFinal
 
@@ -37,7 +38,7 @@ Public Class PersistenciaProductoFinal
 
 
 
-
+            BD.GuardarImagen(producto.Imagen, "especificacion_de_producto", "foto", "id_eproducto", producto.ID)
 
         Catch ex As OdbcException
             Throw ex
@@ -89,16 +90,55 @@ Public Class PersistenciaProductoFinal
         Next
     End Sub
 
-    Function Listar() As List(Of ProductoFinal)
+    'Function Listar() As List(Of ProductoFinal)
 
+    '    Dim productos As New List(Of ProductoFinal)
+    '    Dim consulta = "SELECT ep.*, pf.* FROM especificacion_de_producto ep, producto_final pf WHERE ep.id_eproducto = pf.id_eproducto AND activo = 't'"
+
+    '    Try
+    '        Dim comando As New OdbcCommand
+    '        comando.Connection = Conexion.Abrir
+    '        comando.CommandText = consulta
+    '        Dim resultado = comando.ExecuteReader
+
+    '        If resultado.HasRows Then
+    '            While resultado.Read()
+    '                Dim p As New ProductoFinal()
+    '                p.ID = resultado("id_eproducto")
+    '                p.Nombre = resultado("nombre")
+    '                p.Descripcion = resultado("descripcion")
+    '                p.Precio = resultado("precio")
+    '                p.UnidadMedida = resultado("unidad_medida")
+    '                p.Categoria = resultado("categoria")
+    '                p.Crianza = resultado("crianza")
+    '                p.Embotellamiento = resultado("embotellamiento")
+    '                p.Elaboracion = New PersistenciaEtapaElaboracion().Listar(p.ID)
+    '                productos.Add(p)
+    '            End While
+    '        End If
+
+    '    Catch ex As OdbcException
+    '        Throw ex
+    '    End Try
+
+    '    Return productos
+    'End Function
+
+    Function Listar() As List(Of ProductoFinal)
         Dim productos As New List(Of ProductoFinal)
         Dim consulta = "SELECT ep.*, pf.* FROM especificacion_de_producto ep, producto_final pf WHERE ep.id_eproducto = pf.id_eproducto AND activo = 't'"
+        Dim stringConnection = "Database=sigesvi;Host=192.168.81.128;Server=ol_esi;Service=9088; Protocol=onsoctcp;UID=informix;Password=informix;"
+
+        Dim conn As New IfxConnection
+        conn.ConnectionString = stringConnection
 
         Try
-            Dim comando As New OdbcCommand
-            comando.Connection = Conexion.Abrir
-            comando.CommandText = consulta
-            Dim resultado = comando.ExecuteReader
+            conn.Open()
+            Dim cmd As New IfxCommand
+            cmd.CommandText = consulta
+            cmd.Connection = conn
+            Dim resultado = cmd.ExecuteReader
+
 
             If resultado.HasRows Then
                 While resultado.Read()
@@ -112,14 +152,26 @@ Public Class PersistenciaProductoFinal
                     p.Crianza = resultado("crianza")
                     p.Embotellamiento = resultado("embotellamiento")
                     p.Elaboracion = New PersistenciaEtapaElaboracion().Listar(p.ID)
+
+                    If Not TypeOf resultado("foto") Is DBNull Then
+                        Dim pictureData As Byte() = DirectCast(resultado("foto"), Byte())
+
+                        Dim picture As Image = Nothing
+
+                        Using stream As New System.IO.MemoryStream(pictureData)
+                            picture = Image.FromStream(stream)
+                        End Using
+
+                        p.Imagen = picture
+                    End If
+
                     productos.Add(p)
                 End While
             End If
 
-        Catch ex As OdbcException
-            Throw ex
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
         End Try
-
         Return productos
     End Function
 

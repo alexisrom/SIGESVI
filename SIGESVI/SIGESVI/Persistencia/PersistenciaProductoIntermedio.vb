@@ -1,4 +1,5 @@
 ﻿Imports System.Data.Odbc
+Imports IBM.Data.Informix
 
 Public Class PersistenciaProductoIntermedio
 
@@ -32,7 +33,7 @@ Public Class PersistenciaProductoIntermedio
             If resultado <> 1 Then
                 Throw New Exception("No se pudo agregar el producto intermedio")
             End If
-
+            BD.GuardarImagen(producto.Imagen, "especificacion_de_producto", "foto", "id_eproducto", producto.ID)
         Catch ex As OdbcException
             Throw ex
         Finally
@@ -62,7 +63,7 @@ Public Class PersistenciaProductoIntermedio
             If resultado <> 1 Then
                 Throw New Exception("No se pudo modificar el producto intermedio")
             End If
-
+            BD.GuardarImagen(producto.Imagen, "especificacion_de_producto", "foto", "id_eproducto", producto.ID)
         Catch ex As OdbcException
             Throw ex
         Finally
@@ -71,19 +72,27 @@ Public Class PersistenciaProductoIntermedio
     End Sub
 
 
-    Function Listar() As List(Of ProductoIntermedio)
 
+
+    Function Listar() As List(Of ProductoIntermedio)
         Dim productos As New List(Of ProductoIntermedio)
         Dim consulta = "SELECT ep.*, pi.* FROM especificacion_de_producto ep, producto_intermedio pi WHERE ep.id_eproducto = pi.id_eproducto AND activo = 't'"
+        Dim stringConnection = "Database=sigesvi;Host=192.168.81.128;Server=ol_esi;Service=9088; Protocol=onsoctcp;UID=informix;Password=informix;"
+
+        Dim conn As New IfxConnection
+        conn.ConnectionString = stringConnection
 
         Try
-            Dim comando As New OdbcCommand
-            comando.Connection = Conexion.Abrir
-            comando.CommandText = consulta
-            Dim resultado = comando.ExecuteReader
+            conn.Open()
+            Dim cmd As New IfxCommand
+            cmd.CommandText = consulta
+            cmd.Connection = conn
+            Dim resultado = cmd.ExecuteReader
+
 
             If resultado.HasRows Then
                 While resultado.Read()
+
                     Dim p As New ProductoIntermedio()
                     p.ID = resultado("id_eproducto")
                     p.Nombre = resultado("nombre")
@@ -92,15 +101,28 @@ Public Class PersistenciaProductoIntermedio
                     p.UnidadMedida = resultado("unidad_medida")
                     p.Categoria = resultado("categoria")
                     p.Calidad = resultado("tipo")
+
+                    If Not TypeOf resultado("foto") Is DBNull Then
+                        Dim pictureData As Byte() = DirectCast(resultado("foto"), Byte())
+
+                        Dim picture As Image = Nothing
+
+                        Using stream As New System.IO.MemoryStream(pictureData)
+                            picture = Image.FromStream(stream)
+                        End Using
+
+                        p.Imagen = picture
+                    End If
+
                     productos.Add(p)
                 End While
             End If
 
-        Catch ex As OdbcException
-            Throw ex
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
         End Try
-
         Return productos
     End Function
+
 
 End Class

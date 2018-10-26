@@ -196,7 +196,7 @@ Partial Class FrmMateriaPrima
         Me.PicFoto.Location = New System.Drawing.Point(667, 151)
         Me.PicFoto.Name = "PicFoto"
         Me.PicFoto.Size = New System.Drawing.Size(100, 100)
-        Me.PicFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PicFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PicFoto.TabIndex = 35
         Me.PicFoto.TabStop = False
         '

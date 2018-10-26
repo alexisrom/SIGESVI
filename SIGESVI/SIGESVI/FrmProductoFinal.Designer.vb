@@ -51,6 +51,7 @@ Partial Class FrmProductoFinal
         Me.Label10 = New System.Windows.Forms.Label
         Me.BtnVolver = New System.Windows.Forms.PictureBox
         Me.PicFoto = New System.Windows.Forms.PictureBox
+        Me.OfdImagen = New System.Windows.Forms.OpenFileDialog
         CType(Me.DgvEtapas, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BtnVolver, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PicFoto, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -358,8 +359,14 @@ Partial Class FrmProductoFinal
         Me.PicFoto.Location = New System.Drawing.Point(471, 147)
         Me.PicFoto.Name = "PicFoto"
         Me.PicFoto.Size = New System.Drawing.Size(100, 100)
+        Me.PicFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PicFoto.TabIndex = 16
         Me.PicFoto.TabStop = False
+        '
+        'OfdImagen
+        '
+        Me.OfdImagen.Filter = "JPEG|*.JPG|PNG|*.PNG"
+        Me.OfdImagen.Title = "Seleccionar imagen del producto"
         '
         'FrmProductoFinal
         '
@@ -430,4 +437,5 @@ Partial Class FrmProductoFinal
     Friend WithEvents Nombre As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Descripcion As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Duracion As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents OfdImagen As System.Windows.Forms.OpenFileDialog
 End Class

@@ -30,6 +30,11 @@
                     CboCepas.SelectedIndex = CboCepas.Items.IndexOf(item)
                 End If
             Next
+
+            If Not materiaPrima.Imagen Is Nothing Then
+                PicFoto.Image = materiaPrima.Imagen
+            End If
+
         End If
 
     End Sub
@@ -46,6 +51,7 @@
             mp.Categoria = "Tinto"
             mp.UnidadMedida = "Kg"
             mp.TipoCepa = CType(CboCepas.SelectedItem, TipoCepa)
+            mp.Imagen = PicFoto.Image
             Guardar(mp)
         End If
 
@@ -73,7 +79,6 @@
     Private Sub BtnSeleccionarFoto_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnSeleccionarFoto.Click
         If OfdImagen.ShowDialog() = DialogResult.OK Then
             PicFoto.Image = Image.FromFile(OfdImagen.FileName)
-
         End If
     End Sub
 End Class

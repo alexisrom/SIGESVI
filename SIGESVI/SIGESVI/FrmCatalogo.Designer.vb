@@ -23,14 +23,14 @@ Partial Class FrmCatalogo
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel2 = New System.Windows.Forms.Panel
-        Me.Label1 = New System.Windows.Forms.Label
         Me.Panel1 = New System.Windows.Forms.Panel
-        Me.LblVinos = New System.Windows.Forms.Label
-        Me.LblMosto = New System.Windows.Forms.Label
         Me.PnlMostoContenedor = New System.Windows.Forms.Panel
         Me.PnlMosto = New System.Windows.Forms.FlowLayoutPanel
-        Me.PnlVinos = New System.Windows.Forms.FlowLayoutPanel
+        Me.LblMosto = New System.Windows.Forms.Label
         Me.PnlVinosContenedor = New System.Windows.Forms.Panel
+        Me.PnlVinos = New System.Windows.Forms.FlowLayoutPanel
+        Me.LblVinos = New System.Windows.Forms.Label
+        Me.Label1 = New System.Windows.Forms.Label
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.PnlMostoContenedor.SuspendLayout()
@@ -49,19 +49,6 @@ Partial Class FrmCatalogo
         Me.Panel2.Size = New System.Drawing.Size(1289, 1000)
         Me.Panel2.TabIndex = 5
         '
-        'Label1
-        '
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(79, Byte), Integer))
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label1.Font = New System.Drawing.Font("Roboto", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(0, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(1289, 82)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "CATÁLOGO DE PRODUCTOS"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(124, Byte), Integer), CType(CType(107, Byte), Integer), CType(CType(204, Byte), Integer))
@@ -74,32 +61,6 @@ Partial Class FrmCatalogo
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1289, 918)
         Me.Panel1.TabIndex = 1
-        '
-        'LblVinos
-        '
-        Me.LblVinos.BackColor = System.Drawing.Color.Transparent
-        Me.LblVinos.Dock = System.Windows.Forms.DockStyle.Top
-        Me.LblVinos.Font = New System.Drawing.Font("Roboto", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblVinos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(79, Byte), Integer))
-        Me.LblVinos.Location = New System.Drawing.Point(0, 0)
-        Me.LblVinos.Name = "LblVinos"
-        Me.LblVinos.Size = New System.Drawing.Size(1289, 82)
-        Me.LblVinos.TabIndex = 2
-        Me.LblVinos.Text = "VINOS"
-        Me.LblVinos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'LblMosto
-        '
-        Me.LblMosto.BackColor = System.Drawing.Color.Transparent
-        Me.LblMosto.Dock = System.Windows.Forms.DockStyle.Top
-        Me.LblMosto.Font = New System.Drawing.Font("Roboto", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblMosto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(79, Byte), Integer))
-        Me.LblMosto.Location = New System.Drawing.Point(0, 342)
-        Me.LblMosto.Name = "LblMosto"
-        Me.LblMosto.Size = New System.Drawing.Size(1289, 82)
-        Me.LblMosto.TabIndex = 9
-        Me.LblMosto.Text = "MOSTO"
-        Me.LblMosto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PnlMostoContenedor
         '
@@ -121,15 +82,18 @@ Partial Class FrmCatalogo
         Me.PnlMosto.Size = New System.Drawing.Size(1189, 230)
         Me.PnlMosto.TabIndex = 1
         '
-        'PnlVinos
+        'LblMosto
         '
-        Me.PnlVinos.AutoScroll = True
-        Me.PnlVinos.BackColor = System.Drawing.Color.Transparent
-        Me.PnlVinos.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PnlVinos.Location = New System.Drawing.Point(50, 0)
-        Me.PnlVinos.Name = "PnlVinos"
-        Me.PnlVinos.Size = New System.Drawing.Size(1189, 230)
-        Me.PnlVinos.TabIndex = 1
+        Me.LblMosto.BackColor = System.Drawing.Color.Transparent
+        Me.LblMosto.Dock = System.Windows.Forms.DockStyle.Top
+        Me.LblMosto.Font = New System.Drawing.Font("Roboto", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblMosto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.LblMosto.Location = New System.Drawing.Point(0, 342)
+        Me.LblMosto.Name = "LblMosto"
+        Me.LblMosto.Size = New System.Drawing.Size(1289, 82)
+        Me.LblMosto.TabIndex = 9
+        Me.LblMosto.Text = "MOSTO"
+        Me.LblMosto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PnlVinosContenedor
         '
@@ -140,6 +104,43 @@ Partial Class FrmCatalogo
         Me.PnlVinosContenedor.Padding = New System.Windows.Forms.Padding(50, 0, 50, 30)
         Me.PnlVinosContenedor.Size = New System.Drawing.Size(1289, 260)
         Me.PnlVinosContenedor.TabIndex = 3
+        '
+        'PnlVinos
+        '
+        Me.PnlVinos.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PnlVinos.AutoScroll = True
+        Me.PnlVinos.BackColor = System.Drawing.Color.Transparent
+        Me.PnlVinos.Location = New System.Drawing.Point(50, 0)
+        Me.PnlVinos.Name = "PnlVinos"
+        Me.PnlVinos.Size = New System.Drawing.Size(1189, 230)
+        Me.PnlVinos.TabIndex = 1
+        '
+        'LblVinos
+        '
+        Me.LblVinos.BackColor = System.Drawing.Color.Transparent
+        Me.LblVinos.Dock = System.Windows.Forms.DockStyle.Top
+        Me.LblVinos.Font = New System.Drawing.Font("Roboto", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblVinos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.LblVinos.Location = New System.Drawing.Point(0, 0)
+        Me.LblVinos.Name = "LblVinos"
+        Me.LblVinos.Size = New System.Drawing.Size(1289, 82)
+        Me.LblVinos.TabIndex = 2
+        Me.LblVinos.Text = "VINOS"
+        Me.LblVinos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label1.Font = New System.Drawing.Font("Roboto", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(0, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(1289, 82)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "CATÁLOGO DE PRODUCTOS"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'FrmCatalogo
         '

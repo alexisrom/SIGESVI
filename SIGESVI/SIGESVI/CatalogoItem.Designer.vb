@@ -48,7 +48,7 @@ Partial Class CatalogoItem
         '
         'PicFoto
         '
-        Me.PicFoto.Image = Global.SIGESVI.My.Resources.Resources.descarga
+        Me.PicFoto.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(151, Byte), Integer))
         Me.PicFoto.Location = New System.Drawing.Point(17, 19)
         Me.PicFoto.Name = "PicFoto"
         Me.PicFoto.Size = New System.Drawing.Size(130, 130)
@@ -92,7 +92,7 @@ Partial Class CatalogoItem
         Me.LblDescripcion.ForeColor = System.Drawing.Color.White
         Me.LblDescripcion.Location = New System.Drawing.Point(0, 38)
         Me.LblDescripcion.Name = "LblDescripcion"
-        Me.LblDescripcion.Size = New System.Drawing.Size(200, 92)
+        Me.LblDescripcion.Size = New System.Drawing.Size(200, 102)
         Me.LblDescripcion.TabIndex = 38
         Me.LblDescripcion.Text = "Descripción producto"
         '
@@ -114,9 +114,9 @@ Partial Class CatalogoItem
         Me.LblPrecio.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.LblPrecio.Font = New System.Drawing.Font("Roboto", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblPrecio.ForeColor = System.Drawing.Color.White
-        Me.LblPrecio.Location = New System.Drawing.Point(0, 130)
+        Me.LblPrecio.Location = New System.Drawing.Point(0, 140)
         Me.LblPrecio.Name = "LblPrecio"
-        Me.LblPrecio.Size = New System.Drawing.Size(200, 38)
+        Me.LblPrecio.Size = New System.Drawing.Size(200, 28)
         Me.LblPrecio.TabIndex = 37
         Me.LblPrecio.Text = "Precio: $000"
         Me.LblPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft

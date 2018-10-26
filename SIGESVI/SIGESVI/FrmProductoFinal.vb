@@ -41,6 +41,9 @@
                 End If
             Next
             DgvEtapas.DataSource = productoFinal.Elaboracion
+            If Not productoFinal.Imagen Is Nothing Then
+                PicFoto.Image = productoFinal.Imagen
+            End If
         End If
 
     End Sub
@@ -109,5 +112,11 @@
             MostarEtapas()
         End If
 
+    End Sub
+
+    Private Sub BtnSeleccionarFoto_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnSeleccionarFoto.Click
+        If OfdImagen.ShowDialog() = DialogResult.OK Then
+            PicFoto.Image = Image.FromFile(OfdImagen.FileName)
+        End If
     End Sub
 End Class

@@ -37,6 +37,7 @@ Partial Class FrmProductoIntermedio
         Me.TxtNombre_REQ = New System.Windows.Forms.TextBox
         Me.PicVolver = New System.Windows.Forms.PictureBox
         Me.PicFoto = New System.Windows.Forms.PictureBox
+        Me.OfdImagen = New System.Windows.Forms.OpenFileDialog
         CType(Me.PicVolver, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PicFoto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -195,8 +196,14 @@ Partial Class FrmProductoIntermedio
         Me.PicFoto.Location = New System.Drawing.Point(620, 139)
         Me.PicFoto.Name = "PicFoto"
         Me.PicFoto.Size = New System.Drawing.Size(100, 100)
+        Me.PicFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PicFoto.TabIndex = 50
         Me.PicFoto.TabStop = False
+        '
+        'OfdImagen
+        '
+        Me.OfdImagen.Filter = "JPEG|*.JPG|PNG|*.PNG"
+        Me.OfdImagen.Title = "Seleccionar imagen del producto"
         '
         'FrmProductoIntermedio
         '
@@ -243,4 +250,5 @@ Partial Class FrmProductoIntermedio
     Friend WithEvents TxtDescripcion_REQ As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents TxtNombre_REQ As System.Windows.Forms.TextBox
+    Friend WithEvents OfdImagen As System.Windows.Forms.OpenFileDialog
 End Class

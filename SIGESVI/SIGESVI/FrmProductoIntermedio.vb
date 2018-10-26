@@ -28,6 +28,10 @@
                     CboCalidad_REQ.SelectedIndex = CboCalidad_REQ.Items.IndexOf(item)
                 End If
             Next
+            If Not productoIntermedio.Imagen Is Nothing Then
+                PicFoto.Image = productoIntermedio.Imagen
+            End If
+
         End If
 
     End Sub
@@ -65,5 +69,11 @@
             MessageBox.Show(ex.Message)
         End Try
 
+    End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        If OfdImagen.ShowDialog() = DialogResult.OK Then
+            PicFoto.Image = Image.FromFile(OfdImagen.FileName)
+        End If
     End Sub
 End Class

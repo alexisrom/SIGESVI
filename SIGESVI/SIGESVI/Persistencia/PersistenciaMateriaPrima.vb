@@ -4,6 +4,7 @@ Imports IBM.Data.Informix
 
 Public Class PersistenciaMateriaPrima
 
+
     Sub Agregar(ByVal mp As MateriaPrima)
         Dim formato_consulta = "INSERT INTO especificacion_de_producto(nombre, descripcion, precio,unidad_medida, categoria, foto) VALUES(""{0}"",""{1}"",{2},""{3}"", ""{4}"", null) "
         Dim consulta = String.Format(formato_consulta, mp.Nombre, mp.Descripcion, mp.Precio, mp.UnidadMedida, mp.Categoria)
@@ -19,7 +20,6 @@ Public Class PersistenciaMateriaPrima
                 Throw New Exception("No se pudo agregar la especificación de producto")
             End If
 
-            ' Se obtiene el ID de sucursal asignado automáticamente 
             comando.CommandText = "SELECT id_eproducto FROM especificacion_de_producto ORDER BY id_eproducto DESC LIMIT 1"
             Dim resp = comando.ExecuteReader()
             resp.Read()
@@ -34,6 +34,8 @@ Public Class PersistenciaMateriaPrima
             If resultado <> 1 Then
                 Throw New Exception("No se pudo agregar la materia prima")
             End If
+
+            BD.GuardarImagen(mp.Imagen, "especificacion_de_producto", "foto", "id_eproducto", mp.ID)
 
         Catch ex As OdbcException
             Throw ex
@@ -65,7 +67,7 @@ Public Class PersistenciaMateriaPrima
             If resultado <> 1 Then
                 Throw New Exception("No se pudo modificar la materia prima")
             End If
-
+            BD.GuardarImagen(materiaPrima.Imagen, "especificacion_de_producto", "foto", "id_eproducto", materiaPrima.ID)
         Catch ex As OdbcException
             Throw ex
         Finally
@@ -74,45 +76,64 @@ Public Class PersistenciaMateriaPrima
     End Sub
 
     Function Listar() As List(Of MateriaPrima)
-
         Dim materiasPrimas As New List(Of MateriaPrima)
         Dim consulta = "SELECT ep.*, mp.*, tc.nombre nombre_tipo_cepa, tc.tipo tipo_tipo_cepa FROM especificacion_de_producto ep, materia_prima mp, tipo_cepa tc WHERE ep.id_eproducto = mp.id_eproducto AND mp.id_tipo_cepa = tc.id_tipo_cepa  AND activo = 't'"
+        Dim stringConnection = "Database=sigesvi;Host=192.168.81.128;Server=ol_esi;Service=9088; Protocol=onsoctcp;UID=informix;Password=informix;"
+
+        Dim conn As New IfxConnection
+        conn.ConnectionString = stringConnection
 
         Try
-            Dim comando As New OdbcCommand
-            comando.Connection = Conexion.Abrir
-            comando.CommandText = consulta
-            Dim resultado = comando.ExecuteReader
+            conn.Open()
+            Dim cmd As New IfxCommand
+            cmd.CommandText = consulta
+            cmd.Connection = conn
+            Dim res = cmd.ExecuteReader
 
-            If resultado.HasRows Then
-                While resultado.Read()
+
+            If res.HasRows Then
+                While res.Read()
+
                     Dim mp As New MateriaPrima()
-                    mp.ID = resultado("id_eproducto")
-                    mp.Nombre = resultado("nombre")
-                    mp.Descripcion = resultado("descripcion")
-                    mp.Precio = resultado("precio")
-                    mp.UnidadMedida = resultado("unidad_medida")
-                    mp.Categoria = resultado("categoria")
+                    mp.ID = res("id_eproducto")
+                    mp.Nombre = res("nombre")
+                    mp.Descripcion = res("descripcion")
+                    mp.Precio = res("precio")
+                    mp.UnidadMedida = res("unidad_medida")
+                    mp.Categoria = res("categoria")
 
                     Dim tipoCepa As New TipoCepa()
-                    tipoCepa.ID = resultado("id_tipo_cepa")
-                    tipoCepa.Nombre = resultado("nombre_tipo_cepa")
-                    tipoCepa.Tipo = resultado("tipo_tipo_cepa")
-
+                    tipoCepa.ID = res("id_tipo_cepa")
+                    tipoCepa.Nombre = res("nombre_tipo_cepa")
+                    tipoCepa.Tipo = res("tipo_tipo_cepa")
                     mp.TipoCepa = tipoCepa
+
+
+                    If Not TypeOf res("foto") Is DBNull Then
+                        Dim pictureData As Byte() = DirectCast(res("foto"), Byte())
+
+                        Dim picture As Image = Nothing
+
+                        Using stream As New System.IO.MemoryStream(pictureData)
+                            picture = Image.FromStream(stream)
+                        End Using
+
+                        mp.Imagen = picture
+                    End If
 
                     materiasPrimas.Add(mp)
                 End While
             End If
 
-        Catch ex As OdbcException
-            Throw ex
-        Finally
-            Conexion.Cerrar()
-        End Try
 
+
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
         Return materiasPrimas
     End Function
+
 
 
 

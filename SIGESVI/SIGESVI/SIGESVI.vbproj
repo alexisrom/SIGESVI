@@ -293,6 +293,7 @@
     <Compile Include="MenuGerenteSucursal.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Modulos\BD.vb" />
     <Compile Include="Modulos\Carrito.vb" />
     <Compile Include="Modulos\Conexion.vb" />
     <Compile Include="Modulos\InstanciasGlobales.vb" />

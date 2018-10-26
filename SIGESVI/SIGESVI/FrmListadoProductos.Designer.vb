@@ -34,6 +34,7 @@ Partial Class FrmListadoProductos
         Me.BtnNuevoPF = New System.Windows.Forms.Button
         Me.LblAyuda = New System.Windows.Forms.Label
         Me.DgvProductos = New System.Windows.Forms.DataGridView
+        Me.Imagen = New System.Windows.Forms.DataGridViewImageColumn
         CType(Me.DgvProductos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -157,6 +158,7 @@ Partial Class FrmListadoProductos
         Me.DgvProductos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DgvProductos.ColumnHeadersHeight = 25
         Me.DgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.DgvProductos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Imagen})
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -188,10 +190,20 @@ Partial Class FrmListadoProductos
         Me.DgvProductos.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
         Me.DgvProductos.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White
         Me.DgvProductos.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.DgvProductos.RowTemplate.Height = 50
         Me.DgvProductos.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DgvProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DgvProductos.Size = New System.Drawing.Size(710, 271)
         Me.DgvProductos.TabIndex = 0
+        '
+        'Imagen
+        '
+        Me.Imagen.DataPropertyName = "Imagen"
+        Me.Imagen.HeaderText = "Imagen"
+        Me.Imagen.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.Imagen.Name = "Imagen"
+        Me.Imagen.ReadOnly = True
+        Me.Imagen.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         '
         'FrmListadoProductos
         '
@@ -223,4 +235,5 @@ Partial Class FrmListadoProductos
     Friend WithEvents BtnNuevoPF As System.Windows.Forms.Button
     Friend WithEvents LblAyuda As System.Windows.Forms.Label
     Friend WithEvents DgvProductos As System.Windows.Forms.DataGridView
+    Friend WithEvents Imagen As System.Windows.Forms.DataGridViewImageColumn
 End Class

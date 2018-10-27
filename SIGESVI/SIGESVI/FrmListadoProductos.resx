@@ -117,7 +117,298 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;BtnNuevoMP.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblAyuda.Name" xml:space="preserve">
+    <value>LblAyuda</value>
+  </data>
+  <data name="&gt;&gt;BtnEditar.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="DgvProductos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 85</value>
+  </data>
+  <data name="&gt;&gt;BtnEditar.Name" xml:space="preserve">
+    <value>BtnEditar</value>
+  </data>
+  <data name="&gt;&gt;BtnEditar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BtnEditar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;BtnNuevoPF.Name" xml:space="preserve">
+    <value>BtnNuevoPF</value>
+  </data>
+  <data name="DgvProductos.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom</value>
+  </data>
+  <data name="&gt;&gt;BtnEliminar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BtnNuevoMP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 34</value>
+  </data>
+  <data name="&gt;&gt;BtnNuevoMP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="BtnNuevoPI.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 34</value>
+  </data>
+  <data name="&gt;&gt;DgvProductos.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="BtnNuevoPF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 34</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="DgvProductos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>710, 271</value>
+  </data>
+  <data name="&gt;&gt;BtnNuevoPI.Name" xml:space="preserve">
+    <value>BtnNuevoPI</value>
+  </data>
+  <data name="&gt;&gt;BtnNuevoPI.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Imagen.Name" xml:space="preserve">
+    <value>Imagen</value>
+  </data>
+  <data name="BtnNuevoMP.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="BtnEditar.Text" xml:space="preserve">
+    <value>EDITAR</value>
+  </data>
+  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>331, 30</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>ESPECIFICACIONES DE PRODUCTOS</value>
+  </data>
+  <data name="LblAyuda.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;BtnEliminar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BtnNuevoPI.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BtnNuevoPF.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="BtnNuevoMP.Text" xml:space="preserve">
+    <value>NUEVO MP</value>
+  </data>
+  <data name="LblAyuda.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="Imagen.HeaderText" xml:space="preserve">
+    <value>Imagen</value>
+  </data>
+  <data name="&gt;&gt;LblAyuda.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DgvProductos.Name" xml:space="preserve">
+    <value>DgvProductos</value>
+  </data>
+  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BtnEliminar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="LblAyuda.Text" xml:space="preserve">
+    <value>Persione doble click para selecionar el producto</value>
+  </data>
+  <data name="BtnEliminar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="BtnEditar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>915, 85</value>
+  </data>
+  <data name="BtnNuevoPF.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnEliminar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnNuevoPF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 184</value>
+  </data>
+  <data name="DgvProductos.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FrmListadoProductos</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>ListadoProductos</value>
+  </data>
+  <data name="&gt;&gt;BtnEliminar.Name" xml:space="preserve">
+    <value>BtnEliminar</value>
+  </data>
+  <data name="BtnEditar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="BtnNuevoMP.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;BtnNuevoPF.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="BtnNuevoPF.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="BtnNuevoPI.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="BtnNuevoPF.Text" xml:space="preserve">
+    <value>NUEVO PF</value>
+  </data>
+  <data name="LblAyuda.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="BtnNuevoPI.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;DgvProductos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnEditar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BtnNuevoPF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BtnEditar.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="BtnNuevoPI.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnEliminar.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;LblAyuda.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 18pt</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnEliminar.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="BtnEditar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1084, 405</value>
+  </data>
+  <data name="&gt;&gt;BtnNuevoPI.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblAyuda.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LblAyuda.Size" type="System.Drawing.Size, System.Drawing">
+    <value>338, 21</value>
+  </data>
+  <data name="LblAyuda.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DgvProductos.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="LblAyuda.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 375</value>
+  </data>
+  <data name="&gt;&gt;BtnNuevoPF.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BtnEliminar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>915, 135</value>
+  </data>
+  <data name="&gt;&gt;BtnNuevoMP.Name" xml:space="preserve">
+    <value>BtnNuevoMP</value>
+  </data>
+  <data name="BtnNuevoMP.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnNuevoPI.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 135</value>
+  </data>
+  <data name="&gt;&gt;BtnNuevoMP.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="BtnEliminar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 34</value>
+  </data>
+  <data name="BtnEliminar.Text" xml:space="preserve">
+    <value>ELIMINAR</value>
+  </data>
+  <data name="BtnEditar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 34</value>
+  </data>
+  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>444, 29</value>
+  </data>
+  <data name="BtnNuevoPF.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="BtnNuevoPI.Text" xml:space="preserve">
+    <value>NUEVO PI</value>
+  </data>
+  <data name="&gt;&gt;Imagen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BtnNuevoMP.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;DgvProductos.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="BtnNuevoMP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 85</value>
+  </data>
+  <data name="BtnNuevoPI.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
+    <value>Label1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="Imagen.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Spanish</value>
   </metadata>
 </root>

@@ -22,6 +22,7 @@ Partial Class FrmTipoCepa
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmTipoCepa))
         Me.Panel1 = New System.Windows.Forms.Panel
         Me.Label8 = New System.Windows.Forms.Label
         Me.CboTipoCepa_REQ = New System.Windows.Forms.ComboBox
@@ -39,131 +40,123 @@ Partial Class FrmTipoCepa
         '
         'Panel1
         '
+        Me.Panel1.AccessibleDescription = Nothing
+        Me.Panel1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Panel1, "Panel1")
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.Panel1.BackgroundImage = Nothing
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.CboTipoCepa_REQ)
         Me.Panel1.Controls.Add(Me.BtnAgregar)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.TxtNombre_REQ)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel1.Location = New System.Drawing.Point(614, 0)
+        Me.Panel1.Font = Nothing
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(437, 487)
-        Me.Panel1.TabIndex = 2
         '
         'Label8
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.Label8.AccessibleDescription = Nothing
+        Me.Label8.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label8, "Label8")
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(55, 199)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(40, 20)
-        Me.Label8.TabIndex = 40
-        Me.Label8.Text = "TIPO"
         '
         'CboTipoCepa_REQ
         '
+        Me.CboTipoCepa_REQ.AccessibleDescription = Nothing
+        Me.CboTipoCepa_REQ.AccessibleName = Nothing
+        resources.ApplyResources(Me.CboTipoCepa_REQ, "CboTipoCepa_REQ")
         Me.CboTipoCepa_REQ.BackColor = System.Drawing.Color.White
+        Me.CboTipoCepa_REQ.BackgroundImage = Nothing
         Me.CboTipoCepa_REQ.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CboTipoCepa_REQ.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CboTipoCepa_REQ.Font = New System.Drawing.Font("Segoe UI", 11.0!)
         Me.CboTipoCepa_REQ.FormattingEnabled = True
-        Me.CboTipoCepa_REQ.Items.AddRange(New Object() {"Tinto", "Rosado", "Blanco"})
-        Me.CboTipoCepa_REQ.Location = New System.Drawing.Point(130, 192)
+        Me.CboTipoCepa_REQ.Items.AddRange(New Object() {resources.GetString("CboTipoCepa_REQ.Items"), resources.GetString("CboTipoCepa_REQ.Items1"), resources.GetString("CboTipoCepa_REQ.Items2")})
         Me.CboTipoCepa_REQ.Name = "CboTipoCepa_REQ"
-        Me.CboTipoCepa_REQ.Size = New System.Drawing.Size(237, 28)
-        Me.CboTipoCepa_REQ.TabIndex = 39
         '
         'BtnAgregar
         '
+        Me.BtnAgregar.AccessibleDescription = Nothing
+        Me.BtnAgregar.AccessibleName = Nothing
+        resources.ApplyResources(Me.BtnAgregar, "BtnAgregar")
         Me.BtnAgregar.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.BtnAgregar.BackgroundImage = Nothing
         Me.BtnAgregar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnAgregar.FlatAppearance.BorderSize = 0
-        Me.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnAgregar.Font = Nothing
         Me.BtnAgregar.ForeColor = System.Drawing.Color.White
-        Me.BtnAgregar.Location = New System.Drawing.Point(130, 245)
         Me.BtnAgregar.Name = "BtnAgregar"
-        Me.BtnAgregar.Size = New System.Drawing.Size(237, 34)
-        Me.BtnAgregar.TabIndex = 38
-        Me.BtnAgregar.Text = "AGREGAR"
         Me.BtnAgregar.UseVisualStyleBackColor = False
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.Label2.AccessibleDescription = Nothing
+        Me.Label2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label2, "Label2")
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(198, 52)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(169, 20)
-        Me.Label2.TabIndex = 28
-        Me.Label2.Text = "Mantenimiento de Cepa"
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(43, 150)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(70, 20)
-        Me.Label1.TabIndex = 13
-        Me.Label1.Text = "NOMBRE"
         '
         'TxtNombre_REQ
         '
-        Me.TxtNombre_REQ.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.TxtNombre_REQ.Location = New System.Drawing.Point(130, 149)
+        Me.TxtNombre_REQ.AccessibleDescription = Nothing
+        Me.TxtNombre_REQ.AccessibleName = Nothing
+        resources.ApplyResources(Me.TxtNombre_REQ, "TxtNombre_REQ")
+        Me.TxtNombre_REQ.BackgroundImage = Nothing
         Me.TxtNombre_REQ.Name = "TxtNombre_REQ"
-        Me.TxtNombre_REQ.Size = New System.Drawing.Size(237, 27)
-        Me.TxtNombre_REQ.TabIndex = 12
         '
         'Panel2
         '
+        Me.Panel2.AccessibleDescription = Nothing
+        Me.Panel2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Panel2, "Panel2")
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
+        Me.Panel2.BackgroundImage = Nothing
         Me.Panel2.Controls.Add(Me.Label3)
         Me.Panel2.Controls.Add(Me.DgvEtapas)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Font = Nothing
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(614, 487)
-        Me.Panel2.TabIndex = 4
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 16.0!)
+        Me.Label3.AccessibleDescription = Nothing
+        Me.Label3.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label3, "Label3")
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(274, 29)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(76, 30)
-        Me.Label3.TabIndex = 31
-        Me.Label3.Text = "CEPAS"
         '
         'DgvEtapas
         '
-        Me.DgvEtapas.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DgvEtapas.AccessibleDescription = Nothing
+        Me.DgvEtapas.AccessibleName = Nothing
+        resources.ApplyResources(Me.DgvEtapas, "DgvEtapas")
         Me.DgvEtapas.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.DgvEtapas.BackgroundImage = Nothing
         Me.DgvEtapas.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DgvEtapas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgvEtapas.Location = New System.Drawing.Point(83, 82)
+        Me.DgvEtapas.Font = Nothing
         Me.DgvEtapas.Name = "DgvEtapas"
-        Me.DgvEtapas.Size = New System.Drawing.Size(447, 341)
-        Me.DgvEtapas.TabIndex = 28
         '
         'FrmTipoCepa
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1051, 487)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = Nothing
         Me.Name = "FrmTipoCepa"
-        Me.Text = "FrmTipoCepa"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)

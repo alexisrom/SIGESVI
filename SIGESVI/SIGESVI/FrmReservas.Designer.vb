@@ -22,6 +22,7 @@ Partial Class FrmReservas
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmReservas))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
@@ -38,20 +39,19 @@ Partial Class FrmReservas
         '
         'Label1
         '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Roboto", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(474, 56)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(129, 29)
-        Me.Label1.TabIndex = 8
-        Me.Label1.Text = "RESERVAS"
         '
         'DgvReservas
         '
-        Me.DgvReservas.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.DgvReservas.AccessibleDescription = Nothing
+        Me.DgvReservas.AccessibleName = Nothing
+        resources.ApplyResources(Me.DgvReservas, "DgvReservas")
         Me.DgvReservas.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.DgvReservas.BackgroundImage = Nothing
         Me.DgvReservas.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DgvReservas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -62,7 +62,6 @@ Partial Class FrmReservas
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DgvReservas.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.DgvReservas.ColumnHeadersHeight = 25
         Me.DgvReservas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.DgvReservas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Cliente, Me.Fecha, Me.Productos})
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -74,8 +73,8 @@ Partial Class FrmReservas
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DgvReservas.DefaultCellStyle = DataGridViewCellStyle2
         Me.DgvReservas.EnableHeadersVisualStyles = False
+        Me.DgvReservas.Font = Nothing
         Me.DgvReservas.GridColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(211, Byte), Integer))
-        Me.DgvReservas.Location = New System.Drawing.Point(103, 120)
         Me.DgvReservas.MultiSelect = False
         Me.DgvReservas.Name = "DgvReservas"
         Me.DgvReservas.ReadOnly = True
@@ -98,66 +97,63 @@ Partial Class FrmReservas
         Me.DgvReservas.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.DgvReservas.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DgvReservas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DgvReservas.Size = New System.Drawing.Size(849, 266)
-        Me.DgvReservas.TabIndex = 13
         '
         'ID
         '
         Me.ID.DataPropertyName = "ID"
-        Me.ID.HeaderText = "ID"
+        resources.ApplyResources(Me.ID, "ID")
         Me.ID.Name = "ID"
         Me.ID.ReadOnly = True
         '
         'Cliente
         '
         Me.Cliente.DataPropertyName = "Cliente"
-        Me.Cliente.HeaderText = "Cliente"
+        resources.ApplyResources(Me.Cliente, "Cliente")
         Me.Cliente.Name = "Cliente"
         Me.Cliente.ReadOnly = True
         '
         'Fecha
         '
         Me.Fecha.DataPropertyName = "FechaHora"
-        Me.Fecha.HeaderText = "Fecha"
+        resources.ApplyResources(Me.Fecha, "Fecha")
         Me.Fecha.Name = "Fecha"
         Me.Fecha.ReadOnly = True
         '
         'Productos
         '
         Me.Productos.DataPropertyName = "Productos_Reservados"
-        Me.Productos.HeaderText = "Productos"
+        resources.ApplyResources(Me.Productos, "Productos")
         Me.Productos.Name = "Productos"
         Me.Productos.ReadOnly = True
-        Me.Productos.Width = 500
         '
         'BtnDetalles
         '
-        Me.BtnDetalles.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BtnDetalles.AccessibleDescription = Nothing
+        Me.BtnDetalles.AccessibleName = Nothing
+        resources.ApplyResources(Me.BtnDetalles, "BtnDetalles")
         Me.BtnDetalles.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.BtnDetalles.BackgroundImage = Nothing
         Me.BtnDetalles.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnDetalles.FlatAppearance.BorderSize = 0
-        Me.BtnDetalles.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnDetalles.Font = New System.Drawing.Font("Roboto", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnDetalles.ForeColor = System.Drawing.Color.White
-        Me.BtnDetalles.Location = New System.Drawing.Point(970, 120)
         Me.BtnDetalles.Name = "BtnDetalles"
-        Me.BtnDetalles.Size = New System.Drawing.Size(96, 34)
-        Me.BtnDetalles.TabIndex = 14
-        Me.BtnDetalles.Text = "DETALLES"
         Me.BtnDetalles.UseVisualStyleBackColor = False
         '
         'FrmReservas
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1131, 513)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.BtnDetalles)
         Me.Controls.Add(Me.DgvReservas)
         Me.Controls.Add(Me.Label1)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = Nothing
         Me.Name = "FrmReservas"
-        Me.Text = "FrmReservas"
         CType(Me.DgvReservas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

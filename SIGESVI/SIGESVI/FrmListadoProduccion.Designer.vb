@@ -22,6 +22,7 @@ Partial Class FrmListadoProduccion
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmListadoProduccion))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
@@ -37,65 +38,61 @@ Partial Class FrmListadoProduccion
         '
         'BtnEliminar
         '
-        Me.BtnEliminar.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BtnEliminar.AccessibleDescription = Nothing
+        Me.BtnEliminar.AccessibleName = Nothing
+        resources.ApplyResources(Me.BtnEliminar, "BtnEliminar")
         Me.BtnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.BtnEliminar.BackgroundImage = Nothing
         Me.BtnEliminar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnEliminar.FlatAppearance.BorderSize = 0
-        Me.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEliminar.Font = Nothing
         Me.BtnEliminar.ForeColor = System.Drawing.Color.White
-        Me.BtnEliminar.Location = New System.Drawing.Point(1101, 132)
         Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(96, 34)
-        Me.BtnEliminar.TabIndex = 16
-        Me.BtnEliminar.Text = "ELIMINAR"
         Me.BtnEliminar.UseVisualStyleBackColor = False
         '
         'BtnEditar
         '
-        Me.BtnEditar.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BtnEditar.AccessibleDescription = Nothing
+        Me.BtnEditar.AccessibleName = Nothing
+        resources.ApplyResources(Me.BtnEditar, "BtnEditar")
         Me.BtnEditar.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.BtnEditar.BackgroundImage = Nothing
         Me.BtnEditar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnEditar.FlatAppearance.BorderSize = 0
-        Me.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEditar.Font = Nothing
         Me.BtnEditar.ForeColor = System.Drawing.Color.White
-        Me.BtnEditar.Location = New System.Drawing.Point(1101, 82)
         Me.BtnEditar.Name = "BtnEditar"
-        Me.BtnEditar.Size = New System.Drawing.Size(96, 34)
-        Me.BtnEditar.TabIndex = 15
-        Me.BtnEditar.Text = "EDITAR"
         Me.BtnEditar.UseVisualStyleBackColor = False
         '
         'Label1
         '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 16.0!)
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(558, 27)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(296, 30)
-        Me.Label1.TabIndex = 14
-        Me.Label1.Text = "HISTORIAL DE PRODUCCIÓN"
         '
         'BtnNueva
         '
-        Me.BtnNueva.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BtnNueva.AccessibleDescription = Nothing
+        Me.BtnNueva.AccessibleName = Nothing
+        resources.ApplyResources(Me.BtnNueva, "BtnNueva")
         Me.BtnNueva.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.BtnNueva.BackgroundImage = Nothing
         Me.BtnNueva.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnNueva.FlatAppearance.BorderSize = 0
-        Me.BtnNueva.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnNueva.Font = Nothing
         Me.BtnNueva.ForeColor = System.Drawing.Color.White
-        Me.BtnNueva.Location = New System.Drawing.Point(249, 82)
         Me.BtnNueva.Name = "BtnNueva"
-        Me.BtnNueva.Size = New System.Drawing.Size(96, 34)
-        Me.BtnNueva.TabIndex = 13
-        Me.BtnNueva.Text = "NUEVA"
         Me.BtnNueva.UseVisualStyleBackColor = False
         '
         'DgvProduccion
         '
-        Me.DgvProduccion.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.DgvProduccion.AccessibleDescription = Nothing
+        Me.DgvProduccion.AccessibleName = Nothing
+        resources.ApplyResources(Me.DgvProduccion, "DgvProduccion")
         Me.DgvProduccion.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.DgvProduccion.BackgroundImage = Nothing
         Me.DgvProduccion.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DgvProduccion.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -106,7 +103,6 @@ Partial Class FrmListadoProduccion
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DgvProduccion.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.DgvProduccion.ColumnHeadersHeight = 25
         Me.DgvProduccion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
@@ -117,8 +113,8 @@ Partial Class FrmListadoProduccion
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DgvProduccion.DefaultCellStyle = DataGridViewCellStyle2
         Me.DgvProduccion.EnableHeadersVisualStyles = False
+        Me.DgvProduccion.Font = Nothing
         Me.DgvProduccion.GridColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(211, Byte), Integer))
-        Me.DgvProduccion.Location = New System.Drawing.Point(367, 82)
         Me.DgvProduccion.MultiSelect = False
         Me.DgvProduccion.Name = "DgvProduccion"
         Me.DgvProduccion.ReadOnly = True
@@ -141,39 +137,39 @@ Partial Class FrmListadoProduccion
         Me.DgvProduccion.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.DgvProduccion.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DgvProduccion.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DgvProduccion.Size = New System.Drawing.Size(710, 266)
-        Me.DgvProduccion.TabIndex = 12
         '
         'BtnTrazabilidad
         '
-        Me.BtnTrazabilidad.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BtnTrazabilidad.AccessibleDescription = Nothing
+        Me.BtnTrazabilidad.AccessibleName = Nothing
+        resources.ApplyResources(Me.BtnTrazabilidad, "BtnTrazabilidad")
         Me.BtnTrazabilidad.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.BtnTrazabilidad.BackgroundImage = Nothing
         Me.BtnTrazabilidad.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnTrazabilidad.FlatAppearance.BorderSize = 0
-        Me.BtnTrazabilidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnTrazabilidad.Font = Nothing
         Me.BtnTrazabilidad.ForeColor = System.Drawing.Color.White
-        Me.BtnTrazabilidad.Location = New System.Drawing.Point(1101, 188)
         Me.BtnTrazabilidad.Name = "BtnTrazabilidad"
-        Me.BtnTrazabilidad.Size = New System.Drawing.Size(96, 34)
-        Me.BtnTrazabilidad.TabIndex = 20
-        Me.BtnTrazabilidad.Text = "TRAZABILIDAD"
         Me.BtnTrazabilidad.UseVisualStyleBackColor = False
         '
         'FrmListadoProduccion
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1446, 377)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.BtnTrazabilidad)
         Me.Controls.Add(Me.BtnEliminar)
         Me.Controls.Add(Me.BtnEditar)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BtnNueva)
         Me.Controls.Add(Me.DgvProduccion)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = Nothing
         Me.Name = "FrmListadoProduccion"
-        Me.Text = "FrmListadoProduccion"
         CType(Me.DgvProduccion, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -22,6 +22,7 @@ Partial Class FrmCatalogo
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmCatalogo))
         Me.Panel2 = New System.Windows.Forms.Panel
         Me.Panel1 = New System.Windows.Forms.Panel
         Me.PnlMostoContenedor = New System.Windows.Forms.Panel
@@ -39,118 +40,109 @@ Partial Class FrmCatalogo
         '
         'Panel2
         '
+        Me.Panel2.AccessibleDescription = Nothing
+        Me.Panel2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Panel2, "Panel2")
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel2.BackgroundImage = Nothing
         Me.Panel2.Controls.Add(Me.Panel1)
         Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Font = Nothing
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1289, 1000)
-        Me.Panel2.TabIndex = 5
         '
         'Panel1
         '
+        Me.Panel1.AccessibleDescription = Nothing
+        Me.Panel1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Panel1, "Panel1")
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(124, Byte), Integer), CType(CType(107, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.Panel1.BackgroundImage = Nothing
         Me.Panel1.Controls.Add(Me.PnlMostoContenedor)
         Me.Panel1.Controls.Add(Me.LblMosto)
         Me.Panel1.Controls.Add(Me.PnlVinosContenedor)
         Me.Panel1.Controls.Add(Me.LblVinos)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(0, 82)
+        Me.Panel1.Font = Nothing
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1289, 918)
-        Me.Panel1.TabIndex = 1
         '
         'PnlMostoContenedor
         '
+        Me.PnlMostoContenedor.AccessibleDescription = Nothing
+        Me.PnlMostoContenedor.AccessibleName = Nothing
+        resources.ApplyResources(Me.PnlMostoContenedor, "PnlMostoContenedor")
+        Me.PnlMostoContenedor.BackgroundImage = Nothing
         Me.PnlMostoContenedor.Controls.Add(Me.PnlMosto)
-        Me.PnlMostoContenedor.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PnlMostoContenedor.Location = New System.Drawing.Point(0, 424)
+        Me.PnlMostoContenedor.Font = Nothing
         Me.PnlMostoContenedor.Name = "PnlMostoContenedor"
-        Me.PnlMostoContenedor.Padding = New System.Windows.Forms.Padding(50, 0, 50, 0)
-        Me.PnlMostoContenedor.Size = New System.Drawing.Size(1289, 230)
-        Me.PnlMostoContenedor.TabIndex = 10
         '
         'PnlMosto
         '
-        Me.PnlMosto.AutoScroll = True
+        Me.PnlMosto.AccessibleDescription = Nothing
+        Me.PnlMosto.AccessibleName = Nothing
+        resources.ApplyResources(Me.PnlMosto, "PnlMosto")
         Me.PnlMosto.BackColor = System.Drawing.Color.Transparent
-        Me.PnlMosto.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PnlMosto.Location = New System.Drawing.Point(50, 0)
+        Me.PnlMosto.BackgroundImage = Nothing
+        Me.PnlMosto.Font = Nothing
         Me.PnlMosto.Name = "PnlMosto"
-        Me.PnlMosto.Size = New System.Drawing.Size(1189, 230)
-        Me.PnlMosto.TabIndex = 1
         '
         'LblMosto
         '
+        Me.LblMosto.AccessibleDescription = Nothing
+        Me.LblMosto.AccessibleName = Nothing
+        resources.ApplyResources(Me.LblMosto, "LblMosto")
         Me.LblMosto.BackColor = System.Drawing.Color.Transparent
-        Me.LblMosto.Dock = System.Windows.Forms.DockStyle.Top
-        Me.LblMosto.Font = New System.Drawing.Font("Roboto", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblMosto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(79, Byte), Integer))
-        Me.LblMosto.Location = New System.Drawing.Point(0, 342)
         Me.LblMosto.Name = "LblMosto"
-        Me.LblMosto.Size = New System.Drawing.Size(1289, 82)
-        Me.LblMosto.TabIndex = 9
-        Me.LblMosto.Text = "MOSTO"
-        Me.LblMosto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PnlVinosContenedor
         '
+        Me.PnlVinosContenedor.AccessibleDescription = Nothing
+        Me.PnlVinosContenedor.AccessibleName = Nothing
+        resources.ApplyResources(Me.PnlVinosContenedor, "PnlVinosContenedor")
+        Me.PnlVinosContenedor.BackgroundImage = Nothing
         Me.PnlVinosContenedor.Controls.Add(Me.PnlVinos)
-        Me.PnlVinosContenedor.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PnlVinosContenedor.Location = New System.Drawing.Point(0, 82)
+        Me.PnlVinosContenedor.Font = Nothing
         Me.PnlVinosContenedor.Name = "PnlVinosContenedor"
-        Me.PnlVinosContenedor.Padding = New System.Windows.Forms.Padding(50, 0, 50, 30)
-        Me.PnlVinosContenedor.Size = New System.Drawing.Size(1289, 260)
-        Me.PnlVinosContenedor.TabIndex = 3
         '
         'PnlVinos
         '
-        Me.PnlVinos.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PnlVinos.AutoScroll = True
+        Me.PnlVinos.AccessibleDescription = Nothing
+        Me.PnlVinos.AccessibleName = Nothing
+        resources.ApplyResources(Me.PnlVinos, "PnlVinos")
         Me.PnlVinos.BackColor = System.Drawing.Color.Transparent
-        Me.PnlVinos.Location = New System.Drawing.Point(50, 0)
+        Me.PnlVinos.BackgroundImage = Nothing
+        Me.PnlVinos.Font = Nothing
         Me.PnlVinos.Name = "PnlVinos"
-        Me.PnlVinos.Size = New System.Drawing.Size(1189, 230)
-        Me.PnlVinos.TabIndex = 1
         '
         'LblVinos
         '
+        Me.LblVinos.AccessibleDescription = Nothing
+        Me.LblVinos.AccessibleName = Nothing
+        resources.ApplyResources(Me.LblVinos, "LblVinos")
         Me.LblVinos.BackColor = System.Drawing.Color.Transparent
-        Me.LblVinos.Dock = System.Windows.Forms.DockStyle.Top
-        Me.LblVinos.Font = New System.Drawing.Font("Roboto", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblVinos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(79, Byte), Integer))
-        Me.LblVinos.Location = New System.Drawing.Point(0, 0)
         Me.LblVinos.Name = "LblVinos"
-        Me.LblVinos.Size = New System.Drawing.Size(1289, 82)
-        Me.LblVinos.TabIndex = 2
-        Me.LblVinos.Text = "VINOS"
-        Me.LblVinos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label1
         '
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(79, Byte), Integer))
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label1.Font = New System.Drawing.Font("Roboto", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(0, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(1289, 82)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "CATÁLOGO DE PRODUCTOS"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'FrmCatalogo
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1289, 1000)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.Panel2)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = Nothing
         Me.Name = "FrmCatalogo"
-        Me.Text = "FrmCatalogo"
         Me.Panel2.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.PnlMostoContenedor.ResumeLayout(False)

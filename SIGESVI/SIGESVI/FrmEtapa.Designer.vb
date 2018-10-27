@@ -22,6 +22,7 @@ Partial Class FrmEtapa
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmEtapa))
         Me.Label6 = New System.Windows.Forms.Label
         Me.TxtNumero_NUM_REQ = New System.Windows.Forms.TextBox
         Me.Label2 = New System.Windows.Forms.Label
@@ -45,106 +46,93 @@ Partial Class FrmEtapa
         '
         'Label6
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.Label6.Location = New System.Drawing.Point(66, 210)
+        Me.Label6.AccessibleDescription = Nothing
+        Me.Label6.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label6, "Label6")
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(71, 20)
-        Me.Label6.TabIndex = 21
-        Me.Label6.Text = "NÚMERO"
         '
         'TxtNumero_NUM_REQ
         '
-        Me.TxtNumero_NUM_REQ.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.TxtNumero_NUM_REQ.Location = New System.Drawing.Point(153, 203)
+        Me.TxtNumero_NUM_REQ.AccessibleDescription = Nothing
+        Me.TxtNumero_NUM_REQ.AccessibleName = Nothing
+        resources.ApplyResources(Me.TxtNumero_NUM_REQ, "TxtNumero_NUM_REQ")
+        Me.TxtNumero_NUM_REQ.BackgroundImage = Nothing
         Me.TxtNumero_NUM_REQ.Name = "TxtNumero_NUM_REQ"
-        Me.TxtNumero_NUM_REQ.Size = New System.Drawing.Size(237, 27)
-        Me.TxtNumero_NUM_REQ.TabIndex = 20
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.Label2.Location = New System.Drawing.Point(36, 146)
+        Me.Label2.AccessibleDescription = Nothing
+        Me.Label2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label2, "Label2")
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(101, 20)
-        Me.Label2.TabIndex = 17
-        Me.Label2.Text = "DESCRIPCIÓN"
         '
         'TxtDescripcion_REQ
         '
-        Me.TxtDescripcion_REQ.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.TxtDescripcion_REQ.Location = New System.Drawing.Point(153, 128)
-        Me.TxtDescripcion_REQ.Multiline = True
+        Me.TxtDescripcion_REQ.AccessibleDescription = Nothing
+        Me.TxtDescripcion_REQ.AccessibleName = Nothing
+        resources.ApplyResources(Me.TxtDescripcion_REQ, "TxtDescripcion_REQ")
+        Me.TxtDescripcion_REQ.BackgroundImage = Nothing
         Me.TxtDescripcion_REQ.Name = "TxtDescripcion_REQ"
-        Me.TxtDescripcion_REQ.Size = New System.Drawing.Size(237, 58)
-        Me.TxtDescripcion_REQ.TabIndex = 16
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.Label1.Location = New System.Drawing.Point(67, 95)
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(70, 20)
-        Me.Label1.TabIndex = 15
-        Me.Label1.Text = "NOMBRE"
         '
         'TxtNombre_REQ
         '
-        Me.TxtNombre_REQ.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.TxtNombre_REQ.Location = New System.Drawing.Point(153, 87)
+        Me.TxtNombre_REQ.AccessibleDescription = Nothing
+        Me.TxtNombre_REQ.AccessibleName = Nothing
+        resources.ApplyResources(Me.TxtNombre_REQ, "TxtNombre_REQ")
+        Me.TxtNombre_REQ.BackgroundImage = Nothing
         Me.TxtNombre_REQ.Name = "TxtNombre_REQ"
-        Me.TxtNombre_REQ.Size = New System.Drawing.Size(237, 27)
-        Me.TxtNombre_REQ.TabIndex = 14
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.Label3.Location = New System.Drawing.Point(53, 257)
+        Me.Label3.AccessibleDescription = Nothing
+        Me.Label3.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label3, "Label3")
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(84, 20)
-        Me.Label3.TabIndex = 23
-        Me.Label3.Text = "DURACIÓN"
         '
         'TxtDuracion_NUM_REQ
         '
-        Me.TxtDuracion_NUM_REQ.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.TxtDuracion_NUM_REQ.Location = New System.Drawing.Point(153, 250)
+        Me.TxtDuracion_NUM_REQ.AccessibleDescription = Nothing
+        Me.TxtDuracion_NUM_REQ.AccessibleName = Nothing
+        resources.ApplyResources(Me.TxtDuracion_NUM_REQ, "TxtDuracion_NUM_REQ")
+        Me.TxtDuracion_NUM_REQ.BackgroundImage = Nothing
         Me.TxtDuracion_NUM_REQ.Name = "TxtDuracion_NUM_REQ"
-        Me.TxtDuracion_NUM_REQ.Size = New System.Drawing.Size(237, 27)
-        Me.TxtDuracion_NUM_REQ.TabIndex = 22
         '
         'BtnAgregar
         '
+        Me.BtnAgregar.AccessibleDescription = Nothing
+        Me.BtnAgregar.AccessibleName = Nothing
+        resources.ApplyResources(Me.BtnAgregar, "BtnAgregar")
         Me.BtnAgregar.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.BtnAgregar.BackgroundImage = Nothing
         Me.BtnAgregar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnAgregar.FlatAppearance.BorderSize = 0
-        Me.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnAgregar.Font = Nothing
         Me.BtnAgregar.ForeColor = System.Drawing.Color.White
-        Me.BtnAgregar.Location = New System.Drawing.Point(153, 294)
         Me.BtnAgregar.Name = "BtnAgregar"
-        Me.BtnAgregar.Size = New System.Drawing.Size(237, 34)
-        Me.BtnAgregar.TabIndex = 24
-        Me.BtnAgregar.Text = "AGREGAR"
         Me.BtnAgregar.UseVisualStyleBackColor = False
         '
         'Label4
         '
-        Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 16.0!)
+        Me.Label4.AccessibleDescription = Nothing
+        Me.Label4.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label4, "Label4")
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(148, 23)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(253, 30)
-        Me.Label4.TabIndex = 25
-        Me.Label4.Text = "AGREGAR NUEVA ETAPA"
         '
         'Panel1
         '
+        Me.Panel1.AccessibleDescription = Nothing
+        Me.Panel1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Panel1, "Panel1")
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.Panel1.BackgroundImage = Nothing
         Me.Panel1.Controls.Add(Me.BtnAgregarRecordatorio)
         Me.Panel1.Controls.Add(Me.LstRecordatorios)
         Me.Panel1.Controls.Add(Me.Label5)
@@ -152,95 +140,80 @@ Partial Class FrmEtapa
         Me.Panel1.Controls.Add(Me.TxtDia)
         Me.Panel1.Controls.Add(Me.TxtMensaje)
         Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel1.Location = New System.Drawing.Point(463, 0)
+        Me.Panel1.Font = Nothing
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(312, 383)
-        Me.Panel1.TabIndex = 26
         '
         'BtnAgregarRecordatorio
         '
+        Me.BtnAgregarRecordatorio.AccessibleDescription = Nothing
+        Me.BtnAgregarRecordatorio.AccessibleName = Nothing
+        resources.ApplyResources(Me.BtnAgregarRecordatorio, "BtnAgregarRecordatorio")
         Me.BtnAgregarRecordatorio.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.BtnAgregarRecordatorio.BackgroundImage = Nothing
         Me.BtnAgregarRecordatorio.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnAgregarRecordatorio.FlatAppearance.BorderSize = 0
-        Me.BtnAgregarRecordatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnAgregarRecordatorio.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnAgregarRecordatorio.ForeColor = System.Drawing.Color.White
-        Me.BtnAgregarRecordatorio.Location = New System.Drawing.Point(100, 198)
         Me.BtnAgregarRecordatorio.Name = "BtnAgregarRecordatorio"
-        Me.BtnAgregarRecordatorio.Size = New System.Drawing.Size(190, 23)
-        Me.BtnAgregarRecordatorio.TabIndex = 61
-        Me.BtnAgregarRecordatorio.Text = "AGREGAR RECORDATORIO"
         Me.BtnAgregarRecordatorio.UseVisualStyleBackColor = False
         '
         'LstRecordatorios
         '
+        Me.LstRecordatorios.AccessibleDescription = Nothing
+        Me.LstRecordatorios.AccessibleName = Nothing
+        resources.ApplyResources(Me.LstRecordatorios, "LstRecordatorios")
+        Me.LstRecordatorios.BackgroundImage = Nothing
         Me.LstRecordatorios.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.LstRecordatorios.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LstRecordatorios.FormattingEnabled = True
-        Me.LstRecordatorios.ItemHeight = 15
-        Me.LstRecordatorios.Location = New System.Drawing.Point(100, 227)
         Me.LstRecordatorios.Name = "LstRecordatorios"
-        Me.LstRecordatorios.Size = New System.Drawing.Size(190, 75)
-        Me.LstRecordatorios.TabIndex = 60
         '
         'Label5
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.AccessibleDescription = Nothing
+        Me.Label5.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label5, "Label5")
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(171, 39)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(103, 15)
-        Me.Label5.TabIndex = 55
-        Me.Label5.Text = "RECORDATORIO"
         '
         'Label8
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.AccessibleDescription = Nothing
+        Me.Label8.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label8, "Label8")
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(30, 152)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(64, 15)
-        Me.Label8.TabIndex = 59
-        Me.Label8.Text = "MENSAJE"
         '
         'TxtDia
         '
-        Me.TxtDia.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtDia.Location = New System.Drawing.Point(100, 93)
-        Me.TxtDia.Multiline = True
+        Me.TxtDia.AccessibleDescription = Nothing
+        Me.TxtDia.AccessibleName = Nothing
+        resources.ApplyResources(Me.TxtDia, "TxtDia")
+        Me.TxtDia.BackgroundImage = Nothing
         Me.TxtDia.Name = "TxtDia"
-        Me.TxtDia.Size = New System.Drawing.Size(190, 28)
-        Me.TxtDia.TabIndex = 56
         '
         'TxtMensaje
         '
-        Me.TxtMensaje.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtMensaje.Location = New System.Drawing.Point(100, 136)
-        Me.TxtMensaje.Multiline = True
+        Me.TxtMensaje.AccessibleDescription = Nothing
+        Me.TxtMensaje.AccessibleName = Nothing
+        resources.ApplyResources(Me.TxtMensaje, "TxtMensaje")
+        Me.TxtMensaje.BackgroundImage = Nothing
         Me.TxtMensaje.Name = "TxtMensaje"
-        Me.TxtMensaje.Size = New System.Drawing.Size(190, 56)
-        Me.TxtMensaje.TabIndex = 58
         '
         'Label7
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.AccessibleDescription = Nothing
+        Me.Label7.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label7, "Label7")
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(10, 99)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(84, 15)
-        Me.Label7.TabIndex = 57
-        Me.Label7.Text = "DÍA DE INICIO"
         '
         'FrmEtapa
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(775, 383)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.BtnAgregar)
@@ -252,8 +225,9 @@ Partial Class FrmEtapa
         Me.Controls.Add(Me.TxtDescripcion_REQ)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TxtNombre_REQ)
+        Me.Font = Nothing
+        Me.Icon = Nothing
         Me.Name = "FrmEtapa"
-        Me.Text = "FrmEtapa"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)

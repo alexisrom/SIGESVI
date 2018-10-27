@@ -22,11 +22,13 @@ Partial Class FrmLotes
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmLotes))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Me.Panel1 = New System.Windows.Forms.Panel
+        Me.Label4 = New System.Windows.Forms.Label
         Me.CboOrigenes = New System.Windows.Forms.ComboBox
         Me.TxtFecha = New System.Windows.Forms.TextBox
         Me.BtnCancelar = New System.Windows.Forms.Button
@@ -44,7 +46,6 @@ Partial Class FrmLotes
         Me.Label3 = New System.Windows.Forms.Label
         Me.BtnEliminar = New System.Windows.Forms.Button
         Me.BtnEditar = New System.Windows.Forms.Button
-        Me.Label4 = New System.Windows.Forms.Label
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.DgvLotes, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -52,7 +53,11 @@ Partial Class FrmLotes
         '
         'Panel1
         '
+        Me.Panel1.AccessibleDescription = Nothing
+        Me.Panel1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Panel1, "Panel1")
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.Panel1.BackgroundImage = Nothing
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.CboOrigenes)
         Me.Panel1.Controls.Add(Me.TxtFecha)
@@ -66,165 +71,155 @@ Partial Class FrmLotes
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.TxtStock_NUM_REQ)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel1.Location = New System.Drawing.Point(806, 0)
+        Me.Panel1.Font = Nothing
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(437, 578)
-        Me.Panel1.TabIndex = 2
+        '
+        'Label4
+        '
+        Me.Label4.AccessibleDescription = Nothing
+        Me.Label4.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label4, "Label4")
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
+        Me.Label4.Name = "Label4"
         '
         'CboOrigenes
         '
+        Me.CboOrigenes.AccessibleDescription = Nothing
+        Me.CboOrigenes.AccessibleName = Nothing
+        resources.ApplyResources(Me.CboOrigenes, "CboOrigenes")
         Me.CboOrigenes.BackColor = System.Drawing.Color.White
+        Me.CboOrigenes.BackgroundImage = Nothing
         Me.CboOrigenes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CboOrigenes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CboOrigenes.Font = New System.Drawing.Font("Segoe UI", 11.0!)
         Me.CboOrigenes.FormattingEnabled = True
-        Me.CboOrigenes.Items.AddRange(New Object() {"Administrativo", "Asesor Profesional", "Enologo", "Gerente General", "Gerente Sucursal"})
-        Me.CboOrigenes.Location = New System.Drawing.Point(160, 306)
+        Me.CboOrigenes.Items.AddRange(New Object() {resources.GetString("CboOrigenes.Items"), resources.GetString("CboOrigenes.Items1"), resources.GetString("CboOrigenes.Items2"), resources.GetString("CboOrigenes.Items3"), resources.GetString("CboOrigenes.Items4")})
         Me.CboOrigenes.Name = "CboOrigenes"
-        Me.CboOrigenes.Size = New System.Drawing.Size(237, 28)
-        Me.CboOrigenes.TabIndex = 48
         '
         'TxtFecha
         '
-        Me.TxtFecha.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.TxtFecha.Location = New System.Drawing.Point(160, 204)
+        Me.TxtFecha.AccessibleDescription = Nothing
+        Me.TxtFecha.AccessibleName = Nothing
+        resources.ApplyResources(Me.TxtFecha, "TxtFecha")
+        Me.TxtFecha.BackgroundImage = Nothing
         Me.TxtFecha.Name = "TxtFecha"
         Me.TxtFecha.ReadOnly = True
-        Me.TxtFecha.Size = New System.Drawing.Size(237, 27)
-        Me.TxtFecha.TabIndex = 47
         '
         'BtnCancelar
         '
-        Me.BtnCancelar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnCancelar.AccessibleDescription = Nothing
+        Me.BtnCancelar.AccessibleName = Nothing
+        resources.ApplyResources(Me.BtnCancelar, "BtnCancelar")
         Me.BtnCancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.BtnCancelar.BackgroundImage = Nothing
         Me.BtnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnCancelar.FlatAppearance.BorderSize = 0
-        Me.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnCancelar.ForeColor = System.Drawing.Color.White
-        Me.BtnCancelar.Location = New System.Drawing.Point(223, 462)
         Me.BtnCancelar.Name = "BtnCancelar"
-        Me.BtnCancelar.Size = New System.Drawing.Size(131, 28)
-        Me.BtnCancelar.TabIndex = 32
-        Me.BtnCancelar.Text = "CANCELAR"
         Me.BtnCancelar.UseVisualStyleBackColor = False
         '
         'Label10
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.Label10.AccessibleDescription = Nothing
+        Me.Label10.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label10, "Label10")
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(63, 207)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(80, 20)
-        Me.Label10.TabIndex = 44
-        Me.Label10.Text = "CREACIÓN"
         '
         'Label8
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.Label8.AccessibleDescription = Nothing
+        Me.Label8.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label8, "Label8")
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(99, 257)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(40, 20)
-        Me.Label8.TabIndex = 40
-        Me.Label8.Text = "TIPO"
         '
         'CboEspecificaciones
         '
+        Me.CboEspecificaciones.AccessibleDescription = Nothing
+        Me.CboEspecificaciones.AccessibleName = Nothing
+        resources.ApplyResources(Me.CboEspecificaciones, "CboEspecificaciones")
         Me.CboEspecificaciones.BackColor = System.Drawing.Color.White
+        Me.CboEspecificaciones.BackgroundImage = Nothing
         Me.CboEspecificaciones.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CboEspecificaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CboEspecificaciones.Font = New System.Drawing.Font("Segoe UI", 11.0!)
         Me.CboEspecificaciones.FormattingEnabled = True
-        Me.CboEspecificaciones.Items.AddRange(New Object() {"Administrativo", "Asesor Profesional", "Enologo", "Gerente General", "Gerente Sucursal"})
-        Me.CboEspecificaciones.Location = New System.Drawing.Point(160, 249)
+        Me.CboEspecificaciones.Items.AddRange(New Object() {resources.GetString("CboEspecificaciones.Items"), resources.GetString("CboEspecificaciones.Items1"), resources.GetString("CboEspecificaciones.Items2"), resources.GetString("CboEspecificaciones.Items3"), resources.GetString("CboEspecificaciones.Items4")})
         Me.CboEspecificaciones.Name = "CboEspecificaciones"
-        Me.CboEspecificaciones.Size = New System.Drawing.Size(237, 28)
-        Me.CboEspecificaciones.TabIndex = 39
         '
         'BtnGuardar
         '
+        Me.BtnGuardar.AccessibleDescription = Nothing
+        Me.BtnGuardar.AccessibleName = Nothing
+        resources.ApplyResources(Me.BtnGuardar, "BtnGuardar")
         Me.BtnGuardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.BtnGuardar.BackgroundImage = Nothing
         Me.BtnGuardar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnGuardar.FlatAppearance.BorderSize = 0
-        Me.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnGuardar.Font = Nothing
         Me.BtnGuardar.ForeColor = System.Drawing.Color.White
-        Me.BtnGuardar.Location = New System.Drawing.Point(160, 373)
         Me.BtnGuardar.Name = "BtnGuardar"
-        Me.BtnGuardar.Size = New System.Drawing.Size(237, 34)
-        Me.BtnGuardar.TabIndex = 38
-        Me.BtnGuardar.Text = "GUARDAR"
         Me.BtnGuardar.UseVisualStyleBackColor = False
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.Label2.AccessibleDescription = Nothing
+        Me.Label2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label2, "Label2")
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(185, 21)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(164, 20)
-        Me.Label2.TabIndex = 28
-        Me.Label2.Text = "Mantenimiento de Lote"
         '
         'TxtID_NUM_REQ
         '
-        Me.TxtID_NUM_REQ.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.TxtID_NUM_REQ.Location = New System.Drawing.Point(160, 126)
+        Me.TxtID_NUM_REQ.AccessibleDescription = Nothing
+        Me.TxtID_NUM_REQ.AccessibleName = Nothing
+        resources.ApplyResources(Me.TxtID_NUM_REQ, "TxtID_NUM_REQ")
+        Me.TxtID_NUM_REQ.BackgroundImage = Nothing
         Me.TxtID_NUM_REQ.Name = "TxtID_NUM_REQ"
         Me.TxtID_NUM_REQ.ReadOnly = True
-        Me.TxtID_NUM_REQ.Size = New System.Drawing.Size(237, 27)
-        Me.TxtID_NUM_REQ.TabIndex = 15
         '
         'Label5
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.Label5.AccessibleDescription = Nothing
+        Me.Label5.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label5, "Label5")
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(119, 126)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(24, 20)
-        Me.Label5.TabIndex = 14
-        Me.Label5.Text = "ID"
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(89, 167)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(54, 20)
-        Me.Label1.TabIndex = 13
-        Me.Label1.Text = "STOCK"
         '
         'TxtStock_NUM_REQ
         '
-        Me.TxtStock_NUM_REQ.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.TxtStock_NUM_REQ.Location = New System.Drawing.Point(160, 167)
+        Me.TxtStock_NUM_REQ.AccessibleDescription = Nothing
+        Me.TxtStock_NUM_REQ.AccessibleName = Nothing
+        resources.ApplyResources(Me.TxtStock_NUM_REQ, "TxtStock_NUM_REQ")
+        Me.TxtStock_NUM_REQ.BackgroundImage = Nothing
         Me.TxtStock_NUM_REQ.Name = "TxtStock_NUM_REQ"
-        Me.TxtStock_NUM_REQ.Size = New System.Drawing.Size(237, 27)
-        Me.TxtStock_NUM_REQ.TabIndex = 12
         '
         'Panel2
         '
+        Me.Panel2.AccessibleDescription = Nothing
+        Me.Panel2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Panel2, "Panel2")
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
+        Me.Panel2.BackgroundImage = Nothing
         Me.Panel2.Controls.Add(Me.DgvLotes)
         Me.Panel2.Controls.Add(Me.Label3)
         Me.Panel2.Controls.Add(Me.BtnEliminar)
         Me.Panel2.Controls.Add(Me.BtnEditar)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Font = Nothing
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(806, 578)
-        Me.Panel2.TabIndex = 4
         '
         'DgvLotes
         '
+        Me.DgvLotes.AccessibleDescription = Nothing
+        Me.DgvLotes.AccessibleName = Nothing
+        resources.ApplyResources(Me.DgvLotes, "DgvLotes")
         Me.DgvLotes.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.DgvLotes.BackgroundImage = Nothing
         Me.DgvLotes.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DgvLotes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -235,7 +230,6 @@ Partial Class FrmLotes
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DgvLotes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.DgvLotes.ColumnHeadersHeight = 25
         Me.DgvLotes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
@@ -246,8 +240,8 @@ Partial Class FrmLotes
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DgvLotes.DefaultCellStyle = DataGridViewCellStyle2
         Me.DgvLotes.EnableHeadersVisualStyles = False
+        Me.DgvLotes.Font = Nothing
         Me.DgvLotes.GridColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(211, Byte), Integer))
-        Me.DgvLotes.Location = New System.Drawing.Point(83, 82)
         Me.DgvLotes.MultiSelect = False
         Me.DgvLotes.Name = "DgvLotes"
         Me.DgvLotes.ReadOnly = True
@@ -270,72 +264,54 @@ Partial Class FrmLotes
         Me.DgvLotes.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.DgvLotes.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DgvLotes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DgvLotes.Size = New System.Drawing.Size(639, 362)
-        Me.DgvLotes.TabIndex = 32
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 16.0!)
+        Me.Label3.AccessibleDescription = Nothing
+        Me.Label3.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label3, "Label3")
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(372, 21)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(75, 30)
-        Me.Label3.TabIndex = 31
-        Me.Label3.Text = "LOTES"
         '
         'BtnEliminar
         '
-        Me.BtnEliminar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnEliminar.AccessibleDescription = Nothing
+        Me.BtnEliminar.AccessibleName = Nothing
+        resources.ApplyResources(Me.BtnEliminar, "BtnEliminar")
         Me.BtnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.BtnEliminar.BackgroundImage = Nothing
         Me.BtnEliminar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnEliminar.FlatAppearance.BorderSize = 0
-        Me.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnEliminar.ForeColor = System.Drawing.Color.White
-        Me.BtnEliminar.Location = New System.Drawing.Point(591, 462)
         Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(131, 28)
-        Me.BtnEliminar.TabIndex = 30
-        Me.BtnEliminar.Text = "ELIMINAR LOTE"
         Me.BtnEliminar.UseVisualStyleBackColor = False
         '
         'BtnEditar
         '
+        Me.BtnEditar.AccessibleDescription = Nothing
+        Me.BtnEditar.AccessibleName = Nothing
+        resources.ApplyResources(Me.BtnEditar, "BtnEditar")
         Me.BtnEditar.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.BtnEditar.BackgroundImage = Nothing
         Me.BtnEditar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnEditar.FlatAppearance.BorderSize = 0
-        Me.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnEditar.ForeColor = System.Drawing.Color.White
-        Me.BtnEditar.Location = New System.Drawing.Point(83, 462)
         Me.BtnEditar.Name = "BtnEditar"
-        Me.BtnEditar.Size = New System.Drawing.Size(122, 28)
-        Me.BtnEditar.TabIndex = 29
-        Me.BtnEditar.Text = "EDITAR LOTE"
         Me.BtnEditar.UseVisualStyleBackColor = False
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(63, 314)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(62, 20)
-        Me.Label4.TabIndex = 49
-        Me.Label4.Text = "ORIGEN"
         '
         'FrmLotes
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1243, 578)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = Nothing
         Me.Name = "FrmLotes"
-        Me.Text = "FrmLote"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)

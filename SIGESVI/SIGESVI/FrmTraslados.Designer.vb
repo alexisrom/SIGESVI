@@ -22,7 +22,12 @@ Partial Class FrmTraslados
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmTraslados))
         Me.Panel1 = New System.Windows.Forms.Panel
+        Me.BtnEliminarLote = New System.Windows.Forms.Button
+        Me.Label6 = New System.Windows.Forms.Label
+        Me.Label5 = New System.Windows.Forms.Label
+        Me.CboVehiculo = New System.Windows.Forms.ComboBox
         Me.DtpFecha = New System.Windows.Forms.DateTimePicker
         Me.LstLotes = New System.Windows.Forms.ListBox
         Me.BtnAgregarLote = New System.Windows.Forms.Button
@@ -34,10 +39,6 @@ Partial Class FrmTraslados
         Me.Panel2 = New System.Windows.Forms.Panel
         Me.Label3 = New System.Windows.Forms.Label
         Me.DgvVentas = New System.Windows.Forms.DataGridView
-        Me.CboVehiculo = New System.Windows.Forms.ComboBox
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.BtnEliminarLote = New System.Windows.Forms.Button
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.DgvVentas, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -45,7 +46,11 @@ Partial Class FrmTraslados
         '
         'Panel1
         '
+        Me.Panel1.AccessibleDescription = Nothing
+        Me.Panel1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Panel1, "Panel1")
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.Panel1.BackgroundImage = Nothing
         Me.Panel1.Controls.Add(Me.BtnEliminarLote)
         Me.Panel1.Controls.Add(Me.Label6)
         Me.Panel1.Controls.Add(Me.Label5)
@@ -58,191 +63,171 @@ Partial Class FrmTraslados
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.TxtDestino_REQ)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel1.Location = New System.Drawing.Point(628, 0)
+        Me.Panel1.Font = Nothing
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(437, 479)
-        Me.Panel1.TabIndex = 3
+        '
+        'BtnEliminarLote
+        '
+        Me.BtnEliminarLote.AccessibleDescription = Nothing
+        Me.BtnEliminarLote.AccessibleName = Nothing
+        resources.ApplyResources(Me.BtnEliminarLote, "BtnEliminarLote")
+        Me.BtnEliminarLote.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.BtnEliminarLote.BackgroundImage = Nothing
+        Me.BtnEliminarLote.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnEliminarLote.FlatAppearance.BorderSize = 0
+        Me.BtnEliminarLote.ForeColor = System.Drawing.Color.White
+        Me.BtnEliminarLote.Name = "BtnEliminarLote"
+        Me.BtnEliminarLote.UseVisualStyleBackColor = False
+        '
+        'Label6
+        '
+        Me.Label6.AccessibleDescription = Nothing
+        Me.Label6.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label6, "Label6")
+        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
+        Me.Label6.Name = "Label6"
+        '
+        'Label5
+        '
+        Me.Label5.AccessibleDescription = Nothing
+        Me.Label5.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label5, "Label5")
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
+        Me.Label5.Name = "Label5"
+        '
+        'CboVehiculo
+        '
+        Me.CboVehiculo.AccessibleDescription = Nothing
+        Me.CboVehiculo.AccessibleName = Nothing
+        resources.ApplyResources(Me.CboVehiculo, "CboVehiculo")
+        Me.CboVehiculo.BackgroundImage = Nothing
+        Me.CboVehiculo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CboVehiculo.FormattingEnabled = True
+        Me.CboVehiculo.Name = "CboVehiculo"
         '
         'DtpFecha
         '
-        Me.DtpFecha.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DtpFecha.Location = New System.Drawing.Point(149, 160)
+        Me.DtpFecha.AccessibleDescription = Nothing
+        Me.DtpFecha.AccessibleName = Nothing
+        resources.ApplyResources(Me.DtpFecha, "DtpFecha")
+        Me.DtpFecha.BackgroundImage = Nothing
+        Me.DtpFecha.CalendarFont = Nothing
+        Me.DtpFecha.CustomFormat = Nothing
         Me.DtpFecha.Name = "DtpFecha"
-        Me.DtpFecha.Size = New System.Drawing.Size(236, 27)
-        Me.DtpFecha.TabIndex = 44
         '
         'LstLotes
         '
-        Me.LstLotes.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LstLotes.AccessibleDescription = Nothing
+        Me.LstLotes.AccessibleName = Nothing
+        resources.ApplyResources(Me.LstLotes, "LstLotes")
+        Me.LstLotes.BackgroundImage = Nothing
         Me.LstLotes.FormattingEnabled = True
-        Me.LstLotes.ItemHeight = 18
-        Me.LstLotes.Location = New System.Drawing.Point(148, 289)
         Me.LstLotes.Name = "LstLotes"
-        Me.LstLotes.Size = New System.Drawing.Size(237, 76)
-        Me.LstLotes.TabIndex = 43
         '
         'BtnAgregarLote
         '
+        Me.BtnAgregarLote.AccessibleDescription = Nothing
+        Me.BtnAgregarLote.AccessibleName = Nothing
+        resources.ApplyResources(Me.BtnAgregarLote, "BtnAgregarLote")
         Me.BtnAgregarLote.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.BtnAgregarLote.BackgroundImage = Nothing
         Me.BtnAgregarLote.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnAgregarLote.FlatAppearance.BorderSize = 0
-        Me.BtnAgregarLote.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnAgregarLote.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnAgregarLote.ForeColor = System.Drawing.Color.White
-        Me.BtnAgregarLote.Location = New System.Drawing.Point(149, 249)
         Me.BtnAgregarLote.Name = "BtnAgregarLote"
-        Me.BtnAgregarLote.Size = New System.Drawing.Size(105, 23)
-        Me.BtnAgregarLote.TabIndex = 39
-        Me.BtnAgregarLote.Text = "AGREGAR"
         Me.BtnAgregarLote.UseVisualStyleBackColor = False
         '
         'BtnNuevo
         '
+        Me.BtnNuevo.AccessibleDescription = Nothing
+        Me.BtnNuevo.AccessibleName = Nothing
+        resources.ApplyResources(Me.BtnNuevo, "BtnNuevo")
         Me.BtnNuevo.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.BtnNuevo.BackgroundImage = Nothing
         Me.BtnNuevo.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnNuevo.FlatAppearance.BorderSize = 0
-        Me.BtnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnNuevo.Font = Nothing
         Me.BtnNuevo.ForeColor = System.Drawing.Color.White
-        Me.BtnNuevo.Location = New System.Drawing.Point(149, 388)
         Me.BtnNuevo.Name = "BtnNuevo"
-        Me.BtnNuevo.Size = New System.Drawing.Size(237, 34)
-        Me.BtnNuevo.TabIndex = 38
-        Me.BtnNuevo.Text = "GUARDAR"
         Me.BtnNuevo.UseVisualStyleBackColor = False
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.Label4.AccessibleDescription = Nothing
+        Me.Label4.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label4, "Label4")
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(22, 161)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(109, 20)
-        Me.Label4.TabIndex = 31
-        Me.Label4.Text = "FECHA / HORA"
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.Label2.AccessibleDescription = Nothing
+        Me.Label2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label2, "Label2")
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(199, 46)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(192, 20)
-        Me.Label2.TabIndex = 28
-        Me.Label2.Text = "Mantenimiento de Traslado"
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(61, 117)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(70, 20)
-        Me.Label1.TabIndex = 13
-        Me.Label1.Text = "DESTINO"
         '
         'TxtDestino_REQ
         '
-        Me.TxtDestino_REQ.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.TxtDestino_REQ.Location = New System.Drawing.Point(149, 114)
+        Me.TxtDestino_REQ.AccessibleDescription = Nothing
+        Me.TxtDestino_REQ.AccessibleName = Nothing
+        resources.ApplyResources(Me.TxtDestino_REQ, "TxtDestino_REQ")
+        Me.TxtDestino_REQ.BackgroundImage = Nothing
         Me.TxtDestino_REQ.Name = "TxtDestino_REQ"
-        Me.TxtDestino_REQ.Size = New System.Drawing.Size(237, 27)
-        Me.TxtDestino_REQ.TabIndex = 12
         '
         'Panel2
         '
+        Me.Panel2.AccessibleDescription = Nothing
+        Me.Panel2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Panel2, "Panel2")
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
+        Me.Panel2.BackgroundImage = Nothing
         Me.Panel2.Controls.Add(Me.Label3)
         Me.Panel2.Controls.Add(Me.DgvVentas)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Font = Nothing
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(628, 479)
-        Me.Panel2.TabIndex = 4
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 16.0!)
+        Me.Label3.AccessibleDescription = Nothing
+        Me.Label3.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label3, "Label3")
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(233, 36)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(132, 30)
-        Me.Label3.TabIndex = 31
-        Me.Label3.Text = "TRASLADOS"
         '
         'DgvVentas
         '
-        Me.DgvVentas.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DgvVentas.AccessibleDescription = Nothing
+        Me.DgvVentas.AccessibleName = Nothing
+        resources.ApplyResources(Me.DgvVentas, "DgvVentas")
         Me.DgvVentas.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.DgvVentas.BackgroundImage = Nothing
         Me.DgvVentas.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DgvVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgvVentas.Location = New System.Drawing.Point(83, 82)
+        Me.DgvVentas.Font = Nothing
         Me.DgvVentas.Name = "DgvVentas"
-        Me.DgvVentas.Size = New System.Drawing.Size(461, 340)
-        Me.DgvVentas.TabIndex = 28
-        '
-        'CboVehiculo
-        '
-        Me.CboVehiculo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CboVehiculo.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CboVehiculo.FormattingEnabled = True
-        Me.CboVehiculo.Location = New System.Drawing.Point(149, 201)
-        Me.CboVehiculo.Name = "CboVehiculo"
-        Me.CboVehiculo.Size = New System.Drawing.Size(237, 28)
-        Me.CboVehiculo.TabIndex = 45
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(53, 201)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(78, 20)
-        Me.Label5.TabIndex = 46
-        Me.Label5.Text = "VEHÍCULO"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(80, 310)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(51, 20)
-        Me.Label6.TabIndex = 47
-        Me.Label6.Text = "LOTES"
-        '
-        'BtnEliminarLote
-        '
-        Me.BtnEliminarLote.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
-        Me.BtnEliminarLote.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnEliminarLote.FlatAppearance.BorderSize = 0
-        Me.BtnEliminarLote.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEliminarLote.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEliminarLote.ForeColor = System.Drawing.Color.White
-        Me.BtnEliminarLote.Location = New System.Drawing.Point(280, 249)
-        Me.BtnEliminarLote.Name = "BtnEliminarLote"
-        Me.BtnEliminarLote.Size = New System.Drawing.Size(105, 23)
-        Me.BtnEliminarLote.TabIndex = 48
-        Me.BtnEliminarLote.Text = "ELIMINAR"
-        Me.BtnEliminarLote.UseVisualStyleBackColor = False
         '
         'FrmTraslados
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1065, 479)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = Nothing
         Me.Name = "FrmTraslados"
-        Me.Text = "FrmTraslados"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)

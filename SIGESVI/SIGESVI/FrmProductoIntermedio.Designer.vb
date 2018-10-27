@@ -22,6 +22,7 @@ Partial Class FrmProductoIntermedio
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmProductoIntermedio))
         Me.Button2 = New System.Windows.Forms.Button
         Me.Label3 = New System.Windows.Forms.Label
         Me.Label7 = New System.Windows.Forms.Label
@@ -35,182 +36,164 @@ Partial Class FrmProductoIntermedio
         Me.TxtDescripcion_REQ = New System.Windows.Forms.TextBox
         Me.Label1 = New System.Windows.Forms.Label
         Me.TxtNombre_REQ = New System.Windows.Forms.TextBox
+        Me.OfdImagen = New System.Windows.Forms.OpenFileDialog
         Me.PicVolver = New System.Windows.Forms.PictureBox
         Me.PicFoto = New System.Windows.Forms.PictureBox
-        Me.OfdImagen = New System.Windows.Forms.OpenFileDialog
         CType(Me.PicVolver, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PicFoto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button2
         '
+        Me.Button2.AccessibleDescription = Nothing
+        Me.Button2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Button2, "Button2")
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.Button2.BackgroundImage = Nothing
         Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(620, 247)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(100, 28)
-        Me.Button2.TabIndex = 51
-        Me.Button2.Text = "SELECCIONAR"
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 16.0!)
+        Me.Label3.AccessibleDescription = Nothing
+        Me.Label3.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label3, "Label3")
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(302, 32)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(340, 30)
-        Me.Label3.TabIndex = 49
-        Me.Label3.Text = "NUEVO PRODUCTO INTERMEDIO"
         '
         'Label7
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.Label7.Location = New System.Drawing.Point(244, 315)
+        Me.Label7.AccessibleDescription = Nothing
+        Me.Label7.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label7, "Label7")
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(71, 20)
-        Me.Label7.TabIndex = 48
-        Me.Label7.Text = "CALIDAD"
         '
         'CboCalidad_REQ
         '
+        Me.CboCalidad_REQ.AccessibleDescription = Nothing
+        Me.CboCalidad_REQ.AccessibleName = Nothing
+        resources.ApplyResources(Me.CboCalidad_REQ, "CboCalidad_REQ")
         Me.CboCalidad_REQ.BackColor = System.Drawing.Color.White
+        Me.CboCalidad_REQ.BackgroundImage = Nothing
         Me.CboCalidad_REQ.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CboCalidad_REQ.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CboCalidad_REQ.Font = New System.Drawing.Font("Segoe UI", 11.0!)
         Me.CboCalidad_REQ.FormattingEnabled = True
-        Me.CboCalidad_REQ.Items.AddRange(New Object() {"Flor", "Lagrima", "Yema"})
-        Me.CboCalidad_REQ.Location = New System.Drawing.Point(331, 315)
+        Me.CboCalidad_REQ.Items.AddRange(New Object() {resources.GetString("CboCalidad_REQ.Items"), resources.GetString("CboCalidad_REQ.Items1"), resources.GetString("CboCalidad_REQ.Items2")})
         Me.CboCalidad_REQ.Name = "CboCalidad_REQ"
-        Me.CboCalidad_REQ.Size = New System.Drawing.Size(237, 28)
-        Me.CboCalidad_REQ.TabIndex = 47
         '
         'Label6
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.Label6.Location = New System.Drawing.Point(257, 280)
+        Me.Label6.AccessibleDescription = Nothing
+        Me.Label6.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label6, "Label6")
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(58, 20)
-        Me.Label6.TabIndex = 46
-        Me.Label6.Text = "PRECIO"
         '
         'TxtPrecio_NUM_REQ
         '
-        Me.TxtPrecio_NUM_REQ.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.TxtPrecio_NUM_REQ.Location = New System.Drawing.Point(331, 274)
+        Me.TxtPrecio_NUM_REQ.AccessibleDescription = Nothing
+        Me.TxtPrecio_NUM_REQ.AccessibleName = Nothing
+        resources.ApplyResources(Me.TxtPrecio_NUM_REQ, "TxtPrecio_NUM_REQ")
+        Me.TxtPrecio_NUM_REQ.BackgroundImage = Nothing
         Me.TxtPrecio_NUM_REQ.Name = "TxtPrecio_NUM_REQ"
-        Me.TxtPrecio_NUM_REQ.Size = New System.Drawing.Size(237, 27)
-        Me.TxtPrecio_NUM_REQ.TabIndex = 45
         '
         'TxtID
         '
-        Me.TxtID.Enabled = False
-        Me.TxtID.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.TxtID.Location = New System.Drawing.Point(331, 139)
+        Me.TxtID.AccessibleDescription = Nothing
+        Me.TxtID.AccessibleName = Nothing
+        resources.ApplyResources(Me.TxtID, "TxtID")
+        Me.TxtID.BackgroundImage = Nothing
         Me.TxtID.Name = "TxtID"
-        Me.TxtID.Size = New System.Drawing.Size(237, 27)
-        Me.TxtID.TabIndex = 44
         '
         'Label5
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.Label5.Location = New System.Drawing.Point(291, 148)
+        Me.Label5.AccessibleDescription = Nothing
+        Me.Label5.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label5, "Label5")
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(24, 20)
-        Me.Label5.TabIndex = 43
-        Me.Label5.Text = "ID"
         '
         'BtnGuardar
         '
+        Me.BtnGuardar.AccessibleDescription = Nothing
+        Me.BtnGuardar.AccessibleName = Nothing
+        resources.ApplyResources(Me.BtnGuardar, "BtnGuardar")
         Me.BtnGuardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.BtnGuardar.BackgroundImage = Nothing
         Me.BtnGuardar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnGuardar.FlatAppearance.BorderSize = 0
-        Me.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnGuardar.Font = Nothing
         Me.BtnGuardar.ForeColor = System.Drawing.Color.White
-        Me.BtnGuardar.Location = New System.Drawing.Point(331, 370)
         Me.BtnGuardar.Name = "BtnGuardar"
-        Me.BtnGuardar.Size = New System.Drawing.Size(237, 34)
-        Me.BtnGuardar.TabIndex = 42
-        Me.BtnGuardar.Text = "GUARDAR"
         Me.BtnGuardar.UseVisualStyleBackColor = False
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.Label2.Location = New System.Drawing.Point(214, 228)
+        Me.Label2.AccessibleDescription = Nothing
+        Me.Label2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label2, "Label2")
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(101, 20)
-        Me.Label2.TabIndex = 41
-        Me.Label2.Text = "DESCRIPCIÓN"
         '
         'TxtDescripcion_REQ
         '
-        Me.TxtDescripcion_REQ.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.TxtDescripcion_REQ.Location = New System.Drawing.Point(331, 221)
-        Me.TxtDescripcion_REQ.Multiline = True
+        Me.TxtDescripcion_REQ.AccessibleDescription = Nothing
+        Me.TxtDescripcion_REQ.AccessibleName = Nothing
+        resources.ApplyResources(Me.TxtDescripcion_REQ, "TxtDescripcion_REQ")
+        Me.TxtDescripcion_REQ.BackgroundImage = Nothing
         Me.TxtDescripcion_REQ.Name = "TxtDescripcion_REQ"
-        Me.TxtDescripcion_REQ.Size = New System.Drawing.Size(237, 36)
-        Me.TxtDescripcion_REQ.TabIndex = 40
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.Label1.Location = New System.Drawing.Point(245, 188)
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(70, 20)
-        Me.Label1.TabIndex = 39
-        Me.Label1.Text = "NOMBRE"
         '
         'TxtNombre_REQ
         '
-        Me.TxtNombre_REQ.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.TxtNombre_REQ.Location = New System.Drawing.Point(331, 180)
+        Me.TxtNombre_REQ.AccessibleDescription = Nothing
+        Me.TxtNombre_REQ.AccessibleName = Nothing
+        resources.ApplyResources(Me.TxtNombre_REQ, "TxtNombre_REQ")
+        Me.TxtNombre_REQ.BackgroundImage = Nothing
         Me.TxtNombre_REQ.Name = "TxtNombre_REQ"
-        Me.TxtNombre_REQ.Size = New System.Drawing.Size(237, 27)
-        Me.TxtNombre_REQ.TabIndex = 38
+        '
+        'OfdImagen
+        '
+        resources.ApplyResources(Me.OfdImagen, "OfdImagen")
         '
         'PicVolver
         '
+        Me.PicVolver.AccessibleDescription = Nothing
+        Me.PicVolver.AccessibleName = Nothing
+        resources.ApplyResources(Me.PicVolver, "PicVolver")
+        Me.PicVolver.BackgroundImage = Nothing
         Me.PicVolver.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PicVolver.Font = Nothing
         Me.PicVolver.Image = Global.SIGESVI.My.Resources.Resources.icons8_go_back_50__1_
-        Me.PicVolver.Location = New System.Drawing.Point(39, 32)
+        Me.PicVolver.ImageLocation = Nothing
         Me.PicVolver.Name = "PicVolver"
-        Me.PicVolver.Size = New System.Drawing.Size(40, 40)
-        Me.PicVolver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PicVolver.TabIndex = 52
         Me.PicVolver.TabStop = False
         '
         'PicFoto
         '
+        Me.PicFoto.AccessibleDescription = Nothing
+        Me.PicFoto.AccessibleName = Nothing
+        resources.ApplyResources(Me.PicFoto, "PicFoto")
         Me.PicFoto.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
-        Me.PicFoto.Location = New System.Drawing.Point(620, 139)
+        Me.PicFoto.BackgroundImage = Nothing
+        Me.PicFoto.Font = Nothing
+        Me.PicFoto.ImageLocation = Nothing
         Me.PicFoto.Name = "PicFoto"
-        Me.PicFoto.Size = New System.Drawing.Size(100, 100)
-        Me.PicFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PicFoto.TabIndex = 50
         Me.PicFoto.TabStop = False
-        '
-        'OfdImagen
-        '
-        Me.OfdImagen.Filter = "JPEG|*.JPG|PNG|*.PNG"
-        Me.OfdImagen.Title = "Seleccionar imagen del producto"
         '
         'FrmProductoIntermedio
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(933, 489)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.PicVolver)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.PicFoto)
@@ -226,9 +209,10 @@ Partial Class FrmProductoIntermedio
         Me.Controls.Add(Me.TxtDescripcion_REQ)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TxtNombre_REQ)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = Nothing
         Me.Name = "FrmProductoIntermedio"
-        Me.Text = "FrmProductoIntermedio"
         CType(Me.PicVolver, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PicFoto, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

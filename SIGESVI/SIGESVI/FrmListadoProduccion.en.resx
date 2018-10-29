@@ -123,20 +123,30 @@
   <data name="BtnEditar.Text" xml:space="preserve">
     <value>EDIT</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>614, 32</value>
+    <value>367, 22</value>
   </data>
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>243, 30</value>
+    <value>710, 40</value>
   </data>
   <data name="Label1.Text" xml:space="preserve">
     <value>PRODUCTION HISTORY</value>
+  </data>
+  <data name="Label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="BtnNueva.Text" xml:space="preserve">
     <value>NEW</value>
   </data>
   <data name="BtnTrazabilidad.Text" xml:space="preserve">
     <value>TRACEABILITY</value>
+  </data>
+  <data name="BtnTrazabilidad.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
 </root>

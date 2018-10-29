@@ -242,7 +242,7 @@ Partial Class MenuGerenteGeneral
         Me.BtnClientes.FlatAppearance.BorderSize = 0
         Me.BtnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.BtnClientes.ForeColor = System.Drawing.Color.White
-        Me.BtnClientes.Image = Global.SIGESVI.My.Resources.Resources.box
+        Me.BtnClientes.Image = Global.SIGESVI.My.Resources.Resources.customer
         Me.BtnClientes.Name = "BtnClientes"
         Me.BtnClientes.UseVisualStyleBackColor = False
         '

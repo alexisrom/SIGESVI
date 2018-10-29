@@ -139,4 +139,39 @@
   <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 167</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 16</value>
+  </data>
+  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 79</value>
+  </data>
+  <data name="Label3.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="Label3.Text" xml:space="preserve">
+    <value>CLIENTES</value>
+  </data>
+  <data name="Label3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="DgvClientes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 95</value>
+  </data>
+  <data name="DgvClientes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 352</value>
+  </data>
+  <data name="DgvClientes.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
 </root>

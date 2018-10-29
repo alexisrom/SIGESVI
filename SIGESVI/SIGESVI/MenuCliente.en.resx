@@ -117,11 +117,36 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Impact, 12pt</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 138</value>
+  </data>
+  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 20</value>
+  </data>
+  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>S.I.GES.VI</value>
+  </data>
   <data name="Label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 179</value>
+  </data>
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 17</value>
   </data>
@@ -134,8 +159,14 @@
   <data name="BtnCompetarReserva.Text" xml:space="preserve">
     <value>COMPLETE</value>
   </data>
+  <data name="LstProductos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 234</value>
+  </data>
   <data name="RadioButton2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="RadioButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 510</value>
   </data>
   <data name="RadioButton2.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 25</value>
@@ -146,6 +177,9 @@
   <data name="RadioButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="RadioButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 479</value>
+  </data>
   <data name="RadioButton1.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 25</value>
   </data>
@@ -155,17 +189,29 @@
   <data name="BtnQuitarProducto.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="BtnQuitarProducto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 202</value>
+  </data>
   <data name="BtnQuitarProducto.Text" xml:space="preserve">
     <value>Remove product</value>
   </data>
   <data name="LblCantidadProductos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="LblCantidadProductos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 178</value>
+  </data>
   <data name="PictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 179</value>
+  </data>
   <data name="CheckBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="CheckBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 427</value>
   </data>
   <data name="CheckBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 25</value>
@@ -176,6 +222,9 @@
   <data name="CheckBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="CheckBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 396</value>
+  </data>
   <data name="CheckBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 25</value>
   </data>
@@ -184,6 +233,9 @@
   </data>
   <data name="CheckBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="CheckBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 365</value>
   </data>
   <data name="CheckBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 25</value>

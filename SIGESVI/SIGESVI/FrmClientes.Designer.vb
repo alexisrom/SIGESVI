@@ -23,6 +23,10 @@ Partial Class FrmClientes
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmClientes))
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Me.Panel1 = New System.Windows.Forms.Panel
         Me.BtnCancelar = New System.Windows.Forms.Button
         Me.Label10 = New System.Windows.Forms.Label
@@ -40,10 +44,10 @@ Partial Class FrmClientes
         Me.Label1 = New System.Windows.Forms.Label
         Me.TxtNombre_REQ = New System.Windows.Forms.TextBox
         Me.Panel2 = New System.Windows.Forms.Panel
-        Me.Label3 = New System.Windows.Forms.Label
         Me.BtnEliminar = New System.Windows.Forms.Button
         Me.BtnEditarCliente = New System.Windows.Forms.Button
         Me.DgvClientes = New System.Windows.Forms.DataGridView
+        Me.Label3 = New System.Windows.Forms.Label
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.DgvClientes, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -213,19 +217,11 @@ Partial Class FrmClientes
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
         Me.Panel2.BackgroundImage = Nothing
         Me.Panel2.Controls.Add(Me.Label3)
+        Me.Panel2.Controls.Add(Me.DgvClientes)
         Me.Panel2.Controls.Add(Me.BtnEliminar)
         Me.Panel2.Controls.Add(Me.BtnEditarCliente)
-        Me.Panel2.Controls.Add(Me.DgvClientes)
         Me.Panel2.Font = Nothing
         Me.Panel2.Name = "Panel2"
-        '
-        'Label3
-        '
-        Me.Label3.AccessibleDescription = Nothing
-        Me.Label3.AccessibleName = Nothing
-        resources.ApplyResources(Me.Label3, "Label3")
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
-        Me.Label3.Name = "Label3"
         '
         'BtnEliminar
         '
@@ -261,9 +257,57 @@ Partial Class FrmClientes
         Me.DgvClientes.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
         Me.DgvClientes.BackgroundImage = Nothing
         Me.DgvClientes.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.DgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DgvClientes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(211, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DgvClientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.DgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DgvClientes.DefaultCellStyle = DataGridViewCellStyle2
+        Me.DgvClientes.EnableHeadersVisualStyles = False
         Me.DgvClientes.Font = Nothing
+        Me.DgvClientes.GridColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.DgvClientes.MultiSelect = False
         Me.DgvClientes.Name = "DgvClientes"
+        Me.DgvClientes.ReadOnly = True
+        Me.DgvClientes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(211, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DgvClientes.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.DgvClientes.RowsDefaultCellStyle = DataGridViewCellStyle4
+        Me.DgvClientes.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.DgvClientes.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White
+        Me.DgvClientes.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.DgvClientes.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DgvClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        '
+        'Label3
+        '
+        Me.Label3.AccessibleDescription = Nothing
+        Me.Label3.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label3, "Label3")
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
+        Me.Label3.Name = "Label3"
         '
         'FrmClientes
         '
@@ -281,7 +325,6 @@ Partial Class FrmClientes
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
         CType(Me.DgvClientes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -302,9 +345,9 @@ Partial Class FrmClientes
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents TxtNombre_REQ As System.Windows.Forms.TextBox
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents BtnEliminar As System.Windows.Forms.Button
     Friend WithEvents BtnEditarCliente As System.Windows.Forms.Button
-    Friend WithEvents DgvClientes As System.Windows.Forms.DataGridView
     Friend WithEvents BtnCancelar As System.Windows.Forms.Button
+    Friend WithEvents DgvClientes As System.Windows.Forms.DataGridView
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

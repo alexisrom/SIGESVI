@@ -122,7 +122,7 @@
     <value>NoControl</value>
   </data>
   <data name="BtnEstadisticas.Text" xml:space="preserve">
-    <value>Statistics</value>
+    <value>    Statistics</value>
   </data>
   <data name="Label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -131,43 +131,43 @@
     <value>NoControl</value>
   </data>
   <data name="BtnAjustes.Text" xml:space="preserve">
-    <value>Configuration</value>
+    <value>    Configuration</value>
   </data>
   <data name="BtnSucursales.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="BtnSucursales.Text" xml:space="preserve">
-    <value>Branchs</value>
+    <value>    Branchs</value>
   </data>
   <data name="BtnTransacciones.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="BtnTransacciones.Text" xml:space="preserve">
-    <value>Transactions</value>
+    <value>    Transactions</value>
   </data>
   <data name="BtnClientes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="BtnClientes.Text" xml:space="preserve">
-    <value>Clients</value>
+    <value>    Clients</value>
   </data>
   <data name="BtnFuncionarios.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="BtnFuncionarios.Text" xml:space="preserve">
-    <value>Employees</value>
+    <value>    Employees</value>
   </data>
   <data name="BtnProductos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="BtnProductos.Text" xml:space="preserve">
-    <value>Products</value>
+    <value>    Products</value>
   </data>
   <data name="BtnProduccion.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="BtnProduccion.Text" xml:space="preserve">
-    <value> Production</value>
+    <value>    Production</value>
   </data>
   <data name="PicLogo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

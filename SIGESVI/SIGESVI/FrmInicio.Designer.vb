@@ -29,14 +29,6 @@ Partial Class FrmInicio
         Me.Panel1 = New System.Windows.Forms.Panel
         Me.LabelUbicación = New System.Windows.Forms.Label
         Me.WebBrowser2 = New System.Windows.Forms.WebBrowser
-        Me.Panel3 = New System.Windows.Forms.Panel
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox
-        Me.Panel2 = New System.Windows.Forms.Panel
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox
         Me.PnlRecordatorios = New System.Windows.Forms.FlowLayoutPanel
         Me.PnlAlarmas = New System.Windows.Forms.FlowLayoutPanel
         Me.Labelhumedad = New System.Windows.Forms.Label
@@ -47,10 +39,6 @@ Partial Class FrmInicio
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.LblHora = New System.Windows.Forms.Label
         Me.Panel1.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel2.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbclima, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -71,8 +59,6 @@ Partial Class FrmInicio
         Me.Panel1.BackgroundImage = Global.SIGESVI.My.Resources.Resources.bmaurvhz
         Me.Panel1.Controls.Add(Me.LabelUbicación)
         Me.Panel1.Controls.Add(Me.WebBrowser2)
-        Me.Panel1.Controls.Add(Me.Panel3)
-        Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.PnlRecordatorios)
         Me.Panel1.Controls.Add(Me.PnlAlarmas)
         Me.Panel1.Controls.Add(Me.Labelhumedad)
@@ -100,92 +86,6 @@ Partial Class FrmInicio
         resources.ApplyResources(Me.WebBrowser2, "WebBrowser2")
         Me.WebBrowser2.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser2.Name = "WebBrowser2"
-        '
-        'Panel3
-        '
-        Me.Panel3.AccessibleDescription = Nothing
-        Me.Panel3.AccessibleName = Nothing
-        resources.ApplyResources(Me.Panel3, "Panel3")
-        Me.Panel3.BackgroundImage = Nothing
-        Me.Panel3.Controls.Add(Me.Label1)
-        Me.Panel3.Controls.Add(Me.Label4)
-        Me.Panel3.Controls.Add(Me.PictureBox3)
-        Me.Panel3.Font = Nothing
-        Me.Panel3.Name = "Panel3"
-        '
-        'Label1
-        '
-        Me.Label1.AccessibleDescription = Nothing
-        Me.Label1.AccessibleName = Nothing
-        resources.ApplyResources(Me.Label1, "Label1")
-        Me.Label1.BackColor = System.Drawing.Color.White
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
-        Me.Label1.Name = "Label1"
-        '
-        'Label4
-        '
-        Me.Label4.AccessibleDescription = Nothing
-        Me.Label4.AccessibleName = Nothing
-        resources.ApplyResources(Me.Label4, "Label4")
-        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Name = "Label4"
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.AccessibleDescription = Nothing
-        Me.PictureBox3.AccessibleName = Nothing
-        resources.ApplyResources(Me.PictureBox3, "PictureBox3")
-        Me.PictureBox3.BackColor = System.Drawing.Color.White
-        Me.PictureBox3.BackgroundImage = Nothing
-        Me.PictureBox3.Font = Nothing
-        Me.PictureBox3.Image = Global.SIGESVI.My.Resources.Resources.exclamancion
-        Me.PictureBox3.ImageLocation = Nothing
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.TabStop = False
-        '
-        'Panel2
-        '
-        Me.Panel2.AccessibleDescription = Nothing
-        Me.Panel2.AccessibleName = Nothing
-        resources.ApplyResources(Me.Panel2, "Panel2")
-        Me.Panel2.BackgroundImage = Nothing
-        Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel2.Controls.Add(Me.Label3)
-        Me.Panel2.Controls.Add(Me.Label2)
-        Me.Panel2.Controls.Add(Me.PictureBox2)
-        Me.Panel2.Font = Nothing
-        Me.Panel2.Name = "Panel2"
-        '
-        'Label3
-        '
-        Me.Label3.AccessibleDescription = Nothing
-        Me.Label3.AccessibleName = Nothing
-        resources.ApplyResources(Me.Label3, "Label3")
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(227, Byte), Integer))
-        Me.Label3.Name = "Label3"
-        '
-        'Label2
-        '
-        Me.Label2.AccessibleDescription = Nothing
-        Me.Label2.AccessibleName = Nothing
-        resources.ApplyResources(Me.Label2, "Label2")
-        Me.Label2.BackColor = System.Drawing.Color.DimGray
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Name = "Label2"
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.AccessibleDescription = Nothing
-        Me.PictureBox2.AccessibleName = Nothing
-        resources.ApplyResources(Me.PictureBox2, "PictureBox2")
-        Me.PictureBox2.BackgroundImage = Nothing
-        Me.PictureBox2.Font = Nothing
-        Me.PictureBox2.Image = Global.SIGESVI.My.Resources.Resources.calendar_with_day_3
-        Me.PictureBox2.ImageLocation = Nothing
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.TabStop = False
         '
         'PnlRecordatorios
         '
@@ -254,9 +154,10 @@ Partial Class FrmInicio
         Me.PictureBox1.AccessibleDescription = Nothing
         Me.PictureBox1.AccessibleName = Nothing
         resources.ApplyResources(Me.PictureBox1, "PictureBox1")
-        Me.PictureBox1.BackColor = System.Drawing.Color.Silver
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BackgroundImage = Nothing
         Me.PictureBox1.Font = Nothing
+        Me.PictureBox1.Image = Global.SIGESVI.My.Resources.Resources.user
         Me.PictureBox1.ImageLocation = Nothing
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.TabStop = False
@@ -284,10 +185,6 @@ Partial Class FrmInicio
         Me.Name = "FrmInicio"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel2.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbclima, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -296,7 +193,6 @@ Partial Class FrmInicio
     Friend WithEvents TmrFechaHora As System.Windows.Forms.Timer
     Friend WithEvents Timerclima As System.Windows.Forms.Timer
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents PnlRecordatorios As System.Windows.Forms.FlowLayoutPanel
     Friend WithEvents PnlAlarmas As System.Windows.Forms.FlowLayoutPanel
     Friend WithEvents Labelhumedad As System.Windows.Forms.Label
@@ -305,13 +201,6 @@ Partial Class FrmInicio
     Friend WithEvents LblCargo As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents LblHora As System.Windows.Forms.Label
-    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Panel3 As System.Windows.Forms.Panel
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents WebBrowser2 As System.Windows.Forms.WebBrowser
     Friend WithEvents pbclima As System.Windows.Forms.PictureBox
     Friend WithEvents LabelUbicación As System.Windows.Forms.Label

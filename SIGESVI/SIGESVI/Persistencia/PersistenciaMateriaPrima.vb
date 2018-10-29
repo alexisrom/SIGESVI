@@ -136,5 +136,32 @@ Public Class PersistenciaMateriaPrima
 
 
 
+    Function Buscar(ByVal id_producto As Integer) As MateriaPrima
+
+        Dim consulta = "SELECT e.* FROM materia_prima m, especificacion_de_producto e WHERE m.id_eproducto = e.id_eproducto AND  m.id_eproducto = " & id_producto
+
+        Dim comando As New OdbcCommand
+
+        Try
+            comando.Connection = Conexion.Abrir
+            comando.CommandText = consulta
+            Dim resultado = comando.ExecuteReader
+
+
+            If resultado.HasRows Then
+                resultado.Read()
+                Dim m As New MateriaPrima
+                m.Nombre = resultado("nombre")
+                Return m
+            End If
+
+            Return Nothing
+
+        Catch ex As OdbcException
+            Throw ex
+        End Try
+    End Function
+
+
 
 End Class

@@ -199,7 +199,7 @@
     <value>True</value>
   </data>
   <data name="&gt;&gt;DgvCompras.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;CboProductos.Parent" xml:space="preserve">
     <value>Panel1</value>
@@ -283,7 +283,7 @@
     <value>COSTO TOTAL</value>
   </data>
   <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
@@ -541,10 +541,13 @@
     <value>ELIMINAR</value>
   </data>
   <data name="&gt;&gt;BtnAgregarEtapa.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;Label4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DgvCompras.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>25</value>
   </data>
   <data name="&gt;&gt;Label6.Parent" xml:space="preserve">
     <value>Panel1</value>
@@ -586,7 +589,7 @@
     <value>83, 82</value>
   </data>
   <data name="&gt;&gt;Button4.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="Panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>648, 0</value>

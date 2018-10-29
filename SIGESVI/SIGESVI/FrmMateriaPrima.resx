@@ -120,17 +120,19 @@
   <data name="&gt;&gt;BtnSeleccionarFoto.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;TxtDescripcion_REQ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>261, 240</value>
   </data>
+  <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="PicFoto.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>CenterImage</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;BtnSeleccionarFoto.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -141,26 +143,15 @@
   <data name="&gt;&gt;PicVolver.Name" xml:space="preserve">
     <value>PicVolver</value>
   </data>
-  <data name="PicFoto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>667, 151</value>
-  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="BtnSeleccionarFoto.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
-  </data>
-  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
-    <value>11</value>
   </data>
   <data name="TxtDescripcion_REQ.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
-  <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 20</value>
-  </data>
   <data name="TxtNombre_REQ.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
-  </data>
-  <data name="BtnGuardar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
   </data>
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 20</value>
@@ -186,8 +177,8 @@
   <data name="&gt;&gt;PicFoto.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;TxtID.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="Label6.Text" xml:space="preserve">
+    <value>PRECIO</value>
   </data>
   <data name="&gt;&gt;Label3.Name" xml:space="preserve">
     <value>Label3</value>
@@ -204,6 +195,9 @@
   <data name="BtnSeleccionarFoto.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <data name="Label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 20</value>
+  </data>
   <data name="&gt;&gt;TxtNombre_REQ.Name" xml:space="preserve">
     <value>TxtNombre_REQ</value>
   </data>
@@ -216,20 +210,26 @@
   <data name="OfdImagen.Title" xml:space="preserve">
     <value>Seleccionar imagen del producto</value>
   </data>
+  <data name="&gt;&gt;CboCepas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>273, 30</value>
   </data>
-  <data name="&gt;&gt;BtnGuardar.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;CboCepas.Name" xml:space="preserve">
+    <value>CboCepas</value>
   </data>
-  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="TxtPrecio_NUM_REQ.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
   </data>
   <data name="TxtID.Location" type="System.Drawing.Point, System.Drawing">
     <value>378, 151</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>FrmMateriaPrima</value>
+  </data>
+  <data name="CboCepas.Items" xml:space="preserve">
+    <value>Tinto</value>
   </data>
   <data name="Label3.Text" xml:space="preserve">
     <value>AGREGAR MATERIA PRIMA</value>
@@ -255,8 +255,8 @@
   <data name="&gt;&gt;PicVolver.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;TxtDescripcion_REQ.Name" xml:space="preserve">
-    <value>TxtDescripcion_REQ</value>
+  <data name="&gt;&gt;BtnGuardar.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="Label6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
@@ -267,14 +267,8 @@
   <data name="TxtID.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
   </data>
-  <data name="&gt;&gt;CboCepas.Name" xml:space="preserve">
-    <value>CboCepas</value>
-  </data>
-  <data name="&gt;&gt;PicVolver.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>318, 330</value>
+  <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="TxtNombre_REQ.Location" type="System.Drawing.Point, System.Drawing">
     <value>378, 192</value>
@@ -336,17 +330,14 @@
   <data name="PicVolver.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
   </data>
-  <data name="TxtID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>237, 27</value>
-  </data>
   <data name="&gt;&gt;TxtPrecio_NUM_REQ.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="Label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;Label6.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;Label7.Name" xml:space="preserve">
+    <value>Label7</value>
   </data>
   <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
     <value>$this</value>
@@ -354,8 +345,17 @@
   <data name="&gt;&gt;TxtDescripcion_REQ.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
+  <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>338, 160</value>
+  </data>
+  <data name="CboCepas.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <data name="&gt;&gt;TxtID.Name" xml:space="preserve">
     <value>TxtID</value>
+  </data>
+  <data name="&gt;&gt;CboCepas.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="Label5.Text" xml:space="preserve">
     <value>ID</value>
@@ -393,6 +393,9 @@
   <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="Label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="TxtPrecio_NUM_REQ.Location" type="System.Drawing.Point, System.Drawing">
     <value>378, 286</value>
   </data>
@@ -420,8 +423,8 @@
   <data name="BtnGuardar.Text" xml:space="preserve">
     <value>GUARDAR</value>
   </data>
-  <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="TxtID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 27</value>
   </data>
   <data name="CboCepas.Location" type="System.Drawing.Point, System.Drawing">
     <value>378, 327</value>
@@ -432,11 +435,8 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1095, 557</value>
   </data>
-  <data name="&gt;&gt;CboCepas.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;TxtDescripcion_REQ.Name" xml:space="preserve">
+    <value>TxtDescripcion_REQ</value>
   </data>
   <data name="&gt;&gt;BtnGuardar.Name" xml:space="preserve">
     <value>BtnGuardar</value>
@@ -453,23 +453,20 @@
   <data name="Label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;CboCepas.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;CboCepas.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;PicFoto.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;Label7.Name" xml:space="preserve">
-    <value>Label7</value>
-  </data>
-  <data name="BtnGuardar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 382</value>
+  <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 20</value>
   </data>
   <data name="BtnSeleccionarFoto.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 28</value>
   </data>
-  <data name="CboCepas.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="PicFoto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>667, 151</value>
   </data>
   <data name="&gt;&gt;Label5.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -477,17 +474,20 @@
   <data name="&gt;&gt;Label2.Name" xml:space="preserve">
     <value>Label2</value>
   </data>
-  <data name="Label6.Text" xml:space="preserve">
-    <value>PRECIO</value>
+  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;OfdImagen.Type" xml:space="preserve">
     <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="TxtPrecio_NUM_REQ.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 11pt</value>
+  <data name="Label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 330</value>
   </data>
   <data name="OfdImagen.Filter" xml:space="preserve">
     <value>JPEG|*.JPG|PNG|*.PNG</value>
+  </data>
+  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;TxtID.ZOrder" xml:space="preserve">
     <value>8</value>
@@ -495,11 +495,11 @@
   <data name="Label6.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
   </data>
-  <data name="Label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 20</value>
+  <data name="&gt;&gt;PicFoto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="TxtDescripcion_REQ.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 11pt</value>
+  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="BtnGuardar.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -513,8 +513,8 @@
   <data name="CboCepas.Items2" xml:space="preserve">
     <value>Blanco</value>
   </data>
-  <data name="&gt;&gt;CboCepas.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="BtnGuardar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="Label7.Text" xml:space="preserve">
     <value>CEPA</value>
@@ -522,29 +522,29 @@
   <data name="&gt;&gt;BtnSeleccionarFoto.Name" xml:space="preserve">
     <value>BtnSeleccionarFoto</value>
   </data>
-  <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>338, 160</value>
+  <data name="&gt;&gt;Label6.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;Label3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PicFoto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
-  <data name="Label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="TxtDescripcion_REQ.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
   </data>
   <data name="&gt;&gt;BtnGuardar.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="CboCepas.Items" xml:space="preserve">
-    <value>Tinto</value>
+  <data name="&gt;&gt;TxtID.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;PicVolver.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;TxtDescripcion_REQ.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="BtnGuardar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>378, 382</value>
   </data>
   <data name="TxtPrecio_NUM_REQ.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>

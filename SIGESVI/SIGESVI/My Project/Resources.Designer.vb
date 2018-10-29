@@ -137,6 +137,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property customer() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("customer", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property delivery_truck() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("delivery-truck", resourceCulture)
@@ -263,6 +270,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property online_booking() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("online-booking", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property placeholder() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("placeholder", resourceCulture)
@@ -301,6 +315,13 @@ Namespace My.Resources
         Friend ReadOnly Property traslados() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("traslados", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property user() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("user", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

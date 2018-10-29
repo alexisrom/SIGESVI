@@ -11,7 +11,7 @@
     Private Sub ControlesPorDefecto()
         LimpiarControles(Me)
         TxtNombre_REQ.Focus()
-        DgvEtapas.DataSource = persistencia.ListarTodas
+        DgvCepas.DataSource = persistencia.ListarTodas
     End Sub
 
     Private Sub BtnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnAgregar.Click

@@ -143,11 +143,17 @@
   <data name="BtnEliminarEtapa.Location" type="System.Drawing.Point, System.Drawing">
     <value>838, 377</value>
   </data>
+  <data name="Label10.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
   <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>291, 30</value>
   </data>
   <data name="Label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 20</value>
+  </data>
+  <data name="CboCrianza.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
   </data>
   <data name="&gt;&gt;BtnVolver.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -161,6 +167,9 @@
   </data>
   <data name="&gt;&gt;TxtPrecio_NUM_REQ.ZOrder" xml:space="preserve">
     <value>15</value>
+  </data>
+  <data name="&gt;&gt;DgvEtapas.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;PicFoto.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -177,14 +186,14 @@
   <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
+  <data name="&gt;&gt;Descripcion.Name" xml:space="preserve">
+    <value>Descripcion</value>
+  </data>
   <data name="CboCategoria_REQ.Items1" xml:space="preserve">
     <value>Rosado</value>
   </data>
   <data name="TxtPrecio_NUM_REQ.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
-  </data>
-  <data name="DgvEtapas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>328, 215</value>
   </data>
   <data name="&gt;&gt;Numero.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -198,11 +207,11 @@
   <data name="Label7.Location" type="System.Drawing.Point, System.Drawing">
     <value>91, 287</value>
   </data>
-  <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>368, 20</value>
+  </data>
+  <data name="CboEmbotellamiento.Items2" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="BtnGuardar.Location" type="System.Drawing.Point, System.Drawing">
     <value>195, 421</value>
@@ -215,9 +224,6 @@
   </data>
   <data name="&gt;&gt;BtnSeleccionarFoto.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 11pt</value>
   </data>
   <data name="TxtID.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -234,14 +240,14 @@
   <data name="Label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="BtnGuardar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 34</value>
+  </data>
   <data name="Label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 20</value>
   </data>
   <data name="&gt;&gt;CboCrianza.ZOrder" xml:space="preserve">
     <value>8</value>
-  </data>
-  <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>619, 109</value>
   </data>
   <data name="Numero.HeaderText" xml:space="preserve">
     <value>NRO</value>
@@ -315,6 +321,9 @@
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 20</value>
   </data>
+  <data name="BtnSeleccionarFoto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>471, 255</value>
+  </data>
   <data name="BtnEliminarEtapa.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 6.75pt</value>
   </data>
@@ -333,14 +342,8 @@
   <data name="CboCategoria_REQ.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
   </data>
-  <data name="CboCrianza.Items" xml:space="preserve">
-    <value>Americano</value>
-  </data>
   <data name="OfdImagen.Filter" xml:space="preserve">
     <value>JPEG|*.JPG|PNG|*.PNG</value>
-  </data>
-  <data name="&gt;&gt;BtnGuardar.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="&gt;&gt;BtnVolver.Parent" xml:space="preserve">
     <value>$this</value>
@@ -384,9 +387,6 @@
   <data name="CboCategoria_REQ.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>155, 115</value>
-  </data>
   <data name="BtnSeleccionarFoto.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 28</value>
   </data>
@@ -395,9 +395,6 @@
   </data>
   <data name="&gt;&gt;PicFoto.Name" xml:space="preserve">
     <value>PicFoto</value>
-  </data>
-  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
   </data>
   <data name="CboCrianza.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
@@ -462,9 +459,6 @@
   <data name="&gt;&gt;CboEmbotellamiento.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
   <data name="&gt;&gt;Label1.Name" xml:space="preserve">
     <value>Label1</value>
   </data>
@@ -473,6 +467,9 @@
   </data>
   <data name="&gt;&gt;Label7.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CboEmbotellamiento.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;CboCategoria_REQ.Name" xml:space="preserve">
     <value>CboCategoria_REQ</value>
@@ -486,6 +483,9 @@
   <data name="&gt;&gt;Label7.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
+  <data name="CboCategoria_REQ.Items2" xml:space="preserve">
+    <value>Blanco</value>
+  </data>
   <data name="&gt;&gt;TxtPrecio_NUM_REQ.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -498,8 +498,8 @@
   <data name="Duracion.HeaderText" xml:space="preserve">
     <value>Duración</value>
   </data>
-  <data name="CboCrianza.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+  <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>619, 109</value>
   </data>
   <data name="TxtDescripcion_REQ.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -633,14 +633,8 @@
   <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 20</value>
   </data>
-  <data name="CboEmbotellamiento.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
   <data name="TxtID.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
-  </data>
-  <data name="&gt;&gt;BtnGuardar.ZOrder" xml:space="preserve">
-    <value>19</value>
   </data>
   <data name="BtnVolver.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -651,8 +645,11 @@
   <data name="&gt;&gt;BtnGuardar.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Descripcion.Name" xml:space="preserve">
-    <value>Descripcion</value>
+  <data name="&gt;&gt;BtnGuardar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CboEmbotellamiento.Items1" xml:space="preserve">
+    <value>2.5</value>
   </data>
   <data name="Label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -662,6 +659,9 @@
   </data>
   <data name="Label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 20</value>
+  </data>
+  <data name="CboEmbotellamiento.Items5" xml:space="preserve">
+    <value>3/4</value>
   </data>
   <data name="Label6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
@@ -690,6 +690,9 @@
   <data name="Label8.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1000, 485</value>
+  </data>
   <data name="BtnEliminarEtapa.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -708,8 +711,8 @@
   <data name="&gt;&gt;TxtDescripcion_REQ.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="BtnSeleccionarFoto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>471, 255</value>
+  <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;Label9.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -720,8 +723,8 @@
   <data name="Label8.Location" type="System.Drawing.Point, System.Drawing">
     <value>108, 332</value>
   </data>
-  <data name="&gt;&gt;CboEmbotellamiento.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 115</value>
   </data>
   <data name="&gt;&gt;BtnEliminarEtapa.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -756,9 +759,6 @@
   <data name="Label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
-    <value>Label2</value>
-  </data>
   <data name="&gt;&gt;Label8.Name" xml:space="preserve">
     <value>Label8</value>
   </data>
@@ -783,14 +783,14 @@
   <data name="Label3.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="CboEmbotellamiento.Items2" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
+    <value>Label2</value>
   </data>
   <data name="CboEmbotellamiento.Items3" xml:space="preserve">
     <value>1.5</value>
   </data>
-  <data name="CboEmbotellamiento.Items1" xml:space="preserve">
-    <value>2.5</value>
+  <data name="&gt;&gt;BtnGuardar.ZOrder" xml:space="preserve">
+    <value>19</value>
   </data>
   <data name="CboEmbotellamiento.Items6" xml:space="preserve">
     <value>1/2</value>
@@ -801,8 +801,8 @@
   <data name="CboEmbotellamiento.Items4" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="CboEmbotellamiento.Items5" xml:space="preserve">
-    <value>3/4</value>
+  <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
   </data>
   <data name="&gt;&gt;BtnAgregarEtapa.Name" xml:space="preserve">
     <value>BtnAgregarEtapa</value>
@@ -813,11 +813,11 @@
   <data name="TxtDescripcion_REQ.Size" type="System.Drawing.Size, System.Drawing">
     <value>237, 36</value>
   </data>
-  <data name="Label10.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
+  <data name="DgvEtapas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>328, 215</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 485</value>
+  <data name="CboEmbotellamiento.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="TxtDescripcion_REQ.Location" type="System.Drawing.Point, System.Drawing">
     <value>195, 188</value>
@@ -837,8 +837,8 @@
   <data name="Label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>143, 20</value>
   </data>
-  <data name="CboCategoria_REQ.Items2" xml:space="preserve">
-    <value>Blanco</value>
+  <data name="CboCrianza.Items" xml:space="preserve">
+    <value>Americano</value>
   </data>
   <data name="&gt;&gt;Numero.Name" xml:space="preserve">
     <value>Numero</value>
@@ -852,8 +852,8 @@
   <data name="&gt;&gt;TxtDescripcion_REQ.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;DgvEtapas.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;Label9.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -879,8 +879,8 @@
   <data name="Label10.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
   </data>
-  <data name="BtnGuardar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>237, 34</value>
+  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="Label9.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>

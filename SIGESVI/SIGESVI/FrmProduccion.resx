@@ -134,8 +134,8 @@
   <data name="&gt;&gt;CboEspecificaciones.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 11pt</value>
+  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TxtCantidad_NUM_REQ.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -152,9 +152,6 @@
   <data name="Label4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
   </data>
-  <data name="TxtID.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="&gt;&gt;BtnVolver.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -170,13 +167,7 @@
   <data name="TxtID.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
   </data>
-  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
-    <value>Label2</value>
-  </data>
   <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Label9.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
@@ -188,8 +179,11 @@
   <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 20</value>
   </data>
-  <data name="&gt;&gt;Label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label9.Text" xml:space="preserve">
+    <value>FECHA INICIO</value>
   </data>
   <data name="Label4.Text" xml:space="preserve">
     <value>ID</value>
@@ -209,11 +203,17 @@
   <data name="Label9.Location" type="System.Drawing.Point, System.Drawing">
     <value>390, 192</value>
   </data>
+  <data name="&gt;&gt;DtpFechaFin.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="Label1.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
   </data>
   <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>226, 30</value>
+  </data>
+  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="TxtID.Location" type="System.Drawing.Point, System.Drawing">
     <value>512, 96</value>
@@ -258,9 +258,6 @@
   <data name="BtnVolver.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 40</value>
   </data>
-  <data name="Label9.Text" xml:space="preserve">
-    <value>FECHA INICIO</value>
-  </data>
   <data name="CboEspecificaciones.Items" xml:space="preserve">
     <value>Roble Americano</value>
   </data>
@@ -270,8 +267,11 @@
   <data name="Label3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 16pt</value>
   </data>
-  <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
   </data>
   <data name="Label8.Location" type="System.Drawing.Point, System.Drawing">
     <value>405, 145</value>
@@ -302,9 +302,6 @@
   </data>
   <data name="&gt;&gt;BtnVolver.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 20</value>
@@ -342,8 +339,8 @@
   <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="TxtCantidad_NUM_REQ.Size" type="System.Drawing.Size, System.Drawing">
-    <value>237, 27</value>
+  <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>467, 99</value>
   </data>
   <data name="Label9.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -353,6 +350,9 @@
   </data>
   <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Label3.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -366,14 +366,17 @@
   <data name="Label8.Text" xml:space="preserve">
     <value>PRODUCTO</value>
   </data>
+  <data name="Label8.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
   <data name="&gt;&gt;DtpFechaInicio.Name" xml:space="preserve">
     <value>DtpFechaInicio</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TxtID.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="Label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="TxtID.Size" type="System.Drawing.Size, System.Drawing">
     <value>237, 27</value>
@@ -396,17 +399,14 @@
   <data name="&gt;&gt;BtnProgramar.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Label8.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;DtpFechaInicio.Type" xml:space="preserve">
     <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;DtpFechaInicio.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>467, 99</value>
+  <data name="TxtCantidad_NUM_REQ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 27</value>
   </data>
   <data name="BtnProgramar.Size" type="System.Drawing.Size, System.Drawing">
     <value>237, 34</value>
@@ -414,7 +414,7 @@
   <data name="&gt;&gt;Label8.Name" xml:space="preserve">
     <value>Label8</value>
   </data>
-  <data name="&gt;&gt;CboEspecificaciones.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Label8.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TxtID.Type" xml:space="preserve">
@@ -423,14 +423,11 @@
   <data name="$this.Text" xml:space="preserve">
     <value>FrmProduccion</value>
   </data>
-  <data name="&gt;&gt;DtpFechaFin.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
+    <value>Label2</value>
   </data>
   <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
     <value>12</value>
-  </data>
-  <data name="TxtCantidad_NUM_REQ.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 273</value>
   </data>
   <data name="CboEspecificaciones.Location" type="System.Drawing.Point, System.Drawing">
     <value>512, 137</value>
@@ -438,14 +435,14 @@
   <data name="&gt;&gt;Label8.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="Label8.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
+  <data name="TxtID.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 20</value>
   </data>
-  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
+  <data name="&gt;&gt;CboEspecificaciones.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="BtnProgramar.Location" type="System.Drawing.Point, System.Drawing">
     <value>512, 354</value>
@@ -471,20 +468,23 @@
   <data name="&gt;&gt;TxtCantidad_NUM_REQ.Name" xml:space="preserve">
     <value>TxtCantidad_NUM_REQ</value>
   </data>
-  <data name="&gt;&gt;DtpFechaInicio.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;Label9.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="Label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;TxtID.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="TxtCantidad_NUM_REQ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>512, 273</value>
   </data>
   <data name="TxtCantidad_NUM_REQ.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
   </data>
-  <data name="Label9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;DtpFechaInicio.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
+    <value>Label1</value>
   </data>
   <data name="DtpFechaFin.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11.25pt</value>
@@ -495,8 +495,8 @@
   <data name="Label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 20</value>
   </data>
-  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
-    <value>Label1</value>
+  <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

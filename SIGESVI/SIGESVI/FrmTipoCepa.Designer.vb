@@ -23,6 +23,10 @@ Partial Class FrmTipoCepa
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmTipoCepa))
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Me.Panel1 = New System.Windows.Forms.Panel
         Me.Label8 = New System.Windows.Forms.Label
         Me.CboTipoCepa_REQ = New System.Windows.Forms.ComboBox
@@ -32,10 +36,10 @@ Partial Class FrmTipoCepa
         Me.TxtNombre_REQ = New System.Windows.Forms.TextBox
         Me.Panel2 = New System.Windows.Forms.Panel
         Me.Label3 = New System.Windows.Forms.Label
-        Me.DgvEtapas = New System.Windows.Forms.DataGridView
+        Me.DgvCepas = New System.Windows.Forms.DataGridView
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        CType(Me.DgvEtapas, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DgvCepas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -119,8 +123,8 @@ Partial Class FrmTipoCepa
         resources.ApplyResources(Me.Panel2, "Panel2")
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(229, Byte), Integer))
         Me.Panel2.BackgroundImage = Nothing
+        Me.Panel2.Controls.Add(Me.DgvCepas)
         Me.Panel2.Controls.Add(Me.Label3)
-        Me.Panel2.Controls.Add(Me.DgvEtapas)
         Me.Panel2.Font = Nothing
         Me.Panel2.Name = "Panel2"
         '
@@ -132,17 +136,57 @@ Partial Class FrmTipoCepa
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
         Me.Label3.Name = "Label3"
         '
-        'DgvEtapas
+        'DgvCepas
         '
-        Me.DgvEtapas.AccessibleDescription = Nothing
-        Me.DgvEtapas.AccessibleName = Nothing
-        resources.ApplyResources(Me.DgvEtapas, "DgvEtapas")
-        Me.DgvEtapas.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
-        Me.DgvEtapas.BackgroundImage = Nothing
-        Me.DgvEtapas.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.DgvEtapas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgvEtapas.Font = Nothing
-        Me.DgvEtapas.Name = "DgvEtapas"
+        Me.DgvCepas.AccessibleDescription = Nothing
+        Me.DgvCepas.AccessibleName = Nothing
+        resources.ApplyResources(Me.DgvCepas, "DgvCepas")
+        Me.DgvCepas.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.DgvCepas.BackgroundImage = Nothing
+        Me.DgvCepas.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DgvCepas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(161, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(211, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DgvCepas.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.DgvCepas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DgvCepas.DefaultCellStyle = DataGridViewCellStyle2
+        Me.DgvCepas.EnableHeadersVisualStyles = False
+        Me.DgvCepas.Font = Nothing
+        Me.DgvCepas.GridColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.DgvCepas.MultiSelect = False
+        Me.DgvCepas.Name = "DgvCepas"
+        Me.DgvCepas.ReadOnly = True
+        Me.DgvCepas.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(211, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DgvCepas.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.DgvCepas.RowsDefaultCellStyle = DataGridViewCellStyle4
+        Me.DgvCepas.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.DgvCepas.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White
+        Me.DgvCepas.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.DgvCepas.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DgvCepas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         '
         'FrmTipoCepa
         '
@@ -160,8 +204,7 @@ Partial Class FrmTipoCepa
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
-        CType(Me.DgvEtapas, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DgvCepas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -174,5 +217,5 @@ Partial Class FrmTipoCepa
     Friend WithEvents TxtNombre_REQ As System.Windows.Forms.TextBox
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents DgvEtapas As System.Windows.Forms.DataGridView
+    Friend WithEvents DgvCepas As System.Windows.Forms.DataGridView
 End Class

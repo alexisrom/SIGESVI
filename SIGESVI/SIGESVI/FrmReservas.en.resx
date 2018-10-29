@@ -117,18 +117,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>445, 62</value>
+    <value>0, 0</value>
   </data>
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 29</value>
+    <value>1131, 117</value>
   </data>
   <data name="Label1.Text" xml:space="preserve">
     <value>RESERVATIONS</value>
   </data>
+  <data name="Label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="DgvReservas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 120</value>
+  </data>
   <data name="DgvReservas.Size" type="System.Drawing.Size, System.Drawing">
     <value>842, 266</value>
+  </data>
+  <data name="BtnDetalles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>980, 120</value>
   </data>
   <data name="BtnDetalles.Text" xml:space="preserve">
     <value>DETAILS</value>

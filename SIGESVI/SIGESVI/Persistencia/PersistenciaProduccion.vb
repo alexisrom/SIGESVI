@@ -23,11 +23,7 @@ Public Class PersistenciaProduccion
             resp.Read()
             produccion.ID = resp("id_produccion")
 
-            For Each e In produccion.Producto.Elaboracion
-                formato_consulta = "INSERT INTO recorre(id_produccion, id_etapa, fecha_inico, fecha_fin, etapa_actual )"
-
-            Next
-
+            
         Catch ex As Exception
             Throw ex
         Finally
@@ -96,6 +92,17 @@ Public Class PersistenciaProduccion
                     p.ID = resultado("id_produccion")
                     p.Sucursal = New PersistenciaSucursal().Buscar(resultado("id_sucursal"))
                     p.Producto = New PersistenciaProductoFinal().Buscar(resultado("id_eproducto"))
+
+                    If p.Producto Is Nothing Then
+                        p.Producto = New PersistenciaMateriaPrima().Buscar(resultado("id_eproducto"))
+                    End If
+
+
+                    If p.Producto Is Nothing Then
+                        p.Producto = New PersistenciaProductoIntermedio().Buscar(resultado("id_eproducto"))
+                    End If
+
+
                     p.FechaInicio = resultado("fecha_inicio")
                     p.FechaFin = resultado("fecha_fin")
                     p.Cantidad = resultado("cantidad")

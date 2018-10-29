@@ -3,8 +3,8 @@
 Public Class PersistenciaFuncionario
 
     Public Sub Agregar(ByVal funcionario As Funcionario)
-        Dim consulta = "INSERT INTO funcionario (cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo) VALUES "
-        consulta &= "('" & funcionario.ID & "', '" & funcionario.Sucursal.ID & "', '" & funcionario.Nombre & "','" & funcionario.Apellido & "', '" & funcionario.Direccion & "', '" & funcionario.Username & "', '" & funcionario.Password & "', '" & funcionario.Rol & "');"
+        Dim consulta = "INSERT INTO funcionario (cedula, id_sucursal, nombre, apellido, direccion, usuario, contrasena, cargo, telefono) VALUES "
+        consulta &= "('" & funcionario.ID & "', '" & funcionario.Sucursal.ID & "', '" & funcionario.Nombre & "','" & funcionario.Apellido & "', '" & funcionario.Direccion & "', '" & funcionario.Username & "', '" & funcionario.Password & "', '" & funcionario.Rol & "', '" & funcionario.Telefono & "');"
 
         Dim comando As New OdbcCommand
 
@@ -91,6 +91,12 @@ Public Class PersistenciaFuncionario
                     funcionario.Username = resultado("usuario")
                     funcionario.Password = resultado("contrasena")
                     funcionario.Rol = resultado("cargo")
+
+                    If Not TypeOf resultado("telefono") Is DBNull Then
+                        funcionario.Telefono = resultado("telefono")
+                    End If
+
+
                     Dim persistenciaSucursal = New PersistenciaSucursal()
                     funcionario.Sucursal = persistenciaSucursal.Buscar(CInt(resultado("id_sucursal")))
                     funcionarios.Add(funcionario)
@@ -99,6 +105,8 @@ Public Class PersistenciaFuncionario
 
         Catch ex As OdbcException
             Throw ex
+        Finally
+            Conexion.Cerrar()
         End Try
 
         Return funcionarios
@@ -142,3 +150,4 @@ Public Class PersistenciaFuncionario
 
   
 End Class
+

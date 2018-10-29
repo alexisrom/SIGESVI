@@ -24,16 +24,13 @@ Partial Class FrmAjustes
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmAjustes))
         Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
         Me.Label3 = New System.Windows.Forms.Label
         Me.Label4 = New System.Windows.Forms.Label
         Me.PicVehiculos = New System.Windows.Forms.PictureBox
         Me.Pic_UBICACION = New System.Windows.Forms.PictureBox
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
         CType(Me.PicVehiculos, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Pic_UBICACION, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -44,14 +41,6 @@ Partial Class FrmAjustes
         resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Name = "Label1"
-        '
-        'Label2
-        '
-        Me.Label2.AccessibleDescription = Nothing
-        Me.Label2.AccessibleName = Nothing
-        resources.ApplyResources(Me.Label2, "Label2")
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Name = "Label2"
         '
         'Label3
         '
@@ -95,19 +84,6 @@ Partial Class FrmAjustes
         Me.Pic_UBICACION.Name = "Pic_UBICACION"
         Me.Pic_UBICACION.TabStop = False
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.AccessibleDescription = Nothing
-        Me.PictureBox2.AccessibleName = Nothing
-        resources.ApplyResources(Me.PictureBox2, "PictureBox2")
-        Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
-        Me.PictureBox2.BackgroundImage = Nothing
-        Me.PictureBox2.Font = Nothing
-        Me.PictureBox2.Image = Global.SIGESVI.My.Resources.Resources.field
-        Me.PictureBox2.ImageLocation = Nothing
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.TabStop = False
-        '
         'PictureBox1
         '
         Me.PictureBox1.AccessibleDescription = Nothing
@@ -131,11 +107,9 @@ Partial Class FrmAjustes
         Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PicVehiculos)
         Me.Controls.Add(Me.Pic_UBICACION)
-        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -143,18 +117,15 @@ Partial Class FrmAjustes
         Me.Name = "FrmAjustes"
         CType(Me.PicVehiculos, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Pic_UBICACION, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents Pic_UBICACION As System.Windows.Forms.PictureBox
     Friend WithEvents PicVehiculos As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
 End Class

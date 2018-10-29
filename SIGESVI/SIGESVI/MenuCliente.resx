@@ -146,11 +146,8 @@
   <data name="BtnQuitarProducto.Location" type="System.Drawing.Point, System.Drawing">
     <value>77, 188</value>
   </data>
-  <data name="PnlMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 610</value>
-  </data>
-  <data name="RadioButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 25</value>
+  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 165</value>
   </data>
   <data name="&gt;&gt;CheckBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -161,11 +158,14 @@
   <data name="LblCantidadProductos.Text" xml:space="preserve">
     <value>(0)</value>
   </data>
+  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="BtnQuitarProducto.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
   </data>
   <data name="&gt;&gt;LblCantidadProductos.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="RadioButton2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
@@ -192,11 +192,8 @@
   <data name="CheckBox3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 610</value>
-  </data>
   <data name="&gt;&gt;PicLogo.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="BtnCompetarReserva.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -219,11 +216,17 @@
   <data name="BtnQuitarProducto.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 6pt</value>
   </data>
+  <data name="CheckBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="LstProductos.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
   </data>
   <data name="CheckBox1.Text" xml:space="preserve">
     <value>TINTO</value>
+  </data>
+  <data name="&gt;&gt;CheckBox3.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;BtnCompetarReserva.Name" xml:space="preserve">
     <value>BtnCompetarReserva</value>
@@ -231,14 +234,17 @@
   <data name="RadioButton1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="&gt;&gt;BtnQuitarProducto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="BtnQuitarProducto.Text" xml:space="preserve">
+    <value>QUITAR PRODUCTO</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
   <data name="&gt;&gt;BtnCompetarReserva.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
+  </data>
+  <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 138</value>
   </data>
   <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 165</value>
@@ -249,17 +255,32 @@
   <data name="&gt;&gt;PnlMenu.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;LstProductos.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="PicLogo.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="CheckBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 25</value>
+  </data>
+  <data name="&gt;&gt;PicLogo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="CheckBox1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;BtnQuitarProducto.Name" xml:space="preserve">
+    <value>BtnQuitarProducto</value>
+  </data>
+  <data name="CheckBox2.Text" xml:space="preserve">
+    <value>ROSADO</value>
   </data>
   <data name="CheckBox2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="PictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>CenterImage</value>
+  </data>
+  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
   </data>
   <data name="RadioButton2.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 496</value>
@@ -268,7 +289,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;RadioButton2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="Label1.Text" xml:space="preserve">
     <value>CANTIDAD</value>
@@ -277,7 +298,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;LblCantidadProductos.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -288,23 +309,20 @@
   <data name="PicLogo.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 135</value>
   </data>
+  <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
   <data name="&gt;&gt;CheckBox3.Parent" xml:space="preserve">
     <value>PnlMenu</value>
   </data>
   <data name="&gt;&gt;RadioButton1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;CheckBox2.Name" xml:space="preserve">
-    <value>CheckBox2</value>
-  </data>
-  <data name="BtnCompetarReserva.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 554</value>
+    <value>5</value>
   </data>
   <data name="CheckBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 413</value>
   </data>
-  <data name="RadioButton2.TabIndex" type="System.Int32, mscorlib">
-    <value>45</value>
+  <data name="RadioButton1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
   </data>
   <data name="&gt;&gt;RadioButton1.Name" xml:space="preserve">
     <value>RadioButton1</value>
@@ -312,14 +330,14 @@
   <data name="&gt;&gt;RadioButton2.Name" xml:space="preserve">
     <value>RadioButton2</value>
   </data>
-  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="LstProductos.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
   </data>
   <data name="&gt;&gt;LstProductos.Parent" xml:space="preserve">
     <value>PnlMenu</value>
   </data>
   <data name="&gt;&gt;CheckBox2.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="&gt;&gt;CheckBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -327,8 +345,8 @@
   <data name="&gt;&gt;PictureBox1.Name" xml:space="preserve">
     <value>PictureBox1</value>
   </data>
-  <data name="&gt;&gt;RadioButton1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="PnlMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="CheckBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 351</value>
@@ -345,9 +363,6 @@
   <data name="&gt;&gt;CheckBox1.Parent" xml:space="preserve">
     <value>PnlMenu</value>
   </data>
-  <data name="LblCantidadProductos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>141, 164</value>
-  </data>
   <data name="&gt;&gt;LblCantidadProductos.Parent" xml:space="preserve">
     <value>PnlMenu</value>
   </data>
@@ -357,14 +372,17 @@
   <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9.75pt</value>
   </data>
-  <data name="&gt;&gt;PnlMenu.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 610</value>
+  </data>
+  <data name="CheckBox3.Text" xml:space="preserve">
+    <value>BLANCO</value>
   </data>
   <data name="&gt;&gt;CheckBox3.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;BtnQuitarProducto.Name" xml:space="preserve">
-    <value>BtnQuitarProducto</value>
+  <data name="&gt;&gt;RadioButton1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -375,23 +393,17 @@
   <data name="PnlMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
   </data>
-  <data name="&gt;&gt;PicLogo.Name" xml:space="preserve">
-    <value>PicLogo</value>
-  </data>
   <data name="CheckBox3.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="&gt;&gt;BtnQuitarProducto.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="BtnQuitarProducto.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 23</value>
   </data>
-  <data name="BtnCompetarReserva.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 34</value>
+  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="PicLogo.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="LblCantidadProductos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 164</value>
   </data>
   <data name="CheckBox1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -405,14 +417,14 @@
   <data name="&gt;&gt;PnlMenu.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="CheckBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;PicLogo.Name" xml:space="preserve">
+    <value>PicLogo</value>
   </data>
   <data name="LblCantidadProductos.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;CheckBox3.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="BtnCompetarReserva.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 554</value>
   </data>
   <data name="RadioButton1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -426,17 +438,23 @@
   <data name="&gt;&gt;CheckBox3.Name" xml:space="preserve">
     <value>CheckBox3</value>
   </data>
-  <data name="&gt;&gt;PicLogo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;BtnQuitarProducto.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="CheckBox3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
+    <value>PnlMenu</value>
+  </data>
+  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
+    <value>Label2</value>
+  </data>
   <data name="&gt;&gt;RadioButton2.Parent" xml:space="preserve">
     <value>PnlMenu</value>
   </data>
-  <data name="CheckBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="RadioButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
   </data>
   <data name="RadioButton2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
@@ -444,17 +462,14 @@
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MenuCliente</value>
   </data>
-  <data name="LstProductos.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt</value>
+  <data name="&gt;&gt;LstProductos.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="CheckBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 25</value>
   </data>
-  <data name="BtnQuitarProducto.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="PnlMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 610</value>
   </data>
   <data name="CheckBox2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
@@ -462,38 +477,41 @@
   <data name="LblCantidadProductos.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
   </data>
-  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>74, 165</value>
+  <data name="BtnQuitarProducto.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="LblCantidadProductos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 18</value>
+  <data name="&gt;&gt;PnlMenu.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;RadioButton1.Parent" xml:space="preserve">
     <value>PnlMenu</value>
   </data>
-  <data name="PnlMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="RadioButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 25</value>
   </data>
   <data name="&gt;&gt;PictureBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="CheckBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 25</value>
+  <data name="RadioButton2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BtnCompetarReserva.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 34</value>
   </data>
   <data name="&gt;&gt;CheckBox1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="LstProductos.Size" type="System.Drawing.Size, System.Drawing">
     <value>148, 117</value>
   </data>
-  <data name="CheckBox2.Text" xml:space="preserve">
-    <value>ROSADO</value>
+  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="CheckBox3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
-  <data name="RadioButton1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
+  <data name="&gt;&gt;CheckBox2.Name" xml:space="preserve">
+    <value>CheckBox2</value>
   </data>
   <data name="BtnCompetarReserva.Text" xml:space="preserve">
     <value>COMPLETAR RESERVA</value>
@@ -507,17 +525,17 @@
   <data name="LblCantidadProductos.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9.75pt</value>
   </data>
-  <data name="CheckBox3.Text" xml:space="preserve">
-    <value>BLANCO</value>
+  <data name="CheckBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="BtnQuitarProducto.Text" xml:space="preserve">
-    <value>QUITAR PRODUCTO</value>
+  <data name="&gt;&gt;BtnQuitarProducto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Label1.Name" xml:space="preserve">
     <value>Label1</value>
   </data>
-  <data name="RadioButton2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="LblCantidadProductos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 18</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

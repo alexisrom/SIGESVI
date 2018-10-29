@@ -183,6 +183,9 @@
   <data name="&gt;&gt;Panel1.Name" xml:space="preserve">
     <value>Panel1</value>
   </data>
+  <data name="&gt;&gt;DgvCepas.Parent" xml:space="preserve">
+    <value>Panel2</value>
+  </data>
   <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 30</value>
   </data>
@@ -234,6 +237,9 @@
   <data name="Label8.Location" type="System.Drawing.Point, System.Drawing">
     <value>55, 199</value>
   </data>
+  <data name="&gt;&gt;DgvCepas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;DgvEtapas.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -284,6 +290,9 @@
   </data>
   <data name="&gt;&gt;BtnAgregar.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="&gt;&gt;DgvCepas.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="Panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -348,11 +357,23 @@
   <data name="BtnAgregar.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
   </data>
+  <data name="DgvCepas.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;DgvCepas.Name" xml:space="preserve">
+    <value>DgvCepas</value>
+  </data>
   <data name="&gt;&gt;Label2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="DgvCepas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 62</value>
+  </data>
   <data name="&gt;&gt;Label8.Name" xml:space="preserve">
     <value>Label8</value>
+  </data>
+  <data name="DgvCepas.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
   </data>
   <data name="&gt;&gt;Label8.Parent" xml:space="preserve">
     <value>Panel1</value>
@@ -364,7 +385,7 @@
     <value>Label2</value>
   </data>
   <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;CboTipoCepa_REQ.ZOrder" xml:space="preserve">
     <value>1</value>

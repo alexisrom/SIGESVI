@@ -14,9 +14,9 @@
 
 
         If usuarioLogueado.EsGerenteGeneral Then
-            DgvVentas.DataSource = persistencia.ListarTraslados
+            DgvTraslados.DataSource = persistencia.ListarTraslados
         Else
-            DgvVentas.DataSource = New PersistenciaCompra().Listar(CType(usuarioLogueado, Funcionario).Sucursal)
+            DgvTraslados.DataSource = New PersistenciaCompra().Listar(CType(usuarioLogueado, Funcionario).Sucursal)
         End If
 
 

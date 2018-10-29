@@ -6,16 +6,22 @@
 
     Private Sub FrmListadoProduccion_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        If usuarioLogueado.EsGerenteGeneral Then
-            DgvProduccion.DataSource = New PersistenciaProduccion().Listar()
-        Else
-            DgvProduccion.DataSource = New PersistenciaProduccion().Listar(CType(usuarioLogueado, Funcionario).Sucursal)
-        End If
+        Try
+            If usuarioLogueado.EsGerenteGeneral Then
+                DgvProduccion.DataSource = New PersistenciaProduccion().Listar()
+            Else
+                DgvProduccion.DataSource = New PersistenciaProduccion().Listar(CType(usuarioLogueado, Funcionario).Sucursal)
+            End If
 
+        Catch ex As Exception
+
+            MessageBox.Show(ex.Message)
+
+        End Try
 
         BtnNueva.Visible = usuarioLogueado.EsAdministrativo
 
-
+        BtnTrazabilidad.Visible = False
 
     End Sub
 
@@ -61,6 +67,18 @@
             frm.produccion = produccion_seleccionada
             AbrirFormulario(frm, Nothing)
         End If
+
+    End Sub
+
+    Private Sub DgvProduccion_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DgvProduccion.CellClick
+        Dim produccion = CType(DgvProduccion.SelectedRows(0).DataBoundItem, Produccion)
+
+        If TypeOf produccion.Producto Is ProductoFinal Then
+            BtnTrazabilidad.Visible = True
+        Else
+            BtnTrazabilidad.Visible = False
+        End If
+
 
     End Sub
 End Class

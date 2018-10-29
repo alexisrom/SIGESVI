@@ -261,6 +261,7 @@ CREATE TABLE funcionario
     usuario VARCHAR(20) NOT NULL,
     contrasena VARCHAR(20) NOT NULL,
     cargo VARCHAR(25) NOT NULL CHECK(cargo IN ("Gerente General", "Gerente Sucursal", "Administrativo", "Asesor Profesional", "Enologo")),
+    telefono VARCHAR(8), 
     activo BOOLEAN DEFAULT "t",
     PRIMARY KEY (cedula),
     FOREIGN KEY (id_sucursal) REFERENCES sucursal(id_sucursal)

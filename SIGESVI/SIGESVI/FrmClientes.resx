@@ -231,7 +231,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;DgvClientes.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;TxtNombre_REQ.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -255,10 +255,13 @@
     <value>0</value>
   </data>
   <data name="&gt;&gt;BtnEditarCliente.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FrmClientes</value>
+  </data>
+  <data name="Label3.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
   </data>
   <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 20</value>
@@ -314,9 +317,6 @@
   </data>
   <data name="&gt;&gt;TxtUser_REQ.Name" xml:space="preserve">
     <value>TxtUser_REQ</value>
-  </data>
-  <data name="&gt;&gt;BtnEliminar.Name" xml:space="preserve">
-    <value>BtnEliminar</value>
   </data>
   <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
@@ -432,6 +432,9 @@
   <data name="BtnEditarCliente.Text" xml:space="preserve">
     <value>EDITAR CLIENTE</value>
   </data>
+  <data name="&gt;&gt;TxtDireccion_REQ.Name" xml:space="preserve">
+    <value>TxtDireccion_REQ</value>
+  </data>
   <data name="&gt;&gt;Label3.Name" xml:space="preserve">
     <value>Label3</value>
   </data>
@@ -498,9 +501,6 @@
   <data name="&gt;&gt;Label7.Parent" xml:space="preserve">
     <value>Panel1</value>
   </data>
-  <data name="TxtUser_REQ.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 11pt</value>
-  </data>
   <data name="TxtNombre_REQ.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
   </data>
@@ -515,6 +515,9 @@
   </data>
   <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 20</value>
+  </data>
+  <data name="TxtTelefono_NUM_REQ.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
   </data>
   <data name="&gt;&gt;DgvClientes.Name" xml:space="preserve">
     <value>DgvClientes</value>
@@ -543,17 +546,17 @@
   <data name="BtnEliminar.Location" type="System.Drawing.Point, System.Drawing">
     <value>445, 463</value>
   </data>
+  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DgvClientes.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
   <data name="Label4.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
   </data>
   <data name="Panel1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 11pt</value>
-  </data>
-  <data name="&gt;&gt;TxtUser_REQ.Parent" xml:space="preserve">
-    <value>Panel1</value>
   </data>
   <data name="DgvClientes.Size" type="System.Drawing.Size, System.Drawing">
     <value>480, 341</value>
@@ -562,7 +565,7 @@
     <value>28</value>
   </data>
   <data name="&gt;&gt;BtnEliminar.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;BtnEditarCliente.Parent" xml:space="preserve">
     <value>Panel2</value>
@@ -639,8 +642,8 @@
   <data name="&gt;&gt;Label5.Parent" xml:space="preserve">
     <value>Panel1</value>
   </data>
-  <data name="Label3.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
+  <data name="TxtUser_REQ.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
   </data>
   <data name="&gt;&gt;Label2.Name" xml:space="preserve">
     <value>Label2</value>
@@ -648,11 +651,11 @@
   <data name="&gt;&gt;BtnGuardar.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;TxtUser_REQ.Parent" xml:space="preserve">
+    <value>Panel1</value>
   </data>
-  <data name="&gt;&gt;TxtDireccion_REQ.Name" xml:space="preserve">
-    <value>TxtDireccion_REQ</value>
+  <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
   </data>
   <data name="&gt;&gt;TxtNombre_REQ.Name" xml:space="preserve">
     <value>TxtNombre_REQ</value>
@@ -708,8 +711,8 @@
   <data name="Label1.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="TxtTelefono_NUM_REQ.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 11pt</value>
+  <data name="&gt;&gt;BtnEliminar.Name" xml:space="preserve">
+    <value>BtnEliminar</value>
   </data>
   <data name="&gt;&gt;TxtUser_REQ.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

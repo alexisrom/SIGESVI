@@ -133,8 +133,9 @@
   <data name="BtnProductos.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 247</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BtnSucursales.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="&gt;&gt;Button3.ZOrder" xml:space="preserve">
     <value>8</value>
@@ -158,10 +159,10 @@
   <data name="&gt;&gt;BtnSucursales.Name" xml:space="preserve">
     <value>BtnSucursales</value>
   </data>
-  <data name="&gt;&gt;PnlMenu.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;Panel2.Parent" xml:space="preserve">
+    <value>PnlMenu</value>
+  </data>
+  <data name="&gt;&gt;Panel3.Parent" xml:space="preserve">
     <value>PnlMenu</value>
   </data>
   <data name="&gt;&gt;Button1.Name" xml:space="preserve">
@@ -170,11 +171,14 @@
   <data name="&gt;&gt;Panel8.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;BtnProduccion.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
   <data name="Button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <data name="&gt;&gt;PicLogo.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>9</value>
   </data>
   <data name="Panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 155</value>
@@ -197,10 +201,13 @@
   <data name="PicLogo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
+  <data name="BtnProductos.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <data name="Button2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11.25pt</value>
   </data>
-  <data name="&gt;&gt;PnlMenu.Name" xml:space="preserve">
+  <data name="&gt;&gt;Panel1.Parent" xml:space="preserve">
     <value>PnlMenu</value>
   </data>
   <data name="&gt;&gt;BtnProductos.Type" xml:space="preserve">
@@ -215,20 +222,17 @@
   <data name="BtnProduccion.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
+  <data name="Button3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt</value>
+  </data>
   <data name="&gt;&gt;Button2.Name" xml:space="preserve">
     <value>Button2</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
-  <data name="&gt;&gt;BtnProduccion.Parent" xml:space="preserve">
-    <value>PnlMenu</value>
-  </data>
   <data name="&gt;&gt;Panel2.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="&gt;&gt;PicLogo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;PnlMenu.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -239,18 +243,20 @@
   <data name="&gt;&gt;Panel8.Parent" xml:space="preserve">
     <value>PnlMenu</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Panel2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
+  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
   <data name="&gt;&gt;Panel4.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;PicLogo.Parent" xml:space="preserve">
     <value>PnlMenu</value>
   </data>
-  <data name="&gt;&gt;Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Panel5.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="BtnProduccion.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 201</value>
@@ -260,6 +266,9 @@
   </data>
   <data name="Panel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 293</value>
+  </data>
+  <data name="Button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 385</value>
   </data>
   <data name="&gt;&gt;Button3.Name" xml:space="preserve">
     <value>Button3</value>
@@ -273,11 +282,14 @@
   <data name="BtnProductos.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
+  <data name="&gt;&gt;Button1.Parent" xml:space="preserve">
+    <value>PnlMenu</value>
+  </data>
   <data name="BtnProduccion.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11.25pt</value>
   </data>
-  <data name="&gt;&gt;Panel3.Parent" xml:space="preserve">
-    <value>PnlMenu</value>
+  <data name="&gt;&gt;PnlMenu.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="Panel4.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -285,8 +297,11 @@
   <data name="PicLogo.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 135</value>
   </data>
-  <data name="BtnProductos.Text" xml:space="preserve">
-    <value>Productos</value>
+  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 138</value>
+  </data>
+  <data name="BtnProduccion.Text" xml:space="preserve">
+    <value> Producción</value>
   </data>
   <data name="&gt;&gt;Panel3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -300,14 +315,11 @@
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MenuAdministrativo</value>
   </data>
-  <data name="Button3.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
   <data name="BtnSucursales.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11.25pt</value>
   </data>
-  <data name="Panel5.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="Button3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;BtnSucursales.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -322,7 +334,7 @@
     <value>BtnProductos</value>
   </data>
   <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="Panel5.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 339</value>
@@ -333,20 +345,14 @@
   <data name="BtnProductos.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11.25pt</value>
   </data>
-  <data name="PnlMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
   <data name="BtnSucursales.Size" type="System.Drawing.Size, System.Drawing">
     <value>190, 40</value>
   </data>
   <data name="&gt;&gt;Panel8.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="BtnSucursales.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 339</value>
-  </data>
-  <data name="Button1.Text" xml:space="preserve">
-    <value>Lotes</value>
   </data>
   <data name="BtnSucursales.Text" xml:space="preserve">
     <value>Estadísticas</value>
@@ -357,17 +363,17 @@
   <data name="Button3.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="BtnProductos.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>5, 40</value>
   </data>
+  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;Panel5.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="BtnProduccion.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
   </data>
   <data name="BtnProductos.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -376,19 +382,19 @@
     <value>Segoe UI, 11.25pt</value>
   </data>
   <data name="&gt;&gt;Panel3.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
-  <data name="BtnSucursales.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="&gt;&gt;BtnProduccion.Parent" xml:space="preserve">
+    <value>PnlMenu</value>
   </data>
-  <data name="&gt;&gt;Button1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;PnlMenu.Name" xml:space="preserve">
     <value>PnlMenu</value>
   </data>
   <data name="&gt;&gt;BtnSucursales.Parent" xml:space="preserve">
     <value>PnlMenu</value>
   </data>
-  <data name="&gt;&gt;BtnProductos.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;PnlMenu.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="Panel4.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 201</value>
@@ -408,11 +414,11 @@
   <data name="&gt;&gt;Panel8.Name" xml:space="preserve">
     <value>Panel8</value>
   </data>
-  <data name="Button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 385</value>
+  <data name="&gt;&gt;PicLogo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Button1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="Panel3.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -420,8 +426,8 @@
   <data name="Panel3.Size" type="System.Drawing.Size, System.Drawing">
     <value>5, 40</value>
   </data>
-  <data name="&gt;&gt;Panel5.Name" xml:space="preserve">
-    <value>Panel5</value>
+  <data name="Button1.Text" xml:space="preserve">
+    <value>Lotes</value>
   </data>
   <data name="Button3.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 293</value>
@@ -438,29 +444,35 @@
   <data name="PnlMenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 610</value>
   </data>
+  <data name="Panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
   <data name="Button2.Text" xml:space="preserve">
     <value>Ajustes</value>
   </data>
   <data name="&gt;&gt;Button2.Parent" xml:space="preserve">
     <value>PnlMenu</value>
   </data>
-  <data name="&gt;&gt;PnlMenu.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;BtnProductos.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="Button3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 11.25pt</value>
+  <data name="BtnProductos.Text" xml:space="preserve">
+    <value>Productos</value>
   </data>
   <data name="Button2.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;BtnProduccion.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="PnlMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="Button1.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 155</value>
   </data>
   <data name="BtnProductos.Size" type="System.Drawing.Size, System.Drawing">
     <value>190, 40</value>
+  </data>
+  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
+    <value>Label1</value>
   </data>
   <data name="PicLogo.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -474,8 +486,11 @@
   <data name="&gt;&gt;Button2.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;Panel1.Parent" xml:space="preserve">
-    <value>PnlMenu</value>
+  <data name="BtnProduccion.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="Panel8.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 385</value>
@@ -492,17 +507,20 @@
   <data name="PnlMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
   </data>
+  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
+    <value>PnlMenu</value>
+  </data>
   <data name="Button3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="Panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="&gt;&gt;Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="PnlMenu.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="BtnProduccion.Text" xml:space="preserve">
-    <value> Producción</value>
+  <data name="&gt;&gt;Panel5.Name" xml:space="preserve">
+    <value>Panel5</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

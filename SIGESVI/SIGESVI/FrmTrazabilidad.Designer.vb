@@ -41,15 +41,15 @@ Partial Class FrmTrazabilidad
         Me.Label5 = New System.Windows.Forms.Label
         Me.Panel2 = New System.Windows.Forms.Panel
         Me.BtnConfigurarAlarma = New System.Windows.Forms.Button
+        Me.BtnVolver = New System.Windows.Forms.PictureBox
         Me.LblProduccion = New System.Windows.Forms.Label
         Me.DgvEtapasRecorridas = New System.Windows.Forms.DataGridView
         Me.Label3 = New System.Windows.Forms.Label
         Me.BtnEditar = New System.Windows.Forms.Button
-        Me.BtnVolver = New System.Windows.Forms.PictureBox
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        CType(Me.DgvEtapasRecorridas, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BtnVolver, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DgvEtapasRecorridas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -207,6 +207,19 @@ Partial Class FrmTrazabilidad
         Me.BtnConfigurarAlarma.Name = "BtnConfigurarAlarma"
         Me.BtnConfigurarAlarma.UseVisualStyleBackColor = False
         '
+        'BtnVolver
+        '
+        Me.BtnVolver.AccessibleDescription = Nothing
+        Me.BtnVolver.AccessibleName = Nothing
+        resources.ApplyResources(Me.BtnVolver, "BtnVolver")
+        Me.BtnVolver.BackgroundImage = Nothing
+        Me.BtnVolver.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnVolver.Font = Nothing
+        Me.BtnVolver.Image = Global.SIGESVI.My.Resources.Resources.icons8_go_back_50__1_
+        Me.BtnVolver.ImageLocation = Nothing
+        Me.BtnVolver.Name = "BtnVolver"
+        Me.BtnVolver.TabStop = False
+        '
         'LblProduccion
         '
         Me.LblProduccion.AccessibleDescription = Nothing
@@ -288,19 +301,6 @@ Partial Class FrmTrazabilidad
         Me.BtnEditar.Name = "BtnEditar"
         Me.BtnEditar.UseVisualStyleBackColor = False
         '
-        'BtnVolver
-        '
-        Me.BtnVolver.AccessibleDescription = Nothing
-        Me.BtnVolver.AccessibleName = Nothing
-        resources.ApplyResources(Me.BtnVolver, "BtnVolver")
-        Me.BtnVolver.BackgroundImage = Nothing
-        Me.BtnVolver.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnVolver.Font = Nothing
-        Me.BtnVolver.Image = Global.SIGESVI.My.Resources.Resources.icons8_go_back_50__1_
-        Me.BtnVolver.ImageLocation = Nothing
-        Me.BtnVolver.Name = "BtnVolver"
-        Me.BtnVolver.TabStop = False
-        '
         'FrmTrazabilidad
         '
         Me.AccessibleDescription = Nothing
@@ -318,8 +318,8 @@ Partial Class FrmTrazabilidad
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        CType(Me.DgvEtapasRecorridas, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BtnVolver, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DgvEtapasRecorridas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

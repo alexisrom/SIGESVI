@@ -31,11 +31,12 @@ Partial Class MenuCliente
         Me.RadioButton1 = New System.Windows.Forms.RadioButton
         Me.BtnQuitarProducto = New System.Windows.Forms.Button
         Me.LblCantidadProductos = New System.Windows.Forms.Label
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.CheckBox3 = New System.Windows.Forms.CheckBox
         Me.CheckBox2 = New System.Windows.Forms.CheckBox
         Me.CheckBox1 = New System.Windows.Forms.CheckBox
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.PicLogo = New System.Windows.Forms.PictureBox
+        Me.Label2 = New System.Windows.Forms.Label
         Me.PnlMenu.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PicLogo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -48,6 +49,7 @@ Partial Class MenuCliente
         resources.ApplyResources(Me.PnlMenu, "PnlMenu")
         Me.PnlMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(151, Byte), Integer))
         Me.PnlMenu.BackgroundImage = Nothing
+        Me.PnlMenu.Controls.Add(Me.Label2)
         Me.PnlMenu.Controls.Add(Me.Label1)
         Me.PnlMenu.Controls.Add(Me.BtnCompetarReserva)
         Me.PnlMenu.Controls.Add(Me.LstProductos)
@@ -139,6 +141,18 @@ Partial Class MenuCliente
         Me.LblCantidadProductos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(227, Byte), Integer))
         Me.LblCantidadProductos.Name = "LblCantidadProductos"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.AccessibleDescription = Nothing
+        Me.PictureBox1.AccessibleName = Nothing
+        resources.ApplyResources(Me.PictureBox1, "PictureBox1")
+        Me.PictureBox1.BackgroundImage = Nothing
+        Me.PictureBox1.Font = Nothing
+        Me.PictureBox1.Image = Global.SIGESVI.My.Resources.Resources.shopping_cart
+        Me.PictureBox1.ImageLocation = Nothing
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.TabStop = False
+        '
         'CheckBox3
         '
         Me.CheckBox3.AccessibleDescription = Nothing
@@ -169,18 +183,6 @@ Partial Class MenuCliente
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.AccessibleDescription = Nothing
-        Me.PictureBox1.AccessibleName = Nothing
-        resources.ApplyResources(Me.PictureBox1, "PictureBox1")
-        Me.PictureBox1.BackgroundImage = Nothing
-        Me.PictureBox1.Font = Nothing
-        Me.PictureBox1.Image = Global.SIGESVI.My.Resources.Resources.shopping_cart
-        Me.PictureBox1.ImageLocation = Nothing
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.TabStop = False
-        '
         'PicLogo
         '
         Me.PicLogo.AccessibleDescription = Nothing
@@ -193,6 +195,15 @@ Partial Class MenuCliente
         Me.PicLogo.ImageLocation = Nothing
         Me.PicLogo.Name = "PicLogo"
         Me.PicLogo.TabStop = False
+        '
+        'Label2
+        '
+        Me.Label2.AccessibleDescription = Nothing
+        Me.Label2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label2, "Label2")
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Name = "Label2"
         '
         'MenuCliente
         '
@@ -224,5 +235,6 @@ Partial Class MenuCliente
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 
 End Class

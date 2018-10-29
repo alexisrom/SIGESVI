@@ -44,7 +44,7 @@ Partial Class FrmEstadisticas
         Me.PicReservas.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(167, Byte), Integer))
         Me.PicReservas.BackgroundImage = Nothing
         Me.PicReservas.Font = Nothing
-        Me.PicReservas.Image = Global.SIGESVI.My.Resources.Resources.cepa
+        Me.PicReservas.Image = Global.SIGESVI.My.Resources.Resources.online_booking
         Me.PicReservas.ImageLocation = Nothing
         Me.PicReservas.Name = "PicReservas"
         Me.PicReservas.TabStop = False

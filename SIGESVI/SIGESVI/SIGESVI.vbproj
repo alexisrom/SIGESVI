@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4F5920B9-9587-4AF7-8384-45D1BE1FEF4F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -17,6 +17,21 @@
     <OptionCompare>Binary</OptionCompare>
     <OptionStrict>Off</OptionStrict>
     <OptionInfer>On</OptionInfer>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -355,9 +370,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAjustes.en.resx">
       <DependentUpon>FrmAjustes.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAjustes.es.resx">
       <DependentUpon>FrmAjustes.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAjustes.resx">
       <DependentUpon>FrmAjustes.vb</DependentUpon>
@@ -365,9 +382,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAlarmas.en.resx">
       <DependentUpon>FrmAlarmas.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAlarmas.es.resx">
       <DependentUpon>FrmAlarmas.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAlarmas.resx">
       <DependentUpon>FrmAlarmas.vb</DependentUpon>
@@ -375,6 +394,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCatalogo.en.resx">
       <DependentUpon>FrmCatalogo.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCatalogo.resx">
       <DependentUpon>FrmCatalogo.vb</DependentUpon>
@@ -382,9 +402,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmClientes.en.resx">
       <DependentUpon>FrmClientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmClientes.es.resx">
       <DependentUpon>FrmClientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmClientes.resx">
       <DependentUpon>FrmClientes.vb</DependentUpon>
@@ -392,9 +414,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCompras.en.resx">
       <DependentUpon>FrmCompras.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCompras.es.resx">
       <DependentUpon>FrmCompras.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCompras.resx">
       <DependentUpon>FrmCompras.vb</DependentUpon>
@@ -402,6 +426,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEstadisticas.en.resx">
       <DependentUpon>FrmEstadisticas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEstadisticas.es.resx">
+      <DependentUpon>FrmEstadisticas.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEstadisticas.resx">
       <DependentUpon>FrmEstadisticas.vb</DependentUpon>
@@ -409,15 +438,19 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEtapa.en.resx">
       <DependentUpon>FrmEtapa.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEtapa.es.resx">
       <DependentUpon>FrmEtapa.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFuncionarios.en.resx">
       <DependentUpon>FrmFuncionarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFuncionarios.es.resx">
       <DependentUpon>FrmFuncionarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFuncionarios.resx">
       <DependentUpon>FrmFuncionarios.vb</DependentUpon>
@@ -425,15 +458,19 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInicio.en.resx">
       <DependentUpon>FrmInicio.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInicio.es.resx">
       <DependentUpon>FrmInicio.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLenguaje.resx">
       <DependentUpon>FrmLenguaje.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoProduccion.en.resx">
       <DependentUpon>FrmListadoProduccion.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoProduccion.resx">
       <DependentUpon>FrmListadoProduccion.vb</DependentUpon>
@@ -441,15 +478,19 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoProductos.en.resx">
       <DependentUpon>FrmListadoProductos.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoProductos.es.resx">
       <DependentUpon>FrmListadoProductos.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.en.resx">
       <DependentUpon>FrmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.es.resx">
       <DependentUpon>FrmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.vb</DependentUpon>
@@ -457,9 +498,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLote.en.resx">
       <DependentUpon>FrmLote.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLote.es.resx">
       <DependentUpon>FrmLote.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLote.resx">
       <DependentUpon>FrmLote.vb</DependentUpon>
@@ -467,9 +510,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMateriaPrima.en.resx">
       <DependentUpon>FrmMateriaPrima.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMateriaPrima.es.resx">
       <DependentUpon>FrmMateriaPrima.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMateriaPrima.resx">
       <DependentUpon>FrmMateriaPrima.vb</DependentUpon>
@@ -481,9 +526,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProduccion.en.resx">
       <DependentUpon>FrmProduccion.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProduccion.es.resx">
       <DependentUpon>FrmProduccion.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProduccion.resx">
       <DependentUpon>FrmProduccion.vb</DependentUpon>
@@ -491,9 +538,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProductoFinal.en.resx">
       <DependentUpon>FrmProductoFinal.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProductoFinal.es.resx">
       <DependentUpon>FrmProductoFinal.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProductoFinal.resx">
       <DependentUpon>FrmProductoFinal.vb</DependentUpon>
@@ -505,9 +554,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProductoIntermedio.en.resx">
       <DependentUpon>FrmProductoIntermedio.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProductoIntermedio.es.resx">
       <DependentUpon>FrmProductoIntermedio.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProductoIntermedio.resx">
       <DependentUpon>FrmProductoIntermedio.vb</DependentUpon>
@@ -515,6 +566,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReservas.en.resx">
       <DependentUpon>FrmReservas.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReservas.resx">
       <DependentUpon>FrmReservas.vb</DependentUpon>
@@ -522,6 +574,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSeleccionarLotes.en.resx">
       <DependentUpon>FrmSeleccionarLotes.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSeleccionarLotes.resx">
       <DependentUpon>FrmSeleccionarLotes.vb</DependentUpon>
@@ -529,9 +582,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSucursales.en.resx">
       <DependentUpon>FrmSucursales.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSucursales.es.resx">
       <DependentUpon>FrmSucursales.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSucursales.resx">
       <DependentUpon>FrmSucursales.vb</DependentUpon>
@@ -539,9 +594,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTipoCepa.en.resx">
       <DependentUpon>FrmTipoCepa.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTipoCepa.es.resx">
       <DependentUpon>FrmTipoCepa.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTipoCepa.resx">
       <DependentUpon>FrmTipoCepa.vb</DependentUpon>
@@ -549,6 +606,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTransacciones.en.resx">
       <DependentUpon>FrmTransacciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTransacciones.resx">
       <DependentUpon>FrmTransacciones.vb</DependentUpon>
@@ -556,9 +614,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTraslados.en.resx">
       <DependentUpon>FrmTraslados.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTraslados.es.resx">
       <DependentUpon>FrmTraslados.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTraslados.resx">
       <DependentUpon>FrmTraslados.vb</DependentUpon>
@@ -566,9 +626,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTrazabilidad.en.resx">
       <DependentUpon>FrmTrazabilidad.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTrazabilidad.es.resx">
       <DependentUpon>FrmTrazabilidad.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTrazabilidad.resx">
       <DependentUpon>FrmTrazabilidad.vb</DependentUpon>
@@ -576,9 +638,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVehiculos.en.resx">
       <DependentUpon>FrmVehiculos.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVehiculos.es.resx">
       <DependentUpon>FrmVehiculos.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVehiculos.resx">
       <DependentUpon>FrmVehiculos.vb</DependentUpon>
@@ -586,9 +650,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVentas.en.resx">
       <DependentUpon>FrmVentas.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVentas.es.resx">
       <DependentUpon>FrmVentas.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVentas.resx">
       <DependentUpon>FrmVentas.vb</DependentUpon>
@@ -604,6 +670,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuAdministrativo.en.resx">
       <DependentUpon>MenuAdministrativo.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuAdministrativo.resx">
       <DependentUpon>MenuAdministrativo.vb</DependentUpon>
@@ -611,6 +678,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuAsesorProfesional.en.resx">
       <DependentUpon>MenuAsesorProfesional.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuAsesorProfesional.resx">
       <DependentUpon>MenuAsesorProfesional.vb</DependentUpon>
@@ -618,6 +686,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuCliente.en.resx">
       <DependentUpon>MenuCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuCliente.resx">
       <DependentUpon>MenuCliente.vb</DependentUpon>
@@ -625,6 +694,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuGerenteGeneral.en.resx">
       <DependentUpon>MenuGerenteGeneral.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuGerenteGeneral.es-US.resx">
+      <DependentUpon>MenuGerenteGeneral.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuGerenteGeneral.resx">
       <DependentUpon>MenuGerenteGeneral.vb</DependentUpon>
@@ -632,6 +706,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuGerenteSucursal.en.resx">
       <DependentUpon>MenuGerenteSucursal.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuGerenteSucursal.resx">
       <DependentUpon>MenuGerenteSucursal.vb</DependentUpon>
@@ -769,6 +844,37 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\exclamancion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online-booking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

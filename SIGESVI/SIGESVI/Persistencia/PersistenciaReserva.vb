@@ -67,6 +67,8 @@ Public Class PersistenciaReserva
         Return reservas
     End Function
 
+
+
     Private Function ListarLineas(ByVal id_reserva As Integer) As List(Of LineaReserva)
         Dim lineas As New List(Of LineaReserva)
 
@@ -95,6 +97,37 @@ Public Class PersistenciaReserva
             Throw ex
         End Try
         Return lineas
+    End Function
+
+    Function Listar(ByVal s As Sucursal) As List(Of Reserva)
+        Dim reservas As New List(Of Reserva)
+
+        Dim consulta = "SELECT * FROM reserva r, cliente c WHERE r.id_cliente = c.id_cliente AND r.activo = 't' AND id_sucursal=" & s.ID
+        Try
+            Dim cmd As New OdbcCommand
+            cmd.Connection = Conexion.Abrir
+            cmd.CommandText = consulta
+            Dim res = cmd.ExecuteReader
+
+            If res.HasRows Then
+
+                While res.Read
+                    Dim r As New Reserva
+                    r.ID = res("id_reserva")
+                    r.FechaHora = res("fecha_hora")
+                    Dim cliente As New Cliente
+                    cliente.Nombre = res("nombre")
+                    r.Cliente = cliente
+                    r.Lineas = ListarLineas(r.ID)
+                    reservas.Add(r)
+                End While
+
+            End If
+
+        Catch ex As Exception
+            Throw ex
+        End Try
+        Return reservas
     End Function
 
 End Class

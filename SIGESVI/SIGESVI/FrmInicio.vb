@@ -10,7 +10,7 @@
     End Sub
 
     Private Sub FrmInicio_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        WebBrowser2.Navigate("https://www.google.com.uy/?gws_rd=ssl#q=clima+" & ubicacion)
+        'WebBrowser2.Navigate("https://www.google.com.uy/?gws_rd=ssl#q=clima+" & ubicacion)
         MostrarNotificaciones()
         LblCargo.Text = usuarioLogueado.Rol
 

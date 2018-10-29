@@ -198,6 +198,9 @@
   <data name="&gt;&gt;Panel3.Parent" xml:space="preserve">
     <value>PnlMenu</value>
   </data>
+  <data name="PnlMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
   <data name="&gt;&gt;PicLogo.Name" xml:space="preserve">
     <value>PicLogo</value>
   </data>
@@ -246,8 +249,8 @@
   <data name="&gt;&gt;Panel3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;Panel8.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="BtnFuncionarios.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;PicLogo.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -282,8 +285,8 @@
   <data name="Panel2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;Panel3.Name" xml:space="preserve">
-    <value>Panel3</value>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>S.I.GES.VI</value>
   </data>
   <data name="&gt;&gt;Panel4.Name" xml:space="preserve">
     <value>Panel4</value>
@@ -315,8 +318,8 @@
   <data name="Panel5.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="Label1.Text" xml:space="preserve">
-    <value>S.I.GES.VI</value>
+  <data name="&gt;&gt;Panel3.Name" xml:space="preserve">
+    <value>Panel3</value>
   </data>
   <data name="&gt;&gt;Panel6.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -357,9 +360,6 @@
   <data name="BtnEstadisticas.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
   </data>
-  <data name="BtnFuncionarios.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
   <data name="&gt;&gt;BtnClientes.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
@@ -387,8 +387,8 @@
   <data name="&gt;&gt;BtnClientes.Parent" xml:space="preserve">
     <value>PnlMenu</value>
   </data>
-  <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;Panel8.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="BtnSucursales.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -435,9 +435,6 @@
   <data name="Panel7.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 317</value>
   </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 610</value>
-  </data>
   <data name="PicLogo.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 135</value>
   </data>
@@ -473,9 +470,6 @@
   </data>
   <data name="&gt;&gt;Panel3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PicLogo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
   </data>
   <data name="&gt;&gt;Panel2.Parent" xml:space="preserve">
     <value>PnlMenu</value>
@@ -513,8 +507,8 @@
   <data name="BtnProductos.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11.25pt</value>
   </data>
-  <data name="BtnClientes.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11.25pt</value>
+  <data name="BtnEstadisticas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 40</value>
   </data>
   <data name="&gt;&gt;Panel1.Parent" xml:space="preserve">
     <value>PnlMenu</value>
@@ -612,8 +606,11 @@
   <data name="&gt;&gt;BtnSucursales.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="BtnEstadisticas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 40</value>
+  <data name="BtnClientes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="BtnClientes.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
   </data>
   <data name="BtnTransacciones.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -630,6 +627,9 @@
   <data name="&gt;&gt;Panel8.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
   <data name="BtnClientes.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
@@ -639,8 +639,8 @@
   <data name="BtnSucursales.Size" type="System.Drawing.Size, System.Drawing">
     <value>190, 40</value>
   </data>
-  <data name="BtnClientes.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
+  <data name="PicLogo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="&gt;&gt;BtnEstadisticas.Parent" xml:space="preserve">
     <value>PnlMenu</value>
@@ -663,13 +663,13 @@
   <data name="&gt;&gt;PnlMenu.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="PnlMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 610</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>English</value>
+    <value>Español (Estados Unidos)</value>
   </metadata>
 </root>

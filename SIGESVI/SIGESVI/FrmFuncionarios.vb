@@ -11,10 +11,22 @@
         LimpiarControles(Me)
 
         TxtID_NUM_REQ.Enabled = True
-        DgvFuncionarios.DataSource = persistencia.Listar()
-        CboSucursales_REQ.DataSource = New PersistenciaSucursal().Listar()
-        CboSucursales_REQ.ValueMember = "id"
-        CboSucursales_REQ.DisplayMember = "nombre"
+        Try
+
+            If CType(usuarioLogueado, Funcionario).EsGerenteGeneral Then
+                DgvFuncionarios.DataSource = persistencia.Listar()
+            Else
+                DgvFuncionarios.DataSource = persistencia.ListarPorSucursal(CType(usuarioLogueado, Funcionario).Sucursal.ID)
+            End If
+
+
+            CboSucursales_REQ.DataSource = New PersistenciaSucursal().Listar()
+            CboSucursales_REQ.ValueMember = "id"
+            CboSucursales_REQ.DisplayMember = "nombre"
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+        
         CboCargo_REQ.SelectedIndex = 0
     End Sub
 
@@ -61,6 +73,7 @@
             f.Password = TxtPass_REQ.Text
             f.Rol = CboCargo_REQ.SelectedItem.ToString
             f.Sucursal = CType(CboSucursales_REQ.SelectedItem, Sucursal)
+            f.Telefono = TxtTelefono_NUM_REQ.Text
             Guardar(f)
         End If
 

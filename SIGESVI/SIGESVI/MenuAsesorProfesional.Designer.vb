@@ -29,6 +29,7 @@ Partial Class MenuAsesorProfesional
         Me.BtnProductos = New System.Windows.Forms.Button
         Me.BtnProduccion = New System.Windows.Forms.Button
         Me.PicLogo = New System.Windows.Forms.PictureBox
+        Me.Label1 = New System.Windows.Forms.Label
         Me.PnlMenu.SuspendLayout()
         CType(Me.PicLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -40,6 +41,7 @@ Partial Class MenuAsesorProfesional
         resources.ApplyResources(Me.PnlMenu, "PnlMenu")
         Me.PnlMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(151, Byte), Integer))
         Me.PnlMenu.BackgroundImage = Nothing
+        Me.PnlMenu.Controls.Add(Me.Label1)
         Me.PnlMenu.Controls.Add(Me.Panel3)
         Me.PnlMenu.Controls.Add(Me.Panel4)
         Me.PnlMenu.Controls.Add(Me.BtnProductos)
@@ -113,6 +115,15 @@ Partial Class MenuAsesorProfesional
         Me.PicLogo.Name = "PicLogo"
         Me.PicLogo.TabStop = False
         '
+        'Label1
+        '
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Name = "Label1"
+        '
         'MenuAsesorProfesional
         '
         Me.AccessibleDescription = Nothing
@@ -124,6 +135,7 @@ Partial Class MenuAsesorProfesional
         Me.Font = Nothing
         Me.Name = "MenuAsesorProfesional"
         Me.PnlMenu.ResumeLayout(False)
+        Me.PnlMenu.PerformLayout()
         CType(Me.PicLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -134,5 +146,6 @@ Partial Class MenuAsesorProfesional
     Friend WithEvents BtnProductos As System.Windows.Forms.Button
     Friend WithEvents BtnProduccion As System.Windows.Forms.Button
     Friend WithEvents PicLogo As System.Windows.Forms.PictureBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 
 End Class

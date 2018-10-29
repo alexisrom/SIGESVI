@@ -156,7 +156,6 @@ Partial Class FrmReservas
         Me.Name = "FrmReservas"
         CType(Me.DgvReservas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label

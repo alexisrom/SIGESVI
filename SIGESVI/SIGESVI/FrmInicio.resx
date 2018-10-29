@@ -232,7 +232,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;PnlRecordatorios.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="LbCerrarSesion.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11.25pt</value>
@@ -328,7 +328,7 @@
     <value>Top</value>
   </data>
   <data name="&gt;&gt;LbCerrarSesion.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="Panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1317, 636</value>
@@ -349,7 +349,7 @@
     <value>1</value>
   </data>
   <data name="&gt;&gt;pbclima.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>6</value>
   </data>
   <data name="Labeltemp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -460,7 +460,7 @@
     <value>System.Windows.Forms.WebBrowser, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Labelhumedad.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <data name="PnlAlarmas.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -535,7 +535,7 @@
     <value>1</value>
   </data>
   <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>9</value>
   </data>
   <data name="LbCerrarSesion.Text" xml:space="preserve">
     <value>Cerrar Sesión</value>
@@ -610,7 +610,7 @@
     <value>True</value>
   </data>
   <data name="&gt;&gt;LblCargo.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>8</value>
   </data>
   <data name="&gt;&gt;PictureBox2.Name" xml:space="preserve">
     <value>PictureBox2</value>
@@ -658,7 +658,7 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="&gt;&gt;Labeltemp.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="Labelhumedad.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 21</value>
@@ -667,7 +667,7 @@
     <value>1317, 636</value>
   </data>
   <data name="&gt;&gt;LblHora.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>10</value>
   </data>
   <data name="&gt;&gt;WebBrowser2.Parent" xml:space="preserve">
     <value>Panel1</value>
@@ -685,7 +685,7 @@
     <value>Panel2</value>
   </data>
   <data name="&gt;&gt;PnlAlarmas.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
   </data>
   <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>1179, 32</value>

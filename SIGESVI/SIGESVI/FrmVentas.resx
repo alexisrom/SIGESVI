@@ -128,9 +128,6 @@
   <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>199, 46</value>
   </data>
-  <data name="BtnSeleccionarLotes.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 6.75pt</value>
-  </data>
   <data name="&gt;&gt;Panel2.Name" xml:space="preserve">
     <value>Panel2</value>
   </data>
@@ -152,9 +149,6 @@
   <data name="&gt;&gt;LstLotes.Parent" xml:space="preserve">
     <value>Panel1</value>
   </data>
-  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="Button4.Text" xml:space="preserve">
     <value>ELIMINAR COMPRA</value>
   </data>
@@ -171,11 +165,14 @@
   <data name="Label4.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
   </data>
+  <data name="BtnSeleccionarLotes.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <data name="&gt;&gt;TxtCosto_NUM_REQ.Name" xml:space="preserve">
     <value>TxtCosto_NUM_REQ</value>
   </data>
-  <data name="BtnSeleccionarLotes.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="DtpFecha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 160</value>
   </data>
   <data name="&gt;&gt;Panel2.Parent" xml:space="preserve">
     <value>$this</value>
@@ -216,6 +213,9 @@
   <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
   </data>
+  <data name="&gt;&gt;BtnSeleccionarLotes.Name" xml:space="preserve">
+    <value>BtnSeleccionarLotes</value>
+  </data>
   <data name="Label1.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
@@ -225,20 +225,17 @@
   <data name="BtnSeleccionarLotes.Text" xml:space="preserve">
     <value>SELECCIONAR LOTES</value>
   </data>
+  <data name="BtnSeleccionarLotes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 211</value>
+  </data>
   <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 30</value>
   </data>
   <data name="DtpFecha.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
   </data>
-  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>FrmVentas</value>
-  </data>
-  <data name="DtpFecha.Location" type="System.Drawing.Point, System.Drawing">
-    <value>149, 160</value>
   </data>
   <data name="BtnNuevo.Location" type="System.Drawing.Point, System.Drawing">
     <value>149, 364</value>
@@ -276,8 +273,8 @@
   <data name="Panel2.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;Button4.Parent" xml:space="preserve">
-    <value>Panel2</value>
+  <data name="BtnSeleccionarLotes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 23</value>
   </data>
   <data name="&gt;&gt;LstLotes.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -290,9 +287,6 @@
   </data>
   <data name="&gt;&gt;DtpFecha.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
   </data>
   <data name="Button4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 6.75pt</value>
@@ -315,6 +309,9 @@
   <data name="&gt;&gt;Label4.Parent" xml:space="preserve">
     <value>Panel1</value>
   </data>
+  <data name="LstLotes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 254</value>
+  </data>
   <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -323,6 +320,9 @@
   </data>
   <data name="BtnNuevo.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Button4.Name" xml:space="preserve">
     <value>Button4</value>
@@ -344,6 +344,9 @@
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FrmVentas</value>
+  </data>
+  <data name="DgvVentas.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>25</value>
   </data>
   <data name="BtnAgregarEtapa.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -369,9 +372,6 @@
   <data name="Panel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>534, 436</value>
   </data>
-  <data name="Button4.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
   <data name="DtpFecha.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11.25pt</value>
   </data>
@@ -380,9 +380,6 @@
   </data>
   <data name="&gt;&gt;Panel2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>437, 436</value>
   </data>
   <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
     <value>Panel1</value>
@@ -394,13 +391,19 @@
     <value>Segoe UI, 11pt</value>
   </data>
   <data name="&gt;&gt;Button4.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="BtnAgregarEtapa.Text" xml:space="preserve">
+    <value>EDITAR COMPRA</value>
   </data>
-  <data name="LstLotes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>149, 254</value>
+  <data name="&gt;&gt;BtnNuevo.Parent" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="BtnSeleccionarLotes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 6.75pt</value>
+  </data>
+  <data name="Panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>437, 436</value>
   </data>
   <data name="&gt;&gt;Label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -411,14 +414,11 @@
   <data name="Label2.Text" xml:space="preserve">
     <value>Mantenimiento de Compras</value>
   </data>
-  <data name="&gt;&gt;BtnSeleccionarLotes.Name" xml:space="preserve">
-    <value>BtnSeleccionarLotes</value>
+  <data name="Button4.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
   </data>
   <data name="BtnAgregarEtapa.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 6.75pt</value>
-  </data>
-  <data name="BtnAgregarEtapa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 370</value>
   </data>
   <data name="&gt;&gt;BtnNuevo.Name" xml:space="preserve">
     <value>BtnNuevo</value>
@@ -431,6 +431,9 @@
   </data>
   <data name="BtnSeleccionarLotes.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
+  </data>
+  <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="DgvVentas.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 82</value>
@@ -447,20 +450,20 @@
   <data name="&gt;&gt;Label2.Name" xml:space="preserve">
     <value>Label2</value>
   </data>
-  <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="LstLotes.Size" type="System.Drawing.Size, System.Drawing">
     <value>237, 76</value>
   </data>
   <data name="&gt;&gt;DgvVentas.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>0</value>
   </data>
   <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>203, 38</value>
   </data>
   <data name="&gt;&gt;BtnAgregarEtapa.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 20</value>
@@ -471,8 +474,8 @@
   <data name="TxtCosto_NUM_REQ.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="BtnSeleccionarLotes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>149, 211</value>
+  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
   </data>
   <data name="LstLotes.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
@@ -480,20 +483,20 @@
   <data name="&gt;&gt;Label4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="BtnAgregarEtapa.Text" xml:space="preserve">
-    <value>EDITAR COMPRA</value>
+  <data name="&gt;&gt;Button4.Parent" xml:space="preserve">
+    <value>Panel2</value>
   </data>
   <data name="Label3.Text" xml:space="preserve">
     <value>VENTAS</value>
   </data>
-  <data name="BtnSeleccionarLotes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 23</value>
+  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="Button4.Location" type="System.Drawing.Point, System.Drawing">
     <value>332, 368</value>
   </data>
-  <data name="&gt;&gt;BtnNuevo.Parent" xml:space="preserve">
-    <value>Panel1</value>
+  <data name="BtnAgregarEtapa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 370</value>
   </data>
   <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>

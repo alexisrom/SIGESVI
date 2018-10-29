@@ -9,7 +9,7 @@
 
     Private Sub ControlesPorDefecto()
         LimpiarControles(Me)
-        DgvEtapas.DataSource = persistencia.Listar
+        DgvVehiculos.DataSource = persistencia.Listar
     End Sub
 
     Private Sub BtnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnNuevo.Click

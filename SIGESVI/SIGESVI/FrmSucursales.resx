@@ -126,9 +126,6 @@
   <data name="&gt;&gt;BtnCancelar.Name" xml:space="preserve">
     <value>BtnCancelar</value>
   </data>
-  <data name="&gt;&gt;BtnEliminar.Parent" xml:space="preserve">
-    <value>Panel2</value>
-  </data>
   <data name="&gt;&gt;CbProveedor.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -159,7 +156,7 @@
     <value>8</value>
   </data>
   <data name="&gt;&gt;DgvSucursales.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
     <value>14</value>
@@ -219,9 +216,6 @@
   <data name="&gt;&gt;BtnCancelar.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;TxtDireccion_REQ.Parent" xml:space="preserve">
-    <value>Panel1</value>
-  </data>
   <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 20</value>
   </data>
@@ -261,8 +255,14 @@
   <data name="BtnAgregarTelefono.Location" type="System.Drawing.Point, System.Drawing">
     <value>160, 268</value>
   </data>
+  <data name="DgvSucursales.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;TxtNombre_REQ.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
   <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;Label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -333,14 +333,17 @@
   <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
   </data>
+  <data name="&gt;&gt;Label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="Panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>437, 495</value>
   </data>
-  <data name="BtnAgregarTelefono.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 23</value>
+  <data name="&gt;&gt;DgvFuncionarios.Name" xml:space="preserve">
+    <value>DgvFuncionarios</value>
   </data>
   <data name="BtnGuardar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -375,14 +378,11 @@
   <data name="DgvSucursales.Size" type="System.Drawing.Size, System.Drawing">
     <value>739, 341</value>
   </data>
-  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
   <data name="CbProveedor.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;Label4.Name" xml:space="preserve">
-    <value>Label4</value>
+  <data name="&gt;&gt;DgvFuncionarios.Parent" xml:space="preserve">
+    <value>Panel2</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -450,17 +450,20 @@
   <data name="Panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="&gt;&gt;BtnEliminarTelefono.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="BtnEliminar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 6.75pt</value>
   </data>
   <data name="TxtTelefono_NUM.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
   </data>
+  <data name="&gt;&gt;DgvFuncionarios.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>57, 160</value>
   </data>
-  <data name="BtnEliminar.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 6.75pt</value>
+  <data name="BtnAgregarTelefono.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 23</value>
   </data>
   <data name="&gt;&gt;BtnGuardar.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -573,11 +576,14 @@
   <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 20</value>
+  </data>
   <data name="&gt;&gt;Label5.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
+  <data name="&gt;&gt;Label4.Name" xml:space="preserve">
+    <value>Label4</value>
   </data>
   <data name="TxtID.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
@@ -625,13 +631,16 @@
     <value>28</value>
   </data>
   <data name="&gt;&gt;BtnEliminar.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;Label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="BtnEliminarTelefono.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 6.75pt</value>
+  </data>
+  <data name="&gt;&gt;TxtDireccion_REQ.Parent" xml:space="preserve">
+    <value>Panel1</value>
   </data>
   <data name="&gt;&gt;BtnEditar.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;Panel2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -648,11 +657,17 @@
   <data name="&gt;&gt;BtnCancelar.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;DgvFuncionarios.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;BtnEliminarTelefono.Parent" xml:space="preserve">
     <value>Panel1</value>
   </data>
   <data name="TxtDepartamento_REQ.Location" type="System.Drawing.Point, System.Drawing">
     <value>160, 196</value>
+  </data>
+  <data name="DgvFuncionarios.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 66</value>
   </data>
   <data name="BtnCancelar.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -672,6 +687,9 @@
   <data name="Label5.Text" xml:space="preserve">
     <value>ID</value>
   </data>
+  <data name="&gt;&gt;BtnEliminarTelefono.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="DgvSucursales.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 82</value>
   </data>
@@ -684,8 +702,11 @@
   <data name="Label6.Text" xml:space="preserve">
     <value>DEPARTAMENTO</value>
   </data>
-  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>15</value>
+  <data name="DgvFuncionarios.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;BtnEliminar.Parent" xml:space="preserve">
+    <value>Panel2</value>
   </data>
   <data name="Panel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>906, 495</value>
@@ -759,11 +780,11 @@
   <data name="&gt;&gt;LstTelefonos_REQ.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="BtnEliminarTelefono.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 6.75pt</value>
+  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
   </data>
-  <data name="&gt;&gt;TxtNombre_REQ.ZOrder" xml:space="preserve">
-    <value>16</value>
+  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
+    <value>15</value>
   </data>
   <data name="TxtNombre_REQ.Location" type="System.Drawing.Point, System.Drawing">
     <value>160, 120</value>
@@ -782,6 +803,9 @@
   </data>
   <data name="CbProveedor.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
+  </data>
+  <data name="DgvFuncionarios.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>25</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

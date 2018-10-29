@@ -9,7 +9,23 @@
     End Sub
 
     Private Sub ControlesPorDefecto()
-        CboEspecificaciones.DataSource = New PersistenciaProductoFinal().Listar
+        Dim eproductos As New List(Of EspecificacionProducto)
+
+        Dim materiasprimas = New PersistenciaMateriaPrima().Listar
+        For Each m In materiasprimas
+            eproductos.Add(m)
+        Next
+
+        Dim productosintermedios = New PersistenciaProductoIntermedio().Listar
+        For Each p In productosintermedios
+            eproductos.Add(p)
+        Next
+
+        Dim productosFinal = New PersistenciaProductoFinal().Listar
+        For Each p In productosFinal
+            eproductos.Add(p)
+        Next
+        CboEspecificaciones.DataSource = eproductos
         CboEspecificaciones.ValueMember = "id"
         CboEspecificaciones.DisplayMember = "nombre"
         LimpiarControles(Me)

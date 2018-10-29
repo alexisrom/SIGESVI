@@ -20,7 +20,13 @@
 
 
     Private Sub BtnAgregarProducto_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnAgregarProducto.Click
-        Dim cantidad = InputBox("Ingrese la cantidad deseada")
-        Carrito.AgregarProducto(_Producto, cantidad)
+
+        Try
+            Dim cantidad = CInt(InputBox("Ingrese la cantidad deseada"))
+            Carrito.AgregarProducto(_Producto, cantidad)
+        Catch ex As Exception
+            MessageBox.Show("La cantidad debe ser numérica")
+        End Try
+
     End Sub
 End Class

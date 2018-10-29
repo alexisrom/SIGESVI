@@ -117,11 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;TxtCapacidad_NUM_REQ.Name" xml:space="preserve">
-    <value>TxtCapacidad_NUM_REQ</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="BtnNuevo.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnAgregarEtapa.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
@@ -152,6 +152,9 @@
   <data name="&gt;&gt;TxtCapacidad_NUM_REQ.Parent" xml:space="preserve">
     <value>Panel1</value>
   </data>
+  <data name="&gt;&gt;BtnAgregarEtapa.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="Button4.Text" xml:space="preserve">
     <value>ELIMINAR VEHICULO</value>
   </data>
@@ -176,9 +179,6 @@
   </data>
   <data name="TxtCapacidad_NUM_REQ.Location" type="System.Drawing.Point, System.Drawing">
     <value>146, 207</value>
-  </data>
-  <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
-    <value>Panel2</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1162, 529</value>
@@ -216,14 +216,17 @@
   <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 30</value>
   </data>
-  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;TxtMatricula_NUM_REQ.Name" xml:space="preserve">
+    <value>TxtMatricula_NUM_REQ</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>FrmVehiculos</value>
   </data>
-  <data name="Label3.Text" xml:space="preserve">
-    <value>Vehículos</value>
+  <data name="BtnNuevo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 256</value>
   </data>
   <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>91, 163</value>
@@ -237,8 +240,8 @@
   <data name="Button4.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 28</value>
   </data>
-  <data name="&gt;&gt;Panel1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="DgvVehiculos.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -248,6 +251,9 @@
   </data>
   <data name="&gt;&gt;BtnAgregarEtapa.Parent" xml:space="preserve">
     <value>Panel2</value>
+  </data>
+  <data name="&gt;&gt;DgvVehiculos.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;Panel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -264,8 +270,8 @@
   <data name="TxtMatricula_NUM_REQ.Location" type="System.Drawing.Point, System.Drawing">
     <value>146, 127</value>
   </data>
-  <data name="BtnNuevo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>146, 256</value>
+  <data name="DgvVehiculos.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>25</value>
   </data>
   <data name="&gt;&gt;TxtNombre_REQ.Name" xml:space="preserve">
     <value>TxtNombre_REQ</value>
@@ -282,8 +288,8 @@
   <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
+  <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="Button4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 6.75pt</value>
@@ -300,8 +306,11 @@
   <data name="&gt;&gt;Panel2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;DgvVehiculos.Name" xml:space="preserve">
+    <value>DgvVehiculos</value>
+  </data>
+  <data name="&gt;&gt;BtnAgregarEtapa.Name" xml:space="preserve">
+    <value>BtnAgregarEtapa</value>
   </data>
   <data name="TxtMatricula_NUM_REQ.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -311,6 +320,9 @@
   </data>
   <data name="TxtCapacidad_NUM_REQ.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="Label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 210</value>
   </data>
   <data name="BtnNuevo.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -336,11 +348,14 @@
   <data name="&gt;&gt;DgvEtapas.Parent" xml:space="preserve">
     <value>Panel2</value>
   </data>
-  <data name="BtnAgregarEtapa.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
+    <value>Panel2</value>
   </data>
   <data name="&gt;&gt;TxtCapacidad_NUM_REQ.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="TxtMatricula_NUM_REQ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 27</value>
   </data>
   <data name="Panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -348,14 +363,11 @@
   <data name="DgvEtapas.Size" type="System.Drawing.Size, System.Drawing">
     <value>558, 330</value>
   </data>
-  <data name="TxtNombre_REQ.Size" type="System.Drawing.Size, System.Drawing">
-    <value>237, 27</value>
-  </data>
   <data name="BtnAgregarEtapa.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
-  <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="TxtNombre_REQ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 27</value>
   </data>
   <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -397,13 +409,13 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Button4.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="Label8.Text" xml:space="preserve">
     <value>CAPACIDAD</value>
   </data>
-  <data name="&gt;&gt;Button4.Parent" xml:space="preserve">
-    <value>Panel2</value>
+  <data name="BtnAgregarEtapa.Text" xml:space="preserve">
+    <value>EDITAR VEHICULO</value>
   </data>
   <data name="Label1.Text" xml:space="preserve">
     <value>TIPO</value>
@@ -426,6 +438,9 @@
   <data name="BtnAgregarEtapa.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 6.75pt</value>
   </data>
+  <data name="DgvVehiculos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 82</value>
+  </data>
   <data name="&gt;&gt;BtnNuevo.Name" xml:space="preserve">
     <value>BtnNuevo</value>
   </data>
@@ -435,8 +450,8 @@
   <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>42, 127</value>
   </data>
-  <data name="&gt;&gt;TxtMatricula_NUM_REQ.Name" xml:space="preserve">
-    <value>TxtMatricula_NUM_REQ</value>
+  <data name="&gt;&gt;Label8.Name" xml:space="preserve">
+    <value>Label8</value>
   </data>
   <data name="TxtCapacidad_NUM_REQ.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -450,14 +465,17 @@
   <data name="&gt;&gt;Label2.Name" xml:space="preserve">
     <value>Label2</value>
   </data>
-  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;DgvVehiculos.Parent" xml:space="preserve">
+    <value>Panel2</value>
   </data>
   <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>245, 31</value>
   </data>
-  <data name="&gt;&gt;BtnAgregarEtapa.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;Label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label8.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="Label8.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
@@ -468,38 +486,41 @@
   <data name="&gt;&gt;BtnAgregarEtapa.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;BtnAgregarEtapa.Name" xml:space="preserve">
-    <value>BtnAgregarEtapa</value>
+  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
   </data>
-  <data name="&gt;&gt;Label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;DgvVehiculos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="BtnAgregarEtapa.Text" xml:space="preserve">
-    <value>EDITAR VEHICULO</value>
+  <data name="&gt;&gt;Button4.Parent" xml:space="preserve">
+    <value>Panel2</value>
   </data>
-  <data name="&gt;&gt;Label8.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="Label3.Text" xml:space="preserve">
+    <value>Vehículos</value>
   </data>
   <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;Label8.Name" xml:space="preserve">
-    <value>Label8</value>
-  </data>
   <data name="Button4.Location" type="System.Drawing.Point, System.Drawing">
     <value>510, 418</value>
   </data>
-  <data name="BtnAgregarEtapa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>79, 418</value>
+  <data name="&gt;&gt;TxtCapacidad_NUM_REQ.Name" xml:space="preserve">
+    <value>TxtCapacidad_NUM_REQ</value>
   </data>
-  <data name="Label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 210</value>
+  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="TxtMatricula_NUM_REQ.Size" type="System.Drawing.Size, System.Drawing">
-    <value>237, 27</value>
+  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;TxtMatricula_NUM_REQ.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;TxtNombre_REQ.Parent" xml:space="preserve">
+    <value>Panel1</value>
   </data>
   <data name="&gt;&gt;BtnNuevo.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -510,8 +531,8 @@
   <data name="&gt;&gt;Label3.Name" xml:space="preserve">
     <value>Label3</value>
   </data>
-  <data name="&gt;&gt;TxtNombre_REQ.Parent" xml:space="preserve">
-    <value>Panel1</value>
+  <data name="BtnAgregarEtapa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 418</value>
   </data>
   <data name="Panel1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>

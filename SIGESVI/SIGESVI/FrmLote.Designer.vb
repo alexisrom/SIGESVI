@@ -315,7 +315,6 @@ Partial Class FrmLotes
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
         CType(Me.DgvLotes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

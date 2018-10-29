@@ -133,6 +133,9 @@
   <data name="&gt;&gt;Label10.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="Label10.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 30</value>
@@ -161,6 +164,9 @@
   </data>
   <data name="CboEspecificaciones.Items3" xml:space="preserve">
     <value>Gerente General</value>
+  </data>
+  <data name="TxtStock_NUM_REQ.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
     <value>10</value>
@@ -309,11 +315,11 @@
   <data name="CboOrigenes.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
   </data>
-  <data name="&gt;&gt;BtnEliminar.Name" xml:space="preserve">
-    <value>BtnEliminar</value>
-  </data>
   <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="CboEspecificaciones.Items" xml:space="preserve">
+    <value>Administrativo</value>
   </data>
   <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -368,9 +374,6 @@
   </data>
   <data name="&gt;&gt;BtnCancelar.Parent" xml:space="preserve">
     <value>Panel1</value>
-  </data>
-  <data name="&gt;&gt;TxtStock_NUM_REQ.Name" xml:space="preserve">
-    <value>TxtStock_NUM_REQ</value>
   </data>
   <data name="BtnCancelar.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 6.75pt</value>
@@ -438,9 +441,6 @@
   <data name="Panel2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;CboEspecificaciones.Name" xml:space="preserve">
-    <value>CboEspecificaciones</value>
-  </data>
   <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 20</value>
   </data>
@@ -456,8 +456,8 @@
   <data name="Label4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
   </data>
-  <data name="CboOrigenes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>160, 306</value>
+  <data name="TxtID_NUM_REQ.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
   </data>
   <data name="Label5.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -497,6 +497,9 @@
   </data>
   <data name="&gt;&gt;TxtFecha.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CboOrigenes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 306</value>
   </data>
   <data name="BtnCancelar.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 28</value>
@@ -549,9 +552,6 @@
   <data name="&gt;&gt;BtnEditar.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
     <value>119, 126</value>
   </data>
@@ -594,14 +594,14 @@
   <data name="DgvLotes.Size" type="System.Drawing.Size, System.Drawing">
     <value>639, 362</value>
   </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1243, 578</value>
+  </data>
   <data name="&gt;&gt;CboEspecificaciones.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="Panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>806, 0</value>
-  </data>
-  <data name="TxtID_NUM_REQ.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 11pt</value>
   </data>
   <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
     <value>11</value>
@@ -633,11 +633,11 @@
   <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
   </data>
-  <data name="Label10.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
+  <data name="&gt;&gt;TxtStock_NUM_REQ.Name" xml:space="preserve">
+    <value>TxtStock_NUM_REQ</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1243, 578</value>
+  <data name="&gt;&gt;CboEspecificaciones.Name" xml:space="preserve">
+    <value>CboEspecificaciones</value>
   </data>
   <data name="BtnEditar.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -654,14 +654,14 @@
   <data name="&gt;&gt;TxtFecha.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="CboEspecificaciones.Items4" xml:space="preserve">
+    <value>Gerente Sucursal</value>
+  </data>
   <data name="&gt;&gt;TxtID_NUM_REQ.Parent" xml:space="preserve">
     <value>Panel1</value>
   </data>
   <data name="Label2.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
-  </data>
-  <data name="CboEspecificaciones.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
   </data>
   <data name="TxtStock_NUM_REQ.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
@@ -669,20 +669,20 @@
   <data name="DgvLotes.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 82</value>
   </data>
-  <data name="TxtStock_NUM_REQ.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="CboEspecificaciones.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
   </data>
   <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="CboEspecificaciones.Items4" xml:space="preserve">
-    <value>Gerente Sucursal</value>
+  <data name="&gt;&gt;Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Label1.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="CboEspecificaciones.Items" xml:space="preserve">
-    <value>Administrativo</value>
+  <data name="&gt;&gt;BtnEliminar.Name" xml:space="preserve">
+    <value>BtnEliminar</value>
   </data>
   <data name="&gt;&gt;CboOrigenes.Parent" xml:space="preserve">
     <value>Panel1</value>
